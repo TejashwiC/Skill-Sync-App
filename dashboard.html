@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SkillSync Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* ── Hamburger button ── */
+    .hamburger {
+      display: none;
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 1100;
+      background: #3b82f6;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      width: 42px;
+      height: 42px;
+      font-size: 20px;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    /* ── Overlay (mobile only) ── */
+    .sidebar-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      z-index: 999;
+    }
+    .sidebar-overlay.active { display: block; }
+
+    /* ── Mobile styles ── */
+    @media (max-width: 768px) {
+      .hamburger { display: flex; }
+
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: -260px;
+        height: 100%;
+        width: 240px;
+        z-index: 1000;
+        transition: left 0.25s ease;
+        overflow-y: auto;
+      }
+
+      .sidebar.open { left: 0; }
+
+      .content {
+        margin-left: 0 !important;
+        padding-top: 60px;
+      }
+
+      .topbar {
+        padding-left: 56px;
+      }
+    }
+  </style>
+</head>
+
+<body class="dashboard-page" onload="loadUser()">
+
+  <!-- Hamburger button (mobile only) -->
+  <button class="hamburger" onclick="toggleSidebar()" id="hamburgerBtn">
+    <i class="fas fa-bars" id="hamburgerIcon"></i>
+  </button>
+
+  <!-- Overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar" id="sidebar">
+      <div class="logo"><img src="skillsync-logo.png" alt="logo"></div>
+      <button onclick="navTo('home')"><i class="fas fa-house" style="color:#3b82f6;"></i> Home</button>
+      <button onclick="navTo('profile')"><i class="fas fa-circle-user" style="color:#ec4899;"></i> My Profile</button>
+      <button onclick="navTo('users')"><i class="fas fa-users" style="color:#f59e0b;"></i> Users</button>
+      <button onclick="navTo('chat')"><i class="fas fa-message" style="color:#22c55e;"></i> Chat</button>
+      <button onclick="navTo('session')"><i class="fas fa-video" style="color:#8b5cf6;"></i> Session</button>
+      <button onclick="navTo('testSection')"><i class="fas fa-clipboard-question" style="color:#f97316;"></i> Skill Test</button>
+      <button onclick="navTo('notes')"><i class="fas fa-file-pdf" style="color:#ef4444;"></i> Notes & PDFs</button>
+      <button onclick="navTo('settings')"><i class="fas fa-sliders" style="color:#06b6d4;"></i> Settings</button>
+      <button onclick="logout()"><i class="fas fa-arrow-right-from-bracket" style="color:#9ca3af;"></i> Logout</button>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+      <div class="topbar">
+        <h1 id="welcomeText">Welcome Back 👋</h1>
+      </div>
+
+      <!-- HOME -->
+      <div id="home" class="section">
+        <h2>Dashboard Home</h2>
+        <div class="dashboard-grid">
+          <div class="card card-blue"><i class="fas fa-layer-group"></i><h3>Total Skills</h3><p id="homeSkills">0</p></div>
+          <div class="card card-yellow"><i class="fas fa-coins"></i><h3>Credits</h3><p id="homeCredits">0</p></div>
+          <div class="card card-purple"><i class="fas fa-video"></i><h3>Sessions</h3><p id="homeSessions">0</p></div>
+          <div class="card card-orange"><i class="fas fa-pen-ruler"></i><h3>Tests Created</h3><p id="homeTests">0</p></div>
+          <div class="card card-green"><i class="fas fa-circle-check"></i><h3>Tests Completed</h3><p id="homeTestsCompleted">0</p></div>
+        </div>
+      </div>
+
+      <!-- PROFILE -->
+      <div id="profile" class="section" style="display:none;">
+        <h2>My Profile</h2>
+        <div class="dashboard-grid" id="profileDashboard">
+          <div class="card card-blue" onclick="openProfileScreen('viewProfileScreen')"><i class="fas fa-id-card"></i><h3>View Profile</h3><p>See your profile</p></div>
+          <div class="card card-pink" onclick="openProfileScreen('editProfileScreen')"><i class="fas fa-user-pen"></i><h3>Edit Profile</h3><p>Update profile details</p></div>
+          <div class="card card-orange" onclick="openProfileScreen('uploadPhotoScreen')"><i class="fas fa-camera"></i><h3>Upload Photo</h3><p>Change profile image</p></div>
+          <div class="card card-green" onclick="openProfileScreen('addSkillScreen')"><i class="fas fa-circle-plus"></i><h3>Add Skill</h3><p>Add new skills</p></div>
+          <div class="card card-yellow" onclick="openProfileScreen('editSkillScreen')"><i class="fas fa-pen-to-square"></i><h3>Edit Skill</h3><p>Modify skills</p></div>
+          <div class="card card-red" onclick="openProfileScreen('deleteSkillScreen')"><i class="fas fa-trash-can"></i><h3>Delete Skill</h3><p>Remove skills</p></div>
+          <div class="card card-purple" onclick="openProfileScreen('skillsOverviewScreen')"><i class="fas fa-layer-group"></i><h3>Skills Overview</h3><p>View all skills</p></div>
+          <div class="card card-cyan" onclick="openProfileScreen('recommendationScreen')"><i class="fas fa-wand-magic-sparkles"></i><h3>Recommendations</h3><p>Suggested skills</p></div>
+        </div>
+        <div class="screen" id="viewProfileScreen">
+          <button class="back-btn" onclick="backProfileDashboard()">← Back</button>
+          <h2>View Profile</h2>
+          <img id="profileImg" class="profile-img">
+          <p><strong>Name:</strong> <span id="vname"></span></p>
+          <p><strong>Email:</strong> <span id="vemail"></span></p>
+          <p><strong>Mobile:</strong> <span id="vmobile"></span></p>
+          <p><strong>Teach:</strong> <span id="vteach"></span></p>
+          <p><strong>Learn:</strong> <span id="vlearn"></span></p>
+          <p><strong>Language:</strong> <span id="vlang"></span></p>
+          <p><strong>Credits:</strong> <span id="vcredits"></span></p>
+        </div>
+        <div class="screen" id="editProfileScreen">
+          <button class="back-btn" onclick="backProfileDashboard()">← Back</button>
+          <h2>Edit Profile</h2>
+          <input type="text" id="pname" placeholder="Enter Name">
+          <input type="email" id="pemail" placeholder="Enter Email">
+          <input type="text" id="pmobile" placeholder="Enter Mobile">
+          <input type="text" id="pteach" placeholder="What you Teach">
+          <input type="text" id="plearn" placeholder="What you Learn">
+          <input type="text" id="plang" placeholder="Language">
+          <button onclick="saveProfile()">Save</button>
+        </div>
+        <div class="screen" id="uploadPhotoScreen">
+          <button class="back-btn" onclick="backProfileDashboard()">← Back</button>
+          <h2>Upload Photo</h2>
+          <input type="file" id="pimage">
+          <button>Upload</button>
+        </div>
+        <div class="screen" id="addSkillScreen">
+          <button class="back-btn" onclick="backProfileDashboard()">← Back</button>
+          <h2>Add Skill</h2>
+          <input type="text" id="skillInput" placeholder="Enter Skill">
+          <button onclick="addSkill()">Add Skill</button>
+        </div>
+        <div class="screen" id="editSkillScreen">
+          <button class="back-btn" onclick="backProfileDashboard()">← Back</button>
+          <h2>Edit Skill</h2>
+          <input type="text" id="oldSkillInput" placeholder="Old Skill">
+          <input type="text" id="newSkillInput" placeholder="New Skill">
+          <button onclick="editSkill()">Edit Skill</button>
+        </div>
+        <div class="screen" id="deleteSkillScreen">
+          <button class="back-btn" onclick="backProfileDashboard()">← Back</button>
+          <h2>Delete Skill</h2>
+          <input type="text" id="deleteSkillInput" placeholder="Skill Name">
+          <button onclick="deleteSkill()">Delete Skill</button>
+        </div>
+        <div class="screen" id="skillsOverviewScreen">
+          <button class="back-btn" onclick="backProfileDashboard()">← Back</button>
+          <h2>Skills Overview</h2>
+          <div id="skillsOverviewList"></div>
+        </div>
+        <div class="screen" id="recommendationScreen">
+          <button class="back-btn" onclick="backProfileDashboard()">← Back</button>
+          <h2>Recommendations</h2>
+          <div class="recommend-card">React JS</div>
+          <div class="recommend-card">Firebase</div>
+          <div class="recommend-card">Node JS</div>
+        </div>
+      </div>
+
+      <!-- USERS -->
+      <div id="users" class="section" style="display:none;">
+        <h2>Users Dashboard</h2>
+        <div class="dashboard-grid" id="usersDashboard">
+          <div class="card card-blue" onclick="openUserScreen('usersListScreen')"><i class="fas fa-address-book"></i><h3>Users List</h3><p>View all users</p></div>
+          <div class="card card-pink" onclick="openUserScreen('followersScreen')"><i class="fas fa-user-group"></i><h3>Followers</h3><p>People following you</p></div>
+          <div class="card card-green" onclick="openUserScreen('followingScreen')"><i class="fas fa-user-check"></i><h3>Following</h3><p>Users you follow</p></div>
+          <div class="card card-orange" onclick="openUserScreen('searchUsersScreen')"><i class="fas fa-magnifying-glass-plus"></i><h3>Search Users</h3><p>Find users</p></div>
+          <div class="card card-purple" onclick="openUserScreen('mentorsScreen')"><i class="fas fa-chalkboard-user"></i><h3>Top Mentors</h3><p>Best mentors</p></div>
+          <div class="card card-yellow" onclick="openUserScreen('suggestedScreen')"><i class="fas fa-user-plus"></i><h3>Suggested Users</h3><p>Recommended users</p></div>
+        </div>
+        <div class="screen" id="usersListScreen">
+          <button class="back-btn" onclick="backUsersDashboard()">← Back</button>
+          <h2>Users List</h2>
+          <div id="usersList"></div>
+        </div>
+        <div class="screen" id="followersScreen">
+          <button class="back-btn" onclick="backUsersDashboard()">← Back</button>
+          <h2>Followers</h2>
+          <div id="followersList"></div>
+        </div>
+        <div class="screen" id="followingScreen">
+          <button class="back-btn" onclick="backUsersDashboard()">← Back</button>
+          <h2>Following</h2>
+          <div id="followingList"></div>
+        </div>
+        <div class="screen" id="searchUsersScreen">
+          <button class="back-btn" onclick="backUsersDashboard()">← Back</button>
+          <h2>Search Users</h2>
+          <input type="text" id="searchInput" placeholder="Search users" oninput="searchUsers()">
+          <div id="searchResults"></div>
+        </div>
+        <div class="screen" id="mentorsScreen">
+          <button class="back-btn" onclick="backUsersDashboard()">← Back</button>
+          <h2>Top Mentors</h2>
+          <div id="mentorsList"></div>
+        </div>
+        <div class="screen" id="suggestedScreen">
+          <button class="back-btn" onclick="backUsersDashboard()">← Back</button>
+          <h2>Suggested Users</h2>
+          <div id="suggestedList"></div>
+        </div>
+        <div class="screen" id="userProfileScreen">
+          <button class="back-btn" onclick="backUsersDashboard()">← Back</button>
+          <h2>User Profile</h2>
+          <img id="u_profileImg" class="profile-img">
+          <p><strong>Name:</strong> <span id="u_name"></span></p>
+          <p><strong>Email:</strong> <span id="u_email"></span></p>
+          <p><strong>Mobile:</strong> <span id="u_mobile"></span></p>
+          <p><strong>Teach:</strong> <span id="u_teach"></span></p>
+          <p><strong>Learn:</strong> <span id="u_learn"></span></p>
+          <p><strong>Language:</strong> <span id="u_lang"></span></p>
+          <p><strong>Credits:</strong> <span id="u_credits"></span></p>
+        </div>
+      </div>
+
+      <!-- CHAT -->
+      <div id="chat" class="section" style="display:none;">
+        <h2>Chat Dashboard</h2>
+        <div class="dashboard-grid" id="chatDashboard">
+          <div class="card card-green" onclick="openChatScreen('chatMainScreen')"><i class="fas fa-comment-dots"></i><h3>Chat</h3><p>Open chat messages</p></div>
+          <div class="card card-blue" onclick="openChatScreen('chatRequestScreen')"><i class="fas fa-user-plus"></i><h3>Chat Requests</h3><p>View requests</p></div>
+          <div class="card card-yellow" onclick="openChatScreen('inboxScreen')"><i class="fas fa-envelope-open-text"></i><h3>Inbox</h3><p>View inbox</p></div>
+          <div class="card card-cyan" onclick="openChatScreen('chatSettingsScreen')"><i class="fas fa-sliders"></i><h3>Chat Settings</h3><p>Manage chat settings</p></div>
+          <div class="card card-purple" onclick="openChatScreen('groupChatScreen')"><i class="fas fa-people-group"></i><h3>Group Chats</h3><p>Create group chats</p></div>
+          <div class="card card-red" onclick="openChatScreen('blockedUsersScreen')"><i class="fas fa-user-slash"></i><h3>Blocked Users</h3><p>Manage blocked users</p></div>
+        </div>
+        <div class="screen" id="chatMainScreen">
+          <button class="back-btn" onclick="backChatDashboard()">← Back</button>
+          <h2 id="chatTitle">Chat</h2>
+          <div id="chatUserList"></div>
+          <hr>
+          <div id="chatBox" class="chat-box"></div>
+          <input id="messageInput" placeholder="Message" onkeydown="handleEnterKey(event)">
+          <button onclick="sendMessage()">Send</button>
+        </div>
+        <div class="screen" id="chatRequestScreen">
+          <button class="back-btn" onclick="backChatDashboard()">← Back</button>
+          <h2>Chat Requests</h2>
+          <div id="requestContainer"></div>
+        </div>
+        <div class="screen" id="inboxScreen">
+          <button class="back-btn" onclick="backChatDashboard()">← Back</button>
+          <h2>Inbox</h2>
+          <div id="inboxContainer"></div>
+        </div>
+        <div class="screen" id="chatSettingsScreen">
+          <button class="back-btn" onclick="backChatDashboard()">← Back</button>
+          <h2>Chat Settings</h2>
+          <div class="user-box" style="margin-bottom:16px;">
+            <h3 style="margin:0 0 12px;"><i class="fas fa-bell"></i> Chat Notifications</h3>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #eee;">
+              <span>Message Notifications</span>
+              <div>
+                <button onclick="setChatNotification(true)" style="background:#25D366;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;">ON</button>
+                <button onclick="setChatNotification(false)" style="background:#e74c3c;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;">OFF</button>
+              </div>
+            </div>
+            <p style="margin:8px 0 0;color:#888;font-size:13px;">Status: <b id="chatNotifStatus">ON</b></p>
+          </div>
+          <div class="user-box" style="margin-bottom:16px;">
+            <h3 style="margin:0 0 12px;"><i class="fas fa-trash-can"></i> Delete Chat</h3>
+            <p style="font-size:13px;color:#888;margin-bottom:8px;">Select a user to delete your entire chat history with them.</p>
+            <div id="deleteChatUserList"></div>
+          </div>
+          <div class="user-box">
+            <h3 style="margin:0 0 12px;"><i class="fas fa-user-slash"></i> Block a User</h3>
+            <p style="font-size:13px;color:#888;margin-bottom:8px;">Block someone who is misbehaving.</p>
+            <div id="blockUserList"></div>
+          </div>
+        </div>
+        <div class="screen" id="groupChatScreen">
+          <button class="back-btn" onclick="backChatDashboard()">← Back</button>
+          <h2>Group Chats</h2>
+          <input type="text" placeholder="Create Group Name">
+          <button>Create Group</button>
+        </div>
+        <div class="screen" id="blockedUsersScreen">
+          <button class="back-btn" onclick="backChatDashboard()">← Back</button>
+          <h2>Blocked Users</h2>
+          <p style="color:#888;font-size:13px;margin-bottom:12px;">Users you have blocked. They cannot message you.</p>
+          <div id="blockedUsersList"></div>
+        </div>
+      </div>
+
+      <!-- SESSION -->
+      <div id="session" class="section" style="display:none;">
+        <h2>Session Dashboard</h2>
+        <div class="dashboard-grid" id="sessionDashboard">
+          <div class="card card-green" onclick="openSessionScreen('startSessionScreen')"><i class="fas fa-circle-play"></i><h3>Start Session</h3><p>Begin new session</p></div>
+          <div class="card card-red" onclick="openSessionScreen('endSessionScreen')"><i class="fas fa-circle-stop"></i><h3>End Session</h3><p>Close active session</p></div>
+          <div class="card card-blue" onclick="openSessionScreen('joinSessionScreen')"><i class="fas fa-right-to-bracket"></i><h3>Join Session</h3><p>Join with secret code</p></div>
+          <div class="card card-pink" onclick="openSessionScreen('liveSessionScreen')"><i class="fas fa-tower-broadcast"></i><h3>Live Sessions</h3><p>View live classes</p></div>
+          <div class="card card-purple" onclick="openSessionScreen('historySessionScreen')"><i class="fas fa-clock-rotate-left"></i><h3>Session History</h3><p>Previous sessions</p></div>
+          <div class="card card-cyan" onclick="openSessionScreen('feedbackSessionScreen')"><i class="fas fa-comment-medical"></i><h3>Feedback</h3><p>Give feedback</p></div>
+          <div class="card card-yellow" onclick="openSessionScreen('ratingsSessionScreen')"><i class="fas fa-star-half-stroke"></i><h3>Ratings</h3><p>Rate sessions</p></div>
+        </div>
+        <div class="screen" id="startSessionScreen">
+          <button class="back-btn" onclick="backSessionDashboard()">← Back</button>
+          <h2><i class="fas fa-circle-play"></i> Start a Session</h2>
+          <div style="background:#f0f4ff;border-radius:14px;padding:18px;margin-bottom:18px;border:1.5px solid #c7d7ff;">
+            <h3 style="margin:0 0 4px;color:#3a5bd9;font-size:15px;"><span style="background:#3a5bd9;color:#fff;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;margin-right:8px;">1</span>Choose a Platform & Get Meeting Link</h3>
+            <p style="margin:4px 0 14px;color:#666;font-size:13px;">Click a platform below → create a meeting there → copy the invite link → paste in Step 2</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;">
+              <a href="https://zoom.us/start/videomeeting" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#fff;border:2px solid #2D8CFF;border-radius:12px;text-decoration:none;color:#2D8CFF;font-weight:700;font-size:13px;text-align:center;"><span style="font-size:28px;">🟦</span>Zoom<span style="font-size:10px;font-weight:400;color:#888;">Opens Zoom</span></a>
+              <a href="https://meet.google.com/new" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#fff;border:2px solid #00897B;border-radius:12px;text-decoration:none;color:#00897B;font-weight:700;font-size:13px;text-align:center;"><span style="font-size:28px;">🟢</span>Google Meet<span style="font-size:10px;font-weight:400;color:#888;">Opens in Browser</span></a>
+              <a href="https://teams.microsoft.com/l/meeting/new" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#fff;border:2px solid #6264A7;border-radius:12px;text-decoration:none;color:#6264A7;font-weight:700;font-size:13px;text-align:center;"><span style="font-size:28px;">🟣</span>MS Teams<span style="font-size:10px;font-weight:400;color:#888;">Opens Teams</span></a>
+              <a href="https://webex.com/meet" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#fff;border:2px solid #00ADEF;border-radius:12px;text-decoration:none;color:#00ADEF;font-weight:700;font-size:13px;text-align:center;"><span style="font-size:28px;">🔵</span>Webex<span style="font-size:10px;font-weight:400;color:#888;">Opens Webex</span></a>
+              <a href="https://meet.jit.si/" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#fff;border:2px solid #97B925;border-radius:12px;text-decoration:none;color:#5a7a00;font-weight:700;font-size:13px;text-align:center;"><span style="font-size:28px;">🟩</span>Jitsi<span style="font-size:10px;font-weight:400;color:#888;">Free · No Account</span></a>
+              <a href="https://whereby.com/" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#fff;border:2px solid #5C45D4;border-radius:12px;text-decoration:none;color:#5C45D4;font-weight:700;font-size:13px;text-align:center;"><span style="font-size:28px;">🟧</span>Whereby<span style="font-size:10px;font-weight:400;color:#888;">Opens in Browser</span></a>
+            </div>
+          </div>
+          <div style="background:#f8fff8;border-radius:14px;padding:18px;border:1.5px solid #b2dfdb;">
+            <h3 style="margin:0 0 14px;color:#27ae60;font-size:15px;"><span style="background:#27ae60;color:#fff;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;margin-right:8px;">2</span>Fill Session Details</h3>
+            <input type="text" id="sessionName" placeholder="Session Name (e.g. Python Basics)" style="margin-bottom:10px;">
+            <input type="text" id="sessionSkill" placeholder="Skill Topic (e.g. Python, React)" style="margin-bottom:10px;">
+            <label style="font-size:13px;color:#555;font-weight:600;display:block;margin-bottom:6px;">Select Platform:</label>
+            <select id="sessionPlatform" style="margin-bottom:10px;width:100%;padding:10px;border-radius:8px;border:1.5px solid #ddd;">
+              <option value="">-- Select Platform --</option>
+              <option value="zoom">Zoom</option>
+              <option value="meet">Google Meet</option>
+              <option value="teams">Microsoft Teams</option>
+              <option value="webex">Webex</option>
+              <option value="jitsi">Jitsi</option>
+              <option value="whereby">Whereby</option>
+              <option value="other">Other</option>
+            </select>
+            <input type="url" id="sessionLink" placeholder="Paste Meeting Link here (https://...)" style="margin-bottom:14px;">
+            <button onclick="startSession()" style="background:linear-gradient(135deg,#27ae60,#2ecc71);color:#fff;width:100%;padding:14px;font-size:15px;font-weight:700;border:none;border-radius:10px;cursor:pointer;">
+              <i class="fas fa-circle-play"></i> Start Session & Get Code
+            </button>
+          </div>
+          <div id="sessionCodeBox" style="display:none;margin-top:20px;background:linear-gradient(135deg,#e8f5e9,#f0fff4);border:2px dashed #27ae60;border-radius:14px;padding:24px;text-align:center;">
+            <p style="margin:0 0 6px;color:#27ae60;font-weight:700;font-size:14px;">🔐 Your Secret Session Code</p>
+            <h1 id="generatedCode" style="margin:0;font-size:52px;letter-spacing:14px;color:#2c3e50;font-weight:800;"></h1>
+            <p style="margin:10px 0 4px;color:#555;font-size:13px;">Session is LIVE 🟢</p>
+            <p style="margin:0;color:#888;font-size:12px;">Send this code to your student via <b>Chat</b> → they enter it in <b>Join Session</b></p>
+            <button id="copyCodeBtn" onclick="copySessionCode()" style="margin-top:14px;background:#2c3e50;color:#fff;border:none;padding:10px 24px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600;">📋 Copy Code</button>
+          </div>
+        </div>
+        <div class="screen" id="endSessionScreen">
+          <button class="back-btn" onclick="backSessionDashboard()">← Back</button>
+          <h2>End Session</h2>
+          <div id="myActiveSession" style="margin-bottom:16px;"></div>
+          <button onclick="endSession()" style="background:#e74c3c;color:#fff;width:100%;padding:14px;font-size:15px;font-weight:700;border:none;border-radius:10px;cursor:pointer;"><i class="fas fa-circle-stop"></i> End Current Session</button>
+        </div>
+        <div class="screen" id="joinSessionScreen">
+          <button class="back-btn" onclick="backSessionDashboard()">← Back</button>
+          <h2><i class="fas fa-right-to-bracket"></i> Join Session</h2>
+          <div style="background:#f8faff;border-radius:14px;padding:20px;border:1.5px solid #dde4f7;margin-bottom:16px;">
+            <div style="text-align:center;margin-bottom:16px;">
+              <div style="font-size:42px;margin-bottom:8px;">🔐</div>
+              <h3 style="margin:0 0 6px;color:#2c3e50;">Enter Secret Code</h3>
+              <p style="margin:0;color:#888;font-size:13px;">Ask your teacher/host to share the 6-digit code via Chat</p>
+            </div>
+            <input type="text" id="joinCodeInput" placeholder="A B C 1 2 3" maxlength="6" oninput="this.value=this.value.toUpperCase()" style="width:100%;padding:16px;border:2.5px solid #3498db;border-radius:12px;font-size:28px;letter-spacing:10px;text-align:center;font-weight:800;color:#2c3e50;box-sizing:border-box;margin-bottom:14px;background:#fff;">
+            <button onclick="joinSession()" style="width:100%;padding:14px;background:linear-gradient(135deg,#3498db,#2980b9);color:#fff;border:none;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;">🚀 Join Now</button>
+          </div>
+          <div id="joinResult" style="margin-top:4px;"></div>
+        </div>
+        <div class="screen" id="liveSessionScreen">
+          <button class="back-btn" onclick="backSessionDashboard()">← Back</button>
+          <h2>🔴 Live Sessions</h2>
+          <div id="liveSessionContainer"></div>
+        </div>
+        <div class="screen" id="historySessionScreen">
+          <button class="back-btn" onclick="backSessionDashboard()">← Back</button>
+          <h2>Session History</h2>
+          <div id="historyContainer"></div>
+        </div>
+        <div class="screen" id="feedbackSessionScreen">
+          <button class="back-btn" onclick="backSessionDashboard()">← Back</button>
+          <h2>Feedback</h2>
+          <select id="feedbackSessionSelect" style="margin-bottom:12px;"></select>
+          <textarea id="feedbackText" placeholder="Write your feedback here..." rows="4"></textarea>
+          <button onclick="submitFeedback()">Submit Feedback</button>
+        </div>
+        <div class="screen" id="ratingsSessionScreen">
+          <button class="back-btn" onclick="backSessionDashboard()">← Back</button>
+          <h2>⭐ Rate a Session</h2>
+          <div class="user-box" style="margin-bottom:20px;">
+            <h4 style="margin:0 0 10px;">Submit Your Rating</h4>
+            <select id="rateSessionSelect" style="margin-bottom:10px;"></select>
+            <div id="starRating" style="display:flex;gap:8px;font-size:32px;cursor:pointer;margin-bottom:12px;">
+              <span onclick="setRating(1)" id="star1">☆</span>
+              <span onclick="setRating(2)" id="star2">☆</span>
+              <span onclick="setRating(3)" id="star3">☆</span>
+              <span onclick="setRating(4)" id="star4">☆</span>
+              <span onclick="setRating(5)" id="star5">☆</span>
+            </div>
+            <button onclick="submitRating()"><i class="fas fa-star"></i> Submit Rating</button>
+          </div>
+          <h4>All Session Ratings</h4>
+          <div id="ratingsContainer"></div>
+        </div>
+      </div>
+
+      <!-- SKILL TEST -->
+      <div id="testSection" class="section" style="display:none;">
+        <h2>Skill Test Dashboard</h2>
+        <div class="dashboard-grid" id="testDashboard">
+          <div class="card card-blue" onclick="openTestScreen('createTestScreen')"><i class="fas fa-file-circle-plus"></i><h3>Create Test</h3><p>Create new skill test</p></div>
+          <div class="card card-green" onclick="openTestScreen('addQuestionScreen')"><i class="fas fa-circle-plus"></i><h3>Add Questions</h3><p>Add test questions</p></div>
+          <div class="card card-purple" onclick="openTestScreen('myQuestionsScreen')"><i class="fas fa-list-check"></i><h3>My Questions</h3><p>View your questions</p></div>
+          <div class="card card-orange" onclick="openTestScreen('attendTestScreen')"><i class="fas fa-pen-to-square"></i><h3>Attend Test</h3><p>Take a test now</p></div>
+          <div class="card card-cyan" onclick="openTestScreen('resultsScreen')"><i class="fas fa-chart-bar"></i><h3>My Results</h3><p>View your test results</p></div>
+          <div class="card card-yellow" onclick="openTestScreen('leaderboardScreen')"><i class="fas fa-trophy"></i><h3>Leaderboard</h3><p>Top performers</p></div>
+        </div>
+        <div class="screen" id="createTestScreen">
+          <button class="back-btn" onclick="backTestDashboard()">← Back</button>
+          <h2>Create Test</h2>
+          <input type="text" id="testTitle" placeholder="Test Name (e.g. Java Basics)">
+          <input type="text" id="testSkill" placeholder="Skill Topic (e.g. Java, Python)">
+          <input type="number" id="testCredits" placeholder="Credits per correct answer" min="1">
+          <button onclick="createTest()"><i class="fas fa-plus"></i> Create Test</button>
+          <h3 style="margin-top:28px;border-top:1px solid #eee;padding-top:16px;"><i class="fas fa-list-check"></i> My Created Tests</h3>
+          <div id="myTestsList"></div>
+        </div>
+        <div class="screen" id="addQuestionScreen">
+          <button class="back-btn" onclick="backTestDashboard()">← Back</button>
+          <h2>Add Questions</h2>
+          <label style="font-size:13px;color:#555;font-weight:600;">Select Test:</label>
+          <select id="testSelect" style="margin-bottom:14px;"></select>
+          <input type="text" id="question" placeholder="Question" style="margin-bottom:10px;">
+          <input type="text" id="option1" placeholder="Option A" oninput="updateCorrectDropdown()" style="margin-bottom:8px;">
+          <input type="text" id="option2" placeholder="Option B" oninput="updateCorrectDropdown()" style="margin-bottom:8px;">
+          <input type="text" id="option3" placeholder="Option C" oninput="updateCorrectDropdown()" style="margin-bottom:8px;">
+          <input type="text" id="option4" placeholder="Option D" oninput="updateCorrectDropdown()" style="margin-bottom:14px;">
+          <label style="font-size:13px;color:#555;font-weight:600;">Correct Answer:</label>
+          <select id="correctAnswer" style="margin-bottom:14px;">
+            <option value="">-- Select Correct Option --</option>
+            <option id="optA" value="">A</option>
+            <option id="optB" value="">B</option>
+            <option id="optC" value="">C</option>
+            <option id="optD" value="">D</option>
+          </select>
+          <p style="font-size:12px;color:#888;margin:-8px 0 14px;background:#fffde7;padding:8px 12px;border-radius:8px;border-left:3px solid #f39c12;">💡 Type your options first — the dropdown will auto-fill A/B/C/D with your option text. Then select the correct one.</p>
+          <button onclick="addQuestion()"><i class="fas fa-plus"></i> Add Question</button>
+        </div>
+        <div class="screen" id="myQuestionsScreen">
+          <button class="back-btn" onclick="backTestDashboard()">← Back</button>
+          <h2>My Questions</h2>
+          <div id="myQuestions"></div>
+        </div>
+        <div class="screen" id="attendTestScreen">
+          <button class="back-btn" onclick="backTestDashboard()">← Back</button>
+          <h2>Attend Test</h2>
+          <div id="availableTests"></div>
+          <div id="testQuestions" style="display:none;"></div>
+          <div id="resultsContainer" style="display:none;"></div>
+        </div>
+        <div class="screen" id="resultsScreen">
+          <button class="back-btn" onclick="backTestDashboard()">← Back</button>
+          <h2><i class="fas fa-chart-bar"></i> My Results</h2>
+          <p style="color:#888;font-size:13px;margin-bottom:16px;">All tests you have attempted.</p>
+          <div id="myResultsContainer"></div>
+        </div>
+        <div class="screen" id="leaderboardScreen">
+          <button class="back-btn" onclick="backTestDashboard()">← Back</button>
+          <h2>🏆 Leaderboard</h2>
+          <p style="color:#888;font-size:13px;margin-bottom:16px;">All users ranked by test performance.</p>
+          <div id="leaderboardContainer"></div>
+        </div>
+      </div>
+
+      <!-- NOTES & PDFs -->
+      <div id="notes" class="section" style="display:none;">
+        <h2>Notes & PDFs Dashboard</h2>
+        <div class="dashboard-grid" id="notesDashboard">
+          <div class="card card-blue" onclick="openNotesScreen('uploadNotesScreen')"><i class="fas fa-cloud-arrow-up"></i><h3>Upload Notes</h3><p>Upload PDF notes</p></div>
+          <div class="card card-red" onclick="openNotesScreen('viewNotesScreen')"><i class="fas fa-file-pdf"></i><h3>Uploaded PDFs</h3><p>View &amp; Download</p></div>
+        </div>
+        <div class="screen" id="uploadNotesScreen">
+          <button class="back-btn" onclick="backNotesDashboard()">← Back</button>
+          <h2>Upload Notes (PDF)</h2>
+          <div style="background:#f8faff;border-radius:14px;padding:20px;border:1.5px solid #dde4f7;">
+            <p style="margin:0 0 12px;color:#555;font-size:14px;">📄 Select a PDF file (max 10 MB) to share with all users.</p>
+            <input type="file" id="pdfFile" accept="application/pdf" style="display:block;width:100%;margin-bottom:14px;padding:10px;border:2px dashed #3498db;border-radius:10px;background:#fff;cursor:pointer;box-sizing:border-box;">
+            <div id="uploadProgressWrap" style="display:none;margin-bottom:12px;">
+              <label style="font-size:13px;color:#555;font-weight:600;">Uploading...</label>
+              <progress id="uploadProgress" value="0" max="100" style="width:100%;height:12px;border-radius:6px;margin-top:6px;"></progress>
+            </div>
+            <button id="uploadPDFBtn" onclick="uploadPDF()" style="background:linear-gradient(135deg,#3498db,#2980b9);color:#fff;border:none;padding:13px 28px;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;width:100%;"><i class="fas fa-cloud-arrow-up"></i> Upload PDF</button>
+          </div>
+        </div>
+        <div class="screen" id="viewNotesScreen">
+          <button class="back-btn" onclick="backNotesDashboard()">← Back</button>
+          <h2>Uploaded PDFs</h2>
+          <p style="color:#888;font-size:13px;margin-bottom:14px;">👁 View opens in browser &nbsp;|&nbsp; 📥 Download saves to your device &nbsp;|&nbsp; 🗑 Delete (only your own uploads)</p>
+          <div id="pdfList"></div>
+        </div>
+      </div>
+
+      <!-- SETTINGS -->
+      <div id="settings" class="section" style="display:none;">
+        <h2>Settings Dashboard</h2>
+        <div class="dashboard-grid" id="settingsDashboard">
+          <div class="card card-blue" onclick="openSettingsScreen('accountSettingsScreen')"><i class="fas fa-user-gear"></i><h3>Account Settings</h3><p>Manage account details</p></div>
+          <div class="card card-yellow" onclick="openSettingsScreen('notificationSettingsScreen')"><i class="fas fa-bell"></i><h3>Notifications</h3><p>Notification preferences</p></div>
+          <div class="card card-green" onclick="openSettingsScreen('securitySettingsScreen')"><i class="fas fa-shield-halved"></i><h3>Security</h3><p>Protect your account</p></div>
+          <div class="card card-purple" onclick="openSettingsScreen('passwordSettingsScreen')"><i class="fas fa-lock"></i><h3>Password</h3><p>Update password</p></div>
+        </div>
+        <div class="screen" id="accountSettingsScreen">
+          <button class="back-btn" onclick="backSettingsDashboard()">← Back</button>
+          <h2>Account Settings</h2>
+          <input type="text" placeholder="Update Name">
+          <input type="email" placeholder="Update Email">
+          <button>Save Changes</button>
+        </div>
+        <div class="screen" id="notificationSettingsScreen">
+          <button class="back-btn" onclick="backSettingsDashboard()">← Back</button>
+          <h2>Notification Settings</h2>
+          <div class="user-box" style="margin-bottom:16px;">
+            <h3 style="margin:0 0 8px;font-size:15px;"><i class="fas fa-user-plus"></i> Follow Notifications</h3>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #eee;">
+              <span>Follow Alert</span>
+              <div>
+                <button id="followNotifON" onclick="setNotification('follow', true)" style="background:#25D366;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:600;">ON</button>
+                <button id="followNotifOFF" onclick="setNotification('follow', false)" style="background:#ccc;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:600;">OFF</button>
+              </div>
+            </div>
+            <p style="margin:8px 0 0;color:#888;font-size:13px;">Status: <b id="followNotifStatus">Loading...</b></p>
+          </div>
+          <div class="user-box" style="margin-bottom:16px;">
+            <h3 style="margin:0 0 8px;font-size:15px;"><i class="fas fa-volume-high"></i> Message Sound</h3>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #eee;">
+              <span>Notification Sound</span>
+              <div>
+                <button id="soundON" onclick="setNotification('sound', true)" style="background:#25D366;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:600;">ON</button>
+                <button id="soundOFF" onclick="setNotification('sound', false)" style="background:#ccc;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:600;">OFF</button>
+              </div>
+            </div>
+            <p style="margin:8px 0 0;color:#888;font-size:13px;">Status: <b id="soundStatus">Loading...</b></p>
+          </div>
+          <div class="user-box" style="margin-bottom:16px;">
+            <h3 style="margin:0 0 8px;font-size:15px;"><i class="fas fa-envelope"></i> Email Notifications</h3>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #eee;">
+              <span>Email Alerts</span>
+              <div>
+                <button id="emailON" onclick="setNotification('email', true)" style="background:#25D366;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:600;">ON</button>
+                <button id="emailOFF" onclick="setNotification('email', false)" style="background:#ccc;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:600;">OFF</button>
+              </div>
+            </div>
+            <p style="margin:8px 0 0;color:#888;font-size:13px;">Status: <b id="emailStatus">Loading...</b></p>
+          </div>
+          <div class="user-box">
+            <h3 style="margin:0 0 8px;font-size:15px;"><i class="fas fa-video"></i> Session Alerts</h3>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #eee;">
+              <span>Session Reminders</span>
+              <div>
+                <button id="sessionNotifON" onclick="setNotification('session', true)" style="background:#25D366;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:600;">ON</button>
+                <button id="sessionNotifOFF" onclick="setNotification('session', false)" style="background:#ccc;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:600;">OFF</button>
+              </div>
+            </div>
+            <p style="margin:8px 0 0;color:#888;font-size:13px;">Status: <b id="sessionStatus">Loading...</b></p>
+          </div>
+        </div>
+        <div class="screen" id="securitySettingsScreen">
+          <button class="back-btn" onclick="backSettingsDashboard()">← Back</button>
+          <h2>Security Settings</h2>
+          <div class="user-box">Two Factor Authentication</div>
+          <div class="user-box">Login Activity</div>
+        </div>
+        <div class="screen" id="passwordSettingsScreen">
+          <button class="back-btn" onclick="backSettingsDashboard()">← Back</button>
+          <h2>Password Settings</h2>
+          <input type="password" placeholder="Current Password">
+          <input type="password" placeholder="New Password">
+          <input type="password" placeholder="Confirm Password">
+          <button>Update Password</button>
+        </div>
+      </div>
+
+    </div><!-- end .content -->
+  </div><!-- end .layout -->
+
+  <script>
+    /* ── Sidebar toggle ── */
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebarOverlay');
+      const icon    = document.getElementById('hamburgerIcon');
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('active');
+      icon.className = sidebar.classList.contains('open') ? 'fas fa-times' : 'fas fa-bars';
+    }
+
+    function closeSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebarOverlay');
+      const icon    = document.getElementById('hamburgerIcon');
+      sidebar.classList.remove('open');
+      overlay.classList.remove('active');
+      icon.className = 'fas fa-bars';
+    }
+
+    /* ── Nav: showSection + auto close sidebar on mobile ── */
+    function navTo(sectionId) {
+      showSection(sectionId);
+      if (window.innerWidth <= 768) closeSidebar();
+    }
+
+    /* ── Correct answer dropdown ── */
+    window.updateCorrectDropdown = function () {
+      const map = [
+        { inputId: "option1", optId: "optA", label: "A" },
+        { inputId: "option2", optId: "optB", label: "B" },
+        { inputId: "option3", optId: "optC", label: "C" },
+        { inputId: "option4", optId: "optD", label: "D" },
+      ];
+      map.forEach(o => {
+        const val = document.getElementById(o.inputId)?.value?.trim() || "";
+        const opt = document.getElementById(o.optId);
+        if (opt) {
+          opt.value       = val;
+          opt.textContent = val ? o.label + ": " + val : o.label;
+        }
+      });
+    };
+  </script>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

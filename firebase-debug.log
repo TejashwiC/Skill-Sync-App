@@ -1,0 +1,22 @@
+[debug] [2026-04-30T08:33:55.357Z] ----------------------------------------------------------------------
+[debug] [2026-04-30T08:33:55.360Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tejas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2026-04-30T08:33:55.360Z] CLI Version:   15.16.0
+[debug] [2026-04-30T08:33:55.360Z] Platform:      win32
+[debug] [2026-04-30T08:33:55.360Z] Node Version:  v24.15.0
+[debug] [2026-04-30T08:33:55.360Z] Time:          Thu Apr 30 2026 14:03:55 GMT+0530 (India Standard Time)
+[debug] [2026-04-30T08:33:55.360Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-30T08:33:55.362Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\tejas\OneDrive\Desktop\SkillSync
+
+[debug] [2026-04-30T08:33:57.032Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2026-04-30T08:33:57.032Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
