@@ -1,0 +1,60 @@
+name: 🚀 Deploy SkillSync to GitHub Pages
+
+on:
+  push:
+    branches:
+      - web          # Runs every time you push to the 'web' branch
+      - main
+      - master
+  workflow_dispatch: # Allows you to trigger manually from the GitHub Actions tab
+
+# Required permissions for Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only allow one deployment at a time; cancel in-progress if a new push comes in
+concurrency:
+  group: "pages-deploy"
+  cancel-in-progress: true
+
+jobs:
+  # ─── Job 1: Deploy to GitHub Pages ─────────────────────────────────────────
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      # 1. Checkout the web branch
+      - name: ⬇️ Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Configure GitHub Pages
+      - name: ⚙️ Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      # 3. Upload static site — uploads everything EXCEPT the tests/ folder
+      - name: 📦 Upload site files (exclude tests)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."   # Serves from repo root where index.html lives
+
+      # 4. Deploy!
+      - name: 🌐 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      # 5. Print the live URL
+      - name: ✅ Deployment complete
+        run: |
+          echo "=============================================="
+          echo "  SkillSync is LIVE at:"
+          echo "  ${{ steps.deployment.outputs.page_url }}"
+          echo "  Branch  : ${{ github.ref_name }}"
+          echo "  Commit  : ${{ github.sha }}"
+          echo "  Run     : #${{ github.run_number }}"
+          echo "=============================================="
