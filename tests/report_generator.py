@@ -531,12 +531,29 @@ def generate_excel_report(results, output_dir=None):
     """
     Generate the Excel report and save it.
     Called from conftest.py after all tests complete.
+
+    Key behaviours:
+    - Deletes ALL existing .xlsx files in output_dir before saving (keeps only 1 file).
+    - Skips saving entirely if results list is empty (prevents 0-row files).
     """
     if output_dir is None:
         # Save to tests/reports/ relative to this file
         output_dir = os.path.join(os.path.dirname(__file__), "reports")
 
     os.makedirs(output_dir, exist_ok=True)
+
+    # ── Guard: never write an empty report ───────────────────────────────────
+    if not results:
+        print("\n[REPORT] No test results collected — Excel report NOT generated.\n")
+        return None
+
+    # ── Delete all previous .xlsx files so only ONE report exists ────────────
+    for old_file in os.listdir(output_dir):
+        if old_file.endswith(".xlsx"):
+            try:
+                os.remove(os.path.join(output_dir, old_file))
+            except Exception:
+                pass  # ignore locked files
 
     timestamp = datetime.datetime.now()
     filename  = f"E2E_Test_Report_SkillSync_{timestamp.strftime('%Y-%m-%dT%H-%M-%S')}.xlsx"

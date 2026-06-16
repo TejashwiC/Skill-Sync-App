@@ -76,27 +76,20 @@ jobs:
             2>&1 | tee pytest_output.txt
         continue-on-error: true   # Always generate report even if tests fail
 
-      # ── 7. Verify Excel report was generated ─────────────────────────────
+      # ── 7. Verify Excel report was generated ─────────────────────────────────
       - name: 📊 Verify Excel Report
         run: |
           cd tests
-          echo "--- Reports generated ---"
-          ls -lh reports/*.xlsx 2>/dev/null || echo "No .xlsx found, generating now..."
-          # Fallback: generate report with whatever results exist
-          python -c "
-          import os, sys
-          sys.path.insert(0, '.')
-          from report_generator import generate_excel_report
-          reports_dir = 'reports'
-          os.makedirs(reports_dir, exist_ok=True)
-          existing = [f for f in os.listdir(reports_dir) if f.endswith('.xlsx')]
-          if existing:
-              print(f'Report already exists: {existing[0]}')
-          else:
-              print('Generating fallback report...')
-              generate_excel_report([], reports_dir)
-          " 2>/dev/null || true
-          ls -lh reports/
+          echo "--- Reports folder contents ---"
+          ls -lh reports/ 2>/dev/null || echo "Reports folder empty"
+          REPORT=$(ls reports/*.xlsx 2>/dev/null | head -1)
+          if [ -z "$REPORT" ]; then
+            echo "WARNING: No Excel report found (tests may have crashed before completion)"
+          else
+            echo "✅ Report found: $REPORT"
+            ls -lh "$REPORT"
+          fi
+
 
       # ── 8. Upload Excel Report as downloadable artifact ──────────────────
       - name: 📎 Upload Excel Report Artifact
