@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from conftest import wait_visible, wait_clickable, dismiss_alert_if_present, take_screenshot
+from utils import wait_visible, wait_clickable, dismiss_alert_if_present, take_screenshot
 
 logger = logging.getLogger("SkillSync-E2E.Complete")
 

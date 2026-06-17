@@ -1,0 +1,63 @@
+2026-06-17 10:42:36,618 [INFO] SkillSync-E2E: Starting Chrome WebDriver session
+2026-06-17 10:42:36,618 [INFO] WDM: ====== WebDriver manager ======
+2026-06-17 10:42:38,144 [INFO] WDM: Get LATEST chromedriver version for google-chrome
+2026-06-17 10:42:38,884 [INFO] WDM: Get LATEST chromedriver version for google-chrome
+2026-06-17 10:42:39,444 [INFO] WDM: There is no [win64] chromedriver "149.0.7827.155" for browser google-chrome "149.0.7827" in cache
+2026-06-17 10:42:39,444 [INFO] WDM: Get LATEST chromedriver version for google-chrome
+2026-06-17 10:42:40,694 [INFO] WDM: WebDriver version 149.0.7827.155 selected
+2026-06-17 10:42:40,745 [INFO] WDM: Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/149.0.7827.155/win32/chromedriver-win32.zip
+2026-06-17 10:42:40,745 [INFO] WDM: About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/149.0.7827.155/win32/chromedriver-win32.zip
+2026-06-17 10:42:41,292 [INFO] WDM: Driver downloading response is 200
+2026-06-17 10:42:42,256 [INFO] WDM: Get LATEST chromedriver version for google-chrome
+2026-06-17 10:42:43,074 [INFO] WDM: Driver has been saved in cache [C:\Users\tejas\.wdm\drivers\chromedriver\win64\149.0.7827.155]
+2026-06-17 10:42:54,561 [INFO] SkillSync-E2E: [PASS] test_api_056_login_page_returns_200 (2.08s)
+2026-06-17 10:42:54,795 [INFO] SkillSync-E2E: [PASS] test_api_057_register_page_returns_200 (0.23s)
+2026-06-17 10:42:55,074 [INFO] SkillSync-E2E: [PASS] test_api_058_dashboard_page_returns_200 (0.28s)
+2026-06-17 10:42:55,344 [INFO] SkillSync-E2E: [PASS] test_api_059_forgot_password_page_returns_200 (0.27s)
+2026-06-17 10:42:55,594 [INFO] SkillSync-E2E: [PASS] test_api_060_nonexistent_page_returns_404 (0.25s)
+2026-06-17 10:42:55,880 [INFO] SkillSync-E2E: [PASS] test_api_061_appjs_served_200 (0.28s)
+2026-06-17 10:42:56,125 [INFO] SkillSync-E2E: [PASS] test_api_062_stylecss_served_200 (0.24s)
+2026-06-17 10:42:56,156 [INFO] SkillSync-E2E: [PASS] test_api_063_appjs_not_empty (0.03s)
+2026-06-17 10:42:56,168 [INFO] SkillSync-E2E: [PASS] test_api_064_stylecss_not_empty (0.01s)
+2026-06-17 10:42:56,184 [INFO] SkillSync-E2E: [PASS] test_api_065_login_title_contains_skillsync (0.01s)
+2026-06-17 10:42:56,202 [INFO] SkillSync-E2E: [PASS] test_api_066_login_has_email_input (0.02s)
+2026-06-17 10:42:56,218 [INFO] SkillSync-E2E: [PASS] test_api_067_login_has_password_input (0.01s)
+2026-06-17 10:42:56,240 [INFO] SkillSync-E2E: [PASS] test_api_068_login_has_button (0.02s)
+2026-06-17 10:42:56,259 [INFO] SkillSync-E2E: [PASS] test_api_069_register_has_three_inputs (0.02s)
+2026-06-17 10:42:56,275 [INFO] SkillSync-E2E: [PASS] test_api_070_forgot_password_has_email_input (0.01s)
+2026-06-17 10:42:56,293 [INFO] SkillSync-E2E: [PASS] test_api_071_dashboard_references_appjs (0.02s)
+2026-06-17 10:42:56,313 [INFO] SkillSync-E2E: [PASS] test_api_072_dashboard_references_stylecss (0.02s)
+2026-06-17 10:42:57,102 [INFO] SkillSync-E2E: [PASS] test_api_073_firebase_firestore_endpoint_reachable (0.79s)
+2026-06-17 10:42:57,957 [INFO] SkillSync-E2E: [PASS] test_api_074_firebase_auth_endpoint_reachable (0.85s)
+2026-06-17 10:42:57,973 [INFO] SkillSync-E2E: [PASS] test_api_075_firebase_config_present_in_appjs (0.01s)
+2026-06-17 10:42:57,986 [INFO] SkillSync-E2E: [PASS] test_api_076_login_page_response_time_under_10s (0.01s)
+2026-06-17 10:42:58,000 [INFO] SkillSync-E2E: [PASS] test_api_077_dashboard_page_response_time_under_10s (0.01s)
+2026-06-17 10:42:58,016 [INFO] SkillSync-E2E: [PASS] test_api_078_login_body_content_not_empty (0.01s)
+2026-06-17 10:42:58,033 [INFO] SkillSync-E2E: [PASS] test_api_079_forgot_page_has_success_message_element (0.02s)
+2026-06-17 10:42:58,046 [INFO] SkillSync-E2E: [PASS] test_api_080_login_has_forgot_password_link (0.01s)
+2026-06-17 10:42:58,268 [INFO] SkillSync-E2E: [PASS] test_sec_081_env_file_not_exposed (0.22s)
+2026-06-17 10:42:58,554 [INFO] SkillSync-E2E: [FAIL] test_sec_082_firebase_debug_log_not_exposed (0.24s)
+2026-06-17 10:42:58,800 [INFO] SkillSync-E2E: [PASS] test_sec_083_git_config_not_exposed (0.24s)
+2026-06-17 10:42:59,023 [INFO] SkillSync-E2E: [PASS] test_sec_084_env_example_not_exposed (0.22s)
+2026-06-17 10:42:59,302 [INFO] SkillSync-E2E: [FAIL] test_sec_085_tests_directory_not_accessible (0.25s)
+2026-06-17 10:42:59,558 [INFO] SkillSync-E2E: [PASS] test_sec_086_selenium_tests_directory_not_accessible (0.23s)
+2026-06-17 10:42:59,790 [INFO] SkillSync-E2E: [SKIP] test_sec_087_package_lock_informational (0.23s)
+2026-06-17 10:43:00,075 [INFO] SkillSync-E2E: [FAIL] test_sec_088_app_python_files_not_served (0.26s)
+2026-06-17 10:43:00,109 [INFO] SkillSync-E2E: [PASS] test_sec_089_xss_not_reflected_in_login_html (0.03s)
+2026-06-17 10:43:00,123 [INFO] SkillSync-E2E: [PASS] test_sec_090_xss_not_reflected_in_index_html (0.01s)
+2026-06-17 10:43:00,138 [INFO] SkillSync-E2E: [PASS] test_sec_091_xss_not_reflected_in_forgot_password (0.01s)
+2026-06-17 10:43:00,154 [INFO] SkillSync-E2E: [PASS] test_sec_092_xss_not_reflected_in_dashboard (0.01s)
+2026-06-17 10:43:00,170 [INFO] SkillSync-E2E: [PASS] test_sec_093_no_private_key_in_appjs (0.01s)
+2026-06-17 10:43:00,188 [INFO] SkillSync-E2E: [PASS] test_sec_094_no_service_account_json_in_appjs (0.02s)
+2026-06-17 10:43:00,203 [INFO] SkillSync-E2E: [PASS] test_sec_095_no_private_key_id_in_appjs (0.01s)
+2026-06-17 10:43:00,219 [INFO] SkillSync-E2E: [PASS] test_sec_096_no_rsa_private_key_in_appjs (0.01s)
+2026-06-17 10:43:00,275 [INFO] SkillSync-E2E: [PASS] test_sec_097_no_plaintext_password_in_appjs (0.05s)
+2026-06-17 10:43:00,288 [INFO] SkillSync-E2E: [PASS] test_sec_098_https_site_responds_200 (0.01s)
+2026-06-17 10:43:00,541 [INFO] SkillSync-E2E: [PASS] test_sec_099_http_redirects_to_https (0.25s)
+2026-06-17 10:43:00,556 [INFO] SkillSync-E2E: [PASS] test_sec_100_firebase_imports_use_https (0.01s)
+2026-06-17 10:43:00,806 [INFO] SkillSync-E2E: [PASS] test_sec_101_no_directory_listing_at_root (0.25s)
+2026-06-17 10:43:00,821 [INFO] SkillSync-E2E: [SKIP] test_sec_102_x_content_type_options_header (0.01s)
+2026-06-17 10:43:00,837 [INFO] SkillSync-E2E: [SKIP] test_sec_103_x_frame_options_header (0.01s)
+2026-06-17 10:43:00,852 [INFO] SkillSync-E2E: [PASS] test_sec_104_strict_transport_security_header (0.01s)
+2026-06-17 10:43:00,870 [INFO] SkillSync-E2E: [PASS] test_sec_105_no_server_version_leak (0.01s)
+2026-06-17 10:43:00,883 [INFO] SkillSync-E2E: Session complete. Total results collected: 50
