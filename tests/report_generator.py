@@ -53,6 +53,9 @@ MODULE_COLORS = {
     "test_14_vulnerability":    ("FDEDEC", "7B241C"),   # Red   — Security
     "test_15_ui_ux":            ("F0E6FF", "5B2D8E"),   # Purple — UI/UX
     "test_e2e_complete":        ("E8F8F5", "0E6655"),   # Teal — E2E Complete
+    "test_functionality":       ("D1F2EB", "1A5276"),
+    "test_vulnerability":       ("FDEDEC", "7B241C"),
+    "test_ui_ux":               ("F0E6FF", "5B2D8E"),
 }
 
 TEST_TYPE_MAP = {
@@ -69,9 +72,12 @@ TEST_TYPE_MAP = {
     "settings":       "Functional",
     "api_unit":       "API Unit",
     "validation":     "Validation",
-    "vulnerability":  "Security",
+    "vulnerability":  "Vulnerability",
     "ui_ux":          "UI/UX",
     "e2e_complete":   "Complete E2E Suite",
+    "test_functionality": "Functionality",
+    "test_vulnerability": "Vulnerability",
+    "test_ui_ux": "UI/UX",
 }
 
 PRIORITY_MAP = {
@@ -380,6 +386,9 @@ def _build_results_sheet(wb, results, timestamp):
         "test_14_vulnerability":    "14 - Vulnerability",
         "test_15_ui_ux":            "15 - UI / UX",
         "test_e2e_complete":        "All E2E Tests",
+        "test_functionality":       "Functionality",
+        "test_vulnerability":       "Vulnerability",
+        "test_ui_ux":               "UI/UX",
     }
 
     for label, col in headers:
