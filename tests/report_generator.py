@@ -36,17 +36,21 @@ CLR_SUMMARY_HDR = "4A90D9"   # Summary sub-headers
 
 # Module color map (each test module gets a distinct color badge)
 MODULE_COLORS = {
-    "test_01_login":           ("D1F2EB", "1A5276"),
-    "test_02_register":        ("FDEBD0", "A04000"),
-    "test_03_forgot_password": ("E8DAEF", "6C3483"),
-    "test_04_dashboard_home":  ("D5F5E3", "145A32"),
-    "test_05_profile":         ("D6EAF8", "1A5276"),
-    "test_06_users":           ("FDFBD4", "7D6608"),
-    "test_07_chat":            ("FADBD8", "922B21"),
-    "test_08_session":         ("D5D8DC", "2E4053"),
-    "test_09_skill_test":      ("D1F2EB", "117A65"),
-    "test_10_notes":           ("FDEDEC", "C0392B"),
-    "test_11_settings":        ("EBF5FB", "1B4F72"),
+    "test_01_login":            ("D1F2EB", "1A5276"),
+    "test_02_register":         ("FDEBD0", "A04000"),
+    "test_03_forgot_password":  ("E8DAEF", "6C3483"),
+    "test_04_dashboard_home":   ("D5F5E3", "145A32"),
+    "test_05_profile":          ("D6EAF8", "1A5276"),
+    "test_06_users":            ("FDFBD4", "7D6608"),
+    "test_07_chat":             ("FADBD8", "922B21"),
+    "test_08_session":          ("D5D8DC", "2E4053"),
+    "test_09_skill_test":       ("D1F2EB", "117A65"),
+    "test_10_notes":            ("FDEDEC", "C0392B"),
+    "test_11_settings":         ("EBF5FB", "1B4F72"),
+    # New modules
+    "test_12_api_unit":         ("E8F8F5", "0E6655"),   # Teal — API Unit
+    "test_13_validation":       ("FEF9E7", "7D6608"),   # Amber — Validation
+    "test_14_vulnerability":    ("FDEDEC", "7B241C"),   # Red   — Security
 }
 
 TEST_TYPE_MAP = {
@@ -61,6 +65,9 @@ TEST_TYPE_MAP = {
     "skill_test":     "Functional",
     "notes":          "Unit",
     "settings":       "Functional",
+    "api_unit":       "API Unit",
+    "validation":     "Validation",
+    "vulnerability":  "Security",
 }
 
 PRIORITY_MAP = {
@@ -353,17 +360,20 @@ def _build_results_sheet(wb, results, timestamp):
 
     # Determine module display name from results
     MODULE_DISPLAY = {
-        "test_01_login":           "01 - Login",
-        "test_02_register":        "02 - Register",
-        "test_03_forgot_password": "03 - Forgot Pwd",
-        "test_04_dashboard_home":  "04 - Home",
-        "test_05_profile":         "05 - Profile",
-        "test_06_users":           "06 - Users",
-        "test_07_chat":            "07 - Chat",
-        "test_08_session":         "08 - Session",
-        "test_09_skill_test":      "09 - Skill Test",
-        "test_10_notes":           "10 - Notes",
-        "test_11_settings":        "11 - Settings",
+        "test_01_login":            "01 - Login",
+        "test_02_register":         "02 - Register",
+        "test_03_forgot_password":  "03 - Forgot Pwd",
+        "test_04_dashboard_home":   "04 - Home",
+        "test_05_profile":          "05 - Profile",
+        "test_06_users":            "06 - Users",
+        "test_07_chat":             "07 - Chat",
+        "test_08_session":          "08 - Session",
+        "test_09_skill_test":       "09 - Skill Test",
+        "test_10_notes":            "10 - Notes",
+        "test_11_settings":         "11 - Settings",
+        "test_12_api_unit":         "12 - API Unit",
+        "test_13_validation":       "13 - Validation",
+        "test_14_vulnerability":    "14 - Vulnerability",
     }
 
     for label, col in headers:
