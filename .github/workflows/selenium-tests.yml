@@ -1,4 +1,4 @@
-name: 🧪 SkillSync E2E Selenium Tests
+name: 🧪 SkillSync Complete E2E Tests (105 Test Cases)
 
 on:
   push:
@@ -15,7 +15,7 @@ on:
 
 jobs:
   selenium-e2e-tests:
-    name: Run 174 E2E Tests & Generate Excel Report
+    name: Run 105 E2E Tests & Generate Excel Report
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
@@ -57,8 +57,8 @@ jobs:
           STATUS2=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:8080/login.html)
           echo "login.html HTTP status: $STATUS2"
 
-      # ── 6. Run ALL 174 Selenium Tests ────────────────────────────────────
-      - name: 🧪 Run Selenium E2E Tests (174 tests)
+      # ── 6. Run ALL 105 Selenium Tests ────────────────────────────────────
+      - name: 🧪 Run Selenium E2E Tests (105 tests)
         env:
           TEST_EMAIL:      ${{ secrets.TEST_EMAIL }}
           TEST_PASSWORD:   ${{ secrets.TEST_PASSWORD }}
@@ -68,7 +68,7 @@ jobs:
           HEADLESS:        "true"
         run: |
           cd tests
-          python -m pytest . \
+          python -m pytest test_e2e_complete.py \
             -v \
             --tb=short \
             --no-header \
@@ -129,15 +129,15 @@ jobs:
         run: |
           cd tests
 
-          # Count results from pytest output
-          PASSED=$(grep -c " PASSED" pytest_output.txt 2>/dev/null || echo 0)
-          FAILED=$(grep -c " FAILED" pytest_output.txt 2>/dev/null || echo 0)
-          SKIPPED=$(grep -c " SKIPPED" pytest_output.txt 2>/dev/null || echo 0)
+          # Count results from pytest output using wc -l to avoid exit code 1 when no matches
+          PASSED=$(grep " PASSED" pytest_output.txt 2>/dev/null | wc -l); PASSED="${PASSED// /}"
+          FAILED=$(grep " FAILED" pytest_output.txt 2>/dev/null | wc -l); FAILED="${FAILED// /}"
+          SKIPPED=$(grep " SKIPPED" pytest_output.txt 2>/dev/null | wc -l); SKIPPED="${SKIPPED// /}"
           TOTAL=$((PASSED + FAILED + SKIPPED))
 
           # Write GitHub Step Summary (visible in Actions → Summary tab)
           cat >> $GITHUB_STEP_SUMMARY << EOF
-          ## 🧪 SkillSync E2E Test Report — Run #${{ github.run_number }}
+          ## 🧪 SkillSync Complete E2E Test Report — Run #${{ github.run_number }}
 
           | Metric | Value |
           |--------|-------|

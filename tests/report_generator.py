@@ -51,6 +51,7 @@ MODULE_COLORS = {
     "test_12_api_unit":         ("E8F8F5", "0E6655"),   # Teal — API Unit
     "test_13_validation":       ("FEF9E7", "7D6608"),   # Amber — Validation
     "test_14_vulnerability":    ("FDEDEC", "7B241C"),   # Red   — Security
+    "test_15_ui_ux":            ("F0E6FF", "5B2D8E"),   # Purple — UI/UX
 }
 
 TEST_TYPE_MAP = {
@@ -68,6 +69,7 @@ TEST_TYPE_MAP = {
     "api_unit":       "API Unit",
     "validation":     "Validation",
     "vulnerability":  "Security",
+    "ui_ux":          "UI/UX",
 }
 
 PRIORITY_MAP = {
@@ -374,6 +376,7 @@ def _build_results_sheet(wb, results, timestamp):
         "test_12_api_unit":         "12 - API Unit",
         "test_13_validation":       "13 - Validation",
         "test_14_vulnerability":    "14 - Vulnerability",
+        "test_15_ui_ux":            "15 - UI / UX",
     }
 
     for label, col in headers:

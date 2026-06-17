@@ -23,6 +23,9 @@ on:
     branches: ["**"]
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 jobs:
   full-test-suite:
     name: "\U0001F9EA Run All Tests & Generate Excel Report"
@@ -177,7 +180,7 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: "SkillSync-Test-Report-Run-${{ github.run_number }}-${{ github.ref_name }}"
+          name: "SkillSync-E2E-284-TestCases-Report-${{ github.run_number }}-${{ github.ref_name }}"
           path: tests/reports/*.xlsx
           retention-days: 30
           if-no-files-found: warn
@@ -223,8 +226,10 @@ jobs:
           VAL_F=$(grep "test_13_validation"    pytest_output.txt 2>/dev/null | grep " FAILED" | wc -l); VAL_F="${VAL_F// /}"
           VUL_P=$(grep "test_14_vulnerability" pytest_output.txt 2>/dev/null | grep " PASSED" | wc -l); VUL_P="${VUL_P// /}"
           VUL_F=$(grep "test_14_vulnerability" pytest_output.txt 2>/dev/null | grep " FAILED" | wc -l); VUL_F="${VUL_F// /}"
-          E2E_P=$((PASSED  - API_P  - VAL_P  - VUL_P))
-          E2E_F=$((FAILED  - API_F  - VAL_F  - VUL_F))
+          UIX_P=$(grep "test_15_ui_ux"         pytest_output.txt 2>/dev/null | grep " PASSED" | wc -l); UIX_P="${UIX_P// /}"
+          UIX_F=$(grep "test_15_ui_ux"         pytest_output.txt 2>/dev/null | grep " FAILED" | wc -l); UIX_F="${UIX_F// /}"
+          E2E_P=$((PASSED  - API_P  - VAL_P  - VUL_P  - UIX_P))
+          E2E_F=$((FAILED  - API_F  - VAL_F  - VUL_F  - UIX_F))
 
           ICON="✅"
           if [ "$FAILED" -gt 0 ]; then ICON="❌"; fi
@@ -248,6 +253,7 @@ jobs:
           | 🔬 API / Unit | ${API_P} | ${API_F} |
           | ✅ Validation | ${VAL_P} | ${VAL_F} |
           | 🔒 Security | ${VUL_P} | ${VUL_F} |
+          | 🎨 UI/UX | ${UIX_P} | ${UIX_F} |
           | 🧪 E2E Selenium | ${E2E_P} | ${E2E_F} |
 
           ### 📥 Download Artifacts

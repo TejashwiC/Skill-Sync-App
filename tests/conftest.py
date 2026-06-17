@@ -190,12 +190,15 @@ def pytest_runtest_logreport(report):
         _API_MODULES  = ("test_12_api_unit",)
         _VAL_MODULES  = ("test_13_validation",)
         _VUL_MODULES  = ("test_14_vulnerability",)
+        _UIX_MODULES  = ("test_15_ui_ux",)
         if any(m in module for m in _API_MODULES):
             test_category = "API Unit"
         elif any(m in module for m in _VAL_MODULES):
             test_category = "Validation"
         elif any(m in module for m in _VUL_MODULES):
             test_category = "Security"
+        elif any(m in module for m in _UIX_MODULES):
+            test_category = "UI/UX"
         else:
             test_category = "Functional"
 

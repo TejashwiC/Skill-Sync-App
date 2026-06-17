@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation"
+    app:strokeColor="@color/border"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvSessionName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Session Name"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Live badge -->
+            <TextView
+                android:id="@+id/tvSessionStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EF4444"
+                android:textColor="@color/white"
+                android:text="LIVE"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSessionHost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Host: John Doe"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvSessionSkill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skill: Kotlin Development"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvSessionPlatform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Platform: Zoom"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvSessionTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Started: 10:00 AM · Running: 30m"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Live Session Secret Code Box -->
+        <LinearLayout
+            android:id="@+id/layoutSecretCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F3F4F6"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SECRET JOIN CODE"
+                android:textColor="@color/text_secondary"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSecretCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABC123"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.2"/>
+        </LinearLayout>
+
+        <!-- Ratings Row -->
+        <TextView
+            android:id="@+id/tvSessionRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rating: ⭐⭐⭐⭐ 4.0/5"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnJoinSession"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Join Meeting" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEndSession"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End"
+                android:textColor="#EF4444"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
