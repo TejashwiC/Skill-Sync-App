@@ -40,9 +40,10 @@ jobs:
 
       # ── 4. Setup Chrome ───────────────────────────────────────────────────
       - name: 🌐 Setup Chrome browser
-        uses: browser-actions/setup-chrome@v1
-        with:
-          chrome-version: stable
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y google-chrome-stable
+          google-chrome --version
 
       # ── 5. Start the SkillSync static app server on port 8080 ────────────
       - name: 🚀 Start local HTTP server (port 8080)
