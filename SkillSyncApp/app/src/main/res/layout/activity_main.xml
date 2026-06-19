@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <!-- Fragment container hosting navigation destinations -->
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"
+        app:layout_constraintBottom_toTopOf="@id/custom_bottom_nav"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- Custom Bottom Navigation bar to support 6 tabs -->
+    <LinearLayout
+        android:id="@+id/custom_bottom_nav"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="?android:attr/windowBackground"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        
+        <ImageView android:id="@+id/tab_home" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:src="@drawable/ic_home" android:padding="16dp" android:contentDescription="Home"/>
+        <ImageView android:id="@+id/tab_users" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:src="@drawable/ic_users" android:padding="16dp" android:contentDescription="Users"/>
+        <ImageView android:id="@+id/tab_chat" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:src="@drawable/ic_chat" android:padding="16dp" android:contentDescription="Chat"/>
+        <ImageView android:id="@+id/tab_session" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:src="@drawable/ic_session" android:padding="16dp" android:contentDescription="Sessions"/>
+        <ImageView android:id="@+id/tab_test" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:src="@drawable/ic_test" android:padding="16dp" android:contentDescription="Tests"/>
+        <!-- Custom Calendar tab, reusing a standard calendar icon. If not found, use a fallback -->
+        <ImageView android:id="@+id/tab_calendar" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:src="@android:drawable/ic_menu_today" android:padding="16dp" android:contentDescription="Calendar"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

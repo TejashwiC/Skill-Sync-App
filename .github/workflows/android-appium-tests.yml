@@ -1,0 +1,85 @@
+name: Android Appium Tests
+
+on:
+  push:
+    paths:
+      - 'android_app/**'
+  pull_request:
+    paths:
+      - 'android_app/**'
+  workflow_dispatch:
+
+jobs:
+  appium-tests:
+    runs-on: macos-latest # Required for hardware acceleration for Android Emulators on GitHub Actions
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Cache Gradle packages
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      - name: Make gradlew executable
+        run: chmod +x SkillSyncApp/gradlew
+        
+      - name: Build Android APK
+        working-directory: ./SkillSyncApp
+        run: ./gradlew assembleDebug
+
+      - name: Copy APK to android_app
+        run: |
+          mkdir -p android_app/app
+          cp SkillSyncApp/app/build/outputs/apk/debug/app-debug.apk android_app/app/app-debug.apk || echo "APK copy failed, ensure correct build path."
+
+      - name: Install Appium and Dependencies
+        working-directory: ./android_app
+        run: npm install
+
+      - name: Start Appium Tests on Emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          target: default
+          arch: x86_64
+          profile: Nexus 6
+          script: |
+            cd android_app
+            npm test
+            npm run report
+
+      - name: Upload Test Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Appium-Test-Reports
+          path: |
+            android_app/reports/appium-report.xlsx
+            android_app/reports/appium-report.html
+          retention-days: 14
+
+      - name: Upload Test Screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Appium-Error-Screenshots
+          path: android_app/screenshots/
+          retention-days: 14

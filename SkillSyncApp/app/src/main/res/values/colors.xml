@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core Brand Colors -->
+    <color name="primary">#4F46E5</color>      <!-- Indigo -->
+    <color name="secondary">#9333EA</color>    <!-- Purple -->
+    <color name="background">#F0F2FF</color>   <!-- Light Lavender -->
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#111827</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="border">#E5E7EB</color>
+    <color name="error">#D32F2F</color>
+
+    <!-- Standard Material Colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Card Colors from Web Design System -->
+    <color name="card_blue">#3B82F6</color>
+    <color name="card_yellow">#F59E0B</color>
+    <color name="card_purple">#8B5CF6</color>
+    <color name="card_orange">#F97316</color>
+    <color name="card_green">#22C55E</color>
+    <color name="card_red">#EF4444</color>
+    <color name="card_pink">#EC4899</color>
+    <color name="card_cyan">#06B6D4</color>
+
+    <!-- Chat Bubbles -->
+    <color name="chat_sent">#25D366</color>      <!-- WhatsApp Green -->
+    <color name="chat_received">#FFFFFF</color>
+</resources>

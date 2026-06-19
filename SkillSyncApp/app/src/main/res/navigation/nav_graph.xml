@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <!-- 5 Primary Destinations (in Bottom Nav) -->
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.skillsync.app.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_users"
+        android:name="com.skillsync.app.ui.users.UsersFragment"
+        android:label="Users"
+        tools:layout="@layout/fragment_users" />
+
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.skillsync.app.ui.chat.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/nav_session"
+        android:name="com.skillsync.app.ui.session.SessionFragment"
+        android:label="Sessions"
+        tools:layout="@layout/fragment_session" />
+
+    <fragment
+        android:id="@+id/nav_test"
+        android:name="com.skillsync.app.ui.test.TestFragment"
+        android:label="Tests"
+        tools:layout="@layout/fragment_test" />
+
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.skillsync.app.ui.calendar.CalendarFragment"
+        android:label="Calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <!-- Secondary Navigation Destinations (accessible via clicks) -->
+    
+    <!-- Profile Sub-Screens -->
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.skillsync.app.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+        
+    <fragment
+        android:id="@+id/nav_view_profile"
+        android:name="com.skillsync.app.ui.profile.ViewProfileFragment"
+        android:label="View Profile"
+        tools:layout="@layout/fragment_view_profile" />
+
+    <fragment
+        android:id="@+id/nav_edit_profile"
+        android:name="com.skillsync.app.ui.profile.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <fragment
+        android:id="@+id/nav_add_skill"
+        android:name="com.skillsync.app.ui.profile.AddSkillFragment"
+        android:label="Add Skill"
+        tools:layout="@layout/fragment_add_skill" />
+
+    <fragment
+        android:id="@+id/nav_skills_overview"
+        android:name="com.skillsync.app.ui.profile.SkillsOverviewFragment"
+        android:label="Skills Overview"
+        tools:layout="@layout/fragment_skills_overview" />
+
+    <!-- Users Sub-Screens -->
+    <fragment
+        android:id="@+id/nav_user_profile"
+        android:name="com.skillsync.app.ui.users.UserProfileFragment"
+        android:label="User Profile"
+        tools:layout="@layout/fragment_user_profile" />
+
+    <fragment
+        android:id="@+id/nav_search_users"
+        android:name="com.skillsync.app.ui.users.SearchUsersFragment"
+        android:label="Search Users"
+        tools:layout="@layout/fragment_search_users" />
+
+    <fragment
+        android:id="@+id/nav_followers"
+        android:name="com.skillsync.app.ui.users.FollowersFragment"
+        android:label="Followers"
+        tools:layout="@layout/fragment_followers" />
+
+    <fragment
+        android:id="@+id/nav_following"
+        android:name="com.skillsync.app.ui.users.FollowingFragment"
+        android:label="Following"
+        tools:layout="@layout/fragment_following" />
+
+    <!-- Chat Sub-Screens -->
+    <fragment
+        android:id="@+id/nav_chat_conversation"
+        android:name="com.skillsync.app.ui.chat.ChatConversationFragment"
+        android:label="Conversation"
+        tools:layout="@layout/fragment_chat_conversation" />
+
+    <fragment
+        android:id="@+id/nav_create_group"
+        android:name="com.skillsync.app.ui.chat.CreateGroupFragment"
+        android:label="Create Group"
+        tools:layout="@layout/fragment_create_group" />
+
+    <fragment
+        android:id="@+id/nav_inbox"
+        android:name="com.skillsync.app.ui.chat.InboxFragment"
+        android:label="Inbox"
+        tools:layout="@layout/fragment_inbox" />
+
+    <fragment
+        android:id="@+id/nav_chat_settings"
+        android:name="com.skillsync.app.ui.chat.ChatSettingsFragment"
+        android:label="Chat Settings"
+        tools:layout="@layout/fragment_chat_settings" />
+
+    <!-- Sessions Sub-Screens -->
+    <fragment
+        android:id="@+id/nav_start_session"
+        android:name="com.skillsync.app.ui.session.StartSessionFragment"
+        android:label="Start Session"
+        tools:layout="@layout/fragment_start_session" />
+
+    <fragment
+        android:id="@+id/nav_join_session"
+        android:name="com.skillsync.app.ui.session.JoinSessionFragment"
+        android:label="Join Session"
+        tools:layout="@layout/fragment_join_session" />
+
+    <fragment
+        android:id="@+id/nav_live_sessions"
+        android:name="com.skillsync.app.ui.session.LiveSessionsFragment"
+        android:label="Live Sessions"
+        tools:layout="@layout/fragment_live_sessions" />
+
+    <fragment
+        android:id="@+id/nav_session_history"
+        android:name="com.skillsync.app.ui.session.SessionHistoryFragment"
+        android:label="Session History"
+        tools:layout="@layout/fragment_session_history" />
+
+    <fragment
+        android:id="@+id/nav_ratings"
+        android:name="com.skillsync.app.ui.session.RatingsFragment"
+        android:label="Ratings"
+        tools:layout="@layout/fragment_ratings" />
+
+    <!-- Tests Sub-Screens -->
+    <fragment
+        android:id="@+id/nav_create_test"
+        android:name="com.skillsync.app.ui.test.CreateTestFragment"
+        android:label="Create Test"
+        tools:layout="@layout/fragment_create_test" />
+
+    <fragment
+        android:id="@+id/nav_add_question"
+        android:name="com.skillsync.app.ui.test.AddQuestionFragment"
+        android:label="Add Question"
+        tools:layout="@layout/fragment_add_question" />
+
+    <fragment
+        android:id="@+id/nav_attend_test"
+        android:name="com.skillsync.app.ui.test.AttendTestFragment"
+        android:label="Attend Test"
+        tools:layout="@layout/fragment_attend_test" />
+
+    <fragment
+        android:id="@+id/nav_test_results"
+        android:name="com.skillsync.app.ui.test.TestResultsFragment"
+        android:label="Test Results"
+        tools:layout="@layout/fragment_test_results" />
+
+    <fragment
+        android:id="@+id/nav_leaderboard"
+        android:name="com.skillsync.app.ui.test.LeaderboardFragment"
+        android:label="Leaderboard"
+        tools:layout="@layout/fragment_leaderboard" />
+
+    <!-- Notes Sub-Screens -->
+    <fragment
+        android:id="@+id/nav_notes"
+        android:name="com.skillsync.app.ui.notes.NotesFragment"
+        android:label="Notes"
+        tools:layout="@layout/fragment_notes" />
+
+    <fragment
+        android:id="@+id/nav_upload_pdf"
+        android:name="com.skillsync.app.ui.notes.UploadPdfFragment"
+        android:label="Upload PDF"
+        tools:layout="@layout/fragment_upload_pdf" />
+
+    <!-- Settings Screen -->
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.skillsync.app.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_blocked_users"
+        android:name="com.skillsync.app.ui.settings.BlockedUsersFragment"
+        android:label="Blocked Users"
+        tools:layout="@layout/fragment_blocked_users" />
+
+</navigation>

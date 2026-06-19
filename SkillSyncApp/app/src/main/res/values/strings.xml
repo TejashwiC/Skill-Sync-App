@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">SkillSync</string>
+
+    <!-- Navigation Labels -->
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_users">Users</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_sessions">Sessions</string>
+    <string name="title_tests">Tests</string>
+    <string name="title_notes">Notes</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Authentication -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+    <string name="already_have_account">Already have an account? Login</string>
+
+    <!-- General -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="delete">Delete</string>
+
+    <!-- Profile Fragment -->
+    <string name="profile_user_name">User Name</string>
+    <string name="profile_user_email">user@example.com</string>
+    <string name="profile_view_full">👁 View Full Profile</string>
+    <string name="profile_edit_details">✏ Edit Profile Details</string>
+    <string name="profile_skills_overview">📚 My Skills Overview</string>
+    <string name="profile_add_edit_skills">➕ Add/Edit Specific Skills</string>
+    <string name="profile_shared_notes">📄 Shared PDF Notes / PDFs</string>
+    <string name="profile_app_settings">⚙ Notification &amp; App Settings</string>
+    <string name="profile_logout">🚪 Logout</string>
+</resources>
