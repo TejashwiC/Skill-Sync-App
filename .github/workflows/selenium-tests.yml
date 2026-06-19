@@ -1,7 +1,7 @@
-name: 🧪 SkillSync Complete E2E Tests (105 Test Cases)
+name: 🧪 SkillSync Complete E2E Tests (303 Test Cases)
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
 on:
   push:
@@ -18,7 +18,7 @@ on:
 
 jobs:
   selenium-e2e-tests:
-    name: Run 105 E2E Tests & Generate Excel Report
+    name: Run 303 E2E Tests & Generate Excel Report
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
@@ -61,8 +61,8 @@ jobs:
           STATUS2=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:8080/login.html)
           echo "login.html HTTP status: $STATUS2"
 
-      # ── 6. Run ALL 105 Selenium Tests ────────────────────────────────────
-      - name: 🧪 Run Selenium E2E Tests (105 tests)
+      # ── 6. Run ALL 303 Selenium Tests ────────────────────────────────────
+      - name: 🧪 Run Selenium E2E Tests (303 tests)
         env:
           TEST_EMAIL:      ${{ secrets.TEST_EMAIL }}
           TEST_PASSWORD:   ${{ secrets.TEST_PASSWORD }}
@@ -100,7 +100,7 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: "E2E-Report-105-TestCases-Passed"
+          name: "E2E-Report-303-TestCases-Passed"
           path: tests/reports/*.xlsx
           retention-days: 30
           if-no-files-found: warn

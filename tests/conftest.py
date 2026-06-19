@@ -153,15 +153,24 @@ def pytest_runtest_logreport(report):
         fn_name = parts[-1] if len(parts) > 1 else report.nodeid
 
         # ── Determine test type from fn_name ─────────────────────────────────
-        if fn_name.startswith("test_sec_"):
+        if fn_name.startswith("test_sec_") or fn_name.startswith("test_vuln_"):
             test_category = "Vulnerability"
             module = "test_vulnerability"
-        elif fn_name.startswith("test_dash_"):
+        elif fn_name.startswith("test_ui_ux_") or fn_name.startswith("test_dash_"):
             test_category = "UI/UX"
             module = "test_ui_ux"
+        elif fn_name.startswith("test_load_"):
+            test_category = "Load"
+            module = "test_load"
+        elif fn_name.startswith("test_val_"):
+            test_category = "Validation"
+            module = "test_validation"
+        elif fn_name.startswith("test_unit_") or fn_name.startswith("test_api_"):
+            test_category = "Unit"
+            module = "test_unit"
         else:
-            test_category = "Functionality"
-            module = "test_functionality"
+            test_category = "Functional"
+            module = "test_functional"
 
         test_results.append({
             "module":    module,

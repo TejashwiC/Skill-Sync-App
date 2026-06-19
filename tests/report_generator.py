@@ -48,36 +48,22 @@ MODULE_COLORS = {
     "test_10_notes":            ("FDEDEC", "C0392B"),
     "test_11_settings":         ("EBF5FB", "1B4F72"),
     # New modules
-    "test_12_api_unit":         ("E8F8F5", "0E6655"),   # Teal — API Unit
-    "test_13_validation":       ("FEF9E7", "7D6608"),   # Amber — Validation
-    "test_14_vulnerability":    ("FDEDEC", "7B241C"),   # Red   — Security
-    "test_15_ui_ux":            ("F0E6FF", "5B2D8E"),   # Purple — UI/UX
-    "test_e2e_complete":        ("E8F8F5", "0E6655"),   # Teal — E2E Complete
-    "test_functionality":       ("D1F2EB", "1A5276"),
+    "test_functional":          ("D1F2EB", "1A5276"),
     "test_vulnerability":       ("FDEDEC", "7B241C"),
     "test_ui_ux":               ("F0E6FF", "5B2D8E"),
+    "test_unit":                ("E8F8F5", "0E6655"),
+    "test_validation":          ("FEF9E7", "7D6608"),
+    "test_load":                ("FDEBD0", "A04000"),
 }
 
 TEST_TYPE_MAP = {
     "register":       "Validation",
-    "login":          "Functional",
-    "forgot":         "Validation",
-    "home":           "Functional",
-    "profile":        "Functional",
-    "users":          "Functional",
-    "chat":           "Functional",
-    "session":        "Functional",
-    "skill_test":     "Functional",
-    "notes":          "Unit",
-    "settings":       "Functional",
-    "api_unit":       "API Unit",
-    "validation":     "Validation",
-    "vulnerability":  "Vulnerability",
-    "ui_ux":          "UI/UX",
-    "e2e_complete":   "Complete E2E Suite",
-    "test_functionality": "Functionality",
-    "test_vulnerability": "Vulnerability",
-    "test_ui_ux": "UI/UX",
+    "test_functional":      "Functional",
+    "test_vulnerability":   "Vulnerability",
+    "test_ui_ux":           "UI/UX",
+    "test_unit":            "Unit",
+    "test_validation":      "Validation",
+    "test_load":            "Load",
 }
 
 PRIORITY_MAP = {
@@ -370,25 +356,12 @@ def _build_results_sheet(wb, results, timestamp):
 
     # Determine module display name from results
     MODULE_DISPLAY = {
-        "test_01_login":            "01 - Login",
-        "test_02_register":         "02 - Register",
-        "test_03_forgot_password":  "03 - Forgot Pwd",
-        "test_04_dashboard_home":   "04 - Home",
-        "test_05_profile":          "05 - Profile",
-        "test_06_users":            "06 - Users",
-        "test_07_chat":             "07 - Chat",
-        "test_08_session":          "08 - Session",
-        "test_09_skill_test":       "09 - Skill Test",
-        "test_10_notes":            "10 - Notes",
-        "test_11_settings":         "11 - Settings",
-        "test_12_api_unit":         "12 - API Unit",
-        "test_13_validation":       "13 - Validation",
-        "test_14_vulnerability":    "14 - Vulnerability",
-        "test_15_ui_ux":            "15 - UI / UX",
-        "test_e2e_complete":        "All E2E Tests",
-        "test_functionality":       "Functionality",
-        "test_vulnerability":       "Vulnerability",
-        "test_ui_ux":               "UI/UX",
+        "test_functional":      "Functional",
+        "test_vulnerability":   "Vulnerability",
+        "test_ui_ux":           "UI/UX",
+        "test_unit":            "Unit",
+        "test_validation":      "Validation",
+        "test_load":            "Load",
     }
 
     for label, col in headers:
