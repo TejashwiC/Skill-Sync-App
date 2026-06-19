@@ -1,0 +1,8 @@
+2026-06-19 14:41:52,290 [INFO] SkillSync-E2E: [PASS] test_security_routing (3.62s)
+2026-06-19 14:41:54,608 [INFO] SkillSync-E2E: Screenshot saved: C:\Users\tejas\OneDrive\Desktop\SkillSync\tests\screenshots\test_ui_rendering_and_toggle_144154.png
+2026-06-19 14:41:54,609 [INFO] SkillSync-E2E: [PASS] test_ui_rendering_and_toggle (2.07s)
+2026-06-19 14:41:57,320 [INFO] SkillSync-E2E: Screenshot saved: C:\Users\tejas\OneDrive\Desktop\SkillSync\tests\screenshots\test_validation_fake_login_144156.png
+2026-06-19 14:41:57,321 [INFO] SkillSync-E2E: [PASS] test_validation_fake_login (2.06s)
+2026-06-19 14:42:00,132 [INFO] SkillSync-E2E: Screenshot saved: C:\Users\tejas\OneDrive\Desktop\SkillSync\tests\screenshots\test_ui_ux_button_styling_144159.png
+2026-06-19 14:42:00,132 [INFO] SkillSync-E2E: [PASS] test_ui_ux_button_styling (2.07s)
+2026-06-19 14:42:05,482 [INFO] SkillSync-E2E: Session complete. Total results collected: 4

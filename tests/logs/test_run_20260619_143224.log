@@ -1,0 +1,48 @@
+2026-06-19 14:33:18,568 [INFO] SkillSync-E2E: [PASS] test_security_routing (2.74s)
+2026-06-19 14:33:20,780 [WARNING] SkillSync-E2E: Could not save screenshot: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=149.0.7827.103)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff72f3b3fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff72f3b4000+14980]
+	chromedriver!(No symbol) [0x7ff72eef793d]
+	chromedriver!(No symbol) [0x7ff72eee2d82]
+	chromedriver!(No symbol) [0x7ff72ef090cc]
+	chromedriver!(No symbol) [0x7ff72ef81aa0]
+	chromedriver!(No symbol) [0x7ff72ef9ec82]
+	chromedriver!(No symbol) [0x7ff72ef4401c]
+	chromedriver!(No symbol) [0x7ff72ef44f43]
+	chromedriver!GetHandleVerifier [0x7ff72f997591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff72f991902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff72f9b7115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff72f3d1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff72f3da82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff72f3bd744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff72f3bd8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff72f3a1447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ff8ede4e957+17]
+	ntdll!RtlUserThreadStart [0x7ff8ef167c1c+2c]
+
+2026-06-19 14:33:20,821 [INFO] SkillSync-E2E: [PASS] test_ui_rendering_and_toggle (2.07s)
+2026-06-19 14:33:20,920 [WARNING] SkillSync-E2E: Could not save screenshot: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff72f3b3fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff72f3b4000+14980]
+	chromedriver!(No symbol) [0x7ff72eef7726]
+	chromedriver!(No symbol) [0x7ff72ef43083]
+	chromedriver!(No symbol) [0x7ff72ef7a2d2]
+	chromedriver!(No symbol) [0x7ff72ef740d2]
+	chromedriver!(No symbol) [0x7ff72ef73892]
+	chromedriver!(No symbol) [0x7ff72eec03e5]
+	chromedriver!GetHandleVerifier [0x7ff72f997591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff72f991902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff72f9b7115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff72f3d1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff72f3da82c+3b1ac]
+	chromedriver!(No symbol) [0x7ff72eebf188]
+	chromedriver!GetHandleVerifier [0x7ff72fb67b58+7c84d8]
+	KERNEL32!BaseThreadInitThunk [0x7ff8ede4e957+17]
+	ntdll!RtlUserThreadStart [0x7ff8ef167c1c+2c]
+
+2026-06-19 14:33:20,920 [INFO] SkillSync-E2E: [PASS] test_validation_fake_login (0.05s)
+2026-06-19 14:33:25,994 [INFO] SkillSync-E2E: Session complete. Total results collected: 3

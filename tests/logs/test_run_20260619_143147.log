@@ -1,0 +1,5 @@
+2026-06-19 14:31:48,178 [INFO] WDM: ====== WebDriver manager ======
+2026-06-19 14:31:49,791 [INFO] WDM: Get LATEST chromedriver version for google-chrome
+2026-06-19 14:31:50,349 [INFO] WDM: Get LATEST chromedriver version for google-chrome
+2026-06-19 14:31:50,941 [INFO] WDM: Driver [C:\Users\tejas\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2026-06-19 14:31:51,368 [INFO] SkillSync-E2E: Session complete. Total results collected: 0
