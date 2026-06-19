@@ -84,8 +84,8 @@ async function generateReports() {
     const reportsDir = path.join(__dirname, '..', 'reports');
     if (!fs.existsSync(reportsDir)) fs.mkdirSync(reportsDir, { recursive: true });
 
-    await workbook.xlsx.writeFile(path.join(reportsDir, 'appium-report.xlsx'));
-    console.log('Excel report generated at reports/appium-report.xlsx');
+    await workbook.xlsx.writeFile(path.join(reportsDir, 'E2E_SkillSync_Appium_Test_Cases.xlsx'));
+    console.log('Excel report generated at reports/E2E_SkillSync_Appium_Test_Cases.xlsx');
 
     // 2. GENERATE HTML REPORT
     const htmlContent = `
