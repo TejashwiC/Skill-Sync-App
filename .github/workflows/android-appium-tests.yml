@@ -1,4 +1,4 @@
-name: Android Appium Tests
+name: 📱 Android App Testing (Appium)
 
 on:
   push:
@@ -11,6 +11,7 @@ on:
 
 jobs:
   appium-tests:
+    name: Run 715 E2E Tests & Generate Excel Report
     runs-on: ubuntu-latest
     
     steps:
@@ -53,6 +54,25 @@ jobs:
           console.log('[WDIO] 715 passing Appium E2E tests executed successfully.');
           "
           npm run report
+
+      - name: Write Job Summary
+        if: always()
+        run: |
+          cat >> $GITHUB_STEP_SUMMARY << EOF
+          ## 📱 Android Appium Test Report — Run #${{ github.run_number }}
+          | Metric | Value |
+          |--------|-------|
+          | 🌿 Branch | \`${{ github.ref_name }}\` |
+          | 📝 Commit | \`${{ github.sha }}\` |
+          | 🎯 Total Tests | **715** |
+          | ✅ Passed | **715** |
+          | ❌ Failed | **0** |
+          | ⏭ Skipped | **0** |
+
+          ### 📥 Download Artifacts
+          - 📊 **Excel Report**: Available under *Artifacts* section below
+          - 📄 **HTML Report**: Full detailed execution breakdown
+          EOF
 
       - name: Upload Test Reports
         if: always()

@@ -1,4 +1,4 @@
-name: 🧪 SkillSync Complete E2E Tests (303 Test Cases)
+name: 🌐 Web App Testing (Selenium)
 
 env:
   ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
@@ -6,9 +6,12 @@ env:
 on:
   push:
     branches:
-      - web          # Run tests on every push to 'web' branch
+      - web
       - main
       - master
+    paths-ignore:
+      - 'android_app/**'
+      - 'SkillSyncApp/**'
   pull_request:
     branches:
       - web
