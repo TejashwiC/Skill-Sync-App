@@ -105,29 +105,6 @@ jobs:
           
           exit $wdioExitCode
 
-      - name: Prepare reports for GitHub Pages
-        if: always()
-        shell: powershell
-        run: |
-          New-Item -ItemType Directory -Force -Path "public-pages/reports/latest"
-          New-Item -ItemType Directory -Force -Path "public-pages/reports/history/build-${{ github.run_number }}"
-          if (Test-Path "SkillSyncAppium/reports/execution-report.html") {
-              Copy-Item -Path "SkillSyncAppium/reports/execution-report.html" -Destination "public-pages/reports/latest/index.html" -Force
-              Copy-Item -Path "SkillSyncAppium/reports/execution-report.html" -Destination "public-pages/reports/history/build-${{ github.run_number }}/index.html" -Force
-          }
-          if (Test-Path "SkillSyncAppium/reports/E2E_SkillSync_Appium_Test_Cases.xlsx") {
-              Copy-Item -Path "SkillSyncAppium/reports/E2E_SkillSync_Appium_Test_Cases.xlsx" -Destination "public-pages/reports/latest/" -Force
-              Copy-Item -Path "SkillSyncAppium/reports/E2E_SkillSync_Appium_Test_Cases.xlsx" -Destination "public-pages/reports/history/build-${{ github.run_number }}/" -Force
-          }
-
-      - name: Deploy to GitHub Pages
-        if: always()
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: public-pages
-          branch: gh-pages
-          clean: false
-
       - name: Upload Test Reports
         if: always()
         uses: actions/upload-artifact@v4
@@ -137,3 +114,40 @@ jobs:
             SkillSyncAppium/reports/E2E_SkillSync_Appium_Test_Cases.xlsx
             SkillSyncAppium/reports/execution-report.html
           retention-days: 14
+
+  deploy-reports:
+    name: Deploy Reports to GitHub Pages
+    needs: android-appium-e2e
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Download Test Reports
+        uses: actions/download-artifact@v4
+        with:
+          name: Appium-Mega-E2E-Reports
+          path: temp-reports
+
+      - name: Prepare reports for GitHub Pages
+        run: |
+          mkdir -p public-pages/reports/latest
+          mkdir -p public-pages/reports/history/build-${{ github.run_number }}
+          if [ -f temp-reports/execution-report.html ]; then
+              cp temp-reports/execution-report.html public-pages/reports/latest/index.html
+              cp temp-reports/execution-report.html public-pages/reports/history/build-${{ github.run_number }}/index.html
+          fi
+          if [ -f temp-reports/E2E_SkillSync_Appium_Test_Cases.xlsx ]; then
+              cp temp-reports/E2E_SkillSync_Appium_Test_Cases.xlsx public-pages/reports/latest/
+              cp temp-reports/E2E_SkillSync_Appium_Test_Cases.xlsx public-pages/reports/history/build-${{ github.run_number }}/
+          fi
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: public-pages
+          branch: gh-pages
+          clean: false
