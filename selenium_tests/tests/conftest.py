@@ -4,6 +4,7 @@ Features: headless Chrome, explicit waits, screenshot on failure, file logging
 """
 import os
 import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import time
 import logging
 import datetime
