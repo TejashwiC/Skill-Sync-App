@@ -65,5 +65,4 @@ jobs:
           path: |
             android_app/reports/E2E_SkillSync_Appium_Test_Cases.xlsx
             android_app/reports/appium-report.html
-            android_app/reports/appium-report.xlsx
           retention-days: 14
