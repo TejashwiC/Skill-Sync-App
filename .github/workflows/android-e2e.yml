@@ -20,6 +20,8 @@ jobs:
   android-appium-e2e:
     name: Run 1111 E2E Tests on Physical Phone via USB
     runs-on: self-hosted
+    env:
+      ANDROID_HOME: "C:\\Users\\tejas\\AppData\\Local\\Android\\Sdk"
     
     steps:
       - name: Checkout repository
