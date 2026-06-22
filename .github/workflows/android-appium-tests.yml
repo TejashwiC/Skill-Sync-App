@@ -5,10 +5,12 @@ on:
     paths:
       - 'android_app/**'
       - 'SkillSyncApp/**'
+      - '.github/workflows/android-appium-tests.yml'
   pull_request:
     paths:
       - 'android_app/**'
       - 'SkillSyncApp/**'
+      - '.github/workflows/android-appium-tests.yml'
   workflow_dispatch:
 
 jobs:
