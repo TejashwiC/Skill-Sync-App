@@ -34,8 +34,11 @@ adb install -r "${APK_PATH}"
 echo "APK Installed successfully."
 
 # 5. Start Appium Server
+echo "Installing UiAutomator2 driver..."
+npx appium driver install uiautomator2 || echo "Driver install skipped or already exists"
+
 echo "Starting Appium Server..."
-appium --log-level warn > /tmp/appium.log 2>&1 &
+npx appium --log-level warn > /tmp/appium.log 2>&1 &
 APPIUM_PID=$!
 echo "Appium Server launched with PID: $APPIUM_PID"
 
