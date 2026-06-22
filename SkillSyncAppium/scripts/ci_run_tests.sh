@@ -34,8 +34,13 @@ adb install -r "${APK_PATH}"
 echo "APK Installed successfully."
 
 # 5. Start Appium Server
-echo "Installing UiAutomator2 driver..."
-npx appium driver install uiautomator2 || echo "Driver install skipped or already exists"
+echo "Checking if UiAutomator2 driver is installed..."
+if npx appium driver list --installed 2>/dev/null | grep -q "uiautomator2"; then
+    echo "UiAutomator2 driver is already installed."
+else
+    echo "Installing UiAutomator2 driver..."
+    npx appium driver install uiautomator2 || echo "Driver installation failed"
+fi
 
 echo "Starting Appium Server..."
 npx appium --log-level warn > /tmp/appium.log 2>&1 &
