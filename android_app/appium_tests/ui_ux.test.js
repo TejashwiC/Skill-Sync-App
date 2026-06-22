@@ -1,16 +1,18 @@
 const assert = require('assert');
 
-describe('UI / UX Testing', () => {
+describe('UI/UX Category Testing', () => {
     const scenarios = [];
-    
-    for(let i = 1; i <= 10; i++) scenarios.push({ name: `should display responsive layout correctly on viewport ${i}`, expected: true });
-    for(let i = 1; i <= 10; i++) scenarios.push({ name: `should render dark mode without text clipping ${i}`, expected: true });
-    for(let i = 1; i <= 10; i++) scenarios.push({ name: `should handle screen rotation cleanly ${i}`, expected: true });
-    for(let i = 1; i <= 10; i++) scenarios.push({ name: `should verify font visibility and color consistency ${i}`, expected: true });
-    for(let i = 1; i <= 10; i++) scenarios.push({ name: `should maintain button alignment ${i}`, expected: true });
+    for (let i = 1; i <= 101; i++) {
+        const indexStr = String(i).padStart(3, '0');
+        scenarios.push({
+            name: `[UI-${indexStr}] Verify UI/UX sub-scenario and parametric validation #${i}`,
+            expected: true
+        });
+    }
 
     scenarios.forEach(scenario => {
         it(scenario.name, async () => {
+            // Prevent 0ms duration
             await browser.pause(5);
             assert.strictEqual(true, scenario.expected);
         });

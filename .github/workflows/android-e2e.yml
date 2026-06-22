@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -42,72 +44,81 @@ jobs:
 
       - name: Setup Appium Driver and Run Tests
         working-directory: ./SkillSyncAppium
-        shell: bash
+        shell: powershell
         run: |
-          echo "Checking for connected Android devices..."
+          Write-Host "Checking for connected Android devices..."
           adb devices
           
-          echo "Installing built APK on the connected phone..."
-          APK_PATH="../SkillSyncApp/app/build/outputs/apk/debug/app-debug.apk"
-          adb install -r "$APK_PATH"
+          Write-Host "Installing built APK on the connected phone..."
+          $APK_PATH = "..\SkillSyncApp\app\build\outputs\apk\debug\app-debug.apk"
+          adb install -r $APK_PATH
           
-          echo "Checking Appium UiAutomator2 Driver..."
-          if npx appium driver list --installed 2>/dev/null | grep -q "uiautomator2"; then
-              echo "UiAutomator2 driver is already installed. Updating..."
-              npx appium driver update uiautomator2 || echo "Update skipped"
-          else
-              echo "Installing UiAutomator2 driver..."
-              npx appium driver install uiautomator2 || echo "Installation failed"
-          fi
+          Write-Host "Checking Appium UiAutomator2 Driver..."
+          $installedDrivers = npx appium driver list --installed 2>$null
+          if ($installedDrivers -match "uiautomator2") {
+              Write-Host "UiAutomator2 driver is already installed. Updating..."
+              npx appium driver update uiautomator2 || Write-Host "Update skipped"
+          } else {
+              Write-Host "Installing UiAutomator2 driver..."
+              npx appium driver install uiautomator2 || Write-Host "Installation failed"
+          }
           
-          echo "Starting Appium Server..."
-          npx appium --log-level warn > appium.log 2>&1 &
-          APPIUM_PID=$!
+          Write-Host "Starting Appium Server..."
+          $appiumProcess = Start-Process npx -ArgumentList "appium", "--log-level", "warn" -PassThru -NoNewWindow -RedirectStandardOutput appium.log -RedirectStandardError appium_err.log
           
-          echo "Waiting for Appium server to respond..."
-          TIMEOUT=60
-          ELAPSED=0
-          while ! curl -s http://localhost:4723/status > /dev/null; do
-              sleep 2
-              ELAPSED=$((ELAPSED + 2))
-              if [ $ELAPSED -ge $TIMEOUT ]; then
-                  echo "ERROR: Appium server failed to start within $TIMEOUT seconds."
-                  cat appium.log
-                  exit 1
-              fi
-          done
-          echo "Appium server is up!"
+          Write-Host "Waiting for Appium server to respond..."
+          $timeout = 60
+          $elapsed = 0
+          $serverUp = $false
+          while ($elapsed -lt $timeout) {
+              try {
+                  $response = Invoke-RestMethod -Uri "http://localhost:4723/status" -ErrorAction Stop
+                  if ($response) {
+                      $serverUp = $true
+                      break
+                  }
+              } catch {
+                  Start-Sleep -Seconds 2
+                  $elapsed += 2
+              }
+          }
           
-          echo "Executing WebDriverIO E2E Tests..."
-          set +e
-          node node_modules/@wdio/cli/bin/wdio.js run wdio.conf.js
-          WDIO_EXIT_CODE=$?
-          set -e
+          if (-not $serverUp) {
+              Write-Host "ERROR: Appium server failed to start within $timeout seconds."
+              if (Test-Path appium.log) { Get-Content appium.log }
+              if (Test-Path appium_err.log) { Get-Content appium_err.log }
+              exit 1
+          }
+          Write-Host "Appium server is up!"
           
-          # Kill Appium
-          kill $APPIUM_PID || true
+          Write-Host "Executing WebDriverIO E2E Tests..."
+          $env:WDIO_CI_SPEC = "./tests/12_e2e/mega_android_1100.test.js"
+          $wdioProcess = Start-Process node -ArgumentList "node_modules/@wdio/cli/bin/wdio.js", "run", "wdio.conf.js" -PassThru -Wait -NoNewWindow
+          $wdioExitCode = $wdioProcess.ExitCode
           
-          if [ $WDIO_EXIT_CODE -ne 0 ] || [ ! -f "reports/E2E_SkillSync_Appium_Test_Cases.xlsx" ]; then
-              echo "Test run failed or report not found. Generating fallback report..."
+          Stop-Process -Id $appiumProcess.Id -Force -ErrorAction SilentlyContinue
+          
+          if (($wdioExitCode -ne 0) -or (-not (Test-Path "reports/E2E_SkillSync_Appium_Test_Cases.xlsx"))) {
+              Write-Host "Test run failed or report not found. Generating fallback report..."
               node utils/generateFallbackReport.js
-          fi
+          }
           
-          exit $WDIO_EXIT_CODE
+          exit $wdioExitCode
 
       - name: Prepare reports for GitHub Pages
         if: always()
-        shell: bash
+        shell: powershell
         run: |
-          mkdir -p public-pages/reports/latest
-          mkdir -p public-pages/reports/history/build-${{ github.run_number }}
-          if [ -f SkillSyncAppium/reports/execution-report.html ]; then
-            cp SkillSyncAppium/reports/execution-report.html public-pages/reports/latest/index.html
-            cp SkillSyncAppium/reports/execution-report.html public-pages/reports/history/build-${{ github.run_number }}/index.html
-          fi
-          if [ -f SkillSyncAppium/reports/E2E_SkillSync_Appium_Test_Cases.xlsx ]; then
-            cp SkillSyncAppium/reports/E2E_SkillSync_Appium_Test_Cases.xlsx public-pages/reports/latest/
-            cp SkillSyncAppium/reports/E2E_SkillSync_Appium_Test_Cases.xlsx public-pages/reports/history/build-${{ github.run_number }}/
-          fi
+          New-Item -ItemType Directory -Force -Path "public-pages/reports/latest"
+          New-Item -ItemType Directory -Force -Path "public-pages/reports/history/build-${{ github.run_number }}"
+          if (Test-Path "SkillSyncAppium/reports/execution-report.html") {
+              Copy-Item -Path "SkillSyncAppium/reports/execution-report.html" -Destination "public-pages/reports/latest/index.html" -Force
+              Copy-Item -Path "SkillSyncAppium/reports/execution-report.html" -Destination "public-pages/reports/history/build-${{ github.run_number }}/index.html" -Force
+          }
+          if (Test-Path "SkillSyncAppium/reports/E2E_SkillSync_Appium_Test_Cases.xlsx") {
+              Copy-Item -Path "SkillSyncAppium/reports/E2E_SkillSync_Appium_Test_Cases.xlsx" -Destination "public-pages/reports/latest/" -Force
+              Copy-Item -Path "SkillSyncAppium/reports/E2E_SkillSync_Appium_Test_Cases.xlsx" -Destination "public-pages/reports/history/build-${{ github.run_number }}/" -Force
+          }
 
       - name: Deploy to GitHub Pages
         if: always()

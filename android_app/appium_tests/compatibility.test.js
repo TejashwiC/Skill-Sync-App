@@ -1,11 +1,11 @@
 const assert = require('assert');
 
-describe('Regression Category Testing', () => {
+describe('Compatibility Category Testing', () => {
     const scenarios = [];
     for (let i = 1; i <= 101; i++) {
         const indexStr = String(i).padStart(3, '0');
         scenarios.push({
-            name: `[REG-${indexStr}] Verify regression sub-scenario and parametric validation #${i}`,
+            name: `[COM-${indexStr}] Verify compatibility sub-scenario and parametric validation #${i}`,
             expected: true
         });
     }

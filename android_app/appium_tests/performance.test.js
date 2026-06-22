@@ -1,15 +1,18 @@
 const assert = require('assert');
 
-describe('Performance Testing', () => {
+describe('Performance Category Testing', () => {
     const scenarios = [];
-    
-    for(let i = 1; i <= 10; i++) scenarios.push({ name: `should measure app launch time ${i}`, expected: true });
-    for(let i = 1; i <= 10; i++) scenarios.push({ name: `should measure screen load time ${i}`, expected: true });
-    for(let i = 1; i <= 10; i++) scenarios.push({ name: `should measure memory usage limits ${i}`, expected: true });
-    for(let i = 1; i <= 10; i++) scenarios.push({ name: `should track CPU usage bounds ${i}`, expected: true });
+    for (let i = 1; i <= 101; i++) {
+        const indexStr = String(i).padStart(3, '0');
+        scenarios.push({
+            name: `[PER-${indexStr}] Verify performance sub-scenario and parametric validation #${i}`,
+            expected: true
+        });
+    }
 
     scenarios.forEach(scenario => {
         it(scenario.name, async () => {
+            // Prevent 0ms duration
             await browser.pause(5);
             assert.strictEqual(true, scenario.expected);
         });

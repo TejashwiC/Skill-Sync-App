@@ -49,23 +49,18 @@ exports.config = {
         // Parse category from the test parent title or file path
         // We assume test descriptions start with the category name or are organized properly.
         let category = 'Uncategorized';
-        if (test.parent.toLowerCase().includes('authentication')) category = 'Authentication';
-        else if (test.parent.toLowerCase().includes('registration')) category = 'Registration';
-        else if (test.parent.toLowerCase().includes('functional')) category = 'Functional';
-        else if (test.parent.toLowerCase().includes('end-to-end') || test.parent.toLowerCase().includes('e2e')) category = 'End-to-End';
-        else if (test.parent.toLowerCase().includes('ui/ux') || test.parent.toLowerCase().includes('ui / ux')) category = 'UI / UX';
-        else if (test.parent.toLowerCase().includes('accessibility')) category = 'Accessibility';
-        else if (test.parent.toLowerCase().includes('security')) category = 'Security';
-        else if (test.parent.toLowerCase().includes('vulnerability')) category = 'Vulnerability';
-        else if (test.parent.toLowerCase().includes('api')) category = 'API';
-        else if (test.parent.toLowerCase().includes('database')) category = 'Database';
-        else if (test.parent.toLowerCase().includes('performance')) category = 'Performance';
-        else if (test.parent.toLowerCase().includes('load')) category = 'Load';
-        else if (test.parent.toLowerCase().includes('regression')) category = 'Regression';
-        else if (test.parent.toLowerCase().includes('mobile')) category = 'Mobile Specific';
-        else if (test.parent.toLowerCase().includes('session') || test.parent.toLowerCase().includes('learning')) category = 'Session & Learning';
-        else if (test.parent.toLowerCase().includes('chat')) category = 'Chat & Group Chat';
-        else if (test.parent.toLowerCase().includes('notification')) category = 'Notification';
+        const parentLower = test.parent.toLowerCase();
+        if (parentLower.includes('functional')) category = 'Functional';
+        else if (parentLower.includes('ui/ux') || parentLower.includes('ui / ux')) category = 'UI/UX';
+        else if (parentLower.includes('compatibility')) category = 'Compatibility';
+        else if (parentLower.includes('performance')) category = 'Performance';
+        else if (parentLower.includes('security')) category = 'Security';
+        else if (parentLower.includes('api')) category = 'API';
+        else if (parentLower.includes('database')) category = 'Database';
+        else if (parentLower.includes('accessibility')) category = 'Accessibility';
+        else if (parentLower.includes('mobile')) category = 'Mobile-Specific';
+        else if (parentLower.includes('regression')) category = 'Regression';
+        else if (parentLower.includes('e2e') || parentLower.includes('end-to-end')) category = 'E2E';
 
         resultsData.push({
             id: `TC-${resultsData.length + 1000}`,
