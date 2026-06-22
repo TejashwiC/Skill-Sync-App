@@ -36,7 +36,8 @@ echo "APK Installed successfully."
 # 5. Start Appium Server
 echo "Checking if UiAutomator2 driver is installed..."
 if npx appium driver list --installed 2>/dev/null | grep -q "uiautomator2"; then
-    echo "UiAutomator2 driver is already installed."
+    echo "UiAutomator2 driver is already installed. Updating driver..."
+    npx appium driver update uiautomator2 || echo "Driver update failed or skipped"
 else
     echo "Installing UiAutomator2 driver..."
     npx appium driver install uiautomator2 || echo "Driver installation failed"
