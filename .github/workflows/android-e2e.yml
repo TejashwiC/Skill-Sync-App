@@ -71,10 +71,7 @@ jobs:
           target: default
           arch: x86_64
           profile: Nexus 6
-          script: |
-            cd SkillSyncAppium
-            chmod +x scripts/ci_run_tests.sh
-            ./scripts/ci_run_tests.sh
+          script: cd SkillSyncAppium && chmod +x scripts/ci_run_tests.sh && ./scripts/ci_run_tests.sh
 
       - name: Prepare reports for GitHub Pages
         if: always()
