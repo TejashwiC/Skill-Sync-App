@@ -1,4 +1,4 @@
-name: 📱 Android E2E Appium Testing
+name: 📱 Android E2E Appium Testing (Self-Hosted USB)
 
 on:
   push:
@@ -18,63 +18,85 @@ permissions:
 
 jobs:
   android-appium-e2e:
-    name: Run 1111 E2E Tests on Emulator
-    runs-on: ubuntu-latest
+    name: Run 1111 E2E Tests on Physical Phone via USB
+    runs-on: self-hosted
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Setup Java
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'zulu'
-          java-version: '17'
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Enable KVM group perms
-        run: |
-          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
-          sudo udevadm control --reload-rules
-          sudo udevadm trigger --name-match=kvm
-
-      - name: Cache Gradle packages
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
-
-      - name: Make gradlew executable
-        working-directory: ./SkillSyncApp
-        run: chmod +x gradlew
-        
       - name: Build Android APK
         working-directory: ./SkillSyncApp
-        run: ./gradlew assembleDebug --no-daemon
+        run: |
+          .\gradlew.bat assembleDebug --no-daemon
 
       - name: Install Node Dependencies
         working-directory: ./SkillSyncAppium
-        run: npm install
+        run: |
+          npm install
 
-      - name: Run Appium Tests on Emulator
-        uses: reactivecircus/android-emulator-runner@v2
-        with:
-          api-level: 29
-          target: default
-          arch: x86_64
-          profile: Nexus 6
-          script: cd SkillSyncAppium && chmod +x scripts/ci_run_tests.sh && ./scripts/ci_run_tests.sh
+      - name: Setup Appium Driver and Run Tests
+        working-directory: ./SkillSyncAppium
+        shell: bash
+        run: |
+          echo "Checking for connected Android devices..."
+          adb devices
+          
+          echo "Installing built APK on the connected phone..."
+          APK_PATH="../SkillSyncApp/app/build/outputs/apk/debug/app-debug.apk"
+          adb install -r "$APK_PATH"
+          
+          echo "Checking Appium UiAutomator2 Driver..."
+          if npx appium driver list --installed 2>/dev/null | grep -q "uiautomator2"; then
+              echo "UiAutomator2 driver is already installed. Updating..."
+              npx appium driver update uiautomator2 || echo "Update skipped"
+          else
+              echo "Installing UiAutomator2 driver..."
+              npx appium driver install uiautomator2 || echo "Installation failed"
+          fi
+          
+          echo "Starting Appium Server..."
+          npx appium --log-level warn > appium.log 2>&1 &
+          APPIUM_PID=$!
+          
+          echo "Waiting for Appium server to respond..."
+          TIMEOUT=60
+          ELAPSED=0
+          while ! curl -s http://localhost:4723/status > /dev/null; do
+              sleep 2
+              ELAPSED=$((ELAPSED + 2))
+              if [ $ELAPSED -ge $TIMEOUT ]; then
+                  echo "ERROR: Appium server failed to start within $TIMEOUT seconds."
+                  cat appium.log
+                  exit 1
+              fi
+          done
+          echo "Appium server is up!"
+          
+          echo "Executing WebDriverIO E2E Tests..."
+          set +e
+          node node_modules/@wdio/cli/bin/wdio.js run wdio.conf.js
+          WDIO_EXIT_CODE=$?
+          set -e
+          
+          # Kill Appium
+          kill $APPIUM_PID || true
+          
+          if [ $WDIO_EXIT_CODE -ne 0 ] || [ ! -f "reports/E2E_SkillSync_Appium_Test_Cases.xlsx" ]; then
+              echo "Test run failed or report not found. Generating fallback report..."
+              node utils/generateFallbackReport.js
+          fi
+          
+          exit $WDIO_EXIT_CODE
 
       - name: Prepare reports for GitHub Pages
         if: always()
+        shell: bash
         run: |
           mkdir -p public-pages/reports/latest
           mkdir -p public-pages/reports/history/build-${{ github.run_number }}
