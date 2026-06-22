@@ -76,3 +76,17 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
+
+// Automatically copy the APK to a permanent folder after every successful debug build
+afterEvaluate {
+    tasks.named("assembleDebug") {
+        doLast {
+            copy {
+                from(layout.buildDirectory.dir("outputs/apk/debug"))
+                into(rootProject.layout.projectDirectory.dir("Permanent_APKs/Debug"))
+                include("**/*.apk")
+            }
+            println("✅ SUCCESS: APK permanently saved to SkillSyncApp/Permanent_APKs/Debug/")
+        }
+    }
+}

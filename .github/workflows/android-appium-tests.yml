@@ -13,8 +13,8 @@ on:
 
 jobs:
   appium-tests:
-    name: Run 715 E2E Tests & Generate Excel Report
-    runs-on: macos-latest
+    name: Run 765 E2E Tests & Generate Excel Report
+    runs-on: macos-15-intel
     
     steps:
       - name: Checkout repository
@@ -73,6 +73,29 @@ jobs:
         working-directory: ./android_app
         run: npm run report
 
+      - name: Parse Test Results
+        if: always()
+        id: parse-results
+        run: |
+          node -e "
+            const fs = require('fs');
+            const path = 'android_app/artifacts/execution-summary.json';
+            let total = 0, passed = 0, failed = 0;
+            if (fs.existsSync(path)) {
+              try {
+                const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+                total = data.length;
+                passed = data.filter(t => t.status === 'Passed').length;
+                failed = total - passed;
+              } catch (e) {
+                console.error(e);
+              }
+            }
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, 'total=' + total + '\n');
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, 'passed=' + passed + '\n');
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, 'failed=' + failed + '\n');
+          "
+
       - name: Write Job Summary
         if: always()
         run: |
@@ -82,9 +105,9 @@ jobs:
           |--------|-------|
           | 🌿 Branch | \`${{ github.ref_name }}\` |
           | 📝 Commit | \`${{ github.sha }}\` |
-          | 🎯 Total Tests | **715** |
-          | ✅ Passed | **715** |
-          | ❌ Failed | **0** |
+          | 🎯 Total Tests | **${{ steps.parse-results.outputs.total }}** |
+          | ✅ Passed | **${{ steps.parse-results.outputs.passed }}** |
+          | ❌ Failed | **${{ steps.parse-results.outputs.failed }}** |
           | ⏭ Skipped | **0** |
 
           ### 📥 Download Artifacts
