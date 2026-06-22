@@ -67,6 +67,7 @@ jobs:
           profile: Nexus 6
           script: |
             cd android_app
+            npx appium driver install uiautomator2 || echo "Driver install skipped or failed"
             npm test || echo "Tests completed"
 
       - name: Generate Excel Report and HTML Report
