@@ -782,7 +782,7 @@ if __name__ == "__main__":
     for module, tid, tname in sample_data:
         r = random.random()
         status   = "PASS" if r > 0.15 else ("FAIL" if r > 0.05 else "SKIP")
-        duration = round(random.uniform(0.3, 4.5), 2)
+        duration = round(random.uniform(5.0, 120.0), 2)
         error    = "AssertionError: Element not found" if status == "FAIL" else ""
         sample_results.append({
             "module":    module,

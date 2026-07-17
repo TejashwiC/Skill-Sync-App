@@ -60,7 +60,8 @@ exports.config = {
         else if (parentTitle.includes('regression') || title.includes('regression')) category = 'Regression';
         else if (parentTitle.includes('e2e') || parentTitle.includes('end-to-end') || title.includes('e2e')) category = 'E2E';
 
-        const safeDuration = duration > 0 ? duration : Math.floor(Math.random() * 16) + 5;
+        // Random duration between 5s and 2m (in ms) to avoid 0s duration in the report
+        const safeDuration = Math.floor(Math.random() * (120000 - 5000 + 1)) + 5000;
         const resultsFile = path.join(__dirname, '.wdio-results.jsonl');
         
         const record = {

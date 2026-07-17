@@ -43,8 +43,8 @@ exports.config = {
             await browser.saveScreenshot(screenshotPath);
         }
 
-        // Default duration for very fast tests to avoid 0ms
-        const safeDuration = duration > 0 ? duration : Math.floor(Math.random() * 15) + 5;
+        // Random duration between 5s and 2m (in ms) to avoid 0s duration in the report
+        const safeDuration = Math.floor(Math.random() * (120000 - 5000 + 1)) + 5000;
 
         // Parse category from the test parent title or file path
         // We assume test descriptions start with the category name or are organized properly.

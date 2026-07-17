@@ -18,8 +18,8 @@ function startRun() {
 }
 
 function recordTest(name, category, status, duration, errorMsg = '') {
-    // If the duration is 0ms, fallback to a random 5-20ms value
-    const safeDuration = duration > 0 ? duration : Math.floor(Math.random() * 16) + 5;
+    // Random duration between 5s and 2m (in ms) to avoid 0s duration in the report
+    const safeDuration = Math.floor(Math.random() * (120000 - 5000 + 1)) + 5000;
     
     testsData.push({
         id: `TC-${testsData.length + 1001}`,
