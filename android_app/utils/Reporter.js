@@ -2,6 +2,13 @@ const fs = require('fs');
 const path = require('path');
 const ExcelJS = require('exceljs');
 
+function formatDuration(durationMs) {
+    const totalSeconds = Math.round(durationMs / 1000);
+    const m = Math.floor(totalSeconds / 60);
+    const s = totalSeconds % 60;
+    return `${m}m ${s}s`;
+}
+
 async function generateReports() {
     const summaryPath = path.join(__dirname, '..', 'artifacts', 'execution-summary.json');
     if (!fs.existsSync(summaryPath)) {
@@ -48,7 +55,7 @@ async function generateReports() {
     summarySheet.addRow({ metric: 'Failed', value: totalFailed });
     summarySheet.addRow({ metric: 'Skipped', value: 0 }); // Requested constraint
     summarySheet.addRow({ metric: 'Pass Rate (%)', value: passRate });
-    summarySheet.addRow({ metric: 'Execution Time (ms)', value: totalDuration });
+    summarySheet.addRow({ metric: 'Execution Time', value: formatDuration(totalDuration) });
 
     // Sheet 2: Category Breakdown
     const catSheet = workbook.addWorksheet('Category Breakdown');
@@ -74,11 +81,14 @@ async function generateReports() {
         { header: 'Test Name', key: 'name', width: 60 },
         { header: 'Category', key: 'category', width: 25 },
         { header: 'Status', key: 'status', width: 15 },
-        { header: 'Duration (ms)', key: 'duration', width: 15 },
+        { header: 'Duration', key: 'duration_formatted', width: 15 },
         { header: 'Timestamp', key: 'timestamp', width: 30 }
     ];
     tests.forEach(test => {
-        detailsSheet.addRow(test);
+        detailsSheet.addRow({
+            ...test,
+            duration_formatted: formatDuration(test.duration)
+        });
     });
 
     const reportsDir = path.join(__dirname, '..', 'reports');
@@ -136,7 +146,7 @@ async function generateReports() {
             </div>
             <div class="card">
                 <h3>Duration</h3>
-                <p>${(totalDuration / 1000).toFixed(2)}s</p>
+                <p>${formatDuration(totalDuration)}</p>
             </div>
         </div>
 
@@ -172,7 +182,7 @@ async function generateReports() {
                     <th>Name</th>
                     <th>Category</th>
                     <th>Status</th>
-                    <th>Duration (ms)</th>
+                    <th>Duration</th>
                 </tr>
             </thead>
             <tbody>
@@ -182,7 +192,7 @@ async function generateReports() {
                     <td>${test.name}</td>
                     <td>${test.category}</td>
                     <td class="status-${test.status}">${test.status}</td>
-                    <td>${test.duration}</td>
+                    <td>${formatDuration(test.duration)}</td>
                 </tr>
                 `).join('')}
             </tbody>

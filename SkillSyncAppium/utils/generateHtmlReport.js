@@ -1,6 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 
+function formatDuration(durationMs) {
+    const totalSeconds = Math.round(durationMs / 1000);
+    const m = Math.floor(totalSeconds / 60);
+    const s = totalSeconds % 60;
+    return `${m}m ${s}s`;
+}
+
 function generateHtml(tests, outputPath) {
     const dir = path.dirname(outputPath);
     if (!fs.existsSync(dir)) {
@@ -237,7 +244,7 @@ function generateHtml(tests, outputPath) {
             </div>
             <div class="card">
                 <h3>Execution Duration</h3>
-                <p>${(totalDuration / 1000).toFixed(2)}s</p>
+                <p>${formatDuration(totalDuration)}</p>
             </div>
         </div>
 
@@ -264,7 +271,7 @@ function generateHtml(tests, outputPath) {
                         <td style="color: var(--accent-green); font-weight: 600;">${stats.passed}</td>
                         <td style="color: ${stats.failed > 0 ? 'var(--accent-red)' : 'var(--text-primary)'}; font-weight: 600;">${stats.failed}</td>
                         <td>${rate}%</td>
-                        <td class="duration-cell">${(stats.duration / 1000).toFixed(2)}s</td>
+                        <td class="duration-cell">${formatDuration(stats.duration)}</td>
                     </tr>
                     `;
                 }).join('')}
@@ -292,7 +299,7 @@ function generateHtml(tests, outputPath) {
                     </td>
                     <td>${t.category}</td>
                     <td><span class="status-badge ${t.status}">${t.status}</span></td>
-                    <td class="duration-cell">${t.duration}ms</td>
+                    <td class="duration-cell">${formatDuration(t.duration)}</td>
                 </tr>
                 `).join('')}
             </tbody>

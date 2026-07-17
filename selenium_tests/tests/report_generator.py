@@ -20,6 +20,12 @@ from openpyxl.utils import get_column_letter
 from openpyxl.chart import BarChart, Reference, PieChart
 from openpyxl.chart.label import DataLabelList
 
+def format_duration(seconds):
+    total_seconds = int(round(float(seconds)))
+    m = total_seconds // 60
+    s = total_seconds % 60
+    return f"{m}m {s}s"
+
 # ─── Color Palette ─────────────────────────────────────────────────────────
 CLR_HEADER_BG   = "1E3A5F"   # Dark navy for main headers
 CLR_HEADER_FG   = "FFFFFF"   # White text
@@ -221,8 +227,8 @@ def _build_summary_sheet(wb, results, timestamp):
     # ── Additional stats ──────────────────────────────────────────────────
     extra_start = cards_row + 4
     extra_data = [
-        ("Total Execution Time",  f"{total_time:.2f} seconds"),
-        ("Avg. Test Duration",    f"{(total_time/total):.2f} sec" if total else "N/A"),
+        ("Total Execution Time",  format_duration(total_time)),
+        ("Avg. Test Duration",    format_duration(total_time/total) if total else "N/A"),
         ("Tests / Module",        str(len(set(r["module"] for r in results)))),
         ("Critical Failures",     str(failed)),
     ]
@@ -349,7 +355,7 @@ def _build_results_sheet(wb, results, timestamp):
         ("#", "A"), ("Module", "B"), ("Module Name", "C"),
         ("Test Case ID", "D"), ("Test Case Name", "E"),
         ("Test Type", "F"), ("Priority", "G"), ("Status", "H"),
-        ("Time (s)", "I"), ("Error / Notes", "J"),
+        ("Duration", "I"), ("Error / Notes", "J"),
     ]
     header_row = 4
     ws.row_dimensions[header_row].height = 30
@@ -411,7 +417,7 @@ def _build_results_sheet(wb, results, timestamp):
             "F": test_type,
             "G": priority,
             "H": status,
-            "I": r.get("duration", 0),
+            "I": format_duration(r.get("duration", 0)),
             "J": r.get("error", ""),
         }
 

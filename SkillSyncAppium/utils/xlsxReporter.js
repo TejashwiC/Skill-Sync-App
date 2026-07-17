@@ -5,6 +5,13 @@ const ExcelJS = require('exceljs');
 let testsData = [];
 let startTime = null;
 
+function formatDuration(durationMs) {
+    const totalSeconds = Math.round(durationMs / 1000);
+    const m = Math.floor(totalSeconds / 60);
+    const s = totalSeconds % 60;
+    return `${m}m ${s}s`;
+}
+
 function startRun() {
     testsData = [];
     startTime = Date.now();
@@ -70,7 +77,7 @@ async function generateReport(outputPath) {
     summarySheet.addRow({ metric: 'Tests Passed', value: passedTests });
     summarySheet.addRow({ metric: 'Tests Failed', value: failedTests });
     summarySheet.addRow({ metric: 'Overall Pass Rate (%)', value: passRate + '%' });
-    summarySheet.addRow({ metric: 'Total Execution Duration (ms)', value: totalDuration });
+    summarySheet.addRow({ metric: 'Total Execution Duration', value: formatDuration(totalDuration) });
     summarySheet.addRow({ metric: 'Run Completion Timestamp', value: new Date().toLocaleString() });
 
     // Format metrics rows
@@ -96,7 +103,7 @@ async function generateReport(outputPath) {
         { header: 'Passed Count', key: 'passed', width: 18 },
         { header: 'Failed Count', key: 'failed', width: 18 },
         { header: 'Success Rate (%)', key: 'successRate', width: 20 },
-        { header: 'Total Duration (ms)', key: 'duration', width: 22 }
+        { header: 'Total Duration', key: 'duration_formatted', width: 22 }
     ];
     
     catSheet.getRow(1).font = { name: 'Segoe UI', size: 12, bold: true, color: { argb: 'FFFFFF' } };
@@ -111,7 +118,7 @@ async function generateReport(outputPath) {
             passed: stats.passed,
             failed: stats.failed,
             successRate: rate + '%',
-            duration: stats.duration
+            duration_formatted: formatDuration(stats.duration)
         });
     });
 
@@ -137,7 +144,7 @@ async function generateReport(outputPath) {
         { header: 'Test Name / Scenario', key: 'name', width: 60 },
         { header: 'Category', key: 'category', width: 20 },
         { header: 'Status', key: 'status', width: 15 },
-        { header: 'Duration (ms)', key: 'duration', width: 18 },
+        { header: 'Duration', key: 'duration_formatted', width: 18 },
         { header: 'Timestamp', key: 'timestamp', width: 28 },
         { header: 'Failure Message / Details', key: 'error', width: 45 }
     ];
@@ -146,7 +153,10 @@ async function generateReport(outputPath) {
     detailsSheet.getRow(1).fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: '1F4E79' } };
     
     testsData.forEach(test => {
-        detailsSheet.addRow(test);
+        detailsSheet.addRow({
+            ...test,
+            duration_formatted: formatDuration(test.duration)
+        });
     });
 
     // Style detailed results rows
