@@ -87,6 +87,7 @@
       <button onclick="navTo('users')"><i class="fas fa-users" style="color:#f59e0b;"></i> Users</button>
       <button onclick="navTo('chat')"><i class="fas fa-message" style="color:#22c55e;"></i> Chat</button>
       <button onclick="navTo('session')"><i class="fas fa-video" style="color:#8b5cf6;"></i> Session</button>
+      <button onclick="navTo('calendar')"><i class="fas fa-calendar-days" style="color:#a855f7;"></i> Calendar</button>
       <button onclick="navTo('testSection')"><i class="fas fa-clipboard-question" style="color:#f97316;"></i> Skill Test</button>
       <button onclick="navTo('notes')"><i class="fas fa-file-pdf" style="color:#ef4444;"></i> Notes & PDFs</button>
       <button onclick="navTo('settings')"><i class="fas fa-sliders" style="color:#06b6d4;"></i> Settings</button>
@@ -255,13 +256,53 @@
           <div class="card card-red" onclick="openChatScreen('blockedUsersScreen')"><i class="fas fa-user-slash"></i><h3>Blocked Users</h3><p>Manage blocked users</p></div>
         </div>
         <div class="screen" id="chatMainScreen">
-          <button class="back-btn" onclick="backChatDashboard()">← Back</button>
-          <h2 id="chatTitle">Chat</h2>
-          <div id="chatUserList"></div>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+            <button class="back-btn" onclick="backChatDashboard()" style="margin:0;">← Back</button>
+            <div style="display:flex; gap:10px;">
+              <!-- Theme Selector -->
+              <select id="chatThemeSelect" onchange="changeChatTheme()" style="padding:6px 10px; border-radius:6px; border:1px solid #ccc; font-weight:600; cursor:pointer;">
+                <option value="Default">🎨 Default</option>
+                <option value="Pink">🌸 Pink Theme</option>
+                <option value="Blue">💧 Blue Theme</option>
+                <option value="Dark">🌙 Dark Theme</option>
+                <option value="Green">🍃 Green Theme</option>
+              </select>
+              <!-- Delete Chat -->
+              <button onclick="deleteActiveChat()" style="background:#e74c3c; color:#fff; border:none; padding:6px 12px; border-radius:6px; cursor:pointer; font-weight:600;"><i class="fas fa-trash-can"></i> Delete Chat</button>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+            <img id="chatHeaderImg" src="https://ui-avatars.com/api/?name=Chat" style="width:45px; height:45px; border-radius:50%; object-fit:cover;">
+            <div>
+              <h2 id="chatTitle" style="margin:0; font-size:18px;">Chat</h2>
+              <small id="chatUserStatus" style="color:#7f8c8d; font-weight:600;">Offline</small>
+            </div>
+          </div>
+          <!-- Contact Selector List -->
+          <div class="user-box" style="margin-bottom:14px; background:#fff; padding:12px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.02);">
+            <h4 style="margin:0 0 8px 0; color:#555; font-size:13px;"><i class="fas fa-address-book"></i> Choose a contact to message:</h4>
+            <div id="chatUserList" style="max-height:120px; overflow-y:auto; border:1px solid #eee; border-radius:8px; padding:4px; display:flex; flex-direction:column; gap:4px;"></div>
+          </div>
+          <!-- Search Box -->
+          <div style="position:relative; margin-bottom:10px;">
+            <input type="text" id="chatMessageSearch" placeholder="🔍 Search messages..." oninput="filterChatMessages()" style="width:100%; padding:10px 12px; padding-left:35px; border-radius:8px; border:1px solid #ddd; box-sizing:border-box;">
+            <i class="fas fa-search" style="position:absolute; left:12px; top:13px; color:#aaa;"></i>
+          </div>
           <hr>
-          <div id="chatBox" class="chat-box"></div>
-          <input id="messageInput" placeholder="Message" onkeydown="handleEnterKey(event)">
-          <button onclick="sendMessage()">Send</button>
+          <div id="chatBox" class="chat-box" style="height:350px; overflow-y:auto; padding:10px; background:#f4f6f8; border-radius:10px; border:1.5px solid #eee; margin-bottom:10px;"></div>
+          <!-- Input Area with Attachments -->
+          <div style="display:flex; gap:8px; align-items:center;">
+            <input id="messageInput" placeholder="Type a message..." onkeydown="handleEnterKey(event)" style="flex:1; padding:12px; border-radius:8px; border:1.5px solid #ddd; box-sizing:border-box;">
+            <!-- Hidden File Input for Attachments -->
+            <input type="file" id="chatFileInput" accept="application/pdf,image/*" onchange="uploadChatAttachment()" style="display:none;">
+            <button onclick="document.getElementById('chatFileInput').click()" style="background:#a855f7; color:#fff; border:none; width:45px; height:42px; border-radius:8px; cursor:pointer; font-size:18px; display:flex; align-items:center; justify-content:center;" title="Attach Image/PDF"><i class="fas fa-paperclip"></i></button>
+            <button onclick="sendMessage()" style="background:#2ecc71; color:#fff; border:none; padding:12px 20px; border-radius:8px; cursor:pointer; font-weight:700; height:42px;">Send</button>
+          </div>
+          <!-- Upload Progress -->
+          <div id="chatUploadProgressWrap" style="display:none; margin-top:8px; background:#f0f4ff; padding:8px; border-radius:6px; border:1px solid #3b82f6;">
+            <small style="color:#3b82f6; font-weight:700;">Uploading attachment... <span id="chatUploadPct">0%</span></small>
+            <progress id="chatUploadProgress" value="0" max="100" style="width:100%; height:8px; border-radius:4px; margin-top:4px;"></progress>
+          </div>
         </div>
         <div class="screen" id="chatRequestScreen">
           <button class="back-btn" onclick="backChatDashboard()">← Back</button>
@@ -300,9 +341,17 @@
         </div>
         <div class="screen" id="groupChatScreen">
           <button class="back-btn" onclick="backChatDashboard()">← Back</button>
-          <h2>Group Chats</h2>
-          <input type="text" placeholder="Create Group Name">
-          <button>Create Group</button>
+          <h2><i class="fas fa-people-group"></i> Create Group Chat</h2>
+          <div style="background:#f8faff; border-radius:14px; padding:20px; border:1.5px solid #dde4f7; margin-bottom:16px;">
+            <input type="text" id="groupNameInput" placeholder="Group Name (e.g. Study Circle)" style="margin-bottom:14px;">
+            <h4 style="margin:0 0 10px 0; color:#555;">Select Group Members:</h4>
+            <div id="groupMembersList" style="max-height:200px; overflow-y:auto; display:flex; flex-direction:column; gap:8px; margin-bottom:14px; background:#fff; padding:10px; border-radius:8px; border:1px solid #ccc;">
+              <!-- Checkboxes populate here -->
+            </div>
+            <button onclick="createGroupChat()" style="background:linear-gradient(135deg,#8b5cf6,#6d28d9); color:#fff; width:100%; padding:12px; font-weight:700; border:none; border-radius:8px; cursor:pointer;">Create Group</button>
+          </div>
+          <h3 style="margin-top:20px;"><i class="fas fa-list"></i> Active Group Chats</h3>
+          <div id="groupChatsContainer"></div>
         </div>
         <div class="screen" id="blockedUsersScreen">
           <button class="back-btn" onclick="backChatDashboard()">← Back</button>
@@ -355,7 +404,28 @@
               <option value="other">Other</option>
             </select>
             <input type="url" id="sessionLink" placeholder="Paste Meeting Link here (https://...)" style="margin-bottom:14px;">
-            <button onclick="startSession()" style="background:linear-gradient(135deg,#27ae60,#2ecc71);color:#fff;width:100%;padding:14px;font-size:15px;font-weight:700;border:none;border-radius:10px;cursor:pointer;">
+            
+            <!-- Schedule Toggle -->
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; padding:8px 0; border-bottom:1px solid #eee;">
+              <span style="font-size:14px; font-weight:600; color:#555;"><i class="fas fa-calendar-alt"></i> Schedule for Future Date</span>
+              <label class="switch-container" style="position:relative; display:inline-block; width:50px; height:26px;">
+                <input type="checkbox" id="sessionScheduleToggle" onchange="toggleScheduleContainer()" style="opacity:0; width:0; height:0;">
+                <span class="slider" style="position:absolute; cursor:pointer; top:0; left:0; right:0; bottom:0; background-color:#ccc; transition:.4s; border-radius:34px;"></span>
+              </label>
+            </div>
+            <!-- Schedule Fields (hidden by default) -->
+            <div id="scheduleFieldsContainer" style="display:none; margin-bottom:14px; background:#f5f6fa; padding:12px; border-radius:10px; border:1px solid #e2e8f0;">
+              <div style="margin-bottom:8px;">
+                <label style="font-size:12px; font-weight:600; color:#666; display:block; margin-bottom:4px;">Date:</label>
+                <input type="date" id="sessionScheduleDate" style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
+              </div>
+              <div>
+                <label style="font-size:12px; font-weight:600; color:#666; display:block; margin-bottom:4px;">Time:</label>
+                <input type="time" id="sessionScheduleTime" style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
+              </div>
+            </div>
+
+            <button id="btnStartSubmit" onclick="startSession()" style="background:linear-gradient(135deg,#27ae60,#2ecc71);color:#fff;width:100%;padding:14px;font-size:15px;font-weight:700;border:none;border-radius:10px;cursor:pointer;">
               <i class="fas fa-circle-play"></i> Start Session & Get Code
             </button>
           </div>
@@ -517,6 +587,32 @@
           <h2>Uploaded PDFs</h2>
           <p style="color:#888;font-size:13px;margin-bottom:14px;">👁 View opens in browser &nbsp;|&nbsp; 📥 Download saves to your device &nbsp;|&nbsp; 🗑 Delete (only your own uploads)</p>
           <div id="pdfList"></div>
+        </div>
+      </div>
+
+      <!-- CALENDAR -->
+      <div id="calendar" class="section" style="display:none;">
+        <h2><i class="fas fa-calendar-days" style="color:#a855f7;"></i> Training Calendar</h2>
+        <div style="display:grid; grid-template-columns: 1fr 350px; gap: 20px; align-items: start;">
+          <!-- Left side: Calendar Grid -->
+          <div class="user-box" style="background:#fff; border-radius:14px; padding:20px; box-shadow:0 2px 10px rgba(0,0,0,0.05); margin-bottom: 0;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+              <button onclick="changeMonth(-1)" style="background:#f0f4ff; color:#3b82f6; border:none; padding:8px 16px; border-radius:8px; cursor:pointer; font-weight:700;"><i class="fas fa-chevron-left"></i> Prev</button>
+              <h3 id="calendarMonthYear" style="margin:0; color:#2c3e50; font-size:18px;">July 2026</h3>
+              <button onclick="changeMonth(1)" style="background:#f0f4ff; color:#3b82f6; border:none; padding:8px 16px; border-radius:8px; cursor:pointer; font-weight:700;">Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div style="display:grid; grid-template-columns: repeat(7, 1fr); gap: 8px; text-align:center; font-weight:700; color:#7f8c8d; margin-bottom:10px;">
+              <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+            </div>
+            <div id="calendarDaysGrid" style="display:grid; grid-template-columns: repeat(7, 1fr); gap: 8px; text-align:center;"></div>
+          </div>
+          <!-- Right side: Sessions on selected date -->
+          <div class="user-box" style="background:#fff; border-radius:14px; padding:20px; box-shadow:0 2px 10px rgba(0,0,0,0.05); min-height:300px; margin-bottom: 0;">
+            <h3 id="selectedDateHeader" style="margin:0 0 15px 0; color:#2c3e50; font-size:16px;">Sessions on Selected Date</h3>
+            <div id="calendarSessionsList" style="display:flex; flex-direction:column; gap:12px;">
+              <p style="color:#888; text-align:center; margin-top:40px;">No sessions scheduled for this day.</p>
+            </div>
+          </div>
         </div>
       </div>
 
