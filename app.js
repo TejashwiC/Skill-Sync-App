@@ -79,7 +79,7 @@ window.loadUser = function () {
       if (location.pathname.includes("dashboard")) window.location.href = "login.html";
       return;
     }
-    updateDoc(doc(db, "users", user.uid), { isOnline: true });
+    updateDoc(doc(db, "users", user.uid), { });
     loadProfile();
     loadUsers();
     loadFollowers();
@@ -99,13 +99,14 @@ window.loadUser = function () {
     loadGroupChats();
     // Auto-update home stats live
     listenHomeStats();
+    
   });
 };
 
 window.addEventListener("beforeunload", () => {
   const user = auth.currentUser;
   if (user) {
-    updateDoc(doc(db, "users", user.uid), { isOnline: false, lastSeen: Date.now() });
+    updateDoc(doc(db, "users", user.uid), { });
   }
 });
 
@@ -113,7 +114,7 @@ window.addEventListener("beforeunload", () => {
 window.logout = async function () {
   const user = auth.currentUser;
   if (user) {
-    await updateDoc(doc(db, "users", user.uid), { isOnline: false, lastSeen: Date.now() });
+    await updateDoc(doc(db, "users", user.uid), { });
   }
   await signOut(auth);
   window.location.href = "login.html";
@@ -122,7 +123,17 @@ window.logout = async function () {
 /* ================ NAV ================ */
 window.showSection = function (id) {
   document.querySelectorAll(".section").forEach(s => s.style.display = "none");
-  el(id).style.display = "block";
+  if (el(id)) el(id).style.display = "block";
+  if (id === "calendar") {
+    loadCalendarSessions();
+  } else if (id === "session") {
+    loadHostSessionPanel();
+  } else if (id === "testSection") {
+    loadAvailableTests();
+  } else if (id === "chat") {
+    loadChatUsers();
+    loadChatUserList();
+  }
 };
 
 /* ================================================
@@ -208,7 +219,19 @@ window.followUser = async function (targetId) {
   if (!user) return;
   await updateDoc(doc(db, "users", user.uid),    { following: arrayUnion(targetId) });
   await updateDoc(doc(db, "users", targetId),    { followers: arrayUnion(user.uid) });
-  alert("Followed successfully!");
+  // Reload whichever list is visible
+  if (el("usersList")) loadUsers();
+  if (el("suggestedList")) loadSuggestedUsers();
+};
+
+window.unfollowUser = async function (targetId) {
+  const user = auth.currentUser;
+  if (!user) return;
+  await updateDoc(doc(db, "users", user.uid),    { following: arrayRemove(targetId) });
+  await updateDoc(doc(db, "users", targetId),    { followers: arrayRemove(user.uid) });
+  // Reload whichever list is visible
+  if (el("usersList")) loadUsers();
+  if (el("suggestedList")) loadSuggestedUsers();
 };
 
 /* ================ SKILLS ================ */
@@ -257,27 +280,39 @@ window.deleteSkill = async function () {
 window.loadUsers = function () {
   const container = el("usersList");
   if (!container) return;
-  onSnapshot(collection(db, "users"), (snap) => {
-    container.innerHTML = "";
-    snap.forEach((docSnap) => {
-      const userId = docSnap.id;
-      const data   = docSnap.data();
-      if (!auth.currentUser || userId === auth.currentUser.uid) return;
-      const avatarUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(data.name || 'User')}&background=random&color=fff&size=50`;
-      container.innerHTML += `
-        <div class="user-card">
-          <div class="user-card-info">
-            <img src="${data.photo && data.photo.length > 10 ? data.photo : avatarUrl}">
-            <div class="user-card-details">
-              <span class="user-card-name">${data.name || "No Name"}</span>
-              <span class="user-card-email"><i class="fas fa-envelope"></i> ${data.email || ""}</span>
+  const user = auth.currentUser;
+  if (!user) return;
+  onSnapshot(doc(db, "users", user.uid), (mySnap) => {
+    const myData = mySnap.data();
+    const following = myData?.following || [];
+    
+    onSnapshot(collection(db, "users"), (snap) => {
+      container.innerHTML = "";
+      snap.forEach((docSnap) => {
+        const userId = docSnap.id;
+        const data   = docSnap.data();
+        if (userId === user.uid) return;
+        const avatarUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(data.name || 'User')}&background=random&color=fff&size=50`;
+        const isFollowing = following.includes(userId);
+        const actionBtn = isFollowing
+          ? `<button class="btn-follow" onclick="unfollowUser('${userId}')" style="background:#e74c3c;"><i class="fas fa-user-minus"></i> Unfollow</button>`
+          : `<button class="btn-follow" onclick="followUser('${userId}')"><i class="fas fa-user-plus"></i> Follow</button>`;
+          
+        container.innerHTML += `
+          <div class="user-card">
+            <div class="user-card-info">
+              <img src="${data.photo && data.photo.length > 10 ? data.photo : avatarUrl}">
+              <div class="user-card-details">
+                <span class="user-card-name">${data.name || "No Name"}</span>
+                <span class="user-card-email"><i class="fas fa-envelope"></i> ${data.email || ""}</span>
+              </div>
             </div>
-          </div>
-          <div class="user-card-actions">
-            <button class="btn-follow" onclick="followUser('${userId}')"><i class="fas fa-user-plus"></i> Follow</button>
-            <button class="btn-view" onclick="viewUserProfile('${userId}')"><i class="fas fa-eye"></i> View</button>
-          </div>
-        </div>`;
+            <div class="user-card-actions">
+              ${actionBtn}
+              <button class="btn-view" onclick="viewUserProfile('${userId}')"><i class="fas fa-eye"></i> View</button>
+            </div>
+          </div>`;
+      });
     });
   });
 };
@@ -341,41 +376,65 @@ window.loadFollowing = function () {
 window.loadSuggestedUsers = function () {
   const container = el("suggestedList");
   if (!container) return;
-  onSnapshot(collection(db, "users"), (snap) => {
-    container.innerHTML = "";
-    snap.forEach((docSnap) => {
-      const userId = docSnap.id;
-      const data   = docSnap.data();
-      if (!auth.currentUser || userId === auth.currentUser.uid) return;
-      const avatarUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(data.name || 'User')}&background=random&color=fff&size=50`;
-      container.innerHTML += `
-        <div class="user-card">
-          <div class="user-card-info">
-            <img src="${data.photo && data.photo.length > 10 ? data.photo : avatarUrl}">
-            <div class="user-card-details">
-              <span class="user-card-name">${data.name || "User"}</span>
-              <span class="user-card-email"><i class="fas fa-envelope"></i> ${data.email || ""}</span>
+  const user = auth.currentUser;
+  if (!user) return;
+  onSnapshot(doc(db, "users", user.uid), (mySnap) => {
+    const myData = mySnap.data();
+    const following = myData?.following || [];
+    
+    onSnapshot(collection(db, "users"), (snap) => {
+      container.innerHTML = "";
+      snap.forEach((docSnap) => {
+        const userId = docSnap.id;
+        const data   = docSnap.data();
+        if (userId === user.uid) return;
+        const avatarUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(data.name || 'User')}&background=random&color=fff&size=50`;
+        const isFollowing = following.includes(userId);
+        const actionBtn = isFollowing
+          ? `<button class="btn-follow" onclick="unfollowUser('${userId}')" style="background:#e74c3c;"><i class="fas fa-user-minus"></i> Unfollow</button>`
+          : `<button class="btn-follow" onclick="followUser('${userId}')"><i class="fas fa-user-plus"></i> Follow</button>`;
+          
+        container.innerHTML += `
+          <div class="user-card">
+            <div class="user-card-info">
+              <img src="${data.photo && data.photo.length > 10 ? data.photo : avatarUrl}">
+              <div class="user-card-details">
+                <span class="user-card-name">${data.name || "User"}</span>
+                <span class="user-card-email"><i class="fas fa-envelope"></i> ${data.email || ""}</span>
+              </div>
             </div>
-          </div>
-          <div class="user-card-actions">
-            <button class="btn-follow" onclick="followUser('${userId}')"><i class="fas fa-user-plus"></i> Follow</button>
-          </div>
-        </div>`;
+            <div class="user-card-actions">
+              ${actionBtn}
+            </div>
+          </div>`;
+      });
     });
   });
 };
 
-window.searchUsers = function () {
+window.searchUsers = async function () {
   const query_text = el("searchInput")?.value?.toLowerCase() || "";
   const container  = el("searchResults");
   if (!container || !query_text) { container.innerHTML = ""; return; }
+  
+  const user = auth.currentUser;
+  if (!user) return;
+  const mySnap = await getDoc(doc(db, "users", user.uid));
+  const following = mySnap.data()?.following || [];
+  
   getDocs(collection(db, "users")).then(snap => {
     container.innerHTML = "";
     snap.forEach(docSnap => {
       const d = docSnap.data();
-      if (docSnap.id === auth.currentUser?.uid) return;
+      const userId = docSnap.id;
+      if (userId === user.uid) return;
       if ((d.name || "").toLowerCase().includes(query_text) || (d.email || "").toLowerCase().includes(query_text)) {
         const avatarUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(d.name || 'User')}&background=random&color=fff&size=50`;
+        const isFollowing = following.includes(userId);
+        const actionBtn = isFollowing
+          ? `<button class="btn-follow" onclick="unfollowUser('${userId}')" style="background:#e74c3c;"><i class="fas fa-user-minus"></i> Unfollow</button>`
+          : `<button class="btn-follow" onclick="followUser('${userId}')"><i class="fas fa-user-plus"></i> Follow</button>`;
+          
         container.innerHTML += `
           <div class="user-card">
             <div class="user-card-info">
@@ -386,8 +445,8 @@ window.searchUsers = function () {
               </div>
             </div>
             <div class="user-card-actions">
-              <button class="btn-follow" onclick="followUser('${docSnap.id}')"><i class="fas fa-user-plus"></i> Follow</button>
-              <button class="btn-view" onclick="viewUserProfile('${docSnap.id}')"><i class="fas fa-eye"></i> View</button>
+              ${actionBtn}
+              <button class="btn-view" onclick="viewUserProfile('${userId}')"><i class="fas fa-eye"></i> View</button>
             </div>
           </div>`;
       }
@@ -404,7 +463,15 @@ window.viewUserProfile = async function (userId) {
   if (el("u_profileImg")) el("u_profileImg").src = d.photo && d.photo.length > 10 ? d.photo : "https://via.placeholder.com/120";
   if (el("u_name"))    el("u_name").innerText    = d.name     || "";
   if (el("u_email"))   el("u_email").innerText   = d.email    || "";
-  if (el("u_mobile"))  el("u_mobile").innerText  = d.mobile   || "";
+  if (el("u_mobile")) {
+    if (userId === auth.currentUser?.uid) {
+      el("u_mobile").innerText = d.mobile || "";
+      el("u_mobile").parentElement.style.display = "block";
+    } else {
+      el("u_mobile").innerText = "";
+      el("u_mobile").parentElement.style.display = "none";
+    }
+  }
   if (el("u_teach"))   el("u_teach").innerText   = d.teach    || "";
   if (el("u_learn"))   el("u_learn").innerText   = d.learn    || "";
   if (el("u_lang"))    el("u_lang").innerText    = d.language || "";
@@ -444,19 +511,33 @@ function formatTime(timestamp) {
 window.loadChatUsers = function () {
   const container = el("requestContainer");
   if (!container) return;
-  onSnapshot(collection(db, "users"), (snapshot) => {
-    container.innerHTML = "";
-    snapshot.forEach((docSnap) => {
-      const data   = docSnap.data();
-      const userId = docSnap.id;
-      if (!auth.currentUser || userId === auth.currentUser.uid) return;
-      container.innerHTML += `
-        <div class="chat-user" onclick="openChat('${userId}', '${data.name}')"
-             style="display:flex;align-items:center;gap:12px;padding:12px;border-bottom:1px solid #eee;cursor:pointer;">
-          <img src="${data.photo && data.photo.length > 10 ? data.photo : 'https://ui-avatars.com/api/?name=' + encodeURIComponent(data.name || 'User')}"
-               style="width:45px;height:45px;border-radius:50%;object-fit:cover;">
-          <div><b>${data.name || "No Name"}</b><br><small style="color:#888;">${data.email || ""}</small></div>
-        </div>`;
+  const user = auth.currentUser;
+  if (!user) return;
+  onSnapshot(doc(db, "users", user.uid), (mySnap) => {
+    const myData = mySnap.data();
+    const followers = myData?.followers || [];
+    const following = myData?.following || [];
+    // Show only mutual connections (both follow each other)
+    const mutual = followers.filter(uid => following.includes(uid));
+    
+    onSnapshot(collection(db, "users"), (snapshot) => {
+      container.innerHTML = "";
+      snapshot.forEach((docSnap) => {
+        const data   = docSnap.data();
+        const userId = docSnap.id;
+        if (userId === user.uid) return;
+        if (!mutual.includes(userId)) return;
+        container.innerHTML += `
+          <div class="chat-user" onclick="openChat('${userId}', '${data.name}')"
+               style="display:flex;align-items:center;gap:12px;padding:12px;border-bottom:1px solid #eee;cursor:pointer;">
+            <img src="${data.photo && data.photo.length > 10 ? data.photo : 'https://ui-avatars.com/api/?name=' + encodeURIComponent(data.name || 'User')}"
+                 style="width:45px;height:45px;border-radius:50%;object-fit:cover;">
+            <div><b>${data.name || "No Name"}</b><br><small style="color:#888;">${data.email || ""}</small></div>
+          </div>`;
+      });
+      if (!container.innerHTML) {
+        container.innerHTML = "<p style='padding:10px;color:#999;font-size:13px;text-align:center;'>No mutual connections yet — follow each other to chat</p>";
+      }
     });
   });
 };
@@ -464,22 +545,36 @@ window.loadChatUsers = function () {
 window.loadChatUserList = function () {
   const container = el("chatUserList");
   if (!container) return;
-  onSnapshot(collection(db, "users"), (snapshot) => {
-    container.innerHTML = "<p style='padding:10px;color:#888;font-size:13px;'>👇 Select a user to chat</p>";
-    snapshot.forEach((docSnap) => {
-      const data   = docSnap.data();
-      const userId = docSnap.id;
-      if (!auth.currentUser || userId === auth.currentUser.uid) return;
-      container.innerHTML += `
-        <div onclick="selectChatUser('${userId}', '${data.name}')"
-             style="display:flex;align-items:center;gap:12px;padding:10px 12px;border-bottom:1px solid #eee;cursor:pointer;">
-          <img src="${data.photo && data.photo.length > 10 ? data.photo : 'https://ui-avatars.com/api/?name=' + encodeURIComponent(data.name || 'User')}"
-               style="width:40px;height:40px;border-radius:50%;object-fit:cover;">
-          <div>
-            <b style="font-size:14px;">${data.name || "No Name"}</b><br>
-            <small style="color:#888;font-size:12px;">${data.email || ""}</small>
-          </div>
-        </div>`;
+  const user = auth.currentUser;
+  if (!user) return;
+  onSnapshot(doc(db, "users", user.uid), (mySnap) => {
+    const myData = mySnap.data();
+    const followers = myData?.followers || [];
+    const following = myData?.following || [];
+    // Show only mutual connections (both follow each other)
+    const mutual = followers.filter(uid => following.includes(uid));
+    
+    onSnapshot(collection(db, "users"), (snapshot) => {
+      container.innerHTML = "<p style='padding:10px;color:#888;font-size:13px;'>👇 Select a contact to message:</p>";
+      snapshot.forEach((docSnap) => {
+        const data   = docSnap.data();
+        const userId = docSnap.id;
+        if (userId === user.uid) return;
+        if (!mutual.includes(userId)) return;
+        container.innerHTML += `
+          <div onclick="selectChatUser('${userId}', '${data.name}')"
+               style="display:flex;align-items:center;gap:12px;padding:10px 12px;border-bottom:1px solid #eee;cursor:pointer;">
+            <img src="${data.photo && data.photo.length > 10 ? data.photo : 'https://ui-avatars.com/api/?name=' + encodeURIComponent(data.name || 'User')}"
+                 style="width:40px;height:40px;border-radius:50%;object-fit:cover;">
+            <div>
+              <b style="font-size:14px;">${data.name || "No Name"}</b><br>
+              <small style="color:#888;font-size:12px;">${data.email || ""}</small>
+            </div>
+          </div>`;
+      });
+      if (container.innerHTML === "<p style='padding:10px;color:#888;font-size:13px;'>👇 Select a contact to message:</p>") {
+        container.innerHTML += "<p style='padding:10px;color:#999;font-size:12px;text-align:center;'>No mutual connections — follow each other to chat</p>";
+      }
     });
   });
 };
@@ -528,20 +623,10 @@ window.loadInbox = async function () {
 
 let targetStatusUnsubscribe = null;
 function listenTargetUserStatus(targetUserId) {
-  if (targetStatusUnsubscribe) targetStatusUnsubscribe();
-  targetStatusUnsubscribe = onSnapshot(doc(db, "users", targetUserId), (snap) => {
-    const d = snap.data();
-    const statusEl = el("chatUserStatus");
-    if (!statusEl) return;
-    if (d.isOnline) {
-      statusEl.innerText = "Online";
-      statusEl.style.color = "#2ecc71";
-    } else {
-      const lastSeenTime = d.lastSeen ? timeAgo(d.lastSeen) : "1 week ago";
-      statusEl.innerText = `Last seen ${lastSeenTime}`;
-      statusEl.style.color = "#7f8c8d";
-    }
-  });
+  // Online/offline status removed
+  if (targetStatusUnsubscribe) { targetStatusUnsubscribe(); targetStatusUnsubscribe = null; }
+  const statusEl = el("chatUserStatus");
+  if (statusEl) statusEl.style.display = "none";
 }
 
 window.selectChatUser = function (userId, name) {
@@ -663,21 +748,50 @@ window.loadMessages = function () {
     box.innerHTML = "";
     snapshot.forEach((docSnap) => {
       const d    = docSnap.data();
+      const msgId = docSnap.id;
       const time = d.time ? formatTime(d.time) : "";
+      const isMine = d.sender === user.uid;
       
       let attachments = "";
       if (d.imageUrl) {
-        attachments += `<img src="${d.imageUrl}" style="max-width:100%; border-radius:8px; display:block; margin-top:5px; max-height:200px; object-fit:cover;">`;
+        attachments += `<a href="${d.imageUrl}" target="_blank"><img src="${d.imageUrl}" style="max-width:100%; border-radius:8px; display:block; margin-top:5px; max-height:200px; object-fit:cover; cursor:pointer;"></a>`;
       }
       if (d.pdfUrl) {
         attachments += `<a href="${d.pdfUrl}" target="_blank" style="display:flex; align-items:center; gap:8px; background:#f0f0f0; padding:8px 12px; border-radius:6px; text-decoration:none; color:#333; margin-top:5px; font-size:12px; font-weight:700;"><i class="fas fa-file-pdf" style="color:#ef4444; font-size:18px;"></i> View Document</a>`;
       }
       
       const pinIndicator = d.isPinned ? "📌 " : "";
-      
-      if (d.sender === user.uid) {
+
+      if (selectModeActive && isMine) {
+        // SELECT MODE: show checkbox
         box.innerHTML += `
-          <div style="display:flex;justify-content:flex-end;margin:4px 10px;" title="Double click to pin/unpin" ondblclick="togglePinMessage('${docSnap.id}', ${d.isPinned})">
+          <div class="chat-msg-wrap" style="display:flex;justify-content:flex-end;margin:4px 10px;position:relative;align-items:center;gap:8px;" onclick="this.querySelector('.msg-select-cb').click()">
+            <div style="background:#25D366;color:#fff;padding:8px 14px;border-radius:18px 18px 4px 18px;max-width:65%;word-wrap:break-word;">
+              <div style="font-size:14px;">${pinIndicator}${d.text}</div>
+              ${attachments}
+              <div style="font-size:10px;color:rgba(255,255,255,0.8);text-align:right;margin-top:3px;">${time}</div>
+            </div>
+            <input type="checkbox" class="msg-select-cb" data-msg-id="${msgId}" onclick="event.stopPropagation()" style="width:18px;height:18px;cursor:pointer;accent-color:#7c3aed;">
+          </div>`;
+      } else if (selectModeActive && !isMine) {
+        // SELECT MODE: show checkbox for others' messages too
+        box.innerHTML += `
+          <div class="chat-msg-wrap" style="display:flex;justify-content:flex-start;margin:4px 10px;position:relative;align-items:center;gap:8px;" onclick="this.querySelector('.msg-select-cb').click()">
+            <input type="checkbox" class="msg-select-cb" data-msg-id="${msgId}" onclick="event.stopPropagation()" style="width:18px;height:18px;cursor:pointer;accent-color:#7c3aed;">
+            <div style="background:#fff;color:#000;padding:8px 14px;border-radius:18px 18px 18px 4px;max-width:65%;word-wrap:break-word;box-shadow:0 1px 3px rgba(0,0,0,0.1);">
+              <div style="font-size:14px;">${pinIndicator}${d.text}</div>
+              ${attachments}
+              <div style="font-size:10px;color:#999;text-align:right;margin-top:3px;">${time}</div>
+            </div>
+          </div>`;
+      } else if (isMine) {
+        const deleteBtn = `<div class="msg-actions" style="display:none; position:absolute; top:-32px; right:0; background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.2); overflow:hidden; z-index:99; white-space:nowrap;">
+          <button onclick="event.stopPropagation(); deleteChatMessage('${msgId}')" style="background:none; border:none; padding:6px 12px; color:#e74c3c; font-size:12px; font-weight:700; cursor:pointer;">🗑 Delete</button>
+          <button onclick="event.stopPropagation(); togglePinMessage('${msgId}', ${d.isPinned})" style="background:none; border:none; padding:6px 12px; color:#555; font-size:12px; font-weight:700; cursor:pointer;">${d.isPinned ? '📌 Unpin' : '📌 Pin'}</button>
+        </div>`;
+        box.innerHTML += `
+          <div class="chat-msg-wrap" style="display:flex;justify-content:flex-end;margin:4px 10px;position:relative;" onclick="toggleMsgActions(this)">
+            ${deleteBtn}
             <div style="background:#25D366;color:#fff;padding:8px 14px;border-radius:18px 18px 4px 18px;max-width:70%;word-wrap:break-word;">
               <div style="font-size:14px;">${pinIndicator}${d.text}</div>
               ${attachments}
@@ -686,7 +800,7 @@ window.loadMessages = function () {
           </div>`;
       } else {
         box.innerHTML += `
-          <div style="display:flex;justify-content:flex-start;margin:4px 10px;" title="Double click to pin/unpin" ondblclick="togglePinMessage('${docSnap.id}', ${d.isPinned})">
+          <div class="chat-msg-wrap" style="display:flex;justify-content:flex-start;margin:4px 10px;position:relative;">
             <div style="background:#fff;color:#000;padding:8px 14px;border-radius:18px 18px 18px 4px;max-width:70%;word-wrap:break-word;box-shadow:0 1px 3px rgba(0,0,0,0.1);">
               <div style="font-size:14px;">${pinIndicator}${d.text}</div>
               ${attachments}
@@ -697,6 +811,85 @@ window.loadMessages = function () {
     });
     box.scrollTop = box.scrollHeight;
   });
+};
+
+// Toggle message action menu (WhatsApp style tap)
+window.toggleMsgActions = function (wrap) {
+  // Hide all other open menus first
+  document.querySelectorAll('.msg-actions').forEach(m => m.style.display = 'none');
+  const menu = wrap.querySelector('.msg-actions');
+  if (menu) menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+};
+
+// Hide menus when clicking outside
+document.addEventListener('click', function (e) {
+  if (!e.target.closest('.chat-msg-wrap')) {
+    document.querySelectorAll('.msg-actions').forEach(m => m.style.display = 'none');
+  }
+});
+
+window.deleteChatMessage = async function (msgId) {
+  if (!activeChatUser) return;
+  const user = auth.currentUser;
+  if (!user) return;
+  if (!confirm("Delete this message?")) return;
+  try {
+    const chatId = getChatId(user.uid, activeChatUser);
+    await deleteDoc(doc(db, "chats", chatId, "messages", msgId));
+  } catch (err) { alert("Delete failed: " + err.message); }
+};
+
+window.deleteGroupMessage = async function (msgId) {
+  if (!activeGroupChat) return;
+  if (!confirm("Delete this message?")) return;
+  try {
+    await deleteDoc(doc(db, "groups", activeGroupChat, "messages", msgId));
+  } catch (err) { alert("Delete failed: " + err.message); }
+};
+
+// ---- SELECT MODE (WhatsApp-style multi-select delete) ----
+let selectModeActive = false;
+
+window.toggleSelectMode = function () {
+  selectModeActive = !selectModeActive;
+  const selectBtn = el("selectMsgBtn");
+  const deleteBtn = el("deleteSelectedBtn");
+  if (selectModeActive) {
+    selectBtn.style.background = "#7c3aed";
+    selectBtn.style.color = "#fff";
+    deleteBtn.style.display = "flex";
+    // Re-render messages with checkboxes
+    if (activeChatUser) loadMessages();
+    else if (activeGroupChat) loadGroupMessages(activeGroupChat);
+  } else {
+    selectBtn.style.background = "none";
+    selectBtn.style.color = "#7c3aed";
+    deleteBtn.style.display = "none";
+    // Re-render without checkboxes
+    if (activeChatUser) loadMessages();
+    else if (activeGroupChat) loadGroupMessages(activeGroupChat);
+  }
+};
+
+window.deleteSelectedMessages = async function () {
+  const checked = document.querySelectorAll(".msg-select-cb:checked");
+  if (!checked.length) { alert("Select at least one message first."); return; }
+  if (!confirm(`Delete ${checked.length} selected message(s)?`)) return;
+  const user = auth.currentUser;
+  if (!user) return;
+  const ids = Array.from(checked).map(cb => cb.dataset.msgId);
+  try {
+    if (activeChatUser) {
+      const chatId = getChatId(user.uid, activeChatUser);
+      await Promise.all(ids.map(id => deleteDoc(doc(db, "chats", chatId, "messages", id))));
+    } else if (activeGroupChat) {
+      await Promise.all(ids.map(id => deleteDoc(doc(db, "groups", activeGroupChat, "messages", id))));
+    }
+    // Exit select mode after deletion
+    selectModeActive = false;
+    if (el("selectMsgBtn")) { el("selectMsgBtn").style.background = "none"; el("selectMsgBtn").style.color = "#7c3aed"; }
+    if (el("deleteSelectedBtn")) el("deleteSelectedBtn").style.display = "none";
+  } catch (err) { alert("Delete failed: " + err.message); }
 };
 
 window.togglePinMessage = async function (messageId, currentlyPinned) {
@@ -722,9 +915,11 @@ window.filterChatMessages = function () {
     box.innerHTML = "";
     snapshot.forEach((docSnap) => {
       const d = docSnap.data();
+      const msgId = docSnap.id;
       if (queryText && !d.text.toLowerCase().includes(queryText)) return;
       
       const time = d.time ? formatTime(d.time) : "";
+      const isMine = d.sender === user.uid;
       let attachments = "";
       if (d.imageUrl) {
         attachments += `<img src="${d.imageUrl}" style="max-width:100%; border-radius:8px; display:block; margin-top:5px; max-height:200px; object-fit:cover;">`;
@@ -733,10 +928,15 @@ window.filterChatMessages = function () {
         attachments += `<a href="${d.pdfUrl}" target="_blank" style="display:flex; align-items:center; gap:8px; background:#f0f0f0; padding:8px 12px; border-radius:6px; text-decoration:none; color:#333; margin-top:5px; font-size:12px; font-weight:700;"><i class="fas fa-file-pdf" style="color:#ef4444; font-size:18px;"></i> View Document</a>`;
       }
       const pinIndicator = d.isPinned ? "📌 " : "";
+      const deleteBtn = isMine ? `<div class="msg-actions" style="display:none; position:absolute; top:-32px; right:0; background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.2); overflow:hidden; z-index:99; white-space:nowrap;">
+        <button onclick="event.stopPropagation(); deleteChatMessage('${msgId}')" style="background:none; border:none; padding:6px 12px; color:#e74c3c; font-size:12px; font-weight:700; cursor:pointer;">🗑 Delete</button>
+        <button onclick="event.stopPropagation(); togglePinMessage('${msgId}', ${d.isPinned})" style="background:none; border:none; padding:6px 12px; color:#555; font-size:12px; font-weight:700; cursor:pointer;">${d.isPinned ? '📌 Unpin' : '📌 Pin'}</button>
+      </div>` : "";
       
-      if (d.sender === user.uid) {
+      if (isMine) {
         box.innerHTML += `
-          <div style="display:flex;justify-content:flex-end;margin:4px 10px;" title="Double click to pin/unpin" ondblclick="togglePinMessage('${docSnap.id}', ${d.isPinned})">
+          <div class="chat-msg-wrap" style="display:flex;justify-content:flex-end;margin:4px 10px;position:relative;" onclick="toggleMsgActions(this)">
+            ${deleteBtn}
             <div style="background:#25D366;color:#fff;padding:8px 14px;border-radius:18px 18px 4px 18px;max-width:70%;word-wrap:break-word;">
               <div style="font-size:14px;">${pinIndicator}${d.text}</div>
               ${attachments}
@@ -745,7 +945,7 @@ window.filterChatMessages = function () {
           </div>`;
       } else {
         box.innerHTML += `
-          <div style="display:flex;justify-content:flex-start;margin:4px 10px;" title="Double click to pin/unpin" ondblclick="togglePinMessage('${docSnap.id}', ${d.isPinned})">
+          <div class="chat-msg-wrap" style="display:flex;justify-content:flex-start;margin:4px 10px;position:relative;">
             <div style="background:#fff;color:#000;padding:8px 14px;border-radius:18px 18px 18px 4px;max-width:70%;word-wrap:break-word;box-shadow:0 1px 3px rgba(0,0,0,0.1);">
               <div style="font-size:14px;">${pinIndicator}${d.text}</div>
               ${attachments}
@@ -758,79 +958,84 @@ window.filterChatMessages = function () {
   });
 };
 
-window.uploadChatAttachment = function () {
+window.uploadChatAttachment = async function () {
   const fileInput = el("chatFileInput");
   if (!fileInput || !fileInput.files.length) return;
   const file = fileInput.files[0];
   const user = auth.currentUser;
   if (!user) return;
-  
-  const fileName = `${Date.now()}_${file.name}`;
-  let fileRef = null;
-  let uploadTask = null;
-  
-  if (activeGroupChat) {
-    fileRef = ref(storage, `group_files/${activeGroupChat}/${fileName}`);
-  } else if (activeChatUser) {
-    const chatId = getChatId(user.uid, activeChatUser);
-    fileRef = ref(storage, `chat_files/${chatId}/${fileName}`);
-  } else {
+
+  if (!activeGroupChat && !activeChatUser) {
+    alert("Open a chat first before attaching a file.");
     return;
   }
-  
+
+  // Limit file size to 900KB to stay within Firestore 1MB doc limit
+  if (file.size > 900 * 1024) {
+    alert("File too large. Please select a file smaller than 900KB.");
+    fileInput.value = "";
+    return;
+  }
+
   el("chatUploadProgressWrap").style.display = "block";
-  el("chatUploadPct").innerText = "0%";
-  el("chatUploadProgress").value = 0;
-  
-  uploadTask = uploadBytesResumable(fileRef, file);
-  uploadTask.on('state_changed', 
-    (snapshot) => {
-      const pct = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
-      el("chatUploadPct").innerText = `${pct}%`;
-      el("chatUploadProgress").value = pct;
-    }, 
-    (error) => {
-      alert("Upload failed: " + error.message);
-      el("chatUploadProgressWrap").style.display = "none";
-    }, 
-    () => {
-      getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
-        el("chatUploadProgressWrap").style.display = "none";
-        fileInput.value = "";
-        
-        const isImage = file.type.startsWith("image/");
-        const msgText = isImage ? "[Photo Attachment]" : `[Document Attachment] ${file.name}`;
-        
-        if (activeGroupChat) {
-          const mySnap = await getDoc(doc(db, "users", user.uid));
-          const senderName = mySnap.data()?.name || "Member";
-          await addDoc(collection(db, "groups", activeGroupChat, "messages"), {
-            text: msgText,
-            sender: user.uid,
-            senderName: senderName,
-            time: Date.now(),
-            imageUrl: isImage ? downloadURL : null,
-            pdfUrl: !isImage ? downloadURL : null
-          });
-          await updateDoc(doc(db, "groups", activeGroupChat), {
-            lastMessage: `${senderName} shared an attachment`,
-            lastMessageTime: Date.now()
-          });
-        } else {
-          const chatId = getChatId(user.uid, activeChatUser);
-          await addDoc(collection(db, "chats", chatId, "messages"), {
-            text: msgText,
-            sender: user.uid,
-            time: Date.now(),
-            imageUrl: isImage ? downloadURL : null,
-            pdfUrl: !isImage ? downloadURL : null,
-            isPinned: false
-          });
-          loadInbox();
-        }
+  el("chatUploadPct").innerText = "Reading...";
+  el("chatUploadProgress").value = 50;
+
+  try {
+    // Convert file to base64 data URL
+    const base64 = await new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+
+    el("chatUploadPct").innerText = "Saving...";
+    el("chatUploadProgress").value = 80;
+
+    const isImage = file.type.startsWith("image/");
+    const msgText = isImage ? "[Photo Attachment]" : `[Document Attachment] ${file.name}`;
+
+    if (activeGroupChat) {
+      const mySnap = await getDoc(doc(db, "users", user.uid));
+      const senderName = mySnap.data()?.name || "Member";
+      await addDoc(collection(db, "groups", activeGroupChat, "messages"), {
+        text: msgText,
+        sender: user.uid,
+        senderName: senderName,
+        time: Date.now(),
+        imageUrl: isImage ? base64 : null,
+        pdfUrl: !isImage ? base64 : null,
+        fileName: file.name
       });
+      await updateDoc(doc(db, "groups", activeGroupChat), {
+        lastMessage: `${senderName} shared an attachment`,
+        lastMessageTime: Date.now()
+      });
+    } else {
+      const chatId = getChatId(user.uid, activeChatUser);
+      await addDoc(collection(db, "chats", chatId, "messages"), {
+        text: msgText,
+        sender: user.uid,
+        time: Date.now(),
+        imageUrl: isImage ? base64 : null,
+        pdfUrl: !isImage ? base64 : null,
+        fileName: file.name,
+        isPinned: false
+      });
+      loadInbox();
     }
-  );
+
+    el("chatUploadProgressWrap").style.display = "none";
+    el("chatUploadProgress").value = 100;
+    fileInput.value = "";
+
+  } catch (err) {
+    console.error("Upload failed:", err);
+    alert("Upload failed: " + err.message);
+    el("chatUploadProgressWrap").style.display = "none";
+    fileInput.value = "";
+  }
 };
 
 /* ================================================
@@ -846,35 +1051,53 @@ window.loadChatSettingsPanel = function () {
   const deleteContainer = el("deleteChatUserList");
   const blockContainer  = el("blockUserList");
   if (!deleteContainer && !blockContainer) return;
-  onSnapshot(collection(db, "users"), async (snapshot) => {
-    const mySnap  = await getDoc(doc(db, "users", user.uid));
-    const blocked = mySnap.data()?.blocked || [];
+
+  // Load only mutual connections (followers AND following)
+  getDoc(doc(db, "users", user.uid)).then(async (mySnap) => {
+    const myData  = mySnap.data() || {};
+    const followers = myData.followers || [];
+    const following = myData.following || [];
+    const blocked   = myData.blocked   || [];
+    // Mutual = in both followers AND following
+    const mutual = followers.filter(uid => following.includes(uid));
+
     if (deleteContainer) deleteContainer.innerHTML = "";
     if (blockContainer)  blockContainer.innerHTML  = "";
-    snapshot.forEach(docSnap => {
-      const data = docSnap.data();
-      const uid  = docSnap.id;
-      if (uid === user.uid) return;
+
+    if (!mutual.length) {
+      const empty = "<p style='color:#999;font-size:13px;text-align:center;padding:10px;'>No mutual connections yet</p>";
+      if (deleteContainer) deleteContainer.innerHTML = empty;
+      if (blockContainer)  blockContainer.innerHTML  = empty;
+      return;
+    }
+
+    for (const uid of mutual) {
+      const uSnap = await getDoc(doc(db, "users", uid));
+      if (!uSnap.exists()) continue;
+      const data = uSnap.data();
+
       if (deleteContainer) {
         deleteContainer.innerHTML += `
-          <div style="display:flex;justify-content:space-between;align-items:center;padding:10px;border-bottom:1px solid #eee;">
-            <span><b>${data.name || "User"}</b></span>
-            <button onclick="deleteChatWith('${uid}')"
-                    style="background:#e74c3c;color:#fff;border:none;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:13px;">🗑 Delete</button>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 4px;border-bottom:1px solid #f0f0f0;">
+            <span style="font-size:14px;font-weight:600;">${data.name || "User"}</span>
+            <button onclick="deleteChatWith('${uid}')" title="Delete chat"
+                    style="background:none;border:1px solid #e74c3c;color:#e74c3c;width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;">
+              <i class="fas fa-trash-can"></i>
+            </button>
           </div>`;
       }
       if (blockContainer) {
         const isBlocked = blocked.includes(uid);
         blockContainer.innerHTML += `
-          <div style="display:flex;justify-content:space-between;align-items:center;padding:10px;border-bottom:1px solid #eee;">
-            <span><b>${data.name || "User"}</b></span>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 4px;border-bottom:1px solid #f0f0f0;">
+            <span style="font-size:14px;font-weight:600;">${data.name || "User"}</span>
             ${isBlocked
-              ? `<button onclick="unblockUser('${uid}')" style="background:#27ae60;color:#fff;border:none;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:13px;">✅ Unblock</button>`
-              : `<button onclick="blockUser('${uid}')"   style="background:#e74c3c;color:#fff;border:none;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:13px;">🚫 Block</button>`
+              ? `<button onclick="unblockUser('${uid}')" title="Unblock" style="background:none;border:1px solid #27ae60;color:#27ae60;width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;"><i class="fas fa-user-check"></i></button>`
+              : `<button onclick="blockUser('${uid}')"   title="Block"   style="background:none;border:1px solid #e74c3c;color:#e74c3c;width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;"><i class="fas fa-user-slash"></i></button>`
             }
           </div>`;
       }
-    });
+    }
   });
 };
 
@@ -949,23 +1172,31 @@ let selectedRating = 0;
 
 const PLATFORM_LABELS = {
   zoom:    "Zoom",
-  meet:    "Google Meet",
-  teams:   "Microsoft Teams",
-  webex:   "Webex",
-  jitsi:   "Jitsi",
-  whereby: "Whereby",
-  other:   "Other"
+  meet:    "Google Meet"
 };
 
 function generateCode() {
-  const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  const chars = "0123456789";
   let code = "";
   for (let i = 0; i < 6; i++) code += chars[Math.floor(Math.random() * chars.length)];
   return code;
 }
 
+function parseSessionDate(startTime) {
+  if (!startTime) return new Date();
+  if (typeof startTime.toDate === 'function') {
+    return startTime.toDate();
+  }
+  if (startTime.seconds) {
+    return new Date(startTime.seconds * 1000);
+  }
+  return new Date(startTime);
+}
+
 function formatDuration(startTime) {
-  const mins = Math.floor((Date.now() - startTime) / 60000);
+  const startMs = (startTime && startTime.seconds) ? startTime.seconds * 1000 : startTime;
+  const mins = Math.floor((Date.now() - startMs) / 60000);
+  if (mins < 0) return "0 min";
   if (mins < 60) return mins + " min";
   return Math.floor(mins / 60) + "h " + (mins % 60) + "m";
 }
@@ -1027,6 +1258,7 @@ window.startSession = async function () {
   const link     = el("sessionLink")?.value?.trim();
   if (!name)     { alert("Enter session name"); return; }
   if (!platform) { alert("Select a platform"); return; }
+  if (platform !== "zoom" && platform !== "meet") { alert("Only Zoom and Google Meet are allowed."); return; }
   if (!link)     { alert("Paste the meeting link"); return; }
   if (!link.startsWith("http")) { alert("Meeting link must start with http:// or https://"); return; }
 
@@ -1170,6 +1402,18 @@ window.joinSession = async function () {
       </div>`;
     return;
   }
+  
+  const mySnap = await getDoc(doc(db, "users", user.uid));
+  const myData = mySnap.data();
+  const following = myData?.following || [];
+  if (!following.includes(d.hostId)) {
+    if (resultBox) resultBox.innerHTML = `
+      <div style="background:#fdecea;padding:20px;border-radius:12px;border-left:4px solid #e74c3c;text-align:center;">
+        <p style="margin:0;color:#c0392b;font-weight:700;">🚫 You must follow the host to join this session.</p>
+      </div>`;
+    return;
+  }
+  
   await updateDoc(doc(db, "sessions", sessionDoc.id), { participants: arrayUnion(user.uid) });
   const platformIcons = { zoom:"🟦", meet:"🟢", teams:"🟣", webex:"🔵", jitsi:"🟩", whereby:"🟧", other:"📹" };
   const icon = platformIcons[d.platform] || "📹";
@@ -1190,54 +1434,78 @@ window.joinSession = async function () {
 window.loadLiveSessions = function () {
   const container = el("liveSessionContainer");
   if (!container) return;
-  onSnapshot(query(collection(db, "sessions"), where("status", "==", "live")), snap => {
-    container.innerHTML = "";
-    if (snap.empty) {
-      container.innerHTML = `<div style="text-align:center;padding:50px 20px;color:#888;"><div style="font-size:48px;margin-bottom:12px;">🎙</div><p style="font-size:16px;font-weight:600;margin:0 0 6px;">No live sessions right now</p></div>`;
-      return;
-    }
-    container.innerHTML = `
-      <div style="background:#fff8e1;border:1.5px solid #f39c12;border-radius:10px;padding:12px 16px;margin-bottom:16px;display:flex;align-items:flex-start;gap:10px;">
-        <span style="font-size:20px;margin-top:1px;">🔐</span>
-        <div>
-          <p style="margin:0 0 2px;font-weight:700;color:#7d5a00;font-size:13px;">Private Sessions</p>
-          <p style="margin:0;font-size:12px;color:#7d5a00;line-height:1.5;">You need a secret 6-digit code from the host to join.<br>Ask the host to send you the code via <b>Chat</b>, then go to <b>Join Session</b>.</p>
-        </div>
-      </div>`;
-    const platformIcons = { zoom:"🟦", meet:"🟢", teams:"🟣", webex:"🔵", jitsi:"🟩", whereby:"🟧", other:"📹" };
-    snap.forEach(docSnap => {
-      const d      = docSnap.data();
-      const user   = auth.currentUser;
-      const isHost = user && d.hostId === user.uid;
-      const icon   = platformIcons[d.platform] || "📹";
-      container.innerHTML += `
-        <div class="card" style="border-left:4px solid ${isHost ? '#3498db' : '#e74c3c'};margin-bottom:14px;">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
-            <h3 style="margin:0;font-size:16px;">${d.name}</h3>
-            ${isHost ? `<span style="background:#3498db;color:#fff;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">👑 YOUR SESSION</span>`
-                     : `<span style="background:#e74c3c;color:#fff;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">🔴 LIVE</span>`}
+  const user = auth.currentUser;
+  if (!user) return;
+  
+    onSnapshot(doc(db, "users", user.uid), (mySnap) => {
+      const myData = mySnap.data() || {};
+      const following = myData.following || [];
+      const followers = myData.followers || [];
+      
+      onSnapshot(query(collection(db, "sessions"), where("status", "==", "live")), snap => {
+        container.innerHTML = "";
+        const visibleDocs = snap.docs.filter(docSnap => {
+          const d = docSnap.data();
+          return d.hostId === user.uid || following.includes(d.hostId) || followers.includes(d.hostId);
+        });
+      
+      if (visibleDocs.length === 0) {
+        container.innerHTML = `<div style="text-align:center;padding:50px 20px;color:#888;"><div style="font-size:48px;margin-bottom:12px;">🎙</div><p style="font-size:16px;font-weight:600;margin:0 0 6px;">No live sessions right now</p></div>`;
+        return;
+      }
+      
+      container.innerHTML = `
+        <div style="background:#fff8e1;border:1.5px solid #f39c12;border-radius:10px;padding:12px 16px;margin-bottom:16px;display:flex;align-items:flex-start;gap:10px;">
+          <span style="font-size:20px;margin-top:1px;">🔐</span>
+          <div>
+            <p style="margin:0 0 2px;font-weight:700;color:#7d5a00;font-size:13px;">Followed Hosts' Live Sessions</p>
+            <p style="margin:0;font-size:12px;color:#7d5a00;line-height:1.5;">Click any live session from a host you follow to join directly.</p>
           </div>
-          <p style="margin:5px 0;color:#555;font-size:13px;">🧑‍🏫 Host: <b>${d.hostName}</b></p>
-          <p style="margin:5px 0;color:#555;font-size:13px;">📚 Skill: ${d.skill || "—"}</p>
-          <p style="margin:5px 0;color:#555;font-size:13px;">${icon} Platform: ${d.platformLabel || "—"}</p>
-          <p style="margin:5px 0;color:#555;font-size:13px;">🕐 Started: ${d.startTimeStr} · ${d.startDateStr}</p>
-          <p style="margin:5px 0;color:#555;font-size:13px;">⏱ Running: ${formatDuration(d.startTime)}</p>
-          <p style="margin:5px 0;color:#555;font-size:13px;">👥 Participants: ${d.participants?.length || 0}</p>
-          ${isHost
-            ? `<div style="margin-top:14px;background:#eaf4fb;border-radius:10px;padding:14px;text-align:center;">
-                 <p style="margin:0 0 4px;font-size:12px;color:#3498db;font-weight:700;letter-spacing:1px;">YOUR SECRET CODE</p>
-                 <p style="margin:0;font-size:32px;font-weight:800;letter-spacing:10px;color:#2c3e50;">${d.code}</p>
-                 <p style="margin:8px 0 10px;font-size:12px;color:#888;">Send this to your student via Chat</p>
-                 <button onclick="openMeetingAsHost('${docSnap.id}')" style="background:#3498db;color:#fff;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:700;width:100%;">🎥 Rejoin / Open Meeting</button>
-               </div>`
-            : `<div style="margin-top:14px;background:#f8f9fa;border-radius:10px;padding:14px;text-align:center;border:1.5px dashed #ddd;">
-                 <p style="margin:0 0 4px;font-size:22px;">🔒</p>
-                 <p style="margin:0;font-size:13px;color:#555;line-height:1.5;"><b>Private Session</b><br>Ask <b>${d.hostName}</b> for the code via Chat<br>then use <b>Join Session</b></p>
-               </div>`
-          }
         </div>`;
+        
+      const platformIcons = { zoom:"🟦", meet:"🟢" };
+      visibleDocs.forEach(docSnap => {
+        const d      = docSnap.data();
+        const isHost = d.hostId === user.uid;
+        const icon   = platformIcons[d.platform] || "📹";
+        
+        const clickAction = isHost
+          ? `openMeetingAsHost('${docSnap.id}')`
+          : `joinSessionDirect('${docSnap.id}', '${d.meetingLink}', '${d.platform}')`;
+          
+        container.innerHTML += `
+          <div class="card" onclick="${clickAction}" style="border-left:4px solid ${isHost ? '#3498db' : '#e74c3c'};margin-bottom:14px;cursor:pointer;transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='none';this.style.boxShadow='none';">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+              <h3 style="margin:0;font-size:16px;">${d.name}</h3>
+              ${isHost ? `<span style="background:#3498db;color:#fff;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">👑 YOUR SESSION</span>`
+                       : `<span style="background:#e74c3c;color:#fff;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">🔴 LIVE</span>`}
+            </div>
+            <p style="margin:5px 0;color:#555;font-size:13px;">🧑‍🏫 Host: <b>${d.hostName}</b></p>
+            <p style="margin:5px 0;color:#555;font-size:13px;">📚 Skill: ${d.skill || "—"}</p>
+            <p style="margin:5px 0;color:#555;font-size:13px;">${icon} Platform: ${d.platformLabel || "—"}</p>
+            <p style="margin:5px 0;color:#555;font-size:13px;">🕐 Started: ${d.startTimeStr} · ${d.startDateStr}</p>
+            <p style="margin:5px 0;color:#555;font-size:13px;">⏱ Running: ${formatDuration(d.startTime)}</p>
+            <p style="margin:5px 0;color:#555;font-size:13px;">👥 Participants: ${d.participants?.length || 0}</p>
+            <div style="margin-top:14px;background:#eaf4fb;border-radius:10px;padding:14px;text-align:center;">
+              <p style="margin:0 0 4px;font-size:12px;color:#3498db;font-weight:700;letter-spacing:1px;">SESSION 6-DIGIT PASSCODE</p>
+              <p style="margin:0;font-size:32px;font-weight:800;letter-spacing:10px;color:#2c3e50;">${d.code}</p>
+              <p style="margin:10px 0 0;font-size:12px;color:#27ae60;font-weight:700;"><i class="fas fa-arrow-up-right-from-square"></i> Click Session to Open Meeting Link</p>
+            </div>
+          </div>`;
+      });
     });
   });
+};
+
+window.joinSessionDirect = async function (sessionId, meetingLink, platform) {
+  const user = auth.currentUser;
+  if (!user) return;
+  try {
+    await updateDoc(doc(db, "sessions", sessionId), { participants: arrayUnion(user.uid) });
+    openMeetingLink(meetingLink, platform);
+  } catch (err) {
+    alert("Error joining session: " + err.message);
+  }
 };
 
 window.openMeetingAsHost = async function (sessionId) {
@@ -1250,31 +1518,46 @@ window.openMeetingAsHost = async function (sessionId) {
 window.loadSessionHistory = function () {
   const container = el("historyContainer");
   if (!container) return;
-  onSnapshot(query(collection(db, "sessions"), where("status", "==", "ended")), snap => {
-    container.innerHTML = "";
-    if (snap.empty) {
-      container.innerHTML = `<div style="text-align:center;padding:50px 20px;color:#888;"><div style="font-size:40px;">📋</div><p>No past sessions yet</p></div>`;
-      return;
-    }
-    const docs = snap.docs.sort((a, b) => (b.data().endTime || 0) - (a.data().endTime || 0));
-    docs.forEach(docSnap => {
-      const d = docSnap.data();
-      const avgRating = d.ratings?.length ? (d.ratings.reduce((a, b) => a + b.stars, 0) / d.ratings.length).toFixed(1) : null;
-      const stars = avgRating ? "⭐".repeat(Math.round(avgRating)) + ` <b>${avgRating}/5</b>` : `<span style="color:#bbb;">No ratings yet</span>`;
-      container.innerHTML += `
-        <div class="card" style="border-left:4px solid #3498db;margin-bottom:14px;">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;">
-            <h3 style="margin:0;">${d.name}</h3>
-            <span style="background:#eaf4fb;color:#3498db;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:600;">ENDED</span>
-          </div>
-          <p style="margin:5px 0;color:#555;">Host: <b>${d.hostName}</b></p>
-          <p style="margin:5px 0;color:#555;">Skill: ${d.skill || "—"}</p>
-          <p style="margin:5px 0;color:#555;">Platform: ${d.platformLabel || "—"}</p>
-          <p style="margin:5px 0;color:#555;">${d.startDateStr} · ${d.startTimeStr} → ${d.endTimeStr || "—"}</p>
-          <p style="margin:5px 0;color:#555;">Duration: ${d.durationMins != null ? d.durationMins + " min" : "—"}</p>
-          <p style="margin:5px 0;color:#555;">Participants: ${d.participants?.length || 0}</p>
-          <p style="margin:5px 0;">Rating: ${stars}</p>
-        </div>`;
+  const user = auth.currentUser;
+  if (!user) return;
+  
+  onSnapshot(doc(db, "users", user.uid), (mySnap) => {
+    const myData = mySnap.data();
+    const following = myData?.following || [];
+    
+    onSnapshot(query(collection(db, "sessions"), where("status", "==", "ended")), snap => {
+      container.innerHTML = "";
+      
+      const visibleDocs = snap.docs.filter(docSnap => {
+        const d = docSnap.data();
+        return d.hostId === user.uid || following.includes(d.hostId);
+      });
+      
+      if (visibleDocs.length === 0) {
+        container.innerHTML = `<div style="text-align:center;padding:50px 20px;color:#888;"><div style="font-size:40px;">📋</div><p>No past sessions yet</p></div>`;
+        return;
+      }
+      
+      const sortedDocs = visibleDocs.sort((a, b) => (b.data().endTime || 0) - (a.data().endTime || 0));
+      sortedDocs.forEach(docSnap => {
+        const d = docSnap.data();
+        const avgRating = d.ratings?.length ? (d.ratings.reduce((a, b) => a + b.stars, 0) / d.ratings.length).toFixed(1) : null;
+        const stars = avgRating ? "⭐".repeat(Math.round(avgRating)) + ` <b>${avgRating}/5</b>` : `<span style="color:#bbb;">No ratings yet</span>`;
+        container.innerHTML += `
+          <div class="card" style="border-left:4px solid #3498db;margin-bottom:14px;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;">
+              <h3 style="margin:0;">${d.name}</h3>
+              <span style="background:#eaf4fb;color:#3498db;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:600;">ENDED</span>
+            </div>
+            <p style="margin:5px 0;color:#555;">Host: <b>${d.hostName}</b></p>
+            <p style="margin:5px 0;color:#555;">Skill: ${d.skill || "—"}</p>
+            <p style="margin:5px 0;color:#555;">Platform: ${d.platformLabel || "—"}</p>
+            <p style="margin:5px 0;color:#555;">${d.startDateStr} · ${d.startTimeStr} → ${d.endTimeStr || "—"}</p>
+            <p style="margin:5px 0;color:#555;">Duration: ${d.durationMins != null ? d.durationMins + " min" : "—"}</p>
+            <p style="margin:5px 0;color:#555;">Participants: ${d.participants?.length || 0}</p>
+            <p style="margin:5px 0;">Rating: ${stars}</p>
+          </div>`;
+      });
     });
   });
 };
@@ -1291,20 +1574,38 @@ window.loadFeedbackSessions = function () {
   });
 };
 
-window.submitFeedback = async function () {
+window.submitFeedbackAndRating = async function () {
   const user = auth.currentUser;
   if (!user) return;
   const sessionId = el("feedbackSessionSelect")?.value;
   const text      = el("feedbackText")?.value?.trim();
   if (!sessionId) { alert("Select a session"); return; }
-  if (!text)      { alert("Write your feedback"); return; }
-  const snap = await getDoc(doc(db, "users", user.uid));
-  const name = snap.data()?.name || "User";
-  await updateDoc(doc(db, "sessions", sessionId), {
-    feedback: arrayUnion({ userId: user.uid, name, text, time: Date.now() })
-  });
-  alert("Feedback submitted!");
-  if (el("feedbackText")) el("feedbackText").value = "";
+  if (!selectedRating) { alert("Select star rating (1-5) by clicking the stars"); return; }
+  if (!text) { alert("Please write feedback comments"); return; }
+
+  const userSnap = await getDoc(doc(db, "users", user.uid));
+  const name = userSnap.data()?.name || "User";
+
+  const sessSnap = await getDoc(doc(db, "sessions", sessionId));
+  if (!sessSnap.exists()) return;
+  const existing = (sessSnap.data()?.ratings || []).find(r => r.userId === user.uid);
+  if (existing) { alert("You have already rated/reviewed this session."); return; }
+
+  try {
+    await updateDoc(doc(db, "sessions", sessionId), {
+      ratings: arrayUnion({ userId: user.uid, name, stars: selectedRating, time: Date.now() }),
+      feedback: arrayUnion({ userId: user.uid, name, text, time: Date.now() })
+    });
+    alert("Review submitted successfully! Thank you!");
+    
+    // Clear fields
+    selectedRating = 0;
+    for (let i = 1; i <= 5; i++) { const s = el("star" + i); if (s) s.innerText = "☆"; }
+    if (el("feedbackText")) el("feedbackText").value = "";
+    loadRatingsContainer();
+  } catch (err) {
+    alert("Submission failed: " + err.message);
+  }
 };
 
 window.setRating = function (stars) {
@@ -1352,27 +1653,39 @@ window.loadRatingsContainer = function () {
   if (!container) return;
   onSnapshot(collection(db, "sessions"), snap => {
     container.innerHTML = "";
+    let count = 0;
     snap.forEach(docSnap => {
       const d = docSnap.data();
       if (!d.ratings?.length) return;
+      count++;
       const avg = (d.ratings.reduce((a, b) => a + b.stars, 0) / d.ratings.length).toFixed(1);
-      let ratingsHtml = d.ratings.map(r =>
-        `<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #f0f0f0;">
-          <span>${r.name}</span>
-          <span style="color:#f39c12;">${"★".repeat(r.stars)}${"☆".repeat(5 - r.stars)}</span>
-        </div>`
-      ).join("");
+      
+      const feedbacks = d.feedback || [];
+      let reviewsHtml = "";
+      d.ratings.forEach(r => {
+        const textFeedback = feedbacks.find(f => f.userId === r.userId)?.text || "";
+        reviewsHtml += `
+          <div style="padding:10px; border-bottom:1px solid #f0f0f0; background:#fbfbfb; border-radius:8px; margin-bottom:8px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+              <span style="font-weight:700; font-size:13px; color:#333;">${r.name}</span>
+              <span style="color:#f39c12; font-size:13px;">${"★".repeat(r.stars)}${"☆".repeat(5 - r.stars)}</span>
+            </div>
+            ${textFeedback ? `<p style="margin:0; font-size:13px; color:#555; line-height:1.4;">"${textFeedback}"</p>` : ''}
+          </div>`;
+      });
+      
       container.innerHTML += `
-        <div class="card" style="margin-bottom:12px;">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-            <h3 style="margin:0;">${d.name}</h3>
-            <span style="font-size:18px;color:#f39c12;font-weight:700;">⭐ ${avg}/5</span>
+        <div class="card" style="margin-bottom:16px; border:1px solid #e2e8f0; border-radius:12px; padding:16px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.01);">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1.5px solid #f1f5f9; padding-bottom:8px;">
+            <h4 style="margin:0; font-size:15px; color:#2c3e50;">${d.name} <small style="color:#7f8c8d; font-weight:normal;">by ${d.hostName}</small></h4>
+            <span style="background:#fef3c7; color:#d97706; padding:3px 8px; border-radius:12px; font-size:11px; font-weight:700;">⭐ Avg: ${avg}/5</span>
           </div>
-          <p style="margin:0 0 8px;color:#888;font-size:13px;">By ${d.hostName} · ${d.ratings.length} rating(s)</p>
-          ${ratingsHtml}
+          <div>${reviewsHtml}</div>
         </div>`;
     });
-    if (!container.innerHTML) container.innerHTML = `<div style="text-align:center;padding:30px;color:#888;">No ratings yet</div>`;
+    if (count === 0) {
+      container.innerHTML = `<div style="text-align:center;padding:30px;color:#888;">No ratings yet</div>`;
+    }
   });
 };
 
@@ -1634,19 +1947,17 @@ window.loadAvailableTests = async function () {
   const mySnap    = await getDoc(doc(db, "users", user.uid));
   const myData    = mySnap.data();
   const following = myData?.following || [];
-  const followers = myData?.followers || [];
-  const mutualConnections = following.filter(uid => followers.includes(uid));
-  if (!mutualConnections.length) {
+  if (!following.length) {
     container.innerHTML = `
       <div style="text-align:center;padding:40px 20px;color:#888;">
         <div style="font-size:48px;margin-bottom:12px;">🤝</div>
-        <p style="font-size:16px;font-weight:600;margin:0 0 6px;color:#555;">No mutual connections yet</p>
-        <p style="font-size:13px;margin:0;">Follow someone and have them follow you back to see their tests here.</p>
+        <p style="font-size:16px;font-weight:600;margin:0 0 6px;color:#555;">No followed creators yet</p>
+        <p style="font-size:13px;margin:0;">Follow a user to see and attend their tests here.</p>
       </div>`;
     return;
   }
   const chunks = [];
-  for (let i = 0; i < mutualConnections.length; i += 10) chunks.push(mutualConnections.slice(i, i + 10));
+  for (let i = 0; i < following.length; i += 10) chunks.push(following.slice(i, i + 10));
   let allTests = [];
   for (const chunk of chunks) {
     const snap = await getDocs(query(collection(db, "tests"), where("creatorId", "in", chunk)));
@@ -1658,7 +1969,7 @@ window.loadAvailableTests = async function () {
       <div style="text-align:center;padding:40px 20px;color:#888;">
         <div style="font-size:48px;margin-bottom:12px;">📝</div>
         <p style="font-size:15px;font-weight:600;margin:0 0 6px;color:#555;">No tests available yet</p>
-        <p style="font-size:13px;margin:0;">Your connections haven't created any tests yet.</p>
+        <p style="font-size:13px;margin:0;">Your followed creators haven't created any tests yet.</p>
       </div>`;
     return;
   }
@@ -1667,7 +1978,7 @@ window.loadAvailableTests = async function () {
       <div class="card" style="border-left:4px solid #27ae60;margin-bottom:14px;">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
           <h3 style="margin:0;">${test.title}</h3>
-          <span style="background:#e8f5e9;color:#27ae60;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:600;">📝 TEST</span>
+          <span style="background:#e0f2fe;color:#0369a1;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:600;">👨‍🏫 TEACHING ME</span>
         </div>
         <p style="margin:4px 0;color:#555;font-size:13px;">📚 Skill: <b>${test.skill}</b></p>
         <p style="margin:4px 0;color:#555;font-size:13px;">👤 By: <b>${test.creatorName || "Unknown"}</b></p>
@@ -1848,50 +2159,79 @@ window.completeTest = async function () {
 /* ================================================
    MY RESULTS — logged-in user's attempts only
    ================================================ */
-window.loadMyResults = function () {
+window.loadMyResults = async function () {
   const user = auth.currentUser;
   if (!user) return;
   const container = el("myResultsContainer");
   if (!container) return;
   container.innerHTML = `<div style="text-align:center;padding:30px;color:#888;">Loading...</div>`;
-  onSnapshot(
-    query(collection(db, "testAttempts"), where("userId", "==", user.uid)),
-    snap => {
-      container.innerHTML = "";
-      if (snap.empty) {
+  
+  try {
+    // 1. Get tests created by the user
+    const createdSnap = await getDocs(query(collection(db, "tests"), where("creatorId", "==", user.uid)));
+    const createdCount = createdSnap.size;
+    
+    // 2. Listen in real-time to tests attended by the user
+    onSnapshot(
+      query(collection(db, "testAttempts"), where("userId", "==", user.uid)),
+      snap => {
         container.innerHTML = `
-          <div style="text-align:center;padding:40px 20px;color:#888;">
-            <div style="font-size:48px;margin-bottom:12px;">📋</div>
-            <p style="font-size:15px;font-weight:600;margin:0 0 6px;color:#555;">No test attempts yet</p>
-            <p style="font-size:13px;margin:0;">Go to <b>Attend Test</b> to attempt your first test.</p>
-          </div>`;
-        return;
-      }
-      const docs = snap.docs.sort((a, b) => {
-        const aTime = a.data().attemptedAt?.seconds || 0;
-        const bTime = b.data().attemptedAt?.seconds || 0;
-        return bTime - aTime;
-      });
-      docs.forEach(docSnap => {
-        const d = docSnap.data();
-        const color = d.percentage >= 80 ? "#27ae60" : d.percentage >= 50 ? "#f39c12" : "#e74c3c";
-        const emoji = d.percentage >= 80 ? "🎉" : d.percentage >= 50 ? "👍" : "📚";
-        const date  = d.attemptedAt?.toDate
-          ? d.attemptedAt.toDate().toLocaleDateString()
-          : "—";
-        container.innerHTML += `
-          <div class="card" style="border-left:4px solid ${color};margin-bottom:12px;">
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
-              <h3 style="margin:0;font-size:15px;">${emoji} ${d.testTitle || "Unnamed Test"}</h3>
-              <span style="font-size:20px;font-weight:800;color:${color};">${d.percentage}%</span>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:20px;">
+            <div style="background:#e8f4fd; border:1px solid #b3d7ff; border-radius:12px; padding:16px; text-align:center;">
+              <div style="font-size:24px; margin-bottom:4px;">✍️</div>
+              <div style="font-size:12px; color:#555; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Tests Created</div>
+              <div style="font-size:28px; font-weight:800; color:#0056b3;">${createdCount}</div>
             </div>
-            <p style="margin:3px 0;color:#555;font-size:13px;">Score: <b>${d.score}/${d.total}</b></p>
-            <p style="margin:3px 0;color:#27ae60;font-size:13px;font-weight:600;">+${d.earnedCredits} Credits earned</p>
-            <p style="margin:3px 0;color:#aaa;font-size:12px;">📅 ${date}</p>
-          </div>`;
-      });
-    }
-  );
+            <div style="background:#ecfdf5; border:1px solid #a7f3d0; border-radius:12px; padding:16px; text-align:center;">
+              <div style="font-size:24px; margin-bottom:4px;">📝</div>
+              <div style="font-size:12px; color:#555; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Tests Attended</div>
+              <div style="font-size:28px; font-weight:800; color:#047857;">${snap.size}</div>
+            </div>
+          </div>
+          <h3 style="margin:20px 0 12px; color:#2c3e50;"><i class="fas fa-history"></i> Attended Tests History</h3>
+          <div id="resultsHistoryList"></div>`;
+        
+        const historyList = el("resultsHistoryList");
+        if (snap.empty) {
+          historyList.innerHTML = `
+            <div style="text-align:center;padding:40px 20px;color:#888;">
+              <div style="font-size:48px;margin-bottom:12px;">📋</div>
+              <p style="font-size:15px;font-weight:600;margin:0 0 6px;color:#555;">No test attempts yet</p>
+              <p style="font-size:13px;margin:0;">Go to <b>Attend Test</b> to attempt your first test.</p>
+            </div>`;
+          return;
+        }
+        
+        const docs = snap.docs.sort((a, b) => {
+          const aTime = a.data().attemptedAt?.seconds || 0;
+          const bTime = b.data().attemptedAt?.seconds || 0;
+          return bTime - aTime;
+        });
+        
+        docs.forEach(docSnap => {
+          const d = docSnap.data();
+          const color = d.percentage >= 80 ? "#27ae60" : d.percentage >= 50 ? "#f39c12" : "#e74c3c";
+          const emoji = d.percentage >= 80 ? "🎉" : d.percentage >= 50 ? "👍" : "📚";
+          const date  = d.attemptedAt?.toDate
+            ? d.attemptedAt.toDate().toLocaleDateString()
+            : "—";
+            
+          historyList.innerHTML += `
+            <div class="card" style="border-left:4px solid ${color};margin-bottom:12px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+                <h3 style="margin:0;font-size:15px;">${emoji} ${d.testTitle || "Unnamed Test"}</h3>
+                <span style="font-size:20px;font-weight:800;color:${color};">${d.percentage}%</span>
+              </div>
+              <p style="margin:3px 0;color:#555;font-size:13px;">Score: <b>${d.score}/${d.total}</b></p>
+              <p style="margin:3px 0;color:#27ae60;font-size:13px;font-weight:600;">+${d.earnedCredits} Credits earned</p>
+              <p style="margin:3px 0;color:#aaa;font-size:12px;">📅 ${date}</p>
+            </div>`;
+        });
+      }
+    );
+  } catch (err) {
+    console.error("Error loading results:", err);
+  }
 };
 
 /* ================================================
@@ -2023,11 +2363,9 @@ window.openSessionScreen = function (screenId) {
   if (el("sessionDashboard")) el("sessionDashboard").style.display = "none";
   document.querySelectorAll("#session .screen").forEach(s => s.style.display = "none");
   if (el(screenId)) el(screenId).style.display = "block";
+  if (screenId === "hostSessionScreen")     loadHostSessionPanel();
   if (screenId === "liveSessionScreen")     loadLiveSessions();
-  if (screenId === "historySessionScreen")  loadSessionHistory();
-  if (screenId === "ratingsSessionScreen")  { loadRatingsSessions(); loadRatingsContainer(); }
-  if (screenId === "feedbackSessionScreen") loadFeedbackSessions();
-  if (screenId === "endSessionScreen")      loadMyActiveSession();
+  if (screenId === "feedbackSessionScreen") { loadFeedbackSessions(); loadRatingsContainer(); }
 };
 window.backSessionDashboard = function () {
   if (el("sessionDashboard")) el("sessionDashboard").style.display = "grid";
@@ -2037,11 +2375,9 @@ window.openTestScreen = function (screenId) {
   if (el("testDashboard")) el("testDashboard").style.display = "none";
   document.querySelectorAll("#testSection .screen").forEach(s => s.style.display = "none");
   if (el(screenId)) el(screenId).style.display = "block";
-  if (screenId === "myQuestionsScreen") loadMyQuestions();
   if (screenId === "createTestScreen")  loadMyTests();
   if (screenId === "myTestsScreen")     loadMyTests();
   if (screenId === "resultsScreen")     loadMyResults();     // ← My Results
-  if (screenId === "leaderboardScreen") loadLeaderboard();   // ← Leaderboard
   if (screenId === "attendTestScreen") {
     const availablePanel = el("availableTests");
     const questionsPanel = el("testQuestions");
@@ -2090,17 +2426,25 @@ let activeGroupChat = null;
 window.loadCalendarSessions = function () {
   const user = auth.currentUser;
   if (!user) return;
-  onSnapshot(collection(db, "sessions"), (snap) => {
-    calendarSessions = [];
-    snap.forEach((docSnap) => {
-      const d = docSnap.data();
-      const id = docSnap.id;
-      if (d.hostId === user.uid || (d.participants && d.participants.includes(user.uid))) {
-        calendarSessions.push({ id, ...d });
-      }
+  onSnapshot(doc(db, "users", user.uid), (mySnap) => {
+    const myData = mySnap.data() || {};
+    const following = myData.following || [];
+    const followers = myData.followers || [];
+    
+    onSnapshot(collection(db, "sessions"), (snap) => {
+      calendarSessions = [];
+      snap.forEach((docSnap) => {
+        const d = docSnap.data();
+        const id = docSnap.id;
+        // Host sees own, followers/following see sessions
+        const isRelated = d.hostId === user.uid || following.includes(d.hostId) || followers.includes(d.hostId);
+        if (isRelated && d.status !== "ended") {
+          calendarSessions.push({ id, ...d });
+        }
+      });
+      drawCalendar();
+      updateCalendarSessionsList();
     });
-    drawCalendar();
-    updateCalendarSessionsList();
   });
 };
 
@@ -2134,7 +2478,7 @@ window.drawCalendar = function () {
     const isSelected = currentDate.toDateString() === selectedCalendarDate.toDateString();
     
     const hasSession = calendarSessions.some(s => {
-      const sessionDate = new Date(s.startTime);
+      const sessionDate = parseSessionDate(s.startTime);
       return sessionDate.toDateString() === currentDate.toDateString();
     });
     
@@ -2161,7 +2505,7 @@ window.updateCalendarSessionsList = function () {
   container.innerHTML = "";
   
   const filtered = calendarSessions.filter(s => {
-    const sessionDate = new Date(s.startTime);
+    const sessionDate = parseSessionDate(s.startTime);
     return sessionDate.toDateString() === selectedCalendarDate.toDateString();
   });
   
@@ -2172,19 +2516,21 @@ window.updateCalendarSessionsList = function () {
   
   filtered.forEach(s => {
     const isHost = s.hostId === auth.currentUser?.uid;
-    const timeStr = new Date(s.startTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    const timeStr = parseSessionDate(s.startTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
     let badgeText = s.status === 'live' ? '🔴 LIVE' : (s.status === 'scheduled' ? '📅 SCHEDULED' : '🏁 ENDED');
     let badgeColor = s.status === 'live' ? '#e74c3c' : (s.status === 'scheduled' ? '#9b59b6' : '#95a5a6');
     
     let actionBtn = "";
-    if (s.status === 'live') {
-      actionBtn = `<button onclick="openMeetingLink('${s.meetingLink}', '${s.platform}')" style="background:#2ecc71; color:#fff; border:none; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer;">Join Session</button>`;
-    } else if (s.status === 'scheduled') {
-      actionBtn = `<button onclick="startScheduledSession('${s.id}')" style="background:#3b82f6; color:#fff; border:none; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer;">Launch Session</button>`;
+    if (s.status === 'scheduled' && isHost) {
+      actionBtn = `<button onclick="event.stopPropagation(); joinOrLaunchCalendarSession('${s.id}')" style="background:#3b82f6; color:#fff; border:none; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer;">Launch Session</button>`;
+    } else if (s.status === 'scheduled' && !isHost) {
+      actionBtn = `<button onclick="event.stopPropagation(); joinOrLaunchCalendarSession('${s.id}')" style="background:#27ae60; color:#fff; border:none; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer;">Join Session</button>`;
     }
     
+    const clickAttr = `onclick="joinOrLaunchCalendarSession('${s.id}')" style="background:#f8f9fa; border-radius:10px; padding:12px; border:1px solid #e9ecef; display:flex; flex-direction:column; gap:6px; cursor:pointer; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'"`;
+
     container.innerHTML += `
-      <div style="background:#f8f9fa; border-radius:10px; padding:12px; border:1px solid #e9ecef; display:flex; flex-direction:column; gap:6px;">
+      <div ${clickAttr}>
         <div style="display:flex; justify-content:space-between; align-items:center;">
           <b style="font-size:14px; color:#2c3e50;">${s.name}</b>
           <span style="background:${badgeColor}; color:#fff; padding:2px 8px; border-radius:12px; font-size:10px; font-weight:700;">${badgeText}</span>
@@ -2192,33 +2538,44 @@ window.updateCalendarSessionsList = function () {
         <div style="font-size:12px; color:#7f8c8d;">
           Topic: ${s.skill || "—"} | Host: ${s.hostName}<br>
           Time: ${timeStr} | Platform: ${s.platformLabel}
+          ${s.status === 'live' ? '<br><span style="color:#27ae60; font-weight:700;"><i class="fas fa-arrow-up-right-from-square"></i> Click to Open Meeting Link</span>' : ''}
+          ${s.status === 'scheduled' ? '<br><span style="color:#3498db; font-weight:700;"><i class="fas fa-calendar-check"></i> Scheduled Session</span>' : ''}
         </div>
+        ${actionBtn ? `
         <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:4px;">
           ${actionBtn}
-        </div>
+        </div>` : ''}
       </div>`;
   });
 };
 
-window.startScheduledSession = async function (sessionId) {
-  await updateDoc(doc(db, "sessions", sessionId), { status: "live" });
-  alert("Scheduled session is now LIVE!");
-  loadCalendarSessions();
-};
 
-window.loadGroupChatMembers = function () {
+
+window.loadGroupChatMembers = async function () {
   const container = el("groupMembersList");
   if (!container) return;
+  const user = auth.currentUser;
+  if (!user) return;
+  
+  const mySnap = await getDoc(doc(db, "users", user.uid));
+  const myData = mySnap.data();
+  const followers = myData?.followers || [];
+  
   getDocs(collection(db, "users")).then(snap => {
     container.innerHTML = "";
     snap.forEach(docSnap => {
-      if (docSnap.id === auth.currentUser?.uid) return;
+      const userId = docSnap.id;
+      if (userId === user.uid) return;
+      if (!followers.includes(userId)) return;
       container.innerHTML += `
         <label style="display:flex; align-items:center; gap:8px; font-size:14px; font-weight:600; cursor:pointer;">
-          <input type="checkbox" name="groupMember" value="${docSnap.id}" style="width:auto; margin:0;">
+          <input type="checkbox" name="groupMember" value="${userId}" style="width:auto; margin:0;">
           <span>${docSnap.data().name}</span>
         </label>`;
     });
+    if (container.innerHTML === "") {
+      container.innerHTML = "<p style='color:#888;font-size:13px;text-align:center;'>No followers yet — people who follow you will appear here</p>";
+    }
   });
 };
 
@@ -2284,7 +2641,7 @@ window.openGroupChat = function (groupId, name) {
   activeChatUser = null;
   openChatScreen("chatMainScreen");
   if (el("chatTitle")) el("chatTitle").innerText = `Group: ${name}`;
-  if (el("chatUserStatus")) el("chatUserStatus").innerText = "Group Chat";
+  if (el("chatUserStatus")) el("chatUserStatus").style.display = "none";
   if (el("chatThemeSelect")) el("chatThemeSelect").value = "Default";
   changeChatTheme();
   
@@ -2299,20 +2656,26 @@ window.loadGroupMessages = function (groupId) {
     box.innerHTML = "";
     snapshot.forEach((docSnap) => {
       const d = docSnap.data();
+      const msgId = docSnap.id;
       const time = d.time ? formatTime(d.time) : "";
       const isMine = d.sender === auth.currentUser.uid;
       
       let attachments = "";
       if (d.imageUrl) {
-        attachments += `<img src="${d.imageUrl}" style="max-width:100%; border-radius:8px; display:block; margin-top:5px; max-height:200px; object-fit:cover;">`;
+        attachments += `<a href="${d.imageUrl}" target="_blank"><img src="${d.imageUrl}" style="max-width:100%; border-radius:8px; display:block; margin-top:5px; max-height:200px; object-fit:cover; cursor:pointer;"></a>`;
       }
       if (d.pdfUrl) {
         attachments += `<a href="${d.pdfUrl}" target="_blank" style="display:flex; align-items:center; gap:8px; background:#f0f0f0; padding:8px 12px; border-radius:6px; text-decoration:none; color:#333; margin-top:5px; font-size:12px; font-weight:700;"><i class="fas fa-file-pdf" style="color:#ef4444; font-size:18px;"></i> View Document</a>`;
       }
       
+      const deleteBtn = isMine ? `<div class="msg-actions" style="display:none; position:absolute; top:-32px; right:0; background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.2); overflow:hidden; z-index:99; white-space:nowrap;">
+        <button onclick="event.stopPropagation(); deleteGroupMessage('${msgId}')" style="background:none; border:none; padding:6px 12px; color:#e74c3c; font-size:12px; font-weight:700; cursor:pointer;">🗑 Delete</button>
+      </div>` : "";
+      
       if (isMine) {
         box.innerHTML += `
-          <div style="display:flex; justify-content:flex-end; margin:4px 10px;">
+          <div class="chat-msg-wrap" style="display:flex; justify-content:flex-end; margin:4px 10px; position:relative;" onclick="toggleMsgActions(this)">
+            ${deleteBtn}
             <div style="background:#25D366; color:#fff; padding:8px 14px; border-radius:18px 18px 4px 18px; max-width:70%; word-wrap:break-word;">
               <div style="font-size:14px;">${d.text}</div>
               ${attachments}
@@ -2321,7 +2684,7 @@ window.loadGroupMessages = function (groupId) {
           </div>`;
       } else {
         box.innerHTML += `
-          <div style="display:flex; justify-content:flex-start; margin:4px 10px;">
+          <div class="chat-msg-wrap" style="display:flex; justify-content:flex-start; margin:4px 10px; position:relative;">
             <div style="background:#fff; color:#000; padding:8px 14px; border-radius:18px 18px 18px 4px; max-width:70%; word-wrap:break-word; box-shadow:0 1px 3px rgba(0,0,0,0.1);">
               <small style="color:#8b5cf6; font-weight:bold; display:block; margin-bottom:4px;">${d.senderName}</small>
               <div style="font-size:14px;">${d.text}</div>
@@ -2333,6 +2696,167 @@ window.loadGroupMessages = function (groupId) {
     });
     box.scrollTop = box.scrollHeight;
   });
+};
+
+window.loadHostSessionPanel = async function () {
+  const user = auth.currentUser;
+  if (!user) return;
+  const container = el("hostSessionContainer");
+  if (!container) return;
+  
+  const liveSnap = await getDocs(
+    query(collection(db, "sessions"), where("hostId", "==", user.uid), where("status", "==", "live"))
+  );
+  
+  const schedSnap = await getDocs(
+    query(collection(db, "sessions"), where("hostId", "==", user.uid), where("status", "==", "scheduled"))
+  );
+  
+  let html = "";
+  
+  // 1. If user has a live session running
+  if (!liveSnap.empty) {
+    const d = liveSnap.docs[0].data();
+    const id = liveSnap.docs[0].id;
+    html += `
+      <div style="background:#fff; border-radius:14px; padding:24px; border:1.5px solid #ffccd5; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.02); margin-bottom:20px;">
+        <div style="font-size:52px; margin-bottom:12px;">🎙</div>
+        <h3 style="margin:0 0 6px; color:#2c3e50; font-size:18px;">You have a Live Session Running</h3>
+        <div style="background:#fff8f8; border-radius:10px; padding:16px; text-align:left; margin-bottom:20px; border:1px solid #ffe3e3;">
+          <p style="margin:4px 0; font-size:14px; color:#2c3e50;"><b>Name:</b> ${d.name}</p>
+          <p style="margin:4px 0; font-size:14px; color:#2c3e50;"><b>Skill:</b> ${d.skill || "—"}</p>
+          <p style="margin:4px 0; font-size:14px; color:#2c3e50;"><b>Platform:</b> ${d.platformLabel || "—"}</p>
+          <p style="margin:4px 0; font-size:14px; color:#2c3e50;"><b>Secret Code:</b> <b style="font-size:18px; color:#c0392b;">${d.code}</b></p>
+        </div>
+        <button onclick="endSession('${id}')" style="background:#e74c3c; color:#fff; width:100%; padding:14px; font-size:15px; font-weight:700; border:none; border-radius:10px; cursor:pointer;">
+          <i class="fas fa-circle-stop"></i> End Current Session
+        </button>
+      </div>`;
+  }
+  
+  // 2. If user has scheduled sessions
+  if (!schedSnap.empty) {
+    html += `
+      <div style="background:#fff; border-radius:14px; padding:20px; border:1.5px solid #e2e8f0; margin-bottom:20px;">
+        <h3 style="margin:0 0 12px; color:#2c3e50; font-size:16px;"><i class="fas fa-calendar-alt" style="color:#3b82f6;"></i> Your Scheduled Sessions</h3>
+        <div style="display:flex; flex-direction:column; gap:12px;">`;
+    
+    schedSnap.forEach(docSnap => {
+      const s = docSnap.data();
+      const id = docSnap.id;
+      const timeStr = parseSessionDate(s.startTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+      const dateStr = parseSessionDate(s.startTime).toLocaleDateString([], { month: "short", day: "numeric", year: "numeric" });
+      html += `
+        <div style="background:#f8f9fa; border-radius:10px; padding:12px; border:1px solid #e9ecef; display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <b style="font-size:14px; color:#2c3e50;">${s.name}</b>
+            <div style="font-size:12px; color:#7f8c8d; margin-top:2px;">
+              Topic: ${s.skill || "—"} | Platform: ${s.platformLabel}<br>
+              Scheduled: ${dateStr} at ${timeStr}
+            </div>
+          </div>
+          <button onclick="joinOrLaunchCalendarSession('${id}')" 
+                  style="background:#3b82f6; color:#fff; border:none; padding:8px 14px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer;">
+            🚀 Launch
+          </button>
+        </div>`;
+    });
+    
+    html += `</div></div>`;
+  }
+  
+  // 3. Start Session Creation Form (only if no live session is running)
+  if (liveSnap.empty) {
+    html += `
+      <div style="background:#f0f4ff;border-radius:14px;padding:18px;margin-bottom:18px;border:1.5px solid #c7d7ff;">
+        <h3 style="margin:0 0 4px;color:#3a5bd9;font-size:15px;"><span style="background:#3a5bd9;color:#fff;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;margin-right:8px;">1</span>Choose a Platform & Get Meeting Link</h3>
+        <p style="margin:4px 0 14px;color:#666;font-size:13px;">Create a meeting in Zoom or Google Meet → copy the invite link → paste in Step 2</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+          <a href="https://zoom.us/start/videomeeting" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#fff;border:2px solid #2D8CFF;border-radius:12px;text-decoration:none;color:#2D8CFF;font-weight:700;font-size:13px;text-align:center;"><span style="font-size:28px;">🟦</span>Zoom</a>
+          <a href="https://meet.google.com/new" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#fff;border:2px solid #00897B;border-radius:12px;text-decoration:none;color:#00897B;font-weight:700;font-size:13px;text-align:center;"><span style="font-size:28px;">🟢</span>Google Meet</a>
+        </div>
+      </div>
+      <div style="background:#f8fff8;border-radius:14px;padding:18px;border:1.5px solid #b2dfdb;">
+        <h3 style="margin:0 0 14px;color:#27ae60;font-size:15px;"><span style="background:#27ae60;color:#fff;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;margin-right:8px;">2</span>Fill Session Details</h3>
+        <input type="text" id="sessionName" placeholder="Session Name (e.g. Python Basics)" style="margin-bottom:10px;">
+        <input type="text" id="sessionSkill" placeholder="Skill Topic (e.g. Python, React)" style="margin-bottom:10px;">
+        <label style="font-size:13px;color:#555;font-weight:600;display:block;margin-bottom:6px;">Select Platform:</label>
+        <select id="sessionPlatform" style="margin-bottom:10px;width:100%;padding:10px;border-radius:8px;border:1.5px solid #ddd;">
+          <option value="">-- Select Platform --</option>
+          <option value="zoom">Zoom</option>
+          <option value="meet">Google Meet</option>
+        </select>
+        <input type="url" id="sessionLink" placeholder="Paste Meeting Link here (https://...)" style="margin-bottom:14px;">
+        
+        <!-- Schedule Toggle -->
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; padding:8px 0; border-bottom:1px solid #eee;">
+          <span style="font-size:14px; font-weight:600; color:#555;"><i class="fas fa-calendar-alt"></i> Schedule for Future Date</span>
+          <label class="switch-container" style="position:relative; display:inline-block; width:50px; height:26px;">
+            <input type="checkbox" id="sessionScheduleToggle" onchange="toggleScheduleContainer()" style="opacity:0; width:0; height:0;">
+            <span class="slider" style="position:absolute; cursor:pointer; top:0; left:0; right:0; bottom:0; background-color:#ccc; transition:.4s; border-radius:34px;"></span>
+          </label>
+        </div>
+        
+        <!-- Schedule Fields -->
+        <div id="scheduleFieldsContainer" style="display:none; margin-bottom:14px; background:#f5f6fa; padding:12px; border-radius:10px; border:1px solid #e2e8f0;">
+          <div style="margin-bottom:8px;">
+            <label style="font-size:12px; font-weight:600; color:#666; display:block; margin-bottom:4px;">Date:</label>
+            <input type="date" id="sessionScheduleDate" style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
+          </div>
+          <div>
+            <label style="font-size:12px; font-weight:600; color:#666; display:block; margin-bottom:4px;">Time:</label>
+            <input type="time" id="sessionScheduleTime" style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
+          </div>
+        </div>
+        
+        <button id="btnStartSubmit" onclick="startSession()" style="background:linear-gradient(135deg,#27ae60,#2ecc71);color:#fff;width:100%;padding:14px;font-size:15px;font-weight:700;border:none;border-radius:10px;cursor:pointer;">
+          <i class="fas fa-circle-play"></i> Start Session & Get Code
+        </button>
+      </div>
+      <div id="sessionCodeBox" style="display:none;margin-top:20px;background:linear-gradient(135deg,#e8f5e9,#f0fff4);border:2px dashed #27ae60;border-radius:14px;padding:24px;text-align:center;">
+        <p style="margin:0 0 6px;color:#27ae60;font-weight:700;font-size:14px;">🔐 Your Secret Session Code</p>
+        <h1 id="generatedCode" style="margin:0;font-size:52px;letter-spacing:14px;color:#2c3e50;font-weight:800;"></h1>
+        <p style="margin:10px 0 4px;color:#555;font-size:13px;">Session is LIVE 🟢</p>
+        <button id="copyCodeBtn" onclick="copySessionCode()" style="margin-top:14px;background:#2c3e50;color:#fff;border:none;padding:10px 24px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600;">📋 Copy Code</button>
+      </div>`;
+  }
+  
+  container.innerHTML = html;
+};
+
+window.joinOrLaunchCalendarSession = async function (sessionId) {
+  const user = auth.currentUser;
+  if (!user) return;
+  try {
+    const docSnap = await getDoc(doc(db, "sessions", sessionId));
+    if (!docSnap.exists()) { alert("Session not found."); return; }
+    const d = docSnap.data();
+    
+    // Safely parse the scheduled time
+    const startTimeMs = (d.startTime && d.startTime.seconds) ? d.startTime.seconds * 1000 : d.startTime;
+    
+    // Check if current time is before scheduled startTime
+    if (d.status === "scheduled" && Date.now() < startTimeMs) {
+      alert("Session not started yet. Please wait until the scheduled time.");
+      return;
+    }
+    
+    // If user is the host
+    if (d.hostId === user.uid) {
+      if (d.status === "scheduled") {
+        await updateDoc(doc(db, "sessions", sessionId), { status: "live", startTime: Date.now() });
+      }
+      openMeetingLink(d.meetingLink, d.platform);
+    } else {
+      // If user is follower
+      await updateDoc(doc(db, "sessions", sessionId), { participants: arrayUnion(user.uid) });
+      openMeetingLink(d.meetingLink, d.platform);
+    }
+    loadCalendarSessions();
+    loadHostSessionPanel();
+  } catch (err) {
+    alert("Error: " + err.message);
+  }
 };
 
 // Trigger Selenium test suite run - July 23

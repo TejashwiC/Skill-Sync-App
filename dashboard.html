@@ -123,8 +123,6 @@
           <div class="card card-green" onclick="openProfileScreen('addSkillScreen')"><i class="fas fa-circle-plus"></i><h3>Add Skill</h3><p>Add new skills</p></div>
           <div class="card card-yellow" onclick="openProfileScreen('editSkillScreen')"><i class="fas fa-pen-to-square"></i><h3>Edit Skill</h3><p>Modify skills</p></div>
           <div class="card card-red" onclick="openProfileScreen('deleteSkillScreen')"><i class="fas fa-trash-can"></i><h3>Delete Skill</h3><p>Remove skills</p></div>
-          <div class="card card-purple" onclick="openProfileScreen('skillsOverviewScreen')"><i class="fas fa-layer-group"></i><h3>Skills Overview</h3><p>View all skills</p></div>
-          <div class="card card-cyan" onclick="openProfileScreen('recommendationScreen')"><i class="fas fa-wand-magic-sparkles"></i><h3>Recommendations</h3><p>Suggested skills</p></div>
         </div>
         <div class="screen" id="viewProfileScreen">
           <button class="back-btn" onclick="backProfileDashboard()">← Back</button>
@@ -136,7 +134,6 @@
           <p><strong>Teach:</strong> <span id="vteach"></span></p>
           <p><strong>Learn:</strong> <span id="vlearn"></span></p>
           <p><strong>Language:</strong> <span id="vlang"></span></p>
-          <p><strong>Credits:</strong> <span id="vcredits"></span></p>
         </div>
         <div class="screen" id="editProfileScreen">
           <button class="back-btn" onclick="backProfileDashboard()">← Back</button>
@@ -174,18 +171,6 @@
           <input type="text" id="deleteSkillInput" placeholder="Skill Name">
           <button onclick="deleteSkill()">Delete Skill</button>
         </div>
-        <div class="screen" id="skillsOverviewScreen">
-          <button class="back-btn" onclick="backProfileDashboard()">← Back</button>
-          <h2>Skills Overview</h2>
-          <div id="skillsOverviewList"></div>
-        </div>
-        <div class="screen" id="recommendationScreen">
-          <button class="back-btn" onclick="backProfileDashboard()">← Back</button>
-          <h2>Recommendations</h2>
-          <div class="recommend-card">React JS</div>
-          <div class="recommend-card">Firebase</div>
-          <div class="recommend-card">Node JS</div>
-        </div>
       </div>
 
       <!-- USERS -->
@@ -196,8 +181,6 @@
           <div class="card card-pink" onclick="openUserScreen('followersScreen')"><i class="fas fa-user-group"></i><h3>Followers</h3><p>People following you</p></div>
           <div class="card card-green" onclick="openUserScreen('followingScreen')"><i class="fas fa-user-check"></i><h3>Following</h3><p>Users you follow</p></div>
           <div class="card card-orange" onclick="openUserScreen('searchUsersScreen')"><i class="fas fa-magnifying-glass-plus"></i><h3>Search Users</h3><p>Find users</p></div>
-          <div class="card card-purple" onclick="openUserScreen('mentorsScreen')"><i class="fas fa-chalkboard-user"></i><h3>Top Mentors</h3><p>Best mentors</p></div>
-          <div class="card card-yellow" onclick="openUserScreen('suggestedScreen')"><i class="fas fa-user-plus"></i><h3>Suggested Users</h3><p>Recommended users</p></div>
         </div>
         <div class="screen" id="usersListScreen">
           <button class="back-btn" onclick="backUsersDashboard()">← Back</button>
@@ -220,27 +203,15 @@
           <input type="text" id="searchInput" placeholder="Search users" oninput="searchUsers()">
           <div id="searchResults"></div>
         </div>
-        <div class="screen" id="mentorsScreen">
-          <button class="back-btn" onclick="backUsersDashboard()">← Back</button>
-          <h2>Top Mentors</h2>
-          <div id="mentorsList"></div>
-        </div>
-        <div class="screen" id="suggestedScreen">
-          <button class="back-btn" onclick="backUsersDashboard()">← Back</button>
-          <h2>Suggested Users</h2>
-          <div id="suggestedList"></div>
-        </div>
+
         <div class="screen" id="userProfileScreen">
           <button class="back-btn" onclick="backUsersDashboard()">← Back</button>
           <h2>User Profile</h2>
           <img id="u_profileImg" class="profile-img">
           <p><strong>Name:</strong> <span id="u_name"></span></p>
-          <p><strong>Email:</strong> <span id="u_email"></span></p>
-          <p><strong>Mobile:</strong> <span id="u_mobile"></span></p>
           <p><strong>Teach:</strong> <span id="u_teach"></span></p>
           <p><strong>Learn:</strong> <span id="u_learn"></span></p>
           <p><strong>Language:</strong> <span id="u_lang"></span></p>
-          <p><strong>Credits:</strong> <span id="u_credits"></span></p>
         </div>
       </div>
 
@@ -258,24 +229,35 @@
         <div class="screen" id="chatMainScreen">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
             <button class="back-btn" onclick="backChatDashboard()" style="margin:0;">← Back</button>
-            <div style="display:flex; gap:10px;">
+            <div style="display:flex; gap:8px; align-items:center;">
+              <!-- Select Messages mode -->
+              <button id="selectMsgBtn" onclick="toggleSelectMode()" title="Select messages"
+                style="background:none; border:1px solid #7c3aed; color:#7c3aed; padding:5px 10px; border-radius:6px; cursor:pointer; font-size:12px; font-weight:700;">
+                <i class="fas fa-check-square"></i> Select
+              </button>
+              <button id="deleteSelectedBtn" onclick="deleteSelectedMessages()" title="Delete selected"
+                style="display:none; background:none; border:1px solid #e74c3c; color:#e74c3c; padding:5px 10px; border-radius:6px; cursor:pointer; font-size:12px; font-weight:700;">
+                <i class="fas fa-trash-can"></i> Delete Selected
+              </button>
               <!-- Theme Selector -->
-              <select id="chatThemeSelect" onchange="changeChatTheme()" style="padding:6px 10px; border-radius:6px; border:1px solid #ccc; font-weight:600; cursor:pointer;">
+              <select id="chatThemeSelect" onchange="changeChatTheme()" style="padding:5px 8px; border-radius:6px; border:1px solid #ccc; font-weight:600; cursor:pointer; font-size:12px;">
                 <option value="Default">🎨 Default</option>
-                <option value="Pink">🌸 Pink Theme</option>
-                <option value="Blue">💧 Blue Theme</option>
-                <option value="Dark">🌙 Dark Theme</option>
-                <option value="Green">🍃 Green Theme</option>
+                <option value="Pink">🌸 Pink</option>
+                <option value="Blue">💧 Blue</option>
+                <option value="Dark">🌙 Dark</option>
+                <option value="Green">🍃 Green</option>
               </select>
               <!-- Delete Chat -->
-              <button onclick="deleteActiveChat()" style="background:#e74c3c; color:#fff; border:none; padding:6px 12px; border-radius:6px; cursor:pointer; font-weight:600;"><i class="fas fa-trash-can"></i> Delete Chat</button>
+              <button onclick="deleteActiveChat()" title="Delete entire chat"
+                style="background:none; border:1px solid #e74c3c; color:#e74c3c; width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:13px; display:flex; align-items:center; justify-content:center;">
+                <i class="fas fa-trash-can"></i>
+              </button>
             </div>
           </div>
           <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
             <img id="chatHeaderImg" src="https://ui-avatars.com/api/?name=Chat" style="width:45px; height:45px; border-radius:50%; object-fit:cover;">
             <div>
               <h2 id="chatTitle" style="margin:0; font-size:18px;">Chat</h2>
-              <small id="chatUserStatus" style="color:#7f8c8d; font-weight:600;">Offline</small>
             </div>
           </div>
           <!-- Contact Selector List -->
@@ -291,12 +273,11 @@
           <hr>
           <div id="chatBox" class="chat-box" style="height:350px; overflow-y:auto; padding:10px; background:#f4f6f8; border-radius:10px; border:1.5px solid #eee; margin-bottom:10px;"></div>
           <!-- Input Area with Attachments -->
-          <div style="display:flex; gap:8px; align-items:center;">
-            <input id="messageInput" placeholder="Type a message..." onkeydown="handleEnterKey(event)" style="flex:1; padding:12px; border-radius:8px; border:1.5px solid #ddd; box-sizing:border-box;">
-            <!-- Hidden File Input for Attachments -->
+          <div style="display:flex; gap:8px; align-items:center; width:100%;">
             <input type="file" id="chatFileInput" accept="application/pdf,image/*" onchange="uploadChatAttachment()" style="display:none;">
-            <button onclick="document.getElementById('chatFileInput').click()" style="background:#a855f7; color:#fff; border:none; width:45px; height:42px; border-radius:8px; cursor:pointer; font-size:18px; display:flex; align-items:center; justify-content:center;" title="Attach Image/PDF"><i class="fas fa-paperclip"></i></button>
-            <button onclick="sendMessage()" style="background:#2ecc71; color:#fff; border:none; padding:12px 20px; border-radius:8px; cursor:pointer; font-weight:700; height:42px;">Send</button>
+            <button onclick="document.getElementById('chatFileInput').click()" style="background:#a855f7; color:#fff; border:none; width:45px; height:42px; border-radius:8px; cursor:pointer; font-size:18px; display:flex; align-items:center; justify-content:center; flex-shrink:0;" title="Attach Image/PDF"><i class="fas fa-paperclip"></i></button>
+            <input id="messageInput" placeholder="Type a message..." onkeydown="handleEnterKey(event)" style="flex:1; padding:12px; border-radius:8px; border:1.5px solid #ddd; box-sizing:border-box; height:42px; width:100%;">
+            <button onclick="sendMessage()" style="background:#2ecc71; color:#fff; border:none; width:45px; height:42px; border-radius:8px; cursor:pointer; font-size:18px; display:flex; align-items:center; justify-content:center; flex-shrink:0;" title="Send Message"><i class="fas fa-paper-plane"></i></button>
           </div>
           <!-- Upload Progress -->
           <div id="chatUploadProgressWrap" style="display:none; margin-top:8px; background:#f0f4ff; padding:8px; border-radius:6px; border:1px solid #3b82f6;">
@@ -365,131 +346,50 @@
       <div id="session" class="section" style="display:none;">
         <h2>Session Dashboard</h2>
         <div class="dashboard-grid" id="sessionDashboard">
-          <div class="card card-green" onclick="openSessionScreen('startSessionScreen')"><i class="fas fa-circle-play"></i><h3>Start Session</h3><p>Begin new session</p></div>
-          <div class="card card-red" onclick="openSessionScreen('endSessionScreen')"><i class="fas fa-circle-stop"></i><h3>End Session</h3><p>Close active session</p></div>
-          <div class="card card-blue" onclick="openSessionScreen('joinSessionScreen')"><i class="fas fa-right-to-bracket"></i><h3>Join Session</h3><p>Join with secret code</p></div>
-          <div class="card card-pink" onclick="openSessionScreen('liveSessionScreen')"><i class="fas fa-tower-broadcast"></i><h3>Live Sessions</h3><p>View live classes</p></div>
-          <div class="card card-purple" onclick="openSessionScreen('historySessionScreen')"><i class="fas fa-clock-rotate-left"></i><h3>Session History</h3><p>Previous sessions</p></div>
-          <div class="card card-cyan" onclick="openSessionScreen('feedbackSessionScreen')"><i class="fas fa-comment-medical"></i><h3>Feedback</h3><p>Give feedback</p></div>
-          <div class="card card-yellow" onclick="openSessionScreen('ratingsSessionScreen')"><i class="fas fa-star-half-stroke"></i><h3>Ratings</h3><p>Rate sessions</p></div>
+          <div class="card card-green" onclick="openSessionScreen('hostSessionScreen')"><i class="fas fa-chalkboard-user"></i><h3>Host Session</h3><p>Start or end your sessions</p></div>
+          <div class="card card-pink" onclick="openSessionScreen('liveSessionScreen')"><i class="fas fa-tower-broadcast"></i><h3>Live Sessions</h3><p>Join live classes directly</p></div>
+          <div class="card card-cyan" onclick="openSessionScreen('feedbackSessionScreen')"><i class="fas fa-comment-medical"></i><h3>Feedback & Ratings</h3><p>Rate and review sessions</p></div>
         </div>
-        <div class="screen" id="startSessionScreen">
+        
+        <div class="screen" id="hostSessionScreen">
           <button class="back-btn" onclick="backSessionDashboard()">← Back</button>
-          <h2><i class="fas fa-circle-play"></i> Start a Session</h2>
-          <div style="background:#f0f4ff;border-radius:14px;padding:18px;margin-bottom:18px;border:1.5px solid #c7d7ff;">
-            <h3 style="margin:0 0 4px;color:#3a5bd9;font-size:15px;"><span style="background:#3a5bd9;color:#fff;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;margin-right:8px;">1</span>Choose a Platform & Get Meeting Link</h3>
-            <p style="margin:4px 0 14px;color:#666;font-size:13px;">Click a platform below → create a meeting there → copy the invite link → paste in Step 2</p>
-            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;">
-              <a href="https://zoom.us/start/videomeeting" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#fff;border:2px solid #2D8CFF;border-radius:12px;text-decoration:none;color:#2D8CFF;font-weight:700;font-size:13px;text-align:center;"><span style="font-size:28px;">🟦</span>Zoom<span style="font-size:10px;font-weight:400;color:#888;">Opens Zoom</span></a>
-              <a href="https://meet.google.com/new" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#fff;border:2px solid #00897B;border-radius:12px;text-decoration:none;color:#00897B;font-weight:700;font-size:13px;text-align:center;"><span style="font-size:28px;">🟢</span>Google Meet<span style="font-size:10px;font-weight:400;color:#888;">Opens in Browser</span></a>
-              <a href="https://teams.microsoft.com/l/meeting/new" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#fff;border:2px solid #6264A7;border-radius:12px;text-decoration:none;color:#6264A7;font-weight:700;font-size:13px;text-align:center;"><span style="font-size:28px;">🟣</span>MS Teams<span style="font-size:10px;font-weight:400;color:#888;">Opens Teams</span></a>
-              <a href="https://webex.com/meet" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#fff;border:2px solid #00ADEF;border-radius:12px;text-decoration:none;color:#00ADEF;font-weight:700;font-size:13px;text-align:center;"><span style="font-size:28px;">🔵</span>Webex<span style="font-size:10px;font-weight:400;color:#888;">Opens Webex</span></a>
-              <a href="https://meet.jit.si/" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#fff;border:2px solid #97B925;border-radius:12px;text-decoration:none;color:#5a7a00;font-weight:700;font-size:13px;text-align:center;"><span style="font-size:28px;">🟩</span>Jitsi<span style="font-size:10px;font-weight:400;color:#888;">Free · No Account</span></a>
-              <a href="https://whereby.com/" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 10px;background:#fff;border:2px solid #5C45D4;border-radius:12px;text-decoration:none;color:#5C45D4;font-weight:700;font-size:13px;text-align:center;"><span style="font-size:28px;">🟧</span>Whereby<span style="font-size:10px;font-weight:400;color:#888;">Opens in Browser</span></a>
-            </div>
-          </div>
-          <div style="background:#f8fff8;border-radius:14px;padding:18px;border:1.5px solid #b2dfdb;">
-            <h3 style="margin:0 0 14px;color:#27ae60;font-size:15px;"><span style="background:#27ae60;color:#fff;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;margin-right:8px;">2</span>Fill Session Details</h3>
-            <input type="text" id="sessionName" placeholder="Session Name (e.g. Python Basics)" style="margin-bottom:10px;">
-            <input type="text" id="sessionSkill" placeholder="Skill Topic (e.g. Python, React)" style="margin-bottom:10px;">
-            <label style="font-size:13px;color:#555;font-weight:600;display:block;margin-bottom:6px;">Select Platform:</label>
-            <select id="sessionPlatform" style="margin-bottom:10px;width:100%;padding:10px;border-radius:8px;border:1.5px solid #ddd;">
-              <option value="">-- Select Platform --</option>
-              <option value="zoom">Zoom</option>
-              <option value="meet">Google Meet</option>
-              <option value="teams">Microsoft Teams</option>
-              <option value="webex">Webex</option>
-              <option value="jitsi">Jitsi</option>
-              <option value="whereby">Whereby</option>
-              <option value="other">Other</option>
-            </select>
-            <input type="url" id="sessionLink" placeholder="Paste Meeting Link here (https://...)" style="margin-bottom:14px;">
-            
-            <!-- Schedule Toggle -->
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; padding:8px 0; border-bottom:1px solid #eee;">
-              <span style="font-size:14px; font-weight:600; color:#555;"><i class="fas fa-calendar-alt"></i> Schedule for Future Date</span>
-              <label class="switch-container" style="position:relative; display:inline-block; width:50px; height:26px;">
-                <input type="checkbox" id="sessionScheduleToggle" onchange="toggleScheduleContainer()" style="opacity:0; width:0; height:0;">
-                <span class="slider" style="position:absolute; cursor:pointer; top:0; left:0; right:0; bottom:0; background-color:#ccc; transition:.4s; border-radius:34px;"></span>
-              </label>
-            </div>
-            <!-- Schedule Fields (hidden by default) -->
-            <div id="scheduleFieldsContainer" style="display:none; margin-bottom:14px; background:#f5f6fa; padding:12px; border-radius:10px; border:1px solid #e2e8f0;">
-              <div style="margin-bottom:8px;">
-                <label style="font-size:12px; font-weight:600; color:#666; display:block; margin-bottom:4px;">Date:</label>
-                <input type="date" id="sessionScheduleDate" style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
-              </div>
-              <div>
-                <label style="font-size:12px; font-weight:600; color:#666; display:block; margin-bottom:4px;">Time:</label>
-                <input type="time" id="sessionScheduleTime" style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
-              </div>
-            </div>
+          <h2>Host Session Panel</h2>
+          <div id="hostSessionContainer"></div>
+        </div>
 
-            <button id="btnStartSubmit" onclick="startSession()" style="background:linear-gradient(135deg,#27ae60,#2ecc71);color:#fff;width:100%;padding:14px;font-size:15px;font-weight:700;border:none;border-radius:10px;cursor:pointer;">
-              <i class="fas fa-circle-play"></i> Start Session & Get Code
-            </button>
-          </div>
-          <div id="sessionCodeBox" style="display:none;margin-top:20px;background:linear-gradient(135deg,#e8f5e9,#f0fff4);border:2px dashed #27ae60;border-radius:14px;padding:24px;text-align:center;">
-            <p style="margin:0 0 6px;color:#27ae60;font-weight:700;font-size:14px;">🔐 Your Secret Session Code</p>
-            <h1 id="generatedCode" style="margin:0;font-size:52px;letter-spacing:14px;color:#2c3e50;font-weight:800;"></h1>
-            <p style="margin:10px 0 4px;color:#555;font-size:13px;">Session is LIVE 🟢</p>
-            <p style="margin:0;color:#888;font-size:12px;">Send this code to your student via <b>Chat</b> → they enter it in <b>Join Session</b></p>
-            <button id="copyCodeBtn" onclick="copySessionCode()" style="margin-top:14px;background:#2c3e50;color:#fff;border:none;padding:10px 24px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600;">📋 Copy Code</button>
-          </div>
-        </div>
-        <div class="screen" id="endSessionScreen">
-          <button class="back-btn" onclick="backSessionDashboard()">← Back</button>
-          <h2>End Session</h2>
-          <div id="myActiveSession" style="margin-bottom:16px;"></div>
-          <button onclick="endSession()" style="background:#e74c3c;color:#fff;width:100%;padding:14px;font-size:15px;font-weight:700;border:none;border-radius:10px;cursor:pointer;"><i class="fas fa-circle-stop"></i> End Current Session</button>
-        </div>
-        <div class="screen" id="joinSessionScreen">
-          <button class="back-btn" onclick="backSessionDashboard()">← Back</button>
-          <h2><i class="fas fa-right-to-bracket"></i> Join Session</h2>
-          <div style="background:#f8faff;border-radius:14px;padding:20px;border:1.5px solid #dde4f7;margin-bottom:16px;">
-            <div style="text-align:center;margin-bottom:16px;">
-              <div style="font-size:42px;margin-bottom:8px;">🔐</div>
-              <h3 style="margin:0 0 6px;color:#2c3e50;">Enter Secret Code</h3>
-              <p style="margin:0;color:#888;font-size:13px;">Ask your teacher/host to share the 6-digit code via Chat</p>
-            </div>
-            <input type="text" id="joinCodeInput" placeholder="A B C 1 2 3" maxlength="6" oninput="this.value=this.value.toUpperCase()" style="width:100%;padding:16px;border:2.5px solid #3498db;border-radius:12px;font-size:28px;letter-spacing:10px;text-align:center;font-weight:800;color:#2c3e50;box-sizing:border-box;margin-bottom:14px;background:#fff;">
-            <button onclick="joinSession()" style="width:100%;padding:14px;background:linear-gradient(135deg,#3498db,#2980b9);color:#fff;border:none;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;">🚀 Join Now</button>
-          </div>
-          <div id="joinResult" style="margin-top:4px;"></div>
-        </div>
         <div class="screen" id="liveSessionScreen">
           <button class="back-btn" onclick="backSessionDashboard()">← Back</button>
           <h2>🔴 Live Sessions</h2>
           <div id="liveSessionContainer"></div>
         </div>
-        <div class="screen" id="historySessionScreen">
-          <button class="back-btn" onclick="backSessionDashboard()">← Back</button>
-          <h2>Session History</h2>
-          <div id="historyContainer"></div>
-        </div>
+
         <div class="screen" id="feedbackSessionScreen">
           <button class="back-btn" onclick="backSessionDashboard()">← Back</button>
-          <h2>Feedback</h2>
-          <select id="feedbackSessionSelect" style="margin-bottom:12px;"></select>
-          <textarea id="feedbackText" placeholder="Write your feedback here..." rows="4"></textarea>
-          <button onclick="submitFeedback()">Submit Feedback</button>
-        </div>
-        <div class="screen" id="ratingsSessionScreen">
-          <button class="back-btn" onclick="backSessionDashboard()">← Back</button>
-          <h2>⭐ Rate a Session</h2>
-          <div class="user-box" style="margin-bottom:20px;">
-            <h4 style="margin:0 0 10px;">Submit Your Rating</h4>
-            <select id="rateSessionSelect" style="margin-bottom:10px;"></select>
-            <div id="starRating" style="display:flex;gap:8px;font-size:32px;cursor:pointer;margin-bottom:12px;">
-              <span onclick="setRating(1)" id="star1">☆</span>
-              <span onclick="setRating(2)" id="star2">☆</span>
-              <span onclick="setRating(3)" id="star3">☆</span>
-              <span onclick="setRating(4)" id="star4">☆</span>
-              <span onclick="setRating(5)" id="star5">☆</span>
+          <h2>⭐ Feedback & Ratings</h2>
+          <div class="user-box" style="margin-bottom:20px; background:#fff; padding:20px; border-radius:12px; border:1px solid #eee;">
+            <h4 style="margin:0 0 12px; color:#333;">Submit Feedback & Rating</h4>
+            
+            <label style="font-size:12px; font-weight:700; color:#555; display:block; margin-bottom:6px;">Select Past Session:</label>
+            <select id="feedbackSessionSelect" style="margin-bottom:14px; width:100%; padding:10px; border-radius:8px; border:1.5px solid #ddd;"></select>
+            
+            <label style="font-size:12px; font-weight:700; color:#555; display:block; margin-bottom:6px;">Your Rating:</label>
+            <div id="starRating" style="display:flex; gap:8px; font-size:32px; cursor:pointer; margin-bottom:14px;">
+              <span onclick="setRating(1)" id="star1" style="color:#f39c12;">☆</span>
+              <span onclick="setRating(2)" id="star2" style="color:#f39c12;">☆</span>
+              <span onclick="setRating(3)" id="star3" style="color:#f39c12;">☆</span>
+              <span onclick="setRating(4)" id="star4" style="color:#f39c12;">☆</span>
+              <span onclick="setRating(5)" id="star5" style="color:#f39c12;">☆</span>
             </div>
-            <button onclick="submitRating()"><i class="fas fa-star"></i> Submit Rating</button>
+            
+            <label style="font-size:12px; font-weight:700; color:#555; display:block; margin-bottom:6px;">Comments & Feedback:</label>
+            <textarea id="feedbackText" placeholder="Write your comments and feedback here..." rows="4" style="width:100%; padding:10px; border-radius:8px; border:1.5px solid #ddd; box-sizing:border-box; margin-bottom:16px;"></textarea>
+            
+            <button onclick="submitFeedbackAndRating()" style="width:100%; padding:12px; background:linear-gradient(135deg,#7c3aed,#6d28d9); color:#fff; border:none; border-radius:8px; font-weight:700; cursor:pointer;">
+              <i class="fas fa-check"></i> Submit Feedback & Rating
+            </button>
           </div>
-          <h4>All Session Ratings</h4>
+          
+          <h4 style="margin-top:24px; color:#333;"><i class="fas fa-comments"></i> Past Session Reviews</h4>
           <div id="ratingsContainer"></div>
         </div>
       </div>
@@ -497,13 +397,11 @@
       <!-- SKILL TEST -->
       <div id="testSection" class="section" style="display:none;">
         <h2>Skill Test Dashboard</h2>
-        <div class="dashboard-grid" id="testDashboard">
+        <div class="dashboard-grid" id="testDashboard" style="grid-template-columns: repeat(2, 1fr);">
           <div class="card card-blue" onclick="openTestScreen('createTestScreen')"><i class="fas fa-file-circle-plus"></i><h3>Create Test</h3><p>Create new skill test</p></div>
           <div class="card card-green" onclick="openTestScreen('addQuestionScreen')"><i class="fas fa-circle-plus"></i><h3>Add Questions</h3><p>Add test questions</p></div>
-          <div class="card card-purple" onclick="openTestScreen('myQuestionsScreen')"><i class="fas fa-list-check"></i><h3>My Questions</h3><p>View your questions</p></div>
           <div class="card card-orange" onclick="openTestScreen('attendTestScreen')"><i class="fas fa-pen-to-square"></i><h3>Attend Test</h3><p>Take a test now</p></div>
           <div class="card card-cyan" onclick="openTestScreen('resultsScreen')"><i class="fas fa-chart-bar"></i><h3>My Results</h3><p>View your test results</p></div>
-          <div class="card card-yellow" onclick="openTestScreen('leaderboardScreen')"><i class="fas fa-trophy"></i><h3>Leaderboard</h3><p>Top performers</p></div>
         </div>
         <div class="screen" id="createTestScreen">
           <button class="back-btn" onclick="backTestDashboard()">← Back</button>
@@ -536,11 +434,7 @@
           <p style="font-size:12px;color:#888;margin:-8px 0 14px;background:#fffde7;padding:8px 12px;border-radius:8px;border-left:3px solid #f39c12;">💡 Type your options first — the dropdown will auto-fill A/B/C/D with your option text. Then select the correct one.</p>
           <button onclick="addQuestion()"><i class="fas fa-plus"></i> Add Question</button>
         </div>
-        <div class="screen" id="myQuestionsScreen">
-          <button class="back-btn" onclick="backTestDashboard()">← Back</button>
-          <h2>My Questions</h2>
-          <div id="myQuestions"></div>
-        </div>
+
         <div class="screen" id="attendTestScreen">
           <button class="back-btn" onclick="backTestDashboard()">← Back</button>
           <h2>Attend Test</h2>
@@ -554,12 +448,7 @@
           <p style="color:#888;font-size:13px;margin-bottom:16px;">All tests you have attempted.</p>
           <div id="myResultsContainer"></div>
         </div>
-        <div class="screen" id="leaderboardScreen">
-          <button class="back-btn" onclick="backTestDashboard()">← Back</button>
-          <h2>🏆 Leaderboard</h2>
-          <p style="color:#888;font-size:13px;margin-bottom:16px;">All users ranked by test performance.</p>
-          <div id="leaderboardContainer"></div>
-        </div>
+
       </div>
 
       <!-- NOTES & PDFs -->
