@@ -508,10 +508,8 @@
       <!-- SETTINGS -->
       <div id="settings" class="section" style="display:none;">
         <h2>Settings Dashboard</h2>
-        <div class="dashboard-grid" id="settingsDashboard">
+        <div class="dashboard-grid" id="settingsDashboard" style="grid-template-columns: repeat(2, 1fr);">
           <div class="card card-blue" onclick="openSettingsScreen('accountSettingsScreen')"><i class="fas fa-user-gear"></i><h3>Account Settings</h3><p>Manage account details</p></div>
-          <div class="card card-yellow" onclick="openSettingsScreen('notificationSettingsScreen')"><i class="fas fa-bell"></i><h3>Notifications</h3><p>Notification preferences</p></div>
-          <div class="card card-green" onclick="openSettingsScreen('securitySettingsScreen')"><i class="fas fa-shield-halved"></i><h3>Security</h3><p>Protect your account</p></div>
           <div class="card card-purple" onclick="openSettingsScreen('passwordSettingsScreen')"><i class="fas fa-lock"></i><h3>Password</h3><p>Update password</p></div>
         </div>
         <div class="screen" id="accountSettingsScreen">
@@ -521,60 +519,7 @@
           <input type="email" placeholder="Update Email">
           <button>Save Changes</button>
         </div>
-        <div class="screen" id="notificationSettingsScreen">
-          <button class="back-btn" onclick="backSettingsDashboard()">← Back</button>
-          <h2>Notification Settings</h2>
-          <div class="user-box" style="margin-bottom:16px;">
-            <h3 style="margin:0 0 8px;font-size:15px;"><i class="fas fa-user-plus"></i> Follow Notifications</h3>
-            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #eee;">
-              <span>Follow Alert</span>
-              <div>
-                <button id="followNotifON" onclick="setNotification('follow', true)" style="background:#25D366;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:600;">ON</button>
-                <button id="followNotifOFF" onclick="setNotification('follow', false)" style="background:#ccc;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:600;">OFF</button>
-              </div>
-            </div>
-            <p style="margin:8px 0 0;color:#888;font-size:13px;">Status: <b id="followNotifStatus">Loading...</b></p>
-          </div>
-          <div class="user-box" style="margin-bottom:16px;">
-            <h3 style="margin:0 0 8px;font-size:15px;"><i class="fas fa-volume-high"></i> Message Sound</h3>
-            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #eee;">
-              <span>Notification Sound</span>
-              <div>
-                <button id="soundON" onclick="setNotification('sound', true)" style="background:#25D366;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:600;">ON</button>
-                <button id="soundOFF" onclick="setNotification('sound', false)" style="background:#ccc;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:600;">OFF</button>
-              </div>
-            </div>
-            <p style="margin:8px 0 0;color:#888;font-size:13px;">Status: <b id="soundStatus">Loading...</b></p>
-          </div>
-          <div class="user-box" style="margin-bottom:16px;">
-            <h3 style="margin:0 0 8px;font-size:15px;"><i class="fas fa-envelope"></i> Email Notifications</h3>
-            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #eee;">
-              <span>Email Alerts</span>
-              <div>
-                <button id="emailON" onclick="setNotification('email', true)" style="background:#25D366;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:600;">ON</button>
-                <button id="emailOFF" onclick="setNotification('email', false)" style="background:#ccc;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:600;">OFF</button>
-              </div>
-            </div>
-            <p style="margin:8px 0 0;color:#888;font-size:13px;">Status: <b id="emailStatus">Loading...</b></p>
-          </div>
-          <div class="user-box">
-            <h3 style="margin:0 0 8px;font-size:15px;"><i class="fas fa-video"></i> Session Alerts</h3>
-            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #eee;">
-              <span>Session Reminders</span>
-              <div>
-                <button id="sessionNotifON" onclick="setNotification('session', true)" style="background:#25D366;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:600;">ON</button>
-                <button id="sessionNotifOFF" onclick="setNotification('session', false)" style="background:#ccc;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:600;">OFF</button>
-              </div>
-            </div>
-            <p style="margin:8px 0 0;color:#888;font-size:13px;">Status: <b id="sessionStatus">Loading...</b></p>
-          </div>
-        </div>
-        <div class="screen" id="securitySettingsScreen">
-          <button class="back-btn" onclick="backSettingsDashboard()">← Back</button>
-          <h2>Security Settings</h2>
-          <div class="user-box">Two Factor Authentication</div>
-          <div class="user-box">Login Activity</div>
-        </div>
+
         <div class="screen" id="passwordSettingsScreen">
           <button class="back-btn" onclick="backSettingsDashboard()">← Back</button>
           <h2>Password Settings</h2>

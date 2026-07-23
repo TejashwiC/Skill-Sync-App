@@ -1777,8 +1777,16 @@ window.uploadPDF = function () {
   if (progressWrap) progressWrap.style.display = "block";
   if (btn) btn.disabled = true;
   
-  const storageRef = ref(storage, `pdfs/${Date.now()}_${file.name}`);
-  const uploadTask = uploadBytesResumable(storageRef, file);
+  let uploadTask;
+  try {
+    const storageRef = ref(storage, `pdfs/${Date.now()}_${file.name}`);
+    uploadTask = uploadBytesResumable(storageRef, file);
+  } catch (err) {
+    alert("Failed to start upload: " + err.message);
+    if (progressWrap) progressWrap.style.display = "none";
+    if (btn) btn.disabled = false;
+    return;
+  }
   
   uploadTask.on('state_changed', 
     (snapshot) => {
@@ -1837,70 +1845,7 @@ window.trackPDFDownload = async function (pdfId) {
   }
 };
 
-/* ================================================
-   NOTIFICATION SETTINGS
-   — Saves each toggle to Firestore manually on click
-   — Loads current status when screen opens
-   — Buttons visually reflect active/inactive state
-   ================================================ */
 
-// Call this when Notification Settings screen opens to load saved values
-window.loadNotificationSettings = async function () {
-  const user = auth.currentUser;
-  if (!user) return;
-  const snap = await getDoc(doc(db, "users", user.uid));
-  const d    = snap.data() || {};
-
-  // follow
-  const followOn  = d.followNotifications !== false;
-  updateNotifUI("follow", followOn);
-
-  // sound
-  const soundOn   = d.soundNotifications !== false;
-  updateNotifUI("sound", soundOn);
-
-  // email
-  const emailOn   = d.emailNotifications !== false;
-  updateNotifUI("email", emailOn);
-
-  // session
-  const sessionOn = d.sessionAlerts !== false;
-  updateNotifUI("session", sessionOn);
-};
-
-// Updates button styles and status text
-function updateNotifUI(type, isOn) {
-  const statusMap = {
-    follow:  { status: "followNotifStatus",  on: "followNotifON",  off: "followNotifOFF"  },
-    sound:   { status: "soundStatus",         on: "soundON",         off: "soundOFF"         },
-    email:   { status: "emailStatus",         on: "emailON",         off: "emailOFF"         },
-    session: { status: "sessionStatus",       on: "sessionNotifON",  off: "sessionNotifOFF"  }
-  };
-  const ids = statusMap[type];
-  if (!ids) return;
-  if (el(ids.status)) el(ids.status).innerText = isOn ? "ON" : "OFF";
-  if (el(ids.on))  el(ids.on).style.background  = isOn ? "#25D366" : "#ccc";
-  if (el(ids.off)) el(ids.off).style.background = isOn ? "#ccc"    : "#e74c3c";
-}
-
-window.setNotification = async function (type, status) {
-  const user = auth.currentUser;
-  if (!user) return;
-  const ref = doc(db, "users", user.uid);
-
-  const fieldMap = {
-    follow:  "followNotifications",
-    sound:   "soundNotifications",
-    email:   "emailNotifications",
-    session: "sessionAlerts"
-  };
-  const field = fieldMap[type];
-  if (!field) return;
-
-  await updateDoc(ref, { [field]: status });
-  updateNotifUI(type, status);
-  alert(`${type.charAt(0).toUpperCase() + type.slice(1)} notifications turned ${status ? "ON" : "OFF"}`);
-};
 
 /* ================================================
    TEST SYSTEM
@@ -2528,7 +2473,6 @@ window.openSettingsScreen = function (screenId) {
   if (el("settingsDashboard")) el("settingsDashboard").style.display = "none";
   document.querySelectorAll("#settings .screen").forEach(s => s.style.display = "none");
   if (el(screenId)) el(screenId).style.display = "block";
-  if (screenId === "notificationSettingsScreen") loadNotificationSettings(); // ← load saved state
 };
 window.backSettingsDashboard = function () {
   if (el("settingsDashboard")) el("settingsDashboard").style.display = "grid";
