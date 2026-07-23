@@ -133,6 +133,8 @@ window.showSection = function (id) {
   } else if (id === "chat") {
     loadChatUsers();
     loadChatUserList();
+  } else if (id === "notes") {
+    loadPDFs();
   }
 };
 
@@ -1693,20 +1695,146 @@ window.loadRatingsContainer = function () {
 window.loadPDFs = function () {
   const pdfList = el("pdfList");
   if (!pdfList) return;
-  onSnapshot(collection(db, "pdfs"), (snapshot) => {
-    pdfList.innerHTML = "";
-    snapshot.forEach((docSnap) => {
-      const data = docSnap.data();
-      pdfList.innerHTML += `
-        <div class="user-box">
-          <b>${data.fileName}</b><br>
-          <small>By: ${data.uploadedBy}</small><br><br>
-          <a href="${data.fileURL}" target="_blank">👁 View</a><br>
-          <a href="${data.fileURL}" download>📥 Download</a>
-        </div>`;
+  const user = auth.currentUser;
+  if (!user) return;
+  
+  onSnapshot(doc(db, "users", user.uid), (mySnap) => {
+    const myData = mySnap.data() || {};
+    const following = myData.following || [];
+    const followers = myData.followers || [];
+    
+    onSnapshot(collection(db, "pdfs"), (snapshot) => {
+      pdfList.innerHTML = "";
+      let count = 0;
+      snapshot.forEach((docSnap) => {
+        const data = docSnap.data();
+        const id = docSnap.id;
+        
+        // Only visible to uploader themselves, followers, and following
+        const isRelated = data.uploaderId === user.uid || following.includes(data.uploaderId) || followers.includes(data.uploaderId);
+        if (!isRelated) return;
+        
+        count++;
+        const isMine = data.uploaderId === user.uid;
+        const isDownloaded = data.downloads && data.downloads.includes(user.uid);
+        
+        const badgeText = isMine ? "📤 Sent" : (isDownloaded ? "📥 Opened" : "🆕 New");
+        const badgeBg = isMine ? "#e0f2fe" : (isDownloaded ? "#ecfdf5" : "#fff7ed");
+        const badgeColor = isMine ? "#0369a1" : (isDownloaded ? "#047857" : "#c2410c");
+        
+        const deleteBtn = isMine 
+          ? `<button onclick="deletePDF('${id}')" style="background:#fee2e2; color:#ef4444; border:none; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer;"><i class="fas fa-trash"></i> Delete</button>`
+          : "";
+          
+        pdfList.innerHTML += `
+          <div class="card" style="margin-bottom:12px; border-left:4px solid ${isMine ? '#3b82f6' : '#10b981'}; padding:16px; background:#f8f9fa; border:1px solid #e9ecef; border-radius:10px; display:flex; flex-direction:column; gap:8px;">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <b style="font-size:14px; color:#2c3e50; word-break:break-all;">${data.fileName}</b>
+              <span style="background:${badgeBg}; color:${badgeColor}; padding:3px 8px; border-radius:12px; font-size:10px; font-weight:700;">${badgeText}</span>
+            </div>
+            <div style="font-size:12px; color:#7f8c8d;">
+              Uploaded by: ${data.uploadedBy}
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-top:4px;">
+              <div style="display:flex; gap:8px;">
+                <a href="${data.fileURL}" target="_blank" onclick="trackPDFDownload('${id}')" style="background:#3b82f6; color:#fff; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; text-decoration:none;"><i class="fas fa-eye"></i> View</a>
+                <a href="${data.fileURL}" download="${data.fileName}" onclick="trackPDFDownload('${id}')" style="background:#10b981; color:#fff; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; text-decoration:none;"><i class="fas fa-download"></i> Download</a>
+              </div>
+              ${deleteBtn}
+            </div>
+          </div>`;
+      });
+      if (count === 0) {
+        pdfList.innerHTML = `<p style="color:#888;text-align:center;padding:20px;">No PDFs shared with you yet</p>`;
+      }
     });
-    if (!pdfList.innerHTML) pdfList.innerHTML = `<p style="color:#888;text-align:center;">No PDFs uploaded yet</p>`;
   });
+};
+
+window.uploadPDF = function () {
+  const fileInput = el("pdfFile");
+  if (!fileInput || !fileInput.files.length) {
+    alert("Please select a PDF file first.");
+    return;
+  }
+  const file = fileInput.files[0];
+  if (file.type !== "application/pdf") {
+    alert("Only PDF files are allowed.");
+    return;
+  }
+  if (file.size > 10 * 1024 * 1024) {
+    alert("File size exceeds 10 MB limit.");
+    return;
+  }
+  
+  const user = auth.currentUser;
+  if (!user) return;
+  
+  const progressWrap = el("uploadProgressWrap");
+  const progressBar = el("uploadProgress");
+  const btn = el("uploadPDFBtn");
+  
+  if (progressWrap) progressWrap.style.display = "block";
+  if (btn) btn.disabled = true;
+  
+  const storageRef = ref(storage, `pdfs/${Date.now()}_${file.name}`);
+  const uploadTask = uploadBytesResumable(storageRef, file);
+  
+  uploadTask.on('state_changed', 
+    (snapshot) => {
+      const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+      if (progressBar) progressBar.value = progress;
+    }, 
+    (error) => {
+      alert("Upload failed: " + error.message);
+      if (progressWrap) progressWrap.style.display = "none";
+      if (btn) btn.disabled = false;
+    }, 
+    async () => {
+      try {
+        const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
+        await addDoc(collection(db, "pdfs"), {
+          fileName: file.name,
+          uploadedBy: user.displayName || user.email || "Unknown",
+          uploaderId: user.uid,
+          fileURL: downloadURL,
+          uploadedAt: serverTimestamp(),
+          downloads: []
+        });
+        alert("PDF uploaded successfully!");
+        fileInput.value = "";
+        if (progressWrap) progressWrap.style.display = "none";
+        if (btn) btn.disabled = false;
+        loadPDFs();
+      } catch (err) {
+        alert("Error saving record: " + err.message);
+        if (progressWrap) progressWrap.style.display = "none";
+        if (btn) btn.disabled = false;
+      }
+    }
+  );
+};
+
+window.deletePDF = async function (pdfId) {
+  if (!confirm("Are you sure you want to delete this PDF?")) return;
+  try {
+    await deleteDoc(doc(db, "pdfs", pdfId));
+    alert("PDF deleted successfully!");
+  } catch(e) {
+    alert("Error: " + e.message);
+  }
+};
+
+window.trackPDFDownload = async function (pdfId) {
+  const user = auth.currentUser;
+  if (!user) return;
+  try {
+    await updateDoc(doc(db, "pdfs", pdfId), {
+      downloads: arrayUnion(user.uid)
+    });
+  } catch (e) {
+    console.error("Error tracking PDF download:", e);
+  }
 };
 
 /* ================================================
@@ -2395,15 +2523,7 @@ window.backTestDashboard = function () {
   currentTestData = null;
   userAnswers     = {};
 };
-window.openNotesScreen = function (screenId) {
-  if (el("notesDashboard")) el("notesDashboard").style.display = "none";
-  document.querySelectorAll("#notes .screen").forEach(s => s.style.display = "none");
-  if (el(screenId)) el(screenId).style.display = "block";
-};
-window.backNotesDashboard = function () {
-  if (el("notesDashboard")) el("notesDashboard").style.display = "grid";
-  document.querySelectorAll("#notes .screen").forEach(s => s.style.display = "none");
-};
+
 window.openSettingsScreen = function (screenId) {
   if (el("settingsDashboard")) el("settingsDashboard").style.display = "none";
   document.querySelectorAll("#settings .screen").forEach(s => s.style.display = "none");

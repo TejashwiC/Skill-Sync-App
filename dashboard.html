@@ -453,28 +453,28 @@
 
       <!-- NOTES & PDFs -->
       <div id="notes" class="section" style="display:none;">
-        <h2>Notes & PDFs Dashboard</h2>
-        <div class="dashboard-grid" id="notesDashboard">
-          <div class="card card-blue" onclick="openNotesScreen('uploadNotesScreen')"><i class="fas fa-cloud-arrow-up"></i><h3>Upload Notes</h3><p>Upload PDF notes</p></div>
-          <div class="card card-red" onclick="openNotesScreen('viewNotesScreen')"><i class="fas fa-file-pdf"></i><h3>Uploaded PDFs</h3><p>View &amp; Download</p></div>
-        </div>
-        <div class="screen" id="uploadNotesScreen">
-          <button class="back-btn" onclick="backNotesDashboard()">← Back</button>
-          <h2>Upload Notes (PDF)</h2>
-          <div style="background:#f8faff;border-radius:14px;padding:20px;border:1.5px solid #dde4f7;">
-            <p style="margin:0 0 12px;color:#555;font-size:14px;">📄 Select a PDF file (max 10 MB) to share with all users.</p>
-            <input type="file" id="pdfFile" accept="application/pdf" style="display:block;width:100%;margin-bottom:14px;padding:10px;border:2px dashed #3498db;border-radius:10px;background:#fff;cursor:pointer;box-sizing:border-box;">
-            <div id="uploadProgressWrap" style="display:none;margin-bottom:12px;">
-              <label style="font-size:13px;color:#555;font-weight:600;">Uploading...</label>
-              <progress id="uploadProgress" value="0" max="100" style="width:100%;height:12px;border-radius:6px;margin-top:6px;"></progress>
-            </div>
-            <button id="uploadPDFBtn" onclick="uploadPDF()" style="background:linear-gradient(135deg,#3498db,#2980b9);color:#fff;border:none;padding:13px 28px;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;width:100%;"><i class="fas fa-cloud-arrow-up"></i> Upload PDF</button>
+        <h2><i class="fas fa-file-pdf" style="color:#ef4444;"></i> Notes & PDFs</h2>
+        
+        <!-- Upload Box -->
+        <div style="background:#f8faff; border-radius:14px; padding:20px; border:1.5px solid #dde4f7; margin-bottom:24px;">
+          <h3 style="margin:0 0 10px 0; color:#2c3e50; font-size:16px;"><i class="fas fa-cloud-arrow-up" style="color:#3498db;"></i> Upload PDF Note</h3>
+          <p style="margin:0 0 14px 0; color:#555; font-size:13px;">📄 Select a PDF file (max 10 MB) to share with your connections.</p>
+          <input type="file" id="pdfFile" accept="application/pdf" style="display:block; width:100%; margin-bottom:14px; padding:10px; border:2px dashed #3498db; border-radius:10px; background:#fff; cursor:pointer; box-sizing:border-box;">
+          
+          <div id="uploadProgressWrap" style="display:none; margin-bottom:12px;">
+            <label style="font-size:13px; color:#555; font-weight:600;">Uploading...</label>
+            <progress id="uploadProgress" value="0" max="100" style="width:100%; height:12px; border-radius:6px; margin-top:6px;"></progress>
           </div>
+          
+          <button id="uploadPDFBtn" onclick="uploadPDF()" style="background:linear-gradient(135deg,#3498db,#2980b9); color:#fff; border:none; padding:13px 28px; border-radius:10px; font-size:15px; font-weight:700; cursor:pointer; width:100%;">
+            <i class="fas fa-cloud-arrow-up"></i> Upload PDF Note
+          </button>
         </div>
-        <div class="screen" id="viewNotesScreen">
-          <button class="back-btn" onclick="backNotesDashboard()">← Back</button>
-          <h2>Uploaded PDFs</h2>
-          <p style="color:#888;font-size:13px;margin-bottom:14px;">👁 View opens in browser &nbsp;|&nbsp; 📥 Download saves to your device &nbsp;|&nbsp; 🗑 Delete (only your own uploads)</p>
+
+        <!-- Shared PDF List -->
+        <div style="background:#fff; border-radius:14px; padding:20px; border:1px solid #eee;">
+          <h3 style="margin:0 0 12px 0; color:#2c3e50; font-size:16px;"><i class="fas fa-history" style="color:#10b981;"></i> Shared PDF Notes History</h3>
+          <p style="color:#888; font-size:12px; margin:-6px 0 16px 0;">👁 View opens PDF &nbsp;·&nbsp; 📥 Download saves file &nbsp;·&nbsp; 🗑 Delete (your uploads only)</p>
           <div id="pdfList"></div>
         </div>
       </div>
