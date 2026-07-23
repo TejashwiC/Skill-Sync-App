@@ -1762,8 +1762,8 @@ window.uploadPDF = function () {
     alert("Only PDF files are allowed.");
     return;
   }
-  if (file.size > 10 * 1024 * 1024) {
-    alert("File size exceeds 10 MB limit.");
+  if (file.size > 700 * 1024) {
+    alert("PDF notes are limited to 700 KB. Please select a smaller PDF file.");
     return;
   }
   
@@ -1776,51 +1776,53 @@ window.uploadPDF = function () {
   
   if (progressWrap) progressWrap.style.display = "block";
   if (btn) btn.disabled = true;
+  if (progressBar) progressBar.value = 10;
   
-  let uploadTask;
-  try {
-    const storageRef = ref(storage, `pdfs/${Date.now()}_${file.name}`);
-    uploadTask = uploadBytesResumable(storageRef, file);
-  } catch (err) {
-    alert("Failed to start upload: " + err.message);
-    if (progressWrap) progressWrap.style.display = "none";
-    if (btn) btn.disabled = false;
-    return;
-  }
+  const reader = new FileReader();
+  reader.readAsDataURL(file);
   
-  uploadTask.on('state_changed', 
-    (snapshot) => {
-      const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-      if (progressBar) progressBar.value = progress;
-    }, 
-    (error) => {
-      alert("Upload failed: " + error.message);
-      if (progressWrap) progressWrap.style.display = "none";
-      if (btn) btn.disabled = false;
-    }, 
-    async () => {
-      try {
-        const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
-        await addDoc(collection(db, "pdfs"), {
-          fileName: file.name,
-          uploadedBy: user.displayName || user.email || "Unknown",
-          uploaderId: user.uid,
-          fileURL: downloadURL,
-          uploadedAt: serverTimestamp(),
-          downloads: []
-        });
+  reader.onprogress = (event) => {
+    if (event.lengthComputable && progressBar) {
+      const percent = (event.loaded / event.total) * 60;
+      progressBar.value = 10 + percent;
+    }
+  };
+  
+  reader.onload = async () => {
+    try {
+      if (progressBar) progressBar.value = 80;
+      const base64Data = reader.result;
+      
+      await addDoc(collection(db, "pdfs"), {
+        fileName: file.name,
+        uploadedBy: user.displayName || user.email || "Unknown",
+        uploaderId: user.uid,
+        fileURL: base64Data,
+        uploadedAt: serverTimestamp(),
+        downloads: []
+      });
+      
+      if (progressBar) progressBar.value = 100;
+      setTimeout(() => {
         alert("PDF uploaded successfully!");
         fileInput.value = "";
         if (progressWrap) progressWrap.style.display = "none";
         if (btn) btn.disabled = false;
         loadPDFs();
-      } catch (err) {
-        alert("Error saving record: " + err.message);
-        if (progressWrap) progressWrap.style.display = "none";
-        if (btn) btn.disabled = false;
-      }
+      }, 300);
+      
+    } catch (err) {
+      alert("Error saving record: " + err.message);
+      if (progressWrap) progressWrap.style.display = "none";
+      if (btn) btn.disabled = false;
     }
-  );
+  };
+  
+  reader.onerror = () => {
+    alert("Error reading file.");
+    if (progressWrap) progressWrap.style.display = "none";
+    if (btn) btn.disabled = false;
+  };
 };
 
 window.deletePDF = async function (pdfId) {
