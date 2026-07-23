@@ -34,3 +34,5 @@ fs.writeFileSync(
 );
 
 console.log('Successfully generated execution-summary.json with 1111 tests!');
+
+// Trigger Appium test suite run

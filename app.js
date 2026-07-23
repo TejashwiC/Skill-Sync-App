@@ -2334,3 +2334,5 @@ window.loadGroupMessages = function (groupId) {
     box.scrollTop = box.scrollHeight;
   });
 };
+
+// Trigger Selenium test suite run
