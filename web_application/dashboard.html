@@ -106,7 +106,6 @@
         <h2>Dashboard Home</h2>
         <div class="dashboard-grid">
           <div class="card card-blue"><i class="fas fa-layer-group"></i><h3>Total Skills</h3><p id="homeSkills">0</p></div>
-          <div class="card card-yellow"><i class="fas fa-coins"></i><h3>Credits</h3><p id="homeCredits">0</p></div>
           <div class="card card-purple"><i class="fas fa-video"></i><h3>Sessions</h3><p id="homeSessions">0</p></div>
           <div class="card card-orange"><i class="fas fa-pen-ruler"></i><h3>Tests Created</h3><p id="homeTests">0</p></div>
           <div class="card card-green"><i class="fas fa-circle-check"></i><h3>Tests Completed</h3><p id="homeTestsCompleted">0</p></div>
@@ -299,17 +298,6 @@
           <button class="back-btn" onclick="backChatDashboard()">← Back</button>
           <h2>Chat Settings</h2>
           <div class="user-box" style="margin-bottom:16px;">
-            <h3 style="margin:0 0 12px;"><i class="fas fa-bell"></i> Chat Notifications</h3>
-            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #eee;">
-              <span>Message Notifications</span>
-              <div>
-                <button onclick="setChatNotification(true)" style="background:#25D366;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;">ON</button>
-                <button onclick="setChatNotification(false)" style="background:#e74c3c;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;">OFF</button>
-              </div>
-            </div>
-            <p style="margin:8px 0 0;color:#888;font-size:13px;">Status: <b id="chatNotifStatus">ON</b></p>
-          </div>
-          <div class="user-box" style="margin-bottom:16px;">
             <h3 style="margin:0 0 12px;"><i class="fas fa-trash-can"></i> Delete Chat</h3>
             <p style="font-size:13px;color:#888;margin-bottom:8px;">Select a user to delete your entire chat history with them.</p>
             <div id="deleteChatUserList"></div>
@@ -399,25 +387,26 @@
         <h2>Skill Test Dashboard</h2>
         <div class="dashboard-grid" id="testDashboard" style="grid-template-columns: repeat(2, 1fr);">
           <div class="card card-blue" onclick="openTestScreen('createTestScreen')"><i class="fas fa-file-circle-plus"></i><h3>Create Test</h3><p>Create new skill test</p></div>
-          <div class="card card-green" onclick="openTestScreen('addQuestionScreen')"><i class="fas fa-circle-plus"></i><h3>Add Questions</h3><p>Add test questions</p></div>
-          <div class="card card-orange" onclick="openTestScreen('attendTestScreen')"><i class="fas fa-pen-to-square"></i><h3>Attend Test</h3><p>Take a test now</p></div>
-          <div class="card card-cyan" onclick="openTestScreen('resultsScreen')"><i class="fas fa-chart-bar"></i><h3>My Results</h3><p>View your test results</p></div>
+          <div class="card card-green" onclick="openTestScreen('addQuestionScreen')"><i class="fas fa-circle-plus"></i><h3>Add Questions</h3><p>Add max 5 questions</p></div>
+          <div class="card card-orange" onclick="openTestScreen('attendTestScreen')"><i class="fas fa-pen-to-square"></i><h3>Attend Test</h3><p>Take tests from your connections</p></div>
+          <div class="card card-cyan" onclick="openTestScreen('testHistoryScreen')"><i class="fas fa-clock-rotate-left"></i><h3>Test History</h3><p>Created & attended test history</p></div>
         </div>
         <div class="screen" id="createTestScreen">
           <button class="back-btn" onclick="backTestDashboard()">← Back</button>
           <h2>Create Test</h2>
+          <p style="font-size:13px;color:#666;margin-bottom:12px;">Tests created here will only be visible to your followers and people you follow.</p>
           <input type="text" id="testTitle" placeholder="Test Name (e.g. Java Basics)">
           <input type="text" id="testSkill" placeholder="Skill Topic (e.g. Java, Python)">
-          <input type="number" id="testCredits" placeholder="Credits per correct answer" min="1">
           <button onclick="createTest()"><i class="fas fa-plus"></i> Create Test</button>
           <h3 style="margin-top:28px;border-top:1px solid #eee;padding-top:16px;"><i class="fas fa-list-check"></i> My Created Tests</h3>
           <div id="myTestsList"></div>
         </div>
         <div class="screen" id="addQuestionScreen">
           <button class="back-btn" onclick="backTestDashboard()">← Back</button>
-          <h2>Add Questions</h2>
+          <h2>Add Questions (Max 5 Questions)</h2>
           <label style="font-size:13px;color:#555;font-weight:600;">Select Test:</label>
           <select id="testSelect" style="margin-bottom:14px;"></select>
+          <div id="questionCountNotice" style="font-size:12px;font-weight:700;color:#27ae60;margin-bottom:10px;"></div>
           <input type="text" id="question" placeholder="Question" style="margin-bottom:10px;">
           <input type="text" id="option1" placeholder="Option A" oninput="updateCorrectDropdown()" style="margin-bottom:8px;">
           <input type="text" id="option2" placeholder="Option B" oninput="updateCorrectDropdown()" style="margin-bottom:8px;">
@@ -431,7 +420,7 @@
             <option id="optC" value="">C</option>
             <option id="optD" value="">D</option>
           </select>
-          <p style="font-size:12px;color:#888;margin:-8px 0 14px;background:#fffde7;padding:8px 12px;border-radius:8px;border-left:3px solid #f39c12;">💡 Type your options first — the dropdown will auto-fill A/B/C/D with your option text. Then select the correct one.</p>
+          <p style="font-size:12px;color:#888;margin:-8px 0 14px;background:#fffde7;padding:8px 12px;border-radius:8px;border-left:3px solid #f39c12;">💡 Maximum 5 questions per test allowed. Type options A/B/C/D then select correct answer.</p>
           <button onclick="addQuestion()"><i class="fas fa-plus"></i> Add Question</button>
         </div>
 
@@ -442,11 +431,12 @@
           <div id="testQuestions" style="display:none;"></div>
           <div id="resultsContainer" style="display:none;"></div>
         </div>
-        <div class="screen" id="resultsScreen">
+
+        <div class="screen" id="testHistoryScreen">
           <button class="back-btn" onclick="backTestDashboard()">← Back</button>
-          <h2><i class="fas fa-chart-bar"></i> My Results</h2>
-          <p style="color:#888;font-size:13px;margin-bottom:16px;">All tests you have attempted.</p>
-          <div id="myResultsContainer"></div>
+          <h2><i class="fas fa-clock-rotate-left"></i> Test History</h2>
+          <p style="color:#888;font-size:13px;margin-bottom:16px;">Overview of all your created and attended tests.</p>
+          <div id="testHistoryContainer"></div>
         </div>
 
       </div>
@@ -515,23 +505,38 @@
         <div class="screen" id="accountSettingsScreen">
           <button class="back-btn" onclick="backSettingsDashboard()">← Back</button>
           <h2>Account Settings</h2>
-          <input type="text" placeholder="Update Name">
-          <input type="email" placeholder="Update Email">
-          <button>Save Changes</button>
+          <label style="font-size:13px;font-weight:600;color:#555;display:block;margin-top:10px;text-align:left;">Name:</label>
+          <input type="text" id="updateNameInput" placeholder="Update Name">
+          <label style="font-size:13px;font-weight:600;color:#555;display:block;margin-top:10px;text-align:left;">Email (Read-only):</label>
+          <input type="email" id="updateEmailInput" placeholder="Email" readonly style="background:#e9ecef;cursor:not-allowed;">
+          <button onclick="updateAccountDetails()"><i class="fas fa-save"></i> Save Changes</button>
+
+          <div style="margin-top:32px; padding-top:20px; border-top:2px dashed #fee2e2;">
+            <h3 style="color:#ef4444; margin:0 0 8px; font-size:15px;"><i class="fas fa-user-slash"></i> Danger Zone</h3>
+            <p style="font-size:12px; color:#888; margin:0 0 14px;">Deleting your account permanently removes your profile and all your data from SkillSync so you will no longer appear in user lists.</p>
+            <button onclick="deleteUserAccount()" style="background:#fee2e2; color:#ef4444; border:1px solid #fca5a5; font-weight:700; width:100%;"><i class="fas fa-trash-can"></i> Delete Account Permanently</button>
+          </div>
         </div>
 
         <div class="screen" id="passwordSettingsScreen">
           <button class="back-btn" onclick="backSettingsDashboard()">← Back</button>
           <h2>Password Settings</h2>
-          <input type="password" placeholder="Current Password">
-          <input type="password" placeholder="New Password">
-          <input type="password" placeholder="Confirm Password">
-          <button>Update Password</button>
+          <label style="font-size:13px;font-weight:600;color:#555;display:block;margin-top:10px;text-align:left;">New Password:</label>
+          <input type="password" id="newPasswordInput" placeholder="New Password">
+          <label style="font-size:13px;font-weight:600;color:#555;display:block;margin-top:10px;text-align:left;">Confirm New Password:</label>
+          <input type="password" id="confirmPasswordInput" placeholder="Confirm New Password">
+          <button onclick="changePassword()"><i class="fas fa-key"></i> Update Password</button>
         </div>
       </div>
 
     </div><!-- end .content -->
   </div><!-- end .layout -->
+
+  <!-- CHAT IMAGE VIEWER MODAL -->
+  <div id="imageModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:99999; justify-content:center; align-items:center; flex-direction:column; padding:20px; box-sizing:border-box;">
+    <span onclick="closeImageModal()" style="position:absolute; top:20px; right:25px; color:#fff; font-size:32px; font-weight:bold; cursor:pointer; user-select:none;">&times;</span>
+    <img id="imageModalImg" src="" style="max-width:90%; max-height:85%; border-radius:8px; box-shadow:0 5px 25px rgba(0,0,0,0.5); object-fit:contain;">
+  </div>
 
   <script>
     /* ── Sidebar toggle ── */

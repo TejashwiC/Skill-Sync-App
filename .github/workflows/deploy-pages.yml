@@ -44,7 +44,7 @@ jobs:
       - name: 📦 Upload site files (exclude tests)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "."   # Serves from repo root where index.html lives
+          path: "./web_application"   # Serves from web_application folder where index.html lives
 
       # 4. Deploy!
       - name: 🌐 Deploy to GitHub Pages

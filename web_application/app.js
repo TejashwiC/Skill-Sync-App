@@ -4,7 +4,10 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   onAuthStateChanged,
-  signOut
+  signOut,
+  updatePassword,
+  updateProfile,
+  deleteUser
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import {
   getFirestore,
@@ -67,9 +70,21 @@ window.register = async function () {
 /* ================ LOGIN ================ */
 window.login = async function () {
   try {
-    await signInWithEmailAndPassword(auth, el("email").value, el("password").value);
+    const emailVal = el("email")?.value?.trim() || "";
+    const passwordVal = el("password")?.value?.trim() || "";
+    if (!emailVal || !passwordVal) {
+      alert("Please enter both Email and Password.");
+      return;
+    }
+    await signInWithEmailAndPassword(auth, emailVal, passwordVal);
     window.location.href = "dashboard.html";
-  } catch (err) { alert("Login Error: " + err.message); }
+  } catch (err) {
+    if (auth.currentUser) {
+      window.location.href = "dashboard.html";
+      return;
+    }
+    alert("Login Error: " + err.message);
+  }
 };
 
 /* ================ AUTH STATE ================ */
@@ -756,7 +771,7 @@ window.loadMessages = function () {
       
       let attachments = "";
       if (d.imageUrl) {
-        attachments += `<a href="${d.imageUrl}" target="_blank"><img src="${d.imageUrl}" style="max-width:100%; border-radius:8px; display:block; margin-top:5px; max-height:200px; object-fit:cover; cursor:pointer;"></a>`;
+        attachments += `<img src="${d.imageUrl}" onclick="event.stopPropagation(); openImageModal('${d.imageUrl.replace(/'/g, "\\'")}')" style="max-width:100%; border-radius:8px; display:block; margin-top:5px; max-height:220px; object-fit:cover; cursor:pointer; border:1px solid rgba(0,0,0,0.1);" title="Click to view full photo">`;
       }
       if (d.pdfUrl) {
         attachments += `<a href="${d.pdfUrl}" target="_blank" style="display:flex; align-items:center; gap:8px; background:#f0f0f0; padding:8px 12px; border-radius:6px; text-decoration:none; color:#333; margin-top:5px; font-size:12px; font-weight:700;"><i class="fas fa-file-pdf" style="color:#ef4444; font-size:18px;"></i> View Document</a>`;
@@ -924,7 +939,7 @@ window.filterChatMessages = function () {
       const isMine = d.sender === user.uid;
       let attachments = "";
       if (d.imageUrl) {
-        attachments += `<img src="${d.imageUrl}" style="max-width:100%; border-radius:8px; display:block; margin-top:5px; max-height:200px; object-fit:cover;">`;
+        attachments += `<img src="${d.imageUrl}" onclick="event.stopPropagation(); openImageModal('${d.imageUrl.replace(/'/g, "\\'")}')" style="max-width:100%; border-radius:8px; display:block; margin-top:5px; max-height:220px; object-fit:cover; cursor:pointer; border:1px solid rgba(0,0,0,0.1);" title="Click to view full photo">`;
       }
       if (d.pdfUrl) {
         attachments += `<a href="${d.pdfUrl}" target="_blank" style="display:flex; align-items:center; gap:8px; background:#f0f0f0; padding:8px 12px; border-radius:6px; text-decoration:none; color:#333; margin-top:5px; font-size:12px; font-weight:700;"><i class="fas fa-file-pdf" style="color:#ef4444; font-size:18px;"></i> View Document</a>`;
@@ -958,6 +973,43 @@ window.filterChatMessages = function () {
     });
     box.scrollTop = box.scrollHeight;
   });
+};
+
+window.openImageModal = function (imgSrc) {
+  let modal = el("imagePreviewModal");
+  if (!modal) {
+    modal = document.createElement("div");
+    modal.id = "imagePreviewModal";
+    modal.style.cssText = "position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.88); backdrop-filter:blur(6px); z-index:999999; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px; box-sizing:border-box;";
+    modal.innerHTML = `
+      <div style="position:absolute; top:20px; right:20px; display:flex; gap:12px; z-index:1000000;">
+        <button id="downloadImageBtn" style="background:#27ae60; color:#fff; border:none; padding:10px 18px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; display:flex; align-items:center; gap:6px;"><i class="fas fa-download"></i> Download</button>
+        <button onclick="closeImageModal()" style="background:#e74c3c; color:#fff; border:none; padding:10px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:16px;">✕ Close</button>
+      </div>
+      <img id="imagePreviewTarget" src="" style="max-width:90vw; max-height:85vh; border-radius:12px; box-shadow:0 8px 32px rgba(0,0,0,0.6); object-fit:contain;">
+    `;
+    document.body.appendChild(modal);
+  }
+  
+  const imgTarget = el("imagePreviewTarget");
+  const dlBtn = el("downloadImageBtn");
+  if (imgTarget) imgTarget.src = imgSrc;
+  if (dlBtn) {
+    dlBtn.onclick = function() {
+      const a = document.createElement("a");
+      a.href = imgSrc;
+      a.download = "chat_photo_" + Date.now() + ".png";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    };
+  }
+  modal.style.display = "flex";
+};
+
+window.closeImageModal = function () {
+  const modal = el("imagePreviewModal");
+  if (modal) modal.style.display = "none";
 };
 
 window.uploadChatAttachment = async function () {
@@ -995,7 +1047,8 @@ window.uploadChatAttachment = async function () {
     el("chatUploadPct").innerText = "Saving...";
     el("chatUploadProgress").value = 80;
 
-    const isImage = file.type.startsWith("image/");
+    const ext = file.name ? file.name.split('.').pop().toLowerCase() : "";
+    const isImage = file.type.startsWith("image/") || ["jpg", "jpeg", "png", "gif", "webp", "heic", "bmp"].includes(ext);
     const msgText = isImage ? "[Photo Attachment]" : `[Document Attachment] ${file.name}`;
 
     if (activeGroupChat) {
@@ -1195,16 +1248,75 @@ function parseSessionDate(startTime) {
   return new Date(startTime);
 }
 
+function getSessionTimeMs(timeVal, fallback = 0) {
+  if (!timeVal) return fallback;
+  if (typeof timeVal === "number" && !isNaN(timeVal)) return timeVal;
+  if (typeof timeVal === "object" && timeVal !== null) {
+    if (timeVal.seconds) return timeVal.seconds * 1000;
+    if (typeof timeVal.toDate === "function") return timeVal.toDate().getTime();
+  }
+  if (typeof timeVal === "string") {
+    const parsed = Date.parse(timeVal);
+    if (!isNaN(parsed)) return parsed;
+  }
+  return fallback;
+}
+
+function isSessionExpired(d) {
+  if (!d || d.status === "ended") return true;
+  
+  const today = new Date();
+  const todayDateStr = today.toLocaleDateString();
+  const todayDateOnly = new Date(today.getFullYear(), today.getMonth(), today.getDate()).getTime();
+
+  // 1. Check startDateStr if present
+  if (d.startDateStr) {
+    const sessionDate = new Date(d.startDateStr);
+    if (!isNaN(sessionDate.getTime())) {
+      const sessionDateOnly = new Date(sessionDate.getFullYear(), sessionDate.getMonth(), sessionDate.getDate()).getTime();
+      if (sessionDateOnly < todayDateOnly) return true; // Created on a previous day!
+    } else if (d.startDateStr !== todayDateStr && !d.isScheduled) {
+      const parsePrev = Date.parse(d.startDateStr);
+      if (!isNaN(parsePrev) && parsePrev < todayDateOnly) return true;
+    }
+  }
+
+  // 2. Check startTime timestamp
+  const startTimeMs = getSessionTimeMs(d.startTime, 0);
+  if (startTimeMs === 0 && !d.isScheduled) {
+    return true; // Invalid or missing start time on non-scheduled session -> expire
+  }
+
+  const durationMins = Number(d.durationMins || 60);
+  const durationMs = durationMins * 60 * 1000;
+  const endTimeMs = d.endTime ? getSessionTimeMs(d.endTime, startTimeMs + durationMs) : (startTimeMs + durationMs);
+
+  const now = Date.now();
+  if (now >= endTimeMs) return true;
+  if (startTimeMs > 0 && (now - startTimeMs > 24 * 60 * 60 * 1000)) return true;
+
+  return false;
+}
+
 function formatDuration(startTime) {
-  const startMs = (startTime && startTime.seconds) ? startTime.seconds * 1000 : startTime;
+  const startMs = getSessionTimeMs(startTime);
   const mins = Math.floor((Date.now() - startMs) / 60000);
   if (mins < 0) return "0 min";
   if (mins < 60) return mins + " min";
   return Math.floor(mins / 60) + "h " + (mins % 60) + "m";
 }
 
-function openMeetingLink(link, platform) {
+function openMeetingLink(link, platform, endTime, sessionId, sessionData) {
   if (!link) { alert("No meeting link available."); return; }
+  
+  if ((endTime && Date.now() >= endTime) || (sessionData && isSessionExpired(sessionData))) {
+    alert("Session Expired: The scheduled time limit for this session is over.");
+    if (sessionId) {
+      updateDoc(doc(db, "sessions", sessionId), { status: "ended", endTime: Date.now() }).catch(() => {});
+    }
+    return;
+  }
+
   if (platform === "zoom" || link.includes("zoom.us")) {
     try {
       const url = new URL(link);
@@ -1245,19 +1357,81 @@ window.copySessionCode = function () {
   });
 };
 
+function formatHHMM(date) {
+  const h = String(date.getHours()).padStart(2, "0");
+  const m = String(date.getMinutes()).padStart(2, "0");
+  return `${h}:${m}`;
+}
+
+function isTimeInPast(timeStr) {
+  if (!timeStr) return false;
+  const now = new Date();
+  const todayStr = now.toISOString().split("T")[0];
+  const timeMs = Date.parse(`${todayStr}T${timeStr}`);
+  return !isNaN(timeMs) && timeMs < now.getTime() - 60000;
+}
+
 window.toggleScheduleContainer = function () {
   const isChecked = el("sessionScheduleToggle")?.checked;
-  el("scheduleFieldsContainer").style.display = isChecked ? "block" : "none";
-  el("btnStartSubmit").innerHTML = isChecked ? '<i class="fas fa-calendar-plus"></i> Schedule Session' : '<i class="fas fa-circle-play"></i> Start Session & Get Code';
+  const container = el("scheduleFieldsContainer");
+  if (container) container.style.display = isChecked ? "block" : "none";
+  if (el("btnStartSubmit")) {
+    el("btnStartSubmit").innerHTML = isChecked ? '<i class="fas fa-calendar-plus"></i> Schedule Session' : '<i class="fas fa-circle-play"></i> Start Session & Get Code';
+  }
+  
+  if (isChecked) {
+    const now = new Date();
+    const todayStr = now.toISOString().split("T")[0];
+    const dateInput = el("sessionScheduleDate");
+    if (dateInput) {
+      dateInput.min = todayStr;
+      if (!dateInput.value || dateInput.value < todayStr) {
+        dateInput.value = todayStr;
+      }
+    }
+
+    const startTimeInput = el("sessionScheduleTime");
+    const endTimeInput   = el("sessionScheduleEndTime");
+    
+    if (startTimeInput) {
+      if (!startTimeInput.value || (dateInput?.value === todayStr && isTimeInPast(startTimeInput.value))) {
+        const futureStart = new Date(now.getTime() + 5 * 60000);
+        startTimeInput.value = formatHHMM(futureStart);
+      }
+    }
+    
+    if (endTimeInput && startTimeInput?.value) {
+      const selectedDate = dateInput?.value || todayStr;
+      const startMs = Date.parse(`${selectedDate}T${startTimeInput.value}`);
+      if (!isNaN(startMs)) {
+        const futureEnd = new Date(startMs + 60 * 60000);
+        endTimeInput.value = formatHHMM(futureEnd);
+      }
+    }
+  }
+};
+
+window.onScheduleTimeChange = function () {
+  const dateVal = el("sessionScheduleDate")?.value || new Date().toISOString().split("T")[0];
+  const startTimeVal = el("sessionScheduleTime")?.value;
+  const endTimeInput = el("sessionScheduleEndTime");
+  if (startTimeVal && endTimeInput) {
+    const startMs = Date.parse(`${dateVal}T${startTimeVal}`);
+    if (!isNaN(startMs)) {
+      const futureEnd = new Date(startMs + 60 * 60000);
+      endTimeInput.value = formatHHMM(futureEnd);
+    }
+  }
 };
 
 window.startSession = async function () {
   const user = auth.currentUser;
   if (!user) return;
-  const name     = el("sessionName")?.value?.trim();
-  const skill    = el("sessionSkill")?.value?.trim();
-  const platform = el("sessionPlatform")?.value;
-  const link     = el("sessionLink")?.value?.trim();
+  const name         = el("sessionName")?.value?.trim();
+  const skill        = el("sessionSkill")?.value?.trim();
+  const platform     = el("sessionPlatform")?.value;
+  const link         = el("sessionLink")?.value?.trim();
+
   if (!name)     { alert("Enter session name"); return; }
   if (!platform) { alert("Select a platform"); return; }
   if (platform !== "zoom" && platform !== "meet") { alert("Only Zoom and Google Meet are allowed."); return; }
@@ -1265,17 +1439,52 @@ window.startSession = async function () {
   if (!link.startsWith("http")) { alert("Meeting link must start with http:// or https://"); return; }
 
   const isScheduled = el("sessionScheduleToggle")?.checked;
-  let scheduledTime = 0;
+  let startTimeMs = Date.now();
+  let endTimeMs   = 0;
+  
   if (isScheduled) {
-    const dateVal = el("sessionScheduleDate")?.value;
-    const timeVal = el("sessionScheduleTime")?.value;
-    if (!dateVal || !timeVal) { alert("Please select both Date and Time for scheduling."); return; }
-    scheduledTime = Date.parse(`${dateVal}T${timeVal}`);
-    if (isNaN(scheduledTime) || scheduledTime < Date.now()) {
-      alert("Please select a future date and time for scheduled sessions.");
+    const dateVal    = el("sessionScheduleDate")?.value;
+    const timeVal    = el("sessionScheduleTime")?.value;
+    const endTimeVal = el("sessionScheduleEndTime")?.value;
+    if (!dateVal || !timeVal) { alert("Please select both Date and Start Time for scheduling."); return; }
+    
+    const todayStr = new Date().toISOString().split("T")[0];
+    if (dateVal < todayStr) {
+      alert("Cannot schedule a session for a past date. Please select today or a future date.");
       return;
     }
+
+    startTimeMs = Date.parse(`${dateVal}T${timeVal}`);
+    if (isNaN(startTimeMs)) { alert("Invalid start date/time"); return; }
+    
+    const now = Date.now();
+    if (dateVal === todayStr && startTimeMs < now - 60 * 1000) {
+      const nowStr = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+      alert(`Cannot schedule a session for a past time. Current time is ${nowStr}. Please pick a future start time.`);
+      return;
+    }
+
+    if (endTimeVal) {
+      endTimeMs = Date.parse(`${dateVal}T${endTimeVal}`);
+      if (isNaN(endTimeMs) || endTimeMs <= startTimeMs) {
+        alert("End Time must be after Start Time.");
+        return;
+      }
+      if (endTimeMs <= now) {
+        alert("End Time has already passed. Please pick a future end time.");
+        return;
+      }
+    } else {
+      const durationMins = Number(el("sessionDuration")?.value || 60);
+      endTimeMs = startTimeMs + durationMins * 60 * 1000;
+    }
+  } else {
+    const durationMins = Number(el("sessionDuration")?.value || 60);
+    startTimeMs = Date.now();
+    endTimeMs   = startTimeMs + durationMins * 60 * 1000;
   }
+
+  const durationMins = Math.round((endTimeMs - startTimeMs) / 60000);
 
   if (!isScheduled) {
     const existing = await getDocs(
@@ -1284,20 +1493,34 @@ window.startSession = async function () {
     if (!existing.empty) { alert("You already have a live session! End it first."); return; }
   }
 
-  const snap     = await getDoc(doc(db, "users", user.uid));
-  const hostName = snap.data()?.name || "Host";
-  const code     = generateCode();
-  const now      = new Date(isScheduled ? scheduledTime : Date.now());
+  const snap        = await getDoc(doc(db, "users", user.uid));
+  const hostName    = snap.data()?.name || "Host";
+  const code        = generateCode();
   
+  const startDateObj = new Date(startTimeMs);
+  const endDateObj   = new Date(endTimeMs);
+
+  const formatAMPM = (date) => {
+    return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+  };
+
+  const startTimeStr = formatAMPM(startDateObj);
+  const endTimeStr   = formatAMPM(endDateObj);
+  const timeRangeStr = `${startTimeStr} – ${endTimeStr}`;
+
   await addDoc(collection(db, "sessions"), {
     hostId: user.uid, hostName, name, skill: skill || "", platform,
     platformLabel: PLATFORM_LABELS[platform] || platform,
     meetingLink: link, code, status: isScheduled ? "scheduled" : "live", 
-    startTime: isScheduled ? scheduledTime : Date.now(),
-    startTimeStr: now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
-    startDateStr: now.toLocaleDateString(),
+    startTime: startTimeMs,
+    endTime: endTimeMs,
+    durationMins: durationMins,
+    startTimeStr: startTimeStr,
+    endTimeStr: endTimeStr,
+    timeRangeStr: timeRangeStr,
+    startDateStr: startDateObj.toLocaleDateString(),
     isScheduled: isScheduled,
-    scheduledTime: scheduledTime,
+    scheduledTime: startTimeMs,
     participants: [], feedback: [], ratings: []
   });
 
@@ -1307,7 +1530,7 @@ window.startSession = async function () {
     if (el("sessionCodeBox")) el("sessionCodeBox").style.display = "block";
     loadProfile();
   } else {
-    alert("Session scheduled successfully!");
+    alert(`Session scheduled successfully for ${timeRangeStr}!`);
     el("sessionName").value = "";
     el("sessionSkill").value = "";
     el("sessionPlatform").value = "";
@@ -1322,13 +1545,13 @@ window.endSession = async function () {
   const user = auth.currentUser;
   if (!user) return;
   const snap = await getDocs(
-    query(collection(db, "sessions"), where("hostId", "==", user.uid), where("status", "==", "live"))
+    query(collection(db, "sessions"), where("hostId", "==", user.uid), where("status", "in", ["live", "scheduled"]))
   );
   if (snap.empty) { alert("No active session found."); return; }
   const sessionDoc   = snap.docs[0];
   const d            = sessionDoc.data();
   const now          = new Date();
-  const durationMins = Math.floor((Date.now() - d.startTime) / 60000);
+  const durationMins = Math.floor((Date.now() - (d.startTime || Date.now())) / 60000);
   await updateDoc(doc(db, "sessions", sessionDoc.id), {
     status: "ended", endTime: Date.now(),
     endTimeStr: now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
@@ -1348,14 +1571,23 @@ function loadMyActiveSession() {
   const user = auth.currentUser;
   if (!user) return;
   onSnapshot(
-    query(collection(db, "sessions"), where("hostId", "==", user.uid), where("status", "==", "live")),
+    query(collection(db, "sessions"), where("hostId", "==", user.uid), where("status", "in", ["live", "scheduled"])),
     snap => {
       container.innerHTML = "";
-      if (snap.empty) {
+      const now = Date.now();
+      const activeDoc = snap.docs.find(docSnap => {
+        const d = docSnap.data();
+        const startTimeMs = (d.startTime && d.startTime.seconds) ? d.startTime.seconds * 1000 : Number(d.startTime || d.scheduledTime || 0);
+        const durationMs  = (d.durationMins || 60) * 60 * 1000;
+        const endTimeMs   = d.endTime || (startTimeMs + durationMs);
+        return now >= startTimeMs && now < endTimeMs;
+      });
+
+      if (!activeDoc) {
         container.innerHTML = `<p style="color:#888;text-align:center;padding:20px;">No active session right now.</p>`;
         return;
       }
-      const d = snap.docs[0].data();
+      const d = activeDoc.data();
       container.innerHTML = `
         <div class="card" style="border-left:4px solid #e74c3c;margin-bottom:16px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
@@ -1383,7 +1615,7 @@ window.joinSession = async function () {
   const resultBox = el("joinResult");
   if (resultBox) resultBox.innerHTML = `<div style="text-align:center;padding:20px;color:#888;"><p style="margin:0;font-weight:600;">Verifying your code...</p></div>`;
   const snap = await getDocs(
-    query(collection(db, "sessions"), where("code", "==", code), where("status", "==", "live"))
+    query(collection(db, "sessions"), where("code", "==", code), where("status", "in", ["live", "scheduled"]))
   );
   if (snap.empty) {
     if (resultBox) resultBox.innerHTML = `
@@ -1408,14 +1640,32 @@ window.joinSession = async function () {
   const mySnap = await getDoc(doc(db, "users", user.uid));
   const myData = mySnap.data();
   const following = myData?.following || [];
-  if (!following.includes(d.hostId)) {
+  const followers = myData?.followers || [];
+  const isRelated = d.hostId === user.uid || following.includes(d.hostId) || followers.includes(d.hostId);
+
+  if (!isRelated) {
     if (resultBox) resultBox.innerHTML = `
       <div style="background:#fdecea;padding:20px;border-radius:12px;border-left:4px solid #e74c3c;text-align:center;">
-        <p style="margin:0;color:#c0392b;font-weight:700;">🚫 You must follow the host to join this session.</p>
+        <p style="margin:0;color:#c0392b;font-weight:700;">🚫 You must be following or followed by the host to join this session.</p>
       </div>`;
     return;
   }
+
+  // Check if session time limit is over
+  const startTimeMs = (d.startTime && d.startTime.seconds) ? d.startTime.seconds * 1000 : Number(d.startTime || d.scheduledTime || 0);
+  const durationMs  = (d.durationMins || 60) * 60 * 1000;
+  const endTimeMs   = d.endTime || (startTimeMs + durationMs);
+  const now         = Date.now();
+  if (now >= endTimeMs) {
+    alert("Session time limit is over.");
+    await updateDoc(doc(db, "sessions", sessionDoc.id), { status: "ended" });
+    return;
+  }
   
+  if (d.status === "scheduled" && now >= startTimeMs) {
+    await updateDoc(doc(db, "sessions", sessionDoc.id), { status: "live" }).catch(() => {});
+  }
+
   await updateDoc(doc(db, "sessions", sessionDoc.id), { participants: arrayUnion(user.uid) });
   const platformIcons = { zoom:"🟦", meet:"🟢", teams:"🟣", webex:"🔵", jitsi:"🟩", whereby:"🟧", other:"📹" };
   const icon = platformIcons[d.platform] || "📹";
@@ -1429,7 +1679,7 @@ window.joinSession = async function () {
         <p style="margin:4px 0;color:#2c3e50;font-size:14px;"><b>Platform:</b> ${icon} ${d.platformLabel || "—"}</p>
       </div>
     </div>`;
-  setTimeout(() => openMeetingLink(d.meetingLink, d.platform), 1000);
+  setTimeout(() => openMeetingLink(d.meetingLink, d.platform, endTimeMs, sessionDoc.id), 1000);
   if (codeInput) codeInput.value = "";
 };
 
@@ -1439,17 +1689,40 @@ window.loadLiveSessions = function () {
   const user = auth.currentUser;
   if (!user) return;
   
-    onSnapshot(doc(db, "users", user.uid), (mySnap) => {
-      const myData = mySnap.data() || {};
-      const following = myData.following || [];
-      const followers = myData.followers || [];
-      
-      onSnapshot(query(collection(db, "sessions"), where("status", "==", "live")), snap => {
-        container.innerHTML = "";
-        const visibleDocs = snap.docs.filter(docSnap => {
-          const d = docSnap.data();
-          return d.hostId === user.uid || following.includes(d.hostId) || followers.includes(d.hostId);
-        });
+  onSnapshot(doc(db, "users", user.uid), (mySnap) => {
+    const myData = mySnap.data() || {};
+    const following = myData.following || [];
+    const followers = myData.followers || [];
+    
+    onSnapshot(query(collection(db, "sessions"), where("status", "in", ["live", "scheduled"])), snap => {
+      container.innerHTML = "";
+      const now = Date.now();
+      const visibleDocs = snap.docs.filter(docSnap => {
+        const d = docSnap.data();
+        const startTimeMs = (d.startTime && d.startTime.seconds) ? d.startTime.seconds * 1000 : Number(d.startTime || d.scheduledTime || 0);
+        const durationMs  = (d.durationMins || 60) * 60 * 1000;
+        const endTimeMs   = d.endTime || (startTimeMs + durationMs);
+        
+        // Auto-end session if time is over
+        if (now >= endTimeMs) {
+          if (d.status !== "ended") {
+            updateDoc(doc(db, "sessions", docSnap.id), { status: "ended", endTime: now }).catch(() => {});
+          }
+          return false;
+        }
+
+        // Must be live now: status == "live" OR (status == "scheduled" and start time has arrived)
+        const isLiveNow = d.status === "live" || (d.status === "scheduled" && now >= startTimeMs);
+        if (!isLiveNow) return false;
+
+        // Automatically promote scheduled session to "live" status when start time arrives
+        if (d.status === "scheduled" && now >= startTimeMs) {
+          updateDoc(doc(db, "sessions", docSnap.id), { status: "live" }).catch(() => {});
+        }
+        
+        // Only visible to Host, Followers, and Following
+        return d.hostId === user.uid || following.includes(d.hostId) || followers.includes(d.hostId);
+      });
       
       if (visibleDocs.length === 0) {
         container.innerHTML = `<div style="text-align:center;padding:50px 20px;color:#888;"><div style="font-size:48px;margin-bottom:12px;">🎙</div><p style="font-size:16px;font-weight:600;margin:0 0 6px;">No live sessions right now</p></div>`;
@@ -1460,8 +1733,8 @@ window.loadLiveSessions = function () {
         <div style="background:#fff8e1;border:1.5px solid #f39c12;border-radius:10px;padding:12px 16px;margin-bottom:16px;display:flex;align-items:flex-start;gap:10px;">
           <span style="font-size:20px;margin-top:1px;">🔐</span>
           <div>
-            <p style="margin:0 0 2px;font-weight:700;color:#7d5a00;font-size:13px;">Followed Hosts' Live Sessions</p>
-            <p style="margin:0;font-size:12px;color:#7d5a00;line-height:1.5;">Click any live session from a host you follow to join directly.</p>
+            <p style="margin:0 0 2px;font-weight:700;color:#7d5a00;font-size:13px;">Followers & Following Live Sessions</p>
+            <p style="margin:0;font-size:12px;color:#7d5a00;line-height:1.5;">Only live sessions from your followers or people you follow appear here.</p>
           </div>
         </div>`;
         
@@ -1470,10 +1743,13 @@ window.loadLiveSessions = function () {
         const d      = docSnap.data();
         const isHost = d.hostId === user.uid;
         const icon   = platformIcons[d.platform] || "📹";
+        const startTimeMs = (d.startTime && d.startTime.seconds) ? d.startTime.seconds * 1000 : Number(d.startTime || d.scheduledTime || 0);
+        const durationMs  = (d.durationMins || 60) * 60 * 1000;
+        const endTimeMs   = d.endTime || (startTimeMs + durationMs);
         
         const clickAction = isHost
-          ? `openMeetingAsHost('${docSnap.id}')`
-          : `joinSessionDirect('${docSnap.id}', '${d.meetingLink}', '${d.platform}')`;
+          ? `openMeetingAsHost('${docSnap.id}', ${endTimeMs}, ${startTimeMs})`
+          : `joinSessionDirect('${docSnap.id}', '${d.meetingLink}', '${d.platform}', ${endTimeMs}, ${startTimeMs})`;
           
         container.innerHTML += `
           <div class="card" onclick="${clickAction}" style="border-left:4px solid ${isHost ? '#3498db' : '#e74c3c'};margin-bottom:14px;cursor:pointer;transition:transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='none';this.style.boxShadow='none';">
@@ -1484,14 +1760,13 @@ window.loadLiveSessions = function () {
             </div>
             <p style="margin:5px 0;color:#555;font-size:13px;">🧑‍🏫 Host: <b>${d.hostName}</b></p>
             <p style="margin:5px 0;color:#555;font-size:13px;">📚 Skill: ${d.skill || "—"}</p>
+            <p style="margin:5px 0;color:#555;font-size:13px;">⏱ Duration: <b>${d.durationMins || 60} mins</b></p>
             <p style="margin:5px 0;color:#555;font-size:13px;">${icon} Platform: ${d.platformLabel || "—"}</p>
             <p style="margin:5px 0;color:#555;font-size:13px;">🕐 Started: ${d.startTimeStr} · ${d.startDateStr}</p>
             <p style="margin:5px 0;color:#555;font-size:13px;">⏱ Running: ${formatDuration(d.startTime)}</p>
             <p style="margin:5px 0;color:#555;font-size:13px;">👥 Participants: ${d.participants?.length || 0}</p>
             <div style="margin-top:14px;background:#eaf4fb;border-radius:10px;padding:14px;text-align:center;">
-              <p style="margin:0 0 4px;font-size:12px;color:#3498db;font-weight:700;letter-spacing:1px;">SESSION 6-DIGIT PASSCODE</p>
-              <p style="margin:0;font-size:32px;font-weight:800;letter-spacing:10px;color:#2c3e50;">${d.code}</p>
-              <p style="margin:10px 0 0;font-size:12px;color:#27ae60;font-weight:700;"><i class="fas fa-arrow-up-right-from-square"></i> Click Session to Open Meeting Link</p>
+              <p style="margin:0;font-size:14px;color:#27ae60;font-weight:700;"><i class="fas fa-arrow-up-right-from-square"></i> Click Session to Open Meeting Link Directly</p>
             </div>
           </div>`;
       });
@@ -1499,22 +1774,44 @@ window.loadLiveSessions = function () {
   });
 };
 
-window.joinSessionDirect = async function (sessionId, meetingLink, platform) {
+window.joinSessionDirect = async function (sessionId, meetingLink, platform, endTime, startTime) {
   const user = auth.currentUser;
   if (!user) return;
+  const now = Date.now();
+  if (startTime && now < startTime) {
+    const timeStr = new Date(startTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    alert(`Session has not started yet. Scheduled start time is ${timeStr}.`);
+    return;
+  }
+  if (endTime && now >= endTime) {
+    alert("Session time limit is over.");
+    await updateDoc(doc(db, "sessions", sessionId), { status: "ended", endTime: now }).catch(() => {});
+    return;
+  }
   try {
     await updateDoc(doc(db, "sessions", sessionId), { participants: arrayUnion(user.uid) });
-    openMeetingLink(meetingLink, platform);
+    openMeetingLink(meetingLink, platform, endTime, sessionId);
   } catch (err) {
     alert("Error joining session: " + err.message);
   }
 };
 
-window.openMeetingAsHost = async function (sessionId) {
+window.openMeetingAsHost = async function (sessionId, endTime, startTime) {
+  const now = Date.now();
+  if (startTime && now < startTime) {
+    const timeStr = new Date(startTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    alert(`Session has not started yet. Scheduled start time is ${timeStr}.`);
+    return;
+  }
+  if (endTime && now >= endTime) {
+    alert("Session time limit is over.");
+    await updateDoc(doc(db, "sessions", sessionId), { status: "ended", endTime: now }).catch(() => {});
+    return;
+  }
   const snap = await getDoc(doc(db, "sessions", sessionId));
   if (!snap.exists()) { alert("Session not found."); return; }
   const d = snap.data();
-  openMeetingLink(d.meetingLink, d.platform);
+  openMeetingLink(d.meetingLink, d.platform, endTime, sessionId);
 };
 
 window.loadSessionHistory = function () {
@@ -1524,42 +1821,98 @@ window.loadSessionHistory = function () {
   if (!user) return;
   
   onSnapshot(doc(db, "users", user.uid), (mySnap) => {
-    const myData = mySnap.data();
+    const myData = mySnap.data() || {};
     const following = myData?.following || [];
+    const followers = myData?.followers || [];
     
-    onSnapshot(query(collection(db, "sessions"), where("status", "==", "ended")), snap => {
+    onSnapshot(collection(db, "sessions"), snap => {
       container.innerHTML = "";
       
-      const visibleDocs = snap.docs.filter(docSnap => {
+      let attendedCount = 0;
+      let hostedCount = 0;
+      let skippedCount = 0;
+      const historyList = [];
+      const now = Date.now();
+      
+      snap.forEach(docSnap => {
         const d = docSnap.data();
-        return d.hostId === user.uid || following.includes(d.hostId);
+        const id = docSnap.id;
+        const isHost = d.hostId === user.uid;
+        const isParticipant = d.participants && d.participants.includes(user.uid);
+        const isRelated = isHost || following.includes(d.hostId) || followers.includes(d.hostId);
+
+        if (!isRelated) return;
+
+        const startTimeMs = (d.startTime && d.startTime.seconds) ? d.startTime.seconds * 1000 : Number(d.startTime || 0);
+        const durationMs  = (d.durationMins || 60) * 60 * 1000;
+        const endTimeMs   = d.endTime || (startTimeMs + durationMs);
+        const isExpired   = now >= endTimeMs || d.status === "ended";
+
+        if (!isExpired) return;
+
+        let userStatus = "";
+        let badgeColor = "";
+        
+        if (isHost) {
+          userStatus = "👑 Hosted";
+          badgeColor = "#3b82f6";
+          hostedCount++;
+        } else if (isParticipant) {
+          userStatus = "✅ Attended";
+          badgeColor = "#27ae60";
+          attendedCount++;
+        } else {
+          userStatus = "⏭️ Skipped";
+          badgeColor = "#ef4444";
+          skippedCount++;
+        }
+
+        historyList.push({ id, ...d, userStatus, badgeColor, endTimeMs });
       });
       
-      if (visibleDocs.length === 0) {
-        container.innerHTML = `<div style="text-align:center;padding:50px 20px;color:#888;"><div style="font-size:40px;">📋</div><p>No past sessions yet</p></div>`;
+      if (historyList.length === 0) {
+        container.innerHTML = `<div style="text-align:center;padding:40px 20px;color:#888;"><div style="font-size:40px;">📋</div><p>No session history available yet.</p></div>`;
         return;
       }
       
-      const sortedDocs = visibleDocs.sort((a, b) => (b.data().endTime || 0) - (a.data().endTime || 0));
-      sortedDocs.forEach(docSnap => {
-        const d = docSnap.data();
+      historyList.sort((a, b) => b.endTimeMs - a.endTimeMs);
+
+      let html = `
+        <div style="background:#fff; border-radius:12px; padding:16px; margin-bottom:16px; border:1px solid #e2e8f0; display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; text-align:center;">
+          <div style="background:#e8f5e9; padding:10px; border-radius:8px;">
+            <div style="font-size:22px; font-weight:800; color:#27ae60;">${attendedCount}</div>
+            <div style="font-size:11px; font-weight:700; color:#555;">Attended</div>
+          </div>
+          <div style="background:#eff6ff; padding:10px; border-radius:8px;">
+            <div style="font-size:22px; font-weight:800; color:#3b82f6;">${hostedCount}</div>
+            <div style="font-size:11px; font-weight:700; color:#555;">Hosted</div>
+          </div>
+          <div style="background:#fef2f2; padding:10px; border-radius:8px;">
+            <div style="font-size:22px; font-weight:800; color:#ef4444;">${skippedCount}</div>
+            <div style="font-size:11px; font-weight:700; color:#555;">Skipped</div>
+          </div>
+        </div>`;
+
+      historyList.forEach(d => {
         const avgRating = d.ratings?.length ? (d.ratings.reduce((a, b) => a + b.stars, 0) / d.ratings.length).toFixed(1) : null;
-        const stars = avgRating ? "⭐".repeat(Math.round(avgRating)) + ` <b>${avgRating}/5</b>` : `<span style="color:#bbb;">No ratings yet</span>`;
-        container.innerHTML += `
-          <div class="card" style="border-left:4px solid #3498db;margin-bottom:14px;">
-            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;">
-              <h3 style="margin:0;">${d.name}</h3>
-              <span style="background:#eaf4fb;color:#3498db;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:600;">ENDED</span>
+        const stars = avgRating ? "⭐".repeat(Math.round(avgRating)) + ` <b>${avgRating}/5</b>` : `<span style="color:#bbb;">No ratings</span>`;
+        
+        html += `
+          <div class="card" style="border-left:4px solid ${d.badgeColor}; margin-bottom:14px;">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:8px;">
+              <h3 style="margin:0; font-size:16px;">${d.name}</h3>
+              <span style="background:${d.badgeColor}; color:#fff; padding:3px 10px; border-radius:20px; font-size:11px; font-weight:700;">${d.userStatus}</span>
             </div>
-            <p style="margin:5px 0;color:#555;">Host: <b>${d.hostName}</b></p>
-            <p style="margin:5px 0;color:#555;">Skill: ${d.skill || "—"}</p>
-            <p style="margin:5px 0;color:#555;">Platform: ${d.platformLabel || "—"}</p>
-            <p style="margin:5px 0;color:#555;">${d.startDateStr} · ${d.startTimeStr} → ${d.endTimeStr || "—"}</p>
-            <p style="margin:5px 0;color:#555;">Duration: ${d.durationMins != null ? d.durationMins + " min" : "—"}</p>
-            <p style="margin:5px 0;color:#555;">Participants: ${d.participants?.length || 0}</p>
-            <p style="margin:5px 0;">Rating: ${stars}</p>
+            <p style="margin:4px 0; color:#555; font-size:13px;">Host: <b>${d.hostName}</b></p>
+            <p style="margin:4px 0; color:#555; font-size:13px;">Skill: ${d.skill || "—"}</p>
+            <p style="margin:4px 0; color:#555; font-size:13px;">Platform: ${d.platformLabel || "—"}</p>
+            <p style="margin:4px 0; color:#555; font-size:13px;">${d.startDateStr} · ${d.startTimeStr}</p>
+            <p style="margin:4px 0; color:#555; font-size:13px;">Duration: ${d.durationMins || 60} mins</p>
+            <p style="margin:4px 0; color:#555; font-size:13px;">Rating: ${stars}</p>
           </div>`;
       });
+
+      container.innerHTML = html;
     });
   });
 };
@@ -1737,8 +2090,8 @@ window.loadPDFs = function () {
             </div>
             <div style="display:flex; justify-content:space-between; align-items:center; margin-top:4px;">
               <div style="display:flex; gap:8px;">
-                <a href="${data.fileURL}" target="_blank" onclick="trackPDFDownload('${id}')" style="background:#3b82f6; color:#fff; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; text-decoration:none;"><i class="fas fa-eye"></i> View</a>
-                <a href="${data.fileURL}" download="${data.fileName}" onclick="trackPDFDownload('${id}')" style="background:#10b981; color:#fff; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; text-decoration:none;"><i class="fas fa-download"></i> Download</a>
+                <button onclick="viewPDF('${id}')" style="background:#3b82f6; color:#fff; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; border:none; cursor:pointer; width:auto !important;"><i class="fas fa-eye"></i> View</button>
+                <button onclick="downloadPDF('${id}')" style="background:#10b981; color:#fff; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; border:none; cursor:pointer; width:auto !important;"><i class="fas fa-download"></i> Download</button>
               </div>
               ${deleteBtn}
             </div>
@@ -1749,6 +2102,63 @@ window.loadPDFs = function () {
       }
     });
   });
+};
+
+window.viewPDF = async function (pdfId) {
+  try {
+    const snap = await getDoc(doc(db, "pdfs", pdfId));
+    if (!snap.exists()) { alert("PDF file not found."); return; }
+    const data = snap.data();
+    trackPDFDownload(pdfId);
+    
+    let fileURL = data.fileURL;
+    if (fileURL.startsWith("data:")) {
+      const parts = fileURL.split(";base64,");
+      const contentType = parts[0].split(":")[1] || "application/pdf";
+      const raw = window.atob(parts[1]);
+      const uInt8Array = new Uint8Array(raw.length);
+      for (let i = 0; i < raw.length; i++) uInt8Array[i] = raw.charCodeAt(i);
+      const blob = new Blob([uInt8Array], { type: contentType });
+      fileURL = URL.createObjectURL(blob);
+    }
+    const win = window.open(fileURL, "_blank");
+    if (!win) {
+      alert("Pop-up blocked! Please allow pop-ups for this site to view the PDF.");
+    }
+  } catch (err) {
+    alert("Error opening PDF: " + err.message);
+  }
+};
+
+window.downloadPDF = async function (pdfId) {
+  try {
+    const snap = await getDoc(doc(db, "pdfs", pdfId));
+    if (!snap.exists()) { alert("PDF file not found."); return; }
+    const data = snap.data();
+    trackPDFDownload(pdfId);
+
+    let fileURL = data.fileURL;
+    const fileName = data.fileName || "note.pdf";
+
+    if (fileURL.startsWith("data:")) {
+      const parts = fileURL.split(";base64,");
+      const contentType = parts[0].split(":")[1] || "application/pdf";
+      const raw = window.atob(parts[1]);
+      const uInt8Array = new Uint8Array(raw.length);
+      for (let i = 0; i < raw.length; i++) uInt8Array[i] = raw.charCodeAt(i);
+      const blob = new Blob([uInt8Array], { type: contentType });
+      fileURL = URL.createObjectURL(blob);
+    }
+
+    const a = document.createElement("a");
+    a.href = fileURL;
+    a.download = fileName;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  } catch (err) {
+    alert("Error downloading PDF: " + err.message);
+  }
 };
 
 window.uploadPDF = function () {
@@ -1873,26 +2283,42 @@ window.recordAnswer = function (input) {
   }
 };
 
+window.openTestScreen = function (screenId) {
+  const dash = el("testDashboard");
+  if (dash) dash.style.display = "none";
+  document.querySelectorAll("#testSection .screen").forEach(s => s.style.display = "none");
+  const screen = el(screenId);
+  if (screen) screen.style.display = "block";
+  if (screenId === "createTestScreen") { loadMyTests(); loadTestHistory(); }
+  else if (screenId === "addQuestionScreen") loadMyTests();
+  else if (screenId === "attendTestScreen") loadAvailableTests();
+  else if (screenId === "testHistoryScreen") loadTestHistory();
+};
+
+window.backTestDashboard = function () {
+  document.querySelectorAll("#testSection .screen").forEach(s => s.style.display = "none");
+  const dash = el("testDashboard");
+  if (dash) dash.style.display = "grid";
+};
+
 window.createTest = async function () {
   const user = auth.currentUser;
   if (!user) return;
-  const title   = el("testTitle")?.value?.trim();
-  const skill   = el("testSkill")?.value?.trim();
-  const credits = el("testCredits")?.value?.trim();
-  if (!title)   { alert("Enter test title"); return; }
-  if (!skill)   { alert("Enter skill name"); return; }
-  if (!credits) { alert("Enter credits"); return; }
-  const snap        = await getDoc(doc(db, "users", user.uid));
+  const title = el("testTitle")?.value?.trim();
+  const skill = el("testSkill")?.value?.trim();
+  if (!title) { alert("Enter test title"); return; }
+  if (!skill) { alert("Enter skill name"); return; }
+  const snap = await getDoc(doc(db, "users", user.uid));
   const creatorName = snap.data()?.name || "Unknown";
   await addDoc(collection(db, "tests"), {
     creatorId: user.uid, creatorName, title, skill,
-    credits: Number(credits), createdAt: serverTimestamp()
+    createdAt: serverTimestamp()
   });
   alert("✅ Test Created!");
-  if (el("testTitle"))   el("testTitle").value   = "";
-  if (el("testSkill"))   el("testSkill").value   = "";
-  if (el("testCredits")) el("testCredits").value = "";
+  if (el("testTitle")) el("testTitle").value = "";
+  if (el("testSkill")) el("testSkill").value = "";
   loadMyTests();
+  loadTestHistory();
 };
 
 window.loadMyTests = function () {
@@ -1902,46 +2328,53 @@ window.loadMyTests = function () {
   const testSelect = el("testSelect");
   onSnapshot(
     query(collection(db, "tests"), where("creatorId", "==", user.uid)),
-    snap => {
+    async snap => {
       if (testList)   testList.innerHTML   = "";
       if (testSelect) testSelect.innerHTML = "<option value=''>-- Select Test --</option>";
       if (snap.empty) {
         if (testList) testList.innerHTML = `<p style="color:#888;text-align:center;padding:20px;">No tests created yet</p>`;
         return;
       }
-      snap.forEach(docSnap => {
+      for (const docSnap of snap.docs) {
         const d  = docSnap.data();
         const id = docSnap.id;
-        if (testList) {
-          testList.innerHTML += `
-            <div class="card" style="border-left:4px solid #3498db;margin-bottom:12px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <div>
-                  <h3 style="margin:0 0 4px;">${d.title}</h3>
-                  <p style="margin:2px 0;color:#555;font-size:13px;">📚 Skill: ${d.skill}</p>
-                  <p style="margin:2px 0;color:#27ae60;font-size:13px;">🏆 Credits: ${d.credits}</p>
-                </div>
-                <button onclick="deleteTest('${id}')"
-                        style="background:#e74c3c;color:#fff;border:none;padding:8px 14px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600;">
-                  🗑 Delete
-                </button>
-              </div>
-            </div>`;
-        }
-        if (testSelect) {
-          testSelect.innerHTML += `<option value="${id}">${d.title}</option>`;
-        }
-      });
+        const qSnap = await getDocs(query(collection(db, "questions"), where("testId", "==", id)));
+        const count = qSnap.size;
+
+        listHtml += `
+          <div class="card" style="border-left:4px solid #3498db;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;padding:16px;">
+            <div style="flex:1;">
+              <h3 style="margin:0 0 4px;font-size:16px;color:#2c3e50;font-weight:700;">${d.title}</h3>
+              <p style="margin:2px 0;color:#555;font-size:13px;">📚 Skill: ${d.skill}</p>
+              <p style="margin:2px 0;color:#27ae60;font-weight:700;font-size:12px;">❓ Questions: ${count} / 5 max</p>
+            </div>
+            <button onclick="deleteTest('${id}')"
+                    style="width:auto !important;max-width:120px;flex-shrink:0;margin-left:12px;background:#fee2e2;color:#ef4444;border:1px solid #fca5a5;padding:8px 14px;border-radius:8px;cursor:pointer;font-size:12px;font-weight:700;">
+              🗑 Delete
+            </button>
+          </div>`;
+        
+        selectHtml += `<option value="${id}">${d.title} (${count}/5 Qs)</option>`;
+      }
+      if (testList) testList.innerHTML = listHtml;
+      if (testSelect) testSelect.innerHTML = selectHtml;
     }
   );
 };
 
 window.deleteTest = async function (testId) {
-  if (!confirm("Delete this test and ALL its questions?")) return;
-  const qSnap = await getDocs(query(collection(db, "questions"), where("testId", "==", testId)));
-  await Promise.all(qSnap.docs.map(d => deleteDoc(d.ref)));
-  await deleteDoc(doc(db, "tests", testId));
-  alert("✅ Test deleted!");
+  if (!confirm("Are you sure you want to delete this test and all its questions?")) return;
+  try {
+    const qSnap = await getDocs(query(collection(db, "questions"), where("testId", "==", testId)));
+    await Promise.all(qSnap.docs.map(d => deleteDoc(d.ref)));
+    await deleteDoc(doc(db, "tests", testId));
+    alert("✅ Test deleted successfully!");
+    if (typeof loadMyTests === "function") loadMyTests();
+    if (typeof loadTestHistory === "function") loadTestHistory();
+    if (typeof loadAvailableTests === "function") loadAvailableTests();
+  } catch (err) {
+    alert("Error deleting test: " + err.message);
+  }
 };
 
 window.addQuestion = async function () {
@@ -1955,18 +2388,27 @@ window.addQuestion = async function () {
   const option4       = el("option4")?.value?.trim();
   const correctAnswer = el("correctAnswer")?.value?.trim();
   if (!testId)        { alert("Select a test first"); return; }
+
+  // Check max 5 questions limit
+  const existingSnap = await getDocs(query(collection(db, "questions"), where("testId", "==", testId)));
+  if (existingSnap.size >= 5) {
+    alert("Maximum limit of 5 questions per test reached!");
+    return;
+  }
+
   if (!question)      { alert("Enter a question"); return; }
   if (!option1 || !option2 || !option3 || !option4) { alert("Fill all 4 options"); return; }
-  if (!correctAnswer) { alert("Enter the correct answer"); return; }
+  if (!correctAnswer) { alert("Select the correct answer"); return; }
+
   await addDoc(collection(db, "questions"), {
     testId, creatorId: user.uid,
     question, option1, option2, option3, option4,
     correctAnswer, createdAt: serverTimestamp()
   });
-  alert("✅ Question Added!");
+  alert(`✅ Question Added! (${existingSnap.size + 1} / 5 max)`);
   ["question","option1","option2","option3","option4","correctAnswer"]
     .forEach(id => { if (el(id)) el(id).value = ""; });
-  loadMyQuestions();
+  loadMyTests();
 };
 
 window.loadMyQuestions = function () {
@@ -1997,7 +2439,7 @@ window.loadMyQuestions = function () {
                 <p style="margin:6px 0 0;color:#27ae60;font-weight:600;font-size:13px;">✅ Correct: ${d.correctAnswer}</p>
               </div>
               <button onclick="deleteQuestion('${id}')"
-                      style="background:#e74c3c;color:#fff;border:none;padding:6px 12px;border-radius:8px;cursor:pointer;font-size:12px;">
+                      style="width:auto !important;max-width:120px;flex-shrink:0;background:#fee2e2;color:#ef4444;border:1px solid #fca5a5;padding:6px 12px;border-radius:8px;cursor:pointer;font-size:12px;">
                 🗑 Delete
               </button>
             </div>
@@ -2018,52 +2460,78 @@ window.loadAvailableTests = async function () {
   if (!user) return;
   const container = el("availableTests");
   if (!container) return;
-  container.innerHTML = `<div style="text-align:center;padding:30px;color:#888;"><p>Loading tests...</p></div>`;
-  const mySnap    = await getDoc(doc(db, "users", user.uid));
-  const myData    = mySnap.data();
-  const following = myData?.following || [];
-  if (!following.length) {
-    container.innerHTML = `
-      <div style="text-align:center;padding:40px 20px;color:#888;">
-        <div style="font-size:48px;margin-bottom:12px;">🤝</div>
-        <p style="font-size:16px;font-weight:600;margin:0 0 6px;color:#555;">No followed creators yet</p>
-        <p style="font-size:13px;margin:0;">Follow a user to see and attend their tests here.</p>
-      </div>`;
-    return;
+  container.innerHTML = `<div style="text-align:center;padding:30px;color:#888;"><p>Loading tests from your connections...</p></div>`;
+  
+  try {
+    // Exclude tests already attempted by current user so they disappear after attending!
+    const attemptsSnap = await getDocs(query(collection(db, "testAttempts"), where("userId", "==", user.uid)));
+    const attemptedTestIds = new Set(attemptsSnap.docs.map(d => d.data().testId));
+
+    const mySnap    = await getDoc(doc(db, "users", user.uid));
+    const myData    = mySnap.data() || {};
+    const following = myData.following || [];
+    const followers = myData.followers || [];
+
+    // Tests created by users the current user follows or who follow current user (EXCLUDING self)
+    const allowedCreators = Array.from(new Set([...following, ...followers])).filter(id => id !== user.uid);
+
+    if (!allowedCreators.length) {
+      container.innerHTML = `
+        <div style="text-align:center;padding:40px 20px;color:#888;">
+          <div style="font-size:48px;margin-bottom:12px;">🤝</div>
+          <p style="font-size:16px;font-weight:600;margin:0 0 6px;color:#555;">No connection tests available</p>
+          <p style="font-size:13px;margin:0;">Follow users or get followers to see and attend their skill tests. Your own tests appear in Created Tests & History.</p>
+        </div>`;
+      return;
+    }
+
+    const chunks = [];
+    for (let i = 0; i < allowedCreators.length; i += 10) chunks.push(allowedCreators.slice(i, i + 10));
+    
+    let allTests = [];
+    for (const chunk of chunks) {
+      const snap = await getDocs(query(collection(db, "tests"), where("creatorId", "in", chunk)));
+      snap.forEach(docSnap => {
+        // Exclude tests created by self OR already completed/attended!
+        const testData = docSnap.data();
+        if (testData.creatorId !== user.uid && !attemptedTestIds.has(docSnap.id)) {
+          allTests.push({ id: docSnap.id, ...testData });
+        }
+      });
+    }
+
+    container.innerHTML = "";
+    if (!allTests.length) {
+      container.innerHTML = `
+        <div style="text-align:center;padding:40px 20px;color:#888;">
+          <div style="font-size:48px;margin-bottom:12px;">📝</div>
+          <p style="font-size:15px;font-weight:600;margin:0 0 6px;color:#555;">No tests available</p>
+          <p style="font-size:13px;margin:0;">You have attended all available tests or your connections haven't created any new tests.</p>
+        </div>`;
+      return;
+    }
+
+    for (const test of allTests) {
+      const qSnap = await getDocs(query(collection(db, "questions"), where("testId", "==", test.id)));
+      const qCount = qSnap.size;
+      container.innerHTML += `
+        <div class="card" style="border-left:4px solid #27ae60;margin-bottom:14px;background:#f9fbf9;border:1px solid #e2e8f0;padding:16px;border-radius:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <h3 style="margin:0;font-size:16px;color:#2c3e50;">${test.title}</h3>
+            <span style="background:#e0f2fe;color:#0369a1;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;">👥 CONNECTION TEST</span>
+          </div>
+          <p style="margin:4px 0;color:#555;font-size:13px;">📚 Skill Topic: <b>${test.skill}</b></p>
+          <p style="margin:4px 0;color:#555;font-size:13px;">👤 Created By: <b>${test.creatorName || "Host"}</b></p>
+          <p style="margin:4px 0;color:#27ae60;font-weight:600;font-size:13px;">❓ Questions: ${qCount} questions (Max 5)</p>
+          <button onclick="startTest('${test.id}')"
+                  style="margin-top:12px;background:#27ae60;color:#fff;border:none;padding:12px 20px;border-radius:8px;cursor:pointer;font-size:14px;font-weight:700;width:100%;">
+            🚀 Start Test
+          </button>
+        </div>`;
+    }
+  } catch (err) {
+    container.innerHTML = `<p style="color:#ef4444;">Error loading tests: ${err.message}</p>`;
   }
-  const chunks = [];
-  for (let i = 0; i < following.length; i += 10) chunks.push(following.slice(i, i + 10));
-  let allTests = [];
-  for (const chunk of chunks) {
-    const snap = await getDocs(query(collection(db, "tests"), where("creatorId", "in", chunk)));
-    snap.forEach(docSnap => allTests.push({ id: docSnap.id, ...docSnap.data() }));
-  }
-  container.innerHTML = "";
-  if (!allTests.length) {
-    container.innerHTML = `
-      <div style="text-align:center;padding:40px 20px;color:#888;">
-        <div style="font-size:48px;margin-bottom:12px;">📝</div>
-        <p style="font-size:15px;font-weight:600;margin:0 0 6px;color:#555;">No tests available yet</p>
-        <p style="font-size:13px;margin:0;">Your followed creators haven't created any tests yet.</p>
-      </div>`;
-    return;
-  }
-  allTests.forEach(test => {
-    container.innerHTML += `
-      <div class="card" style="border-left:4px solid #27ae60;margin-bottom:14px;">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-          <h3 style="margin:0;">${test.title}</h3>
-          <span style="background:#e0f2fe;color:#0369a1;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:600;">👨‍🏫 TEACHING ME</span>
-        </div>
-        <p style="margin:4px 0;color:#555;font-size:13px;">📚 Skill: <b>${test.skill}</b></p>
-        <p style="margin:4px 0;color:#555;font-size:13px;">👤 By: <b>${test.creatorName || "Unknown"}</b></p>
-        <p style="margin:4px 0;color:#27ae60;font-weight:600;font-size:13px;">🏆 Earn ${test.credits} Credits on completion</p>
-        <button onclick="startTest('${test.id}')"
-                style="margin-top:12px;background:#3498db;color:#fff;border:none;padding:12px 20px;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600;width:100%;">
-          🚀 Start Test
-        </button>
-      </div>`;
-  });
 };
 
 window.startTest = async function (testId) {
@@ -2076,7 +2544,7 @@ window.startTest = async function (testId) {
   currentTestData = testSnap.data();
   const qSnap = await getDocs(query(collection(db, "questions"), where("testId", "==", testId)));
 
-  const availablePanel = el("availableTests");
+  const availablePanel = el("attendTestScreen");
   const questionsPanel = el("testQuestions");
   const resultsPanel   = el("resultsContainer");
 
@@ -2101,7 +2569,7 @@ window.startTest = async function (testId) {
   questionsPanel.innerHTML = `
     <div style="background:linear-gradient(135deg,#3498db,#2c3e50);color:#fff;padding:18px;border-radius:12px;margin-bottom:18px;text-align:center;">
       <h2 style="margin:0 0 4px;">${currentTestData?.title || "Test"}</h2>
-      <p style="margin:0;opacity:0.85;font-size:13px;">${qSnap.size} question(s) · 🏆 ${currentTestData?.credits || 0} credits available</p>
+      <p style="margin:0;opacity:0.85;font-size:13px;">${qSnap.size} question(s) (Max 5)</p>
     </div>`;
 
   let qIndex = 0;
@@ -2140,7 +2608,7 @@ window.startTest = async function (testId) {
 };
 
 window.backToTestList = function () {
-  const availablePanel = el("availableTests");
+  const availablePanel = el("attendTestScreen");
   const questionsPanel = el("testQuestions");
   const resultsPanel   = el("resultsContainer");
   if (questionsPanel) questionsPanel.style.display = "none";
@@ -2149,6 +2617,8 @@ window.backToTestList = function () {
   currentTestId   = null;
   currentTestData = null;
   userAnswers     = {};
+  loadAvailableTests();
+  loadTestHistory();
 };
 
 window.completeTest = async function () {
@@ -2165,18 +2635,13 @@ window.completeTest = async function () {
     if (isCorrect) score++;
     results.push({ question: q.question, selected: selected || "Not answered", correct: q.correctAnswer, isCorrect });
   });
-  const earnedCredits = score * 10;
-  const percentage    = total > 0 ? Math.round((score / total) * 100) : 0;
-  const ref  = doc(db, "users", user.uid);
-  const snap = await getDoc(ref);
-  await updateDoc(ref, {
-    credits: (snap.data().credits || 0) + earnedCredits,
-    tests:   (snap.data().tests   || 0) + 1
-  });
+
+  const percentage = total > 0 ? Math.round((score / total) * 100) : 0;
+  
   await addDoc(collection(db, "testAttempts"), {
     userId: user.uid, testId: currentTestId,
-    testTitle: currentTestData?.title || "",
-    score, total, percentage, earnedCredits,
+    testTitle: currentTestData?.title || "Skill Test",
+    score, total, percentage,
     attemptedAt: serverTimestamp()
   });
 
@@ -2186,8 +2651,6 @@ window.completeTest = async function () {
   if (resultsPanel)   resultsPanel.style.display   = "block";
 
   if (resultsPanel) {
-    const emoji = percentage >= 80 ? "🎉" : percentage >= 50 ? "👍" : "📚";
-    const color = percentage >= 80 ? "#27ae60" : percentage >= 50 ? "#f39c12" : "#e74c3c";
     const resultRows = results.map(r => `
       <div style="padding:10px 12px;margin:6px 0;border-radius:8px;
                   background:${r.isCorrect ? '#f0fdf4' : '#fff5f5'};
@@ -2196,39 +2659,135 @@ window.completeTest = async function () {
         <p style="margin:0;font-size:12px;color:#555;">Your answer: <b>${r.selected}</b> ${r.isCorrect ? '✅' : '❌'}</p>
         ${!r.isCorrect ? `<p style="margin:2px 0 0;font-size:12px;color:#27ae60;">Correct: <b>${r.correct}</b></p>` : ""}
       </div>`).join("");
+
     resultsPanel.innerHTML = `
-      <div style="background:#fff;border-radius:14px;padding:24px;box-shadow:0 2px 16px rgba(0,0,0,0.08);">
-        <div style="text-align:center;margin-bottom:20px;">
-          <div style="font-size:60px;line-height:1;margin-bottom:8px;">${emoji}</div>
-          <h2 style="margin:0 0 4px;color:#2c3e50;">Test Completed!</h2>
-          <p style="margin:0;color:#888;font-size:13px;">${currentTestData?.title || ""}</p>
-        </div>
-        <div style="display:flex;justify-content:center;gap:12px;margin-bottom:22px;flex-wrap:wrap;">
-          <div style="background:#f8f9fa;padding:14px 20px;border-radius:12px;text-align:center;min-width:80px;">
-            <div style="font-size:30px;font-weight:800;color:${color};">${score}/${total}</div>
-            <div style="font-size:11px;color:#888;margin-top:2px;text-transform:uppercase;">Score</div>
+      <div style="background:#fff;border-radius:14px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.08);border:2px solid #27ae60;text-align:center;">
+        <div style="font-size:60px;line-height:1;margin-bottom:10px;">🎉</div>
+        <h2 style="margin:0 0 6px;color:#27ae60;font-size:24px;font-weight:800;">Congratulations!</h2>
+        <p style="margin:0 0 16px;color:#2c3e50;font-size:16px;font-weight:700;">You did a great job!</p>
+        <p style="margin:0 0 16px;color:#7f8c8d;font-size:14px;">Test: <b>${currentTestData?.title || "Skill Test"}</b></p>
+        
+        <div style="display:flex;justify-content:center;gap:16px;margin-bottom:22px;">
+          <div style="background:#f8f9fa;padding:14px 24px;border-radius:12px;text-align:center;border:1px solid #e9ecef;">
+            <div style="font-size:32px;font-weight:800;color:#27ae60;">${score} / ${total}</div>
+            <div style="font-size:12px;color:#888;margin-top:2px;font-weight:700;">SCORE</div>
           </div>
-          <div style="background:#f8f9fa;padding:14px 20px;border-radius:12px;text-align:center;min-width:80px;">
-            <div style="font-size:30px;font-weight:800;color:${color};">${percentage}%</div>
-            <div style="font-size:11px;color:#888;margin-top:2px;text-transform:uppercase;">Accuracy</div>
-          </div>
-          <div style="background:#e8f5e9;padding:14px 20px;border-radius:12px;text-align:center;min-width:80px;">
-            <div style="font-size:30px;font-weight:800;color:#27ae60;">+${earnedCredits}</div>
-            <div style="font-size:11px;color:#888;margin-top:2px;text-transform:uppercase;">Credits</div>
+          <div style="background:#f8f9fa;padding:14px 24px;border-radius:12px;text-align:center;border:1px solid #e9ecef;">
+            <div style="font-size:32px;font-weight:800;color:#3b82f6;">${percentage}%</div>
+            <div style="font-size:12px;color:#888;margin-top:2px;font-weight:700;">ACCURACY</div>
           </div>
         </div>
-        <h4 style="margin:0 0 10px;color:#2c3e50;font-size:14px;">📋 Answer Review</h4>
-        ${resultRows}
-        <button onclick="backTestDashboard()"
-                style="width:100%;padding:13px;background:#3498db;color:#fff;border:none;border-radius:10px;cursor:pointer;font-size:15px;font-weight:600;margin-top:16px;">
+
+        <div style="text-align:left;">
+          <h4 style="margin:0 0 10px;color:#2c3e50;font-size:14px;">📋 Question Review</h4>
+          ${resultRows}
+        </div>
+
+        <button onclick="backToTestList()"
+                style="width:100%;padding:14px;background:#27ae60;color:#fff;border:none;border-radius:10px;cursor:pointer;font-size:15px;font-weight:700;margin-top:20px;">
           ← Back to Tests
         </button>
       </div>`;
   }
-  loadProfile();
   currentTestId   = null;
   currentTestData = null;
   userAnswers     = {};
+  loadAvailableTests();
+  loadTestHistory();
+};
+
+let unsubCreatedHistory = null;
+let unsubAttendedHistory = null;
+
+window.loadTestHistory = function () {
+  const user = auth.currentUser;
+  if (!user) return;
+  const container = el("testHistoryContainer");
+  if (!container) return;
+
+  if (unsubCreatedHistory) { unsubCreatedHistory(); unsubCreatedHistory = null; }
+  if (unsubAttendedHistory) { unsubAttendedHistory(); unsubAttendedHistory = null; }
+
+  container.innerHTML = `<div style="text-align:center;padding:30px;color:#888;">Loading history...</div>`;
+
+  let latestCreatedDocs = [];
+  let latestAttendedDocs = [];
+
+  async function renderHistory() {
+    let createdHtml = "";
+    if (!latestCreatedDocs.length) {
+      createdHtml = `<p style="color:#888;font-size:13px;padding:10px 0;">No tests created by you yet.</p>`;
+    } else {
+      const counts = await Promise.all(latestCreatedDocs.map(async docSnap => {
+        const qSnap = await getDocs(query(collection(db, "questions"), where("testId", "==", docSnap.id)));
+        return qSnap.size;
+      }));
+
+      latestCreatedDocs.forEach((docSnap, index) => {
+        const d = docSnap.data();
+        const id = docSnap.id;
+        const qCount = counts[index];
+        createdHtml += `
+          <div style="background:#f8f9fa; border-radius:10px; padding:12px 16px; border:1px solid #e9ecef; margin-bottom:10px; display:flex; justify-content:space-between; align-items:center;">
+            <div style="flex:1;">
+              <b style="font-size:15px; color:#2c3e50;">${d.title}</b>
+              <div style="font-size:12px; color:#7f8c8d; margin-top:2px;">
+                Topic: ${d.skill} | ❓ Questions: ${qCount}/5 max
+              </div>
+            </div>
+            <button onclick="deleteTest('${id}')" style="width:auto !important; max-width:120px; flex-shrink:0; margin-left:12px; background:#fee2e2; color:#ef4444; border:1px solid #fca5a5; padding:7px 14px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer;">
+              🗑 Delete
+            </button>
+          </div>`;
+      });
+    }
+
+    let attendedHtml = "";
+    if (!latestAttendedDocs.length) {
+      attendedHtml = `<p style="color:#888;font-size:13px;padding:10px 0;">No tests attended by you yet.</p>`;
+    } else {
+      const sortedDocs = [...latestAttendedDocs].sort((a, b) => {
+        const aTime = a.data().attemptedAt?.seconds || 0;
+        const bTime = b.data().attemptedAt?.seconds || 0;
+        return bTime - aTime;
+      });
+
+      sortedDocs.forEach(docSnap => {
+        const d = docSnap.data();
+        const dateStr = d.attemptedAt?.toDate ? d.attemptedAt.toDate().toLocaleDateString() : "Recently";
+        attendedHtml += `
+          <div style="background:#f0fdf4; border-radius:10px; padding:14px; border:1px solid #bbf7d0; margin-bottom:10px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+              <b style="font-size:14px; color:#166534;">${d.testTitle || "Skill Test"}</b>
+              <span style="background:#27ae60; color:#fff; padding:2px 8px; border-radius:12px; font-size:11px; font-weight:700;">🎉 Congratulations! Great Job!</span>
+            </div>
+            <div style="font-size:12px; color:#374151;">
+              Score: <b style="color:#15803d; font-size:14px;">${d.score} / ${d.total}</b> (${d.percentage}%) | Attended: ${dateStr}
+            </div>
+          </div>`;
+      });
+    }
+
+    container.innerHTML = `
+      <div style="margin-bottom:24px;">
+        <h3 style="margin:0 0 12px; color:#2c3e50; font-size:16px;"><i class="fas fa-file-signature" style="color:#3b82f6;"></i> Created Tests (${latestCreatedDocs.length})</h3>
+        ${createdHtml}
+      </div>
+      <div>
+        <h3 style="margin:0 0 12px; color:#27ae60; font-size:16px;"><i class="fas fa-user-check" style="color:#27ae60;"></i> Attended Tests (${latestAttendedDocs.length})</h3>
+        ${attendedHtml}
+      </div>`;
+  }
+
+  unsubCreatedHistory = onSnapshot(query(collection(db, "tests"), where("creatorId", "==", user.uid)), snap => {
+    latestCreatedDocs = snap.docs;
+    renderHistory();
+  }, err => console.error("History created error:", err));
+
+  unsubAttendedHistory = onSnapshot(query(collection(db, "testAttempts"), where("userId", "==", user.uid)), snap => {
+    latestAttendedDocs = snap.docs;
+    renderHistory();
+  }, err => console.error("History attended error:", err));
 };
 
 /* ================================================
@@ -2298,7 +2857,6 @@ window.loadMyResults = async function () {
                 <span style="font-size:20px;font-weight:800;color:${color};">${d.percentage}%</span>
               </div>
               <p style="margin:3px 0;color:#555;font-size:13px;">Score: <b>${d.score}/${d.total}</b></p>
-              <p style="margin:3px 0;color:#27ae60;font-size:13px;font-weight:600;">+${d.earnedCredits} Credits earned</p>
               <p style="margin:3px 0;color:#aaa;font-size:12px;">📅 ${date}</p>
             </div>`;
         });
@@ -2334,12 +2892,11 @@ window.loadLeaderboard = async function () {
       const d = docSnap.data();
       if (!d.userId) return;
       if (!userStats[d.userId]) {
-        userStats[d.userId] = { userId: d.userId, totalScore: 0, totalQuestions: 0, testsAttempted: 0, totalCredits: 0 };
+        userStats[d.userId] = { userId: d.userId, totalScore: 0, totalQuestions: 0, testsAttempted: 0 };
       }
       userStats[d.userId].totalScore      += d.score || 0;
       userStats[d.userId].totalQuestions  += d.total || 0;
       userStats[d.userId].testsAttempted  += 1;
-      userStats[d.userId].totalCredits    += d.earnedCredits || 0;
     });
 
     // Fetch user names
@@ -2352,7 +2909,7 @@ window.loadLeaderboard = async function () {
       } catch { nameMap[uid] = "Unknown User"; }
     }));
 
-    // Sort by total credits earned (highest first)
+    // Sort by total score (highest first)
     const sorted = userIds
       .map(uid => ({
         ...userStats[uid],
@@ -2361,7 +2918,7 @@ window.loadLeaderboard = async function () {
           ? Math.round((userStats[uid].totalScore / userStats[uid].totalQuestions) * 100)
           : 0
       }))
-      .sort((a, b) => b.totalCredits - a.totalCredits);
+      .sort((a, b) => b.totalScore - a.totalScore);
 
     container.innerHTML = "";
     const medals = ["🥇", "🥈", "🥉"];
@@ -2370,7 +2927,7 @@ window.loadLeaderboard = async function () {
       const rank     = i + 1;
       const medal    = medals[i] || `#${rank}`;
       const barColor = i === 0 ? "#f39c12" : i === 1 ? "#7f8c8d" : i === 2 ? "#cd6133" : "#3498db";
-      const barWidth = sorted[0].totalCredits > 0 ? Math.round((u.totalCredits / sorted[0].totalCredits) * 100) : 0;
+      const barWidth = sorted[0].totalScore > 0 ? Math.round((u.totalScore / sorted[0].totalScore) * 100) : 0;
       const isMe     = auth.currentUser && u.userId === auth.currentUser.uid;
 
       container.innerHTML += `
@@ -2380,10 +2937,10 @@ window.loadLeaderboard = async function () {
             <div style="flex:1;">
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
                 <b style="font-size:15px;">${u.name}${isMe ? ' <span style="background:#3498db;color:#fff;font-size:10px;padding:2px 6px;border-radius:10px;font-weight:600;">YOU</span>' : ''}</b>
-                <span style="font-weight:700;color:${barColor};font-size:14px;">+${u.totalCredits} credits</span>
+                <span style="font-weight:700;color:${barColor};font-size:14px;">Score: ${u.totalScore}/${u.totalQuestions}</span>
               </div>
               <div style="font-size:12px;color:#888;margin-bottom:6px;">
-                ${u.testsAttempted} test${u.testsAttempted !== 1 ? 's' : ''} attempted &nbsp;·&nbsp; Avg: ${u.overallPct}%
+                ${u.testsAttempted} test${u.testsAttempted !== 1 ? 's' : ''} attempted &nbsp;·&nbsp; Accuracy: ${u.overallPct}%
               </div>
               <div style="background:#f0f0f0;border-radius:20px;height:8px;overflow:hidden;">
                 <div style="background:${barColor};height:8px;border-radius:20px;width:${barWidth}%;transition:width 0.5s;"></div>
@@ -2471,17 +3028,114 @@ window.backTestDashboard = function () {
   userAnswers     = {};
 };
 
+window.fillAccountSettings = async function () {
+  const user = auth.currentUser;
+  if (!user) return;
+  const nameInput = el("updateNameInput");
+  const emailInput = el("updateEmailInput");
+  if (emailInput) emailInput.value = user.email || "";
+  
+  if (nameInput) {
+    const snap = await getDoc(doc(db, "users", user.uid));
+    nameInput.value = snap.data()?.name || user.displayName || "";
+  }
+};
+
+window.updateAccountDetails = async function () {
+  const user = auth.currentUser;
+  if (!user) return;
+  const newName = el("updateNameInput")?.value?.trim();
+  if (!newName) {
+    alert("Please enter a valid name.");
+    return;
+  }
+  try {
+    await updateProfile(user, { displayName: newName });
+    await updateDoc(doc(db, "users", user.uid), { name: newName });
+    alert("✅ Account name updated successfully!");
+    if (el("userName")) el("userName").innerText = newName;
+    if (typeof loadProfile === "function") loadProfile();
+  } catch (err) {
+    alert("Error updating name: " + err.message);
+  }
+};
+
+window.changePassword = async function () {
+  const user = auth.currentUser;
+  if (!user) return;
+  const newPass = el("newPasswordInput")?.value?.trim();
+  const confirmPass = el("confirmPasswordInput")?.value?.trim();
+
+  if (!newPass) {
+    alert("Please enter a new password.");
+    return;
+  }
+  if (newPass.length < 6) {
+    alert("Password must be at least 6 characters long.");
+    return;
+  }
+  if (newPass !== confirmPass) {
+    alert("New password and confirm password do not match.");
+    return;
+  }
+
+  try {
+    await updatePassword(user, newPass);
+    alert("✅ Password updated successfully!");
+    if (el("newPasswordInput")) el("newPasswordInput").value = "";
+    if (el("confirmPasswordInput")) el("confirmPasswordInput").value = "";
+    if (el("currentPasswordInput")) el("currentPasswordInput").value = "";
+  } catch (err) {
+    if (err.code === "auth/requires-recent-login") {
+      alert("Security requirement: Please log out and log back in before updating your password.");
+    } else {
+      alert("Error updating password: " + err.message);
+    }
+  }
+};
+
 window.openSettingsScreen = function (screenId) {
   if (el("settingsDashboard")) el("settingsDashboard").style.display = "none";
   document.querySelectorAll("#settings .screen").forEach(s => s.style.display = "none");
   if (el(screenId)) el(screenId).style.display = "block";
+  if (screenId === "accountSettingsScreen") fillAccountSettings();
 };
 window.backSettingsDashboard = function () {
   if (el("settingsDashboard")) el("settingsDashboard").style.display = "grid";
   document.querySelectorAll("#settings .screen").forEach(s => s.style.display = "none");
 };
 
-window.openMeetingLink = openMeetingLink;
+window.deleteUserAccount = async function () {
+  const user = auth.currentUser;
+  if (!user) return;
+  
+  if (!confirm("⚠️ Are you sure you want to permanently delete your account? Your profile and data will be permanently removed from SkillSync and you will no longer appear in user lists.")) return;
+
+  const doubleCheck = prompt("Type DELETE to confirm permanent account deletion:");
+  if (doubleCheck !== "DELETE") {
+    alert("Account deletion cancelled.");
+    return;
+  }
+
+  try {
+    const uid = user.uid;
+    
+    // 1. Delete user document from Firestore users collection
+    await deleteDoc(doc(db, "users", uid));
+
+    // 2. Delete user account from Firebase Auth
+    await deleteUser(user);
+
+    alert("Your account and profile have been permanently deleted.");
+    window.location.href = "login.html";
+  } catch (err) {
+    if (err.code === "auth/requires-recent-login") {
+      alert("For security, please log out, log back in, and click Delete Account again.");
+    } else {
+      alert("Error deleting account: " + err.message);
+    }
+  }
+};
 
 /* ================= CALENDAR & GROUPS SYSTEM ================= */
 let calendarMonth = new Date();
@@ -2497,17 +3151,36 @@ window.loadCalendarSessions = function () {
     const following = myData.following || [];
     const followers = myData.followers || [];
     
-    onSnapshot(collection(db, "sessions"), (snap) => {
+    onSnapshot(collection(db, "sessions"), async (snap) => {
       calendarSessions = [];
-      snap.forEach((docSnap) => {
+      const now = Date.now();
+
+      for (const docSnap of snap.docs) {
         const d = docSnap.data();
         const id = docSnap.id;
-        // Host sees own, followers/following see sessions
+
+        // Auto-end expired session in Firestore
+        if (isSessionExpired(d)) {
+          if (d.status !== "ended") {
+            try {
+              await updateDoc(doc(db, "sessions", id), {
+                status: "ended",
+                endTime: now,
+                endTimeStr: new Date(now).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
+                endDateStr: new Date(now).toLocaleDateString()
+              });
+            } catch (e) {}
+          }
+          continue;
+        }
+
+        // Host sees own, followers/following see active sessions
         const isRelated = d.hostId === user.uid || following.includes(d.hostId) || followers.includes(d.hostId);
-        if (isRelated && d.status !== "ended") {
+        if (isRelated) {
           calendarSessions.push({ id, ...d });
         }
-      });
+      }
+
       drawCalendar();
       updateCalendarSessionsList();
     });
@@ -2562,6 +3235,35 @@ window.selectCalendarDate = function (day) {
   updateCalendarSessionsList();
 };
 
+window.deleteSession = async function (sessionId) {
+  const user = auth.currentUser;
+  if (!user) return;
+  
+  if (!confirm("Are you sure you want to delete this session?")) {
+    return;
+  }
+  
+  try {
+    const docSnap = await getDoc(doc(db, "sessions", sessionId));
+    if (docSnap.exists()) {
+      const d = docSnap.data();
+      if (d.hostId !== user.uid) {
+        alert("Only the host can delete this session.");
+        return;
+      }
+    }
+    
+    await deleteDoc(doc(db, "sessions", sessionId));
+    alert("Session deleted successfully!");
+    
+    if (typeof loadCalendarSessions === "function") loadCalendarSessions();
+    if (typeof loadHostSessionPanel === "function") loadHostSessionPanel();
+    if (typeof loadLiveSessions === "function") loadLiveSessions();
+  } catch (err) {
+    alert("Error deleting session: " + err.message);
+  }
+};
+
 window.updateCalendarSessionsList = function () {
   const container = el("calendarSessionsList");
   const header = el("selectedDateHeader");
@@ -2582,35 +3284,62 @@ window.updateCalendarSessionsList = function () {
   
   filtered.forEach(s => {
     const isHost = s.hostId === auth.currentUser?.uid;
-    const timeStr = parseSessionDate(s.startTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
-    let badgeText = s.status === 'live' ? '🔴 LIVE' : (s.status === 'scheduled' ? '📅 SCHEDULED' : '🏁 ENDED');
-    let badgeColor = s.status === 'live' ? '#e74c3c' : (s.status === 'scheduled' ? '#9b59b6' : '#95a5a6');
+    const isExpired = isSessionExpired(s);
+    const startObj = parseSessionDate(s.startTime);
+    const endObj = s.endTime ? parseSessionDate(s.endTime) : new Date(startObj.getTime() + (s.durationMins || 60) * 60000);
     
-    let actionBtn = "";
-    if (s.status === 'scheduled' && isHost) {
-      actionBtn = `<button onclick="event.stopPropagation(); joinOrLaunchCalendarSession('${s.id}')" style="background:#3b82f6; color:#fff; border:none; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer;">Launch Session</button>`;
-    } else if (s.status === 'scheduled' && !isHost) {
-      actionBtn = `<button onclick="event.stopPropagation(); joinOrLaunchCalendarSession('${s.id}')" style="background:#27ae60; color:#fff; border:none; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer;">Join Session</button>`;
+    const startTimeAMPM = startObj.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    const endTimeAMPM = endObj.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    const displayTimeRange = s.timeRangeStr || `${startTimeAMPM} – ${endTimeAMPM}`;
+
+    let badgeText = "";
+    let badgeColor = "";
+
+    if (isExpired || s.status === 'ended') {
+      badgeText = '🏁 EXPIRED';
+      badgeColor = '#e74c3c';
+    } else if (s.status === 'live') {
+      badgeText = '🔴 LIVE';
+      badgeColor = '#27ae60';
+    } else {
+      badgeText = '📅 SCHEDULED';
+      badgeColor = '#9b59b6';
     }
     
-    const clickAttr = `onclick="joinOrLaunchCalendarSession('${s.id}')" style="background:#f8f9fa; border-radius:10px; padding:12px; border:1px solid #e9ecef; display:flex; flex-direction:column; gap:6px; cursor:pointer; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'"`;
+    let actionBtn = "";
+    const deleteBtn = isHost ? `<button onclick="event.stopPropagation(); deleteSession('${s.id}')" style="background:#fee2e2; color:#ef4444; border:1px solid #fca5a5; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer; margin-top:4px;">🗑️ Delete</button>` : '';
+
+    if (isExpired || s.status === 'ended') {
+      actionBtn = `<span style="background:#fdecea; color:#c0392b; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; display:inline-block; margin-top:4px;"><i class="fas fa-circle-exclamation"></i> Session Expired</span>`;
+    } else if (s.status === 'scheduled' && isHost) {
+      actionBtn = `<button onclick="event.stopPropagation(); joinOrLaunchCalendarSession('${s.id}')" style="background:#3b82f6; color:#fff; border:none; padding:8px 14px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer; margin-top:4px;">🚀 Launch Session</button>`;
+    } else if (s.status === 'scheduled' && !isHost) {
+      actionBtn = `<button onclick="event.stopPropagation(); joinOrLaunchCalendarSession('${s.id}')" style="background:#27ae60; color:#fff; border:none; padding:8px 14px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer; margin-top:4px;">Join Session</button>`;
+    } else if (s.status === 'live') {
+      actionBtn = `<button onclick="event.stopPropagation(); joinOrLaunchCalendarSession('${s.id}')" style="background:#e74c3c; color:#fff; border:none; padding:8px 14px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer; margin-top:4px;">🔴 Enter Live Session</button>`;
+    }
+    
+    const clickAttr = isExpired
+      ? `onclick="alert('Session Expired: This session was scheduled for ${displayTimeRange} and is now ended.');"`
+      : `onclick="joinOrLaunchCalendarSession('${s.id}')"`;
 
     container.innerHTML += `
-      <div ${clickAttr}>
+      <div ${clickAttr} style="background:#f8f9fa; border-radius:10px; padding:12px; border:1px solid #e9ecef; display:flex; flex-direction:column; gap:6px; cursor:${isExpired ? 'default' : 'pointer'}; margin-bottom:10px; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
         <div style="display:flex; justify-content:space-between; align-items:center;">
           <b style="font-size:14px; color:#2c3e50;">${s.name}</b>
           <span style="background:${badgeColor}; color:#fff; padding:2px 8px; border-radius:12px; font-size:10px; font-weight:700;">${badgeText}</span>
         </div>
         <div style="font-size:12px; color:#7f8c8d;">
           Topic: ${s.skill || "—"} | Host: ${s.hostName}<br>
-          Time: ${timeStr} | Platform: ${s.platformLabel}
-          ${s.status === 'live' ? '<br><span style="color:#27ae60; font-weight:700;"><i class="fas fa-arrow-up-right-from-square"></i> Click to Open Meeting Link</span>' : ''}
-          ${s.status === 'scheduled' ? '<br><span style="color:#3498db; font-weight:700;"><i class="fas fa-calendar-check"></i> Scheduled Session</span>' : ''}
+          ⏰ Time: <b style="color:#2c3e50;">${displayTimeRange}</b> | Platform: ${s.platformLabel}<br>
+          ${!isExpired && s.status === 'live' ? '<span style="color:#27ae60; font-weight:700;"><i class="fas fa-arrow-up-right-from-square"></i> Click to Open Meeting Link</span>' : ''}
+          ${!isExpired && s.status === 'scheduled' ? '<span style="color:#3498db; font-weight:700;"><i class="fas fa-calendar-check"></i> Scheduled Session</span>' : ''}
+          ${isExpired ? '<span style="color:#e74c3c; font-weight:700;"><i class="fas fa-ban"></i> Time limit over. Session Expired.</span>' : ''}
         </div>
-        ${actionBtn ? `
-        <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:4px;">
-          ${actionBtn}
-        </div>` : ''}
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+          <div>${actionBtn}</div>
+          ${deleteBtn}
+        </div>
       </div>`;
   });
 };
@@ -2728,7 +3457,7 @@ window.loadGroupMessages = function (groupId) {
       
       let attachments = "";
       if (d.imageUrl) {
-        attachments += `<a href="${d.imageUrl}" target="_blank"><img src="${d.imageUrl}" style="max-width:100%; border-radius:8px; display:block; margin-top:5px; max-height:200px; object-fit:cover; cursor:pointer;"></a>`;
+        attachments += `<img src="${d.imageUrl}" onclick="event.stopPropagation(); openImageModal('${d.imageUrl.replace(/'/g, "\\'")}')" style="max-width:100%; border-radius:8px; display:block; margin-top:5px; max-height:220px; object-fit:cover; cursor:pointer; border:1px solid rgba(0,0,0,0.1);" title="Click to view full photo">`;
       }
       if (d.pdfUrl) {
         attachments += `<a href="${d.pdfUrl}" target="_blank" style="display:flex; align-items:center; gap:8px; background:#f0f0f0; padding:8px 12px; border-radius:6px; text-decoration:none; color:#333; margin-top:5px; font-size:12px; font-weight:700;"><i class="fas fa-file-pdf" style="color:#ef4444; font-size:18px;"></i> View Document</a>`;
@@ -2821,10 +3550,16 @@ window.loadHostSessionPanel = async function () {
               Scheduled: ${dateStr} at ${timeStr}
             </div>
           </div>
-          <button onclick="joinOrLaunchCalendarSession('${id}')" 
-                  style="background:#3b82f6; color:#fff; border:none; padding:8px 14px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer;">
-            🚀 Launch
-          </button>
+          <div style="display:flex; gap:8px; align-items:center;">
+            <button onclick="joinOrLaunchCalendarSession('${id}')" 
+                    style="background:#3b82f6; color:#fff; border:none; padding:8px 14px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer;">
+              🚀 Launch
+            </button>
+            <button onclick="deleteSession('${id}')" 
+                    style="background:#fee2e2; color:#ef4444; border:1px solid #fca5a5; padding:8px 12px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer;">
+              🗑️ Delete
+            </button>
+          </div>
         </div>`;
     });
     
@@ -2869,9 +3604,15 @@ window.loadHostSessionPanel = async function () {
             <label style="font-size:12px; font-weight:600; color:#666; display:block; margin-bottom:4px;">Date:</label>
             <input type="date" id="sessionScheduleDate" style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
           </div>
-          <div>
-            <label style="font-size:12px; font-weight:600; color:#666; display:block; margin-bottom:4px;">Time:</label>
-            <input type="time" id="sessionScheduleTime" style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+            <div>
+              <label style="font-size:12px; font-weight:600; color:#666; display:block; margin-bottom:4px;">Start Time (AM/PM):</label>
+              <input type="time" id="sessionScheduleTime" style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
+            </div>
+            <div>
+              <label style="font-size:12px; font-weight:600; color:#666; display:block; margin-bottom:4px;">End Time (AM/PM):</label>
+              <input type="time" id="sessionScheduleEndTime" style="width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; box-sizing:border-box;">
+            </div>
           </div>
         </div>
         
@@ -2898,25 +3639,29 @@ window.joinOrLaunchCalendarSession = async function (sessionId) {
     if (!docSnap.exists()) { alert("Session not found."); return; }
     const d = docSnap.data();
     
-    // Safely parse the scheduled time
-    const startTimeMs = (d.startTime && d.startTime.seconds) ? d.startTime.seconds * 1000 : d.startTime;
+    if (isSessionExpired(d)) {
+      alert("Session time completed.");
+      await updateDoc(doc(db, "sessions", sessionId), { status: "ended", endTime: Date.now() });
+      loadCalendarSessions();
+      loadHostSessionPanel();
+      return;
+    }
     
-    // Check if current time is before scheduled startTime
+    const startTimeMs = getSessionTimeMs(d.startTime);
+    
     if (d.status === "scheduled" && Date.now() < startTimeMs) {
       alert("Session not started yet. Please wait until the scheduled time.");
       return;
     }
     
-    // If user is the host
     if (d.hostId === user.uid) {
       if (d.status === "scheduled") {
         await updateDoc(doc(db, "sessions", sessionId), { status: "live", startTime: Date.now() });
       }
-      openMeetingLink(d.meetingLink, d.platform);
+      openMeetingLink(d.meetingLink, d.platform, null, sessionId, d);
     } else {
-      // If user is follower
       await updateDoc(doc(db, "sessions", sessionId), { participants: arrayUnion(user.uid) });
-      openMeetingLink(d.meetingLink, d.platform);
+      openMeetingLink(d.meetingLink, d.platform, null, sessionId, d);
     }
     loadCalendarSessions();
     loadHostSessionPanel();
