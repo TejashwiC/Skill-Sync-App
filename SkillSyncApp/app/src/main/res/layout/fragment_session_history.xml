@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -9,17 +10,53 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Past Tutoring History"
+        android:text="Session History"
         android:textColor="@color/text_primary"
         android:textSize="22sp"
         android:textStyle="bold"
         android:layout_marginBottom="16dp"/>
 
+    <!-- Tabs Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:background="#E2E8F0"
+        android:padding="3dp"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTabCreated"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Created Sessions"
+            android:textColor="#1E293B"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:cornerRadius="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="2dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTabAttended"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Attended Sessions"
+            android:textColor="#64748B"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:cornerRadius="8dp"
+            android:backgroundTint="#00000000"
+            android:elevation="0dp" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/tvEmptyHistory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="No past tutoring sessions recorded."
+        android:text="No created sessions history found."
         android:textColor="@color/text_secondary"
         android:textSize="14sp"
         android:layout_gravity="center_horizontal"

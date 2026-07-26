@@ -95,7 +95,7 @@ class UserProfileFragment : Fragment() {
         targetUser?.let {
             binding.tvUserTitle.text = "${it.name}'s Profile"
             binding.tvUserProfileName.text = it.name
-            binding.tvUserProfileEmail.text = it.email
+            binding.tvUserProfileEmail.visibility = View.GONE
             binding.tvUserProfileTeach.text = if (it.teach.isNotEmpty()) it.teach else "None"
             binding.tvUserProfileLearn.text = if (it.learn.isNotEmpty()) it.learn else "None"
             binding.tvUserProfileLanguage.text = if (it.language.isNotEmpty()) it.language else "Not Specified"

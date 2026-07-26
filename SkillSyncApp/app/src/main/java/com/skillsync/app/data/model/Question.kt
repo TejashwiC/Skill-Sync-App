@@ -11,5 +11,9 @@ data class Question(
     val option2: String = "",
     val option3: String = "",
     val option4: String = "",
-    val correctAnswer: String = ""
+    val correctAnswer: String = "",
+    val explanation: String = "",
+    val topic: String = "",
+    val difficulty: String = "",
+    val skill: String = ""
 )

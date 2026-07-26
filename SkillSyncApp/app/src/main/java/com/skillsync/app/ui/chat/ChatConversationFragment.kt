@@ -61,16 +61,52 @@ class ChatConversationFragment : Fragment() {
         adapter = ChatMessageAdapter()
         adapter.onMessagePin = { message ->
             val action = if (message.isPinned) "Unpin" else "Pin"
+            viewModel.pinMessage(chatId, message.messageId, !message.isPinned)
+            showToast("Message ${action.lowercase()}ned")
+        }
+        adapter.onMessageDelete = { message ->
             android.app.AlertDialog.Builder(requireContext())
-                .setTitle("$action Message")
-                .setMessage("Do you want to ${action.lowercase()} this message?")
-                .setPositiveButton(action) { _, _ ->
-                    viewModel.pinMessage(chatId, message.messageId, !message.isPinned)
-                    showToast("Message ${action.lowercase()}ned")
+                .setTitle("Delete Message")
+                .setMessage("Are you sure you want to delete this message?")
+                .setPositiveButton("Delete") { _, _ ->
+                    viewModel.deleteMessage(chatId, message.messageId)
+                    showToast("Message deleted")
                 }
                 .setNegativeButton("Cancel", null)
                 .show()
         }
+
+        // Selection action bar wiring
+        adapter.onSelectionChanged = { selectedMessage ->
+            if (selectedMessage != null) {
+                val isOwn = selectedMessage.sender == FirebaseUtil.currentUid
+                binding.layoutSelectionBar.visibility = android.view.View.VISIBLE
+                binding.tvSelectionLabel.text = "1 message selected"
+                // Only show delete icon if it's my own message
+                binding.btnDeleteSelected.visibility = if (isOwn) android.view.View.VISIBLE else android.view.View.GONE
+            } else {
+                binding.layoutSelectionBar.visibility = android.view.View.GONE
+            }
+        }
+
+        binding.btnCancelSelection.setOnClickListener {
+            adapter.clearSelection()
+        }
+
+        binding.btnDeleteSelected.setOnClickListener {
+            val selected = adapter.getSelectedMessage() ?: return@setOnClickListener
+            android.app.AlertDialog.Builder(requireContext())
+                .setTitle("Delete Message")
+                .setMessage("Delete this message?")
+                .setPositiveButton("Delete") { _, _ ->
+                    viewModel.deleteMessage(chatId, selected.messageId)
+                    adapter.clearSelection()
+                    showToast("Message deleted")
+                }
+                .setNegativeButton("Cancel", null)
+                .show()
+        }
+
         binding.rvMessages.layoutManager = LinearLayoutManager(requireContext()).apply {
             stackFromEnd = true
         }
@@ -244,7 +280,23 @@ class ChatConversationFragment : Fragment() {
             val isImage = mimeType?.startsWith("image/") == true
             val type = if (isImage) "image" else "pdf"
 
-            showToast("Uploading attachment...")
+            showToast("Processing attachment...")
+            if (isImage) {
+                try {
+                    val inputStream = requireContext().contentResolver.openInputStream(it)
+                    val bytes = inputStream?.readBytes()
+                    inputStream?.close()
+                    if (bytes != null && bytes.size < 2 * 1024 * 1024) {
+                        val base64 = android.util.Base64.encodeToString(bytes, android.util.Base64.NO_WRAP)
+                        val dataUrl = "data:image/jpeg;base64,$base64"
+                        sendMessage("", null, null, dataUrl)
+                        return@registerForActivityResult
+                    }
+                } catch (e: Exception) {
+                    // Fallback to storage upload below
+                }
+            }
+
             viewModel.uploadChatFile(chatId, it, type) { url, errorMsg ->
                 if (url != null) {
                     if (isImage) {
@@ -321,30 +373,7 @@ class ChatConversationFragment : Fragment() {
     }
 
     private fun observeTargetUserStatus() {
-        viewModel.observeUserStatus(targetUserId).observe(viewLifecycleOwner) { user ->
-            if (user != null) {
-                if (user.isOnline) {
-                    binding.tvChatStatus.text = "Online"
-                } else {
-                    if (user.lastSeen == 0L) {
-                        binding.tvChatStatus.text = "Last seen 1 week ago"
-                    } else {
-                        val now = System.currentTimeMillis()
-                        val diff = now - user.lastSeen
-                        if (diff < 24 * 60 * 60 * 1000) {
-                            val time = android.text.format.DateFormat.format("h:mm a", java.util.Date(user.lastSeen)).toString()
-                            binding.tvChatStatus.text = "Last seen today at $time"
-                        } else if (diff < 48 * 60 * 60 * 1000) {
-                            val time = android.text.format.DateFormat.format("h:mm a", java.util.Date(user.lastSeen)).toString()
-                            binding.tvChatStatus.text = "Last seen yesterday at $time"
-                        } else {
-                            val time = android.text.format.DateFormat.format("MMM dd, h:mm a", java.util.Date(user.lastSeen)).toString()
-                            binding.tvChatStatus.text = "Last seen at $time"
-                        }
-                    }
-                }
-            }
-        }
+        binding.tvChatStatus.visibility = View.GONE
     }
 
     private fun sendMessage(text: String, audioUrl: String?, pdfUrl: String?, imageUrl: String?) {

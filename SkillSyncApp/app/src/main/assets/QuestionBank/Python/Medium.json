@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "What is the primary function of a Python decorator?",
+    "options": [
+      "To speed up loop execution",
+      "To decorate terminal outputs",
+      "To define private variables",
+      "To wrap a function and modify its behavior without altering source code"
+    ],
+    "answer": "To wrap a function and modify its behavior without altering source code",
+    "explanation": "Decorators take a function as argument and return a modified function.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Decorators"
+  },
+  {
+    "question": "Which keyword turns a regular function into a generator in Python?",
+    "options": [
+      "yield",
+      "generate",
+      "return",
+      "emit"
+    ],
+    "answer": "yield",
+    "explanation": "The 'yield' statement pauses function execution and produces a generator value.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Generators"
+  },
+  {
+    "question": "What does the 'self' parameter represent in a Python class method?",
+    "options": [
+      "The class definition itself",
+      "The parent module",
+      "The instance of the class",
+      "The global scope"
+    ],
+    "answer": "The instance of the class",
+    "explanation": "'self' binds method arguments to the specific class instance.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "OOP Concepts"
+  },
+  {
+    "question": "Which mode opens a file for reading and writing in Python?",
+    "options": [
+      "r+",
+      "rw",
+      "a",
+      "w+"
+    ],
+    "answer": "r+",
+    "explanation": "'r+' opens a file for both reading and writing without truncating.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "File I/O"
+  },
+  {
+    "question": "Which block in Python always executes regardless of whether an exception occurs?",
+    "options": [
+      "except",
+      "else",
+      "catch",
+      "finally"
+    ],
+    "answer": "finally",
+    "explanation": "The 'finally' block executes cleanup code under all conditions.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "What is the result of [x**2 for x in range(3)]?",
+    "options": [
+      "[1, 4, 9]",
+      "[0, 1, 2]",
+      "[0, 1, 4]",
+      "[1, 2, 3]"
+    ],
+    "answer": "[0, 1, 4]",
+    "explanation": "Evaluates 0^2, 1^2, 2^2 yielding [0, 1, 4].",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "List Comprehension"
+  },
+  {
+    "question": "Which built-in function gets the next item from an iterator?",
+    "options": [
+      "next()",
+      "advance()",
+      "step()",
+      "get()"
+    ],
+    "answer": "next()",
+    "explanation": "next(iterator) retrieves the subsequent value or raises StopIteration.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Iterators"
+  },
+  {
+    "question": "What is a lambda function in Python?",
+    "options": [
+      "A function that executes in parallel",
+      "An anonymous single-expression function",
+      "A class constructor",
+      "A module loader"
+    ],
+    "answer": "An anonymous single-expression function",
+    "explanation": "Lambda functions are small inline functions created with the 'lambda' keyword.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Lambda Functions"
+  },
+  {
+    "question": "Which dictionary method returns all key-value pairs as tuples?",
+    "options": [
+      "items()",
+      "tuples()",
+      "entries()",
+      "pairs()"
+    ],
+    "answer": "items()",
+    "explanation": "dict.items() returns a dynamic view of (key, value) pairs.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Dictionaries"
+  },
+  {
+    "question": "How do you import a specific function 'foo' from module 'bar'?",
+    "options": [
+      "import foo from bar",
+      "from bar import foo",
+      "include bar::foo",
+      "using bar.foo"
+    ],
+    "answer": "from bar import foo",
+    "explanation": "'from module import name' imports specific attributes directly.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Modules"
+  },
+  {
+    "question": "[Python - Medium] Case Study #11 (Decorators): What is the primary function of a Python decorator?",
+    "options": [
+      "To speed up loop execution",
+      "To wrap a function and modify its behavior without altering source code",
+      "To decorate terminal outputs",
+      "To define private variables"
+    ],
+    "answer": "To wrap a function and modify its behavior without altering source code",
+    "explanation": "Decorators take a function as argument and return a modified function.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Decorators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #12 (Generators): Which keyword turns a regular function into a generator in Python?",
+    "options": [
+      "return",
+      "yield",
+      "generate",
+      "emit"
+    ],
+    "answer": "yield",
+    "explanation": "The 'yield' statement pauses function execution and produces a generator value.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Generators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #13 (OOP Concepts): What does the 'self' parameter represent in a Python class method?",
+    "options": [
+      "The global scope",
+      "The instance of the class",
+      "The parent module",
+      "The class definition itself"
+    ],
+    "answer": "The instance of the class",
+    "explanation": "'self' binds method arguments to the specific class instance.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "OOP Concepts"
+  },
+  {
+    "question": "[Python - Medium] Case Study #14 (File I/O): Which mode opens a file for reading and writing in Python?",
+    "options": [
+      "r+",
+      "a",
+      "rw",
+      "w+"
+    ],
+    "answer": "r+",
+    "explanation": "'r+' opens a file for both reading and writing without truncating.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "File I/O"
+  },
+  {
+    "question": "[Python - Medium] Case Study #15 (Exception Handling): Which block in Python always executes regardless of whether an exception occurs?",
+    "options": [
+      "else",
+      "finally",
+      "catch",
+      "except"
+    ],
+    "answer": "finally",
+    "explanation": "The 'finally' block executes cleanup code under all conditions.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Python - Medium] Case Study #16 (List Comprehension): What is the result of [x**2 for x in range(3)]?",
+    "options": [
+      "[1, 4, 9]",
+      "[0, 1, 4]",
+      "[1, 2, 3]",
+      "[0, 1, 2]"
+    ],
+    "answer": "[0, 1, 4]",
+    "explanation": "Evaluates 0^2, 1^2, 2^2 yielding [0, 1, 4].",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "List Comprehension"
+  },
+  {
+    "question": "[Python - Medium] Case Study #17 (Iterators): Which built-in function gets the next item from an iterator?",
+    "options": [
+      "get()",
+      "step()",
+      "next()",
+      "advance()"
+    ],
+    "answer": "next()",
+    "explanation": "next(iterator) retrieves the subsequent value or raises StopIteration.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Iterators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #18 (Lambda Functions): What is a lambda function in Python?",
+    "options": [
+      "A function that executes in parallel",
+      "A class constructor",
+      "A module loader",
+      "An anonymous single-expression function"
+    ],
+    "answer": "An anonymous single-expression function",
+    "explanation": "Lambda functions are small inline functions created with the 'lambda' keyword.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Lambda Functions"
+  },
+  {
+    "question": "[Python - Medium] Case Study #19 (Dictionaries): Which dictionary method returns all key-value pairs as tuples?",
+    "options": [
+      "tuples()",
+      "pairs()",
+      "items()",
+      "entries()"
+    ],
+    "answer": "items()",
+    "explanation": "dict.items() returns a dynamic view of (key, value) pairs.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Dictionaries"
+  },
+  {
+    "question": "[Python - Medium] Case Study #20 (Modules): How do you import a specific function 'foo' from module 'bar'?",
+    "options": [
+      "import foo from bar",
+      "using bar.foo",
+      "from bar import foo",
+      "include bar::foo"
+    ],
+    "answer": "from bar import foo",
+    "explanation": "'from module import name' imports specific attributes directly.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Modules"
+  },
+  {
+    "question": "[Python - Medium] Case Study #21 (Decorators): What is the primary function of a Python decorator?",
+    "options": [
+      "To define private variables",
+      "To speed up loop execution",
+      "To wrap a function and modify its behavior without altering source code",
+      "To decorate terminal outputs"
+    ],
+    "answer": "To wrap a function and modify its behavior without altering source code",
+    "explanation": "Decorators take a function as argument and return a modified function.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Decorators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #22 (Generators): Which keyword turns a regular function into a generator in Python?",
+    "options": [
+      "yield",
+      "emit",
+      "generate",
+      "return"
+    ],
+    "answer": "yield",
+    "explanation": "The 'yield' statement pauses function execution and produces a generator value.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Generators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #23 (OOP Concepts): What does the 'self' parameter represent in a Python class method?",
+    "options": [
+      "The instance of the class",
+      "The parent module",
+      "The global scope",
+      "The class definition itself"
+    ],
+    "answer": "The instance of the class",
+    "explanation": "'self' binds method arguments to the specific class instance.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "OOP Concepts"
+  },
+  {
+    "question": "[Python - Medium] Case Study #24 (File I/O): Which mode opens a file for reading and writing in Python?",
+    "options": [
+      "w+",
+      "r+",
+      "a",
+      "rw"
+    ],
+    "answer": "r+",
+    "explanation": "'r+' opens a file for both reading and writing without truncating.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "File I/O"
+  },
+  {
+    "question": "[Python - Medium] Case Study #25 (Exception Handling): Which block in Python always executes regardless of whether an exception occurs?",
+    "options": [
+      "except",
+      "finally",
+      "else",
+      "catch"
+    ],
+    "answer": "finally",
+    "explanation": "The 'finally' block executes cleanup code under all conditions.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Python - Medium] Case Study #26 (List Comprehension): What is the result of [x**2 for x in range(3)]?",
+    "options": [
+      "[0, 1, 2]",
+      "[0, 1, 4]",
+      "[1, 4, 9]",
+      "[1, 2, 3]"
+    ],
+    "answer": "[0, 1, 4]",
+    "explanation": "Evaluates 0^2, 1^2, 2^2 yielding [0, 1, 4].",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "List Comprehension"
+  },
+  {
+    "question": "[Python - Medium] Case Study #27 (Iterators): Which built-in function gets the next item from an iterator?",
+    "options": [
+      "next()",
+      "advance()",
+      "get()",
+      "step()"
+    ],
+    "answer": "next()",
+    "explanation": "next(iterator) retrieves the subsequent value or raises StopIteration.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Iterators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #28 (Lambda Functions): What is a lambda function in Python?",
+    "options": [
+      "A function that executes in parallel",
+      "A class constructor",
+      "A module loader",
+      "An anonymous single-expression function"
+    ],
+    "answer": "An anonymous single-expression function",
+    "explanation": "Lambda functions are small inline functions created with the 'lambda' keyword.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Lambda Functions"
+  },
+  {
+    "question": "[Python - Medium] Case Study #29 (Dictionaries): Which dictionary method returns all key-value pairs as tuples?",
+    "options": [
+      "entries()",
+      "items()",
+      "tuples()",
+      "pairs()"
+    ],
+    "answer": "items()",
+    "explanation": "dict.items() returns a dynamic view of (key, value) pairs.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Dictionaries"
+  },
+  {
+    "question": "[Python - Medium] Case Study #30 (Modules): How do you import a specific function 'foo' from module 'bar'?",
+    "options": [
+      "include bar::foo",
+      "import foo from bar",
+      "from bar import foo",
+      "using bar.foo"
+    ],
+    "answer": "from bar import foo",
+    "explanation": "'from module import name' imports specific attributes directly.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Modules"
+  },
+  {
+    "question": "[Python - Medium] Case Study #31 (Decorators): What is the primary function of a Python decorator?",
+    "options": [
+      "To decorate terminal outputs",
+      "To speed up loop execution",
+      "To define private variables",
+      "To wrap a function and modify its behavior without altering source code"
+    ],
+    "answer": "To wrap a function and modify its behavior without altering source code",
+    "explanation": "Decorators take a function as argument and return a modified function.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Decorators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #32 (Generators): Which keyword turns a regular function into a generator in Python?",
+    "options": [
+      "yield",
+      "generate",
+      "return",
+      "emit"
+    ],
+    "answer": "yield",
+    "explanation": "The 'yield' statement pauses function execution and produces a generator value.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Generators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #33 (OOP Concepts): What does the 'self' parameter represent in a Python class method?",
+    "options": [
+      "The instance of the class",
+      "The parent module",
+      "The global scope",
+      "The class definition itself"
+    ],
+    "answer": "The instance of the class",
+    "explanation": "'self' binds method arguments to the specific class instance.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "OOP Concepts"
+  },
+  {
+    "question": "[Python - Medium] Case Study #34 (File I/O): Which mode opens a file for reading and writing in Python?",
+    "options": [
+      "w+",
+      "a",
+      "r+",
+      "rw"
+    ],
+    "answer": "r+",
+    "explanation": "'r+' opens a file for both reading and writing without truncating.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "File I/O"
+  },
+  {
+    "question": "[Python - Medium] Case Study #35 (Exception Handling): Which block in Python always executes regardless of whether an exception occurs?",
+    "options": [
+      "else",
+      "finally",
+      "catch",
+      "except"
+    ],
+    "answer": "finally",
+    "explanation": "The 'finally' block executes cleanup code under all conditions.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Python - Medium] Case Study #36 (List Comprehension): What is the result of [x**2 for x in range(3)]?",
+    "options": [
+      "[0, 1, 4]",
+      "[1, 2, 3]",
+      "[0, 1, 2]",
+      "[1, 4, 9]"
+    ],
+    "answer": "[0, 1, 4]",
+    "explanation": "Evaluates 0^2, 1^2, 2^2 yielding [0, 1, 4].",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "List Comprehension"
+  },
+  {
+    "question": "[Python - Medium] Case Study #37 (Iterators): Which built-in function gets the next item from an iterator?",
+    "options": [
+      "get()",
+      "step()",
+      "advance()",
+      "next()"
+    ],
+    "answer": "next()",
+    "explanation": "next(iterator) retrieves the subsequent value or raises StopIteration.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Iterators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #38 (Lambda Functions): What is a lambda function in Python?",
+    "options": [
+      "A function that executes in parallel",
+      "A class constructor",
+      "A module loader",
+      "An anonymous single-expression function"
+    ],
+    "answer": "An anonymous single-expression function",
+    "explanation": "Lambda functions are small inline functions created with the 'lambda' keyword.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Lambda Functions"
+  },
+  {
+    "question": "[Python - Medium] Case Study #39 (Dictionaries): Which dictionary method returns all key-value pairs as tuples?",
+    "options": [
+      "entries()",
+      "items()",
+      "pairs()",
+      "tuples()"
+    ],
+    "answer": "items()",
+    "explanation": "dict.items() returns a dynamic view of (key, value) pairs.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Dictionaries"
+  },
+  {
+    "question": "[Python - Medium] Case Study #40 (Modules): How do you import a specific function 'foo' from module 'bar'?",
+    "options": [
+      "using bar.foo",
+      "import foo from bar",
+      "include bar::foo",
+      "from bar import foo"
+    ],
+    "answer": "from bar import foo",
+    "explanation": "'from module import name' imports specific attributes directly.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Modules"
+  },
+  {
+    "question": "[Python - Medium] Case Study #41 (Decorators): What is the primary function of a Python decorator?",
+    "options": [
+      "To wrap a function and modify its behavior without altering source code",
+      "To speed up loop execution",
+      "To decorate terminal outputs",
+      "To define private variables"
+    ],
+    "answer": "To wrap a function and modify its behavior without altering source code",
+    "explanation": "Decorators take a function as argument and return a modified function.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Decorators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #42 (Generators): Which keyword turns a regular function into a generator in Python?",
+    "options": [
+      "return",
+      "yield",
+      "emit",
+      "generate"
+    ],
+    "answer": "yield",
+    "explanation": "The 'yield' statement pauses function execution and produces a generator value.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Generators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #43 (OOP Concepts): What does the 'self' parameter represent in a Python class method?",
+    "options": [
+      "The instance of the class",
+      "The class definition itself",
+      "The global scope",
+      "The parent module"
+    ],
+    "answer": "The instance of the class",
+    "explanation": "'self' binds method arguments to the specific class instance.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "OOP Concepts"
+  },
+  {
+    "question": "[Python - Medium] Case Study #44 (File I/O): Which mode opens a file for reading and writing in Python?",
+    "options": [
+      "r+",
+      "a",
+      "rw",
+      "w+"
+    ],
+    "answer": "r+",
+    "explanation": "'r+' opens a file for both reading and writing without truncating.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "File I/O"
+  },
+  {
+    "question": "[Python - Medium] Case Study #45 (Exception Handling): Which block in Python always executes regardless of whether an exception occurs?",
+    "options": [
+      "catch",
+      "else",
+      "finally",
+      "except"
+    ],
+    "answer": "finally",
+    "explanation": "The 'finally' block executes cleanup code under all conditions.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Python - Medium] Case Study #46 (List Comprehension): What is the result of [x**2 for x in range(3)]?",
+    "options": [
+      "[0, 1, 4]",
+      "[1, 4, 9]",
+      "[1, 2, 3]",
+      "[0, 1, 2]"
+    ],
+    "answer": "[0, 1, 4]",
+    "explanation": "Evaluates 0^2, 1^2, 2^2 yielding [0, 1, 4].",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "List Comprehension"
+  },
+  {
+    "question": "[Python - Medium] Case Study #47 (Iterators): Which built-in function gets the next item from an iterator?",
+    "options": [
+      "get()",
+      "step()",
+      "next()",
+      "advance()"
+    ],
+    "answer": "next()",
+    "explanation": "next(iterator) retrieves the subsequent value or raises StopIteration.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Iterators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #48 (Lambda Functions): What is a lambda function in Python?",
+    "options": [
+      "A class constructor",
+      "A function that executes in parallel",
+      "An anonymous single-expression function",
+      "A module loader"
+    ],
+    "answer": "An anonymous single-expression function",
+    "explanation": "Lambda functions are small inline functions created with the 'lambda' keyword.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Lambda Functions"
+  },
+  {
+    "question": "[Python - Medium] Case Study #49 (Dictionaries): Which dictionary method returns all key-value pairs as tuples?",
+    "options": [
+      "pairs()",
+      "items()",
+      "entries()",
+      "tuples()"
+    ],
+    "answer": "items()",
+    "explanation": "dict.items() returns a dynamic view of (key, value) pairs.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Dictionaries"
+  },
+  {
+    "question": "[Python - Medium] Case Study #50 (Modules): How do you import a specific function 'foo' from module 'bar'?",
+    "options": [
+      "include bar::foo",
+      "import foo from bar",
+      "using bar.foo",
+      "from bar import foo"
+    ],
+    "answer": "from bar import foo",
+    "explanation": "'from module import name' imports specific attributes directly.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Modules"
+  },
+  {
+    "question": "[Python - Medium] Case Study #51 (Decorators): What is the primary function of a Python decorator?",
+    "options": [
+      "To define private variables",
+      "To wrap a function and modify its behavior without altering source code",
+      "To speed up loop execution",
+      "To decorate terminal outputs"
+    ],
+    "answer": "To wrap a function and modify its behavior without altering source code",
+    "explanation": "Decorators take a function as argument and return a modified function.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Decorators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #52 (Generators): Which keyword turns a regular function into a generator in Python?",
+    "options": [
+      "yield",
+      "return",
+      "emit",
+      "generate"
+    ],
+    "answer": "yield",
+    "explanation": "The 'yield' statement pauses function execution and produces a generator value.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Generators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #53 (OOP Concepts): What does the 'self' parameter represent in a Python class method?",
+    "options": [
+      "The instance of the class",
+      "The parent module",
+      "The class definition itself",
+      "The global scope"
+    ],
+    "answer": "The instance of the class",
+    "explanation": "'self' binds method arguments to the specific class instance.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "OOP Concepts"
+  },
+  {
+    "question": "[Python - Medium] Case Study #54 (File I/O): Which mode opens a file for reading and writing in Python?",
+    "options": [
+      "r+",
+      "w+",
+      "rw",
+      "a"
+    ],
+    "answer": "r+",
+    "explanation": "'r+' opens a file for both reading and writing without truncating.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "File I/O"
+  },
+  {
+    "question": "[Python - Medium] Case Study #55 (Exception Handling): Which block in Python always executes regardless of whether an exception occurs?",
+    "options": [
+      "catch",
+      "else",
+      "except",
+      "finally"
+    ],
+    "answer": "finally",
+    "explanation": "The 'finally' block executes cleanup code under all conditions.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Python - Medium] Case Study #56 (List Comprehension): What is the result of [x**2 for x in range(3)]?",
+    "options": [
+      "[1, 2, 3]",
+      "[0, 1, 4]",
+      "[0, 1, 2]",
+      "[1, 4, 9]"
+    ],
+    "answer": "[0, 1, 4]",
+    "explanation": "Evaluates 0^2, 1^2, 2^2 yielding [0, 1, 4].",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "List Comprehension"
+  },
+  {
+    "question": "[Python - Medium] Case Study #57 (Iterators): Which built-in function gets the next item from an iterator?",
+    "options": [
+      "get()",
+      "step()",
+      "advance()",
+      "next()"
+    ],
+    "answer": "next()",
+    "explanation": "next(iterator) retrieves the subsequent value or raises StopIteration.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Iterators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #58 (Lambda Functions): What is a lambda function in Python?",
+    "options": [
+      "A function that executes in parallel",
+      "An anonymous single-expression function",
+      "A class constructor",
+      "A module loader"
+    ],
+    "answer": "An anonymous single-expression function",
+    "explanation": "Lambda functions are small inline functions created with the 'lambda' keyword.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Lambda Functions"
+  },
+  {
+    "question": "[Python - Medium] Case Study #59 (Dictionaries): Which dictionary method returns all key-value pairs as tuples?",
+    "options": [
+      "tuples()",
+      "pairs()",
+      "items()",
+      "entries()"
+    ],
+    "answer": "items()",
+    "explanation": "dict.items() returns a dynamic view of (key, value) pairs.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Dictionaries"
+  },
+  {
+    "question": "[Python - Medium] Case Study #60 (Modules): How do you import a specific function 'foo' from module 'bar'?",
+    "options": [
+      "using bar.foo",
+      "import foo from bar",
+      "include bar::foo",
+      "from bar import foo"
+    ],
+    "answer": "from bar import foo",
+    "explanation": "'from module import name' imports specific attributes directly.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Modules"
+  },
+  {
+    "question": "[Python - Medium] Case Study #61 (Decorators): What is the primary function of a Python decorator?",
+    "options": [
+      "To decorate terminal outputs",
+      "To define private variables",
+      "To wrap a function and modify its behavior without altering source code",
+      "To speed up loop execution"
+    ],
+    "answer": "To wrap a function and modify its behavior without altering source code",
+    "explanation": "Decorators take a function as argument and return a modified function.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Decorators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #62 (Generators): Which keyword turns a regular function into a generator in Python?",
+    "options": [
+      "generate",
+      "yield",
+      "emit",
+      "return"
+    ],
+    "answer": "yield",
+    "explanation": "The 'yield' statement pauses function execution and produces a generator value.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Generators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #63 (OOP Concepts): What does the 'self' parameter represent in a Python class method?",
+    "options": [
+      "The parent module",
+      "The class definition itself",
+      "The global scope",
+      "The instance of the class"
+    ],
+    "answer": "The instance of the class",
+    "explanation": "'self' binds method arguments to the specific class instance.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "OOP Concepts"
+  },
+  {
+    "question": "[Python - Medium] Case Study #64 (File I/O): Which mode opens a file for reading and writing in Python?",
+    "options": [
+      "r+",
+      "rw",
+      "w+",
+      "a"
+    ],
+    "answer": "r+",
+    "explanation": "'r+' opens a file for both reading and writing without truncating.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "File I/O"
+  },
+  {
+    "question": "[Python - Medium] Case Study #65 (Exception Handling): Which block in Python always executes regardless of whether an exception occurs?",
+    "options": [
+      "catch",
+      "except",
+      "else",
+      "finally"
+    ],
+    "answer": "finally",
+    "explanation": "The 'finally' block executes cleanup code under all conditions.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Python - Medium] Case Study #66 (List Comprehension): What is the result of [x**2 for x in range(3)]?",
+    "options": [
+      "[1, 2, 3]",
+      "[1, 4, 9]",
+      "[0, 1, 4]",
+      "[0, 1, 2]"
+    ],
+    "answer": "[0, 1, 4]",
+    "explanation": "Evaluates 0^2, 1^2, 2^2 yielding [0, 1, 4].",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "List Comprehension"
+  },
+  {
+    "question": "[Python - Medium] Case Study #67 (Iterators): Which built-in function gets the next item from an iterator?",
+    "options": [
+      "next()",
+      "step()",
+      "advance()",
+      "get()"
+    ],
+    "answer": "next()",
+    "explanation": "next(iterator) retrieves the subsequent value or raises StopIteration.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Iterators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #68 (Lambda Functions): What is a lambda function in Python?",
+    "options": [
+      "A function that executes in parallel",
+      "A class constructor",
+      "A module loader",
+      "An anonymous single-expression function"
+    ],
+    "answer": "An anonymous single-expression function",
+    "explanation": "Lambda functions are small inline functions created with the 'lambda' keyword.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Lambda Functions"
+  },
+  {
+    "question": "[Python - Medium] Case Study #69 (Dictionaries): Which dictionary method returns all key-value pairs as tuples?",
+    "options": [
+      "entries()",
+      "pairs()",
+      "items()",
+      "tuples()"
+    ],
+    "answer": "items()",
+    "explanation": "dict.items() returns a dynamic view of (key, value) pairs.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Dictionaries"
+  },
+  {
+    "question": "[Python - Medium] Case Study #70 (Modules): How do you import a specific function 'foo' from module 'bar'?",
+    "options": [
+      "using bar.foo",
+      "include bar::foo",
+      "import foo from bar",
+      "from bar import foo"
+    ],
+    "answer": "from bar import foo",
+    "explanation": "'from module import name' imports specific attributes directly.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Modules"
+  },
+  {
+    "question": "[Python - Medium] Case Study #71 (Decorators): What is the primary function of a Python decorator?",
+    "options": [
+      "To speed up loop execution",
+      "To decorate terminal outputs",
+      "To define private variables",
+      "To wrap a function and modify its behavior without altering source code"
+    ],
+    "answer": "To wrap a function and modify its behavior without altering source code",
+    "explanation": "Decorators take a function as argument and return a modified function.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Decorators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #72 (Generators): Which keyword turns a regular function into a generator in Python?",
+    "options": [
+      "generate",
+      "return",
+      "yield",
+      "emit"
+    ],
+    "answer": "yield",
+    "explanation": "The 'yield' statement pauses function execution and produces a generator value.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Generators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #73 (OOP Concepts): What does the 'self' parameter represent in a Python class method?",
+    "options": [
+      "The global scope",
+      "The instance of the class",
+      "The class definition itself",
+      "The parent module"
+    ],
+    "answer": "The instance of the class",
+    "explanation": "'self' binds method arguments to the specific class instance.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "OOP Concepts"
+  },
+  {
+    "question": "[Python - Medium] Case Study #74 (File I/O): Which mode opens a file for reading and writing in Python?",
+    "options": [
+      "a",
+      "r+",
+      "w+",
+      "rw"
+    ],
+    "answer": "r+",
+    "explanation": "'r+' opens a file for both reading and writing without truncating.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "File I/O"
+  },
+  {
+    "question": "[Python - Medium] Case Study #75 (Exception Handling): Which block in Python always executes regardless of whether an exception occurs?",
+    "options": [
+      "finally",
+      "catch",
+      "else",
+      "except"
+    ],
+    "answer": "finally",
+    "explanation": "The 'finally' block executes cleanup code under all conditions.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Python - Medium] Case Study #76 (List Comprehension): What is the result of [x**2 for x in range(3)]?",
+    "options": [
+      "[1, 2, 3]",
+      "[0, 1, 2]",
+      "[0, 1, 4]",
+      "[1, 4, 9]"
+    ],
+    "answer": "[0, 1, 4]",
+    "explanation": "Evaluates 0^2, 1^2, 2^2 yielding [0, 1, 4].",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "List Comprehension"
+  },
+  {
+    "question": "[Python - Medium] Case Study #77 (Iterators): Which built-in function gets the next item from an iterator?",
+    "options": [
+      "next()",
+      "advance()",
+      "step()",
+      "get()"
+    ],
+    "answer": "next()",
+    "explanation": "next(iterator) retrieves the subsequent value or raises StopIteration.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Iterators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #78 (Lambda Functions): What is a lambda function in Python?",
+    "options": [
+      "A class constructor",
+      "An anonymous single-expression function",
+      "A function that executes in parallel",
+      "A module loader"
+    ],
+    "answer": "An anonymous single-expression function",
+    "explanation": "Lambda functions are small inline functions created with the 'lambda' keyword.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Lambda Functions"
+  },
+  {
+    "question": "[Python - Medium] Case Study #79 (Dictionaries): Which dictionary method returns all key-value pairs as tuples?",
+    "options": [
+      "tuples()",
+      "pairs()",
+      "items()",
+      "entries()"
+    ],
+    "answer": "items()",
+    "explanation": "dict.items() returns a dynamic view of (key, value) pairs.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Dictionaries"
+  },
+  {
+    "question": "[Python - Medium] Case Study #80 (Modules): How do you import a specific function 'foo' from module 'bar'?",
+    "options": [
+      "import foo from bar",
+      "include bar::foo",
+      "from bar import foo",
+      "using bar.foo"
+    ],
+    "answer": "from bar import foo",
+    "explanation": "'from module import name' imports specific attributes directly.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Modules"
+  },
+  {
+    "question": "[Python - Medium] Case Study #81 (Decorators): What is the primary function of a Python decorator?",
+    "options": [
+      "To decorate terminal outputs",
+      "To define private variables",
+      "To speed up loop execution",
+      "To wrap a function and modify its behavior without altering source code"
+    ],
+    "answer": "To wrap a function and modify its behavior without altering source code",
+    "explanation": "Decorators take a function as argument and return a modified function.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Decorators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #82 (Generators): Which keyword turns a regular function into a generator in Python?",
+    "options": [
+      "yield",
+      "generate",
+      "emit",
+      "return"
+    ],
+    "answer": "yield",
+    "explanation": "The 'yield' statement pauses function execution and produces a generator value.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Generators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #83 (OOP Concepts): What does the 'self' parameter represent in a Python class method?",
+    "options": [
+      "The instance of the class",
+      "The parent module",
+      "The global scope",
+      "The class definition itself"
+    ],
+    "answer": "The instance of the class",
+    "explanation": "'self' binds method arguments to the specific class instance.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "OOP Concepts"
+  },
+  {
+    "question": "[Python - Medium] Case Study #84 (File I/O): Which mode opens a file for reading and writing in Python?",
+    "options": [
+      "a",
+      "w+",
+      "r+",
+      "rw"
+    ],
+    "answer": "r+",
+    "explanation": "'r+' opens a file for both reading and writing without truncating.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "File I/O"
+  },
+  {
+    "question": "[Python - Medium] Case Study #85 (Exception Handling): Which block in Python always executes regardless of whether an exception occurs?",
+    "options": [
+      "else",
+      "except",
+      "finally",
+      "catch"
+    ],
+    "answer": "finally",
+    "explanation": "The 'finally' block executes cleanup code under all conditions.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Python - Medium] Case Study #86 (List Comprehension): What is the result of [x**2 for x in range(3)]?",
+    "options": [
+      "[0, 1, 4]",
+      "[1, 4, 9]",
+      "[1, 2, 3]",
+      "[0, 1, 2]"
+    ],
+    "answer": "[0, 1, 4]",
+    "explanation": "Evaluates 0^2, 1^2, 2^2 yielding [0, 1, 4].",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "List Comprehension"
+  },
+  {
+    "question": "[Python - Medium] Case Study #87 (Iterators): Which built-in function gets the next item from an iterator?",
+    "options": [
+      "get()",
+      "advance()",
+      "next()",
+      "step()"
+    ],
+    "answer": "next()",
+    "explanation": "next(iterator) retrieves the subsequent value or raises StopIteration.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Iterators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #88 (Lambda Functions): What is a lambda function in Python?",
+    "options": [
+      "A module loader",
+      "A class constructor",
+      "An anonymous single-expression function",
+      "A function that executes in parallel"
+    ],
+    "answer": "An anonymous single-expression function",
+    "explanation": "Lambda functions are small inline functions created with the 'lambda' keyword.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Lambda Functions"
+  },
+  {
+    "question": "[Python - Medium] Case Study #89 (Dictionaries): Which dictionary method returns all key-value pairs as tuples?",
+    "options": [
+      "pairs()",
+      "items()",
+      "entries()",
+      "tuples()"
+    ],
+    "answer": "items()",
+    "explanation": "dict.items() returns a dynamic view of (key, value) pairs.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Dictionaries"
+  },
+  {
+    "question": "[Python - Medium] Case Study #90 (Modules): How do you import a specific function 'foo' from module 'bar'?",
+    "options": [
+      "include bar::foo",
+      "import foo from bar",
+      "using bar.foo",
+      "from bar import foo"
+    ],
+    "answer": "from bar import foo",
+    "explanation": "'from module import name' imports specific attributes directly.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Modules"
+  },
+  {
+    "question": "[Python - Medium] Case Study #91 (Decorators): What is the primary function of a Python decorator?",
+    "options": [
+      "To decorate terminal outputs",
+      "To speed up loop execution",
+      "To define private variables",
+      "To wrap a function and modify its behavior without altering source code"
+    ],
+    "answer": "To wrap a function and modify its behavior without altering source code",
+    "explanation": "Decorators take a function as argument and return a modified function.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Decorators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #92 (Generators): Which keyword turns a regular function into a generator in Python?",
+    "options": [
+      "return",
+      "yield",
+      "generate",
+      "emit"
+    ],
+    "answer": "yield",
+    "explanation": "The 'yield' statement pauses function execution and produces a generator value.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Generators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #93 (OOP Concepts): What does the 'self' parameter represent in a Python class method?",
+    "options": [
+      "The global scope",
+      "The parent module",
+      "The instance of the class",
+      "The class definition itself"
+    ],
+    "answer": "The instance of the class",
+    "explanation": "'self' binds method arguments to the specific class instance.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "OOP Concepts"
+  },
+  {
+    "question": "[Python - Medium] Case Study #94 (File I/O): Which mode opens a file for reading and writing in Python?",
+    "options": [
+      "r+",
+      "w+",
+      "rw",
+      "a"
+    ],
+    "answer": "r+",
+    "explanation": "'r+' opens a file for both reading and writing without truncating.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "File I/O"
+  },
+  {
+    "question": "[Python - Medium] Case Study #95 (Exception Handling): Which block in Python always executes regardless of whether an exception occurs?",
+    "options": [
+      "finally",
+      "except",
+      "catch",
+      "else"
+    ],
+    "answer": "finally",
+    "explanation": "The 'finally' block executes cleanup code under all conditions.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Python - Medium] Case Study #96 (List Comprehension): What is the result of [x**2 for x in range(3)]?",
+    "options": [
+      "[1, 2, 3]",
+      "[0, 1, 2]",
+      "[1, 4, 9]",
+      "[0, 1, 4]"
+    ],
+    "answer": "[0, 1, 4]",
+    "explanation": "Evaluates 0^2, 1^2, 2^2 yielding [0, 1, 4].",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "List Comprehension"
+  },
+  {
+    "question": "[Python - Medium] Case Study #97 (Iterators): Which built-in function gets the next item from an iterator?",
+    "options": [
+      "get()",
+      "next()",
+      "advance()",
+      "step()"
+    ],
+    "answer": "next()",
+    "explanation": "next(iterator) retrieves the subsequent value or raises StopIteration.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Iterators"
+  },
+  {
+    "question": "[Python - Medium] Case Study #98 (Lambda Functions): What is a lambda function in Python?",
+    "options": [
+      "A module loader",
+      "A function that executes in parallel",
+      "A class constructor",
+      "An anonymous single-expression function"
+    ],
+    "answer": "An anonymous single-expression function",
+    "explanation": "Lambda functions are small inline functions created with the 'lambda' keyword.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Lambda Functions"
+  },
+  {
+    "question": "[Python - Medium] Case Study #99 (Dictionaries): Which dictionary method returns all key-value pairs as tuples?",
+    "options": [
+      "entries()",
+      "pairs()",
+      "items()",
+      "tuples()"
+    ],
+    "answer": "items()",
+    "explanation": "dict.items() returns a dynamic view of (key, value) pairs.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Dictionaries"
+  },
+  {
+    "question": "[Python - Medium] Case Study #100 (Modules): How do you import a specific function 'foo' from module 'bar'?",
+    "options": [
+      "from bar import foo",
+      "include bar::foo",
+      "using bar.foo",
+      "import foo from bar"
+    ],
+    "answer": "from bar import foo",
+    "explanation": "'from module import name' imports specific attributes directly.",
+    "difficulty": "Medium",
+    "skill": "Python",
+    "topic": "Modules"
+  }
+]

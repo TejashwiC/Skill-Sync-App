@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "Why is vacuum sealing crucial in sous-vide precision cooking?",
+    "options": [
+      "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+      "Sterilizes food from all bacteria automatically",
+      "Dehydrates the meat",
+      "Freezes food instantly"
+    ],
+    "answer": "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+    "explanation": "Vacuum packaging ensures direct contact between water heat and food.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sous-Vide Precision"
+  },
+  {
+    "question": "What technique uses sodium alginate and calcium chloride to create edible liquid spheres?",
+    "options": [
+      "Sous-vide",
+      "Emulsification",
+      "Gelification",
+      "Spherification"
+    ],
+    "answer": "Spherification",
+    "explanation": "Spherification forms a thin gel membrane around liquid payloads.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Molecular Gastronomy"
+  },
+  {
+    "question": "Which microorganism is responsible for converting sugars to lactic acid in kimchi/sauerkraut?",
+    "options": [
+      "Penicillium mold",
+      "Aspergillus mold",
+      "Lactobacillus bacteria",
+      "Saccharomyces yeast"
+    ],
+    "answer": "Lactobacillus bacteria",
+    "explanation": "Lactic acid bacteria ferment plant sugars into tangy preserving acid.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Fermentation Science"
+  },
+  {
+    "question": "What creates the characteristic sour flavor and natural rise in authentic sourdough bread?",
+    "options": [
+      "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+      "Carbonated water",
+      "Commercial instant dry yeast",
+      "Baking powder and vinegar"
+    ],
+    "answer": "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+    "explanation": "Wild yeast produces CO2 while LAB bacteria generate acetic and lactic acids.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sourdough Science"
+  },
+  {
+    "question": "At what temperature range does sugar reach the 'Hard Crack' stage for sugar sculptures?",
+    "options": [
+      "350°F to 375°F (177°C to 190°C)",
+      "212°F (100°C)",
+      "234°F to 240°F (112°C to 115°C)",
+      "300°F to 310°F (149°C to 154°C)"
+    ],
+    "answer": "300°F to 310°F (149°C to 154°C)",
+    "explanation": "Hard crack stage occurs at 300°F-310°F where sugar sets brittle.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Complex Sugar Work"
+  },
+  {
+    "question": "What is the goal of tempering chocolate in confectionery work?",
+    "options": [
+      "Melting chocolate to maximum temperature",
+      "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+      "Mixing chocolate with milk",
+      "Removing all cocoa butter"
+    ],
+    "answer": "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+    "explanation": "Tempering aligns cocoa butter into stable Form V crystalline structure.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Chocolate Tempering"
+  },
+  {
+    "question": "What is 'frenching' a rack of lamb or pork chops?",
+    "options": [
+      "Scraping meat and fat clean off the exposed bone ends for presentation",
+      "Grinding meat finely",
+      "Deep frying chops in butter",
+      "Marinating meat in red wine"
+    ],
+    "answer": "Scraping meat and fat clean off the exposed bone ends for presentation",
+    "explanation": "Frenching cleans rib bones to give an elegant visual presentation.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Butchery Techniques"
+  },
+  {
+    "question": "What does HACCP stand for in professional kitchen operations?",
+    "options": [
+      "Hazard Analysis Critical Control Point",
+      "Heating And Cooling Control Procedure",
+      "Hygiene Assessment Critical Check Process",
+      "Health And Cooking Care Program"
+    ],
+    "answer": "Hazard Analysis Critical Control Point",
+    "explanation": "HACCP is the systematic preventive approach to food safety.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "HACCP Safety Protocols"
+  },
+  {
+    "question": "In menu engineering analysis, what is a menu item with High Profitability but Low Popularity called?",
+    "options": [
+      "Dog",
+      "Star",
+      "Puzzle",
+      "Plowhorse"
+    ],
+    "answer": "Puzzle",
+    "explanation": "Puzzles yield high margin but sell at low volume, needing marketing effort.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Menu Engineering"
+  },
+  {
+    "question": "Why do high-tannin red wines pair well with fatty red steaks?",
+    "options": [
+      "Fats neutralize alcohol percentage",
+      "Tannins make wine taste sweeter",
+      "Tannins bind to meat proteins and fats, softening astringency on the palate",
+      "Red wine cools meat down"
+    ],
+    "answer": "Tannins bind to meat proteins and fats, softening astringency on the palate",
+    "explanation": "Wine tannins bind with salivary and meat proteins, softening dry mouthfeel.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sommelier Pairing"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #11 (Sous-Vide Precision): Why is vacuum sealing crucial in sous-vide precision cooking?",
+    "options": [
+      "Freezes food instantly",
+      "Sterilizes food from all bacteria automatically",
+      "Dehydrates the meat",
+      "Ensures efficient heat transfer from water bath without air barriers or moisture loss"
+    ],
+    "answer": "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+    "explanation": "Vacuum packaging ensures direct contact between water heat and food.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sous-Vide Precision"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #12 (Molecular Gastronomy): What technique uses sodium alginate and calcium chloride to create edible liquid spheres?",
+    "options": [
+      "Gelification",
+      "Sous-vide",
+      "Emulsification",
+      "Spherification"
+    ],
+    "answer": "Spherification",
+    "explanation": "Spherification forms a thin gel membrane around liquid payloads.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Molecular Gastronomy"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #13 (Fermentation Science): Which microorganism is responsible for converting sugars to lactic acid in kimchi/sauerkraut?",
+    "options": [
+      "Saccharomyces yeast",
+      "Aspergillus mold",
+      "Lactobacillus bacteria",
+      "Penicillium mold"
+    ],
+    "answer": "Lactobacillus bacteria",
+    "explanation": "Lactic acid bacteria ferment plant sugars into tangy preserving acid.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Fermentation Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #14 (Sourdough Science): What creates the characteristic sour flavor and natural rise in authentic sourdough bread?",
+    "options": [
+      "Baking powder and vinegar",
+      "Carbonated water",
+      "Commercial instant dry yeast",
+      "Symbiotic wild yeast and lactic acid bacteria culture (starter)"
+    ],
+    "answer": "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+    "explanation": "Wild yeast produces CO2 while LAB bacteria generate acetic and lactic acids.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sourdough Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #15 (Complex Sugar Work): At what temperature range does sugar reach the 'Hard Crack' stage for sugar sculptures?",
+    "options": [
+      "300°F to 310°F (149°C to 154°C)",
+      "350°F to 375°F (177°C to 190°C)",
+      "212°F (100°C)",
+      "234°F to 240°F (112°C to 115°C)"
+    ],
+    "answer": "300°F to 310°F (149°C to 154°C)",
+    "explanation": "Hard crack stage occurs at 300°F-310°F where sugar sets brittle.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Complex Sugar Work"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #16 (Chocolate Tempering): What is the goal of tempering chocolate in confectionery work?",
+    "options": [
+      "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+      "Melting chocolate to maximum temperature",
+      "Removing all cocoa butter",
+      "Mixing chocolate with milk"
+    ],
+    "answer": "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+    "explanation": "Tempering aligns cocoa butter into stable Form V crystalline structure.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Chocolate Tempering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #17 (Butchery Techniques): What is 'frenching' a rack of lamb or pork chops?",
+    "options": [
+      "Deep frying chops in butter",
+      "Scraping meat and fat clean off the exposed bone ends for presentation",
+      "Marinating meat in red wine",
+      "Grinding meat finely"
+    ],
+    "answer": "Scraping meat and fat clean off the exposed bone ends for presentation",
+    "explanation": "Frenching cleans rib bones to give an elegant visual presentation.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Butchery Techniques"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #18 (HACCP Safety Protocols): What does HACCP stand for in professional kitchen operations?",
+    "options": [
+      "Hygiene Assessment Critical Check Process",
+      "Hazard Analysis Critical Control Point",
+      "Health And Cooking Care Program",
+      "Heating And Cooling Control Procedure"
+    ],
+    "answer": "Hazard Analysis Critical Control Point",
+    "explanation": "HACCP is the systematic preventive approach to food safety.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "HACCP Safety Protocols"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #19 (Menu Engineering): In menu engineering analysis, what is a menu item with High Profitability but Low Popularity called?",
+    "options": [
+      "Dog",
+      "Plowhorse",
+      "Star",
+      "Puzzle"
+    ],
+    "answer": "Puzzle",
+    "explanation": "Puzzles yield high margin but sell at low volume, needing marketing effort.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Menu Engineering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #20 (Sommelier Pairing): Why do high-tannin red wines pair well with fatty red steaks?",
+    "options": [
+      "Tannins bind to meat proteins and fats, softening astringency on the palate",
+      "Fats neutralize alcohol percentage",
+      "Tannins make wine taste sweeter",
+      "Red wine cools meat down"
+    ],
+    "answer": "Tannins bind to meat proteins and fats, softening astringency on the palate",
+    "explanation": "Wine tannins bind with salivary and meat proteins, softening dry mouthfeel.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sommelier Pairing"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #21 (Sous-Vide Precision): Why is vacuum sealing crucial in sous-vide precision cooking?",
+    "options": [
+      "Sterilizes food from all bacteria automatically",
+      "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+      "Freezes food instantly",
+      "Dehydrates the meat"
+    ],
+    "answer": "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+    "explanation": "Vacuum packaging ensures direct contact between water heat and food.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sous-Vide Precision"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #22 (Molecular Gastronomy): What technique uses sodium alginate and calcium chloride to create edible liquid spheres?",
+    "options": [
+      "Sous-vide",
+      "Emulsification",
+      "Gelification",
+      "Spherification"
+    ],
+    "answer": "Spherification",
+    "explanation": "Spherification forms a thin gel membrane around liquid payloads.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Molecular Gastronomy"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #23 (Fermentation Science): Which microorganism is responsible for converting sugars to lactic acid in kimchi/sauerkraut?",
+    "options": [
+      "Penicillium mold",
+      "Saccharomyces yeast",
+      "Aspergillus mold",
+      "Lactobacillus bacteria"
+    ],
+    "answer": "Lactobacillus bacteria",
+    "explanation": "Lactic acid bacteria ferment plant sugars into tangy preserving acid.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Fermentation Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #24 (Sourdough Science): What creates the characteristic sour flavor and natural rise in authentic sourdough bread?",
+    "options": [
+      "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+      "Commercial instant dry yeast",
+      "Carbonated water",
+      "Baking powder and vinegar"
+    ],
+    "answer": "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+    "explanation": "Wild yeast produces CO2 while LAB bacteria generate acetic and lactic acids.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sourdough Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #25 (Complex Sugar Work): At what temperature range does sugar reach the 'Hard Crack' stage for sugar sculptures?",
+    "options": [
+      "300°F to 310°F (149°C to 154°C)",
+      "212°F (100°C)",
+      "350°F to 375°F (177°C to 190°C)",
+      "234°F to 240°F (112°C to 115°C)"
+    ],
+    "answer": "300°F to 310°F (149°C to 154°C)",
+    "explanation": "Hard crack stage occurs at 300°F-310°F where sugar sets brittle.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Complex Sugar Work"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #26 (Chocolate Tempering): What is the goal of tempering chocolate in confectionery work?",
+    "options": [
+      "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+      "Mixing chocolate with milk",
+      "Melting chocolate to maximum temperature",
+      "Removing all cocoa butter"
+    ],
+    "answer": "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+    "explanation": "Tempering aligns cocoa butter into stable Form V crystalline structure.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Chocolate Tempering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #27 (Butchery Techniques): What is 'frenching' a rack of lamb or pork chops?",
+    "options": [
+      "Grinding meat finely",
+      "Scraping meat and fat clean off the exposed bone ends for presentation",
+      "Deep frying chops in butter",
+      "Marinating meat in red wine"
+    ],
+    "answer": "Scraping meat and fat clean off the exposed bone ends for presentation",
+    "explanation": "Frenching cleans rib bones to give an elegant visual presentation.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Butchery Techniques"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #28 (HACCP Safety Protocols): What does HACCP stand for in professional kitchen operations?",
+    "options": [
+      "Heating And Cooling Control Procedure",
+      "Hygiene Assessment Critical Check Process",
+      "Hazard Analysis Critical Control Point",
+      "Health And Cooking Care Program"
+    ],
+    "answer": "Hazard Analysis Critical Control Point",
+    "explanation": "HACCP is the systematic preventive approach to food safety.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "HACCP Safety Protocols"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #29 (Menu Engineering): In menu engineering analysis, what is a menu item with High Profitability but Low Popularity called?",
+    "options": [
+      "Star",
+      "Dog",
+      "Plowhorse",
+      "Puzzle"
+    ],
+    "answer": "Puzzle",
+    "explanation": "Puzzles yield high margin but sell at low volume, needing marketing effort.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Menu Engineering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #30 (Sommelier Pairing): Why do high-tannin red wines pair well with fatty red steaks?",
+    "options": [
+      "Tannins bind to meat proteins and fats, softening astringency on the palate",
+      "Red wine cools meat down",
+      "Fats neutralize alcohol percentage",
+      "Tannins make wine taste sweeter"
+    ],
+    "answer": "Tannins bind to meat proteins and fats, softening astringency on the palate",
+    "explanation": "Wine tannins bind with salivary and meat proteins, softening dry mouthfeel.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sommelier Pairing"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #31 (Sous-Vide Precision): Why is vacuum sealing crucial in sous-vide precision cooking?",
+    "options": [
+      "Sterilizes food from all bacteria automatically",
+      "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+      "Dehydrates the meat",
+      "Freezes food instantly"
+    ],
+    "answer": "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+    "explanation": "Vacuum packaging ensures direct contact between water heat and food.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sous-Vide Precision"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #32 (Molecular Gastronomy): What technique uses sodium alginate and calcium chloride to create edible liquid spheres?",
+    "options": [
+      "Spherification",
+      "Emulsification",
+      "Sous-vide",
+      "Gelification"
+    ],
+    "answer": "Spherification",
+    "explanation": "Spherification forms a thin gel membrane around liquid payloads.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Molecular Gastronomy"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #33 (Fermentation Science): Which microorganism is responsible for converting sugars to lactic acid in kimchi/sauerkraut?",
+    "options": [
+      "Lactobacillus bacteria",
+      "Saccharomyces yeast",
+      "Penicillium mold",
+      "Aspergillus mold"
+    ],
+    "answer": "Lactobacillus bacteria",
+    "explanation": "Lactic acid bacteria ferment plant sugars into tangy preserving acid.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Fermentation Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #34 (Sourdough Science): What creates the characteristic sour flavor and natural rise in authentic sourdough bread?",
+    "options": [
+      "Commercial instant dry yeast",
+      "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+      "Carbonated water",
+      "Baking powder and vinegar"
+    ],
+    "answer": "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+    "explanation": "Wild yeast produces CO2 while LAB bacteria generate acetic and lactic acids.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sourdough Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #35 (Complex Sugar Work): At what temperature range does sugar reach the 'Hard Crack' stage for sugar sculptures?",
+    "options": [
+      "234°F to 240°F (112°C to 115°C)",
+      "350°F to 375°F (177°C to 190°C)",
+      "300°F to 310°F (149°C to 154°C)",
+      "212°F (100°C)"
+    ],
+    "answer": "300°F to 310°F (149°C to 154°C)",
+    "explanation": "Hard crack stage occurs at 300°F-310°F where sugar sets brittle.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Complex Sugar Work"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #36 (Chocolate Tempering): What is the goal of tempering chocolate in confectionery work?",
+    "options": [
+      "Removing all cocoa butter",
+      "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+      "Melting chocolate to maximum temperature",
+      "Mixing chocolate with milk"
+    ],
+    "answer": "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+    "explanation": "Tempering aligns cocoa butter into stable Form V crystalline structure.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Chocolate Tempering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #37 (Butchery Techniques): What is 'frenching' a rack of lamb or pork chops?",
+    "options": [
+      "Marinating meat in red wine",
+      "Grinding meat finely",
+      "Scraping meat and fat clean off the exposed bone ends for presentation",
+      "Deep frying chops in butter"
+    ],
+    "answer": "Scraping meat and fat clean off the exposed bone ends for presentation",
+    "explanation": "Frenching cleans rib bones to give an elegant visual presentation.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Butchery Techniques"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #38 (HACCP Safety Protocols): What does HACCP stand for in professional kitchen operations?",
+    "options": [
+      "Heating And Cooling Control Procedure",
+      "Health And Cooking Care Program",
+      "Hazard Analysis Critical Control Point",
+      "Hygiene Assessment Critical Check Process"
+    ],
+    "answer": "Hazard Analysis Critical Control Point",
+    "explanation": "HACCP is the systematic preventive approach to food safety.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "HACCP Safety Protocols"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #39 (Menu Engineering): In menu engineering analysis, what is a menu item with High Profitability but Low Popularity called?",
+    "options": [
+      "Star",
+      "Puzzle",
+      "Plowhorse",
+      "Dog"
+    ],
+    "answer": "Puzzle",
+    "explanation": "Puzzles yield high margin but sell at low volume, needing marketing effort.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Menu Engineering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #40 (Sommelier Pairing): Why do high-tannin red wines pair well with fatty red steaks?",
+    "options": [
+      "Red wine cools meat down",
+      "Tannins bind to meat proteins and fats, softening astringency on the palate",
+      "Fats neutralize alcohol percentage",
+      "Tannins make wine taste sweeter"
+    ],
+    "answer": "Tannins bind to meat proteins and fats, softening astringency on the palate",
+    "explanation": "Wine tannins bind with salivary and meat proteins, softening dry mouthfeel.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sommelier Pairing"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #41 (Sous-Vide Precision): Why is vacuum sealing crucial in sous-vide precision cooking?",
+    "options": [
+      "Sterilizes food from all bacteria automatically",
+      "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+      "Freezes food instantly",
+      "Dehydrates the meat"
+    ],
+    "answer": "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+    "explanation": "Vacuum packaging ensures direct contact between water heat and food.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sous-Vide Precision"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #42 (Molecular Gastronomy): What technique uses sodium alginate and calcium chloride to create edible liquid spheres?",
+    "options": [
+      "Emulsification",
+      "Sous-vide",
+      "Spherification",
+      "Gelification"
+    ],
+    "answer": "Spherification",
+    "explanation": "Spherification forms a thin gel membrane around liquid payloads.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Molecular Gastronomy"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #43 (Fermentation Science): Which microorganism is responsible for converting sugars to lactic acid in kimchi/sauerkraut?",
+    "options": [
+      "Saccharomyces yeast",
+      "Aspergillus mold",
+      "Lactobacillus bacteria",
+      "Penicillium mold"
+    ],
+    "answer": "Lactobacillus bacteria",
+    "explanation": "Lactic acid bacteria ferment plant sugars into tangy preserving acid.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Fermentation Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #44 (Sourdough Science): What creates the characteristic sour flavor and natural rise in authentic sourdough bread?",
+    "options": [
+      "Baking powder and vinegar",
+      "Commercial instant dry yeast",
+      "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+      "Carbonated water"
+    ],
+    "answer": "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+    "explanation": "Wild yeast produces CO2 while LAB bacteria generate acetic and lactic acids.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sourdough Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #45 (Complex Sugar Work): At what temperature range does sugar reach the 'Hard Crack' stage for sugar sculptures?",
+    "options": [
+      "350°F to 375°F (177°C to 190°C)",
+      "300°F to 310°F (149°C to 154°C)",
+      "212°F (100°C)",
+      "234°F to 240°F (112°C to 115°C)"
+    ],
+    "answer": "300°F to 310°F (149°C to 154°C)",
+    "explanation": "Hard crack stage occurs at 300°F-310°F where sugar sets brittle.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Complex Sugar Work"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #46 (Chocolate Tempering): What is the goal of tempering chocolate in confectionery work?",
+    "options": [
+      "Mixing chocolate with milk",
+      "Melting chocolate to maximum temperature",
+      "Removing all cocoa butter",
+      "Forming stable Beta (V) crystals for glossy shine and crisp snap"
+    ],
+    "answer": "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+    "explanation": "Tempering aligns cocoa butter into stable Form V crystalline structure.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Chocolate Tempering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #47 (Butchery Techniques): What is 'frenching' a rack of lamb or pork chops?",
+    "options": [
+      "Scraping meat and fat clean off the exposed bone ends for presentation",
+      "Grinding meat finely",
+      "Deep frying chops in butter",
+      "Marinating meat in red wine"
+    ],
+    "answer": "Scraping meat and fat clean off the exposed bone ends for presentation",
+    "explanation": "Frenching cleans rib bones to give an elegant visual presentation.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Butchery Techniques"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #48 (HACCP Safety Protocols): What does HACCP stand for in professional kitchen operations?",
+    "options": [
+      "Health And Cooking Care Program",
+      "Hazard Analysis Critical Control Point",
+      "Hygiene Assessment Critical Check Process",
+      "Heating And Cooling Control Procedure"
+    ],
+    "answer": "Hazard Analysis Critical Control Point",
+    "explanation": "HACCP is the systematic preventive approach to food safety.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "HACCP Safety Protocols"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #49 (Menu Engineering): In menu engineering analysis, what is a menu item with High Profitability but Low Popularity called?",
+    "options": [
+      "Plowhorse",
+      "Puzzle",
+      "Dog",
+      "Star"
+    ],
+    "answer": "Puzzle",
+    "explanation": "Puzzles yield high margin but sell at low volume, needing marketing effort.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Menu Engineering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #50 (Sommelier Pairing): Why do high-tannin red wines pair well with fatty red steaks?",
+    "options": [
+      "Tannins make wine taste sweeter",
+      "Tannins bind to meat proteins and fats, softening astringency on the palate",
+      "Red wine cools meat down",
+      "Fats neutralize alcohol percentage"
+    ],
+    "answer": "Tannins bind to meat proteins and fats, softening astringency on the palate",
+    "explanation": "Wine tannins bind with salivary and meat proteins, softening dry mouthfeel.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sommelier Pairing"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #51 (Sous-Vide Precision): Why is vacuum sealing crucial in sous-vide precision cooking?",
+    "options": [
+      "Dehydrates the meat",
+      "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+      "Sterilizes food from all bacteria automatically",
+      "Freezes food instantly"
+    ],
+    "answer": "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+    "explanation": "Vacuum packaging ensures direct contact between water heat and food.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sous-Vide Precision"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #52 (Molecular Gastronomy): What technique uses sodium alginate and calcium chloride to create edible liquid spheres?",
+    "options": [
+      "Gelification",
+      "Spherification",
+      "Sous-vide",
+      "Emulsification"
+    ],
+    "answer": "Spherification",
+    "explanation": "Spherification forms a thin gel membrane around liquid payloads.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Molecular Gastronomy"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #53 (Fermentation Science): Which microorganism is responsible for converting sugars to lactic acid in kimchi/sauerkraut?",
+    "options": [
+      "Saccharomyces yeast",
+      "Lactobacillus bacteria",
+      "Aspergillus mold",
+      "Penicillium mold"
+    ],
+    "answer": "Lactobacillus bacteria",
+    "explanation": "Lactic acid bacteria ferment plant sugars into tangy preserving acid.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Fermentation Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #54 (Sourdough Science): What creates the characteristic sour flavor and natural rise in authentic sourdough bread?",
+    "options": [
+      "Baking powder and vinegar",
+      "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+      "Carbonated water",
+      "Commercial instant dry yeast"
+    ],
+    "answer": "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+    "explanation": "Wild yeast produces CO2 while LAB bacteria generate acetic and lactic acids.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sourdough Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #55 (Complex Sugar Work): At what temperature range does sugar reach the 'Hard Crack' stage for sugar sculptures?",
+    "options": [
+      "212°F (100°C)",
+      "350°F to 375°F (177°C to 190°C)",
+      "234°F to 240°F (112°C to 115°C)",
+      "300°F to 310°F (149°C to 154°C)"
+    ],
+    "answer": "300°F to 310°F (149°C to 154°C)",
+    "explanation": "Hard crack stage occurs at 300°F-310°F where sugar sets brittle.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Complex Sugar Work"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #56 (Chocolate Tempering): What is the goal of tempering chocolate in confectionery work?",
+    "options": [
+      "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+      "Melting chocolate to maximum temperature",
+      "Removing all cocoa butter",
+      "Mixing chocolate with milk"
+    ],
+    "answer": "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+    "explanation": "Tempering aligns cocoa butter into stable Form V crystalline structure.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Chocolate Tempering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #57 (Butchery Techniques): What is 'frenching' a rack of lamb or pork chops?",
+    "options": [
+      "Grinding meat finely",
+      "Deep frying chops in butter",
+      "Scraping meat and fat clean off the exposed bone ends for presentation",
+      "Marinating meat in red wine"
+    ],
+    "answer": "Scraping meat and fat clean off the exposed bone ends for presentation",
+    "explanation": "Frenching cleans rib bones to give an elegant visual presentation.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Butchery Techniques"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #58 (HACCP Safety Protocols): What does HACCP stand for in professional kitchen operations?",
+    "options": [
+      "Hazard Analysis Critical Control Point",
+      "Heating And Cooling Control Procedure",
+      "Hygiene Assessment Critical Check Process",
+      "Health And Cooking Care Program"
+    ],
+    "answer": "Hazard Analysis Critical Control Point",
+    "explanation": "HACCP is the systematic preventive approach to food safety.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "HACCP Safety Protocols"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #59 (Menu Engineering): In menu engineering analysis, what is a menu item with High Profitability but Low Popularity called?",
+    "options": [
+      "Puzzle",
+      "Dog",
+      "Plowhorse",
+      "Star"
+    ],
+    "answer": "Puzzle",
+    "explanation": "Puzzles yield high margin but sell at low volume, needing marketing effort.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Menu Engineering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #60 (Sommelier Pairing): Why do high-tannin red wines pair well with fatty red steaks?",
+    "options": [
+      "Tannins bind to meat proteins and fats, softening astringency on the palate",
+      "Fats neutralize alcohol percentage",
+      "Red wine cools meat down",
+      "Tannins make wine taste sweeter"
+    ],
+    "answer": "Tannins bind to meat proteins and fats, softening astringency on the palate",
+    "explanation": "Wine tannins bind with salivary and meat proteins, softening dry mouthfeel.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sommelier Pairing"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #61 (Sous-Vide Precision): Why is vacuum sealing crucial in sous-vide precision cooking?",
+    "options": [
+      "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+      "Freezes food instantly",
+      "Sterilizes food from all bacteria automatically",
+      "Dehydrates the meat"
+    ],
+    "answer": "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+    "explanation": "Vacuum packaging ensures direct contact between water heat and food.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sous-Vide Precision"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #62 (Molecular Gastronomy): What technique uses sodium alginate and calcium chloride to create edible liquid spheres?",
+    "options": [
+      "Sous-vide",
+      "Emulsification",
+      "Gelification",
+      "Spherification"
+    ],
+    "answer": "Spherification",
+    "explanation": "Spherification forms a thin gel membrane around liquid payloads.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Molecular Gastronomy"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #63 (Fermentation Science): Which microorganism is responsible for converting sugars to lactic acid in kimchi/sauerkraut?",
+    "options": [
+      "Penicillium mold",
+      "Aspergillus mold",
+      "Saccharomyces yeast",
+      "Lactobacillus bacteria"
+    ],
+    "answer": "Lactobacillus bacteria",
+    "explanation": "Lactic acid bacteria ferment plant sugars into tangy preserving acid.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Fermentation Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #64 (Sourdough Science): What creates the characteristic sour flavor and natural rise in authentic sourdough bread?",
+    "options": [
+      "Commercial instant dry yeast",
+      "Baking powder and vinegar",
+      "Carbonated water",
+      "Symbiotic wild yeast and lactic acid bacteria culture (starter)"
+    ],
+    "answer": "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+    "explanation": "Wild yeast produces CO2 while LAB bacteria generate acetic and lactic acids.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sourdough Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #65 (Complex Sugar Work): At what temperature range does sugar reach the 'Hard Crack' stage for sugar sculptures?",
+    "options": [
+      "212°F (100°C)",
+      "234°F to 240°F (112°C to 115°C)",
+      "350°F to 375°F (177°C to 190°C)",
+      "300°F to 310°F (149°C to 154°C)"
+    ],
+    "answer": "300°F to 310°F (149°C to 154°C)",
+    "explanation": "Hard crack stage occurs at 300°F-310°F where sugar sets brittle.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Complex Sugar Work"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #66 (Chocolate Tempering): What is the goal of tempering chocolate in confectionery work?",
+    "options": [
+      "Removing all cocoa butter",
+      "Melting chocolate to maximum temperature",
+      "Mixing chocolate with milk",
+      "Forming stable Beta (V) crystals for glossy shine and crisp snap"
+    ],
+    "answer": "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+    "explanation": "Tempering aligns cocoa butter into stable Form V crystalline structure.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Chocolate Tempering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #67 (Butchery Techniques): What is 'frenching' a rack of lamb or pork chops?",
+    "options": [
+      "Grinding meat finely",
+      "Marinating meat in red wine",
+      "Deep frying chops in butter",
+      "Scraping meat and fat clean off the exposed bone ends for presentation"
+    ],
+    "answer": "Scraping meat and fat clean off the exposed bone ends for presentation",
+    "explanation": "Frenching cleans rib bones to give an elegant visual presentation.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Butchery Techniques"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #68 (HACCP Safety Protocols): What does HACCP stand for in professional kitchen operations?",
+    "options": [
+      "Heating And Cooling Control Procedure",
+      "Health And Cooking Care Program",
+      "Hazard Analysis Critical Control Point",
+      "Hygiene Assessment Critical Check Process"
+    ],
+    "answer": "Hazard Analysis Critical Control Point",
+    "explanation": "HACCP is the systematic preventive approach to food safety.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "HACCP Safety Protocols"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #69 (Menu Engineering): In menu engineering analysis, what is a menu item with High Profitability but Low Popularity called?",
+    "options": [
+      "Dog",
+      "Star",
+      "Plowhorse",
+      "Puzzle"
+    ],
+    "answer": "Puzzle",
+    "explanation": "Puzzles yield high margin but sell at low volume, needing marketing effort.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Menu Engineering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #70 (Sommelier Pairing): Why do high-tannin red wines pair well with fatty red steaks?",
+    "options": [
+      "Tannins bind to meat proteins and fats, softening astringency on the palate",
+      "Fats neutralize alcohol percentage",
+      "Red wine cools meat down",
+      "Tannins make wine taste sweeter"
+    ],
+    "answer": "Tannins bind to meat proteins and fats, softening astringency on the palate",
+    "explanation": "Wine tannins bind with salivary and meat proteins, softening dry mouthfeel.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sommelier Pairing"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #71 (Sous-Vide Precision): Why is vacuum sealing crucial in sous-vide precision cooking?",
+    "options": [
+      "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+      "Dehydrates the meat",
+      "Freezes food instantly",
+      "Sterilizes food from all bacteria automatically"
+    ],
+    "answer": "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+    "explanation": "Vacuum packaging ensures direct contact between water heat and food.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sous-Vide Precision"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #72 (Molecular Gastronomy): What technique uses sodium alginate and calcium chloride to create edible liquid spheres?",
+    "options": [
+      "Gelification",
+      "Spherification",
+      "Emulsification",
+      "Sous-vide"
+    ],
+    "answer": "Spherification",
+    "explanation": "Spherification forms a thin gel membrane around liquid payloads.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Molecular Gastronomy"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #73 (Fermentation Science): Which microorganism is responsible for converting sugars to lactic acid in kimchi/sauerkraut?",
+    "options": [
+      "Saccharomyces yeast",
+      "Aspergillus mold",
+      "Lactobacillus bacteria",
+      "Penicillium mold"
+    ],
+    "answer": "Lactobacillus bacteria",
+    "explanation": "Lactic acid bacteria ferment plant sugars into tangy preserving acid.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Fermentation Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #74 (Sourdough Science): What creates the characteristic sour flavor and natural rise in authentic sourdough bread?",
+    "options": [
+      "Carbonated water",
+      "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+      "Commercial instant dry yeast",
+      "Baking powder and vinegar"
+    ],
+    "answer": "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+    "explanation": "Wild yeast produces CO2 while LAB bacteria generate acetic and lactic acids.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sourdough Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #75 (Complex Sugar Work): At what temperature range does sugar reach the 'Hard Crack' stage for sugar sculptures?",
+    "options": [
+      "350°F to 375°F (177°C to 190°C)",
+      "234°F to 240°F (112°C to 115°C)",
+      "300°F to 310°F (149°C to 154°C)",
+      "212°F (100°C)"
+    ],
+    "answer": "300°F to 310°F (149°C to 154°C)",
+    "explanation": "Hard crack stage occurs at 300°F-310°F where sugar sets brittle.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Complex Sugar Work"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #76 (Chocolate Tempering): What is the goal of tempering chocolate in confectionery work?",
+    "options": [
+      "Mixing chocolate with milk",
+      "Removing all cocoa butter",
+      "Melting chocolate to maximum temperature",
+      "Forming stable Beta (V) crystals for glossy shine and crisp snap"
+    ],
+    "answer": "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+    "explanation": "Tempering aligns cocoa butter into stable Form V crystalline structure.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Chocolate Tempering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #77 (Butchery Techniques): What is 'frenching' a rack of lamb or pork chops?",
+    "options": [
+      "Marinating meat in red wine",
+      "Scraping meat and fat clean off the exposed bone ends for presentation",
+      "Grinding meat finely",
+      "Deep frying chops in butter"
+    ],
+    "answer": "Scraping meat and fat clean off the exposed bone ends for presentation",
+    "explanation": "Frenching cleans rib bones to give an elegant visual presentation.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Butchery Techniques"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #78 (HACCP Safety Protocols): What does HACCP stand for in professional kitchen operations?",
+    "options": [
+      "Hygiene Assessment Critical Check Process",
+      "Hazard Analysis Critical Control Point",
+      "Heating And Cooling Control Procedure",
+      "Health And Cooking Care Program"
+    ],
+    "answer": "Hazard Analysis Critical Control Point",
+    "explanation": "HACCP is the systematic preventive approach to food safety.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "HACCP Safety Protocols"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #79 (Menu Engineering): In menu engineering analysis, what is a menu item with High Profitability but Low Popularity called?",
+    "options": [
+      "Dog",
+      "Star",
+      "Plowhorse",
+      "Puzzle"
+    ],
+    "answer": "Puzzle",
+    "explanation": "Puzzles yield high margin but sell at low volume, needing marketing effort.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Menu Engineering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #80 (Sommelier Pairing): Why do high-tannin red wines pair well with fatty red steaks?",
+    "options": [
+      "Tannins bind to meat proteins and fats, softening astringency on the palate",
+      "Tannins make wine taste sweeter",
+      "Red wine cools meat down",
+      "Fats neutralize alcohol percentage"
+    ],
+    "answer": "Tannins bind to meat proteins and fats, softening astringency on the palate",
+    "explanation": "Wine tannins bind with salivary and meat proteins, softening dry mouthfeel.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sommelier Pairing"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #81 (Sous-Vide Precision): Why is vacuum sealing crucial in sous-vide precision cooking?",
+    "options": [
+      "Dehydrates the meat",
+      "Freezes food instantly",
+      "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+      "Sterilizes food from all bacteria automatically"
+    ],
+    "answer": "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+    "explanation": "Vacuum packaging ensures direct contact between water heat and food.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sous-Vide Precision"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #82 (Molecular Gastronomy): What technique uses sodium alginate and calcium chloride to create edible liquid spheres?",
+    "options": [
+      "Emulsification",
+      "Sous-vide",
+      "Gelification",
+      "Spherification"
+    ],
+    "answer": "Spherification",
+    "explanation": "Spherification forms a thin gel membrane around liquid payloads.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Molecular Gastronomy"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #83 (Fermentation Science): Which microorganism is responsible for converting sugars to lactic acid in kimchi/sauerkraut?",
+    "options": [
+      "Aspergillus mold",
+      "Lactobacillus bacteria",
+      "Penicillium mold",
+      "Saccharomyces yeast"
+    ],
+    "answer": "Lactobacillus bacteria",
+    "explanation": "Lactic acid bacteria ferment plant sugars into tangy preserving acid.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Fermentation Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #84 (Sourdough Science): What creates the characteristic sour flavor and natural rise in authentic sourdough bread?",
+    "options": [
+      "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+      "Commercial instant dry yeast",
+      "Carbonated water",
+      "Baking powder and vinegar"
+    ],
+    "answer": "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+    "explanation": "Wild yeast produces CO2 while LAB bacteria generate acetic and lactic acids.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sourdough Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #85 (Complex Sugar Work): At what temperature range does sugar reach the 'Hard Crack' stage for sugar sculptures?",
+    "options": [
+      "234°F to 240°F (112°C to 115°C)",
+      "300°F to 310°F (149°C to 154°C)",
+      "212°F (100°C)",
+      "350°F to 375°F (177°C to 190°C)"
+    ],
+    "answer": "300°F to 310°F (149°C to 154°C)",
+    "explanation": "Hard crack stage occurs at 300°F-310°F where sugar sets brittle.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Complex Sugar Work"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #86 (Chocolate Tempering): What is the goal of tempering chocolate in confectionery work?",
+    "options": [
+      "Removing all cocoa butter",
+      "Melting chocolate to maximum temperature",
+      "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+      "Mixing chocolate with milk"
+    ],
+    "answer": "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+    "explanation": "Tempering aligns cocoa butter into stable Form V crystalline structure.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Chocolate Tempering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #87 (Butchery Techniques): What is 'frenching' a rack of lamb or pork chops?",
+    "options": [
+      "Scraping meat and fat clean off the exposed bone ends for presentation",
+      "Marinating meat in red wine",
+      "Grinding meat finely",
+      "Deep frying chops in butter"
+    ],
+    "answer": "Scraping meat and fat clean off the exposed bone ends for presentation",
+    "explanation": "Frenching cleans rib bones to give an elegant visual presentation.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Butchery Techniques"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #88 (HACCP Safety Protocols): What does HACCP stand for in professional kitchen operations?",
+    "options": [
+      "Heating And Cooling Control Procedure",
+      "Hazard Analysis Critical Control Point",
+      "Health And Cooking Care Program",
+      "Hygiene Assessment Critical Check Process"
+    ],
+    "answer": "Hazard Analysis Critical Control Point",
+    "explanation": "HACCP is the systematic preventive approach to food safety.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "HACCP Safety Protocols"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #89 (Menu Engineering): In menu engineering analysis, what is a menu item with High Profitability but Low Popularity called?",
+    "options": [
+      "Dog",
+      "Plowhorse",
+      "Star",
+      "Puzzle"
+    ],
+    "answer": "Puzzle",
+    "explanation": "Puzzles yield high margin but sell at low volume, needing marketing effort.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Menu Engineering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #90 (Sommelier Pairing): Why do high-tannin red wines pair well with fatty red steaks?",
+    "options": [
+      "Tannins make wine taste sweeter",
+      "Fats neutralize alcohol percentage",
+      "Tannins bind to meat proteins and fats, softening astringency on the palate",
+      "Red wine cools meat down"
+    ],
+    "answer": "Tannins bind to meat proteins and fats, softening astringency on the palate",
+    "explanation": "Wine tannins bind with salivary and meat proteins, softening dry mouthfeel.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sommelier Pairing"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #91 (Sous-Vide Precision): Why is vacuum sealing crucial in sous-vide precision cooking?",
+    "options": [
+      "Freezes food instantly",
+      "Dehydrates the meat",
+      "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+      "Sterilizes food from all bacteria automatically"
+    ],
+    "answer": "Ensures efficient heat transfer from water bath without air barriers or moisture loss",
+    "explanation": "Vacuum packaging ensures direct contact between water heat and food.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sous-Vide Precision"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #92 (Molecular Gastronomy): What technique uses sodium alginate and calcium chloride to create edible liquid spheres?",
+    "options": [
+      "Gelification",
+      "Sous-vide",
+      "Spherification",
+      "Emulsification"
+    ],
+    "answer": "Spherification",
+    "explanation": "Spherification forms a thin gel membrane around liquid payloads.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Molecular Gastronomy"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #93 (Fermentation Science): Which microorganism is responsible for converting sugars to lactic acid in kimchi/sauerkraut?",
+    "options": [
+      "Lactobacillus bacteria",
+      "Penicillium mold",
+      "Aspergillus mold",
+      "Saccharomyces yeast"
+    ],
+    "answer": "Lactobacillus bacteria",
+    "explanation": "Lactic acid bacteria ferment plant sugars into tangy preserving acid.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Fermentation Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #94 (Sourdough Science): What creates the characteristic sour flavor and natural rise in authentic sourdough bread?",
+    "options": [
+      "Baking powder and vinegar",
+      "Carbonated water",
+      "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+      "Commercial instant dry yeast"
+    ],
+    "answer": "Symbiotic wild yeast and lactic acid bacteria culture (starter)",
+    "explanation": "Wild yeast produces CO2 while LAB bacteria generate acetic and lactic acids.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sourdough Science"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #95 (Complex Sugar Work): At what temperature range does sugar reach the 'Hard Crack' stage for sugar sculptures?",
+    "options": [
+      "234°F to 240°F (112°C to 115°C)",
+      "300°F to 310°F (149°C to 154°C)",
+      "212°F (100°C)",
+      "350°F to 375°F (177°C to 190°C)"
+    ],
+    "answer": "300°F to 310°F (149°C to 154°C)",
+    "explanation": "Hard crack stage occurs at 300°F-310°F where sugar sets brittle.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Complex Sugar Work"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #96 (Chocolate Tempering): What is the goal of tempering chocolate in confectionery work?",
+    "options": [
+      "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+      "Mixing chocolate with milk",
+      "Removing all cocoa butter",
+      "Melting chocolate to maximum temperature"
+    ],
+    "answer": "Forming stable Beta (V) crystals for glossy shine and crisp snap",
+    "explanation": "Tempering aligns cocoa butter into stable Form V crystalline structure.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Chocolate Tempering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #97 (Butchery Techniques): What is 'frenching' a rack of lamb or pork chops?",
+    "options": [
+      "Grinding meat finely",
+      "Deep frying chops in butter",
+      "Marinating meat in red wine",
+      "Scraping meat and fat clean off the exposed bone ends for presentation"
+    ],
+    "answer": "Scraping meat and fat clean off the exposed bone ends for presentation",
+    "explanation": "Frenching cleans rib bones to give an elegant visual presentation.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Butchery Techniques"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #98 (HACCP Safety Protocols): What does HACCP stand for in professional kitchen operations?",
+    "options": [
+      "Hygiene Assessment Critical Check Process",
+      "Health And Cooking Care Program",
+      "Hazard Analysis Critical Control Point",
+      "Heating And Cooling Control Procedure"
+    ],
+    "answer": "Hazard Analysis Critical Control Point",
+    "explanation": "HACCP is the systematic preventive approach to food safety.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "HACCP Safety Protocols"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #99 (Menu Engineering): In menu engineering analysis, what is a menu item with High Profitability but Low Popularity called?",
+    "options": [
+      "Star",
+      "Plowhorse",
+      "Dog",
+      "Puzzle"
+    ],
+    "answer": "Puzzle",
+    "explanation": "Puzzles yield high margin but sell at low volume, needing marketing effort.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Menu Engineering"
+  },
+  {
+    "question": "[Cooking - Hard] Case Study #100 (Sommelier Pairing): Why do high-tannin red wines pair well with fatty red steaks?",
+    "options": [
+      "Tannins make wine taste sweeter",
+      "Red wine cools meat down",
+      "Tannins bind to meat proteins and fats, softening astringency on the palate",
+      "Fats neutralize alcohol percentage"
+    ],
+    "answer": "Tannins bind to meat proteins and fats, softening astringency on the palate",
+    "explanation": "Wine tannins bind with salivary and meat proteins, softening dry mouthfeel.",
+    "difficulty": "Hard",
+    "skill": "Cooking",
+    "topic": "Sommelier Pairing"
+  }
+]

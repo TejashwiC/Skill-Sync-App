@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "Which CSS property defines main-axis alignment in Flexbox?",
+    "options": [
+      "justify-content",
+      "align-content",
+      "flex-direction",
+      "align-items"
+    ],
+    "answer": "justify-content",
+    "explanation": "justify-content aligns flex items along main axis.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Flexbox"
+  },
+  {
+    "question": "Which CSS Grid property defines template columns?",
+    "options": [
+      "grid-template-columns",
+      "column-template",
+      "grid-columns",
+      "grid-auto-columns"
+    ],
+    "answer": "grid-template-columns",
+    "explanation": "grid-template-columns sets explicit grid column track sizes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Grid"
+  },
+  {
+    "question": "Which HTML meta tag ensures correct mobile viewport scaling?",
+    "options": [
+      "<meta name='scale' content='1'>",
+      "<meta name='screen' content='mobile'>",
+      "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+      "<meta name='responsive' content='true'>"
+    ],
+    "answer": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+    "explanation": "Viewport meta tag sets mobile layout width to device screen width.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Responsive Design"
+  },
+  {
+    "question": "Which CSS media query targets screen widths up to 768px?",
+    "options": [
+      "@media (min-width: 768px)",
+      "@media screen and 768px",
+      "@media (max-width: 768px)",
+      "@media mobile 768px"
+    ],
+    "answer": "@media (max-width: 768px)",
+    "explanation": "max-width: 768px applies styles for screens 768px wide or smaller.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Media Queries"
+  },
+  {
+    "question": "Which CSS property specifies duration of transition effect?",
+    "options": [
+      "transition-duration",
+      "animation-speed",
+      "transition-time",
+      "speed"
+    ],
+    "answer": "transition-duration",
+    "explanation": "transition-duration defines how long transition takes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Transitions & Animations"
+  },
+  {
+    "question": "Which HTML5 semantic tag represents self-contained content like blog posts?",
+    "options": [
+      "<section>",
+      "<article>",
+      "<div>",
+      "<aside>"
+    ],
+    "answer": "<article>",
+    "explanation": "<article> represents independent reusable content.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "HTML5 Semantic Tags"
+  },
+  {
+    "question": "Which CSS pseudo-class targets an element when mouse cursor hovers over it?",
+    "options": [
+      ":hover",
+      ":active",
+      ":focus",
+      ":visited"
+    ],
+    "answer": ":hover",
+    "explanation": ":hover selects elements when hovered by pointer.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Pseudo-classes"
+  },
+  {
+    "question": "What CSS property controls element stacking order along z-axis?",
+    "options": [
+      "stack-order",
+      "elevation",
+      "z-index",
+      "layer-index"
+    ],
+    "answer": "z-index",
+    "explanation": "z-index sets 3D stacking order for positioned elements.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Z-Index & Stacking"
+  },
+  {
+    "question": "How do you declare a custom CSS property (variable)?",
+    "options": [
+      "@primary-color: #333;",
+      "$primary-color: #333;",
+      "var-primary-color: #333;",
+      "--primary-color: #333;"
+    ],
+    "answer": "--primary-color: #333;",
+    "explanation": "CSS variables are prefixed with double hyphens '--'.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Variables"
+  },
+  {
+    "question": "Which CSS rule loads external web font files?",
+    "options": [
+      "@font-family",
+      "@font-face",
+      "@import-font",
+      "@web-font"
+    ],
+    "answer": "@font-face",
+    "explanation": "@font-face defines custom font family name and source URL.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Web Fonts"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #11 (Flexbox): Which CSS property defines main-axis alignment in Flexbox?",
+    "options": [
+      "align-items",
+      "flex-direction",
+      "justify-content",
+      "align-content"
+    ],
+    "answer": "justify-content",
+    "explanation": "justify-content aligns flex items along main axis.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Flexbox"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #12 (CSS Grid): Which CSS Grid property defines template columns?",
+    "options": [
+      "grid-auto-columns",
+      "grid-template-columns",
+      "column-template",
+      "grid-columns"
+    ],
+    "answer": "grid-template-columns",
+    "explanation": "grid-template-columns sets explicit grid column track sizes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Grid"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #13 (Responsive Design): Which HTML meta tag ensures correct mobile viewport scaling?",
+    "options": [
+      "<meta name='scale' content='1'>",
+      "<meta name='screen' content='mobile'>",
+      "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+      "<meta name='responsive' content='true'>"
+    ],
+    "answer": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+    "explanation": "Viewport meta tag sets mobile layout width to device screen width.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Responsive Design"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #14 (Media Queries): Which CSS media query targets screen widths up to 768px?",
+    "options": [
+      "@media (min-width: 768px)",
+      "@media screen and 768px",
+      "@media mobile 768px",
+      "@media (max-width: 768px)"
+    ],
+    "answer": "@media (max-width: 768px)",
+    "explanation": "max-width: 768px applies styles for screens 768px wide or smaller.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Media Queries"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #15 (Transitions & Animations): Which CSS property specifies duration of transition effect?",
+    "options": [
+      "transition-duration",
+      "speed",
+      "animation-speed",
+      "transition-time"
+    ],
+    "answer": "transition-duration",
+    "explanation": "transition-duration defines how long transition takes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Transitions & Animations"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #16 (HTML5 Semantic Tags): Which HTML5 semantic tag represents self-contained content like blog posts?",
+    "options": [
+      "<article>",
+      "<aside>",
+      "<div>",
+      "<section>"
+    ],
+    "answer": "<article>",
+    "explanation": "<article> represents independent reusable content.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "HTML5 Semantic Tags"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #17 (Pseudo-classes): Which CSS pseudo-class targets an element when mouse cursor hovers over it?",
+    "options": [
+      ":visited",
+      ":active",
+      ":hover",
+      ":focus"
+    ],
+    "answer": ":hover",
+    "explanation": ":hover selects elements when hovered by pointer.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Pseudo-classes"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #18 (Z-Index & Stacking): What CSS property controls element stacking order along z-axis?",
+    "options": [
+      "layer-index",
+      "z-index",
+      "stack-order",
+      "elevation"
+    ],
+    "answer": "z-index",
+    "explanation": "z-index sets 3D stacking order for positioned elements.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Z-Index & Stacking"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #19 (CSS Variables): How do you declare a custom CSS property (variable)?",
+    "options": [
+      "var-primary-color: #333;",
+      "--primary-color: #333;",
+      "@primary-color: #333;",
+      "$primary-color: #333;"
+    ],
+    "answer": "--primary-color: #333;",
+    "explanation": "CSS variables are prefixed with double hyphens '--'.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Variables"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #20 (Web Fonts): Which CSS rule loads external web font files?",
+    "options": [
+      "@font-family",
+      "@import-font",
+      "@font-face",
+      "@web-font"
+    ],
+    "answer": "@font-face",
+    "explanation": "@font-face defines custom font family name and source URL.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Web Fonts"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #21 (Flexbox): Which CSS property defines main-axis alignment in Flexbox?",
+    "options": [
+      "justify-content",
+      "align-content",
+      "flex-direction",
+      "align-items"
+    ],
+    "answer": "justify-content",
+    "explanation": "justify-content aligns flex items along main axis.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Flexbox"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #22 (CSS Grid): Which CSS Grid property defines template columns?",
+    "options": [
+      "grid-columns",
+      "grid-auto-columns",
+      "grid-template-columns",
+      "column-template"
+    ],
+    "answer": "grid-template-columns",
+    "explanation": "grid-template-columns sets explicit grid column track sizes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Grid"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #23 (Responsive Design): Which HTML meta tag ensures correct mobile viewport scaling?",
+    "options": [
+      "<meta name='screen' content='mobile'>",
+      "<meta name='scale' content='1'>",
+      "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+      "<meta name='responsive' content='true'>"
+    ],
+    "answer": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+    "explanation": "Viewport meta tag sets mobile layout width to device screen width.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Responsive Design"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #24 (Media Queries): Which CSS media query targets screen widths up to 768px?",
+    "options": [
+      "@media (max-width: 768px)",
+      "@media screen and 768px",
+      "@media (min-width: 768px)",
+      "@media mobile 768px"
+    ],
+    "answer": "@media (max-width: 768px)",
+    "explanation": "max-width: 768px applies styles for screens 768px wide or smaller.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Media Queries"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #25 (Transitions & Animations): Which CSS property specifies duration of transition effect?",
+    "options": [
+      "animation-speed",
+      "transition-duration",
+      "transition-time",
+      "speed"
+    ],
+    "answer": "transition-duration",
+    "explanation": "transition-duration defines how long transition takes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Transitions & Animations"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #26 (HTML5 Semantic Tags): Which HTML5 semantic tag represents self-contained content like blog posts?",
+    "options": [
+      "<article>",
+      "<div>",
+      "<section>",
+      "<aside>"
+    ],
+    "answer": "<article>",
+    "explanation": "<article> represents independent reusable content.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "HTML5 Semantic Tags"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #27 (Pseudo-classes): Which CSS pseudo-class targets an element when mouse cursor hovers over it?",
+    "options": [
+      ":focus",
+      ":active",
+      ":hover",
+      ":visited"
+    ],
+    "answer": ":hover",
+    "explanation": ":hover selects elements when hovered by pointer.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Pseudo-classes"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #28 (Z-Index & Stacking): What CSS property controls element stacking order along z-axis?",
+    "options": [
+      "elevation",
+      "stack-order",
+      "z-index",
+      "layer-index"
+    ],
+    "answer": "z-index",
+    "explanation": "z-index sets 3D stacking order for positioned elements.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Z-Index & Stacking"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #29 (CSS Variables): How do you declare a custom CSS property (variable)?",
+    "options": [
+      "$primary-color: #333;",
+      "--primary-color: #333;",
+      "@primary-color: #333;",
+      "var-primary-color: #333;"
+    ],
+    "answer": "--primary-color: #333;",
+    "explanation": "CSS variables are prefixed with double hyphens '--'.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Variables"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #30 (Web Fonts): Which CSS rule loads external web font files?",
+    "options": [
+      "@import-font",
+      "@font-face",
+      "@web-font",
+      "@font-family"
+    ],
+    "answer": "@font-face",
+    "explanation": "@font-face defines custom font family name and source URL.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Web Fonts"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #31 (Flexbox): Which CSS property defines main-axis alignment in Flexbox?",
+    "options": [
+      "align-content",
+      "flex-direction",
+      "align-items",
+      "justify-content"
+    ],
+    "answer": "justify-content",
+    "explanation": "justify-content aligns flex items along main axis.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Flexbox"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #32 (CSS Grid): Which CSS Grid property defines template columns?",
+    "options": [
+      "grid-template-columns",
+      "grid-auto-columns",
+      "column-template",
+      "grid-columns"
+    ],
+    "answer": "grid-template-columns",
+    "explanation": "grid-template-columns sets explicit grid column track sizes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Grid"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #33 (Responsive Design): Which HTML meta tag ensures correct mobile viewport scaling?",
+    "options": [
+      "<meta name='screen' content='mobile'>",
+      "<meta name='responsive' content='true'>",
+      "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+      "<meta name='scale' content='1'>"
+    ],
+    "answer": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+    "explanation": "Viewport meta tag sets mobile layout width to device screen width.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Responsive Design"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #34 (Media Queries): Which CSS media query targets screen widths up to 768px?",
+    "options": [
+      "@media screen and 768px",
+      "@media mobile 768px",
+      "@media (min-width: 768px)",
+      "@media (max-width: 768px)"
+    ],
+    "answer": "@media (max-width: 768px)",
+    "explanation": "max-width: 768px applies styles for screens 768px wide or smaller.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Media Queries"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #35 (Transitions & Animations): Which CSS property specifies duration of transition effect?",
+    "options": [
+      "animation-speed",
+      "speed",
+      "transition-duration",
+      "transition-time"
+    ],
+    "answer": "transition-duration",
+    "explanation": "transition-duration defines how long transition takes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Transitions & Animations"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #36 (HTML5 Semantic Tags): Which HTML5 semantic tag represents self-contained content like blog posts?",
+    "options": [
+      "<section>",
+      "<div>",
+      "<article>",
+      "<aside>"
+    ],
+    "answer": "<article>",
+    "explanation": "<article> represents independent reusable content.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "HTML5 Semantic Tags"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #37 (Pseudo-classes): Which CSS pseudo-class targets an element when mouse cursor hovers over it?",
+    "options": [
+      ":active",
+      ":visited",
+      ":focus",
+      ":hover"
+    ],
+    "answer": ":hover",
+    "explanation": ":hover selects elements when hovered by pointer.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Pseudo-classes"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #38 (Z-Index & Stacking): What CSS property controls element stacking order along z-axis?",
+    "options": [
+      "z-index",
+      "stack-order",
+      "elevation",
+      "layer-index"
+    ],
+    "answer": "z-index",
+    "explanation": "z-index sets 3D stacking order for positioned elements.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Z-Index & Stacking"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #39 (CSS Variables): How do you declare a custom CSS property (variable)?",
+    "options": [
+      "--primary-color: #333;",
+      "$primary-color: #333;",
+      "@primary-color: #333;",
+      "var-primary-color: #333;"
+    ],
+    "answer": "--primary-color: #333;",
+    "explanation": "CSS variables are prefixed with double hyphens '--'.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Variables"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #40 (Web Fonts): Which CSS rule loads external web font files?",
+    "options": [
+      "@import-font",
+      "@font-family",
+      "@web-font",
+      "@font-face"
+    ],
+    "answer": "@font-face",
+    "explanation": "@font-face defines custom font family name and source URL.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Web Fonts"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #41 (Flexbox): Which CSS property defines main-axis alignment in Flexbox?",
+    "options": [
+      "align-items",
+      "justify-content",
+      "align-content",
+      "flex-direction"
+    ],
+    "answer": "justify-content",
+    "explanation": "justify-content aligns flex items along main axis.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Flexbox"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #42 (CSS Grid): Which CSS Grid property defines template columns?",
+    "options": [
+      "grid-auto-columns",
+      "grid-template-columns",
+      "grid-columns",
+      "column-template"
+    ],
+    "answer": "grid-template-columns",
+    "explanation": "grid-template-columns sets explicit grid column track sizes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Grid"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #43 (Responsive Design): Which HTML meta tag ensures correct mobile viewport scaling?",
+    "options": [
+      "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+      "<meta name='responsive' content='true'>",
+      "<meta name='scale' content='1'>",
+      "<meta name='screen' content='mobile'>"
+    ],
+    "answer": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+    "explanation": "Viewport meta tag sets mobile layout width to device screen width.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Responsive Design"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #44 (Media Queries): Which CSS media query targets screen widths up to 768px?",
+    "options": [
+      "@media (max-width: 768px)",
+      "@media mobile 768px",
+      "@media screen and 768px",
+      "@media (min-width: 768px)"
+    ],
+    "answer": "@media (max-width: 768px)",
+    "explanation": "max-width: 768px applies styles for screens 768px wide or smaller.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Media Queries"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #45 (Transitions & Animations): Which CSS property specifies duration of transition effect?",
+    "options": [
+      "speed",
+      "animation-speed",
+      "transition-duration",
+      "transition-time"
+    ],
+    "answer": "transition-duration",
+    "explanation": "transition-duration defines how long transition takes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Transitions & Animations"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #46 (HTML5 Semantic Tags): Which HTML5 semantic tag represents self-contained content like blog posts?",
+    "options": [
+      "<div>",
+      "<aside>",
+      "<article>",
+      "<section>"
+    ],
+    "answer": "<article>",
+    "explanation": "<article> represents independent reusable content.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "HTML5 Semantic Tags"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #47 (Pseudo-classes): Which CSS pseudo-class targets an element when mouse cursor hovers over it?",
+    "options": [
+      ":focus",
+      ":visited",
+      ":active",
+      ":hover"
+    ],
+    "answer": ":hover",
+    "explanation": ":hover selects elements when hovered by pointer.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Pseudo-classes"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #48 (Z-Index & Stacking): What CSS property controls element stacking order along z-axis?",
+    "options": [
+      "z-index",
+      "layer-index",
+      "stack-order",
+      "elevation"
+    ],
+    "answer": "z-index",
+    "explanation": "z-index sets 3D stacking order for positioned elements.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Z-Index & Stacking"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #49 (CSS Variables): How do you declare a custom CSS property (variable)?",
+    "options": [
+      "--primary-color: #333;",
+      "$primary-color: #333;",
+      "@primary-color: #333;",
+      "var-primary-color: #333;"
+    ],
+    "answer": "--primary-color: #333;",
+    "explanation": "CSS variables are prefixed with double hyphens '--'.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Variables"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #50 (Web Fonts): Which CSS rule loads external web font files?",
+    "options": [
+      "@web-font",
+      "@font-family",
+      "@font-face",
+      "@import-font"
+    ],
+    "answer": "@font-face",
+    "explanation": "@font-face defines custom font family name and source URL.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Web Fonts"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #51 (Flexbox): Which CSS property defines main-axis alignment in Flexbox?",
+    "options": [
+      "flex-direction",
+      "justify-content",
+      "align-items",
+      "align-content"
+    ],
+    "answer": "justify-content",
+    "explanation": "justify-content aligns flex items along main axis.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Flexbox"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #52 (CSS Grid): Which CSS Grid property defines template columns?",
+    "options": [
+      "grid-template-columns",
+      "grid-auto-columns",
+      "column-template",
+      "grid-columns"
+    ],
+    "answer": "grid-template-columns",
+    "explanation": "grid-template-columns sets explicit grid column track sizes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Grid"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #53 (Responsive Design): Which HTML meta tag ensures correct mobile viewport scaling?",
+    "options": [
+      "<meta name='scale' content='1'>",
+      "<meta name='responsive' content='true'>",
+      "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+      "<meta name='screen' content='mobile'>"
+    ],
+    "answer": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+    "explanation": "Viewport meta tag sets mobile layout width to device screen width.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Responsive Design"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #54 (Media Queries): Which CSS media query targets screen widths up to 768px?",
+    "options": [
+      "@media (max-width: 768px)",
+      "@media screen and 768px",
+      "@media (min-width: 768px)",
+      "@media mobile 768px"
+    ],
+    "answer": "@media (max-width: 768px)",
+    "explanation": "max-width: 768px applies styles for screens 768px wide or smaller.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Media Queries"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #55 (Transitions & Animations): Which CSS property specifies duration of transition effect?",
+    "options": [
+      "animation-speed",
+      "transition-time",
+      "transition-duration",
+      "speed"
+    ],
+    "answer": "transition-duration",
+    "explanation": "transition-duration defines how long transition takes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Transitions & Animations"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #56 (HTML5 Semantic Tags): Which HTML5 semantic tag represents self-contained content like blog posts?",
+    "options": [
+      "<section>",
+      "<article>",
+      "<div>",
+      "<aside>"
+    ],
+    "answer": "<article>",
+    "explanation": "<article> represents independent reusable content.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "HTML5 Semantic Tags"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #57 (Pseudo-classes): Which CSS pseudo-class targets an element when mouse cursor hovers over it?",
+    "options": [
+      ":focus",
+      ":visited",
+      ":active",
+      ":hover"
+    ],
+    "answer": ":hover",
+    "explanation": ":hover selects elements when hovered by pointer.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Pseudo-classes"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #58 (Z-Index & Stacking): What CSS property controls element stacking order along z-axis?",
+    "options": [
+      "z-index",
+      "layer-index",
+      "stack-order",
+      "elevation"
+    ],
+    "answer": "z-index",
+    "explanation": "z-index sets 3D stacking order for positioned elements.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Z-Index & Stacking"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #59 (CSS Variables): How do you declare a custom CSS property (variable)?",
+    "options": [
+      "--primary-color: #333;",
+      "$primary-color: #333;",
+      "@primary-color: #333;",
+      "var-primary-color: #333;"
+    ],
+    "answer": "--primary-color: #333;",
+    "explanation": "CSS variables are prefixed with double hyphens '--'.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Variables"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #60 (Web Fonts): Which CSS rule loads external web font files?",
+    "options": [
+      "@import-font",
+      "@web-font",
+      "@font-face",
+      "@font-family"
+    ],
+    "answer": "@font-face",
+    "explanation": "@font-face defines custom font family name and source URL.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Web Fonts"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #61 (Flexbox): Which CSS property defines main-axis alignment in Flexbox?",
+    "options": [
+      "align-items",
+      "flex-direction",
+      "justify-content",
+      "align-content"
+    ],
+    "answer": "justify-content",
+    "explanation": "justify-content aligns flex items along main axis.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Flexbox"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #62 (CSS Grid): Which CSS Grid property defines template columns?",
+    "options": [
+      "grid-template-columns",
+      "grid-columns",
+      "grid-auto-columns",
+      "column-template"
+    ],
+    "answer": "grid-template-columns",
+    "explanation": "grid-template-columns sets explicit grid column track sizes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Grid"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #63 (Responsive Design): Which HTML meta tag ensures correct mobile viewport scaling?",
+    "options": [
+      "<meta name='screen' content='mobile'>",
+      "<meta name='scale' content='1'>",
+      "<meta name='responsive' content='true'>",
+      "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+    ],
+    "answer": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+    "explanation": "Viewport meta tag sets mobile layout width to device screen width.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Responsive Design"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #64 (Media Queries): Which CSS media query targets screen widths up to 768px?",
+    "options": [
+      "@media (max-width: 768px)",
+      "@media (min-width: 768px)",
+      "@media mobile 768px",
+      "@media screen and 768px"
+    ],
+    "answer": "@media (max-width: 768px)",
+    "explanation": "max-width: 768px applies styles for screens 768px wide or smaller.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Media Queries"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #65 (Transitions & Animations): Which CSS property specifies duration of transition effect?",
+    "options": [
+      "animation-speed",
+      "transition-time",
+      "speed",
+      "transition-duration"
+    ],
+    "answer": "transition-duration",
+    "explanation": "transition-duration defines how long transition takes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Transitions & Animations"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #66 (HTML5 Semantic Tags): Which HTML5 semantic tag represents self-contained content like blog posts?",
+    "options": [
+      "<section>",
+      "<aside>",
+      "<article>",
+      "<div>"
+    ],
+    "answer": "<article>",
+    "explanation": "<article> represents independent reusable content.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "HTML5 Semantic Tags"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #67 (Pseudo-classes): Which CSS pseudo-class targets an element when mouse cursor hovers over it?",
+    "options": [
+      ":focus",
+      ":hover",
+      ":visited",
+      ":active"
+    ],
+    "answer": ":hover",
+    "explanation": ":hover selects elements when hovered by pointer.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Pseudo-classes"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #68 (Z-Index & Stacking): What CSS property controls element stacking order along z-axis?",
+    "options": [
+      "stack-order",
+      "z-index",
+      "elevation",
+      "layer-index"
+    ],
+    "answer": "z-index",
+    "explanation": "z-index sets 3D stacking order for positioned elements.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Z-Index & Stacking"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #69 (CSS Variables): How do you declare a custom CSS property (variable)?",
+    "options": [
+      "var-primary-color: #333;",
+      "--primary-color: #333;",
+      "@primary-color: #333;",
+      "$primary-color: #333;"
+    ],
+    "answer": "--primary-color: #333;",
+    "explanation": "CSS variables are prefixed with double hyphens '--'.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Variables"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #70 (Web Fonts): Which CSS rule loads external web font files?",
+    "options": [
+      "@web-font",
+      "@import-font",
+      "@font-family",
+      "@font-face"
+    ],
+    "answer": "@font-face",
+    "explanation": "@font-face defines custom font family name and source URL.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Web Fonts"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #71 (Flexbox): Which CSS property defines main-axis alignment in Flexbox?",
+    "options": [
+      "align-items",
+      "justify-content",
+      "align-content",
+      "flex-direction"
+    ],
+    "answer": "justify-content",
+    "explanation": "justify-content aligns flex items along main axis.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Flexbox"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #72 (CSS Grid): Which CSS Grid property defines template columns?",
+    "options": [
+      "grid-auto-columns",
+      "column-template",
+      "grid-columns",
+      "grid-template-columns"
+    ],
+    "answer": "grid-template-columns",
+    "explanation": "grid-template-columns sets explicit grid column track sizes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Grid"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #73 (Responsive Design): Which HTML meta tag ensures correct mobile viewport scaling?",
+    "options": [
+      "<meta name='responsive' content='true'>",
+      "<meta name='scale' content='1'>",
+      "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+      "<meta name='screen' content='mobile'>"
+    ],
+    "answer": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+    "explanation": "Viewport meta tag sets mobile layout width to device screen width.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Responsive Design"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #74 (Media Queries): Which CSS media query targets screen widths up to 768px?",
+    "options": [
+      "@media screen and 768px",
+      "@media (max-width: 768px)",
+      "@media (min-width: 768px)",
+      "@media mobile 768px"
+    ],
+    "answer": "@media (max-width: 768px)",
+    "explanation": "max-width: 768px applies styles for screens 768px wide or smaller.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Media Queries"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #75 (Transitions & Animations): Which CSS property specifies duration of transition effect?",
+    "options": [
+      "transition-duration",
+      "speed",
+      "animation-speed",
+      "transition-time"
+    ],
+    "answer": "transition-duration",
+    "explanation": "transition-duration defines how long transition takes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Transitions & Animations"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #76 (HTML5 Semantic Tags): Which HTML5 semantic tag represents self-contained content like blog posts?",
+    "options": [
+      "<aside>",
+      "<section>",
+      "<article>",
+      "<div>"
+    ],
+    "answer": "<article>",
+    "explanation": "<article> represents independent reusable content.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "HTML5 Semantic Tags"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #77 (Pseudo-classes): Which CSS pseudo-class targets an element when mouse cursor hovers over it?",
+    "options": [
+      ":hover",
+      ":active",
+      ":focus",
+      ":visited"
+    ],
+    "answer": ":hover",
+    "explanation": ":hover selects elements when hovered by pointer.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Pseudo-classes"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #78 (Z-Index & Stacking): What CSS property controls element stacking order along z-axis?",
+    "options": [
+      "elevation",
+      "stack-order",
+      "z-index",
+      "layer-index"
+    ],
+    "answer": "z-index",
+    "explanation": "z-index sets 3D stacking order for positioned elements.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Z-Index & Stacking"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #79 (CSS Variables): How do you declare a custom CSS property (variable)?",
+    "options": [
+      "$primary-color: #333;",
+      "--primary-color: #333;",
+      "var-primary-color: #333;",
+      "@primary-color: #333;"
+    ],
+    "answer": "--primary-color: #333;",
+    "explanation": "CSS variables are prefixed with double hyphens '--'.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Variables"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #80 (Web Fonts): Which CSS rule loads external web font files?",
+    "options": [
+      "@font-family",
+      "@web-font",
+      "@import-font",
+      "@font-face"
+    ],
+    "answer": "@font-face",
+    "explanation": "@font-face defines custom font family name and source URL.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Web Fonts"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #81 (Flexbox): Which CSS property defines main-axis alignment in Flexbox?",
+    "options": [
+      "justify-content",
+      "align-content",
+      "flex-direction",
+      "align-items"
+    ],
+    "answer": "justify-content",
+    "explanation": "justify-content aligns flex items along main axis.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Flexbox"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #82 (CSS Grid): Which CSS Grid property defines template columns?",
+    "options": [
+      "grid-columns",
+      "grid-template-columns",
+      "column-template",
+      "grid-auto-columns"
+    ],
+    "answer": "grid-template-columns",
+    "explanation": "grid-template-columns sets explicit grid column track sizes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Grid"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #83 (Responsive Design): Which HTML meta tag ensures correct mobile viewport scaling?",
+    "options": [
+      "<meta name='scale' content='1'>",
+      "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+      "<meta name='responsive' content='true'>",
+      "<meta name='screen' content='mobile'>"
+    ],
+    "answer": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+    "explanation": "Viewport meta tag sets mobile layout width to device screen width.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Responsive Design"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #84 (Media Queries): Which CSS media query targets screen widths up to 768px?",
+    "options": [
+      "@media screen and 768px",
+      "@media mobile 768px",
+      "@media (min-width: 768px)",
+      "@media (max-width: 768px)"
+    ],
+    "answer": "@media (max-width: 768px)",
+    "explanation": "max-width: 768px applies styles for screens 768px wide or smaller.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Media Queries"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #85 (Transitions & Animations): Which CSS property specifies duration of transition effect?",
+    "options": [
+      "transition-time",
+      "speed",
+      "transition-duration",
+      "animation-speed"
+    ],
+    "answer": "transition-duration",
+    "explanation": "transition-duration defines how long transition takes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Transitions & Animations"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #86 (HTML5 Semantic Tags): Which HTML5 semantic tag represents self-contained content like blog posts?",
+    "options": [
+      "<article>",
+      "<section>",
+      "<div>",
+      "<aside>"
+    ],
+    "answer": "<article>",
+    "explanation": "<article> represents independent reusable content.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "HTML5 Semantic Tags"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #87 (Pseudo-classes): Which CSS pseudo-class targets an element when mouse cursor hovers over it?",
+    "options": [
+      ":focus",
+      ":visited",
+      ":hover",
+      ":active"
+    ],
+    "answer": ":hover",
+    "explanation": ":hover selects elements when hovered by pointer.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Pseudo-classes"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #88 (Z-Index & Stacking): What CSS property controls element stacking order along z-axis?",
+    "options": [
+      "stack-order",
+      "z-index",
+      "elevation",
+      "layer-index"
+    ],
+    "answer": "z-index",
+    "explanation": "z-index sets 3D stacking order for positioned elements.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Z-Index & Stacking"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #89 (CSS Variables): How do you declare a custom CSS property (variable)?",
+    "options": [
+      "$primary-color: #333;",
+      "@primary-color: #333;",
+      "var-primary-color: #333;",
+      "--primary-color: #333;"
+    ],
+    "answer": "--primary-color: #333;",
+    "explanation": "CSS variables are prefixed with double hyphens '--'.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Variables"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #90 (Web Fonts): Which CSS rule loads external web font files?",
+    "options": [
+      "@import-font",
+      "@font-face",
+      "@font-family",
+      "@web-font"
+    ],
+    "answer": "@font-face",
+    "explanation": "@font-face defines custom font family name and source URL.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Web Fonts"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #91 (Flexbox): Which CSS property defines main-axis alignment in Flexbox?",
+    "options": [
+      "align-items",
+      "justify-content",
+      "flex-direction",
+      "align-content"
+    ],
+    "answer": "justify-content",
+    "explanation": "justify-content aligns flex items along main axis.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Flexbox"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #92 (CSS Grid): Which CSS Grid property defines template columns?",
+    "options": [
+      "grid-columns",
+      "grid-auto-columns",
+      "column-template",
+      "grid-template-columns"
+    ],
+    "answer": "grid-template-columns",
+    "explanation": "grid-template-columns sets explicit grid column track sizes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Grid"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #93 (Responsive Design): Which HTML meta tag ensures correct mobile viewport scaling?",
+    "options": [
+      "<meta name='screen' content='mobile'>",
+      "<meta name='scale' content='1'>",
+      "<meta name='responsive' content='true'>",
+      "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+    ],
+    "answer": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+    "explanation": "Viewport meta tag sets mobile layout width to device screen width.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Responsive Design"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #94 (Media Queries): Which CSS media query targets screen widths up to 768px?",
+    "options": [
+      "@media screen and 768px",
+      "@media mobile 768px",
+      "@media (min-width: 768px)",
+      "@media (max-width: 768px)"
+    ],
+    "answer": "@media (max-width: 768px)",
+    "explanation": "max-width: 768px applies styles for screens 768px wide or smaller.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Media Queries"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #95 (Transitions & Animations): Which CSS property specifies duration of transition effect?",
+    "options": [
+      "transition-time",
+      "transition-duration",
+      "animation-speed",
+      "speed"
+    ],
+    "answer": "transition-duration",
+    "explanation": "transition-duration defines how long transition takes.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Transitions & Animations"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #96 (HTML5 Semantic Tags): Which HTML5 semantic tag represents self-contained content like blog posts?",
+    "options": [
+      "<article>",
+      "<section>",
+      "<aside>",
+      "<div>"
+    ],
+    "answer": "<article>",
+    "explanation": "<article> represents independent reusable content.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "HTML5 Semantic Tags"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #97 (Pseudo-classes): Which CSS pseudo-class targets an element when mouse cursor hovers over it?",
+    "options": [
+      ":active",
+      ":hover",
+      ":visited",
+      ":focus"
+    ],
+    "answer": ":hover",
+    "explanation": ":hover selects elements when hovered by pointer.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Pseudo-classes"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #98 (Z-Index & Stacking): What CSS property controls element stacking order along z-axis?",
+    "options": [
+      "stack-order",
+      "layer-index",
+      "z-index",
+      "elevation"
+    ],
+    "answer": "z-index",
+    "explanation": "z-index sets 3D stacking order for positioned elements.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Z-Index & Stacking"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #99 (CSS Variables): How do you declare a custom CSS property (variable)?",
+    "options": [
+      "$primary-color: #333;",
+      "var-primary-color: #333;",
+      "@primary-color: #333;",
+      "--primary-color: #333;"
+    ],
+    "answer": "--primary-color: #333;",
+    "explanation": "CSS variables are prefixed with double hyphens '--'.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "CSS Variables"
+  },
+  {
+    "question": "[HTML_CSS - Medium] Case Study #100 (Web Fonts): Which CSS rule loads external web font files?",
+    "options": [
+      "@web-font",
+      "@font-family",
+      "@font-face",
+      "@import-font"
+    ],
+    "answer": "@font-face",
+    "explanation": "@font-face defines custom font family name and source URL.",
+    "difficulty": "Medium",
+    "skill": "HTML_CSS",
+    "topic": "Web Fonts"
+  }
+]

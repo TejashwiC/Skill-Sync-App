@@ -37,6 +37,21 @@ class LiveSessionsFragment : Fragment() {
 
         adapter = SessionAdapter(
             onJoinClick = { session ->
+                val now = System.currentTimeMillis()
+                val startTimeMs = if (session.startTime > 0) session.startTime else session.scheduledTime
+                if (startTimeMs > 0 && now < startTimeMs) {
+                    val timeStr = android.text.format.DateFormat.format("h:mm a", java.util.Date(startTimeMs)).toString()
+                    showToast("Session has not started yet. Scheduled start time is $timeStr.")
+                    return@SessionAdapter
+                }
+
+                val durationMs = if (session.durationMins > 0) session.durationMins * 60 * 1000L else 60 * 60 * 1000L
+                val endTimeMs = if (session.endTime > 0) session.endTime else (startTimeMs + durationMs)
+                if (endTimeMs > 0 && now >= endTimeMs) {
+                    showToast("Session time limit is over.")
+                    return@SessionAdapter
+                }
+
                 openMeetingLink(session.meetingLink)
             },
             onEndClick = { session ->

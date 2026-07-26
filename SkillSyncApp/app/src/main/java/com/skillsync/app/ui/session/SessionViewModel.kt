@@ -22,6 +22,12 @@ class SessionViewModel : ViewModel() {
     private val _endedSessions = MutableLiveData<List<Session>>()
     val endedSessions: LiveData<List<Session>> = _endedSessions
 
+    private val _createdEndedSessions = MutableLiveData<List<Session>>()
+    val createdEndedSessions: LiveData<List<Session>> = _createdEndedSessions
+
+    private val _attendedEndedSessions = MutableLiveData<List<Session>>()
+    val attendedEndedSessions: LiveData<List<Session>> = _attendedEndedSessions
+
     private val _myActiveSession = MutableLiveData<Session?>()
     val myActiveSession: LiveData<Session?> = _myActiveSession
 
@@ -42,17 +48,48 @@ class SessionViewModel : ViewModel() {
         val uid = FirebaseUtil.currentUid
         if (uid.isEmpty()) return
 
-        // Observe live sessions
+        // Observe created ended sessions for logged in user
         viewModelScope.launch {
-            sessionRepository.observeLiveSessions().collectLatest { list ->
-                _liveSessions.postValue(list)
+            sessionRepository.observeMyCreatedEndedSessions(uid).collectLatest { list ->
+                _createdEndedSessions.postValue(list)
             }
         }
 
-        // Observe ended history
+        // Observe attended ended sessions for logged in user
         viewModelScope.launch {
-            sessionRepository.observeSessionHistory().collectLatest { list ->
-                _endedSessions.postValue(list)
+            sessionRepository.observeMyAttendedEndedSessions(uid).collectLatest { list ->
+                _attendedEndedSessions.postValue(list)
+            }
+        }
+
+        // Observe current user profile to get following/followers for mutual connection filter
+        viewModelScope.launch {
+            val userRepo = com.skillsync.app.data.repository.UserRepository()
+            userRepo.observeUserProfile(uid).collectLatest { myProfile ->
+                val following = myProfile?.following ?: emptyList()
+                val followers = myProfile?.followers ?: emptyList()
+                // Mutual connections: people I follow who also follow me back
+                val mutualConnections = following.filter { followers.contains(it) }
+
+                // Observe live sessions - visible to self + mutual connections
+                viewModelScope.launch {
+                    sessionRepository.observeLiveSessions().collectLatest { list ->
+                        val filtered = list.filter { session ->
+                            session.hostId == uid || mutualConnections.contains(session.hostId)
+                        }
+                        _liveSessions.postValue(filtered)
+                    }
+                }
+
+                // Observe ended history - visible to self + mutual connections
+                viewModelScope.launch {
+                    sessionRepository.observeSessionHistory().collectLatest { list ->
+                        val filtered = list.filter { session ->
+                            session.hostId == uid || mutualConnections.contains(session.hostId)
+                        }
+                        _endedSessions.postValue(filtered)
+                    }
+                }
             }
         }
 
@@ -64,15 +101,17 @@ class SessionViewModel : ViewModel() {
         }
     }
 
-    fun startSession(name: String, skill: String, platform: String, meetingLink: String, isScheduled: Boolean = false, scheduledTime: Long = 0L) {
+    fun startSession(name: String, skill: String, platform: String, meetingLink: String, isScheduled: Boolean = false, scheduledTime: Long = 0L, durationMins: Long = 60L) {
         val uid = FirebaseUtil.currentUid
         if (uid.isEmpty()) return
 
         // 6-digit session code generation
-        val chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"
-        val code = (1..6).map { chars.random() }.joinToString("")
+        val code = (1..6).map { ('0'..'9').random() }.joinToString("")
 
         val hostName = FirebaseUtil.currentUser?.displayName ?: "Tutor"
+
+        val startTimeMs = if (isScheduled) scheduledTime else System.currentTimeMillis()
+        val endTimeMs = startTimeMs + (durationMins * 60 * 1000L)
 
         val session = Session(
             hostId = uid,
@@ -84,7 +123,9 @@ class SessionViewModel : ViewModel() {
             meetingLink = meetingLink,
             code = code,
             status = if (isScheduled) "scheduled" else "live",
-            startTime = if (isScheduled) scheduledTime else System.currentTimeMillis(),
+            startTime = startTimeMs,
+            endTime = endTimeMs,
+            durationMins = durationMins,
             isScheduled = isScheduled,
             scheduledTime = scheduledTime
         )
@@ -117,6 +158,13 @@ class SessionViewModel : ViewModel() {
         val durationMins = (System.currentTimeMillis() - session.startTime) / 60000
         viewModelScope.launch {
             val result = sessionRepository.endSession(session.id, durationMins)
+            _actionResult.postValue(result)
+        }
+    }
+
+    fun launchScheduledSession(session: Session) {
+        viewModelScope.launch {
+            val result = sessionRepository.launchScheduledSession(session.id)
             _actionResult.postValue(result)
         }
     }

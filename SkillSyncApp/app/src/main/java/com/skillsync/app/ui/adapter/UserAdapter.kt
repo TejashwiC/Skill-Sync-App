@@ -34,7 +34,7 @@ class UserAdapter(
     inner class UserViewHolder(private val binding: ItemUserBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(user: User) {
             binding.tvUserName.text = user.name
-            binding.tvUserEmail.text = user.email
+            binding.tvUserEmail.text = if (user.teach.isNotEmpty()) "Skill: ${user.teach}" else "Peer Tutor"
             
             if (user.photo.isNotEmpty() && user.photo.length > 10) {
                 if (user.photo.startsWith("data:image")) {

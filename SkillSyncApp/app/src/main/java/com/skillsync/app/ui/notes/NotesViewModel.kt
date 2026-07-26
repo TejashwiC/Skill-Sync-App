@@ -14,6 +14,7 @@ import kotlinx.coroutines.launch
 class NotesViewModel : ViewModel() {
 
     private val pdfRepository = PdfRepository()
+    private val userRepository = com.skillsync.app.data.repository.UserRepository()
 
     private val _pdfsList = MutableLiveData<List<PdfNote>>()
     val pdfsList: LiveData<List<PdfNote>> = _pdfsList
@@ -24,32 +25,64 @@ class NotesViewModel : ViewModel() {
     private val _uploadResult = MutableLiveData<Result<Unit>?>()
     val uploadResult: LiveData<Result<Unit>?> = _uploadResult
 
+    private val _deleteResult = MutableLiveData<Result<Unit>?>()
+    val deleteResult: LiveData<Result<Unit>?> = _deleteResult
+
+    private var pdfsJob: kotlinx.coroutines.Job? = null
+
     init {
         loadPdfs()
     }
 
     private fun loadPdfs() {
+        val uid = FirebaseUtil.currentUid
+        if (uid.isEmpty()) return
+
         viewModelScope.launch {
-            pdfRepository.observeAllPdfs().collectLatest { list ->
-                _pdfsList.postValue(list)
+            userRepository.observeUserProfile(uid).collectLatest { user ->
+                val following = user?.following ?: emptyList()
+                val followers = user?.followers ?: emptyList()
+                val mutualConnections = following.filter { followers.contains(it) }
+
+                pdfsJob?.cancel()
+                pdfsJob = viewModelScope.launch {
+                    pdfRepository.observeAllPdfs().collectLatest { list ->
+                        // Filter: uploader is self OR uploader is a mutual connection
+                        val filtered = list.filter { pdf ->
+                            pdf.uploaderId == uid || mutualConnections.contains(pdf.uploaderId)
+                        }
+                        _pdfsList.postValue(filtered)
+                    }
+                }
             }
         }
     }
 
-    fun uploadPdfFile(fileName: String, fileUri: Uri) {
+    fun uploadPdfFile(fileName: String, fileBytes: ByteArray) {
+        val uid = FirebaseUtil.currentUid
+        if (uid.isEmpty()) return
         val userName = FirebaseUtil.currentUser?.displayName ?: "Student"
+        val userEmail = FirebaseUtil.currentUser?.email ?: ""
         
-        _uploadProgress.value = 0.0
         viewModelScope.launch {
-            val result = pdfRepository.uploadPdf(fileName, fileUri, userName) { progress ->
-                _uploadProgress.postValue(progress)
-            }
+            val result = pdfRepository.uploadPdf(fileName, fileBytes, userName, userEmail, uid)
             _uploadResult.postValue(result)
+        }
+    }
+
+    fun deletePdfFile(pdfId: String) {
+        viewModelScope.launch {
+            val result = pdfRepository.deletePdf(pdfId)
+            _deleteResult.postValue(result)
         }
     }
 
     fun resetUploadResult() {
         _uploadResult.value = null
         _uploadProgress.value = 0.0
+    }
+
+    fun resetDeleteResult() {
+        _deleteResult.value = null
     }
 }

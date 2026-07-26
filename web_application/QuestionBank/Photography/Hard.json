@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Contrast, Brightness, Saturation",
+      "White Balance, Resolution, FPS",
+      "Aperture, Shutter Speed, ISO",
+      "Focus, Zoom, Flash"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/16",
+      "f/1.4",
+      "f/8",
+      "f/22"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "1/1000s",
+      "2 seconds",
+      "1/30s",
+      "1/4s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Narrower angle of view",
+      "Increased digital noise and grain in the image",
+      "Blurry lens focus",
+      "Darker image output"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #5 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Contrast, Brightness, Saturation",
+      "White Balance, Resolution, FPS",
+      "Focus, Zoom, Flash",
+      "Aperture, Shutter Speed, ISO"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #6 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/16",
+      "f/22",
+      "f/1.4",
+      "f/8"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #7 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "2 seconds",
+      "1/1000s",
+      "1/30s",
+      "1/4s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #8 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Darker image output",
+      "Narrower angle of view",
+      "Increased digital noise and grain in the image",
+      "Blurry lens focus"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #9 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Focus, Zoom, Flash",
+      "White Balance, Resolution, FPS",
+      "Aperture, Shutter Speed, ISO",
+      "Contrast, Brightness, Saturation"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #10 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/22",
+      "f/16",
+      "f/8",
+      "f/1.4"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #11 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "2 seconds",
+      "1/4s",
+      "1/1000s",
+      "1/30s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #12 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Narrower angle of view",
+      "Darker image output",
+      "Blurry lens focus",
+      "Increased digital noise and grain in the image"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #13 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Contrast, Brightness, Saturation",
+      "Aperture, Shutter Speed, ISO",
+      "Focus, Zoom, Flash",
+      "White Balance, Resolution, FPS"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #14 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/8",
+      "f/1.4",
+      "f/22",
+      "f/16"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #15 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "1/4s",
+      "1/1000s",
+      "1/30s",
+      "2 seconds"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #16 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Darker image output",
+      "Increased digital noise and grain in the image",
+      "Blurry lens focus",
+      "Narrower angle of view"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #17 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "White Balance, Resolution, FPS",
+      "Contrast, Brightness, Saturation",
+      "Focus, Zoom, Flash",
+      "Aperture, Shutter Speed, ISO"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #18 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/1.4",
+      "f/8",
+      "f/16",
+      "f/22"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #19 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "2 seconds",
+      "1/30s",
+      "1/1000s",
+      "1/4s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #20 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Darker image output",
+      "Blurry lens focus",
+      "Narrower angle of view",
+      "Increased digital noise and grain in the image"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #21 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Aperture, Shutter Speed, ISO",
+      "Contrast, Brightness, Saturation",
+      "Focus, Zoom, Flash",
+      "White Balance, Resolution, FPS"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #22 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/1.4",
+      "f/8",
+      "f/22",
+      "f/16"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #23 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "2 seconds",
+      "1/4s",
+      "1/1000s",
+      "1/30s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #24 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Increased digital noise and grain in the image",
+      "Blurry lens focus",
+      "Narrower angle of view",
+      "Darker image output"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #25 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Contrast, Brightness, Saturation",
+      "White Balance, Resolution, FPS",
+      "Focus, Zoom, Flash",
+      "Aperture, Shutter Speed, ISO"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #26 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/16",
+      "f/8",
+      "f/22",
+      "f/1.4"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #27 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "1/30s",
+      "2 seconds",
+      "1/4s",
+      "1/1000s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #28 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Darker image output",
+      "Blurry lens focus",
+      "Narrower angle of view",
+      "Increased digital noise and grain in the image"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #29 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "White Balance, Resolution, FPS",
+      "Aperture, Shutter Speed, ISO",
+      "Contrast, Brightness, Saturation",
+      "Focus, Zoom, Flash"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #30 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/16",
+      "f/1.4",
+      "f/22",
+      "f/8"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #31 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "2 seconds",
+      "1/30s",
+      "1/4s",
+      "1/1000s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #32 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Darker image output",
+      "Blurry lens focus",
+      "Narrower angle of view",
+      "Increased digital noise and grain in the image"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #33 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Aperture, Shutter Speed, ISO",
+      "Contrast, Brightness, Saturation",
+      "White Balance, Resolution, FPS",
+      "Focus, Zoom, Flash"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #34 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/16",
+      "f/22",
+      "f/1.4",
+      "f/8"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #35 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "1/1000s",
+      "2 seconds",
+      "1/30s",
+      "1/4s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #36 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Increased digital noise and grain in the image",
+      "Blurry lens focus",
+      "Darker image output",
+      "Narrower angle of view"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #37 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Contrast, Brightness, Saturation",
+      "Focus, Zoom, Flash",
+      "White Balance, Resolution, FPS",
+      "Aperture, Shutter Speed, ISO"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #38 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/22",
+      "f/16",
+      "f/1.4",
+      "f/8"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #39 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "2 seconds",
+      "1/1000s",
+      "1/30s",
+      "1/4s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #40 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Darker image output",
+      "Narrower angle of view",
+      "Blurry lens focus",
+      "Increased digital noise and grain in the image"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #41 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Focus, Zoom, Flash",
+      "Aperture, Shutter Speed, ISO",
+      "White Balance, Resolution, FPS",
+      "Contrast, Brightness, Saturation"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #42 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/16",
+      "f/1.4",
+      "f/22",
+      "f/8"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #43 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "1/30s",
+      "1/4s",
+      "1/1000s",
+      "2 seconds"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #44 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Increased digital noise and grain in the image",
+      "Blurry lens focus",
+      "Narrower angle of view",
+      "Darker image output"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #45 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Aperture, Shutter Speed, ISO",
+      "Focus, Zoom, Flash",
+      "Contrast, Brightness, Saturation",
+      "White Balance, Resolution, FPS"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #46 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/8",
+      "f/16",
+      "f/1.4",
+      "f/22"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #47 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "1/1000s",
+      "1/30s",
+      "1/4s",
+      "2 seconds"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #48 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Blurry lens focus",
+      "Increased digital noise and grain in the image",
+      "Darker image output",
+      "Narrower angle of view"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #49 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Focus, Zoom, Flash",
+      "Aperture, Shutter Speed, ISO",
+      "White Balance, Resolution, FPS",
+      "Contrast, Brightness, Saturation"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #50 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/1.4",
+      "f/8",
+      "f/22",
+      "f/16"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #51 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "1/4s",
+      "2 seconds",
+      "1/30s",
+      "1/1000s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #52 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Darker image output",
+      "Narrower angle of view",
+      "Blurry lens focus",
+      "Increased digital noise and grain in the image"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #53 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Focus, Zoom, Flash",
+      "White Balance, Resolution, FPS",
+      "Aperture, Shutter Speed, ISO",
+      "Contrast, Brightness, Saturation"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #54 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/22",
+      "f/1.4",
+      "f/16",
+      "f/8"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #55 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "1/30s",
+      "1/4s",
+      "2 seconds",
+      "1/1000s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #56 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Blurry lens focus",
+      "Darker image output",
+      "Narrower angle of view",
+      "Increased digital noise and grain in the image"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #57 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Contrast, Brightness, Saturation",
+      "Focus, Zoom, Flash",
+      "Aperture, Shutter Speed, ISO",
+      "White Balance, Resolution, FPS"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #58 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/1.4",
+      "f/22",
+      "f/8",
+      "f/16"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #59 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "1/1000s",
+      "1/30s",
+      "2 seconds",
+      "1/4s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #60 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Narrower angle of view",
+      "Increased digital noise and grain in the image",
+      "Darker image output",
+      "Blurry lens focus"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #61 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "White Balance, Resolution, FPS",
+      "Contrast, Brightness, Saturation",
+      "Focus, Zoom, Flash",
+      "Aperture, Shutter Speed, ISO"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #62 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/16",
+      "f/22",
+      "f/1.4",
+      "f/8"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #63 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "2 seconds",
+      "1/4s",
+      "1/30s",
+      "1/1000s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #64 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Increased digital noise and grain in the image",
+      "Blurry lens focus",
+      "Darker image output",
+      "Narrower angle of view"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #65 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Focus, Zoom, Flash",
+      "Aperture, Shutter Speed, ISO",
+      "White Balance, Resolution, FPS",
+      "Contrast, Brightness, Saturation"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #66 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/22",
+      "f/8",
+      "f/1.4",
+      "f/16"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #67 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "2 seconds",
+      "1/1000s",
+      "1/4s",
+      "1/30s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #68 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Darker image output",
+      "Blurry lens focus",
+      "Increased digital noise and grain in the image",
+      "Narrower angle of view"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #69 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Focus, Zoom, Flash",
+      "White Balance, Resolution, FPS",
+      "Aperture, Shutter Speed, ISO",
+      "Contrast, Brightness, Saturation"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #70 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/22",
+      "f/1.4",
+      "f/16",
+      "f/8"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #71 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "1/30s",
+      "1/4s",
+      "2 seconds",
+      "1/1000s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #72 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Increased digital noise and grain in the image",
+      "Narrower angle of view",
+      "Darker image output",
+      "Blurry lens focus"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #73 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "White Balance, Resolution, FPS",
+      "Contrast, Brightness, Saturation",
+      "Focus, Zoom, Flash",
+      "Aperture, Shutter Speed, ISO"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #74 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/1.4",
+      "f/8",
+      "f/16",
+      "f/22"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #75 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "2 seconds",
+      "1/4s",
+      "1/1000s",
+      "1/30s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #76 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Blurry lens focus",
+      "Increased digital noise and grain in the image",
+      "Narrower angle of view",
+      "Darker image output"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #77 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Contrast, Brightness, Saturation",
+      "Focus, Zoom, Flash",
+      "Aperture, Shutter Speed, ISO",
+      "White Balance, Resolution, FPS"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #78 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/1.4",
+      "f/16",
+      "f/22",
+      "f/8"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #79 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "1/1000s",
+      "1/30s",
+      "1/4s",
+      "2 seconds"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #80 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Darker image output",
+      "Narrower angle of view",
+      "Increased digital noise and grain in the image",
+      "Blurry lens focus"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #81 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Contrast, Brightness, Saturation",
+      "Focus, Zoom, Flash",
+      "White Balance, Resolution, FPS",
+      "Aperture, Shutter Speed, ISO"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #82 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/22",
+      "f/16",
+      "f/1.4",
+      "f/8"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #83 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "1/4s",
+      "2 seconds",
+      "1/1000s",
+      "1/30s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #84 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Increased digital noise and grain in the image",
+      "Narrower angle of view",
+      "Darker image output",
+      "Blurry lens focus"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #85 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Contrast, Brightness, Saturation",
+      "White Balance, Resolution, FPS",
+      "Focus, Zoom, Flash",
+      "Aperture, Shutter Speed, ISO"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #86 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/1.4",
+      "f/22",
+      "f/8",
+      "f/16"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #87 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "1/1000s",
+      "2 seconds",
+      "1/30s",
+      "1/4s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #88 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Darker image output",
+      "Increased digital noise and grain in the image",
+      "Blurry lens focus",
+      "Narrower angle of view"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #89 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Contrast, Brightness, Saturation",
+      "Focus, Zoom, Flash",
+      "Aperture, Shutter Speed, ISO",
+      "White Balance, Resolution, FPS"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #90 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/1.4",
+      "f/22",
+      "f/8",
+      "f/16"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #91 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "1/1000s",
+      "1/4s",
+      "1/30s",
+      "2 seconds"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #92 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Narrower angle of view",
+      "Blurry lens focus",
+      "Increased digital noise and grain in the image",
+      "Darker image output"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #93 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "White Balance, Resolution, FPS",
+      "Focus, Zoom, Flash",
+      "Contrast, Brightness, Saturation",
+      "Aperture, Shutter Speed, ISO"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #94 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/1.4",
+      "f/16",
+      "f/22",
+      "f/8"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #95 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "1/1000s",
+      "1/30s",
+      "2 seconds",
+      "1/4s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #96 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Blurry lens focus",
+      "Increased digital noise and grain in the image",
+      "Narrower angle of view",
+      "Darker image output"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #97 (Exposure Triangle): Which three settings compose the Photography Exposure Triangle?",
+    "options": [
+      "Aperture, Shutter Speed, ISO",
+      "Focus, Zoom, Flash",
+      "Contrast, Brightness, Saturation",
+      "White Balance, Resolution, FPS"
+    ],
+    "answer": "Aperture, Shutter Speed, ISO",
+    "explanation": "Aperture, Shutter Speed, and ISO control image exposure together.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Exposure Triangle"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #98 (Aperture Basics): Which f-stop setting produces the shallowest depth of field (blurry background)?",
+    "options": [
+      "f/16",
+      "f/8",
+      "f/22",
+      "f/1.4"
+    ],
+    "answer": "f/1.4",
+    "explanation": "Lower f-number (large aperture opening) yields shallow depth of field.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Aperture Basics"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #99 (Shutter Speed): Which shutter speed is best for freezing fast motion (e.g. sports)?",
+    "options": [
+      "2 seconds",
+      "1/30s",
+      "1/1000s",
+      "1/4s"
+    ],
+    "answer": "1/1000s",
+    "explanation": "Fast shutter speeds like 1/1000s freeze fast-moving action.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "Shutter Speed"
+  },
+  {
+    "question": "[Photography - Hard] Case Study #100 (ISO Settings): What is a trade-off of using a very high ISO setting (e.g. ISO 6400)?",
+    "options": [
+      "Darker image output",
+      "Narrower angle of view",
+      "Blurry lens focus",
+      "Increased digital noise and grain in the image"
+    ],
+    "answer": "Increased digital noise and grain in the image",
+    "explanation": "Higher ISO amplifies sensor signal but introduces digital noise/grain.",
+    "difficulty": "Hard",
+    "skill": "Photography",
+    "topic": "ISO Settings"
+  }
+]

@@ -32,6 +32,9 @@ class SettingsViewModel : ViewModel() {
         }
     }
 
+    private val _actionResult = MutableLiveData<Result<String>?>()
+    val actionResult: LiveData<Result<String>?> = _actionResult
+
     fun updateSetting(fieldName: String, value: Boolean) {
         val uid = FirebaseUtil.currentUid
         if (uid.isEmpty()) return
@@ -39,5 +42,48 @@ class SettingsViewModel : ViewModel() {
         viewModelScope.launch {
             userRepository.updateNotificationSetting(uid, fieldName, value)
         }
+    }
+
+    fun updateAccountName(newName: String) {
+        val uid = FirebaseUtil.currentUid
+        if (uid.isEmpty()) return
+
+        viewModelScope.launch {
+            val res = userRepository.updateAccountName(uid, newName)
+            if (res.isSuccess) {
+                _actionResult.postValue(Result.success("Name updated successfully!"))
+            } else {
+                _actionResult.postValue(Result.failure(res.exceptionOrNull() ?: Exception("Failed to update name")))
+            }
+        }
+    }
+
+    fun updatePassword(newPass: String) {
+        viewModelScope.launch {
+            val res = userRepository.updatePassword(newPass)
+            if (res.isSuccess) {
+                _actionResult.postValue(Result.success("Password updated successfully!"))
+            } else {
+                _actionResult.postValue(Result.failure(res.exceptionOrNull() ?: Exception("Failed to update password")))
+            }
+        }
+    }
+
+    fun deleteAccount() {
+        val uid = FirebaseUtil.currentUid
+        if (uid.isEmpty()) return
+
+        viewModelScope.launch {
+            val res = userRepository.deleteUserAccount(uid)
+            if (res.isSuccess) {
+                _actionResult.postValue(Result.success("ACCOUNT_DELETED"))
+            } else {
+                _actionResult.postValue(Result.failure(res.exceptionOrNull() ?: Exception("Failed to delete account")))
+            }
+        }
+    }
+
+    fun resetActionResult() {
+        _actionResult.value = null
     }
 }

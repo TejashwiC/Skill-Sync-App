@@ -169,4 +169,18 @@ class ChatRepository {
             Result.failure(e)
         }
     }
+
+    suspend fun deleteMessage(chatId: String, messageId: String): Result<Unit> {
+        return try {
+            db.collection(Constants.COLL_CHATS)
+                .document(chatId)
+                .collection(Constants.COLL_MESSAGES)
+                .document(messageId)
+                .delete()
+                .await()
+            Result.success(Unit)
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
+    }
 }

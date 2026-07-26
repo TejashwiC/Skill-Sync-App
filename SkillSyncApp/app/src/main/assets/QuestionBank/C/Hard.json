@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "What does a pointer variable store in C?",
+    "options": [
+      "The memory address of another variable",
+      "The value of a float",
+      "The string length",
+      "The array index"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "new()",
+      "alloc()",
+      "create()",
+      "malloc()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<math.h>",
+      "<string.h>",
+      "<stdio.h>",
+      "<stdlib.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "How are array indices structured in C?",
+    "options": [
+      "Zero-indexed starting at 0",
+      "Negative indexed",
+      "Randomly assigned",
+      "One-indexed starting at 1"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #5 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The value of a float",
+      "The string length",
+      "The memory address of another variable",
+      "The array index"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #6 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "new()",
+      "alloc()",
+      "create()",
+      "malloc()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #7 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<stdlib.h>",
+      "<string.h>",
+      "<math.h>",
+      "<stdio.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #8 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Randomly assigned",
+      "One-indexed starting at 1",
+      "Negative indexed",
+      "Zero-indexed starting at 0"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #9 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The value of a float",
+      "The string length",
+      "The array index",
+      "The memory address of another variable"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #10 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "alloc()",
+      "new()",
+      "create()",
+      "malloc()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #11 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<string.h>",
+      "<stdlib.h>",
+      "<stdio.h>",
+      "<math.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #12 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Negative indexed",
+      "One-indexed starting at 1",
+      "Randomly assigned",
+      "Zero-indexed starting at 0"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #13 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The value of a float",
+      "The memory address of another variable",
+      "The string length",
+      "The array index"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #14 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "new()",
+      "malloc()",
+      "alloc()",
+      "create()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #15 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<stdio.h>",
+      "<stdlib.h>",
+      "<math.h>",
+      "<string.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #16 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Negative indexed",
+      "Zero-indexed starting at 0",
+      "Randomly assigned",
+      "One-indexed starting at 1"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #17 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The memory address of another variable",
+      "The value of a float",
+      "The string length",
+      "The array index"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #18 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "create()",
+      "new()",
+      "malloc()",
+      "alloc()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #19 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<string.h>",
+      "<math.h>",
+      "<stdio.h>",
+      "<stdlib.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #20 (Arrays): How are array indices structured in C?",
+    "options": [
+      "One-indexed starting at 1",
+      "Zero-indexed starting at 0",
+      "Negative indexed",
+      "Randomly assigned"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #21 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The string length",
+      "The memory address of another variable",
+      "The value of a float",
+      "The array index"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #22 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "create()",
+      "new()",
+      "malloc()",
+      "alloc()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #23 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<stdlib.h>",
+      "<string.h>",
+      "<math.h>",
+      "<stdio.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #24 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Negative indexed",
+      "Zero-indexed starting at 0",
+      "One-indexed starting at 1",
+      "Randomly assigned"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #25 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The array index",
+      "The memory address of another variable",
+      "The value of a float",
+      "The string length"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #26 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "new()",
+      "alloc()",
+      "create()",
+      "malloc()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #27 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<string.h>",
+      "<math.h>",
+      "<stdio.h>",
+      "<stdlib.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #28 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Negative indexed",
+      "One-indexed starting at 1",
+      "Zero-indexed starting at 0",
+      "Randomly assigned"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #29 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The value of a float",
+      "The memory address of another variable",
+      "The array index",
+      "The string length"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #30 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "create()",
+      "new()",
+      "alloc()",
+      "malloc()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #31 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<string.h>",
+      "<math.h>",
+      "<stdio.h>",
+      "<stdlib.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #32 (Arrays): How are array indices structured in C?",
+    "options": [
+      "One-indexed starting at 1",
+      "Negative indexed",
+      "Zero-indexed starting at 0",
+      "Randomly assigned"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #33 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The array index",
+      "The string length",
+      "The memory address of another variable",
+      "The value of a float"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #34 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "new()",
+      "create()",
+      "alloc()",
+      "malloc()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #35 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<stdlib.h>",
+      "<math.h>",
+      "<string.h>",
+      "<stdio.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #36 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Zero-indexed starting at 0",
+      "One-indexed starting at 1",
+      "Randomly assigned",
+      "Negative indexed"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #37 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The memory address of another variable",
+      "The array index",
+      "The string length",
+      "The value of a float"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #38 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "malloc()",
+      "alloc()",
+      "create()",
+      "new()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #39 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<string.h>",
+      "<math.h>",
+      "<stdlib.h>",
+      "<stdio.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #40 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Zero-indexed starting at 0",
+      "Randomly assigned",
+      "One-indexed starting at 1",
+      "Negative indexed"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #41 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The string length",
+      "The value of a float",
+      "The memory address of another variable",
+      "The array index"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #42 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "alloc()",
+      "new()",
+      "create()",
+      "malloc()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #43 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<stdlib.h>",
+      "<math.h>",
+      "<string.h>",
+      "<stdio.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #44 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Negative indexed",
+      "Randomly assigned",
+      "One-indexed starting at 1",
+      "Zero-indexed starting at 0"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #45 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The value of a float",
+      "The string length",
+      "The memory address of another variable",
+      "The array index"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #46 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "malloc()",
+      "create()",
+      "alloc()",
+      "new()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #47 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<math.h>",
+      "<stdio.h>",
+      "<string.h>",
+      "<stdlib.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #48 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Zero-indexed starting at 0",
+      "Randomly assigned",
+      "One-indexed starting at 1",
+      "Negative indexed"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #49 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The string length",
+      "The value of a float",
+      "The memory address of another variable",
+      "The array index"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #50 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "alloc()",
+      "malloc()",
+      "create()",
+      "new()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #51 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<string.h>",
+      "<math.h>",
+      "<stdio.h>",
+      "<stdlib.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #52 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Negative indexed",
+      "Randomly assigned",
+      "Zero-indexed starting at 0",
+      "One-indexed starting at 1"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #53 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The value of a float",
+      "The string length",
+      "The memory address of another variable",
+      "The array index"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #54 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "new()",
+      "alloc()",
+      "malloc()",
+      "create()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #55 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<math.h>",
+      "<stdlib.h>",
+      "<string.h>",
+      "<stdio.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #56 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Randomly assigned",
+      "Zero-indexed starting at 0",
+      "One-indexed starting at 1",
+      "Negative indexed"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #57 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The string length",
+      "The value of a float",
+      "The array index",
+      "The memory address of another variable"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #58 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "new()",
+      "malloc()",
+      "create()",
+      "alloc()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #59 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<string.h>",
+      "<stdio.h>",
+      "<math.h>",
+      "<stdlib.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #60 (Arrays): How are array indices structured in C?",
+    "options": [
+      "One-indexed starting at 1",
+      "Zero-indexed starting at 0",
+      "Negative indexed",
+      "Randomly assigned"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #61 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The value of a float",
+      "The memory address of another variable",
+      "The string length",
+      "The array index"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #62 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "alloc()",
+      "create()",
+      "malloc()",
+      "new()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #63 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<stdlib.h>",
+      "<string.h>",
+      "<stdio.h>",
+      "<math.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #64 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Negative indexed",
+      "Randomly assigned",
+      "One-indexed starting at 1",
+      "Zero-indexed starting at 0"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #65 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The array index",
+      "The string length",
+      "The value of a float",
+      "The memory address of another variable"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #66 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "new()",
+      "create()",
+      "alloc()",
+      "malloc()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #67 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<stdio.h>",
+      "<math.h>",
+      "<string.h>",
+      "<stdlib.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #68 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Randomly assigned",
+      "One-indexed starting at 1",
+      "Negative indexed",
+      "Zero-indexed starting at 0"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #69 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The memory address of another variable",
+      "The string length",
+      "The value of a float",
+      "The array index"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #70 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "create()",
+      "alloc()",
+      "malloc()",
+      "new()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #71 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<stdlib.h>",
+      "<string.h>",
+      "<math.h>",
+      "<stdio.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #72 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Zero-indexed starting at 0",
+      "Negative indexed",
+      "Randomly assigned",
+      "One-indexed starting at 1"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #73 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The memory address of another variable",
+      "The string length",
+      "The array index",
+      "The value of a float"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #74 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "alloc()",
+      "malloc()",
+      "new()",
+      "create()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #75 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<string.h>",
+      "<stdio.h>",
+      "<stdlib.h>",
+      "<math.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #76 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Zero-indexed starting at 0",
+      "Randomly assigned",
+      "One-indexed starting at 1",
+      "Negative indexed"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #77 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The string length",
+      "The array index",
+      "The memory address of another variable",
+      "The value of a float"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #78 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "create()",
+      "alloc()",
+      "new()",
+      "malloc()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #79 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<stdio.h>",
+      "<math.h>",
+      "<stdlib.h>",
+      "<string.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #80 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Zero-indexed starting at 0",
+      "Negative indexed",
+      "Randomly assigned",
+      "One-indexed starting at 1"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #81 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The array index",
+      "The string length",
+      "The value of a float",
+      "The memory address of another variable"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #82 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "alloc()",
+      "new()",
+      "create()",
+      "malloc()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #83 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<stdlib.h>",
+      "<string.h>",
+      "<math.h>",
+      "<stdio.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #84 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Negative indexed",
+      "Randomly assigned",
+      "Zero-indexed starting at 0",
+      "One-indexed starting at 1"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #85 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The value of a float",
+      "The string length",
+      "The memory address of another variable",
+      "The array index"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #86 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "new()",
+      "create()",
+      "alloc()",
+      "malloc()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #87 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<stdio.h>",
+      "<math.h>",
+      "<stdlib.h>",
+      "<string.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #88 (Arrays): How are array indices structured in C?",
+    "options": [
+      "One-indexed starting at 1",
+      "Randomly assigned",
+      "Negative indexed",
+      "Zero-indexed starting at 0"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #89 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The memory address of another variable",
+      "The string length",
+      "The value of a float",
+      "The array index"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #90 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "new()",
+      "malloc()",
+      "create()",
+      "alloc()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #91 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<math.h>",
+      "<string.h>",
+      "<stdio.h>",
+      "<stdlib.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #92 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Zero-indexed starting at 0",
+      "Randomly assigned",
+      "Negative indexed",
+      "One-indexed starting at 1"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #93 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The string length",
+      "The array index",
+      "The memory address of another variable",
+      "The value of a float"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #94 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "malloc()",
+      "create()",
+      "alloc()",
+      "new()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #95 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<math.h>",
+      "<stdio.h>",
+      "<string.h>",
+      "<stdlib.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #96 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Negative indexed",
+      "Randomly assigned",
+      "One-indexed starting at 1",
+      "Zero-indexed starting at 0"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[C - Hard] Case Study #97 (Pointers): What does a pointer variable store in C?",
+    "options": [
+      "The array index",
+      "The value of a float",
+      "The string length",
+      "The memory address of another variable"
+    ],
+    "answer": "The memory address of another variable",
+    "explanation": "Pointers hold memory addresses of variables.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Pointers"
+  },
+  {
+    "question": "[C - Hard] Case Study #98 (Functions): Which function is used to allocate dynamic memory in C?",
+    "options": [
+      "create()",
+      "alloc()",
+      "malloc()",
+      "new()"
+    ],
+    "answer": "malloc()",
+    "explanation": "malloc() allocates specified bytes in heap memory.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Functions"
+  },
+  {
+    "question": "[C - Hard] Case Study #99 (Syntax): Which header file is required for printf() and scanf() in C?",
+    "options": [
+      "<math.h>",
+      "<stdio.h>",
+      "<string.h>",
+      "<stdlib.h>"
+    ],
+    "answer": "<stdio.h>",
+    "explanation": "<stdio.h> contains standard input/output functions.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[C - Hard] Case Study #100 (Arrays): How are array indices structured in C?",
+    "options": [
+      "Zero-indexed starting at 0",
+      "One-indexed starting at 1",
+      "Randomly assigned",
+      "Negative indexed"
+    ],
+    "answer": "Zero-indexed starting at 0",
+    "explanation": "C arrays start indexing from offset 0.",
+    "difficulty": "Hard",
+    "skill": "C",
+    "topic": "Arrays"
+  }
+]

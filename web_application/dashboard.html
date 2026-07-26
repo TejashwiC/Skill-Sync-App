@@ -106,7 +106,7 @@
         <h2>Dashboard Home</h2>
         <div class="dashboard-grid">
           <div class="card card-blue"><i class="fas fa-layer-group"></i><h3>Total Skills</h3><p id="homeSkills">0</p></div>
-          <div class="card card-purple"><i class="fas fa-video"></i><h3>Sessions</h3><p id="homeSessions">0</p></div>
+          <div class="card card-purple"><i class="fas fa-video"></i><h3>Sessions Created</h3><p id="homeSessions">0</p></div>
           <div class="card card-orange"><i class="fas fa-pen-ruler"></i><h3>Tests Created</h3><p id="homeTests">0</p></div>
           <div class="card card-green"><i class="fas fa-circle-check"></i><h3>Tests Completed</h3><p id="homeTestsCompleted">0</p></div>
         </div>
@@ -337,6 +337,7 @@
           <div class="card card-green" onclick="openSessionScreen('hostSessionScreen')"><i class="fas fa-chalkboard-user"></i><h3>Host Session</h3><p>Start or end your sessions</p></div>
           <div class="card card-pink" onclick="openSessionScreen('liveSessionScreen')"><i class="fas fa-tower-broadcast"></i><h3>Live Sessions</h3><p>Join live classes directly</p></div>
           <div class="card card-cyan" onclick="openSessionScreen('feedbackSessionScreen')"><i class="fas fa-comment-medical"></i><h3>Feedback & Ratings</h3><p>Rate and review sessions</p></div>
+          <div class="card card-purple" onclick="openSessionScreen('sessionHistoryScreen')"><i class="fas fa-clock-rotate-left"></i><h3>Session History</h3><p>Created &amp; attended sessions history</p></div>
         </div>
         
         <div class="screen" id="hostSessionScreen">
@@ -380,48 +381,90 @@
           <h4 style="margin-top:24px; color:#333;"><i class="fas fa-comments"></i> Past Session Reviews</h4>
           <div id="ratingsContainer"></div>
         </div>
+
+        <div class="screen" id="sessionHistoryScreen">
+          <button class="back-btn" onclick="backSessionDashboard()">← Back</button>
+          <h2><i class="fas fa-clock-rotate-left"></i> Session History</h2>
+          
+          <!-- Segmented Tab Toggle Buttons -->
+          <div style="display:flex; background:#e2e8f0; border-radius:10px; padding:4px; margin-bottom:20px; gap:4px;">
+            <button id="tabCreatedSessions" onclick="switchWebSessionTab('created')" style="flex:1; padding:10px 16px; border:none; border-radius:8px; font-weight:700; font-size:14px; cursor:pointer; background:#fff; color:#1e293b; box-shadow:0 2px 4px rgba(0,0,0,0.05); transition:all 0.2s;">
+              <i class="fas fa-chalkboard-user"></i> Created Sessions
+            </button>
+            <button id="tabAttendedSessions" onclick="switchWebSessionTab('attended')" style="flex:1; padding:10px 16px; border:none; border-radius:8px; font-weight:700; font-size:14px; cursor:pointer; background:transparent; color:#64748b; transition:all 0.2s;">
+              <i class="fas fa-user-check"></i> Attended Sessions
+            </button>
+          </div>
+
+          <div id="webSessionHistoryContainer"></div>
+        </div>
       </div>
 
       <!-- SKILL TEST -->
       <div id="testSection" class="section" style="display:none;">
         <h2>Skill Test Dashboard</h2>
-        <div class="dashboard-grid" id="testDashboard" style="grid-template-columns: repeat(2, 1fr);">
-          <div class="card card-blue" onclick="openTestScreen('createTestScreen')"><i class="fas fa-file-circle-plus"></i><h3>Create Test</h3><p>Create new skill test</p></div>
-          <div class="card card-green" onclick="openTestScreen('addQuestionScreen')"><i class="fas fa-circle-plus"></i><h3>Add Questions</h3><p>Add max 5 questions</p></div>
+        <div class="dashboard-grid" id="testDashboard" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="card card-blue" onclick="openTestScreen('prepareTestScreen')"><i class="fas fa-file-circle-plus"></i><h3>Prepare Test</h3><p>Auto-select from Question Bank</p></div>
           <div class="card card-orange" onclick="openTestScreen('attendTestScreen')"><i class="fas fa-pen-to-square"></i><h3>Attend Test</h3><p>Take tests from your connections</p></div>
           <div class="card card-cyan" onclick="openTestScreen('testHistoryScreen')"><i class="fas fa-clock-rotate-left"></i><h3>Test History</h3><p>Created & attended test history</p></div>
         </div>
-        <div class="screen" id="createTestScreen">
+
+        <div class="screen" id="prepareTestScreen">
           <button class="back-btn" onclick="backTestDashboard()">← Back</button>
-          <h2>Create Test</h2>
-          <p style="font-size:13px;color:#666;margin-bottom:12px;">Tests created here will only be visible to your followers and people you follow.</p>
-          <input type="text" id="testTitle" placeholder="Test Name (e.g. Java Basics)">
-          <input type="text" id="testSkill" placeholder="Skill Topic (e.g. Java, Python)">
-          <button onclick="createTest()"><i class="fas fa-plus"></i> Create Test</button>
-          <h3 style="margin-top:28px;border-top:1px solid #eee;padding-top:16px;"><i class="fas fa-list-check"></i> My Created Tests</h3>
-          <div id="myTestsList"></div>
-        </div>
-        <div class="screen" id="addQuestionScreen">
-          <button class="back-btn" onclick="backTestDashboard()">← Back</button>
-          <h2>Add Questions (Max 5 Questions)</h2>
-          <label style="font-size:13px;color:#555;font-weight:600;">Select Test:</label>
-          <select id="testSelect" style="margin-bottom:14px;"></select>
-          <div id="questionCountNotice" style="font-size:12px;font-weight:700;color:#27ae60;margin-bottom:10px;"></div>
-          <input type="text" id="question" placeholder="Question" style="margin-bottom:10px;">
-          <input type="text" id="option1" placeholder="Option A" oninput="updateCorrectDropdown()" style="margin-bottom:8px;">
-          <input type="text" id="option2" placeholder="Option B" oninput="updateCorrectDropdown()" style="margin-bottom:8px;">
-          <input type="text" id="option3" placeholder="Option C" oninput="updateCorrectDropdown()" style="margin-bottom:8px;">
-          <input type="text" id="option4" placeholder="Option D" oninput="updateCorrectDropdown()" style="margin-bottom:14px;">
-          <label style="font-size:13px;color:#555;font-weight:600;">Correct Answer:</label>
-          <select id="correctAnswer" style="margin-bottom:14px;">
-            <option value="">-- Select Correct Option --</option>
-            <option id="optA" value="">A</option>
-            <option id="optB" value="">B</option>
-            <option id="optC" value="">C</option>
-            <option id="optD" value="">D</option>
-          </select>
-          <p style="font-size:12px;color:#888;margin:-8px 0 14px;background:#fffde7;padding:8px 12px;border-radius:8px;border-left:3px solid #f39c12;">💡 Maximum 5 questions per test allowed. Type options A/B/C/D then select correct answer.</p>
-          <button onclick="addQuestion()"><i class="fas fa-plus"></i> Add Question</button>
+          <h2><i class="fas fa-brain" style="color:#3b82f6;"></i> Prepare Test</h2>
+          <p style="font-size:13px;color:#666;margin-bottom:14px;">Select a skill and difficulty level to automatically load 5 random questions from the master Question Bank repository. Creators do not manually type questions or answers.</p>
+          
+          <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:18px; border-radius:12px; margin-bottom:18px;">
+            <label style="font-weight:700; color:#334155; font-size:14px; display:block; margin-bottom:6px;">1. Select Skill:</label>
+            <select id="qbSkillSelect" style="width:100%; padding:10px; border-radius:8px; border:1.5px solid #cbd5e1; margin-bottom:14px; font-weight:600; cursor:pointer;" onchange="onQbSkillOrDiffChange()">
+              <option value="">-- Choose Skill --</option>
+              <option value="Python">Python</option>
+              <option value="Java">Java</option>
+              <option value="C">C</option>
+              <option value="C++">C++</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="HTML_CSS">HTML & CSS</option>
+              <option value="SQL">SQL</option>
+              <option value="WebDevelopment">Web Development</option>
+              <option value="ArtificialIntelligence">Artificial Intelligence</option>
+              <option value="DataScience">Data Science</option>
+              <option value="Cooking">Cooking</option>
+              <option value="Painting">Painting</option>
+              <option value="Drawing">Drawing</option>
+              <option value="Photography">Photography</option>
+              <option value="Music">Music</option>
+              <option value="Dance">Dance</option>
+              <option value="Fitness">Fitness</option>
+              <option value="PublicSpeaking">Public Speaking</option>
+              <option value="Gardening">Gardening</option>
+              <option value="Business">Business</option>
+            </select>
+
+            <label style="font-weight:700; color:#334155; font-size:14px; display:block; margin-bottom:6px;">2. Select Difficulty:</label>
+            <div style="display:flex; gap:12px; margin-bottom:16px;">
+              <label style="flex:1; background:#fff; border:2px solid #e2e8f0; padding:10px; border-radius:8px; text-align:center; font-weight:700; cursor:pointer; font-size:13px;">
+                <input type="radio" name="qbDifficulty" value="Basic" checked onchange="onQbSkillOrDiffChange()"> 🟢 Basic
+              </label>
+              <label style="flex:1; background:#fff; border:2px solid #e2e8f0; padding:10px; border-radius:8px; text-align:center; font-weight:700; cursor:pointer; font-size:13px;">
+                <input type="radio" name="qbDifficulty" value="Medium" onchange="onQbSkillOrDiffChange()"> 🟡 Medium
+              </label>
+              <label style="flex:1; background:#fff; border:2px solid #e2e8f0; padding:10px; border-radius:8px; text-align:center; font-weight:700; cursor:pointer; font-size:13px;">
+                <input type="radio" name="qbDifficulty" value="Hard" onchange="onQbSkillOrDiffChange()"> 🔴 Hard
+              </label>
+            </div>
+
+            <button onclick="loadRandom5Questions()" style="width:100%; background:linear-gradient(135deg,#3b82f6,#2563eb); color:#fff; padding:12px; border:none; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px;">
+              <i class="fas fa-dice"></i> Fetch 5 Random Questions
+            </button>
+          </div>
+
+          <div id="qbQuestionsPreview" style="display:none; margin-bottom:18px;">
+            <h3 style="margin:0 0 12px; color:#1e293b; font-size:16px;"><i class="fas fa-eye" style="color:#10b981;"></i> Review Questions (5 Selected)</h3>
+            <div id="qbQuestionsList"></div>
+            <button onclick="publishPreparedTest()" style="width:100%; margin-top:14px; background:linear-gradient(135deg,#10b981,#059669); color:#fff; padding:14px; border:none; border-radius:10px; font-weight:800; font-size:16px; cursor:pointer;">
+              🚀 Publish Test to Connections
+            </button>
+          </div>
         </div>
 
         <div class="screen" id="attendTestScreen">

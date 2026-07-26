@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "Which of the following is NOT one of the 5 French Mother Sauces?",
+    "options": [
+      "Velouté",
+      "Hollandaise",
+      "Chimichurri",
+      "Béchamel"
+    ],
+    "answer": "Chimichurri",
+    "explanation": "The 5 French Mother Sauces are Béchamel, Velouté, Espagnole, Sauce Tomat, and Hollandaise.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Mother Sauces"
+  },
+  {
+    "question": "What role does baking soda play in baking batters?",
+    "options": [
+      "Fat emulsifier",
+      "Gluten strengthener",
+      "Chemical leavening agent requiring an acid to produce CO2 gas",
+      "Sweetening agent"
+    ],
+    "answer": "Chemical leavening agent requiring an acid to produce CO2 gas",
+    "explanation": "Baking soda reacts with acidic ingredients to release carbon dioxide gas.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Baking Science"
+  },
+  {
+    "question": "What is the Maillard reaction in culinary science?",
+    "options": [
+      "Emulsification of oil and vinegar",
+      "Fermentation of yeast in dough",
+      "Coagulation of egg proteins in water",
+      "Chemical reaction between amino acids and reducing sugars giving browned food flavor"
+    ],
+    "answer": "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+    "explanation": "Maillard browning occurs at ~280°F-330°F giving savory sear flavor.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Roasting & Grilling"
+  },
+  {
+    "question": "Which ingredient acts as a natural emulsifier in mayonnaise?",
+    "options": [
+      "Salt",
+      "Vinegar",
+      "Egg yolk (lecithin)",
+      "Vegetable oil"
+    ],
+    "answer": "Egg yolk (lecithin)",
+    "explanation": "Egg yolk contains lecithin which binds oil and water droplets together.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Emulsification"
+  },
+  {
+    "question": "Why should stock be simmered gently without boiling rapidly?",
+    "options": [
+      "To evaporate all water",
+      "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+      "To caramelize the bones",
+      "To increase cooking speed"
+    ],
+    "answer": "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+    "explanation": "Boiling forces fat into the liquid creating a cloudy stock.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Stocks & Broths"
+  },
+  {
+    "question": "What is the purpose of keeping butter cold when making flaky pastry dough?",
+    "options": [
+      "Cold butter melts during baking creating steam pockets that form flaky layers",
+      "Cold butter prevents yeast growth",
+      "Cold butter adds yellow color",
+      "Cold butter mixes faster with flour"
+    ],
+    "answer": "Cold butter melts during baking creating steam pockets that form flaky layers",
+    "explanation": "Pockets of cold fat melt in oven, releasing steam that lifts layers.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Pastry Doughs"
+  },
+  {
+    "question": "What is the concept of 'odd numbers' in visual culinary presentation?",
+    "options": [
+      "Serving 1 item per table",
+      "Plating items in groups of 3 or 5 creates more visually appealing compositions",
+      "Cooking food for odd minutes",
+      "Using only odd-numbered plates"
+    ],
+    "answer": "Plating items in groups of 3 or 5 creates more visually appealing compositions",
+    "explanation": "Odd numbers create natural asymmetry that catches the eye.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Plating Techniques"
+  },
+  {
+    "question": "What taste element balances excessive sweetness in a dish?",
+    "options": [
+      "Starch",
+      "Fat (butter)",
+      "Sugar",
+      "Acid or sourness (lemon juice/vinegar)"
+    ],
+    "answer": "Acid or sourness (lemon juice/vinegar)",
+    "explanation": "Acidity cuts through and balances heavy sweetness or richness.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Flavor Pairing"
+  },
+  {
+    "question": "What is the primary function of acid in a meat marinade?",
+    "options": [
+      "To break down surface muscle fibers and tenderize outer layers",
+      "To fully cook the meat internally",
+      "To preserve meat for years",
+      "To sterilize raw meat completely"
+    ],
+    "answer": "To break down surface muscle fibers and tenderize outer layers",
+    "explanation": "Acids weaken surface proteins to enhance tenderness and flavor absorption.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Marinades & Rubs"
+  },
+  {
+    "question": "Which ingredient is a common vegan binder substitution for eggs in baking?",
+    "options": [
+      "Heavy cream",
+      "Flaxseed meal mixed with water",
+      "Butter",
+      "Melted lard"
+    ],
+    "answer": "Flaxseed meal mixed with water",
+    "explanation": "Flaxseed meal combined with water forms a gelatinous egg substitute.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Dietary Substitutions"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #11 (Mother Sauces): Which of the following is NOT one of the 5 French Mother Sauces?",
+    "options": [
+      "Velouté",
+      "Béchamel",
+      "Hollandaise",
+      "Chimichurri"
+    ],
+    "answer": "Chimichurri",
+    "explanation": "The 5 French Mother Sauces are Béchamel, Velouté, Espagnole, Sauce Tomat, and Hollandaise.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Mother Sauces"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #12 (Baking Science): What role does baking soda play in baking batters?",
+    "options": [
+      "Gluten strengthener",
+      "Sweetening agent",
+      "Chemical leavening agent requiring an acid to produce CO2 gas",
+      "Fat emulsifier"
+    ],
+    "answer": "Chemical leavening agent requiring an acid to produce CO2 gas",
+    "explanation": "Baking soda reacts with acidic ingredients to release carbon dioxide gas.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Baking Science"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #13 (Roasting & Grilling): What is the Maillard reaction in culinary science?",
+    "options": [
+      "Coagulation of egg proteins in water",
+      "Emulsification of oil and vinegar",
+      "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+      "Fermentation of yeast in dough"
+    ],
+    "answer": "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+    "explanation": "Maillard browning occurs at ~280°F-330°F giving savory sear flavor.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Roasting & Grilling"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #14 (Emulsification): Which ingredient acts as a natural emulsifier in mayonnaise?",
+    "options": [
+      "Vinegar",
+      "Vegetable oil",
+      "Egg yolk (lecithin)",
+      "Salt"
+    ],
+    "answer": "Egg yolk (lecithin)",
+    "explanation": "Egg yolk contains lecithin which binds oil and water droplets together.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Emulsification"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #15 (Stocks & Broths): Why should stock be simmered gently without boiling rapidly?",
+    "options": [
+      "To increase cooking speed",
+      "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+      "To caramelize the bones",
+      "To evaporate all water"
+    ],
+    "answer": "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+    "explanation": "Boiling forces fat into the liquid creating a cloudy stock.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Stocks & Broths"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #16 (Pastry Doughs): What is the purpose of keeping butter cold when making flaky pastry dough?",
+    "options": [
+      "Cold butter melts during baking creating steam pockets that form flaky layers",
+      "Cold butter prevents yeast growth",
+      "Cold butter adds yellow color",
+      "Cold butter mixes faster with flour"
+    ],
+    "answer": "Cold butter melts during baking creating steam pockets that form flaky layers",
+    "explanation": "Pockets of cold fat melt in oven, releasing steam that lifts layers.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Pastry Doughs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #17 (Plating Techniques): What is the concept of 'odd numbers' in visual culinary presentation?",
+    "options": [
+      "Cooking food for odd minutes",
+      "Serving 1 item per table",
+      "Using only odd-numbered plates",
+      "Plating items in groups of 3 or 5 creates more visually appealing compositions"
+    ],
+    "answer": "Plating items in groups of 3 or 5 creates more visually appealing compositions",
+    "explanation": "Odd numbers create natural asymmetry that catches the eye.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Plating Techniques"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #18 (Flavor Pairing): What taste element balances excessive sweetness in a dish?",
+    "options": [
+      "Fat (butter)",
+      "Sugar",
+      "Starch",
+      "Acid or sourness (lemon juice/vinegar)"
+    ],
+    "answer": "Acid or sourness (lemon juice/vinegar)",
+    "explanation": "Acidity cuts through and balances heavy sweetness or richness.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Flavor Pairing"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #19 (Marinades & Rubs): What is the primary function of acid in a meat marinade?",
+    "options": [
+      "To sterilize raw meat completely",
+      "To preserve meat for years",
+      "To fully cook the meat internally",
+      "To break down surface muscle fibers and tenderize outer layers"
+    ],
+    "answer": "To break down surface muscle fibers and tenderize outer layers",
+    "explanation": "Acids weaken surface proteins to enhance tenderness and flavor absorption.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Marinades & Rubs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #20 (Dietary Substitutions): Which ingredient is a common vegan binder substitution for eggs in baking?",
+    "options": [
+      "Heavy cream",
+      "Flaxseed meal mixed with water",
+      "Melted lard",
+      "Butter"
+    ],
+    "answer": "Flaxseed meal mixed with water",
+    "explanation": "Flaxseed meal combined with water forms a gelatinous egg substitute.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Dietary Substitutions"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #21 (Mother Sauces): Which of the following is NOT one of the 5 French Mother Sauces?",
+    "options": [
+      "Béchamel",
+      "Chimichurri",
+      "Hollandaise",
+      "Velouté"
+    ],
+    "answer": "Chimichurri",
+    "explanation": "The 5 French Mother Sauces are Béchamel, Velouté, Espagnole, Sauce Tomat, and Hollandaise.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Mother Sauces"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #22 (Baking Science): What role does baking soda play in baking batters?",
+    "options": [
+      "Fat emulsifier",
+      "Sweetening agent",
+      "Gluten strengthener",
+      "Chemical leavening agent requiring an acid to produce CO2 gas"
+    ],
+    "answer": "Chemical leavening agent requiring an acid to produce CO2 gas",
+    "explanation": "Baking soda reacts with acidic ingredients to release carbon dioxide gas.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Baking Science"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #23 (Roasting & Grilling): What is the Maillard reaction in culinary science?",
+    "options": [
+      "Emulsification of oil and vinegar",
+      "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+      "Coagulation of egg proteins in water",
+      "Fermentation of yeast in dough"
+    ],
+    "answer": "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+    "explanation": "Maillard browning occurs at ~280°F-330°F giving savory sear flavor.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Roasting & Grilling"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #24 (Emulsification): Which ingredient acts as a natural emulsifier in mayonnaise?",
+    "options": [
+      "Salt",
+      "Vegetable oil",
+      "Vinegar",
+      "Egg yolk (lecithin)"
+    ],
+    "answer": "Egg yolk (lecithin)",
+    "explanation": "Egg yolk contains lecithin which binds oil and water droplets together.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Emulsification"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #25 (Stocks & Broths): Why should stock be simmered gently without boiling rapidly?",
+    "options": [
+      "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+      "To increase cooking speed",
+      "To caramelize the bones",
+      "To evaporate all water"
+    ],
+    "answer": "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+    "explanation": "Boiling forces fat into the liquid creating a cloudy stock.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Stocks & Broths"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #26 (Pastry Doughs): What is the purpose of keeping butter cold when making flaky pastry dough?",
+    "options": [
+      "Cold butter melts during baking creating steam pockets that form flaky layers",
+      "Cold butter adds yellow color",
+      "Cold butter mixes faster with flour",
+      "Cold butter prevents yeast growth"
+    ],
+    "answer": "Cold butter melts during baking creating steam pockets that form flaky layers",
+    "explanation": "Pockets of cold fat melt in oven, releasing steam that lifts layers.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Pastry Doughs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #27 (Plating Techniques): What is the concept of 'odd numbers' in visual culinary presentation?",
+    "options": [
+      "Using only odd-numbered plates",
+      "Serving 1 item per table",
+      "Plating items in groups of 3 or 5 creates more visually appealing compositions",
+      "Cooking food for odd minutes"
+    ],
+    "answer": "Plating items in groups of 3 or 5 creates more visually appealing compositions",
+    "explanation": "Odd numbers create natural asymmetry that catches the eye.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Plating Techniques"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #28 (Flavor Pairing): What taste element balances excessive sweetness in a dish?",
+    "options": [
+      "Sugar",
+      "Acid or sourness (lemon juice/vinegar)",
+      "Fat (butter)",
+      "Starch"
+    ],
+    "answer": "Acid or sourness (lemon juice/vinegar)",
+    "explanation": "Acidity cuts through and balances heavy sweetness or richness.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Flavor Pairing"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #29 (Marinades & Rubs): What is the primary function of acid in a meat marinade?",
+    "options": [
+      "To sterilize raw meat completely",
+      "To break down surface muscle fibers and tenderize outer layers",
+      "To fully cook the meat internally",
+      "To preserve meat for years"
+    ],
+    "answer": "To break down surface muscle fibers and tenderize outer layers",
+    "explanation": "Acids weaken surface proteins to enhance tenderness and flavor absorption.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Marinades & Rubs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #30 (Dietary Substitutions): Which ingredient is a common vegan binder substitution for eggs in baking?",
+    "options": [
+      "Heavy cream",
+      "Flaxseed meal mixed with water",
+      "Butter",
+      "Melted lard"
+    ],
+    "answer": "Flaxseed meal mixed with water",
+    "explanation": "Flaxseed meal combined with water forms a gelatinous egg substitute.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Dietary Substitutions"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #31 (Mother Sauces): Which of the following is NOT one of the 5 French Mother Sauces?",
+    "options": [
+      "Velouté",
+      "Béchamel",
+      "Hollandaise",
+      "Chimichurri"
+    ],
+    "answer": "Chimichurri",
+    "explanation": "The 5 French Mother Sauces are Béchamel, Velouté, Espagnole, Sauce Tomat, and Hollandaise.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Mother Sauces"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #32 (Baking Science): What role does baking soda play in baking batters?",
+    "options": [
+      "Gluten strengthener",
+      "Fat emulsifier",
+      "Sweetening agent",
+      "Chemical leavening agent requiring an acid to produce CO2 gas"
+    ],
+    "answer": "Chemical leavening agent requiring an acid to produce CO2 gas",
+    "explanation": "Baking soda reacts with acidic ingredients to release carbon dioxide gas.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Baking Science"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #33 (Roasting & Grilling): What is the Maillard reaction in culinary science?",
+    "options": [
+      "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+      "Coagulation of egg proteins in water",
+      "Emulsification of oil and vinegar",
+      "Fermentation of yeast in dough"
+    ],
+    "answer": "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+    "explanation": "Maillard browning occurs at ~280°F-330°F giving savory sear flavor.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Roasting & Grilling"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #34 (Emulsification): Which ingredient acts as a natural emulsifier in mayonnaise?",
+    "options": [
+      "Vegetable oil",
+      "Vinegar",
+      "Salt",
+      "Egg yolk (lecithin)"
+    ],
+    "answer": "Egg yolk (lecithin)",
+    "explanation": "Egg yolk contains lecithin which binds oil and water droplets together.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Emulsification"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #35 (Stocks & Broths): Why should stock be simmered gently without boiling rapidly?",
+    "options": [
+      "To evaporate all water",
+      "To increase cooking speed",
+      "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+      "To caramelize the bones"
+    ],
+    "answer": "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+    "explanation": "Boiling forces fat into the liquid creating a cloudy stock.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Stocks & Broths"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #36 (Pastry Doughs): What is the purpose of keeping butter cold when making flaky pastry dough?",
+    "options": [
+      "Cold butter mixes faster with flour",
+      "Cold butter melts during baking creating steam pockets that form flaky layers",
+      "Cold butter adds yellow color",
+      "Cold butter prevents yeast growth"
+    ],
+    "answer": "Cold butter melts during baking creating steam pockets that form flaky layers",
+    "explanation": "Pockets of cold fat melt in oven, releasing steam that lifts layers.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Pastry Doughs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #37 (Plating Techniques): What is the concept of 'odd numbers' in visual culinary presentation?",
+    "options": [
+      "Cooking food for odd minutes",
+      "Plating items in groups of 3 or 5 creates more visually appealing compositions",
+      "Using only odd-numbered plates",
+      "Serving 1 item per table"
+    ],
+    "answer": "Plating items in groups of 3 or 5 creates more visually appealing compositions",
+    "explanation": "Odd numbers create natural asymmetry that catches the eye.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Plating Techniques"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #38 (Flavor Pairing): What taste element balances excessive sweetness in a dish?",
+    "options": [
+      "Acid or sourness (lemon juice/vinegar)",
+      "Starch",
+      "Fat (butter)",
+      "Sugar"
+    ],
+    "answer": "Acid or sourness (lemon juice/vinegar)",
+    "explanation": "Acidity cuts through and balances heavy sweetness or richness.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Flavor Pairing"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #39 (Marinades & Rubs): What is the primary function of acid in a meat marinade?",
+    "options": [
+      "To preserve meat for years",
+      "To break down surface muscle fibers and tenderize outer layers",
+      "To fully cook the meat internally",
+      "To sterilize raw meat completely"
+    ],
+    "answer": "To break down surface muscle fibers and tenderize outer layers",
+    "explanation": "Acids weaken surface proteins to enhance tenderness and flavor absorption.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Marinades & Rubs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #40 (Dietary Substitutions): Which ingredient is a common vegan binder substitution for eggs in baking?",
+    "options": [
+      "Heavy cream",
+      "Flaxseed meal mixed with water",
+      "Melted lard",
+      "Butter"
+    ],
+    "answer": "Flaxseed meal mixed with water",
+    "explanation": "Flaxseed meal combined with water forms a gelatinous egg substitute.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Dietary Substitutions"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #41 (Mother Sauces): Which of the following is NOT one of the 5 French Mother Sauces?",
+    "options": [
+      "Velouté",
+      "Béchamel",
+      "Hollandaise",
+      "Chimichurri"
+    ],
+    "answer": "Chimichurri",
+    "explanation": "The 5 French Mother Sauces are Béchamel, Velouté, Espagnole, Sauce Tomat, and Hollandaise.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Mother Sauces"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #42 (Baking Science): What role does baking soda play in baking batters?",
+    "options": [
+      "Gluten strengthener",
+      "Fat emulsifier",
+      "Sweetening agent",
+      "Chemical leavening agent requiring an acid to produce CO2 gas"
+    ],
+    "answer": "Chemical leavening agent requiring an acid to produce CO2 gas",
+    "explanation": "Baking soda reacts with acidic ingredients to release carbon dioxide gas.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Baking Science"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #43 (Roasting & Grilling): What is the Maillard reaction in culinary science?",
+    "options": [
+      "Fermentation of yeast in dough",
+      "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+      "Coagulation of egg proteins in water",
+      "Emulsification of oil and vinegar"
+    ],
+    "answer": "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+    "explanation": "Maillard browning occurs at ~280°F-330°F giving savory sear flavor.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Roasting & Grilling"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #44 (Emulsification): Which ingredient acts as a natural emulsifier in mayonnaise?",
+    "options": [
+      "Vinegar",
+      "Egg yolk (lecithin)",
+      "Salt",
+      "Vegetable oil"
+    ],
+    "answer": "Egg yolk (lecithin)",
+    "explanation": "Egg yolk contains lecithin which binds oil and water droplets together.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Emulsification"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #45 (Stocks & Broths): Why should stock be simmered gently without boiling rapidly?",
+    "options": [
+      "To evaporate all water",
+      "To increase cooking speed",
+      "To caramelize the bones",
+      "To prevent fat and impurities from emulsifying into the stock making it cloudy"
+    ],
+    "answer": "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+    "explanation": "Boiling forces fat into the liquid creating a cloudy stock.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Stocks & Broths"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #46 (Pastry Doughs): What is the purpose of keeping butter cold when making flaky pastry dough?",
+    "options": [
+      "Cold butter prevents yeast growth",
+      "Cold butter adds yellow color",
+      "Cold butter mixes faster with flour",
+      "Cold butter melts during baking creating steam pockets that form flaky layers"
+    ],
+    "answer": "Cold butter melts during baking creating steam pockets that form flaky layers",
+    "explanation": "Pockets of cold fat melt in oven, releasing steam that lifts layers.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Pastry Doughs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #47 (Plating Techniques): What is the concept of 'odd numbers' in visual culinary presentation?",
+    "options": [
+      "Cooking food for odd minutes",
+      "Serving 1 item per table",
+      "Plating items in groups of 3 or 5 creates more visually appealing compositions",
+      "Using only odd-numbered plates"
+    ],
+    "answer": "Plating items in groups of 3 or 5 creates more visually appealing compositions",
+    "explanation": "Odd numbers create natural asymmetry that catches the eye.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Plating Techniques"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #48 (Flavor Pairing): What taste element balances excessive sweetness in a dish?",
+    "options": [
+      "Starch",
+      "Sugar",
+      "Acid or sourness (lemon juice/vinegar)",
+      "Fat (butter)"
+    ],
+    "answer": "Acid or sourness (lemon juice/vinegar)",
+    "explanation": "Acidity cuts through and balances heavy sweetness or richness.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Flavor Pairing"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #49 (Marinades & Rubs): What is the primary function of acid in a meat marinade?",
+    "options": [
+      "To break down surface muscle fibers and tenderize outer layers",
+      "To sterilize raw meat completely",
+      "To fully cook the meat internally",
+      "To preserve meat for years"
+    ],
+    "answer": "To break down surface muscle fibers and tenderize outer layers",
+    "explanation": "Acids weaken surface proteins to enhance tenderness and flavor absorption.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Marinades & Rubs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #50 (Dietary Substitutions): Which ingredient is a common vegan binder substitution for eggs in baking?",
+    "options": [
+      "Flaxseed meal mixed with water",
+      "Melted lard",
+      "Butter",
+      "Heavy cream"
+    ],
+    "answer": "Flaxseed meal mixed with water",
+    "explanation": "Flaxseed meal combined with water forms a gelatinous egg substitute.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Dietary Substitutions"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #51 (Mother Sauces): Which of the following is NOT one of the 5 French Mother Sauces?",
+    "options": [
+      "Béchamel",
+      "Velouté",
+      "Chimichurri",
+      "Hollandaise"
+    ],
+    "answer": "Chimichurri",
+    "explanation": "The 5 French Mother Sauces are Béchamel, Velouté, Espagnole, Sauce Tomat, and Hollandaise.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Mother Sauces"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #52 (Baking Science): What role does baking soda play in baking batters?",
+    "options": [
+      "Sweetening agent",
+      "Fat emulsifier",
+      "Gluten strengthener",
+      "Chemical leavening agent requiring an acid to produce CO2 gas"
+    ],
+    "answer": "Chemical leavening agent requiring an acid to produce CO2 gas",
+    "explanation": "Baking soda reacts with acidic ingredients to release carbon dioxide gas.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Baking Science"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #53 (Roasting & Grilling): What is the Maillard reaction in culinary science?",
+    "options": [
+      "Coagulation of egg proteins in water",
+      "Emulsification of oil and vinegar",
+      "Fermentation of yeast in dough",
+      "Chemical reaction between amino acids and reducing sugars giving browned food flavor"
+    ],
+    "answer": "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+    "explanation": "Maillard browning occurs at ~280°F-330°F giving savory sear flavor.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Roasting & Grilling"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #54 (Emulsification): Which ingredient acts as a natural emulsifier in mayonnaise?",
+    "options": [
+      "Vegetable oil",
+      "Egg yolk (lecithin)",
+      "Vinegar",
+      "Salt"
+    ],
+    "answer": "Egg yolk (lecithin)",
+    "explanation": "Egg yolk contains lecithin which binds oil and water droplets together.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Emulsification"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #55 (Stocks & Broths): Why should stock be simmered gently without boiling rapidly?",
+    "options": [
+      "To caramelize the bones",
+      "To increase cooking speed",
+      "To evaporate all water",
+      "To prevent fat and impurities from emulsifying into the stock making it cloudy"
+    ],
+    "answer": "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+    "explanation": "Boiling forces fat into the liquid creating a cloudy stock.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Stocks & Broths"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #56 (Pastry Doughs): What is the purpose of keeping butter cold when making flaky pastry dough?",
+    "options": [
+      "Cold butter adds yellow color",
+      "Cold butter melts during baking creating steam pockets that form flaky layers",
+      "Cold butter prevents yeast growth",
+      "Cold butter mixes faster with flour"
+    ],
+    "answer": "Cold butter melts during baking creating steam pockets that form flaky layers",
+    "explanation": "Pockets of cold fat melt in oven, releasing steam that lifts layers.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Pastry Doughs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #57 (Plating Techniques): What is the concept of 'odd numbers' in visual culinary presentation?",
+    "options": [
+      "Cooking food for odd minutes",
+      "Using only odd-numbered plates",
+      "Plating items in groups of 3 or 5 creates more visually appealing compositions",
+      "Serving 1 item per table"
+    ],
+    "answer": "Plating items in groups of 3 or 5 creates more visually appealing compositions",
+    "explanation": "Odd numbers create natural asymmetry that catches the eye.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Plating Techniques"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #58 (Flavor Pairing): What taste element balances excessive sweetness in a dish?",
+    "options": [
+      "Sugar",
+      "Fat (butter)",
+      "Acid or sourness (lemon juice/vinegar)",
+      "Starch"
+    ],
+    "answer": "Acid or sourness (lemon juice/vinegar)",
+    "explanation": "Acidity cuts through and balances heavy sweetness or richness.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Flavor Pairing"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #59 (Marinades & Rubs): What is the primary function of acid in a meat marinade?",
+    "options": [
+      "To sterilize raw meat completely",
+      "To preserve meat for years",
+      "To break down surface muscle fibers and tenderize outer layers",
+      "To fully cook the meat internally"
+    ],
+    "answer": "To break down surface muscle fibers and tenderize outer layers",
+    "explanation": "Acids weaken surface proteins to enhance tenderness and flavor absorption.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Marinades & Rubs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #60 (Dietary Substitutions): Which ingredient is a common vegan binder substitution for eggs in baking?",
+    "options": [
+      "Heavy cream",
+      "Melted lard",
+      "Flaxseed meal mixed with water",
+      "Butter"
+    ],
+    "answer": "Flaxseed meal mixed with water",
+    "explanation": "Flaxseed meal combined with water forms a gelatinous egg substitute.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Dietary Substitutions"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #61 (Mother Sauces): Which of the following is NOT one of the 5 French Mother Sauces?",
+    "options": [
+      "Hollandaise",
+      "Béchamel",
+      "Chimichurri",
+      "Velouté"
+    ],
+    "answer": "Chimichurri",
+    "explanation": "The 5 French Mother Sauces are Béchamel, Velouté, Espagnole, Sauce Tomat, and Hollandaise.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Mother Sauces"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #62 (Baking Science): What role does baking soda play in baking batters?",
+    "options": [
+      "Gluten strengthener",
+      "Sweetening agent",
+      "Chemical leavening agent requiring an acid to produce CO2 gas",
+      "Fat emulsifier"
+    ],
+    "answer": "Chemical leavening agent requiring an acid to produce CO2 gas",
+    "explanation": "Baking soda reacts with acidic ingredients to release carbon dioxide gas.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Baking Science"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #63 (Roasting & Grilling): What is the Maillard reaction in culinary science?",
+    "options": [
+      "Coagulation of egg proteins in water",
+      "Emulsification of oil and vinegar",
+      "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+      "Fermentation of yeast in dough"
+    ],
+    "answer": "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+    "explanation": "Maillard browning occurs at ~280°F-330°F giving savory sear flavor.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Roasting & Grilling"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #64 (Emulsification): Which ingredient acts as a natural emulsifier in mayonnaise?",
+    "options": [
+      "Vinegar",
+      "Salt",
+      "Vegetable oil",
+      "Egg yolk (lecithin)"
+    ],
+    "answer": "Egg yolk (lecithin)",
+    "explanation": "Egg yolk contains lecithin which binds oil and water droplets together.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Emulsification"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #65 (Stocks & Broths): Why should stock be simmered gently without boiling rapidly?",
+    "options": [
+      "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+      "To increase cooking speed",
+      "To evaporate all water",
+      "To caramelize the bones"
+    ],
+    "answer": "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+    "explanation": "Boiling forces fat into the liquid creating a cloudy stock.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Stocks & Broths"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #66 (Pastry Doughs): What is the purpose of keeping butter cold when making flaky pastry dough?",
+    "options": [
+      "Cold butter mixes faster with flour",
+      "Cold butter adds yellow color",
+      "Cold butter melts during baking creating steam pockets that form flaky layers",
+      "Cold butter prevents yeast growth"
+    ],
+    "answer": "Cold butter melts during baking creating steam pockets that form flaky layers",
+    "explanation": "Pockets of cold fat melt in oven, releasing steam that lifts layers.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Pastry Doughs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #67 (Plating Techniques): What is the concept of 'odd numbers' in visual culinary presentation?",
+    "options": [
+      "Serving 1 item per table",
+      "Using only odd-numbered plates",
+      "Cooking food for odd minutes",
+      "Plating items in groups of 3 or 5 creates more visually appealing compositions"
+    ],
+    "answer": "Plating items in groups of 3 or 5 creates more visually appealing compositions",
+    "explanation": "Odd numbers create natural asymmetry that catches the eye.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Plating Techniques"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #68 (Flavor Pairing): What taste element balances excessive sweetness in a dish?",
+    "options": [
+      "Starch",
+      "Sugar",
+      "Acid or sourness (lemon juice/vinegar)",
+      "Fat (butter)"
+    ],
+    "answer": "Acid or sourness (lemon juice/vinegar)",
+    "explanation": "Acidity cuts through and balances heavy sweetness or richness.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Flavor Pairing"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #69 (Marinades & Rubs): What is the primary function of acid in a meat marinade?",
+    "options": [
+      "To break down surface muscle fibers and tenderize outer layers",
+      "To preserve meat for years",
+      "To fully cook the meat internally",
+      "To sterilize raw meat completely"
+    ],
+    "answer": "To break down surface muscle fibers and tenderize outer layers",
+    "explanation": "Acids weaken surface proteins to enhance tenderness and flavor absorption.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Marinades & Rubs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #70 (Dietary Substitutions): Which ingredient is a common vegan binder substitution for eggs in baking?",
+    "options": [
+      "Butter",
+      "Heavy cream",
+      "Melted lard",
+      "Flaxseed meal mixed with water"
+    ],
+    "answer": "Flaxseed meal mixed with water",
+    "explanation": "Flaxseed meal combined with water forms a gelatinous egg substitute.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Dietary Substitutions"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #71 (Mother Sauces): Which of the following is NOT one of the 5 French Mother Sauces?",
+    "options": [
+      "Hollandaise",
+      "Velouté",
+      "Béchamel",
+      "Chimichurri"
+    ],
+    "answer": "Chimichurri",
+    "explanation": "The 5 French Mother Sauces are Béchamel, Velouté, Espagnole, Sauce Tomat, and Hollandaise.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Mother Sauces"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #72 (Baking Science): What role does baking soda play in baking batters?",
+    "options": [
+      "Sweetening agent",
+      "Chemical leavening agent requiring an acid to produce CO2 gas",
+      "Fat emulsifier",
+      "Gluten strengthener"
+    ],
+    "answer": "Chemical leavening agent requiring an acid to produce CO2 gas",
+    "explanation": "Baking soda reacts with acidic ingredients to release carbon dioxide gas.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Baking Science"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #73 (Roasting & Grilling): What is the Maillard reaction in culinary science?",
+    "options": [
+      "Emulsification of oil and vinegar",
+      "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+      "Coagulation of egg proteins in water",
+      "Fermentation of yeast in dough"
+    ],
+    "answer": "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+    "explanation": "Maillard browning occurs at ~280°F-330°F giving savory sear flavor.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Roasting & Grilling"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #74 (Emulsification): Which ingredient acts as a natural emulsifier in mayonnaise?",
+    "options": [
+      "Salt",
+      "Vinegar",
+      "Vegetable oil",
+      "Egg yolk (lecithin)"
+    ],
+    "answer": "Egg yolk (lecithin)",
+    "explanation": "Egg yolk contains lecithin which binds oil and water droplets together.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Emulsification"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #75 (Stocks & Broths): Why should stock be simmered gently without boiling rapidly?",
+    "options": [
+      "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+      "To evaporate all water",
+      "To caramelize the bones",
+      "To increase cooking speed"
+    ],
+    "answer": "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+    "explanation": "Boiling forces fat into the liquid creating a cloudy stock.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Stocks & Broths"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #76 (Pastry Doughs): What is the purpose of keeping butter cold when making flaky pastry dough?",
+    "options": [
+      "Cold butter melts during baking creating steam pockets that form flaky layers",
+      "Cold butter mixes faster with flour",
+      "Cold butter prevents yeast growth",
+      "Cold butter adds yellow color"
+    ],
+    "answer": "Cold butter melts during baking creating steam pockets that form flaky layers",
+    "explanation": "Pockets of cold fat melt in oven, releasing steam that lifts layers.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Pastry Doughs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #77 (Plating Techniques): What is the concept of 'odd numbers' in visual culinary presentation?",
+    "options": [
+      "Serving 1 item per table",
+      "Cooking food for odd minutes",
+      "Using only odd-numbered plates",
+      "Plating items in groups of 3 or 5 creates more visually appealing compositions"
+    ],
+    "answer": "Plating items in groups of 3 or 5 creates more visually appealing compositions",
+    "explanation": "Odd numbers create natural asymmetry that catches the eye.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Plating Techniques"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #78 (Flavor Pairing): What taste element balances excessive sweetness in a dish?",
+    "options": [
+      "Acid or sourness (lemon juice/vinegar)",
+      "Starch",
+      "Sugar",
+      "Fat (butter)"
+    ],
+    "answer": "Acid or sourness (lemon juice/vinegar)",
+    "explanation": "Acidity cuts through and balances heavy sweetness or richness.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Flavor Pairing"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #79 (Marinades & Rubs): What is the primary function of acid in a meat marinade?",
+    "options": [
+      "To sterilize raw meat completely",
+      "To break down surface muscle fibers and tenderize outer layers",
+      "To fully cook the meat internally",
+      "To preserve meat for years"
+    ],
+    "answer": "To break down surface muscle fibers and tenderize outer layers",
+    "explanation": "Acids weaken surface proteins to enhance tenderness and flavor absorption.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Marinades & Rubs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #80 (Dietary Substitutions): Which ingredient is a common vegan binder substitution for eggs in baking?",
+    "options": [
+      "Butter",
+      "Melted lard",
+      "Heavy cream",
+      "Flaxseed meal mixed with water"
+    ],
+    "answer": "Flaxseed meal mixed with water",
+    "explanation": "Flaxseed meal combined with water forms a gelatinous egg substitute.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Dietary Substitutions"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #81 (Mother Sauces): Which of the following is NOT one of the 5 French Mother Sauces?",
+    "options": [
+      "Velouté",
+      "Hollandaise",
+      "Béchamel",
+      "Chimichurri"
+    ],
+    "answer": "Chimichurri",
+    "explanation": "The 5 French Mother Sauces are Béchamel, Velouté, Espagnole, Sauce Tomat, and Hollandaise.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Mother Sauces"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #82 (Baking Science): What role does baking soda play in baking batters?",
+    "options": [
+      "Chemical leavening agent requiring an acid to produce CO2 gas",
+      "Gluten strengthener",
+      "Sweetening agent",
+      "Fat emulsifier"
+    ],
+    "answer": "Chemical leavening agent requiring an acid to produce CO2 gas",
+    "explanation": "Baking soda reacts with acidic ingredients to release carbon dioxide gas.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Baking Science"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #83 (Roasting & Grilling): What is the Maillard reaction in culinary science?",
+    "options": [
+      "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+      "Emulsification of oil and vinegar",
+      "Fermentation of yeast in dough",
+      "Coagulation of egg proteins in water"
+    ],
+    "answer": "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+    "explanation": "Maillard browning occurs at ~280°F-330°F giving savory sear flavor.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Roasting & Grilling"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #84 (Emulsification): Which ingredient acts as a natural emulsifier in mayonnaise?",
+    "options": [
+      "Vinegar",
+      "Salt",
+      "Egg yolk (lecithin)",
+      "Vegetable oil"
+    ],
+    "answer": "Egg yolk (lecithin)",
+    "explanation": "Egg yolk contains lecithin which binds oil and water droplets together.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Emulsification"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #85 (Stocks & Broths): Why should stock be simmered gently without boiling rapidly?",
+    "options": [
+      "To caramelize the bones",
+      "To increase cooking speed",
+      "To evaporate all water",
+      "To prevent fat and impurities from emulsifying into the stock making it cloudy"
+    ],
+    "answer": "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+    "explanation": "Boiling forces fat into the liquid creating a cloudy stock.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Stocks & Broths"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #86 (Pastry Doughs): What is the purpose of keeping butter cold when making flaky pastry dough?",
+    "options": [
+      "Cold butter adds yellow color",
+      "Cold butter prevents yeast growth",
+      "Cold butter mixes faster with flour",
+      "Cold butter melts during baking creating steam pockets that form flaky layers"
+    ],
+    "answer": "Cold butter melts during baking creating steam pockets that form flaky layers",
+    "explanation": "Pockets of cold fat melt in oven, releasing steam that lifts layers.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Pastry Doughs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #87 (Plating Techniques): What is the concept of 'odd numbers' in visual culinary presentation?",
+    "options": [
+      "Using only odd-numbered plates",
+      "Serving 1 item per table",
+      "Cooking food for odd minutes",
+      "Plating items in groups of 3 or 5 creates more visually appealing compositions"
+    ],
+    "answer": "Plating items in groups of 3 or 5 creates more visually appealing compositions",
+    "explanation": "Odd numbers create natural asymmetry that catches the eye.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Plating Techniques"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #88 (Flavor Pairing): What taste element balances excessive sweetness in a dish?",
+    "options": [
+      "Fat (butter)",
+      "Starch",
+      "Sugar",
+      "Acid or sourness (lemon juice/vinegar)"
+    ],
+    "answer": "Acid or sourness (lemon juice/vinegar)",
+    "explanation": "Acidity cuts through and balances heavy sweetness or richness.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Flavor Pairing"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #89 (Marinades & Rubs): What is the primary function of acid in a meat marinade?",
+    "options": [
+      "To fully cook the meat internally",
+      "To preserve meat for years",
+      "To break down surface muscle fibers and tenderize outer layers",
+      "To sterilize raw meat completely"
+    ],
+    "answer": "To break down surface muscle fibers and tenderize outer layers",
+    "explanation": "Acids weaken surface proteins to enhance tenderness and flavor absorption.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Marinades & Rubs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #90 (Dietary Substitutions): Which ingredient is a common vegan binder substitution for eggs in baking?",
+    "options": [
+      "Heavy cream",
+      "Melted lard",
+      "Flaxseed meal mixed with water",
+      "Butter"
+    ],
+    "answer": "Flaxseed meal mixed with water",
+    "explanation": "Flaxseed meal combined with water forms a gelatinous egg substitute.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Dietary Substitutions"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #91 (Mother Sauces): Which of the following is NOT one of the 5 French Mother Sauces?",
+    "options": [
+      "Chimichurri",
+      "Velouté",
+      "Béchamel",
+      "Hollandaise"
+    ],
+    "answer": "Chimichurri",
+    "explanation": "The 5 French Mother Sauces are Béchamel, Velouté, Espagnole, Sauce Tomat, and Hollandaise.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Mother Sauces"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #92 (Baking Science): What role does baking soda play in baking batters?",
+    "options": [
+      "Chemical leavening agent requiring an acid to produce CO2 gas",
+      "Fat emulsifier",
+      "Gluten strengthener",
+      "Sweetening agent"
+    ],
+    "answer": "Chemical leavening agent requiring an acid to produce CO2 gas",
+    "explanation": "Baking soda reacts with acidic ingredients to release carbon dioxide gas.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Baking Science"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #93 (Roasting & Grilling): What is the Maillard reaction in culinary science?",
+    "options": [
+      "Fermentation of yeast in dough",
+      "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+      "Coagulation of egg proteins in water",
+      "Emulsification of oil and vinegar"
+    ],
+    "answer": "Chemical reaction between amino acids and reducing sugars giving browned food flavor",
+    "explanation": "Maillard browning occurs at ~280°F-330°F giving savory sear flavor.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Roasting & Grilling"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #94 (Emulsification): Which ingredient acts as a natural emulsifier in mayonnaise?",
+    "options": [
+      "Vegetable oil",
+      "Salt",
+      "Egg yolk (lecithin)",
+      "Vinegar"
+    ],
+    "answer": "Egg yolk (lecithin)",
+    "explanation": "Egg yolk contains lecithin which binds oil and water droplets together.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Emulsification"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #95 (Stocks & Broths): Why should stock be simmered gently without boiling rapidly?",
+    "options": [
+      "To evaporate all water",
+      "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+      "To increase cooking speed",
+      "To caramelize the bones"
+    ],
+    "answer": "To prevent fat and impurities from emulsifying into the stock making it cloudy",
+    "explanation": "Boiling forces fat into the liquid creating a cloudy stock.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Stocks & Broths"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #96 (Pastry Doughs): What is the purpose of keeping butter cold when making flaky pastry dough?",
+    "options": [
+      "Cold butter prevents yeast growth",
+      "Cold butter melts during baking creating steam pockets that form flaky layers",
+      "Cold butter mixes faster with flour",
+      "Cold butter adds yellow color"
+    ],
+    "answer": "Cold butter melts during baking creating steam pockets that form flaky layers",
+    "explanation": "Pockets of cold fat melt in oven, releasing steam that lifts layers.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Pastry Doughs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #97 (Plating Techniques): What is the concept of 'odd numbers' in visual culinary presentation?",
+    "options": [
+      "Plating items in groups of 3 or 5 creates more visually appealing compositions",
+      "Cooking food for odd minutes",
+      "Using only odd-numbered plates",
+      "Serving 1 item per table"
+    ],
+    "answer": "Plating items in groups of 3 or 5 creates more visually appealing compositions",
+    "explanation": "Odd numbers create natural asymmetry that catches the eye.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Plating Techniques"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #98 (Flavor Pairing): What taste element balances excessive sweetness in a dish?",
+    "options": [
+      "Acid or sourness (lemon juice/vinegar)",
+      "Fat (butter)",
+      "Starch",
+      "Sugar"
+    ],
+    "answer": "Acid or sourness (lemon juice/vinegar)",
+    "explanation": "Acidity cuts through and balances heavy sweetness or richness.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Flavor Pairing"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #99 (Marinades & Rubs): What is the primary function of acid in a meat marinade?",
+    "options": [
+      "To fully cook the meat internally",
+      "To preserve meat for years",
+      "To sterilize raw meat completely",
+      "To break down surface muscle fibers and tenderize outer layers"
+    ],
+    "answer": "To break down surface muscle fibers and tenderize outer layers",
+    "explanation": "Acids weaken surface proteins to enhance tenderness and flavor absorption.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Marinades & Rubs"
+  },
+  {
+    "question": "[Cooking - Medium] Case Study #100 (Dietary Substitutions): Which ingredient is a common vegan binder substitution for eggs in baking?",
+    "options": [
+      "Heavy cream",
+      "Butter",
+      "Flaxseed meal mixed with water",
+      "Melted lard"
+    ],
+    "answer": "Flaxseed meal mixed with water",
+    "explanation": "Flaxseed meal combined with water forms a gelatinous egg substitute.",
+    "difficulty": "Medium",
+    "skill": "Cooking",
+    "topic": "Dietary Substitutions"
+  }
+]

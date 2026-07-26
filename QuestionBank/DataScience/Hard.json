@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "What is the median of a dataset?",
+    "options": [
+      "The range between max and min",
+      "The most frequent value",
+      "The average sum divided by count",
+      "The middle value when data is sorted in order"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Index",
+      "Series",
+      "Panel",
+      "DataFrame"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "What is One-Hot Encoding used for?",
+    "options": [
+      "Removing null values",
+      "Shuffling rows",
+      "Converting categorical variables into binary indicator vectors",
+      "Scaling numerical values between 0 and 1"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Training neural network layers",
+      "Reducing feature dimension while preserving maximum variance",
+      "Encrypting dataset",
+      "Increasing dataset size"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #5 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The average sum divided by count",
+      "The most frequent value",
+      "The range between max and min",
+      "The middle value when data is sorted in order"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #6 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "DataFrame",
+      "Index",
+      "Panel",
+      "Series"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #7 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Scaling numerical values between 0 and 1",
+      "Removing null values",
+      "Converting categorical variables into binary indicator vectors",
+      "Shuffling rows"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #8 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Encrypting dataset",
+      "Reducing feature dimension while preserving maximum variance",
+      "Training neural network layers",
+      "Increasing dataset size"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #9 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The range between max and min",
+      "The average sum divided by count",
+      "The most frequent value",
+      "The middle value when data is sorted in order"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #10 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Index",
+      "Series",
+      "DataFrame",
+      "Panel"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #11 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Shuffling rows",
+      "Converting categorical variables into binary indicator vectors",
+      "Removing null values",
+      "Scaling numerical values between 0 and 1"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #12 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Encrypting dataset",
+      "Reducing feature dimension while preserving maximum variance",
+      "Training neural network layers",
+      "Increasing dataset size"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #13 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The average sum divided by count",
+      "The most frequent value",
+      "The range between max and min",
+      "The middle value when data is sorted in order"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #14 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "DataFrame",
+      "Panel",
+      "Index",
+      "Series"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #15 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Scaling numerical values between 0 and 1",
+      "Shuffling rows",
+      "Removing null values",
+      "Converting categorical variables into binary indicator vectors"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #16 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Encrypting dataset",
+      "Training neural network layers",
+      "Reducing feature dimension while preserving maximum variance",
+      "Increasing dataset size"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #17 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The average sum divided by count",
+      "The range between max and min",
+      "The most frequent value",
+      "The middle value when data is sorted in order"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #18 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Series",
+      "Panel",
+      "Index",
+      "DataFrame"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #19 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Removing null values",
+      "Converting categorical variables into binary indicator vectors",
+      "Shuffling rows",
+      "Scaling numerical values between 0 and 1"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #20 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Training neural network layers",
+      "Increasing dataset size",
+      "Reducing feature dimension while preserving maximum variance",
+      "Encrypting dataset"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #21 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The middle value when data is sorted in order",
+      "The average sum divided by count",
+      "The range between max and min",
+      "The most frequent value"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #22 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Series",
+      "Panel",
+      "DataFrame",
+      "Index"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #23 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Scaling numerical values between 0 and 1",
+      "Converting categorical variables into binary indicator vectors",
+      "Shuffling rows",
+      "Removing null values"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #24 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Training neural network layers",
+      "Encrypting dataset",
+      "Increasing dataset size",
+      "Reducing feature dimension while preserving maximum variance"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #25 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The middle value when data is sorted in order",
+      "The range between max and min",
+      "The most frequent value",
+      "The average sum divided by count"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #26 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "DataFrame",
+      "Panel",
+      "Index",
+      "Series"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #27 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Converting categorical variables into binary indicator vectors",
+      "Removing null values",
+      "Scaling numerical values between 0 and 1",
+      "Shuffling rows"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #28 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Increasing dataset size",
+      "Encrypting dataset",
+      "Reducing feature dimension while preserving maximum variance",
+      "Training neural network layers"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #29 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The middle value when data is sorted in order",
+      "The range between max and min",
+      "The average sum divided by count",
+      "The most frequent value"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #30 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Series",
+      "Index",
+      "Panel",
+      "DataFrame"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #31 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Removing null values",
+      "Scaling numerical values between 0 and 1",
+      "Shuffling rows",
+      "Converting categorical variables into binary indicator vectors"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #32 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Training neural network layers",
+      "Encrypting dataset",
+      "Increasing dataset size",
+      "Reducing feature dimension while preserving maximum variance"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #33 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The range between max and min",
+      "The average sum divided by count",
+      "The middle value when data is sorted in order",
+      "The most frequent value"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #34 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Panel",
+      "Index",
+      "DataFrame",
+      "Series"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #35 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Converting categorical variables into binary indicator vectors",
+      "Removing null values",
+      "Scaling numerical values between 0 and 1",
+      "Shuffling rows"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #36 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Increasing dataset size",
+      "Encrypting dataset",
+      "Reducing feature dimension while preserving maximum variance",
+      "Training neural network layers"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #37 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The middle value when data is sorted in order",
+      "The range between max and min",
+      "The most frequent value",
+      "The average sum divided by count"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #38 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "DataFrame",
+      "Index",
+      "Series",
+      "Panel"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #39 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Shuffling rows",
+      "Scaling numerical values between 0 and 1",
+      "Removing null values",
+      "Converting categorical variables into binary indicator vectors"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #40 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Encrypting dataset",
+      "Increasing dataset size",
+      "Reducing feature dimension while preserving maximum variance",
+      "Training neural network layers"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #41 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The range between max and min",
+      "The average sum divided by count",
+      "The most frequent value",
+      "The middle value when data is sorted in order"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #42 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Series",
+      "DataFrame",
+      "Panel",
+      "Index"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #43 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Converting categorical variables into binary indicator vectors",
+      "Scaling numerical values between 0 and 1",
+      "Removing null values",
+      "Shuffling rows"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #44 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Training neural network layers",
+      "Encrypting dataset",
+      "Increasing dataset size",
+      "Reducing feature dimension while preserving maximum variance"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #45 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The average sum divided by count",
+      "The most frequent value",
+      "The range between max and min",
+      "The middle value when data is sorted in order"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #46 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "DataFrame",
+      "Series",
+      "Panel",
+      "Index"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #47 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Removing null values",
+      "Converting categorical variables into binary indicator vectors",
+      "Shuffling rows",
+      "Scaling numerical values between 0 and 1"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #48 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Reducing feature dimension while preserving maximum variance",
+      "Increasing dataset size",
+      "Encrypting dataset",
+      "Training neural network layers"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #49 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The middle value when data is sorted in order",
+      "The average sum divided by count",
+      "The range between max and min",
+      "The most frequent value"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #50 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Panel",
+      "DataFrame",
+      "Series",
+      "Index"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #51 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Scaling numerical values between 0 and 1",
+      "Removing null values",
+      "Shuffling rows",
+      "Converting categorical variables into binary indicator vectors"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #52 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Encrypting dataset",
+      "Training neural network layers",
+      "Increasing dataset size",
+      "Reducing feature dimension while preserving maximum variance"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #53 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The range between max and min",
+      "The average sum divided by count",
+      "The most frequent value",
+      "The middle value when data is sorted in order"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #54 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Series",
+      "Index",
+      "DataFrame",
+      "Panel"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #55 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Converting categorical variables into binary indicator vectors",
+      "Scaling numerical values between 0 and 1",
+      "Removing null values",
+      "Shuffling rows"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #56 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Encrypting dataset",
+      "Reducing feature dimension while preserving maximum variance",
+      "Increasing dataset size",
+      "Training neural network layers"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #57 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The average sum divided by count",
+      "The most frequent value",
+      "The middle value when data is sorted in order",
+      "The range between max and min"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #58 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Panel",
+      "Index",
+      "DataFrame",
+      "Series"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #59 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Shuffling rows",
+      "Removing null values",
+      "Converting categorical variables into binary indicator vectors",
+      "Scaling numerical values between 0 and 1"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #60 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Training neural network layers",
+      "Reducing feature dimension while preserving maximum variance",
+      "Increasing dataset size",
+      "Encrypting dataset"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #61 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The average sum divided by count",
+      "The most frequent value",
+      "The middle value when data is sorted in order",
+      "The range between max and min"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #62 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Panel",
+      "Series",
+      "Index",
+      "DataFrame"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #63 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Scaling numerical values between 0 and 1",
+      "Removing null values",
+      "Shuffling rows",
+      "Converting categorical variables into binary indicator vectors"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #64 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Training neural network layers",
+      "Reducing feature dimension while preserving maximum variance",
+      "Encrypting dataset",
+      "Increasing dataset size"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #65 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The average sum divided by count",
+      "The range between max and min",
+      "The middle value when data is sorted in order",
+      "The most frequent value"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #66 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "DataFrame",
+      "Index",
+      "Series",
+      "Panel"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #67 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Shuffling rows",
+      "Removing null values",
+      "Converting categorical variables into binary indicator vectors",
+      "Scaling numerical values between 0 and 1"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #68 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Training neural network layers",
+      "Increasing dataset size",
+      "Encrypting dataset",
+      "Reducing feature dimension while preserving maximum variance"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #69 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The average sum divided by count",
+      "The most frequent value",
+      "The range between max and min",
+      "The middle value when data is sorted in order"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #70 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Panel",
+      "Index",
+      "DataFrame",
+      "Series"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #71 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Converting categorical variables into binary indicator vectors",
+      "Removing null values",
+      "Shuffling rows",
+      "Scaling numerical values between 0 and 1"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #72 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Training neural network layers",
+      "Increasing dataset size",
+      "Reducing feature dimension while preserving maximum variance",
+      "Encrypting dataset"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #73 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The average sum divided by count",
+      "The middle value when data is sorted in order",
+      "The most frequent value",
+      "The range between max and min"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #74 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Panel",
+      "Series",
+      "Index",
+      "DataFrame"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #75 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Scaling numerical values between 0 and 1",
+      "Removing null values",
+      "Converting categorical variables into binary indicator vectors",
+      "Shuffling rows"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #76 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Encrypting dataset",
+      "Reducing feature dimension while preserving maximum variance",
+      "Increasing dataset size",
+      "Training neural network layers"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #77 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The most frequent value",
+      "The range between max and min",
+      "The average sum divided by count",
+      "The middle value when data is sorted in order"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #78 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "DataFrame",
+      "Series",
+      "Panel",
+      "Index"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #79 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Removing null values",
+      "Scaling numerical values between 0 and 1",
+      "Converting categorical variables into binary indicator vectors",
+      "Shuffling rows"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #80 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Reducing feature dimension while preserving maximum variance",
+      "Training neural network layers",
+      "Encrypting dataset",
+      "Increasing dataset size"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #81 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The range between max and min",
+      "The most frequent value",
+      "The middle value when data is sorted in order",
+      "The average sum divided by count"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #82 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Panel",
+      "Index",
+      "Series",
+      "DataFrame"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #83 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Converting categorical variables into binary indicator vectors",
+      "Scaling numerical values between 0 and 1",
+      "Shuffling rows",
+      "Removing null values"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #84 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Increasing dataset size",
+      "Training neural network layers",
+      "Encrypting dataset",
+      "Reducing feature dimension while preserving maximum variance"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #85 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The middle value when data is sorted in order",
+      "The range between max and min",
+      "The most frequent value",
+      "The average sum divided by count"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #86 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Panel",
+      "DataFrame",
+      "Series",
+      "Index"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #87 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Converting categorical variables into binary indicator vectors",
+      "Shuffling rows",
+      "Removing null values",
+      "Scaling numerical values between 0 and 1"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #88 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Training neural network layers",
+      "Reducing feature dimension while preserving maximum variance",
+      "Increasing dataset size",
+      "Encrypting dataset"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #89 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The average sum divided by count",
+      "The most frequent value",
+      "The range between max and min",
+      "The middle value when data is sorted in order"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #90 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Index",
+      "Series",
+      "DataFrame",
+      "Panel"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #91 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Shuffling rows",
+      "Converting categorical variables into binary indicator vectors",
+      "Scaling numerical values between 0 and 1",
+      "Removing null values"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #92 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Increasing dataset size",
+      "Training neural network layers",
+      "Encrypting dataset",
+      "Reducing feature dimension while preserving maximum variance"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #93 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The average sum divided by count",
+      "The most frequent value",
+      "The range between max and min",
+      "The middle value when data is sorted in order"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #94 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Index",
+      "DataFrame",
+      "Series",
+      "Panel"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #95 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Scaling numerical values between 0 and 1",
+      "Shuffling rows",
+      "Removing null values",
+      "Converting categorical variables into binary indicator vectors"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #96 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Encrypting dataset",
+      "Reducing feature dimension while preserving maximum variance",
+      "Training neural network layers",
+      "Increasing dataset size"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #97 (Descriptive Statistics): What is the median of a dataset?",
+    "options": [
+      "The range between max and min",
+      "The average sum divided by count",
+      "The middle value when data is sorted in order",
+      "The most frequent value"
+    ],
+    "answer": "The middle value when data is sorted in order",
+    "explanation": "Median is the 50th percentile central value.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Descriptive Statistics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #98 (Pandas Basics): Which Pandas object represents a 2D tabular data structure with columns?",
+    "options": [
+      "Index",
+      "Panel",
+      "DataFrame",
+      "Series"
+    ],
+    "answer": "DataFrame",
+    "explanation": "DataFrame is a 2D labeled tabular data structure.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Pandas Basics"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #99 (Feature Engineering): What is One-Hot Encoding used for?",
+    "options": [
+      "Converting categorical variables into binary indicator vectors",
+      "Shuffling rows",
+      "Removing null values",
+      "Scaling numerical values between 0 and 1"
+    ],
+    "answer": "Converting categorical variables into binary indicator vectors",
+    "explanation": "One-hot encoding turns categories into 0/1 indicator columns.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Feature Engineering"
+  },
+  {
+    "question": "[DataScience - Hard] Case Study #100 (Dimensionality Reduction): What is the primary goal of PCA (Principal Component Analysis)?",
+    "options": [
+      "Training neural network layers",
+      "Reducing feature dimension while preserving maximum variance",
+      "Encrypting dataset",
+      "Increasing dataset size"
+    ],
+    "answer": "Reducing feature dimension while preserving maximum variance",
+    "explanation": "PCA transforms features into uncorrelated principal components.",
+    "difficulty": "Hard",
+    "skill": "DataScience",
+    "topic": "Dimensionality Reduction"
+  }
+]

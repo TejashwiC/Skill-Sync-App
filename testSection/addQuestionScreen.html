@@ -1,0 +1,21 @@
+<div class="screen" id="addQuestionScreen">
+<button class="back-btn" onclick="backTestDashboard()">← Back</button>
+          <h2>Add Questions</h2>
+          <label style="font-size:13px;color:#555;font-weight:600;">Select Test:</label>
+          <select id="testSelect" style="margin-bottom:14px;"></select>
+          <input type="text" id="question" placeholder="Question" style="margin-bottom:10px;">
+          <input type="text" id="option1" placeholder="Option A" oninput="updateCorrectDropdown()" style="margin-bottom:8px;">
+          <input type="text" id="option2" placeholder="Option B" oninput="updateCorrectDropdown()" style="margin-bottom:8px;">
+          <input type="text" id="option3" placeholder="Option C" oninput="updateCorrectDropdown()" style="margin-bottom:8px;">
+          <input type="text" id="option4" placeholder="Option D" oninput="updateCorrectDropdown()" style="margin-bottom:14px;">
+          <label style="font-size:13px;color:#555;font-weight:600;">Correct Answer:</label>
+          <select id="correctAnswer" style="margin-bottom:14px;">
+            <option value="">-- Select Correct Option --</option>
+            <option id="optA" value="">A</option>
+            <option id="optB" value="">B</option>
+            <option id="optC" value="">C</option>
+            <option id="optD" value="">D</option>
+          </select>
+          <p style="font-size:12px;color:#888;margin:-8px 0 14px;background:#fffde7;padding:8px 12px;border-radius:8px;border-left:3px solid #f39c12;">💡 Type your options first — the dropdown will auto-fill A/B/C/D with your option text. Then select the correct one.</p>
+          <button onclick="addQuestion()"><i class="fas fa-plus"></i> Add Question</button>
+</div>

@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "9H",
+      "2H",
+      "HB",
+      "9B"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Vanishing Point on the Horizon Line",
+      "Top margin",
+      "Center of the paper",
+      "Focal point of light"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "What is cross-hatching in drawing?",
+    "options": [
+      "Erasing highlights",
+      "Shading using intersecting sets of parallel lines",
+      "Smudging graphite with fingers",
+      "Drawing continuous circles"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "What is the main goal of a gesture drawing?",
+    "options": [
+      "Measuring exact millimeter dimensions",
+      "Rendering photorealistic detail",
+      "Coloring inside outlines",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #5 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "HB",
+      "9B",
+      "9H",
+      "2H"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #6 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Center of the paper",
+      "Focal point of light",
+      "Vanishing Point on the Horizon Line",
+      "Top margin"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #7 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Shading using intersecting sets of parallel lines",
+      "Smudging graphite with fingers",
+      "Erasing highlights",
+      "Drawing continuous circles"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #8 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Rendering photorealistic detail",
+      "Coloring inside outlines",
+      "Measuring exact millimeter dimensions",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #9 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "9H",
+      "HB",
+      "9B",
+      "2H"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #10 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Focal point of light",
+      "Center of the paper",
+      "Vanishing Point on the Horizon Line",
+      "Top margin"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #11 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Smudging graphite with fingers",
+      "Erasing highlights",
+      "Shading using intersecting sets of parallel lines",
+      "Drawing continuous circles"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #12 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Measuring exact millimeter dimensions",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Coloring inside outlines",
+      "Rendering photorealistic detail"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #13 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "9B",
+      "HB",
+      "9H",
+      "2H"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #14 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Top margin",
+      "Center of the paper",
+      "Focal point of light",
+      "Vanishing Point on the Horizon Line"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #15 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Drawing continuous circles",
+      "Smudging graphite with fingers",
+      "Shading using intersecting sets of parallel lines",
+      "Erasing highlights"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #16 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Measuring exact millimeter dimensions",
+      "Rendering photorealistic detail",
+      "Coloring inside outlines",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #17 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "HB",
+      "2H",
+      "9B",
+      "9H"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #18 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Focal point of light",
+      "Vanishing Point on the Horizon Line",
+      "Top margin",
+      "Center of the paper"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #19 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Drawing continuous circles",
+      "Shading using intersecting sets of parallel lines",
+      "Erasing highlights",
+      "Smudging graphite with fingers"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #20 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Measuring exact millimeter dimensions",
+      "Coloring inside outlines",
+      "Rendering photorealistic detail",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #21 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "HB",
+      "2H",
+      "9H",
+      "9B"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #22 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Vanishing Point on the Horizon Line",
+      "Top margin",
+      "Center of the paper",
+      "Focal point of light"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #23 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Erasing highlights",
+      "Shading using intersecting sets of parallel lines",
+      "Smudging graphite with fingers",
+      "Drawing continuous circles"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #24 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Coloring inside outlines",
+      "Measuring exact millimeter dimensions",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Rendering photorealistic detail"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #25 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "9H",
+      "9B",
+      "2H",
+      "HB"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #26 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Focal point of light",
+      "Vanishing Point on the Horizon Line",
+      "Top margin",
+      "Center of the paper"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #27 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Smudging graphite with fingers",
+      "Drawing continuous circles",
+      "Shading using intersecting sets of parallel lines",
+      "Erasing highlights"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #28 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Coloring inside outlines",
+      "Measuring exact millimeter dimensions",
+      "Rendering photorealistic detail"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #29 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "HB",
+      "2H",
+      "9H",
+      "9B"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #30 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Top margin",
+      "Focal point of light",
+      "Vanishing Point on the Horizon Line",
+      "Center of the paper"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #31 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Shading using intersecting sets of parallel lines",
+      "Erasing highlights",
+      "Smudging graphite with fingers",
+      "Drawing continuous circles"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #32 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Coloring inside outlines",
+      "Measuring exact millimeter dimensions",
+      "Rendering photorealistic detail"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #33 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "9B",
+      "9H",
+      "HB",
+      "2H"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #34 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Top margin",
+      "Center of the paper",
+      "Vanishing Point on the Horizon Line",
+      "Focal point of light"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #35 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Smudging graphite with fingers",
+      "Drawing continuous circles",
+      "Erasing highlights",
+      "Shading using intersecting sets of parallel lines"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #36 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Rendering photorealistic detail",
+      "Coloring inside outlines",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Measuring exact millimeter dimensions"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #37 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "HB",
+      "9H",
+      "2H",
+      "9B"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #38 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Top margin",
+      "Center of the paper",
+      "Vanishing Point on the Horizon Line",
+      "Focal point of light"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #39 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Shading using intersecting sets of parallel lines",
+      "Drawing continuous circles",
+      "Erasing highlights",
+      "Smudging graphite with fingers"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #40 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Measuring exact millimeter dimensions",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Rendering photorealistic detail",
+      "Coloring inside outlines"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #41 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "9H",
+      "9B",
+      "HB",
+      "2H"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #42 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Top margin",
+      "Focal point of light",
+      "Center of the paper",
+      "Vanishing Point on the Horizon Line"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #43 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Erasing highlights",
+      "Shading using intersecting sets of parallel lines",
+      "Drawing continuous circles",
+      "Smudging graphite with fingers"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #44 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Coloring inside outlines",
+      "Rendering photorealistic detail",
+      "Measuring exact millimeter dimensions",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #45 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "9B",
+      "HB",
+      "2H",
+      "9H"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #46 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Focal point of light",
+      "Top margin",
+      "Vanishing Point on the Horizon Line",
+      "Center of the paper"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #47 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Drawing continuous circles",
+      "Erasing highlights",
+      "Shading using intersecting sets of parallel lines",
+      "Smudging graphite with fingers"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #48 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Coloring inside outlines",
+      "Measuring exact millimeter dimensions",
+      "Rendering photorealistic detail",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #49 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "HB",
+      "2H",
+      "9H",
+      "9B"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #50 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Focal point of light",
+      "Top margin",
+      "Vanishing Point on the Horizon Line",
+      "Center of the paper"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #51 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Drawing continuous circles",
+      "Shading using intersecting sets of parallel lines",
+      "Smudging graphite with fingers",
+      "Erasing highlights"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #52 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Coloring inside outlines",
+      "Rendering photorealistic detail",
+      "Measuring exact millimeter dimensions",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #53 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "2H",
+      "9B",
+      "9H",
+      "HB"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #54 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Vanishing Point on the Horizon Line",
+      "Top margin",
+      "Center of the paper",
+      "Focal point of light"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #55 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Smudging graphite with fingers",
+      "Shading using intersecting sets of parallel lines",
+      "Drawing continuous circles",
+      "Erasing highlights"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #56 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Rendering photorealistic detail",
+      "Coloring inside outlines",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Measuring exact millimeter dimensions"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #57 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "HB",
+      "9H",
+      "9B",
+      "2H"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #58 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Center of the paper",
+      "Top margin",
+      "Vanishing Point on the Horizon Line",
+      "Focal point of light"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #59 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Shading using intersecting sets of parallel lines",
+      "Erasing highlights",
+      "Drawing continuous circles",
+      "Smudging graphite with fingers"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #60 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Coloring inside outlines",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Rendering photorealistic detail",
+      "Measuring exact millimeter dimensions"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #61 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "9B",
+      "HB",
+      "2H",
+      "9H"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #62 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Center of the paper",
+      "Focal point of light",
+      "Vanishing Point on the Horizon Line",
+      "Top margin"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #63 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Smudging graphite with fingers",
+      "Shading using intersecting sets of parallel lines",
+      "Erasing highlights",
+      "Drawing continuous circles"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #64 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Rendering photorealistic detail",
+      "Coloring inside outlines",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Measuring exact millimeter dimensions"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #65 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "9H",
+      "HB",
+      "9B",
+      "2H"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #66 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Top margin",
+      "Center of the paper",
+      "Vanishing Point on the Horizon Line",
+      "Focal point of light"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #67 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Drawing continuous circles",
+      "Smudging graphite with fingers",
+      "Shading using intersecting sets of parallel lines",
+      "Erasing highlights"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #68 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Rendering photorealistic detail",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Coloring inside outlines",
+      "Measuring exact millimeter dimensions"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #69 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "2H",
+      "9B",
+      "HB",
+      "9H"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #70 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Focal point of light",
+      "Top margin",
+      "Center of the paper",
+      "Vanishing Point on the Horizon Line"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #71 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Erasing highlights",
+      "Shading using intersecting sets of parallel lines",
+      "Smudging graphite with fingers",
+      "Drawing continuous circles"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #72 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Coloring inside outlines",
+      "Measuring exact millimeter dimensions",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Rendering photorealistic detail"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #73 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "9H",
+      "HB",
+      "9B",
+      "2H"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #74 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Top margin",
+      "Focal point of light",
+      "Vanishing Point on the Horizon Line",
+      "Center of the paper"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #75 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Smudging graphite with fingers",
+      "Erasing highlights",
+      "Drawing continuous circles",
+      "Shading using intersecting sets of parallel lines"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #76 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Coloring inside outlines",
+      "Rendering photorealistic detail",
+      "Measuring exact millimeter dimensions",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #77 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "9H",
+      "9B",
+      "HB",
+      "2H"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #78 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Center of the paper",
+      "Top margin",
+      "Vanishing Point on the Horizon Line",
+      "Focal point of light"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #79 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Shading using intersecting sets of parallel lines",
+      "Smudging graphite with fingers",
+      "Erasing highlights",
+      "Drawing continuous circles"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #80 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Coloring inside outlines",
+      "Rendering photorealistic detail",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Measuring exact millimeter dimensions"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #81 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "9H",
+      "2H",
+      "HB",
+      "9B"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #82 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Focal point of light",
+      "Center of the paper",
+      "Top margin",
+      "Vanishing Point on the Horizon Line"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #83 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Smudging graphite with fingers",
+      "Erasing highlights",
+      "Drawing continuous circles",
+      "Shading using intersecting sets of parallel lines"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #84 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Measuring exact millimeter dimensions",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Coloring inside outlines",
+      "Rendering photorealistic detail"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #85 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "9H",
+      "2H",
+      "HB",
+      "9B"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #86 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Center of the paper",
+      "Vanishing Point on the Horizon Line",
+      "Focal point of light",
+      "Top margin"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #87 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Drawing continuous circles",
+      "Erasing highlights",
+      "Smudging graphite with fingers",
+      "Shading using intersecting sets of parallel lines"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #88 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Rendering photorealistic detail",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Coloring inside outlines",
+      "Measuring exact millimeter dimensions"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #89 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "2H",
+      "9B",
+      "HB",
+      "9H"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #90 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Top margin",
+      "Center of the paper",
+      "Vanishing Point on the Horizon Line",
+      "Focal point of light"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #91 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Erasing highlights",
+      "Smudging graphite with fingers",
+      "Drawing continuous circles",
+      "Shading using intersecting sets of parallel lines"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #92 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Coloring inside outlines",
+      "Rendering photorealistic detail",
+      "Measuring exact millimeter dimensions"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #93 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "9H",
+      "2H",
+      "HB",
+      "9B"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #94 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Focal point of light",
+      "Top margin",
+      "Vanishing Point on the Horizon Line",
+      "Center of the paper"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #95 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Smudging graphite with fingers",
+      "Shading using intersecting sets of parallel lines",
+      "Drawing continuous circles",
+      "Erasing highlights"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #96 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Measuring exact millimeter dimensions",
+      "Rendering photorealistic detail",
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Coloring inside outlines"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #97 (Pencil Grades): Which pencil grade produces the darkest and softest line?",
+    "options": [
+      "9B",
+      "2H",
+      "HB",
+      "9H"
+    ],
+    "answer": "9B",
+    "explanation": "B pencils are soft and dark; 9B is extremely soft and dark.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Pencil Grades"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #98 (Perspective): Where do parallel lines converge in perspective drawing?",
+    "options": [
+      "Top margin",
+      "Center of the paper",
+      "Vanishing Point on the Horizon Line",
+      "Focal point of light"
+    ],
+    "answer": "Vanishing Point on the Horizon Line",
+    "explanation": "Parallel receding lines converge at vanishing points on horizon.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Perspective"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #99 (Shading): What is cross-hatching in drawing?",
+    "options": [
+      "Shading using intersecting sets of parallel lines",
+      "Smudging graphite with fingers",
+      "Erasing highlights",
+      "Drawing continuous circles"
+    ],
+    "answer": "Shading using intersecting sets of parallel lines",
+    "explanation": "Cross-hatching builds tonal value via intersecting line grids.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Shading"
+  },
+  {
+    "question": "[Drawing - Hard] Case Study #100 (Gesture Drawing): What is the main goal of a gesture drawing?",
+    "options": [
+      "Capturing the essential pose, rhythm, and motion of a subject quickly",
+      "Rendering photorealistic detail",
+      "Measuring exact millimeter dimensions",
+      "Coloring inside outlines"
+    ],
+    "answer": "Capturing the essential pose, rhythm, and motion of a subject quickly",
+    "explanation": "Gesture drawing focuses on movement, weight, and action in seconds.",
+    "difficulty": "Hard",
+    "skill": "Drawing",
+    "topic": "Gesture Drawing"
+  }
+]

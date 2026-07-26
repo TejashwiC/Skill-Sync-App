@@ -14,11 +14,13 @@ data class Session(
     val code: String = "",
     val status: String = "live", // "live" or "ended"
     val startTime: Long = 0L,
+    val endTime: Long = 0L,
     val participants: List<String> = emptyList(),
     val feedback: List<SessionFeedback> = emptyList(),
     val ratings: List<SessionRating> = emptyList(),
     val scheduledTime: Long = 0L,
-    val isScheduled: Boolean = false
+    val isScheduled: Boolean = false,
+    val durationMins: Long = 0L
 )
 
 data class SessionFeedback(

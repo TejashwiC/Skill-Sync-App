@@ -33,6 +33,8 @@ class UsersViewModel : ViewModel() {
         loadData()
     }
 
+    private var allUsersJob: kotlinx.coroutines.Job? = null
+
     private fun loadData() {
         val myUid = FirebaseUtil.currentUid
         if (myUid.isEmpty()) return
@@ -41,20 +43,21 @@ class UsersViewModel : ViewModel() {
         viewModelScope.launch {
             userRepository.observeUserProfile(myUid).collectLatest { user ->
                 _currentUser.postValue(user)
-                user?.let {
-                    loadFollowersList(it.followers)
-                    loadFollowingList(it.following)
-                    loadBlockedUsersList(it.blocked)
-                }
-            }
-        }
+                user?.let { myProfile ->
+                    loadFollowersList(myProfile.followers)
+                    loadFollowingList(myProfile.following)
+                    loadBlockedUsersList(myProfile.blocked)
 
-        // 2. Observe all users list
-        viewModelScope.launch {
-            userRepository.observeAllUsers().collectLatest { list ->
-                // Filter out current user
-                val filtered = list.filter { it.uid != myUid }
-                _allUsers.postValue(filtered)
+                    // Reactively observe all users and filter out self + blocked users
+                    allUsersJob?.cancel()
+                    allUsersJob = viewModelScope.launch {
+                        userRepository.observeAllUsers().collectLatest { list ->
+                            val blockedUids = myProfile.blocked
+                            val filtered = list.filter { u -> u.uid != myUid && !blockedUids.contains(u.uid) }
+                            _allUsers.postValue(filtered)
+                        }
+                    }
+                }
             }
         }
     }

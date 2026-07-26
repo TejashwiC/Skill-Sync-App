@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Stretching muscles only",
+      "Reducing heart rate to zero",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Keeping weights constant forever"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Carbohydrates",
+      "Proteins",
+      "Fats",
+      "Vitamins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Calf Raise",
+      "Barbell Squat",
+      "Tricep Kickback",
+      "Bicep Curl"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Alternating short bursts of intense effort with recovery periods",
+      "Static stretching",
+      "Slow steady walking for hours",
+      "Heavy weight lifting without rest"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #5 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Stretching muscles only",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Reducing heart rate to zero",
+      "Keeping weights constant forever"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #6 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Vitamins",
+      "Fats",
+      "Carbohydrates",
+      "Proteins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #7 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Bicep Curl",
+      "Barbell Squat",
+      "Tricep Kickback",
+      "Calf Raise"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #8 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Slow steady walking for hours",
+      "Alternating short bursts of intense effort with recovery periods",
+      "Heavy weight lifting without rest",
+      "Static stretching"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #9 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Keeping weights constant forever",
+      "Stretching muscles only",
+      "Reducing heart rate to zero",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #10 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Fats",
+      "Carbohydrates",
+      "Vitamins",
+      "Proteins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #11 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Tricep Kickback",
+      "Bicep Curl",
+      "Barbell Squat",
+      "Calf Raise"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #12 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Static stretching",
+      "Heavy weight lifting without rest",
+      "Slow steady walking for hours",
+      "Alternating short bursts of intense effort with recovery periods"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #13 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Stretching muscles only",
+      "Reducing heart rate to zero",
+      "Keeping weights constant forever"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #14 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Vitamins",
+      "Proteins",
+      "Fats",
+      "Carbohydrates"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #15 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Tricep Kickback",
+      "Calf Raise",
+      "Bicep Curl",
+      "Barbell Squat"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #16 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Slow steady walking for hours",
+      "Static stretching",
+      "Heavy weight lifting without rest",
+      "Alternating short bursts of intense effort with recovery periods"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #17 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Keeping weights constant forever",
+      "Reducing heart rate to zero",
+      "Stretching muscles only",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #18 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Fats",
+      "Carbohydrates",
+      "Vitamins",
+      "Proteins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #19 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Tricep Kickback",
+      "Calf Raise",
+      "Barbell Squat",
+      "Bicep Curl"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #20 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Alternating short bursts of intense effort with recovery periods",
+      "Heavy weight lifting without rest",
+      "Static stretching",
+      "Slow steady walking for hours"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #21 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Keeping weights constant forever",
+      "Stretching muscles only",
+      "Reducing heart rate to zero"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #22 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Vitamins",
+      "Fats",
+      "Carbohydrates",
+      "Proteins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #23 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Bicep Curl",
+      "Tricep Kickback",
+      "Barbell Squat",
+      "Calf Raise"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #24 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Heavy weight lifting without rest",
+      "Slow steady walking for hours",
+      "Alternating short bursts of intense effort with recovery periods",
+      "Static stretching"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #25 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Reducing heart rate to zero",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Keeping weights constant forever",
+      "Stretching muscles only"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #26 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Proteins",
+      "Fats",
+      "Carbohydrates",
+      "Vitamins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #27 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Tricep Kickback",
+      "Barbell Squat",
+      "Bicep Curl",
+      "Calf Raise"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #28 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Alternating short bursts of intense effort with recovery periods",
+      "Heavy weight lifting without rest",
+      "Slow steady walking for hours",
+      "Static stretching"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #29 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Stretching muscles only",
+      "Reducing heart rate to zero",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Keeping weights constant forever"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #30 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Fats",
+      "Carbohydrates",
+      "Vitamins",
+      "Proteins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #31 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Tricep Kickback",
+      "Barbell Squat",
+      "Bicep Curl",
+      "Calf Raise"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #32 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Static stretching",
+      "Slow steady walking for hours",
+      "Alternating short bursts of intense effort with recovery periods",
+      "Heavy weight lifting without rest"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #33 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Reducing heart rate to zero",
+      "Keeping weights constant forever",
+      "Stretching muscles only"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #34 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Vitamins",
+      "Fats",
+      "Carbohydrates",
+      "Proteins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #35 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Calf Raise",
+      "Barbell Squat",
+      "Bicep Curl",
+      "Tricep Kickback"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #36 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Alternating short bursts of intense effort with recovery periods",
+      "Static stretching",
+      "Slow steady walking for hours",
+      "Heavy weight lifting without rest"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #37 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Keeping weights constant forever",
+      "Reducing heart rate to zero",
+      "Stretching muscles only"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #38 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Carbohydrates",
+      "Proteins",
+      "Fats",
+      "Vitamins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #39 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Calf Raise",
+      "Barbell Squat",
+      "Tricep Kickback",
+      "Bicep Curl"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #40 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Static stretching",
+      "Alternating short bursts of intense effort with recovery periods",
+      "Heavy weight lifting without rest",
+      "Slow steady walking for hours"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #41 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Keeping weights constant forever",
+      "Stretching muscles only",
+      "Reducing heart rate to zero",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #42 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Proteins",
+      "Vitamins",
+      "Carbohydrates",
+      "Fats"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #43 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Calf Raise",
+      "Barbell Squat",
+      "Bicep Curl",
+      "Tricep Kickback"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #44 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Heavy weight lifting without rest",
+      "Slow steady walking for hours",
+      "Alternating short bursts of intense effort with recovery periods",
+      "Static stretching"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #45 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Stretching muscles only",
+      "Reducing heart rate to zero",
+      "Keeping weights constant forever",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #46 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Carbohydrates",
+      "Proteins",
+      "Fats",
+      "Vitamins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #47 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Tricep Kickback",
+      "Barbell Squat",
+      "Calf Raise",
+      "Bicep Curl"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #48 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Static stretching",
+      "Heavy weight lifting without rest",
+      "Slow steady walking for hours",
+      "Alternating short bursts of intense effort with recovery periods"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #49 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Keeping weights constant forever",
+      "Reducing heart rate to zero",
+      "Stretching muscles only"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #50 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Proteins",
+      "Carbohydrates",
+      "Fats",
+      "Vitamins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #51 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Bicep Curl",
+      "Tricep Kickback",
+      "Barbell Squat",
+      "Calf Raise"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #52 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Static stretching",
+      "Heavy weight lifting without rest",
+      "Slow steady walking for hours",
+      "Alternating short bursts of intense effort with recovery periods"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #53 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Reducing heart rate to zero",
+      "Stretching muscles only",
+      "Keeping weights constant forever",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #54 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Carbohydrates",
+      "Proteins",
+      "Vitamins",
+      "Fats"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #55 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Barbell Squat",
+      "Bicep Curl",
+      "Calf Raise",
+      "Tricep Kickback"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #56 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Slow steady walking for hours",
+      "Static stretching",
+      "Heavy weight lifting without rest",
+      "Alternating short bursts of intense effort with recovery periods"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #57 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Reducing heart rate to zero",
+      "Stretching muscles only",
+      "Keeping weights constant forever",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #58 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Fats",
+      "Vitamins",
+      "Carbohydrates",
+      "Proteins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #59 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Tricep Kickback",
+      "Calf Raise",
+      "Bicep Curl",
+      "Barbell Squat"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #60 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Static stretching",
+      "Heavy weight lifting without rest",
+      "Alternating short bursts of intense effort with recovery periods",
+      "Slow steady walking for hours"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #61 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Reducing heart rate to zero",
+      "Stretching muscles only",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Keeping weights constant forever"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #62 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Fats",
+      "Carbohydrates",
+      "Vitamins",
+      "Proteins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #63 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Tricep Kickback",
+      "Bicep Curl",
+      "Calf Raise",
+      "Barbell Squat"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #64 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Heavy weight lifting without rest",
+      "Alternating short bursts of intense effort with recovery periods",
+      "Slow steady walking for hours",
+      "Static stretching"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #65 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Keeping weights constant forever",
+      "Stretching muscles only",
+      "Reducing heart rate to zero",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #66 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Carbohydrates",
+      "Proteins",
+      "Vitamins",
+      "Fats"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #67 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Barbell Squat",
+      "Bicep Curl",
+      "Calf Raise",
+      "Tricep Kickback"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #68 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Alternating short bursts of intense effort with recovery periods",
+      "Slow steady walking for hours",
+      "Static stretching",
+      "Heavy weight lifting without rest"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #69 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Reducing heart rate to zero",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Stretching muscles only",
+      "Keeping weights constant forever"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #70 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Vitamins",
+      "Fats",
+      "Carbohydrates",
+      "Proteins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #71 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Calf Raise",
+      "Barbell Squat",
+      "Tricep Kickback",
+      "Bicep Curl"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #72 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Slow steady walking for hours",
+      "Heavy weight lifting without rest",
+      "Alternating short bursts of intense effort with recovery periods",
+      "Static stretching"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #73 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Reducing heart rate to zero",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Stretching muscles only",
+      "Keeping weights constant forever"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #74 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Carbohydrates",
+      "Vitamins",
+      "Proteins",
+      "Fats"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #75 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Calf Raise",
+      "Tricep Kickback",
+      "Bicep Curl",
+      "Barbell Squat"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #76 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Alternating short bursts of intense effort with recovery periods",
+      "Heavy weight lifting without rest",
+      "Slow steady walking for hours",
+      "Static stretching"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #77 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Reducing heart rate to zero",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Keeping weights constant forever",
+      "Stretching muscles only"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #78 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Proteins",
+      "Vitamins",
+      "Fats",
+      "Carbohydrates"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #79 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Calf Raise",
+      "Tricep Kickback",
+      "Barbell Squat",
+      "Bicep Curl"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #80 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Alternating short bursts of intense effort with recovery periods",
+      "Static stretching",
+      "Slow steady walking for hours",
+      "Heavy weight lifting without rest"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #81 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Stretching muscles only",
+      "Reducing heart rate to zero",
+      "Keeping weights constant forever",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #82 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Vitamins",
+      "Proteins",
+      "Fats",
+      "Carbohydrates"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #83 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Bicep Curl",
+      "Barbell Squat",
+      "Calf Raise",
+      "Tricep Kickback"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #84 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Slow steady walking for hours",
+      "Static stretching",
+      "Heavy weight lifting without rest",
+      "Alternating short bursts of intense effort with recovery periods"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #85 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Reducing heart rate to zero",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Keeping weights constant forever",
+      "Stretching muscles only"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #86 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Proteins",
+      "Carbohydrates",
+      "Vitamins",
+      "Fats"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #87 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Tricep Kickback",
+      "Barbell Squat",
+      "Calf Raise",
+      "Bicep Curl"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #88 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Static stretching",
+      "Slow steady walking for hours",
+      "Alternating short bursts of intense effort with recovery periods",
+      "Heavy weight lifting without rest"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #89 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Stretching muscles only",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Reducing heart rate to zero",
+      "Keeping weights constant forever"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #90 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Carbohydrates",
+      "Vitamins",
+      "Fats",
+      "Proteins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #91 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Barbell Squat",
+      "Bicep Curl",
+      "Calf Raise",
+      "Tricep Kickback"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #92 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Heavy weight lifting without rest",
+      "Slow steady walking for hours",
+      "Static stretching",
+      "Alternating short bursts of intense effort with recovery periods"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #93 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Keeping weights constant forever",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Stretching muscles only",
+      "Reducing heart rate to zero"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #94 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Vitamins",
+      "Fats",
+      "Carbohydrates",
+      "Proteins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #95 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Barbell Squat",
+      "Tricep Kickback",
+      "Calf Raise",
+      "Bicep Curl"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #96 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Heavy weight lifting without rest",
+      "Slow steady walking for hours",
+      "Alternating short bursts of intense effort with recovery periods",
+      "Static stretching"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #97 (Cardio vs Strength): What is the primary benefit of Progressive Overload in strength training?",
+    "options": [
+      "Keeping weights constant forever",
+      "Reducing heart rate to zero",
+      "Continually increasing resistance/volume to drive muscle adaptation and growth",
+      "Stretching muscles only"
+    ],
+    "answer": "Continually increasing resistance/volume to drive muscle adaptation and growth",
+    "explanation": "Progressive overload forces neuromuscular adaptation to increasing loads.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Cardio vs Strength"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #98 (Macronutrients): Which macronutrient is the primary fuel source for high-intensity exercise?",
+    "options": [
+      "Vitamins",
+      "Proteins",
+      "Fats",
+      "Carbohydrates"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Carbohydrates break down into glucose/glycogen for fast ATP production.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Macronutrients"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #99 (Compound Movements): Which exercise is a multi-joint compound movement?",
+    "options": [
+      "Tricep Kickback",
+      "Barbell Squat",
+      "Bicep Curl",
+      "Calf Raise"
+    ],
+    "answer": "Barbell Squat",
+    "explanation": "Squats engage hips, knees, and ankles simultaneously (multi-joint).",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "Compound Movements"
+  },
+  {
+    "question": "[Fitness - Hard] Case Study #100 (HIIT Training): What characterizes High-Intensity Interval Training (HIIT)?",
+    "options": [
+      "Static stretching",
+      "Heavy weight lifting without rest",
+      "Slow steady walking for hours",
+      "Alternating short bursts of intense effort with recovery periods"
+    ],
+    "answer": "Alternating short bursts of intense effort with recovery periods",
+    "explanation": "HIIT features maximum effort work intervals paired with short rest.",
+    "difficulty": "Hard",
+    "skill": "Fitness",
+    "topic": "HIIT Training"
+  }
+]

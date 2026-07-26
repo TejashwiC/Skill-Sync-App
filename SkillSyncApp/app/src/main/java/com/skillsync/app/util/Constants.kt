@@ -15,12 +15,7 @@ object Constants {
     // Supported Meeting Platforms
     val PLATFORMS = listOf(
         Platform("zoom", "Zoom", "zoommtg://zoom.us/join"),
-        Platform("meet", "Google Meet", "https://meet.google.com"),
-        Platform("teams", "Microsoft Teams", "msteams://teams.microsoft.com"),
-        Platform("webex", "Webex", "webex://"),
-        Platform("jitsi", "Jitsi", "https://meet.jit.si"),
-        Platform("whereby", "Whereby", "https://whereby.com"),
-        Platform("other", "Other", "")
+        Platform("meet", "Google Meet", "https://meet.google.com")
     )
 
     data class Platform(val id: String, val label: String, val deepLinkPrefix: String)

@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_marginBottom="12dp"
     app:cardCornerRadius="12dp"
-    app:strokeColor="@color/border"
+    app:strokeColor="#CBD5E1"
     app:strokeWidth="1dp">
 
     <LinearLayout
@@ -14,12 +14,44 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tvQuestionNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Question 1 of 5"
+                android:textColor="#1565C0"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvTopicBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Topic"
+                android:textColor="#0369A1"
+                android:background="#E0F2FE"
+                android:paddingLeft="8dp"
+                android:paddingTop="2dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="2dp"
+                android:textSize="11sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
         <TextView
             android:id="@+id/tvExamQuestionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Question text"
-            android:textColor="@color/text_primary"
+            android:textColor="#1E293B"
             android:textSize="15sp"
             android:textStyle="bold"
             android:layout_marginBottom="12dp"/>
@@ -60,6 +92,18 @@
                 android:text="Option 4"
                 android:textSize="14sp"/>
         </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvQuestionExplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💡 Explanation: ..."
+            android:textColor="#64748B"
+            android:background="#F1F5F9"
+            android:padding="8dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"/>
 
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

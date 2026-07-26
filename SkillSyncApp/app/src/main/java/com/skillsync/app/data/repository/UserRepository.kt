@@ -174,4 +174,133 @@ class UserRepository {
             }
         awaitClose { listener.remove() }
     }
+
+    suspend fun updateAccountName(uid: String, newName: String): Result<Unit> {
+        return try {
+            val user = FirebaseUtil.currentUser
+            val profileRequest = com.google.firebase.auth.UserProfileChangeRequest.Builder()
+                .setDisplayName(newName)
+                .build()
+            user?.updateProfile(profileRequest)?.await()
+            db.collection(Constants.COLL_USERS).document(uid).update("name", newName).await()
+            Result.success(Unit)
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
+    }
+
+    suspend fun updatePassword(newPass: String): Result<Unit> {
+        return try {
+            val user = FirebaseUtil.currentUser
+            user?.updatePassword(newPass)?.await()
+            Result.success(Unit)
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
+    }
+
+    suspend fun deleteUserAccount(uid: String): Result<Unit> {
+        return try {
+            val user = FirebaseUtil.currentUser
+
+            // 1. Delete all tests created by user, associated questions, and attempts on user's tests
+            try {
+                val testsSnap = db.collection(Constants.COLL_TESTS).whereEqualTo("creatorId", uid).get().await()
+                for (tDoc in testsSnap.documents) {
+                    val qSnap = db.collection(Constants.COLL_QUESTIONS).whereEqualTo("testId", tDoc.id).get().await()
+                    for (qDoc in qSnap.documents) { qDoc.reference.delete().await() }
+
+                    val testAttSnap = db.collection(Constants.COLL_TEST_ATTEMPTS).whereEqualTo("testId", tDoc.id).get().await()
+                    for (aDoc in testAttSnap.documents) { aDoc.reference.delete().await() }
+
+                    tDoc.reference.delete().await()
+                }
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+
+            // 2. Delete test attempts by user
+            try {
+                val attemptsSnap = db.collection(Constants.COLL_TEST_ATTEMPTS).whereEqualTo("userId", uid).get().await()
+                for (aDoc in attemptsSnap.documents) { aDoc.reference.delete().await() }
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+
+            // 3. Delete chats involving user & all messages within
+            try {
+                val chatsSnap = db.collection(Constants.COLL_CHATS).get().await()
+                for (cDoc in chatsSnap.documents) {
+                    if (cDoc.id.contains(uid)) {
+                        val msgsSnap = cDoc.reference.collection(Constants.COLL_MESSAGES).get().await()
+                        for (mDoc in msgsSnap.documents) { mDoc.reference.delete().await() }
+                        cDoc.reference.delete().await()
+                    }
+                }
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+
+            // 4. Delete sessions hosted by user
+            try {
+                val hostSessions = db.collection(Constants.COLL_SESSIONS).whereEqualTo("hostId", uid).get().await()
+                for (sDoc in hostSessions.documents) { sDoc.reference.delete().await() }
+
+                val hostUidSessions = db.collection(Constants.COLL_SESSIONS).whereEqualTo("hostUid", uid).get().await()
+                for (sDoc in hostUidSessions.documents) { sDoc.reference.delete().await() }
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+
+            // 5. Delete PDFs uploaded by user
+            try {
+                val pdfSnap = db.collection(Constants.COLL_PDFS).whereEqualTo("uploadedBy", uid).get().await()
+                for (pDoc in pdfSnap.documents) { pDoc.reference.delete().await() }
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+
+            // 6. Delete notifications for or from user
+            try {
+                val notifRec = db.collection("notifications").whereEqualTo("userId", uid).get().await()
+                for (nDoc in notifRec.documents) { nDoc.reference.delete().await() }
+
+                val notifSend = db.collection("notifications").whereEqualTo("senderId", uid).get().await()
+                for (nDoc in notifSend.documents) { nDoc.reference.delete().await() }
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+
+            // 7. Remove user reference from other users' followers, following, and blocked lists
+            try {
+                val followersQuery = db.collection(Constants.COLL_USERS).whereArrayContains("followers", uid).get().await()
+                for (doc in followersQuery.documents) { doc.reference.update("followers", FieldValue.arrayRemove(uid)).await() }
+
+                val followingQuery = db.collection(Constants.COLL_USERS).whereArrayContains("following", uid).get().await()
+                for (doc in followingQuery.documents) { doc.reference.update("following", FieldValue.arrayRemove(uid)).await() }
+
+                val blockedQuery = db.collection(Constants.COLL_USERS).whereArrayContains("blocked", uid).get().await()
+                for (doc in blockedQuery.documents) { doc.reference.update("blocked", FieldValue.arrayRemove(uid)).await() }
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+
+            // 8. Delete profile photo from Firebase Storage
+            try {
+                FirebaseUtil.storage.reference.child("profile_images/$uid.jpg").delete().await()
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+
+            // 9. Delete the user document from Firestore
+            db.collection(Constants.COLL_USERS).document(uid).delete().await()
+
+            // 10. Delete Firebase Auth user account
+            user?.delete()?.await()
+
+            Result.success(Unit)
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
+    }
 }

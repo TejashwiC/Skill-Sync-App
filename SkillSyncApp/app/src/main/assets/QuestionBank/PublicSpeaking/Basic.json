@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Deep diaphragmatic breathing and positive visualization",
+      "Avoiding eye contact completely",
+      "Reading slides word-for-word fast",
+      "Holding breath for minutes"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "Why is open body language important during a presentation?",
+    "options": [
+      "Distracts people from listening",
+      "Fills empty stage space",
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Makes speech longer"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "What is vocal variety in public speaking?",
+    "options": [
+      "Whispering whole speech",
+      "Speaking at maximum loudness throughout",
+      "Monotone robotic delivery",
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Title, Appendix, Footnotes",
+      "Opening, Break, Closing",
+      "Introduction, Body, Conclusion",
+      "Question, Answer, Summary"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #5 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Reading slides word-for-word fast",
+      "Holding breath for minutes",
+      "Deep diaphragmatic breathing and positive visualization",
+      "Avoiding eye contact completely"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #6 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Distracts people from listening",
+      "Fills empty stage space",
+      "Makes speech longer",
+      "Conveys confidence, credibility, and builds rapport with audience"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #7 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Whispering whole speech",
+      "Monotone robotic delivery",
+      "Speaking at maximum loudness throughout"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #8 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Question, Answer, Summary",
+      "Opening, Break, Closing",
+      "Introduction, Body, Conclusion",
+      "Title, Appendix, Footnotes"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #9 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Reading slides word-for-word fast",
+      "Holding breath for minutes",
+      "Deep diaphragmatic breathing and positive visualization",
+      "Avoiding eye contact completely"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #10 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Makes speech longer",
+      "Fills empty stage space",
+      "Distracts people from listening",
+      "Conveys confidence, credibility, and builds rapport with audience"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #11 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Whispering whole speech",
+      "Monotone robotic delivery",
+      "Speaking at maximum loudness throughout",
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #12 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Introduction, Body, Conclusion",
+      "Question, Answer, Summary",
+      "Opening, Break, Closing",
+      "Title, Appendix, Footnotes"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #13 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Avoiding eye contact completely",
+      "Reading slides word-for-word fast",
+      "Holding breath for minutes",
+      "Deep diaphragmatic breathing and positive visualization"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #14 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Distracts people from listening",
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Fills empty stage space",
+      "Makes speech longer"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #15 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Monotone robotic delivery",
+      "Whispering whole speech",
+      "Speaking at maximum loudness throughout"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #16 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Opening, Break, Closing",
+      "Title, Appendix, Footnotes",
+      "Question, Answer, Summary",
+      "Introduction, Body, Conclusion"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #17 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Holding breath for minutes",
+      "Deep diaphragmatic breathing and positive visualization",
+      "Avoiding eye contact completely",
+      "Reading slides word-for-word fast"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #18 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Distracts people from listening",
+      "Makes speech longer",
+      "Fills empty stage space",
+      "Conveys confidence, credibility, and builds rapport with audience"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #19 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Speaking at maximum loudness throughout",
+      "Monotone robotic delivery",
+      "Whispering whole speech"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #20 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Question, Answer, Summary",
+      "Introduction, Body, Conclusion",
+      "Opening, Break, Closing",
+      "Title, Appendix, Footnotes"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #21 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Holding breath for minutes",
+      "Avoiding eye contact completely",
+      "Reading slides word-for-word fast",
+      "Deep diaphragmatic breathing and positive visualization"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #22 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Distracts people from listening",
+      "Fills empty stage space",
+      "Makes speech longer",
+      "Conveys confidence, credibility, and builds rapport with audience"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #23 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Monotone robotic delivery",
+      "Speaking at maximum loudness throughout",
+      "Whispering whole speech"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #24 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Opening, Break, Closing",
+      "Introduction, Body, Conclusion",
+      "Title, Appendix, Footnotes",
+      "Question, Answer, Summary"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #25 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Reading slides word-for-word fast",
+      "Holding breath for minutes",
+      "Deep diaphragmatic breathing and positive visualization",
+      "Avoiding eye contact completely"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #26 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Distracts people from listening",
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Makes speech longer",
+      "Fills empty stage space"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #27 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Whispering whole speech",
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Monotone robotic delivery",
+      "Speaking at maximum loudness throughout"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #28 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Question, Answer, Summary",
+      "Title, Appendix, Footnotes",
+      "Introduction, Body, Conclusion",
+      "Opening, Break, Closing"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #29 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Reading slides word-for-word fast",
+      "Deep diaphragmatic breathing and positive visualization",
+      "Avoiding eye contact completely",
+      "Holding breath for minutes"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #30 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Makes speech longer",
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Fills empty stage space",
+      "Distracts people from listening"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #31 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Speaking at maximum loudness throughout",
+      "Monotone robotic delivery",
+      "Whispering whole speech",
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #32 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Opening, Break, Closing",
+      "Introduction, Body, Conclusion",
+      "Question, Answer, Summary",
+      "Title, Appendix, Footnotes"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #33 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Avoiding eye contact completely",
+      "Reading slides word-for-word fast",
+      "Holding breath for minutes",
+      "Deep diaphragmatic breathing and positive visualization"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #34 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Makes speech longer",
+      "Distracts people from listening",
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Fills empty stage space"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #35 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Whispering whole speech",
+      "Speaking at maximum loudness throughout",
+      "Monotone robotic delivery",
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #36 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Title, Appendix, Footnotes",
+      "Introduction, Body, Conclusion",
+      "Question, Answer, Summary",
+      "Opening, Break, Closing"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #37 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Deep diaphragmatic breathing and positive visualization",
+      "Reading slides word-for-word fast",
+      "Avoiding eye contact completely",
+      "Holding breath for minutes"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #38 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Distracts people from listening",
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Makes speech longer",
+      "Fills empty stage space"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #39 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Whispering whole speech",
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Speaking at maximum loudness throughout",
+      "Monotone robotic delivery"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #40 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Title, Appendix, Footnotes",
+      "Opening, Break, Closing",
+      "Question, Answer, Summary",
+      "Introduction, Body, Conclusion"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #41 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Holding breath for minutes",
+      "Avoiding eye contact completely",
+      "Reading slides word-for-word fast",
+      "Deep diaphragmatic breathing and positive visualization"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #42 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Makes speech longer",
+      "Distracts people from listening",
+      "Fills empty stage space",
+      "Conveys confidence, credibility, and builds rapport with audience"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #43 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Monotone robotic delivery",
+      "Whispering whole speech",
+      "Speaking at maximum loudness throughout",
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #44 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Opening, Break, Closing",
+      "Title, Appendix, Footnotes",
+      "Introduction, Body, Conclusion",
+      "Question, Answer, Summary"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #45 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Holding breath for minutes",
+      "Deep diaphragmatic breathing and positive visualization",
+      "Reading slides word-for-word fast",
+      "Avoiding eye contact completely"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #46 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Distracts people from listening",
+      "Fills empty stage space",
+      "Makes speech longer"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #47 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Whispering whole speech",
+      "Speaking at maximum loudness throughout",
+      "Monotone robotic delivery"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #48 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Opening, Break, Closing",
+      "Title, Appendix, Footnotes",
+      "Introduction, Body, Conclusion",
+      "Question, Answer, Summary"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #49 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Avoiding eye contact completely",
+      "Holding breath for minutes",
+      "Reading slides word-for-word fast",
+      "Deep diaphragmatic breathing and positive visualization"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #50 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Fills empty stage space",
+      "Distracts people from listening",
+      "Makes speech longer",
+      "Conveys confidence, credibility, and builds rapport with audience"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #51 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Whispering whole speech",
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Speaking at maximum loudness throughout",
+      "Monotone robotic delivery"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #52 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Title, Appendix, Footnotes",
+      "Introduction, Body, Conclusion",
+      "Opening, Break, Closing",
+      "Question, Answer, Summary"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #53 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Deep diaphragmatic breathing and positive visualization",
+      "Reading slides word-for-word fast",
+      "Holding breath for minutes",
+      "Avoiding eye contact completely"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #54 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Fills empty stage space",
+      "Distracts people from listening",
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Makes speech longer"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #55 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Whispering whole speech",
+      "Monotone robotic delivery",
+      "Speaking at maximum loudness throughout"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #56 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Question, Answer, Summary",
+      "Opening, Break, Closing",
+      "Introduction, Body, Conclusion",
+      "Title, Appendix, Footnotes"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #57 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Avoiding eye contact completely",
+      "Reading slides word-for-word fast",
+      "Holding breath for minutes",
+      "Deep diaphragmatic breathing and positive visualization"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #58 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Distracts people from listening",
+      "Makes speech longer",
+      "Fills empty stage space",
+      "Conveys confidence, credibility, and builds rapport with audience"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #59 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Speaking at maximum loudness throughout",
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Whispering whole speech",
+      "Monotone robotic delivery"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #60 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Introduction, Body, Conclusion",
+      "Question, Answer, Summary",
+      "Opening, Break, Closing",
+      "Title, Appendix, Footnotes"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #61 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Deep diaphragmatic breathing and positive visualization",
+      "Holding breath for minutes",
+      "Avoiding eye contact completely",
+      "Reading slides word-for-word fast"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #62 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Fills empty stage space",
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Distracts people from listening",
+      "Makes speech longer"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #63 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Whispering whole speech",
+      "Speaking at maximum loudness throughout",
+      "Monotone robotic delivery"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #64 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Opening, Break, Closing",
+      "Question, Answer, Summary",
+      "Introduction, Body, Conclusion",
+      "Title, Appendix, Footnotes"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #65 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Avoiding eye contact completely",
+      "Holding breath for minutes",
+      "Deep diaphragmatic breathing and positive visualization",
+      "Reading slides word-for-word fast"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #66 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Distracts people from listening",
+      "Makes speech longer",
+      "Fills empty stage space"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #67 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Monotone robotic delivery",
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Speaking at maximum loudness throughout",
+      "Whispering whole speech"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #68 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Question, Answer, Summary",
+      "Introduction, Body, Conclusion",
+      "Opening, Break, Closing",
+      "Title, Appendix, Footnotes"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #69 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Deep diaphragmatic breathing and positive visualization",
+      "Avoiding eye contact completely",
+      "Reading slides word-for-word fast",
+      "Holding breath for minutes"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #70 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Makes speech longer",
+      "Distracts people from listening",
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Fills empty stage space"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #71 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Whispering whole speech",
+      "Speaking at maximum loudness throughout",
+      "Monotone robotic delivery",
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #72 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Introduction, Body, Conclusion",
+      "Opening, Break, Closing",
+      "Title, Appendix, Footnotes",
+      "Question, Answer, Summary"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #73 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Holding breath for minutes",
+      "Reading slides word-for-word fast",
+      "Avoiding eye contact completely",
+      "Deep diaphragmatic breathing and positive visualization"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #74 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Distracts people from listening",
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Fills empty stage space",
+      "Makes speech longer"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #75 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Monotone robotic delivery",
+      "Speaking at maximum loudness throughout",
+      "Whispering whole speech"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #76 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Question, Answer, Summary",
+      "Introduction, Body, Conclusion",
+      "Opening, Break, Closing",
+      "Title, Appendix, Footnotes"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #77 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Holding breath for minutes",
+      "Reading slides word-for-word fast",
+      "Avoiding eye contact completely",
+      "Deep diaphragmatic breathing and positive visualization"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #78 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Fills empty stage space",
+      "Makes speech longer",
+      "Distracts people from listening",
+      "Conveys confidence, credibility, and builds rapport with audience"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #79 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Whispering whole speech",
+      "Speaking at maximum loudness throughout",
+      "Monotone robotic delivery"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #80 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Opening, Break, Closing",
+      "Title, Appendix, Footnotes",
+      "Question, Answer, Summary",
+      "Introduction, Body, Conclusion"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #81 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Deep diaphragmatic breathing and positive visualization",
+      "Reading slides word-for-word fast",
+      "Holding breath for minutes",
+      "Avoiding eye contact completely"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #82 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Distracts people from listening",
+      "Fills empty stage space",
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Makes speech longer"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #83 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Monotone robotic delivery",
+      "Speaking at maximum loudness throughout",
+      "Whispering whole speech"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #84 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Opening, Break, Closing",
+      "Question, Answer, Summary",
+      "Introduction, Body, Conclusion",
+      "Title, Appendix, Footnotes"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #85 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Deep diaphragmatic breathing and positive visualization",
+      "Reading slides word-for-word fast",
+      "Avoiding eye contact completely",
+      "Holding breath for minutes"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #86 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Fills empty stage space",
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Makes speech longer",
+      "Distracts people from listening"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #87 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Speaking at maximum loudness throughout",
+      "Monotone robotic delivery",
+      "Whispering whole speech",
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #88 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Title, Appendix, Footnotes",
+      "Opening, Break, Closing",
+      "Introduction, Body, Conclusion",
+      "Question, Answer, Summary"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #89 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Deep diaphragmatic breathing and positive visualization",
+      "Holding breath for minutes",
+      "Avoiding eye contact completely",
+      "Reading slides word-for-word fast"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #90 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Makes speech longer",
+      "Fills empty stage space",
+      "Distracts people from listening"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #91 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Monotone robotic delivery",
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Speaking at maximum loudness throughout",
+      "Whispering whole speech"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #92 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Opening, Break, Closing",
+      "Introduction, Body, Conclusion",
+      "Question, Answer, Summary",
+      "Title, Appendix, Footnotes"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #93 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Holding breath for minutes",
+      "Avoiding eye contact completely",
+      "Deep diaphragmatic breathing and positive visualization",
+      "Reading slides word-for-word fast"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #94 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Distracts people from listening",
+      "Fills empty stage space",
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Makes speech longer"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #95 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Whispering whole speech",
+      "Speaking at maximum loudness throughout",
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Monotone robotic delivery"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #96 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Introduction, Body, Conclusion",
+      "Title, Appendix, Footnotes",
+      "Question, Answer, Summary",
+      "Opening, Break, Closing"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #97 (Stage Fright): Which technique effectively manages speech anxiety before taking the stage?",
+    "options": [
+      "Avoiding eye contact completely",
+      "Reading slides word-for-word fast",
+      "Holding breath for minutes",
+      "Deep diaphragmatic breathing and positive visualization"
+    ],
+    "answer": "Deep diaphragmatic breathing and positive visualization",
+    "explanation": "Controlled breathing activates parasympathetic nervous system to calm nerves.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Stage Fright"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #98 (Body Language): Why is open body language important during a presentation?",
+    "options": [
+      "Makes speech longer",
+      "Fills empty stage space",
+      "Conveys confidence, credibility, and builds rapport with audience",
+      "Distracts people from listening"
+    ],
+    "answer": "Conveys confidence, credibility, and builds rapport with audience",
+    "explanation": "Uncrossed arms and strong posture project openness and authority.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Body Language"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #99 (Voice Projection): What is vocal variety in public speaking?",
+    "options": [
+      "Monotone robotic delivery",
+      "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+      "Speaking at maximum loudness throughout",
+      "Whispering whole speech"
+    ],
+    "answer": "Modulating pitch, pace, volume, and pauses to maintain listener interest",
+    "explanation": "Vocal variety prevents monotony and highlights key emphasis points.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Voice Projection"
+  },
+  {
+    "question": "[PublicSpeaking - Basic] Case Study #100 (Speech Structure): What are the three core structural sections of a persuasive speech?",
+    "options": [
+      "Introduction, Body, Conclusion",
+      "Opening, Break, Closing",
+      "Title, Appendix, Footnotes",
+      "Question, Answer, Summary"
+    ],
+    "answer": "Introduction, Body, Conclusion",
+    "explanation": "Classic speech structure hooks attention, presents arguments, and reinforces takeaway.",
+    "difficulty": "Basic",
+    "skill": "PublicSpeaking",
+    "topic": "Speech Structure"
+  }
+]

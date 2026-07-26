@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Peat Moss",
+      "Clay Soil",
+      "Sandy Soil",
+      "Gravel"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "When is the best time of day to water garden plants?",
+    "options": [
+      "Early morning",
+      "Late midnight only",
+      "Midday under hot sun",
+      "Every hour"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "New Plant Kind",
+      "Nutrients, Proteins, Kalsium",
+      "Nickel, Lead, Potassium",
+      "Nitrogen, Phosphorus, Potassium percentage content"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "What is the purpose of deadheading flowers?",
+    "options": [
+      "Watering stems",
+      "Cutting plant at soil line",
+      "Painting leaves green",
+      "Removing faded blooms to encourage plant to produce new flowers"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #5 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Clay Soil",
+      "Sandy Soil",
+      "Peat Moss",
+      "Gravel"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #6 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Early morning",
+      "Late midnight only",
+      "Every hour",
+      "Midday under hot sun"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #7 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nickel, Lead, Potassium",
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "New Plant Kind",
+      "Nutrients, Proteins, Kalsium"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #8 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Cutting plant at soil line",
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Painting leaves green",
+      "Watering stems"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #9 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Gravel",
+      "Clay Soil",
+      "Peat Moss",
+      "Sandy Soil"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #10 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Midday under hot sun",
+      "Early morning",
+      "Every hour",
+      "Late midnight only"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #11 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "Nutrients, Proteins, Kalsium",
+      "Nickel, Lead, Potassium",
+      "New Plant Kind"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #12 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Painting leaves green",
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Watering stems",
+      "Cutting plant at soil line"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #13 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Sandy Soil",
+      "Clay Soil",
+      "Gravel",
+      "Peat Moss"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #14 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Every hour",
+      "Midday under hot sun",
+      "Late midnight only",
+      "Early morning"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #15 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nickel, Lead, Potassium",
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "Nutrients, Proteins, Kalsium",
+      "New Plant Kind"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #16 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Cutting plant at soil line",
+      "Painting leaves green",
+      "Watering stems"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #17 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Gravel",
+      "Clay Soil",
+      "Peat Moss",
+      "Sandy Soil"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #18 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Midday under hot sun",
+      "Early morning",
+      "Late midnight only",
+      "Every hour"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #19 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "New Plant Kind",
+      "Nickel, Lead, Potassium",
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "Nutrients, Proteins, Kalsium"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #20 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Painting leaves green",
+      "Cutting plant at soil line",
+      "Watering stems"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #21 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Gravel",
+      "Clay Soil",
+      "Sandy Soil",
+      "Peat Moss"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #22 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Early morning",
+      "Late midnight only",
+      "Every hour",
+      "Midday under hot sun"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #23 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nickel, Lead, Potassium",
+      "New Plant Kind",
+      "Nutrients, Proteins, Kalsium",
+      "Nitrogen, Phosphorus, Potassium percentage content"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #24 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Cutting plant at soil line",
+      "Watering stems",
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Painting leaves green"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #25 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Gravel",
+      "Clay Soil",
+      "Sandy Soil",
+      "Peat Moss"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #26 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Midday under hot sun",
+      "Late midnight only",
+      "Early morning",
+      "Every hour"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #27 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nickel, Lead, Potassium",
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "New Plant Kind",
+      "Nutrients, Proteins, Kalsium"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #28 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Painting leaves green",
+      "Cutting plant at soil line",
+      "Watering stems",
+      "Removing faded blooms to encourage plant to produce new flowers"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #29 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Gravel",
+      "Peat Moss",
+      "Clay Soil",
+      "Sandy Soil"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #30 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Every hour",
+      "Early morning",
+      "Late midnight only",
+      "Midday under hot sun"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #31 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "Nickel, Lead, Potassium",
+      "Nutrients, Proteins, Kalsium",
+      "New Plant Kind"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #32 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Painting leaves green",
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Cutting plant at soil line",
+      "Watering stems"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #33 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Gravel",
+      "Clay Soil",
+      "Peat Moss",
+      "Sandy Soil"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #34 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Midday under hot sun",
+      "Early morning",
+      "Late midnight only",
+      "Every hour"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #35 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "New Plant Kind",
+      "Nutrients, Proteins, Kalsium",
+      "Nickel, Lead, Potassium"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #36 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Watering stems",
+      "Cutting plant at soil line",
+      "Painting leaves green"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #37 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Clay Soil",
+      "Peat Moss",
+      "Gravel",
+      "Sandy Soil"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #38 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Early morning",
+      "Midday under hot sun",
+      "Late midnight only",
+      "Every hour"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #39 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nickel, Lead, Potassium",
+      "New Plant Kind",
+      "Nutrients, Proteins, Kalsium",
+      "Nitrogen, Phosphorus, Potassium percentage content"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #40 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Cutting plant at soil line",
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Painting leaves green",
+      "Watering stems"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #41 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Sandy Soil",
+      "Peat Moss",
+      "Clay Soil",
+      "Gravel"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #42 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Every hour",
+      "Early morning",
+      "Late midnight only",
+      "Midday under hot sun"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #43 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nickel, Lead, Potassium",
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "New Plant Kind",
+      "Nutrients, Proteins, Kalsium"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #44 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Painting leaves green",
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Cutting plant at soil line",
+      "Watering stems"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #45 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Clay Soil",
+      "Sandy Soil",
+      "Gravel",
+      "Peat Moss"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #46 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Every hour",
+      "Midday under hot sun",
+      "Late midnight only",
+      "Early morning"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #47 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nutrients, Proteins, Kalsium",
+      "Nickel, Lead, Potassium",
+      "New Plant Kind",
+      "Nitrogen, Phosphorus, Potassium percentage content"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #48 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Cutting plant at soil line",
+      "Painting leaves green",
+      "Watering stems"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #49 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Gravel",
+      "Sandy Soil",
+      "Clay Soil",
+      "Peat Moss"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #50 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Late midnight only",
+      "Early morning",
+      "Midday under hot sun",
+      "Every hour"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #51 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "New Plant Kind",
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "Nutrients, Proteins, Kalsium",
+      "Nickel, Lead, Potassium"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #52 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Watering stems",
+      "Painting leaves green",
+      "Cutting plant at soil line",
+      "Removing faded blooms to encourage plant to produce new flowers"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #53 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Peat Moss",
+      "Clay Soil",
+      "Gravel",
+      "Sandy Soil"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #54 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Midday under hot sun",
+      "Early morning",
+      "Every hour",
+      "Late midnight only"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #55 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "New Plant Kind",
+      "Nutrients, Proteins, Kalsium",
+      "Nickel, Lead, Potassium",
+      "Nitrogen, Phosphorus, Potassium percentage content"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #56 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Watering stems",
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Cutting plant at soil line",
+      "Painting leaves green"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #57 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Gravel",
+      "Peat Moss",
+      "Sandy Soil",
+      "Clay Soil"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #58 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Midday under hot sun",
+      "Late midnight only",
+      "Every hour",
+      "Early morning"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #59 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "Nickel, Lead, Potassium",
+      "Nutrients, Proteins, Kalsium",
+      "New Plant Kind"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #60 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Painting leaves green",
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Cutting plant at soil line",
+      "Watering stems"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #61 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Sandy Soil",
+      "Clay Soil",
+      "Peat Moss",
+      "Gravel"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #62 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Early morning",
+      "Late midnight only",
+      "Every hour",
+      "Midday under hot sun"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #63 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nutrients, Proteins, Kalsium",
+      "New Plant Kind",
+      "Nickel, Lead, Potassium",
+      "Nitrogen, Phosphorus, Potassium percentage content"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #64 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Cutting plant at soil line",
+      "Painting leaves green",
+      "Watering stems"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #65 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Clay Soil",
+      "Peat Moss",
+      "Gravel",
+      "Sandy Soil"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #66 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Midday under hot sun",
+      "Late midnight only",
+      "Every hour",
+      "Early morning"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #67 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nickel, Lead, Potassium",
+      "Nutrients, Proteins, Kalsium",
+      "New Plant Kind",
+      "Nitrogen, Phosphorus, Potassium percentage content"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #68 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Watering stems",
+      "Cutting plant at soil line",
+      "Painting leaves green"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #69 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Gravel",
+      "Clay Soil",
+      "Peat Moss",
+      "Sandy Soil"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #70 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Midday under hot sun",
+      "Early morning",
+      "Late midnight only",
+      "Every hour"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #71 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "New Plant Kind",
+      "Nutrients, Proteins, Kalsium",
+      "Nickel, Lead, Potassium"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #72 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Painting leaves green",
+      "Cutting plant at soil line",
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Watering stems"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #73 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Clay Soil",
+      "Sandy Soil",
+      "Gravel",
+      "Peat Moss"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #74 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Late midnight only",
+      "Every hour",
+      "Midday under hot sun",
+      "Early morning"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #75 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "Nutrients, Proteins, Kalsium",
+      "New Plant Kind",
+      "Nickel, Lead, Potassium"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #76 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Cutting plant at soil line",
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Painting leaves green",
+      "Watering stems"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #77 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Gravel",
+      "Clay Soil",
+      "Sandy Soil",
+      "Peat Moss"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #78 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Midday under hot sun",
+      "Late midnight only",
+      "Every hour",
+      "Early morning"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #79 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nutrients, Proteins, Kalsium",
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "New Plant Kind",
+      "Nickel, Lead, Potassium"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #80 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Painting leaves green",
+      "Cutting plant at soil line",
+      "Watering stems",
+      "Removing faded blooms to encourage plant to produce new flowers"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #81 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Peat Moss",
+      "Gravel",
+      "Clay Soil",
+      "Sandy Soil"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #82 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Early morning",
+      "Late midnight only",
+      "Midday under hot sun",
+      "Every hour"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #83 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nickel, Lead, Potassium",
+      "Nutrients, Proteins, Kalsium",
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "New Plant Kind"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #84 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Painting leaves green",
+      "Cutting plant at soil line",
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Watering stems"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #85 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Gravel",
+      "Peat Moss",
+      "Clay Soil",
+      "Sandy Soil"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #86 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Every hour",
+      "Midday under hot sun",
+      "Early morning",
+      "Late midnight only"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #87 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "New Plant Kind",
+      "Nickel, Lead, Potassium",
+      "Nutrients, Proteins, Kalsium"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #88 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Watering stems",
+      "Painting leaves green",
+      "Cutting plant at soil line",
+      "Removing faded blooms to encourage plant to produce new flowers"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #89 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Peat Moss",
+      "Gravel",
+      "Clay Soil",
+      "Sandy Soil"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #90 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Late midnight only",
+      "Early morning",
+      "Midday under hot sun",
+      "Every hour"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #91 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "New Plant Kind",
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "Nickel, Lead, Potassium",
+      "Nutrients, Proteins, Kalsium"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #92 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Cutting plant at soil line",
+      "Watering stems",
+      "Painting leaves green"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #93 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Clay Soil",
+      "Peat Moss",
+      "Sandy Soil",
+      "Gravel"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #94 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Late midnight only",
+      "Every hour",
+      "Midday under hot sun",
+      "Early morning"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #95 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "New Plant Kind",
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "Nutrients, Proteins, Kalsium",
+      "Nickel, Lead, Potassium"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #96 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Painting leaves green",
+      "Removing faded blooms to encourage plant to produce new flowers",
+      "Watering stems",
+      "Cutting plant at soil line"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #97 (Soil Types): Which soil type holds water and nutrients best but drains slowly?",
+    "options": [
+      "Clay Soil",
+      "Sandy Soil",
+      "Peat Moss",
+      "Gravel"
+    ],
+    "answer": "Clay Soil",
+    "explanation": "Clay particles are fine and tightly packed, holding water and nutrients well.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Soil Types"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #98 (Watering Basics): When is the best time of day to water garden plants?",
+    "options": [
+      "Midday under hot sun",
+      "Every hour",
+      "Early morning",
+      "Late midnight only"
+    ],
+    "answer": "Early morning",
+    "explanation": "Morning watering lets roots absorb moisture before heat causes evaporation.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Watering Basics"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #99 (Fertilizers): What do the three numbers (NPK ratio) on fertilizer packages represent?",
+    "options": [
+      "New Plant Kind",
+      "Nitrogen, Phosphorus, Potassium percentage content",
+      "Nutrients, Proteins, Kalsium",
+      "Nickel, Lead, Potassium"
+    ],
+    "answer": "Nitrogen, Phosphorus, Potassium percentage content",
+    "explanation": "NPK represents Nitrogen (leaf), Phosphorus (root/bloom), Potassium (overall health).",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Fertilizers"
+  },
+  {
+    "question": "[Gardening - Hard] Case Study #100 (Pruning): What is the purpose of deadheading flowers?",
+    "options": [
+      "Painting leaves green",
+      "Cutting plant at soil line",
+      "Watering stems",
+      "Removing faded blooms to encourage plant to produce new flowers"
+    ],
+    "answer": "Removing faded blooms to encourage plant to produce new flowers",
+    "explanation": "Deadheading prevents seed energy consumption, stimulating fresh blooms.",
+    "difficulty": "Hard",
+    "skill": "Gardening",
+    "topic": "Pruning"
+  }
+]

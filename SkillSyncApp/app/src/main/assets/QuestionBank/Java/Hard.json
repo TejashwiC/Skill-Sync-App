@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "Which memory area in JVM stores loaded class structures and method data?",
+    "options": [
+      "Java Heap",
+      "Metaspace (formerly Method Area)",
+      "Native Method Stack",
+      "PC Register"
+    ],
+    "answer": "Metaspace (formerly Method Area)",
+    "explanation": "Metaspace stores class metadata in native memory since Java 8.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Architecture"
+  },
+  {
+    "question": "What is the G1 (Garbage-First) Garbage Collector designed for in Java?",
+    "options": [
+      "Compiling bytecode to assembly",
+      "Stop-the-world total pauses",
+      "Single-threaded small devices",
+      "Low latency on large heap sizes by dividing heap into regions"
+    ],
+    "answer": "Low latency on large heap sizes by dividing heap into regions",
+    "explanation": "G1 divides heap into equal regions to meet pause-time goals.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Garbage Collection"
+  },
+  {
+    "question": "What does the 'volatile' keyword guarantee in Java concurrency?",
+    "options": [
+      "Locking thread execution",
+      "Preventing memory allocation",
+      "Atomicity of compound operations like i++",
+      "Visibility of variable changes across threads"
+    ],
+    "answer": "Visibility of variable changes across threads",
+    "explanation": "'volatile' flushes variable writes directly to main memory for thread visibility.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Multithreading & Concurrency"
+  },
+  {
+    "question": "Which ClassLoader is the parent of all ClassLoaders in Java?",
+    "options": [
+      "Platform/Extension ClassLoader",
+      "System ClassLoader",
+      "Application ClassLoader",
+      "Bootstrap ClassLoader"
+    ],
+    "answer": "Bootstrap ClassLoader",
+    "explanation": "Bootstrap ClassLoader loads core JDK classes (rt.jar / java.base).",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Class Loaders"
+  },
+  {
+    "question": "Which Java API allows inspection and invocation of private fields and methods at runtime?",
+    "options": [
+      "java.security",
+      "java.util.concurrent",
+      "java.nio",
+      "java.lang.reflect"
+    ],
+    "answer": "java.lang.reflect",
+    "explanation": "Reflection API allows dynamic inspection and invocation of fields/methods.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Reflection"
+  },
+  {
+    "question": "Which JVM flag sets the maximum heap size in Java?",
+    "options": [
+      "-Xms",
+      "-XX:MaxPermSize",
+      "-Xss",
+      "-Xmx"
+    ],
+    "answer": "-Xmx",
+    "explanation": "-Xmx specifies the maximum Java heap allocation limit.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Tuning"
+  },
+  {
+    "question": "What file extension do compiled Java bytecode files have?",
+    "options": [
+      ".jar",
+      ".exe",
+      ".java",
+      ".class"
+    ],
+    "answer": ".class",
+    "explanation": "Java compiler (javac) produces binary .class files.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Bytecode"
+  },
+  {
+    "question": "What key advantage does Java NIO (Non-blocking I/O) offer over classic IO?",
+    "options": [
+      "Slower disk access",
+      "Asynchronous non-blocking channels and buffers",
+      "Removal of socket support",
+      "Automatic string translation"
+    ],
+    "answer": "Asynchronous non-blocking channels and buffers",
+    "explanation": "NIO uses channels and selector multiplexing for high scalability.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "NIO"
+  },
+  {
+    "question": "What is a 'happens-before' relationship in the Java Memory Model (JMM)?",
+    "options": [
+      "Determines thread execution speed",
+      "Orders garbage collection cycles",
+      "Guarantees memory visibility between concurrent operations",
+      "Prevents deadlock in single threads"
+    ],
+    "answer": "Guarantees memory visibility between concurrent operations",
+    "explanation": "Happens-before defines ordering and visibility bounds across threads.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Memory Model"
+  },
+  {
+    "question": "Which class in java.util.concurrent enables asynchronous non-blocking pipeline chaining?",
+    "options": [
+      "FutureTask",
+      "Thread",
+      "CompletableFuture",
+      "Executor"
+    ],
+    "answer": "CompletableFuture",
+    "explanation": "CompletableFuture allows functional composition of async stages.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "CompletableFuture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #11 (JVM Architecture): Which memory area in JVM stores loaded class structures and method data?",
+    "options": [
+      "Metaspace (formerly Method Area)",
+      "PC Register",
+      "Java Heap",
+      "Native Method Stack"
+    ],
+    "answer": "Metaspace (formerly Method Area)",
+    "explanation": "Metaspace stores class metadata in native memory since Java 8.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Architecture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #12 (Garbage Collection): What is the G1 (Garbage-First) Garbage Collector designed for in Java?",
+    "options": [
+      "Single-threaded small devices",
+      "Low latency on large heap sizes by dividing heap into regions",
+      "Stop-the-world total pauses",
+      "Compiling bytecode to assembly"
+    ],
+    "answer": "Low latency on large heap sizes by dividing heap into regions",
+    "explanation": "G1 divides heap into equal regions to meet pause-time goals.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Garbage Collection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #13 (Multithreading & Concurrency): What does the 'volatile' keyword guarantee in Java concurrency?",
+    "options": [
+      "Preventing memory allocation",
+      "Atomicity of compound operations like i++",
+      "Visibility of variable changes across threads",
+      "Locking thread execution"
+    ],
+    "answer": "Visibility of variable changes across threads",
+    "explanation": "'volatile' flushes variable writes directly to main memory for thread visibility.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Multithreading & Concurrency"
+  },
+  {
+    "question": "[Java - Hard] Case Study #14 (Class Loaders): Which ClassLoader is the parent of all ClassLoaders in Java?",
+    "options": [
+      "Bootstrap ClassLoader",
+      "System ClassLoader",
+      "Application ClassLoader",
+      "Platform/Extension ClassLoader"
+    ],
+    "answer": "Bootstrap ClassLoader",
+    "explanation": "Bootstrap ClassLoader loads core JDK classes (rt.jar / java.base).",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Class Loaders"
+  },
+  {
+    "question": "[Java - Hard] Case Study #15 (Reflection): Which Java API allows inspection and invocation of private fields and methods at runtime?",
+    "options": [
+      "java.security",
+      "java.nio",
+      "java.lang.reflect",
+      "java.util.concurrent"
+    ],
+    "answer": "java.lang.reflect",
+    "explanation": "Reflection API allows dynamic inspection and invocation of fields/methods.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Reflection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #16 (JVM Tuning): Which JVM flag sets the maximum heap size in Java?",
+    "options": [
+      "-Xss",
+      "-Xms",
+      "-Xmx",
+      "-XX:MaxPermSize"
+    ],
+    "answer": "-Xmx",
+    "explanation": "-Xmx specifies the maximum Java heap allocation limit.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Tuning"
+  },
+  {
+    "question": "[Java - Hard] Case Study #17 (Bytecode): What file extension do compiled Java bytecode files have?",
+    "options": [
+      ".class",
+      ".exe",
+      ".jar",
+      ".java"
+    ],
+    "answer": ".class",
+    "explanation": "Java compiler (javac) produces binary .class files.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Bytecode"
+  },
+  {
+    "question": "[Java - Hard] Case Study #18 (NIO): What key advantage does Java NIO (Non-blocking I/O) offer over classic IO?",
+    "options": [
+      "Automatic string translation",
+      "Slower disk access",
+      "Asynchronous non-blocking channels and buffers",
+      "Removal of socket support"
+    ],
+    "answer": "Asynchronous non-blocking channels and buffers",
+    "explanation": "NIO uses channels and selector multiplexing for high scalability.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "NIO"
+  },
+  {
+    "question": "[Java - Hard] Case Study #19 (Memory Model): What is a 'happens-before' relationship in the Java Memory Model (JMM)?",
+    "options": [
+      "Determines thread execution speed",
+      "Orders garbage collection cycles",
+      "Guarantees memory visibility between concurrent operations",
+      "Prevents deadlock in single threads"
+    ],
+    "answer": "Guarantees memory visibility between concurrent operations",
+    "explanation": "Happens-before defines ordering and visibility bounds across threads.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Memory Model"
+  },
+  {
+    "question": "[Java - Hard] Case Study #20 (CompletableFuture): Which class in java.util.concurrent enables asynchronous non-blocking pipeline chaining?",
+    "options": [
+      "Executor",
+      "Thread",
+      "FutureTask",
+      "CompletableFuture"
+    ],
+    "answer": "CompletableFuture",
+    "explanation": "CompletableFuture allows functional composition of async stages.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "CompletableFuture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #21 (JVM Architecture): Which memory area in JVM stores loaded class structures and method data?",
+    "options": [
+      "Java Heap",
+      "PC Register",
+      "Metaspace (formerly Method Area)",
+      "Native Method Stack"
+    ],
+    "answer": "Metaspace (formerly Method Area)",
+    "explanation": "Metaspace stores class metadata in native memory since Java 8.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Architecture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #22 (Garbage Collection): What is the G1 (Garbage-First) Garbage Collector designed for in Java?",
+    "options": [
+      "Single-threaded small devices",
+      "Stop-the-world total pauses",
+      "Compiling bytecode to assembly",
+      "Low latency on large heap sizes by dividing heap into regions"
+    ],
+    "answer": "Low latency on large heap sizes by dividing heap into regions",
+    "explanation": "G1 divides heap into equal regions to meet pause-time goals.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Garbage Collection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #23 (Multithreading & Concurrency): What does the 'volatile' keyword guarantee in Java concurrency?",
+    "options": [
+      "Atomicity of compound operations like i++",
+      "Visibility of variable changes across threads",
+      "Locking thread execution",
+      "Preventing memory allocation"
+    ],
+    "answer": "Visibility of variable changes across threads",
+    "explanation": "'volatile' flushes variable writes directly to main memory for thread visibility.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Multithreading & Concurrency"
+  },
+  {
+    "question": "[Java - Hard] Case Study #24 (Class Loaders): Which ClassLoader is the parent of all ClassLoaders in Java?",
+    "options": [
+      "Bootstrap ClassLoader",
+      "Application ClassLoader",
+      "System ClassLoader",
+      "Platform/Extension ClassLoader"
+    ],
+    "answer": "Bootstrap ClassLoader",
+    "explanation": "Bootstrap ClassLoader loads core JDK classes (rt.jar / java.base).",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Class Loaders"
+  },
+  {
+    "question": "[Java - Hard] Case Study #25 (Reflection): Which Java API allows inspection and invocation of private fields and methods at runtime?",
+    "options": [
+      "java.security",
+      "java.nio",
+      "java.lang.reflect",
+      "java.util.concurrent"
+    ],
+    "answer": "java.lang.reflect",
+    "explanation": "Reflection API allows dynamic inspection and invocation of fields/methods.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Reflection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #26 (JVM Tuning): Which JVM flag sets the maximum heap size in Java?",
+    "options": [
+      "-XX:MaxPermSize",
+      "-Xmx",
+      "-Xss",
+      "-Xms"
+    ],
+    "answer": "-Xmx",
+    "explanation": "-Xmx specifies the maximum Java heap allocation limit.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Tuning"
+  },
+  {
+    "question": "[Java - Hard] Case Study #27 (Bytecode): What file extension do compiled Java bytecode files have?",
+    "options": [
+      ".exe",
+      ".class",
+      ".java",
+      ".jar"
+    ],
+    "answer": ".class",
+    "explanation": "Java compiler (javac) produces binary .class files.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Bytecode"
+  },
+  {
+    "question": "[Java - Hard] Case Study #28 (NIO): What key advantage does Java NIO (Non-blocking I/O) offer over classic IO?",
+    "options": [
+      "Asynchronous non-blocking channels and buffers",
+      "Automatic string translation",
+      "Slower disk access",
+      "Removal of socket support"
+    ],
+    "answer": "Asynchronous non-blocking channels and buffers",
+    "explanation": "NIO uses channels and selector multiplexing for high scalability.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "NIO"
+  },
+  {
+    "question": "[Java - Hard] Case Study #29 (Memory Model): What is a 'happens-before' relationship in the Java Memory Model (JMM)?",
+    "options": [
+      "Guarantees memory visibility between concurrent operations",
+      "Determines thread execution speed",
+      "Orders garbage collection cycles",
+      "Prevents deadlock in single threads"
+    ],
+    "answer": "Guarantees memory visibility between concurrent operations",
+    "explanation": "Happens-before defines ordering and visibility bounds across threads.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Memory Model"
+  },
+  {
+    "question": "[Java - Hard] Case Study #30 (CompletableFuture): Which class in java.util.concurrent enables asynchronous non-blocking pipeline chaining?",
+    "options": [
+      "CompletableFuture",
+      "Thread",
+      "FutureTask",
+      "Executor"
+    ],
+    "answer": "CompletableFuture",
+    "explanation": "CompletableFuture allows functional composition of async stages.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "CompletableFuture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #31 (JVM Architecture): Which memory area in JVM stores loaded class structures and method data?",
+    "options": [
+      "Native Method Stack",
+      "Java Heap",
+      "PC Register",
+      "Metaspace (formerly Method Area)"
+    ],
+    "answer": "Metaspace (formerly Method Area)",
+    "explanation": "Metaspace stores class metadata in native memory since Java 8.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Architecture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #32 (Garbage Collection): What is the G1 (Garbage-First) Garbage Collector designed for in Java?",
+    "options": [
+      "Stop-the-world total pauses",
+      "Low latency on large heap sizes by dividing heap into regions",
+      "Compiling bytecode to assembly",
+      "Single-threaded small devices"
+    ],
+    "answer": "Low latency on large heap sizes by dividing heap into regions",
+    "explanation": "G1 divides heap into equal regions to meet pause-time goals.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Garbage Collection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #33 (Multithreading & Concurrency): What does the 'volatile' keyword guarantee in Java concurrency?",
+    "options": [
+      "Visibility of variable changes across threads",
+      "Preventing memory allocation",
+      "Atomicity of compound operations like i++",
+      "Locking thread execution"
+    ],
+    "answer": "Visibility of variable changes across threads",
+    "explanation": "'volatile' flushes variable writes directly to main memory for thread visibility.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Multithreading & Concurrency"
+  },
+  {
+    "question": "[Java - Hard] Case Study #34 (Class Loaders): Which ClassLoader is the parent of all ClassLoaders in Java?",
+    "options": [
+      "Platform/Extension ClassLoader",
+      "System ClassLoader",
+      "Application ClassLoader",
+      "Bootstrap ClassLoader"
+    ],
+    "answer": "Bootstrap ClassLoader",
+    "explanation": "Bootstrap ClassLoader loads core JDK classes (rt.jar / java.base).",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Class Loaders"
+  },
+  {
+    "question": "[Java - Hard] Case Study #35 (Reflection): Which Java API allows inspection and invocation of private fields and methods at runtime?",
+    "options": [
+      "java.lang.reflect",
+      "java.util.concurrent",
+      "java.security",
+      "java.nio"
+    ],
+    "answer": "java.lang.reflect",
+    "explanation": "Reflection API allows dynamic inspection and invocation of fields/methods.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Reflection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #36 (JVM Tuning): Which JVM flag sets the maximum heap size in Java?",
+    "options": [
+      "-Xss",
+      "-Xmx",
+      "-Xms",
+      "-XX:MaxPermSize"
+    ],
+    "answer": "-Xmx",
+    "explanation": "-Xmx specifies the maximum Java heap allocation limit.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Tuning"
+  },
+  {
+    "question": "[Java - Hard] Case Study #37 (Bytecode): What file extension do compiled Java bytecode files have?",
+    "options": [
+      ".java",
+      ".class",
+      ".jar",
+      ".exe"
+    ],
+    "answer": ".class",
+    "explanation": "Java compiler (javac) produces binary .class files.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Bytecode"
+  },
+  {
+    "question": "[Java - Hard] Case Study #38 (NIO): What key advantage does Java NIO (Non-blocking I/O) offer over classic IO?",
+    "options": [
+      "Automatic string translation",
+      "Removal of socket support",
+      "Asynchronous non-blocking channels and buffers",
+      "Slower disk access"
+    ],
+    "answer": "Asynchronous non-blocking channels and buffers",
+    "explanation": "NIO uses channels and selector multiplexing for high scalability.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "NIO"
+  },
+  {
+    "question": "[Java - Hard] Case Study #39 (Memory Model): What is a 'happens-before' relationship in the Java Memory Model (JMM)?",
+    "options": [
+      "Prevents deadlock in single threads",
+      "Determines thread execution speed",
+      "Guarantees memory visibility between concurrent operations",
+      "Orders garbage collection cycles"
+    ],
+    "answer": "Guarantees memory visibility between concurrent operations",
+    "explanation": "Happens-before defines ordering and visibility bounds across threads.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Memory Model"
+  },
+  {
+    "question": "[Java - Hard] Case Study #40 (CompletableFuture): Which class in java.util.concurrent enables asynchronous non-blocking pipeline chaining?",
+    "options": [
+      "FutureTask",
+      "Executor",
+      "Thread",
+      "CompletableFuture"
+    ],
+    "answer": "CompletableFuture",
+    "explanation": "CompletableFuture allows functional composition of async stages.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "CompletableFuture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #41 (JVM Architecture): Which memory area in JVM stores loaded class structures and method data?",
+    "options": [
+      "Native Method Stack",
+      "Java Heap",
+      "PC Register",
+      "Metaspace (formerly Method Area)"
+    ],
+    "answer": "Metaspace (formerly Method Area)",
+    "explanation": "Metaspace stores class metadata in native memory since Java 8.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Architecture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #42 (Garbage Collection): What is the G1 (Garbage-First) Garbage Collector designed for in Java?",
+    "options": [
+      "Stop-the-world total pauses",
+      "Compiling bytecode to assembly",
+      "Single-threaded small devices",
+      "Low latency on large heap sizes by dividing heap into regions"
+    ],
+    "answer": "Low latency on large heap sizes by dividing heap into regions",
+    "explanation": "G1 divides heap into equal regions to meet pause-time goals.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Garbage Collection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #43 (Multithreading & Concurrency): What does the 'volatile' keyword guarantee in Java concurrency?",
+    "options": [
+      "Preventing memory allocation",
+      "Locking thread execution",
+      "Visibility of variable changes across threads",
+      "Atomicity of compound operations like i++"
+    ],
+    "answer": "Visibility of variable changes across threads",
+    "explanation": "'volatile' flushes variable writes directly to main memory for thread visibility.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Multithreading & Concurrency"
+  },
+  {
+    "question": "[Java - Hard] Case Study #44 (Class Loaders): Which ClassLoader is the parent of all ClassLoaders in Java?",
+    "options": [
+      "Platform/Extension ClassLoader",
+      "Bootstrap ClassLoader",
+      "System ClassLoader",
+      "Application ClassLoader"
+    ],
+    "answer": "Bootstrap ClassLoader",
+    "explanation": "Bootstrap ClassLoader loads core JDK classes (rt.jar / java.base).",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Class Loaders"
+  },
+  {
+    "question": "[Java - Hard] Case Study #45 (Reflection): Which Java API allows inspection and invocation of private fields and methods at runtime?",
+    "options": [
+      "java.util.concurrent",
+      "java.security",
+      "java.lang.reflect",
+      "java.nio"
+    ],
+    "answer": "java.lang.reflect",
+    "explanation": "Reflection API allows dynamic inspection and invocation of fields/methods.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Reflection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #46 (JVM Tuning): Which JVM flag sets the maximum heap size in Java?",
+    "options": [
+      "-Xmx",
+      "-Xms",
+      "-Xss",
+      "-XX:MaxPermSize"
+    ],
+    "answer": "-Xmx",
+    "explanation": "-Xmx specifies the maximum Java heap allocation limit.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Tuning"
+  },
+  {
+    "question": "[Java - Hard] Case Study #47 (Bytecode): What file extension do compiled Java bytecode files have?",
+    "options": [
+      ".exe",
+      ".jar",
+      ".java",
+      ".class"
+    ],
+    "answer": ".class",
+    "explanation": "Java compiler (javac) produces binary .class files.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Bytecode"
+  },
+  {
+    "question": "[Java - Hard] Case Study #48 (NIO): What key advantage does Java NIO (Non-blocking I/O) offer over classic IO?",
+    "options": [
+      "Slower disk access",
+      "Asynchronous non-blocking channels and buffers",
+      "Automatic string translation",
+      "Removal of socket support"
+    ],
+    "answer": "Asynchronous non-blocking channels and buffers",
+    "explanation": "NIO uses channels and selector multiplexing for high scalability.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "NIO"
+  },
+  {
+    "question": "[Java - Hard] Case Study #49 (Memory Model): What is a 'happens-before' relationship in the Java Memory Model (JMM)?",
+    "options": [
+      "Orders garbage collection cycles",
+      "Prevents deadlock in single threads",
+      "Determines thread execution speed",
+      "Guarantees memory visibility between concurrent operations"
+    ],
+    "answer": "Guarantees memory visibility between concurrent operations",
+    "explanation": "Happens-before defines ordering and visibility bounds across threads.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Memory Model"
+  },
+  {
+    "question": "[Java - Hard] Case Study #50 (CompletableFuture): Which class in java.util.concurrent enables asynchronous non-blocking pipeline chaining?",
+    "options": [
+      "Thread",
+      "CompletableFuture",
+      "Executor",
+      "FutureTask"
+    ],
+    "answer": "CompletableFuture",
+    "explanation": "CompletableFuture allows functional composition of async stages.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "CompletableFuture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #51 (JVM Architecture): Which memory area in JVM stores loaded class structures and method data?",
+    "options": [
+      "PC Register",
+      "Java Heap",
+      "Metaspace (formerly Method Area)",
+      "Native Method Stack"
+    ],
+    "answer": "Metaspace (formerly Method Area)",
+    "explanation": "Metaspace stores class metadata in native memory since Java 8.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Architecture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #52 (Garbage Collection): What is the G1 (Garbage-First) Garbage Collector designed for in Java?",
+    "options": [
+      "Low latency on large heap sizes by dividing heap into regions",
+      "Stop-the-world total pauses",
+      "Compiling bytecode to assembly",
+      "Single-threaded small devices"
+    ],
+    "answer": "Low latency on large heap sizes by dividing heap into regions",
+    "explanation": "G1 divides heap into equal regions to meet pause-time goals.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Garbage Collection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #53 (Multithreading & Concurrency): What does the 'volatile' keyword guarantee in Java concurrency?",
+    "options": [
+      "Locking thread execution",
+      "Atomicity of compound operations like i++",
+      "Visibility of variable changes across threads",
+      "Preventing memory allocation"
+    ],
+    "answer": "Visibility of variable changes across threads",
+    "explanation": "'volatile' flushes variable writes directly to main memory for thread visibility.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Multithreading & Concurrency"
+  },
+  {
+    "question": "[Java - Hard] Case Study #54 (Class Loaders): Which ClassLoader is the parent of all ClassLoaders in Java?",
+    "options": [
+      "Application ClassLoader",
+      "Platform/Extension ClassLoader",
+      "Bootstrap ClassLoader",
+      "System ClassLoader"
+    ],
+    "answer": "Bootstrap ClassLoader",
+    "explanation": "Bootstrap ClassLoader loads core JDK classes (rt.jar / java.base).",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Class Loaders"
+  },
+  {
+    "question": "[Java - Hard] Case Study #55 (Reflection): Which Java API allows inspection and invocation of private fields and methods at runtime?",
+    "options": [
+      "java.security",
+      "java.nio",
+      "java.util.concurrent",
+      "java.lang.reflect"
+    ],
+    "answer": "java.lang.reflect",
+    "explanation": "Reflection API allows dynamic inspection and invocation of fields/methods.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Reflection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #56 (JVM Tuning): Which JVM flag sets the maximum heap size in Java?",
+    "options": [
+      "-Xms",
+      "-Xmx",
+      "-XX:MaxPermSize",
+      "-Xss"
+    ],
+    "answer": "-Xmx",
+    "explanation": "-Xmx specifies the maximum Java heap allocation limit.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Tuning"
+  },
+  {
+    "question": "[Java - Hard] Case Study #57 (Bytecode): What file extension do compiled Java bytecode files have?",
+    "options": [
+      ".class",
+      ".jar",
+      ".exe",
+      ".java"
+    ],
+    "answer": ".class",
+    "explanation": "Java compiler (javac) produces binary .class files.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Bytecode"
+  },
+  {
+    "question": "[Java - Hard] Case Study #58 (NIO): What key advantage does Java NIO (Non-blocking I/O) offer over classic IO?",
+    "options": [
+      "Asynchronous non-blocking channels and buffers",
+      "Removal of socket support",
+      "Slower disk access",
+      "Automatic string translation"
+    ],
+    "answer": "Asynchronous non-blocking channels and buffers",
+    "explanation": "NIO uses channels and selector multiplexing for high scalability.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "NIO"
+  },
+  {
+    "question": "[Java - Hard] Case Study #59 (Memory Model): What is a 'happens-before' relationship in the Java Memory Model (JMM)?",
+    "options": [
+      "Orders garbage collection cycles",
+      "Prevents deadlock in single threads",
+      "Guarantees memory visibility between concurrent operations",
+      "Determines thread execution speed"
+    ],
+    "answer": "Guarantees memory visibility between concurrent operations",
+    "explanation": "Happens-before defines ordering and visibility bounds across threads.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Memory Model"
+  },
+  {
+    "question": "[Java - Hard] Case Study #60 (CompletableFuture): Which class in java.util.concurrent enables asynchronous non-blocking pipeline chaining?",
+    "options": [
+      "CompletableFuture",
+      "Executor",
+      "FutureTask",
+      "Thread"
+    ],
+    "answer": "CompletableFuture",
+    "explanation": "CompletableFuture allows functional composition of async stages.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "CompletableFuture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #61 (JVM Architecture): Which memory area in JVM stores loaded class structures and method data?",
+    "options": [
+      "Metaspace (formerly Method Area)",
+      "Java Heap",
+      "PC Register",
+      "Native Method Stack"
+    ],
+    "answer": "Metaspace (formerly Method Area)",
+    "explanation": "Metaspace stores class metadata in native memory since Java 8.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Architecture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #62 (Garbage Collection): What is the G1 (Garbage-First) Garbage Collector designed for in Java?",
+    "options": [
+      "Compiling bytecode to assembly",
+      "Single-threaded small devices",
+      "Low latency on large heap sizes by dividing heap into regions",
+      "Stop-the-world total pauses"
+    ],
+    "answer": "Low latency on large heap sizes by dividing heap into regions",
+    "explanation": "G1 divides heap into equal regions to meet pause-time goals.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Garbage Collection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #63 (Multithreading & Concurrency): What does the 'volatile' keyword guarantee in Java concurrency?",
+    "options": [
+      "Visibility of variable changes across threads",
+      "Preventing memory allocation",
+      "Locking thread execution",
+      "Atomicity of compound operations like i++"
+    ],
+    "answer": "Visibility of variable changes across threads",
+    "explanation": "'volatile' flushes variable writes directly to main memory for thread visibility.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Multithreading & Concurrency"
+  },
+  {
+    "question": "[Java - Hard] Case Study #64 (Class Loaders): Which ClassLoader is the parent of all ClassLoaders in Java?",
+    "options": [
+      "Bootstrap ClassLoader",
+      "Platform/Extension ClassLoader",
+      "Application ClassLoader",
+      "System ClassLoader"
+    ],
+    "answer": "Bootstrap ClassLoader",
+    "explanation": "Bootstrap ClassLoader loads core JDK classes (rt.jar / java.base).",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Class Loaders"
+  },
+  {
+    "question": "[Java - Hard] Case Study #65 (Reflection): Which Java API allows inspection and invocation of private fields and methods at runtime?",
+    "options": [
+      "java.util.concurrent",
+      "java.nio",
+      "java.lang.reflect",
+      "java.security"
+    ],
+    "answer": "java.lang.reflect",
+    "explanation": "Reflection API allows dynamic inspection and invocation of fields/methods.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Reflection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #66 (JVM Tuning): Which JVM flag sets the maximum heap size in Java?",
+    "options": [
+      "-Xms",
+      "-Xss",
+      "-XX:MaxPermSize",
+      "-Xmx"
+    ],
+    "answer": "-Xmx",
+    "explanation": "-Xmx specifies the maximum Java heap allocation limit.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Tuning"
+  },
+  {
+    "question": "[Java - Hard] Case Study #67 (Bytecode): What file extension do compiled Java bytecode files have?",
+    "options": [
+      ".class",
+      ".exe",
+      ".java",
+      ".jar"
+    ],
+    "answer": ".class",
+    "explanation": "Java compiler (javac) produces binary .class files.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Bytecode"
+  },
+  {
+    "question": "[Java - Hard] Case Study #68 (NIO): What key advantage does Java NIO (Non-blocking I/O) offer over classic IO?",
+    "options": [
+      "Slower disk access",
+      "Asynchronous non-blocking channels and buffers",
+      "Removal of socket support",
+      "Automatic string translation"
+    ],
+    "answer": "Asynchronous non-blocking channels and buffers",
+    "explanation": "NIO uses channels and selector multiplexing for high scalability.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "NIO"
+  },
+  {
+    "question": "[Java - Hard] Case Study #69 (Memory Model): What is a 'happens-before' relationship in the Java Memory Model (JMM)?",
+    "options": [
+      "Guarantees memory visibility between concurrent operations",
+      "Determines thread execution speed",
+      "Prevents deadlock in single threads",
+      "Orders garbage collection cycles"
+    ],
+    "answer": "Guarantees memory visibility between concurrent operations",
+    "explanation": "Happens-before defines ordering and visibility bounds across threads.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Memory Model"
+  },
+  {
+    "question": "[Java - Hard] Case Study #70 (CompletableFuture): Which class in java.util.concurrent enables asynchronous non-blocking pipeline chaining?",
+    "options": [
+      "Executor",
+      "CompletableFuture",
+      "Thread",
+      "FutureTask"
+    ],
+    "answer": "CompletableFuture",
+    "explanation": "CompletableFuture allows functional composition of async stages.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "CompletableFuture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #71 (JVM Architecture): Which memory area in JVM stores loaded class structures and method data?",
+    "options": [
+      "PC Register",
+      "Metaspace (formerly Method Area)",
+      "Java Heap",
+      "Native Method Stack"
+    ],
+    "answer": "Metaspace (formerly Method Area)",
+    "explanation": "Metaspace stores class metadata in native memory since Java 8.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Architecture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #72 (Garbage Collection): What is the G1 (Garbage-First) Garbage Collector designed for in Java?",
+    "options": [
+      "Low latency on large heap sizes by dividing heap into regions",
+      "Compiling bytecode to assembly",
+      "Stop-the-world total pauses",
+      "Single-threaded small devices"
+    ],
+    "answer": "Low latency on large heap sizes by dividing heap into regions",
+    "explanation": "G1 divides heap into equal regions to meet pause-time goals.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Garbage Collection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #73 (Multithreading & Concurrency): What does the 'volatile' keyword guarantee in Java concurrency?",
+    "options": [
+      "Visibility of variable changes across threads",
+      "Locking thread execution",
+      "Atomicity of compound operations like i++",
+      "Preventing memory allocation"
+    ],
+    "answer": "Visibility of variable changes across threads",
+    "explanation": "'volatile' flushes variable writes directly to main memory for thread visibility.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Multithreading & Concurrency"
+  },
+  {
+    "question": "[Java - Hard] Case Study #74 (Class Loaders): Which ClassLoader is the parent of all ClassLoaders in Java?",
+    "options": [
+      "Bootstrap ClassLoader",
+      "Application ClassLoader",
+      "System ClassLoader",
+      "Platform/Extension ClassLoader"
+    ],
+    "answer": "Bootstrap ClassLoader",
+    "explanation": "Bootstrap ClassLoader loads core JDK classes (rt.jar / java.base).",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Class Loaders"
+  },
+  {
+    "question": "[Java - Hard] Case Study #75 (Reflection): Which Java API allows inspection and invocation of private fields and methods at runtime?",
+    "options": [
+      "java.util.concurrent",
+      "java.security",
+      "java.nio",
+      "java.lang.reflect"
+    ],
+    "answer": "java.lang.reflect",
+    "explanation": "Reflection API allows dynamic inspection and invocation of fields/methods.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Reflection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #76 (JVM Tuning): Which JVM flag sets the maximum heap size in Java?",
+    "options": [
+      "-Xss",
+      "-Xmx",
+      "-Xms",
+      "-XX:MaxPermSize"
+    ],
+    "answer": "-Xmx",
+    "explanation": "-Xmx specifies the maximum Java heap allocation limit.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Tuning"
+  },
+  {
+    "question": "[Java - Hard] Case Study #77 (Bytecode): What file extension do compiled Java bytecode files have?",
+    "options": [
+      ".jar",
+      ".class",
+      ".exe",
+      ".java"
+    ],
+    "answer": ".class",
+    "explanation": "Java compiler (javac) produces binary .class files.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Bytecode"
+  },
+  {
+    "question": "[Java - Hard] Case Study #78 (NIO): What key advantage does Java NIO (Non-blocking I/O) offer over classic IO?",
+    "options": [
+      "Automatic string translation",
+      "Slower disk access",
+      "Asynchronous non-blocking channels and buffers",
+      "Removal of socket support"
+    ],
+    "answer": "Asynchronous non-blocking channels and buffers",
+    "explanation": "NIO uses channels and selector multiplexing for high scalability.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "NIO"
+  },
+  {
+    "question": "[Java - Hard] Case Study #79 (Memory Model): What is a 'happens-before' relationship in the Java Memory Model (JMM)?",
+    "options": [
+      "Guarantees memory visibility between concurrent operations",
+      "Determines thread execution speed",
+      "Orders garbage collection cycles",
+      "Prevents deadlock in single threads"
+    ],
+    "answer": "Guarantees memory visibility between concurrent operations",
+    "explanation": "Happens-before defines ordering and visibility bounds across threads.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Memory Model"
+  },
+  {
+    "question": "[Java - Hard] Case Study #80 (CompletableFuture): Which class in java.util.concurrent enables asynchronous non-blocking pipeline chaining?",
+    "options": [
+      "Thread",
+      "Executor",
+      "FutureTask",
+      "CompletableFuture"
+    ],
+    "answer": "CompletableFuture",
+    "explanation": "CompletableFuture allows functional composition of async stages.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "CompletableFuture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #81 (JVM Architecture): Which memory area in JVM stores loaded class structures and method data?",
+    "options": [
+      "Metaspace (formerly Method Area)",
+      "Native Method Stack",
+      "PC Register",
+      "Java Heap"
+    ],
+    "answer": "Metaspace (formerly Method Area)",
+    "explanation": "Metaspace stores class metadata in native memory since Java 8.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Architecture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #82 (Garbage Collection): What is the G1 (Garbage-First) Garbage Collector designed for in Java?",
+    "options": [
+      "Compiling bytecode to assembly",
+      "Single-threaded small devices",
+      "Low latency on large heap sizes by dividing heap into regions",
+      "Stop-the-world total pauses"
+    ],
+    "answer": "Low latency on large heap sizes by dividing heap into regions",
+    "explanation": "G1 divides heap into equal regions to meet pause-time goals.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Garbage Collection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #83 (Multithreading & Concurrency): What does the 'volatile' keyword guarantee in Java concurrency?",
+    "options": [
+      "Locking thread execution",
+      "Atomicity of compound operations like i++",
+      "Preventing memory allocation",
+      "Visibility of variable changes across threads"
+    ],
+    "answer": "Visibility of variable changes across threads",
+    "explanation": "'volatile' flushes variable writes directly to main memory for thread visibility.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Multithreading & Concurrency"
+  },
+  {
+    "question": "[Java - Hard] Case Study #84 (Class Loaders): Which ClassLoader is the parent of all ClassLoaders in Java?",
+    "options": [
+      "System ClassLoader",
+      "Platform/Extension ClassLoader",
+      "Application ClassLoader",
+      "Bootstrap ClassLoader"
+    ],
+    "answer": "Bootstrap ClassLoader",
+    "explanation": "Bootstrap ClassLoader loads core JDK classes (rt.jar / java.base).",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Class Loaders"
+  },
+  {
+    "question": "[Java - Hard] Case Study #85 (Reflection): Which Java API allows inspection and invocation of private fields and methods at runtime?",
+    "options": [
+      "java.security",
+      "java.lang.reflect",
+      "java.nio",
+      "java.util.concurrent"
+    ],
+    "answer": "java.lang.reflect",
+    "explanation": "Reflection API allows dynamic inspection and invocation of fields/methods.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Reflection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #86 (JVM Tuning): Which JVM flag sets the maximum heap size in Java?",
+    "options": [
+      "-XX:MaxPermSize",
+      "-Xmx",
+      "-Xss",
+      "-Xms"
+    ],
+    "answer": "-Xmx",
+    "explanation": "-Xmx specifies the maximum Java heap allocation limit.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Tuning"
+  },
+  {
+    "question": "[Java - Hard] Case Study #87 (Bytecode): What file extension do compiled Java bytecode files have?",
+    "options": [
+      ".jar",
+      ".class",
+      ".java",
+      ".exe"
+    ],
+    "answer": ".class",
+    "explanation": "Java compiler (javac) produces binary .class files.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Bytecode"
+  },
+  {
+    "question": "[Java - Hard] Case Study #88 (NIO): What key advantage does Java NIO (Non-blocking I/O) offer over classic IO?",
+    "options": [
+      "Asynchronous non-blocking channels and buffers",
+      "Removal of socket support",
+      "Slower disk access",
+      "Automatic string translation"
+    ],
+    "answer": "Asynchronous non-blocking channels and buffers",
+    "explanation": "NIO uses channels and selector multiplexing for high scalability.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "NIO"
+  },
+  {
+    "question": "[Java - Hard] Case Study #89 (Memory Model): What is a 'happens-before' relationship in the Java Memory Model (JMM)?",
+    "options": [
+      "Orders garbage collection cycles",
+      "Determines thread execution speed",
+      "Prevents deadlock in single threads",
+      "Guarantees memory visibility between concurrent operations"
+    ],
+    "answer": "Guarantees memory visibility between concurrent operations",
+    "explanation": "Happens-before defines ordering and visibility bounds across threads.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Memory Model"
+  },
+  {
+    "question": "[Java - Hard] Case Study #90 (CompletableFuture): Which class in java.util.concurrent enables asynchronous non-blocking pipeline chaining?",
+    "options": [
+      "Thread",
+      "Executor",
+      "CompletableFuture",
+      "FutureTask"
+    ],
+    "answer": "CompletableFuture",
+    "explanation": "CompletableFuture allows functional composition of async stages.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "CompletableFuture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #91 (JVM Architecture): Which memory area in JVM stores loaded class structures and method data?",
+    "options": [
+      "Java Heap",
+      "Metaspace (formerly Method Area)",
+      "PC Register",
+      "Native Method Stack"
+    ],
+    "answer": "Metaspace (formerly Method Area)",
+    "explanation": "Metaspace stores class metadata in native memory since Java 8.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Architecture"
+  },
+  {
+    "question": "[Java - Hard] Case Study #92 (Garbage Collection): What is the G1 (Garbage-First) Garbage Collector designed for in Java?",
+    "options": [
+      "Single-threaded small devices",
+      "Low latency on large heap sizes by dividing heap into regions",
+      "Compiling bytecode to assembly",
+      "Stop-the-world total pauses"
+    ],
+    "answer": "Low latency on large heap sizes by dividing heap into regions",
+    "explanation": "G1 divides heap into equal regions to meet pause-time goals.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Garbage Collection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #93 (Multithreading & Concurrency): What does the 'volatile' keyword guarantee in Java concurrency?",
+    "options": [
+      "Preventing memory allocation",
+      "Visibility of variable changes across threads",
+      "Locking thread execution",
+      "Atomicity of compound operations like i++"
+    ],
+    "answer": "Visibility of variable changes across threads",
+    "explanation": "'volatile' flushes variable writes directly to main memory for thread visibility.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Multithreading & Concurrency"
+  },
+  {
+    "question": "[Java - Hard] Case Study #94 (Class Loaders): Which ClassLoader is the parent of all ClassLoaders in Java?",
+    "options": [
+      "Application ClassLoader",
+      "System ClassLoader",
+      "Bootstrap ClassLoader",
+      "Platform/Extension ClassLoader"
+    ],
+    "answer": "Bootstrap ClassLoader",
+    "explanation": "Bootstrap ClassLoader loads core JDK classes (rt.jar / java.base).",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Class Loaders"
+  },
+  {
+    "question": "[Java - Hard] Case Study #95 (Reflection): Which Java API allows inspection and invocation of private fields and methods at runtime?",
+    "options": [
+      "java.nio",
+      "java.security",
+      "java.lang.reflect",
+      "java.util.concurrent"
+    ],
+    "answer": "java.lang.reflect",
+    "explanation": "Reflection API allows dynamic inspection and invocation of fields/methods.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Reflection"
+  },
+  {
+    "question": "[Java - Hard] Case Study #96 (JVM Tuning): Which JVM flag sets the maximum heap size in Java?",
+    "options": [
+      "-Xmx",
+      "-XX:MaxPermSize",
+      "-Xss",
+      "-Xms"
+    ],
+    "answer": "-Xmx",
+    "explanation": "-Xmx specifies the maximum Java heap allocation limit.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "JVM Tuning"
+  },
+  {
+    "question": "[Java - Hard] Case Study #97 (Bytecode): What file extension do compiled Java bytecode files have?",
+    "options": [
+      ".java",
+      ".exe",
+      ".jar",
+      ".class"
+    ],
+    "answer": ".class",
+    "explanation": "Java compiler (javac) produces binary .class files.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Bytecode"
+  },
+  {
+    "question": "[Java - Hard] Case Study #98 (NIO): What key advantage does Java NIO (Non-blocking I/O) offer over classic IO?",
+    "options": [
+      "Removal of socket support",
+      "Asynchronous non-blocking channels and buffers",
+      "Automatic string translation",
+      "Slower disk access"
+    ],
+    "answer": "Asynchronous non-blocking channels and buffers",
+    "explanation": "NIO uses channels and selector multiplexing for high scalability.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "NIO"
+  },
+  {
+    "question": "[Java - Hard] Case Study #99 (Memory Model): What is a 'happens-before' relationship in the Java Memory Model (JMM)?",
+    "options": [
+      "Determines thread execution speed",
+      "Prevents deadlock in single threads",
+      "Guarantees memory visibility between concurrent operations",
+      "Orders garbage collection cycles"
+    ],
+    "answer": "Guarantees memory visibility between concurrent operations",
+    "explanation": "Happens-before defines ordering and visibility bounds across threads.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "Memory Model"
+  },
+  {
+    "question": "[Java - Hard] Case Study #100 (CompletableFuture): Which class in java.util.concurrent enables asynchronous non-blocking pipeline chaining?",
+    "options": [
+      "CompletableFuture",
+      "Executor",
+      "FutureTask",
+      "Thread"
+    ],
+    "answer": "CompletableFuture",
+    "explanation": "CompletableFuture allows functional composition of async stages.",
+    "difficulty": "Hard",
+    "skill": "Java",
+    "topic": "CompletableFuture"
+  }
+]

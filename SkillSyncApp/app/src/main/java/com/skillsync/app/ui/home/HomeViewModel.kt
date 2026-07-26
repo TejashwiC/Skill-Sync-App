@@ -58,9 +58,9 @@ class HomeViewModel : ViewModel() {
             }
         }
 
-        // 4. Observe Hosted Sessions count
+        // 4. Observe Sessions Created (completed) count
         viewModelScope.launch {
-            sessionRepository.observeMyHostedSessions(uid).collectLatest { sessions ->
+            sessionRepository.observeMyCreatedEndedSessions(uid).collectLatest { sessions ->
                 _hostedSessionsCount.postValue(sessions.size)
             }
         }

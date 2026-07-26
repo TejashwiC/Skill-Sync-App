@@ -7,10 +7,10 @@ import androidx.lifecycle.viewModelScope
 import com.skillsync.app.data.model.Question
 import com.skillsync.app.data.model.Test
 import com.skillsync.app.data.model.TestAttempt
-import com.skillsync.app.data.model.User
 import com.skillsync.app.data.repository.TestRepository
 import com.skillsync.app.data.repository.UserRepository
 import com.skillsync.app.util.FirebaseUtil
+import com.skillsync.app.util.QuestionBankItem
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
@@ -31,6 +31,9 @@ class TestViewModel : ViewModel() {
     private val _availableTests = MutableLiveData<List<Test>>()
     val availableTests: LiveData<List<Test>> = _availableTests
 
+    private val _createdTestsWithAttendees = MutableLiveData<List<CreatedTestWithAttendees>>()
+    val createdTestsWithAttendees: LiveData<List<CreatedTestWithAttendees>> = _createdTestsWithAttendees
+
     private val _leaderboard = MutableLiveData<List<LeaderboardRow>>()
     val leaderboard: LiveData<List<LeaderboardRow>> = _leaderboard
 
@@ -45,10 +48,11 @@ class TestViewModel : ViewModel() {
         val uid = FirebaseUtil.currentUid
         if (uid.isEmpty()) return
 
-        // Observe my tests
+        // Observe my tests & attendees
         viewModelScope.launch {
             testRepository.observeMyTests(uid).collectLatest { list ->
                 _myTests.postValue(list)
+                loadAttendeesForCreatedTests(list)
             }
         }
 
@@ -67,17 +71,37 @@ class TestViewModel : ViewModel() {
         }
     }
 
-    fun createTest(title: String, skill: String, credits: Long) {
+    private fun loadAttendeesForCreatedTests(tests: List<Test>) {
+        viewModelScope.launch {
+            val resultList = mutableListOf<CreatedTestWithAttendees>()
+            for (t in tests) {
+                val qCount = testRepository.getQuestionsCountForTest(t.id)
+                val rawAttendees = testRepository.getAttemptsForTest(t.id)
+                val attendees = rawAttendees.map { att ->
+                    if (att.userName.isNotEmpty()) att
+                    else {
+                        val name = userRepository.getUserProfile(att.userId).getOrNull()?.name ?: "User"
+                        att.copy(userName = name)
+                    }
+                }
+                resultList.add(CreatedTestWithAttendees(test = t, questionCount = qCount, attendees = attendees))
+            }
+            _createdTestsWithAttendees.postValue(resultList)
+        }
+    }
+
+    fun publishPreparedTest(skill: String, difficulty: String, questions: List<QuestionBankItem>) {
         val uid = FirebaseUtil.currentUid
         if (uid.isEmpty()) return
-        val creatorName = FirebaseUtil.currentUser?.displayName ?: "Expert"
 
         viewModelScope.launch {
-            val result = testRepository.createTest(title, skill, credits, uid, creatorName)
+            val userProfile = userRepository.getUserProfile(uid).getOrNull()
+            val creatorName = userProfile?.name ?: FirebaseUtil.currentUser?.displayName ?: "Creator"
+            val result = testRepository.publishPreparedTest(skill, difficulty, questions, uid, creatorName)
             if (result.isSuccess) {
                 _actionResult.postValue(Result.success(Unit))
             } else {
-                _actionResult.postValue(Result.failure(result.exceptionOrNull() ?: Exception("Unknown error")))
+                _actionResult.postValue(Result.failure(result.exceptionOrNull() ?: Exception("Failed to publish test")))
             }
         }
     }
@@ -111,36 +135,72 @@ class TestViewModel : ViewModel() {
         if (uid.isEmpty()) return
 
         viewModelScope.launch {
-            // Find mutual connections
+            // Find connections (followers & following)
             val myProfile = userRepository.getUserProfile(uid).getOrNull()
             val following = myProfile?.following ?: emptyList()
             val followers = myProfile?.followers ?: emptyList()
-            val mutualUids = following.filter { followers.contains(it) }
+            val connections = (following + followers).distinct().filter { it != uid }
 
-            val tests = testRepository.getAvailableTests(mutualUids)
-            _availableTests.postValue(tests)
+            if (connections.isEmpty()) {
+                _availableTests.postValue(emptyList())
+                return@launch
+            }
+
+            val tests = testRepository.getAvailableTests(connections)
+            val myAttempts = testRepository.getMyAttemptsOnce(uid)
+            val attemptedIds = myAttempts.map { it.testId }.toSet()
+
+            // Filter out tests created by self OR already attempted OR with 0 questions!
+            val filtered = mutableListOf<Test>()
+            for (t in tests) {
+                if (t.creatorId != uid && !attemptedIds.contains(t.id)) {
+                    val qCount = testRepository.getQuestionsCountForTest(t.id)
+                    if (qCount > 0) {
+                        filtered.add(t.copy(questionCount = qCount.toLong()))
+                    }
+                }
+            }
+            _availableTests.postValue(filtered)
         }
     }
 
-    fun submitAttempt(test: Test, score: Long, total: Long) {
+    fun submitAttemptDetailed(
+        test: Test,
+        score: Long,
+        total: Long,
+        correctAnswers: Long,
+        wrongAnswers: Long,
+        timeTakenSec: Long,
+        timeTakenStr: String
+    ) {
         val uid = FirebaseUtil.currentUid
         if (uid.isEmpty()) return
 
-        // 10 credits earned per correct answer
         val earnedCredits = score * 10
         val percentage = if (total > 0L) ((score.toDouble() / total.toDouble()) * 100).toLong() else 0L
 
-        val attempt = TestAttempt(
-            userId = uid,
-            testId = test.id,
-            testTitle = test.title,
-            score = score,
-            total = total,
-            percentage = percentage,
-            earnedCredits = earnedCredits
-        )
-
         viewModelScope.launch {
+            val userProfile = userRepository.getUserProfile(uid).getOrNull()
+            val userName = userProfile?.name ?: FirebaseUtil.currentUser?.displayName ?: "User"
+
+            val attempt = TestAttempt(
+                userId = uid,
+                userName = userName,
+                testId = test.id,
+                testTitle = test.title,
+                creatorName = test.creatorName.ifEmpty { "Creator" },
+                skill = test.skill,
+                difficulty = test.difficulty,
+                score = score,
+                total = total,
+                correctAnswers = correctAnswers,
+                wrongAnswers = wrongAnswers,
+                percentage = percentage,
+                timeTakenSec = timeTakenSec,
+                timeTakenStr = timeTakenStr,
+                earnedCredits = earnedCredits
+            )
+
             val result = testRepository.submitAttempt(attempt)
             _actionResult.postValue(result)
         }
@@ -150,7 +210,7 @@ class TestViewModel : ViewModel() {
         viewModelScope.launch {
             val allAttempts = testRepository.getAllAttempts()
             val userStats = mutableMapOf<String, LeaderboardRow>()
-            
+
             for (attempt in allAttempts) {
                 val stats = userStats.getOrPut(attempt.userId) {
                     LeaderboardRow(attempt.userId, "Loading...", 0L)
@@ -160,7 +220,6 @@ class TestViewModel : ViewModel() {
                 )
             }
 
-            // Fetch user names
             val rows = userStats.values.map { row ->
                 val name = userRepository.getUserProfile(row.userId).getOrNull()?.name ?: "User"
                 row.copy(userName = name)
@@ -173,6 +232,12 @@ class TestViewModel : ViewModel() {
     fun resetActionResult() {
         _actionResult.value = null
     }
+
+    data class CreatedTestWithAttendees(
+        val test: Test,
+        val questionCount: Int,
+        val attendees: List<TestAttempt>
+    )
 
     data class LeaderboardRow(
         val userId: String,

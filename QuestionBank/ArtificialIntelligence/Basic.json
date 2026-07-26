@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "What is the Turing Test used for in AI?",
+    "options": [
+      "Sorting neural weights",
+      "Testing GPU memory speed",
+      "Determining whether a machine exhibits human-like intelligence",
+      "Checking algorithm time complexity"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Clustering unlabeled data",
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Manual rule programming",
+      "Trial and error reward maximization"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Calculating batch size",
+      "Introducing non-linearity to learn complex patterns",
+      "Initializing weights to zero",
+      "Connecting server CPUs"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Convolutional Filters",
+      "Recurrent Hidden Loops",
+      "Self-Attention Mechanism",
+      "Decision Trees"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #5 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Testing GPU memory speed",
+      "Sorting neural weights",
+      "Checking algorithm time complexity",
+      "Determining whether a machine exhibits human-like intelligence"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #6 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Trial and error reward maximization",
+      "Manual rule programming",
+      "Clustering unlabeled data",
+      "Training models using labeled datasets with inputs and ground truth targets"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #7 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Introducing non-linearity to learn complex patterns",
+      "Initializing weights to zero",
+      "Calculating batch size",
+      "Connecting server CPUs"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #8 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Convolutional Filters",
+      "Self-Attention Mechanism",
+      "Recurrent Hidden Loops",
+      "Decision Trees"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #9 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Checking algorithm time complexity",
+      "Testing GPU memory speed",
+      "Determining whether a machine exhibits human-like intelligence",
+      "Sorting neural weights"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #10 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Manual rule programming",
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Trial and error reward maximization",
+      "Clustering unlabeled data"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #11 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Introducing non-linearity to learn complex patterns",
+      "Connecting server CPUs",
+      "Calculating batch size",
+      "Initializing weights to zero"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #12 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Convolutional Filters",
+      "Self-Attention Mechanism",
+      "Recurrent Hidden Loops",
+      "Decision Trees"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #13 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Testing GPU memory speed",
+      "Determining whether a machine exhibits human-like intelligence",
+      "Sorting neural weights",
+      "Checking algorithm time complexity"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #14 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Trial and error reward maximization",
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Clustering unlabeled data",
+      "Manual rule programming"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #15 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Connecting server CPUs",
+      "Introducing non-linearity to learn complex patterns",
+      "Calculating batch size",
+      "Initializing weights to zero"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #16 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Recurrent Hidden Loops",
+      "Self-Attention Mechanism",
+      "Decision Trees",
+      "Convolutional Filters"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #17 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Sorting neural weights",
+      "Checking algorithm time complexity",
+      "Determining whether a machine exhibits human-like intelligence",
+      "Testing GPU memory speed"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #18 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Manual rule programming",
+      "Trial and error reward maximization",
+      "Clustering unlabeled data"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #19 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Calculating batch size",
+      "Connecting server CPUs",
+      "Introducing non-linearity to learn complex patterns",
+      "Initializing weights to zero"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #20 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Decision Trees",
+      "Recurrent Hidden Loops",
+      "Convolutional Filters",
+      "Self-Attention Mechanism"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #21 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Testing GPU memory speed",
+      "Determining whether a machine exhibits human-like intelligence",
+      "Checking algorithm time complexity",
+      "Sorting neural weights"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #22 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Trial and error reward maximization",
+      "Clustering unlabeled data",
+      "Manual rule programming"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #23 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Introducing non-linearity to learn complex patterns",
+      "Initializing weights to zero",
+      "Connecting server CPUs",
+      "Calculating batch size"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #24 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Self-Attention Mechanism",
+      "Decision Trees",
+      "Convolutional Filters",
+      "Recurrent Hidden Loops"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #25 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Checking algorithm time complexity",
+      "Testing GPU memory speed",
+      "Determining whether a machine exhibits human-like intelligence",
+      "Sorting neural weights"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #26 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Clustering unlabeled data",
+      "Trial and error reward maximization",
+      "Manual rule programming"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #27 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Calculating batch size",
+      "Introducing non-linearity to learn complex patterns",
+      "Connecting server CPUs",
+      "Initializing weights to zero"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #28 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Recurrent Hidden Loops",
+      "Self-Attention Mechanism",
+      "Decision Trees",
+      "Convolutional Filters"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #29 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Sorting neural weights",
+      "Determining whether a machine exhibits human-like intelligence",
+      "Checking algorithm time complexity",
+      "Testing GPU memory speed"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #30 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Clustering unlabeled data",
+      "Trial and error reward maximization",
+      "Manual rule programming"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #31 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Initializing weights to zero",
+      "Connecting server CPUs",
+      "Calculating batch size",
+      "Introducing non-linearity to learn complex patterns"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #32 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Convolutional Filters",
+      "Self-Attention Mechanism",
+      "Decision Trees",
+      "Recurrent Hidden Loops"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #33 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Testing GPU memory speed",
+      "Determining whether a machine exhibits human-like intelligence",
+      "Checking algorithm time complexity",
+      "Sorting neural weights"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #34 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Manual rule programming",
+      "Trial and error reward maximization",
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Clustering unlabeled data"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #35 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Initializing weights to zero",
+      "Connecting server CPUs",
+      "Introducing non-linearity to learn complex patterns",
+      "Calculating batch size"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #36 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Decision Trees",
+      "Recurrent Hidden Loops",
+      "Convolutional Filters",
+      "Self-Attention Mechanism"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #37 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Testing GPU memory speed",
+      "Determining whether a machine exhibits human-like intelligence",
+      "Sorting neural weights",
+      "Checking algorithm time complexity"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #38 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Clustering unlabeled data",
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Trial and error reward maximization",
+      "Manual rule programming"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #39 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Introducing non-linearity to learn complex patterns",
+      "Calculating batch size",
+      "Connecting server CPUs",
+      "Initializing weights to zero"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #40 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Convolutional Filters",
+      "Self-Attention Mechanism",
+      "Decision Trees",
+      "Recurrent Hidden Loops"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #41 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Checking algorithm time complexity",
+      "Testing GPU memory speed",
+      "Sorting neural weights",
+      "Determining whether a machine exhibits human-like intelligence"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #42 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Clustering unlabeled data",
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Trial and error reward maximization",
+      "Manual rule programming"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #43 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Connecting server CPUs",
+      "Introducing non-linearity to learn complex patterns",
+      "Calculating batch size",
+      "Initializing weights to zero"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #44 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Decision Trees",
+      "Convolutional Filters",
+      "Recurrent Hidden Loops",
+      "Self-Attention Mechanism"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #45 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Determining whether a machine exhibits human-like intelligence",
+      "Checking algorithm time complexity",
+      "Testing GPU memory speed",
+      "Sorting neural weights"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #46 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Trial and error reward maximization",
+      "Clustering unlabeled data",
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Manual rule programming"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #47 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Initializing weights to zero",
+      "Introducing non-linearity to learn complex patterns",
+      "Connecting server CPUs",
+      "Calculating batch size"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #48 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Convolutional Filters",
+      "Self-Attention Mechanism",
+      "Recurrent Hidden Loops",
+      "Decision Trees"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #49 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Sorting neural weights",
+      "Determining whether a machine exhibits human-like intelligence",
+      "Testing GPU memory speed",
+      "Checking algorithm time complexity"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #50 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Manual rule programming",
+      "Trial and error reward maximization",
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Clustering unlabeled data"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #51 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Calculating batch size",
+      "Introducing non-linearity to learn complex patterns",
+      "Initializing weights to zero",
+      "Connecting server CPUs"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #52 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Decision Trees",
+      "Self-Attention Mechanism",
+      "Convolutional Filters",
+      "Recurrent Hidden Loops"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #53 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Sorting neural weights",
+      "Testing GPU memory speed",
+      "Checking algorithm time complexity",
+      "Determining whether a machine exhibits human-like intelligence"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #54 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Manual rule programming",
+      "Clustering unlabeled data",
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Trial and error reward maximization"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #55 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Connecting server CPUs",
+      "Initializing weights to zero",
+      "Calculating batch size",
+      "Introducing non-linearity to learn complex patterns"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #56 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Convolutional Filters",
+      "Recurrent Hidden Loops",
+      "Self-Attention Mechanism",
+      "Decision Trees"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #57 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Testing GPU memory speed",
+      "Checking algorithm time complexity",
+      "Determining whether a machine exhibits human-like intelligence",
+      "Sorting neural weights"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #58 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Clustering unlabeled data",
+      "Trial and error reward maximization",
+      "Manual rule programming"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #59 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Connecting server CPUs",
+      "Initializing weights to zero",
+      "Calculating batch size",
+      "Introducing non-linearity to learn complex patterns"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #60 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Convolutional Filters",
+      "Decision Trees",
+      "Recurrent Hidden Loops",
+      "Self-Attention Mechanism"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #61 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Checking algorithm time complexity",
+      "Determining whether a machine exhibits human-like intelligence",
+      "Sorting neural weights",
+      "Testing GPU memory speed"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #62 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Trial and error reward maximization",
+      "Manual rule programming",
+      "Clustering unlabeled data"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #63 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Initializing weights to zero",
+      "Calculating batch size",
+      "Introducing non-linearity to learn complex patterns",
+      "Connecting server CPUs"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #64 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Recurrent Hidden Loops",
+      "Decision Trees",
+      "Convolutional Filters",
+      "Self-Attention Mechanism"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #65 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Checking algorithm time complexity",
+      "Testing GPU memory speed",
+      "Sorting neural weights",
+      "Determining whether a machine exhibits human-like intelligence"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #66 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Clustering unlabeled data",
+      "Trial and error reward maximization",
+      "Manual rule programming"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #67 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Initializing weights to zero",
+      "Calculating batch size",
+      "Connecting server CPUs",
+      "Introducing non-linearity to learn complex patterns"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #68 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Decision Trees",
+      "Self-Attention Mechanism",
+      "Recurrent Hidden Loops",
+      "Convolutional Filters"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #69 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Sorting neural weights",
+      "Checking algorithm time complexity",
+      "Testing GPU memory speed",
+      "Determining whether a machine exhibits human-like intelligence"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #70 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Manual rule programming",
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Trial and error reward maximization",
+      "Clustering unlabeled data"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #71 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Initializing weights to zero",
+      "Connecting server CPUs",
+      "Introducing non-linearity to learn complex patterns",
+      "Calculating batch size"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #72 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Self-Attention Mechanism",
+      "Recurrent Hidden Loops",
+      "Convolutional Filters",
+      "Decision Trees"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #73 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Testing GPU memory speed",
+      "Determining whether a machine exhibits human-like intelligence",
+      "Checking algorithm time complexity",
+      "Sorting neural weights"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #74 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Manual rule programming",
+      "Clustering unlabeled data",
+      "Trial and error reward maximization",
+      "Training models using labeled datasets with inputs and ground truth targets"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #75 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Initializing weights to zero",
+      "Calculating batch size",
+      "Introducing non-linearity to learn complex patterns",
+      "Connecting server CPUs"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #76 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Self-Attention Mechanism",
+      "Recurrent Hidden Loops",
+      "Convolutional Filters",
+      "Decision Trees"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #77 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Checking algorithm time complexity",
+      "Testing GPU memory speed",
+      "Sorting neural weights",
+      "Determining whether a machine exhibits human-like intelligence"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #78 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Trial and error reward maximization",
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Clustering unlabeled data",
+      "Manual rule programming"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #79 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Connecting server CPUs",
+      "Introducing non-linearity to learn complex patterns",
+      "Initializing weights to zero",
+      "Calculating batch size"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #80 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Recurrent Hidden Loops",
+      "Convolutional Filters",
+      "Decision Trees",
+      "Self-Attention Mechanism"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #81 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Determining whether a machine exhibits human-like intelligence",
+      "Checking algorithm time complexity",
+      "Testing GPU memory speed",
+      "Sorting neural weights"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #82 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Trial and error reward maximization",
+      "Manual rule programming",
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Clustering unlabeled data"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #83 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Introducing non-linearity to learn complex patterns",
+      "Calculating batch size",
+      "Connecting server CPUs",
+      "Initializing weights to zero"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #84 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Self-Attention Mechanism",
+      "Decision Trees",
+      "Convolutional Filters",
+      "Recurrent Hidden Loops"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #85 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Sorting neural weights",
+      "Checking algorithm time complexity",
+      "Testing GPU memory speed",
+      "Determining whether a machine exhibits human-like intelligence"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #86 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Manual rule programming",
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Clustering unlabeled data",
+      "Trial and error reward maximization"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #87 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Initializing weights to zero",
+      "Introducing non-linearity to learn complex patterns",
+      "Connecting server CPUs",
+      "Calculating batch size"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #88 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Recurrent Hidden Loops",
+      "Self-Attention Mechanism",
+      "Convolutional Filters",
+      "Decision Trees"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #89 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Testing GPU memory speed",
+      "Sorting neural weights",
+      "Checking algorithm time complexity",
+      "Determining whether a machine exhibits human-like intelligence"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #90 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Manual rule programming",
+      "Clustering unlabeled data",
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Trial and error reward maximization"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #91 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Connecting server CPUs",
+      "Introducing non-linearity to learn complex patterns",
+      "Initializing weights to zero",
+      "Calculating batch size"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #92 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Self-Attention Mechanism",
+      "Decision Trees",
+      "Recurrent Hidden Loops",
+      "Convolutional Filters"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #93 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Determining whether a machine exhibits human-like intelligence",
+      "Sorting neural weights",
+      "Checking algorithm time complexity",
+      "Testing GPU memory speed"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #94 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Trial and error reward maximization",
+      "Manual rule programming",
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Clustering unlabeled data"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #95 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Introducing non-linearity to learn complex patterns",
+      "Calculating batch size",
+      "Connecting server CPUs",
+      "Initializing weights to zero"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #96 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Convolutional Filters",
+      "Decision Trees",
+      "Recurrent Hidden Loops",
+      "Self-Attention Mechanism"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #97 (Definition of AI): What is the Turing Test used for in AI?",
+    "options": [
+      "Checking algorithm time complexity",
+      "Sorting neural weights",
+      "Determining whether a machine exhibits human-like intelligence",
+      "Testing GPU memory speed"
+    ],
+    "answer": "Determining whether a machine exhibits human-like intelligence",
+    "explanation": "Turing Test evaluates if human evaluators can distinguish machine responses from human.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Definition of AI"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #98 (Machine Learning): What is Supervised Learning in Machine Learning?",
+    "options": [
+      "Clustering unlabeled data",
+      "Manual rule programming",
+      "Training models using labeled datasets with inputs and ground truth targets",
+      "Trial and error reward maximization"
+    ],
+    "answer": "Training models using labeled datasets with inputs and ground truth targets",
+    "explanation": "Supervised learning relies on paired input-output examples.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Machine Learning"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #99 (Neural Networks): What is the function of an Activation Function in Neural Networks?",
+    "options": [
+      "Calculating batch size",
+      "Initializing weights to zero",
+      "Connecting server CPUs",
+      "Introducing non-linearity to learn complex patterns"
+    ],
+    "answer": "Introducing non-linearity to learn complex patterns",
+    "explanation": "Activation functions allow networks to approximate non-linear functions.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Neural Networks"
+  },
+  {
+    "question": "[ArtificialIntelligence - Basic] Case Study #100 (Transformers): Which mechanism powers modern Transformer models like GPT?",
+    "options": [
+      "Recurrent Hidden Loops",
+      "Convolutional Filters",
+      "Decision Trees",
+      "Self-Attention Mechanism"
+    ],
+    "answer": "Self-Attention Mechanism",
+    "explanation": "Self-Attention computes contextual relationships across sequence tokens.",
+    "difficulty": "Basic",
+    "skill": "ArtificialIntelligence",
+    "topic": "Transformers"
+  }
+]

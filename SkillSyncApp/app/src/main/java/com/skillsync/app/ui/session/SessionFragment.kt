@@ -67,25 +67,21 @@ class SessionFragment : Fragment() {
             }
         }
 
-        // Navigate to sub-sections
-        binding.btnStartHub.setOnClickListener {
+        // Navigate to sub-sections (3 Dashboard Cards)
+        binding.cardHostSession.setOnClickListener {
             findNavController().navigate(R.id.nav_start_session)
         }
 
-        binding.btnJoinHub.setOnClickListener {
-            findNavController().navigate(R.id.nav_join_session)
-        }
-
-        binding.btnLiveHub.setOnClickListener {
+        binding.cardLiveSessions.setOnClickListener {
             findNavController().navigate(R.id.nav_live_sessions)
         }
 
-        binding.btnHistoryHub.setOnClickListener {
-            findNavController().navigate(R.id.nav_session_history)
+        binding.cardFeedbackRatings.setOnClickListener {
+            findNavController().navigate(R.id.nav_ratings)
         }
 
-        binding.btnFeedbackHub.setOnClickListener {
-            findNavController().navigate(R.id.nav_ratings)
+        binding.cardSessionHistory.setOnClickListener {
+            findNavController().navigate(R.id.nav_session_history)
         }
     }
 

@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "Which SQL clause filters query results?",
+    "options": [
+      "WHERE",
+      "ORDER BY",
+      "SELECT",
+      "GROUP BY"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "What does an INNER JOIN return in SQL?",
+    "options": [
+      "Cross product",
+      "All rows from left table only",
+      "All rows from right table only",
+      "Matching rows present in both tables"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "Which SQL function counts the number of rows?",
+    "options": [
+      "TOTAL()",
+      "COUNT()",
+      "SUM()",
+      "AVG()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Faster INSERT speed",
+      "Faster data retrieval speed on SELECT queries",
+      "Automatic backup",
+      "Encrypted storage"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #5 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "ORDER BY",
+      "GROUP BY",
+      "SELECT",
+      "WHERE"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #6 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "Matching rows present in both tables",
+      "All rows from left table only",
+      "All rows from right table only",
+      "Cross product"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #7 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "SUM()",
+      "AVG()",
+      "COUNT()",
+      "TOTAL()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #8 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Automatic backup",
+      "Faster data retrieval speed on SELECT queries",
+      "Encrypted storage",
+      "Faster INSERT speed"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #9 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "ORDER BY",
+      "SELECT",
+      "GROUP BY",
+      "WHERE"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #10 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "All rows from left table only",
+      "Matching rows present in both tables",
+      "Cross product",
+      "All rows from right table only"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #11 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "COUNT()",
+      "TOTAL()",
+      "AVG()",
+      "SUM()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #12 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Automatic backup",
+      "Faster INSERT speed",
+      "Encrypted storage",
+      "Faster data retrieval speed on SELECT queries"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #13 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "ORDER BY",
+      "WHERE",
+      "GROUP BY",
+      "SELECT"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #14 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "Matching rows present in both tables",
+      "Cross product",
+      "All rows from right table only",
+      "All rows from left table only"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #15 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "AVG()",
+      "SUM()",
+      "COUNT()",
+      "TOTAL()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #16 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Encrypted storage",
+      "Automatic backup",
+      "Faster data retrieval speed on SELECT queries",
+      "Faster INSERT speed"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #17 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "GROUP BY",
+      "SELECT",
+      "WHERE",
+      "ORDER BY"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #18 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "Cross product",
+      "All rows from right table only",
+      "Matching rows present in both tables",
+      "All rows from left table only"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #19 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "SUM()",
+      "COUNT()",
+      "AVG()",
+      "TOTAL()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #20 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Faster data retrieval speed on SELECT queries",
+      "Automatic backup",
+      "Faster INSERT speed",
+      "Encrypted storage"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #21 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "SELECT",
+      "WHERE",
+      "ORDER BY",
+      "GROUP BY"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #22 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "All rows from left table only",
+      "Matching rows present in both tables",
+      "Cross product",
+      "All rows from right table only"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #23 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "COUNT()",
+      "AVG()",
+      "SUM()",
+      "TOTAL()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #24 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Faster INSERT speed",
+      "Faster data retrieval speed on SELECT queries",
+      "Encrypted storage",
+      "Automatic backup"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #25 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY",
+      "SELECT"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #26 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "Cross product",
+      "All rows from left table only",
+      "Matching rows present in both tables",
+      "All rows from right table only"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #27 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "AVG()",
+      "COUNT()",
+      "TOTAL()",
+      "SUM()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #28 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Faster INSERT speed",
+      "Faster data retrieval speed on SELECT queries",
+      "Automatic backup",
+      "Encrypted storage"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #29 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "SELECT",
+      "GROUP BY",
+      "ORDER BY",
+      "WHERE"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #30 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "Matching rows present in both tables",
+      "All rows from left table only",
+      "Cross product",
+      "All rows from right table only"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #31 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "SUM()",
+      "AVG()",
+      "COUNT()",
+      "TOTAL()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #32 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Faster data retrieval speed on SELECT queries",
+      "Faster INSERT speed",
+      "Encrypted storage",
+      "Automatic backup"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #33 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "SELECT",
+      "ORDER BY",
+      "GROUP BY",
+      "WHERE"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #34 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "Cross product",
+      "All rows from left table only",
+      "All rows from right table only",
+      "Matching rows present in both tables"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #35 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "AVG()",
+      "SUM()",
+      "COUNT()",
+      "TOTAL()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #36 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Faster INSERT speed",
+      "Automatic backup",
+      "Faster data retrieval speed on SELECT queries",
+      "Encrypted storage"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #37 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "GROUP BY",
+      "SELECT",
+      "ORDER BY",
+      "WHERE"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #38 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "All rows from left table only",
+      "Matching rows present in both tables",
+      "All rows from right table only",
+      "Cross product"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #39 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "SUM()",
+      "TOTAL()",
+      "AVG()",
+      "COUNT()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #40 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Automatic backup",
+      "Faster data retrieval speed on SELECT queries",
+      "Encrypted storage",
+      "Faster INSERT speed"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #41 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "SELECT",
+      "GROUP BY",
+      "WHERE",
+      "ORDER BY"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #42 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "All rows from right table only",
+      "Cross product",
+      "All rows from left table only",
+      "Matching rows present in both tables"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #43 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "AVG()",
+      "SUM()",
+      "TOTAL()",
+      "COUNT()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #44 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Faster INSERT speed",
+      "Automatic backup",
+      "Faster data retrieval speed on SELECT queries",
+      "Encrypted storage"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #45 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "ORDER BY",
+      "GROUP BY",
+      "WHERE",
+      "SELECT"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #46 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "All rows from left table only",
+      "All rows from right table only",
+      "Cross product",
+      "Matching rows present in both tables"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #47 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "TOTAL()",
+      "SUM()",
+      "AVG()",
+      "COUNT()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #48 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Encrypted storage",
+      "Automatic backup",
+      "Faster data retrieval speed on SELECT queries",
+      "Faster INSERT speed"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #49 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "SELECT",
+      "ORDER BY",
+      "GROUP BY",
+      "WHERE"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #50 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "All rows from right table only",
+      "Cross product",
+      "All rows from left table only",
+      "Matching rows present in both tables"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #51 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "AVG()",
+      "SUM()",
+      "TOTAL()",
+      "COUNT()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #52 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Encrypted storage",
+      "Automatic backup",
+      "Faster data retrieval speed on SELECT queries",
+      "Faster INSERT speed"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #53 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "GROUP BY",
+      "SELECT",
+      "ORDER BY",
+      "WHERE"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #54 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "Cross product",
+      "Matching rows present in both tables",
+      "All rows from left table only",
+      "All rows from right table only"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #55 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "COUNT()",
+      "SUM()",
+      "AVG()",
+      "TOTAL()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #56 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Faster data retrieval speed on SELECT queries",
+      "Faster INSERT speed",
+      "Automatic backup",
+      "Encrypted storage"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #57 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "ORDER BY",
+      "SELECT",
+      "WHERE",
+      "GROUP BY"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #58 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "Cross product",
+      "All rows from left table only",
+      "All rows from right table only",
+      "Matching rows present in both tables"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #59 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "SUM()",
+      "AVG()",
+      "COUNT()",
+      "TOTAL()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #60 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Automatic backup",
+      "Encrypted storage",
+      "Faster data retrieval speed on SELECT queries",
+      "Faster INSERT speed"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #61 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "ORDER BY",
+      "GROUP BY",
+      "SELECT",
+      "WHERE"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #62 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "Matching rows present in both tables",
+      "Cross product",
+      "All rows from right table only",
+      "All rows from left table only"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #63 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "COUNT()",
+      "TOTAL()",
+      "AVG()",
+      "SUM()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #64 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Encrypted storage",
+      "Faster INSERT speed",
+      "Faster data retrieval speed on SELECT queries",
+      "Automatic backup"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #65 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "ORDER BY",
+      "SELECT",
+      "WHERE",
+      "GROUP BY"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #66 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "Cross product",
+      "All rows from left table only",
+      "Matching rows present in both tables",
+      "All rows from right table only"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #67 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "TOTAL()",
+      "SUM()",
+      "COUNT()",
+      "AVG()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #68 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Faster data retrieval speed on SELECT queries",
+      "Encrypted storage",
+      "Automatic backup",
+      "Faster INSERT speed"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #69 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "SELECT",
+      "GROUP BY",
+      "ORDER BY",
+      "WHERE"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #70 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "Matching rows present in both tables",
+      "All rows from left table only",
+      "Cross product",
+      "All rows from right table only"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #71 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "TOTAL()",
+      "COUNT()",
+      "AVG()",
+      "SUM()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #72 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Faster data retrieval speed on SELECT queries",
+      "Automatic backup",
+      "Encrypted storage",
+      "Faster INSERT speed"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #73 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "SELECT",
+      "ORDER BY",
+      "GROUP BY",
+      "WHERE"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #74 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "Cross product",
+      "Matching rows present in both tables",
+      "All rows from right table only",
+      "All rows from left table only"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #75 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "COUNT()",
+      "AVG()",
+      "SUM()",
+      "TOTAL()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #76 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Faster data retrieval speed on SELECT queries",
+      "Encrypted storage",
+      "Faster INSERT speed",
+      "Automatic backup"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #77 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "SELECT",
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #78 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "Matching rows present in both tables",
+      "All rows from right table only",
+      "All rows from left table only",
+      "Cross product"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #79 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "COUNT()",
+      "TOTAL()",
+      "SUM()",
+      "AVG()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #80 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Encrypted storage",
+      "Faster data retrieval speed on SELECT queries",
+      "Faster INSERT speed",
+      "Automatic backup"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #81 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY",
+      "SELECT"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #82 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "All rows from right table only",
+      "All rows from left table only",
+      "Matching rows present in both tables",
+      "Cross product"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #83 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "TOTAL()",
+      "AVG()",
+      "COUNT()",
+      "SUM()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #84 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Faster data retrieval speed on SELECT queries",
+      "Automatic backup",
+      "Encrypted storage",
+      "Faster INSERT speed"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #85 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "ORDER BY",
+      "WHERE",
+      "GROUP BY",
+      "SELECT"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #86 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "Matching rows present in both tables",
+      "All rows from left table only",
+      "All rows from right table only",
+      "Cross product"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #87 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "AVG()",
+      "TOTAL()",
+      "COUNT()",
+      "SUM()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #88 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Faster data retrieval speed on SELECT queries",
+      "Faster INSERT speed",
+      "Automatic backup",
+      "Encrypted storage"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #89 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "ORDER BY",
+      "GROUP BY",
+      "WHERE",
+      "SELECT"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #90 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "Matching rows present in both tables",
+      "Cross product",
+      "All rows from right table only",
+      "All rows from left table only"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #91 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "COUNT()",
+      "TOTAL()",
+      "SUM()",
+      "AVG()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #92 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Faster INSERT speed",
+      "Automatic backup",
+      "Encrypted storage",
+      "Faster data retrieval speed on SELECT queries"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #93 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "SELECT",
+      "ORDER BY",
+      "GROUP BY",
+      "WHERE"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #94 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "Cross product",
+      "All rows from right table only",
+      "All rows from left table only",
+      "Matching rows present in both tables"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #95 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "AVG()",
+      "SUM()",
+      "TOTAL()",
+      "COUNT()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #96 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Faster INSERT speed",
+      "Automatic backup",
+      "Faster data retrieval speed on SELECT queries",
+      "Encrypted storage"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #97 (SELECT Statements): Which SQL clause filters query results?",
+    "options": [
+      "GROUP BY",
+      "WHERE",
+      "ORDER BY",
+      "SELECT"
+    ],
+    "answer": "WHERE",
+    "explanation": "WHERE filters rows matching a boolean condition.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "SELECT Statements"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #98 (INNER JOIN): What does an INNER JOIN return in SQL?",
+    "options": [
+      "All rows from right table only",
+      "Matching rows present in both tables",
+      "All rows from left table only",
+      "Cross product"
+    ],
+    "answer": "Matching rows present in both tables",
+    "explanation": "INNER JOIN selects records with matching keys in both tables.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "INNER JOIN"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #99 (Aggregate Functions): Which SQL function counts the number of rows?",
+    "options": [
+      "SUM()",
+      "AVG()",
+      "COUNT()",
+      "TOTAL()"
+    ],
+    "answer": "COUNT()",
+    "explanation": "COUNT() returns the total matching row count.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Aggregate Functions"
+  },
+  {
+    "question": "[SQL - Hard] Case Study #100 (Indexes): What is the primary benefit of creating a database index in SQL?",
+    "options": [
+      "Faster data retrieval speed on SELECT queries",
+      "Faster INSERT speed",
+      "Encrypted storage",
+      "Automatic backup"
+    ],
+    "answer": "Faster data retrieval speed on SELECT queries",
+    "explanation": "Indexes use B-trees to speed up query search time.",
+    "difficulty": "Hard",
+    "skill": "SQL",
+    "topic": "Indexes"
+  }
+]

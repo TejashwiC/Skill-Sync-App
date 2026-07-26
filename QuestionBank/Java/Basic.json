@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "What is the entry point method signature for a standalone Java application?",
+    "options": [
+      "public static void main(String[] args)",
+      "public void main(String args)",
+      "static void Main(string[] args)",
+      "public static int main(String[] args)"
+    ],
+    "answer": "public static void main(String[] args)",
+    "explanation": "JVM looks for exact public static void main signature.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Syntax"
+  },
+  {
+    "question": "Which data type is used to store decimal numbers with double precision in Java?",
+    "options": [
+      "double",
+      "int",
+      "decimal",
+      "float"
+    ],
+    "answer": "double",
+    "explanation": "'double' provides 64-bit IEEE 754 floating-point precision.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Variables"
+  },
+  {
+    "question": "Which of these is NOT a primitive data type in Java?",
+    "options": [
+      "int",
+      "boolean",
+      "char",
+      "String"
+    ],
+    "answer": "String",
+    "explanation": "String is an object/class, whereas int, boolean, char are primitives.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Data Types"
+  },
+  {
+    "question": "What is the result of 5 % 2 in Java?",
+    "options": [
+      "2.5",
+      "1",
+      "2",
+      "0"
+    ],
+    "answer": "1",
+    "explanation": "The modulus operator '%' returns remainder of integer division.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Operators"
+  },
+  {
+    "question": "Which keyword is used to specify that a Java method returns no value?",
+    "options": [
+      "static",
+      "void",
+      "null",
+      "empty"
+    ],
+    "answer": "void",
+    "explanation": "'void' indicates a method does not return a value.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Methods"
+  },
+  {
+    "question": "How do you access the first element of an array 'arr' in Java?",
+    "options": [
+      "arr[0]",
+      "arr[1]",
+      "arr.get(0)",
+      "arr.first()"
+    ],
+    "answer": "arr[0]",
+    "explanation": "Java arrays are zero-indexed.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Arrays"
+  },
+  {
+    "question": "Which switch statement keyword prevents fall-through in Java?",
+    "options": [
+      "break",
+      "return",
+      "exit",
+      "stop"
+    ],
+    "answer": "break",
+    "explanation": "'break' exits the switch block immediately.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Control Flow"
+  },
+  {
+    "question": "Are Java String objects mutable or immutable?",
+    "options": [
+      "Depends on declaration",
+      "Mutable",
+      "Volatile",
+      "Immutable"
+    ],
+    "answer": "Immutable",
+    "explanation": "String objects cannot be changed once created in memory.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Strings"
+  },
+  {
+    "question": "What is true about a class constructor in Java?",
+    "options": [
+      "It has the exact same name as the class and no return type",
+      "It must be static",
+      "It must return an int",
+      "It is inherited by subclasses"
+    ],
+    "answer": "It has the exact same name as the class and no return type",
+    "explanation": "Constructors initialize objects and match class name without return type.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Constructors"
+  },
+  {
+    "question": "Which access modifier makes a variable accessible only within the same class?",
+    "options": [
+      "public",
+      "protected",
+      "private",
+      "default"
+    ],
+    "answer": "private",
+    "explanation": "'private' restricts visibility strictly to enclosing class.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Access Modifiers"
+  },
+  {
+    "question": "[Java - Basic] Case Study #11 (Syntax): What is the entry point method signature for a standalone Java application?",
+    "options": [
+      "public void main(String args)",
+      "public static int main(String[] args)",
+      "static void Main(string[] args)",
+      "public static void main(String[] args)"
+    ],
+    "answer": "public static void main(String[] args)",
+    "explanation": "JVM looks for exact public static void main signature.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Java - Basic] Case Study #12 (Variables): Which data type is used to store decimal numbers with double precision in Java?",
+    "options": [
+      "decimal",
+      "double",
+      "float",
+      "int"
+    ],
+    "answer": "double",
+    "explanation": "'double' provides 64-bit IEEE 754 floating-point precision.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Java - Basic] Case Study #13 (Data Types): Which of these is NOT a primitive data type in Java?",
+    "options": [
+      "boolean",
+      "char",
+      "String",
+      "int"
+    ],
+    "answer": "String",
+    "explanation": "String is an object/class, whereas int, boolean, char are primitives.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Java - Basic] Case Study #14 (Operators): What is the result of 5 % 2 in Java?",
+    "options": [
+      "2",
+      "2.5",
+      "0",
+      "1"
+    ],
+    "answer": "1",
+    "explanation": "The modulus operator '%' returns remainder of integer division.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Java - Basic] Case Study #15 (Methods): Which keyword is used to specify that a Java method returns no value?",
+    "options": [
+      "static",
+      "empty",
+      "null",
+      "void"
+    ],
+    "answer": "void",
+    "explanation": "'void' indicates a method does not return a value.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Methods"
+  },
+  {
+    "question": "[Java - Basic] Case Study #16 (Arrays): How do you access the first element of an array 'arr' in Java?",
+    "options": [
+      "arr[0]",
+      "arr[1]",
+      "arr.get(0)",
+      "arr.first()"
+    ],
+    "answer": "arr[0]",
+    "explanation": "Java arrays are zero-indexed.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[Java - Basic] Case Study #17 (Control Flow): Which switch statement keyword prevents fall-through in Java?",
+    "options": [
+      "exit",
+      "return",
+      "break",
+      "stop"
+    ],
+    "answer": "break",
+    "explanation": "'break' exits the switch block immediately.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Control Flow"
+  },
+  {
+    "question": "[Java - Basic] Case Study #18 (Strings): Are Java String objects mutable or immutable?",
+    "options": [
+      "Volatile",
+      "Mutable",
+      "Depends on declaration",
+      "Immutable"
+    ],
+    "answer": "Immutable",
+    "explanation": "String objects cannot be changed once created in memory.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Java - Basic] Case Study #19 (Constructors): What is true about a class constructor in Java?",
+    "options": [
+      "It must return an int",
+      "It has the exact same name as the class and no return type",
+      "It is inherited by subclasses",
+      "It must be static"
+    ],
+    "answer": "It has the exact same name as the class and no return type",
+    "explanation": "Constructors initialize objects and match class name without return type.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[Java - Basic] Case Study #20 (Access Modifiers): Which access modifier makes a variable accessible only within the same class?",
+    "options": [
+      "private",
+      "protected",
+      "default",
+      "public"
+    ],
+    "answer": "private",
+    "explanation": "'private' restricts visibility strictly to enclosing class.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Access Modifiers"
+  },
+  {
+    "question": "[Java - Basic] Case Study #21 (Syntax): What is the entry point method signature for a standalone Java application?",
+    "options": [
+      "public static int main(String[] args)",
+      "public void main(String args)",
+      "static void Main(string[] args)",
+      "public static void main(String[] args)"
+    ],
+    "answer": "public static void main(String[] args)",
+    "explanation": "JVM looks for exact public static void main signature.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Java - Basic] Case Study #22 (Variables): Which data type is used to store decimal numbers with double precision in Java?",
+    "options": [
+      "double",
+      "decimal",
+      "int",
+      "float"
+    ],
+    "answer": "double",
+    "explanation": "'double' provides 64-bit IEEE 754 floating-point precision.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Java - Basic] Case Study #23 (Data Types): Which of these is NOT a primitive data type in Java?",
+    "options": [
+      "boolean",
+      "char",
+      "int",
+      "String"
+    ],
+    "answer": "String",
+    "explanation": "String is an object/class, whereas int, boolean, char are primitives.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Java - Basic] Case Study #24 (Operators): What is the result of 5 % 2 in Java?",
+    "options": [
+      "0",
+      "2",
+      "1",
+      "2.5"
+    ],
+    "answer": "1",
+    "explanation": "The modulus operator '%' returns remainder of integer division.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Java - Basic] Case Study #25 (Methods): Which keyword is used to specify that a Java method returns no value?",
+    "options": [
+      "static",
+      "void",
+      "empty",
+      "null"
+    ],
+    "answer": "void",
+    "explanation": "'void' indicates a method does not return a value.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Methods"
+  },
+  {
+    "question": "[Java - Basic] Case Study #26 (Arrays): How do you access the first element of an array 'arr' in Java?",
+    "options": [
+      "arr.get(0)",
+      "arr[0]",
+      "arr[1]",
+      "arr.first()"
+    ],
+    "answer": "arr[0]",
+    "explanation": "Java arrays are zero-indexed.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[Java - Basic] Case Study #27 (Control Flow): Which switch statement keyword prevents fall-through in Java?",
+    "options": [
+      "exit",
+      "break",
+      "stop",
+      "return"
+    ],
+    "answer": "break",
+    "explanation": "'break' exits the switch block immediately.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Control Flow"
+  },
+  {
+    "question": "[Java - Basic] Case Study #28 (Strings): Are Java String objects mutable or immutable?",
+    "options": [
+      "Volatile",
+      "Mutable",
+      "Depends on declaration",
+      "Immutable"
+    ],
+    "answer": "Immutable",
+    "explanation": "String objects cannot be changed once created in memory.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Java - Basic] Case Study #29 (Constructors): What is true about a class constructor in Java?",
+    "options": [
+      "It is inherited by subclasses",
+      "It must be static",
+      "It has the exact same name as the class and no return type",
+      "It must return an int"
+    ],
+    "answer": "It has the exact same name as the class and no return type",
+    "explanation": "Constructors initialize objects and match class name without return type.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[Java - Basic] Case Study #30 (Access Modifiers): Which access modifier makes a variable accessible only within the same class?",
+    "options": [
+      "default",
+      "private",
+      "protected",
+      "public"
+    ],
+    "answer": "private",
+    "explanation": "'private' restricts visibility strictly to enclosing class.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Access Modifiers"
+  },
+  {
+    "question": "[Java - Basic] Case Study #31 (Syntax): What is the entry point method signature for a standalone Java application?",
+    "options": [
+      "static void Main(string[] args)",
+      "public static int main(String[] args)",
+      "public static void main(String[] args)",
+      "public void main(String args)"
+    ],
+    "answer": "public static void main(String[] args)",
+    "explanation": "JVM looks for exact public static void main signature.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Java - Basic] Case Study #32 (Variables): Which data type is used to store decimal numbers with double precision in Java?",
+    "options": [
+      "int",
+      "float",
+      "double",
+      "decimal"
+    ],
+    "answer": "double",
+    "explanation": "'double' provides 64-bit IEEE 754 floating-point precision.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Java - Basic] Case Study #33 (Data Types): Which of these is NOT a primitive data type in Java?",
+    "options": [
+      "int",
+      "boolean",
+      "String",
+      "char"
+    ],
+    "answer": "String",
+    "explanation": "String is an object/class, whereas int, boolean, char are primitives.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Java - Basic] Case Study #34 (Operators): What is the result of 5 % 2 in Java?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "2.5"
+    ],
+    "answer": "1",
+    "explanation": "The modulus operator '%' returns remainder of integer division.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Java - Basic] Case Study #35 (Methods): Which keyword is used to specify that a Java method returns no value?",
+    "options": [
+      "empty",
+      "void",
+      "static",
+      "null"
+    ],
+    "answer": "void",
+    "explanation": "'void' indicates a method does not return a value.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Methods"
+  },
+  {
+    "question": "[Java - Basic] Case Study #36 (Arrays): How do you access the first element of an array 'arr' in Java?",
+    "options": [
+      "arr[1]",
+      "arr.get(0)",
+      "arr.first()",
+      "arr[0]"
+    ],
+    "answer": "arr[0]",
+    "explanation": "Java arrays are zero-indexed.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[Java - Basic] Case Study #37 (Control Flow): Which switch statement keyword prevents fall-through in Java?",
+    "options": [
+      "break",
+      "stop",
+      "exit",
+      "return"
+    ],
+    "answer": "break",
+    "explanation": "'break' exits the switch block immediately.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Control Flow"
+  },
+  {
+    "question": "[Java - Basic] Case Study #38 (Strings): Are Java String objects mutable or immutable?",
+    "options": [
+      "Immutable",
+      "Volatile",
+      "Mutable",
+      "Depends on declaration"
+    ],
+    "answer": "Immutable",
+    "explanation": "String objects cannot be changed once created in memory.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Java - Basic] Case Study #39 (Constructors): What is true about a class constructor in Java?",
+    "options": [
+      "It must return an int",
+      "It has the exact same name as the class and no return type",
+      "It must be static",
+      "It is inherited by subclasses"
+    ],
+    "answer": "It has the exact same name as the class and no return type",
+    "explanation": "Constructors initialize objects and match class name without return type.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[Java - Basic] Case Study #40 (Access Modifiers): Which access modifier makes a variable accessible only within the same class?",
+    "options": [
+      "public",
+      "default",
+      "protected",
+      "private"
+    ],
+    "answer": "private",
+    "explanation": "'private' restricts visibility strictly to enclosing class.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Access Modifiers"
+  },
+  {
+    "question": "[Java - Basic] Case Study #41 (Syntax): What is the entry point method signature for a standalone Java application?",
+    "options": [
+      "public static void main(String[] args)",
+      "public static int main(String[] args)",
+      "public void main(String args)",
+      "static void Main(string[] args)"
+    ],
+    "answer": "public static void main(String[] args)",
+    "explanation": "JVM looks for exact public static void main signature.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Java - Basic] Case Study #42 (Variables): Which data type is used to store decimal numbers with double precision in Java?",
+    "options": [
+      "decimal",
+      "float",
+      "int",
+      "double"
+    ],
+    "answer": "double",
+    "explanation": "'double' provides 64-bit IEEE 754 floating-point precision.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Java - Basic] Case Study #43 (Data Types): Which of these is NOT a primitive data type in Java?",
+    "options": [
+      "boolean",
+      "int",
+      "char",
+      "String"
+    ],
+    "answer": "String",
+    "explanation": "String is an object/class, whereas int, boolean, char are primitives.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Java - Basic] Case Study #44 (Operators): What is the result of 5 % 2 in Java?",
+    "options": [
+      "2",
+      "1",
+      "2.5",
+      "0"
+    ],
+    "answer": "1",
+    "explanation": "The modulus operator '%' returns remainder of integer division.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Java - Basic] Case Study #45 (Methods): Which keyword is used to specify that a Java method returns no value?",
+    "options": [
+      "static",
+      "empty",
+      "null",
+      "void"
+    ],
+    "answer": "void",
+    "explanation": "'void' indicates a method does not return a value.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Methods"
+  },
+  {
+    "question": "[Java - Basic] Case Study #46 (Arrays): How do you access the first element of an array 'arr' in Java?",
+    "options": [
+      "arr[0]",
+      "arr.first()",
+      "arr.get(0)",
+      "arr[1]"
+    ],
+    "answer": "arr[0]",
+    "explanation": "Java arrays are zero-indexed.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[Java - Basic] Case Study #47 (Control Flow): Which switch statement keyword prevents fall-through in Java?",
+    "options": [
+      "exit",
+      "stop",
+      "return",
+      "break"
+    ],
+    "answer": "break",
+    "explanation": "'break' exits the switch block immediately.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Control Flow"
+  },
+  {
+    "question": "[Java - Basic] Case Study #48 (Strings): Are Java String objects mutable or immutable?",
+    "options": [
+      "Immutable",
+      "Depends on declaration",
+      "Mutable",
+      "Volatile"
+    ],
+    "answer": "Immutable",
+    "explanation": "String objects cannot be changed once created in memory.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Java - Basic] Case Study #49 (Constructors): What is true about a class constructor in Java?",
+    "options": [
+      "It must be static",
+      "It must return an int",
+      "It is inherited by subclasses",
+      "It has the exact same name as the class and no return type"
+    ],
+    "answer": "It has the exact same name as the class and no return type",
+    "explanation": "Constructors initialize objects and match class name without return type.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[Java - Basic] Case Study #50 (Access Modifiers): Which access modifier makes a variable accessible only within the same class?",
+    "options": [
+      "public",
+      "default",
+      "private",
+      "protected"
+    ],
+    "answer": "private",
+    "explanation": "'private' restricts visibility strictly to enclosing class.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Access Modifiers"
+  },
+  {
+    "question": "[Java - Basic] Case Study #51 (Syntax): What is the entry point method signature for a standalone Java application?",
+    "options": [
+      "public static int main(String[] args)",
+      "public void main(String args)",
+      "public static void main(String[] args)",
+      "static void Main(string[] args)"
+    ],
+    "answer": "public static void main(String[] args)",
+    "explanation": "JVM looks for exact public static void main signature.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Java - Basic] Case Study #52 (Variables): Which data type is used to store decimal numbers with double precision in Java?",
+    "options": [
+      "float",
+      "decimal",
+      "int",
+      "double"
+    ],
+    "answer": "double",
+    "explanation": "'double' provides 64-bit IEEE 754 floating-point precision.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Java - Basic] Case Study #53 (Data Types): Which of these is NOT a primitive data type in Java?",
+    "options": [
+      "int",
+      "String",
+      "char",
+      "boolean"
+    ],
+    "answer": "String",
+    "explanation": "String is an object/class, whereas int, boolean, char are primitives.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Java - Basic] Case Study #54 (Operators): What is the result of 5 % 2 in Java?",
+    "options": [
+      "0",
+      "2.5",
+      "1",
+      "2"
+    ],
+    "answer": "1",
+    "explanation": "The modulus operator '%' returns remainder of integer division.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Java - Basic] Case Study #55 (Methods): Which keyword is used to specify that a Java method returns no value?",
+    "options": [
+      "void",
+      "empty",
+      "null",
+      "static"
+    ],
+    "answer": "void",
+    "explanation": "'void' indicates a method does not return a value.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Methods"
+  },
+  {
+    "question": "[Java - Basic] Case Study #56 (Arrays): How do you access the first element of an array 'arr' in Java?",
+    "options": [
+      "arr[1]",
+      "arr.get(0)",
+      "arr.first()",
+      "arr[0]"
+    ],
+    "answer": "arr[0]",
+    "explanation": "Java arrays are zero-indexed.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[Java - Basic] Case Study #57 (Control Flow): Which switch statement keyword prevents fall-through in Java?",
+    "options": [
+      "stop",
+      "break",
+      "exit",
+      "return"
+    ],
+    "answer": "break",
+    "explanation": "'break' exits the switch block immediately.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Control Flow"
+  },
+  {
+    "question": "[Java - Basic] Case Study #58 (Strings): Are Java String objects mutable or immutable?",
+    "options": [
+      "Mutable",
+      "Immutable",
+      "Depends on declaration",
+      "Volatile"
+    ],
+    "answer": "Immutable",
+    "explanation": "String objects cannot be changed once created in memory.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Java - Basic] Case Study #59 (Constructors): What is true about a class constructor in Java?",
+    "options": [
+      "It must return an int",
+      "It is inherited by subclasses",
+      "It has the exact same name as the class and no return type",
+      "It must be static"
+    ],
+    "answer": "It has the exact same name as the class and no return type",
+    "explanation": "Constructors initialize objects and match class name without return type.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[Java - Basic] Case Study #60 (Access Modifiers): Which access modifier makes a variable accessible only within the same class?",
+    "options": [
+      "default",
+      "private",
+      "protected",
+      "public"
+    ],
+    "answer": "private",
+    "explanation": "'private' restricts visibility strictly to enclosing class.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Access Modifiers"
+  },
+  {
+    "question": "[Java - Basic] Case Study #61 (Syntax): What is the entry point method signature for a standalone Java application?",
+    "options": [
+      "static void Main(string[] args)",
+      "public static int main(String[] args)",
+      "public static void main(String[] args)",
+      "public void main(String args)"
+    ],
+    "answer": "public static void main(String[] args)",
+    "explanation": "JVM looks for exact public static void main signature.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Java - Basic] Case Study #62 (Variables): Which data type is used to store decimal numbers with double precision in Java?",
+    "options": [
+      "double",
+      "int",
+      "float",
+      "decimal"
+    ],
+    "answer": "double",
+    "explanation": "'double' provides 64-bit IEEE 754 floating-point precision.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Java - Basic] Case Study #63 (Data Types): Which of these is NOT a primitive data type in Java?",
+    "options": [
+      "int",
+      "boolean",
+      "String",
+      "char"
+    ],
+    "answer": "String",
+    "explanation": "String is an object/class, whereas int, boolean, char are primitives.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Java - Basic] Case Study #64 (Operators): What is the result of 5 % 2 in Java?",
+    "options": [
+      "1",
+      "2",
+      "0",
+      "2.5"
+    ],
+    "answer": "1",
+    "explanation": "The modulus operator '%' returns remainder of integer division.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Java - Basic] Case Study #65 (Methods): Which keyword is used to specify that a Java method returns no value?",
+    "options": [
+      "null",
+      "empty",
+      "static",
+      "void"
+    ],
+    "answer": "void",
+    "explanation": "'void' indicates a method does not return a value.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Methods"
+  },
+  {
+    "question": "[Java - Basic] Case Study #66 (Arrays): How do you access the first element of an array 'arr' in Java?",
+    "options": [
+      "arr[1]",
+      "arr.first()",
+      "arr.get(0)",
+      "arr[0]"
+    ],
+    "answer": "arr[0]",
+    "explanation": "Java arrays are zero-indexed.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[Java - Basic] Case Study #67 (Control Flow): Which switch statement keyword prevents fall-through in Java?",
+    "options": [
+      "exit",
+      "break",
+      "return",
+      "stop"
+    ],
+    "answer": "break",
+    "explanation": "'break' exits the switch block immediately.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Control Flow"
+  },
+  {
+    "question": "[Java - Basic] Case Study #68 (Strings): Are Java String objects mutable or immutable?",
+    "options": [
+      "Depends on declaration",
+      "Immutable",
+      "Mutable",
+      "Volatile"
+    ],
+    "answer": "Immutable",
+    "explanation": "String objects cannot be changed once created in memory.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Java - Basic] Case Study #69 (Constructors): What is true about a class constructor in Java?",
+    "options": [
+      "It is inherited by subclasses",
+      "It must be static",
+      "It must return an int",
+      "It has the exact same name as the class and no return type"
+    ],
+    "answer": "It has the exact same name as the class and no return type",
+    "explanation": "Constructors initialize objects and match class name without return type.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[Java - Basic] Case Study #70 (Access Modifiers): Which access modifier makes a variable accessible only within the same class?",
+    "options": [
+      "protected",
+      "public",
+      "default",
+      "private"
+    ],
+    "answer": "private",
+    "explanation": "'private' restricts visibility strictly to enclosing class.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Access Modifiers"
+  },
+  {
+    "question": "[Java - Basic] Case Study #71 (Syntax): What is the entry point method signature for a standalone Java application?",
+    "options": [
+      "public static void main(String[] args)",
+      "public void main(String args)",
+      "static void Main(string[] args)",
+      "public static int main(String[] args)"
+    ],
+    "answer": "public static void main(String[] args)",
+    "explanation": "JVM looks for exact public static void main signature.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Java - Basic] Case Study #72 (Variables): Which data type is used to store decimal numbers with double precision in Java?",
+    "options": [
+      "int",
+      "double",
+      "decimal",
+      "float"
+    ],
+    "answer": "double",
+    "explanation": "'double' provides 64-bit IEEE 754 floating-point precision.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Java - Basic] Case Study #73 (Data Types): Which of these is NOT a primitive data type in Java?",
+    "options": [
+      "boolean",
+      "String",
+      "int",
+      "char"
+    ],
+    "answer": "String",
+    "explanation": "String is an object/class, whereas int, boolean, char are primitives.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Java - Basic] Case Study #74 (Operators): What is the result of 5 % 2 in Java?",
+    "options": [
+      "2",
+      "0",
+      "1",
+      "2.5"
+    ],
+    "answer": "1",
+    "explanation": "The modulus operator '%' returns remainder of integer division.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Java - Basic] Case Study #75 (Methods): Which keyword is used to specify that a Java method returns no value?",
+    "options": [
+      "null",
+      "void",
+      "empty",
+      "static"
+    ],
+    "answer": "void",
+    "explanation": "'void' indicates a method does not return a value.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Methods"
+  },
+  {
+    "question": "[Java - Basic] Case Study #76 (Arrays): How do you access the first element of an array 'arr' in Java?",
+    "options": [
+      "arr.get(0)",
+      "arr[1]",
+      "arr[0]",
+      "arr.first()"
+    ],
+    "answer": "arr[0]",
+    "explanation": "Java arrays are zero-indexed.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[Java - Basic] Case Study #77 (Control Flow): Which switch statement keyword prevents fall-through in Java?",
+    "options": [
+      "stop",
+      "break",
+      "return",
+      "exit"
+    ],
+    "answer": "break",
+    "explanation": "'break' exits the switch block immediately.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Control Flow"
+  },
+  {
+    "question": "[Java - Basic] Case Study #78 (Strings): Are Java String objects mutable or immutable?",
+    "options": [
+      "Mutable",
+      "Immutable",
+      "Depends on declaration",
+      "Volatile"
+    ],
+    "answer": "Immutable",
+    "explanation": "String objects cannot be changed once created in memory.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Java - Basic] Case Study #79 (Constructors): What is true about a class constructor in Java?",
+    "options": [
+      "It must return an int",
+      "It must be static",
+      "It has the exact same name as the class and no return type",
+      "It is inherited by subclasses"
+    ],
+    "answer": "It has the exact same name as the class and no return type",
+    "explanation": "Constructors initialize objects and match class name without return type.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[Java - Basic] Case Study #80 (Access Modifiers): Which access modifier makes a variable accessible only within the same class?",
+    "options": [
+      "protected",
+      "public",
+      "default",
+      "private"
+    ],
+    "answer": "private",
+    "explanation": "'private' restricts visibility strictly to enclosing class.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Access Modifiers"
+  },
+  {
+    "question": "[Java - Basic] Case Study #81 (Syntax): What is the entry point method signature for a standalone Java application?",
+    "options": [
+      "public void main(String args)",
+      "public static void main(String[] args)",
+      "static void Main(string[] args)",
+      "public static int main(String[] args)"
+    ],
+    "answer": "public static void main(String[] args)",
+    "explanation": "JVM looks for exact public static void main signature.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Java - Basic] Case Study #82 (Variables): Which data type is used to store decimal numbers with double precision in Java?",
+    "options": [
+      "double",
+      "float",
+      "int",
+      "decimal"
+    ],
+    "answer": "double",
+    "explanation": "'double' provides 64-bit IEEE 754 floating-point precision.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Java - Basic] Case Study #83 (Data Types): Which of these is NOT a primitive data type in Java?",
+    "options": [
+      "boolean",
+      "char",
+      "int",
+      "String"
+    ],
+    "answer": "String",
+    "explanation": "String is an object/class, whereas int, boolean, char are primitives.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Java - Basic] Case Study #84 (Operators): What is the result of 5 % 2 in Java?",
+    "options": [
+      "0",
+      "2",
+      "1",
+      "2.5"
+    ],
+    "answer": "1",
+    "explanation": "The modulus operator '%' returns remainder of integer division.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Java - Basic] Case Study #85 (Methods): Which keyword is used to specify that a Java method returns no value?",
+    "options": [
+      "null",
+      "empty",
+      "void",
+      "static"
+    ],
+    "answer": "void",
+    "explanation": "'void' indicates a method does not return a value.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Methods"
+  },
+  {
+    "question": "[Java - Basic] Case Study #86 (Arrays): How do you access the first element of an array 'arr' in Java?",
+    "options": [
+      "arr.first()",
+      "arr.get(0)",
+      "arr[0]",
+      "arr[1]"
+    ],
+    "answer": "arr[0]",
+    "explanation": "Java arrays are zero-indexed.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[Java - Basic] Case Study #87 (Control Flow): Which switch statement keyword prevents fall-through in Java?",
+    "options": [
+      "stop",
+      "exit",
+      "break",
+      "return"
+    ],
+    "answer": "break",
+    "explanation": "'break' exits the switch block immediately.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Control Flow"
+  },
+  {
+    "question": "[Java - Basic] Case Study #88 (Strings): Are Java String objects mutable or immutable?",
+    "options": [
+      "Immutable",
+      "Depends on declaration",
+      "Volatile",
+      "Mutable"
+    ],
+    "answer": "Immutable",
+    "explanation": "String objects cannot be changed once created in memory.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Java - Basic] Case Study #89 (Constructors): What is true about a class constructor in Java?",
+    "options": [
+      "It is inherited by subclasses",
+      "It has the exact same name as the class and no return type",
+      "It must be static",
+      "It must return an int"
+    ],
+    "answer": "It has the exact same name as the class and no return type",
+    "explanation": "Constructors initialize objects and match class name without return type.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[Java - Basic] Case Study #90 (Access Modifiers): Which access modifier makes a variable accessible only within the same class?",
+    "options": [
+      "private",
+      "public",
+      "default",
+      "protected"
+    ],
+    "answer": "private",
+    "explanation": "'private' restricts visibility strictly to enclosing class.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Access Modifiers"
+  },
+  {
+    "question": "[Java - Basic] Case Study #91 (Syntax): What is the entry point method signature for a standalone Java application?",
+    "options": [
+      "static void Main(string[] args)",
+      "public static int main(String[] args)",
+      "public void main(String args)",
+      "public static void main(String[] args)"
+    ],
+    "answer": "public static void main(String[] args)",
+    "explanation": "JVM looks for exact public static void main signature.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Java - Basic] Case Study #92 (Variables): Which data type is used to store decimal numbers with double precision in Java?",
+    "options": [
+      "int",
+      "double",
+      "float",
+      "decimal"
+    ],
+    "answer": "double",
+    "explanation": "'double' provides 64-bit IEEE 754 floating-point precision.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Java - Basic] Case Study #93 (Data Types): Which of these is NOT a primitive data type in Java?",
+    "options": [
+      "String",
+      "char",
+      "boolean",
+      "int"
+    ],
+    "answer": "String",
+    "explanation": "String is an object/class, whereas int, boolean, char are primitives.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Java - Basic] Case Study #94 (Operators): What is the result of 5 % 2 in Java?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "2.5"
+    ],
+    "answer": "1",
+    "explanation": "The modulus operator '%' returns remainder of integer division.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Java - Basic] Case Study #95 (Methods): Which keyword is used to specify that a Java method returns no value?",
+    "options": [
+      "static",
+      "empty",
+      "void",
+      "null"
+    ],
+    "answer": "void",
+    "explanation": "'void' indicates a method does not return a value.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Methods"
+  },
+  {
+    "question": "[Java - Basic] Case Study #96 (Arrays): How do you access the first element of an array 'arr' in Java?",
+    "options": [
+      "arr.get(0)",
+      "arr.first()",
+      "arr[1]",
+      "arr[0]"
+    ],
+    "answer": "arr[0]",
+    "explanation": "Java arrays are zero-indexed.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Arrays"
+  },
+  {
+    "question": "[Java - Basic] Case Study #97 (Control Flow): Which switch statement keyword prevents fall-through in Java?",
+    "options": [
+      "return",
+      "stop",
+      "break",
+      "exit"
+    ],
+    "answer": "break",
+    "explanation": "'break' exits the switch block immediately.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Control Flow"
+  },
+  {
+    "question": "[Java - Basic] Case Study #98 (Strings): Are Java String objects mutable or immutable?",
+    "options": [
+      "Immutable",
+      "Depends on declaration",
+      "Volatile",
+      "Mutable"
+    ],
+    "answer": "Immutable",
+    "explanation": "String objects cannot be changed once created in memory.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Java - Basic] Case Study #99 (Constructors): What is true about a class constructor in Java?",
+    "options": [
+      "It has the exact same name as the class and no return type",
+      "It is inherited by subclasses",
+      "It must be static",
+      "It must return an int"
+    ],
+    "answer": "It has the exact same name as the class and no return type",
+    "explanation": "Constructors initialize objects and match class name without return type.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[Java - Basic] Case Study #100 (Access Modifiers): Which access modifier makes a variable accessible only within the same class?",
+    "options": [
+      "protected",
+      "default",
+      "private",
+      "public"
+    ],
+    "answer": "private",
+    "explanation": "'private' restricts visibility strictly to enclosing class.",
+    "difficulty": "Basic",
+    "skill": "Java",
+    "topic": "Access Modifiers"
+  }
+]

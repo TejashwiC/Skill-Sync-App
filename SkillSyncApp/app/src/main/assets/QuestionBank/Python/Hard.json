@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "What is the primary effect of Python's GIL in CPython?",
+    "options": [
+      "Locks file access across processes",
+      "Prevents infinite recursion",
+      "Enforces memory bounds on lists",
+      "Prevents multiple native threads from executing Python bytecode simultaneously"
+    ],
+    "answer": "Prevents multiple native threads from executing Python bytecode simultaneously",
+    "explanation": "GIL ensures thread safety in CPython by locking bytecode execution to a single thread.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "GIL (Global Interpreter Lock)"
+  },
+  {
+    "question": "What is a metaclass in Python?",
+    "options": [
+      "A static helper class",
+      "A class inherited by all objects",
+      "A class whose instances are classes themselves",
+      "A abstract base class"
+    ],
+    "answer": "A class whose instances are classes themselves",
+    "explanation": "Metaclasses define how classes are constructed (type is the default metaclass).",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Metaclasses"
+  },
+  {
+    "question": "Which keyword pauses asynchronous function execution until a Future resolves?",
+    "options": [
+      "await",
+      "async",
+      "yield from",
+      "wait"
+    ],
+    "answer": "await",
+    "explanation": "'await' yields control back to event loop until task completes.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Asyncio"
+  },
+  {
+    "question": "How does Python handle primary memory management and object deallocation?",
+    "options": [
+      "Periodic full heap compaction",
+      "Stack allocation only",
+      "Reference counting combined with a cyclic garbage collector",
+      "Manual malloc and free"
+    ],
+    "answer": "Reference counting combined with a cyclic garbage collector",
+    "explanation": "Python uses reference counts for immediate cleanup and cyclic GC for circular references.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Memory Management"
+  },
+  {
+    "question": "Which method is NOT part of Python's Descriptor protocol?",
+    "options": [
+      "__delete__",
+      "__set__",
+      "__get__",
+      "__init__"
+    ],
+    "answer": "__init__",
+    "explanation": "Descriptor protocol consists of __get__, __set__, and __delete__.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Descriptors"
+  },
+  {
+    "question": "Why is 'multiprocessing' preferred over 'threading' for CPU-bound tasks in Python?",
+    "options": [
+      "It avoids IPC overhead",
+      "It bypasses the GIL by spawning separate OS processes",
+      "It uses less memory",
+      "It runs faster on single cores"
+    ],
+    "answer": "It bypasses the GIL by spawning separate OS processes",
+    "explanation": "Separate processes have independent GILs, utilizing multi-core CPUs fully.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Multiprocessing"
+  },
+  {
+    "question": "Which dunder methods implement a Context Manager in Python?",
+    "options": [
+      "__start__ and __stop__",
+      "__enter__ and __exit__",
+      "__init__ and __del__",
+      "__open__ and __close__"
+    ],
+    "answer": "__enter__ and __exit__",
+    "explanation": "Context managers require __enter__() for setup and __exit__() for cleanup.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Context Managers"
+  },
+  {
+    "question": "Which pattern does a module in Python naturally implement?",
+    "options": [
+      "Strategy Pattern",
+      "Singleton Pattern",
+      "Observer Pattern",
+      "Factory Pattern"
+    ],
+    "answer": "Singleton Pattern",
+    "explanation": "Python modules are loaded once and cached in sys.modules, acting as singletons.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Design Patterns"
+  },
+  {
+    "question": "Which module provides advanced type annotations like Union and Callable in Python?",
+    "options": [
+      "typing",
+      "dataclasses",
+      "types",
+      "annotations"
+    ],
+    "answer": "typing",
+    "explanation": "The built-in 'typing' module provides generic type hinting constructs.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Type Hinting"
+  },
+  {
+    "question": "What header file must be included when writing C extensions for CPython?",
+    "options": [
+      "pyext.h",
+      "Python.h",
+      "cpython.h",
+      "pyapi.h"
+    ],
+    "answer": "Python.h",
+    "explanation": "Python.h includes all core CPython API headers.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "C Extensions"
+  },
+  {
+    "question": "[Python - Hard] Case Study #11 (GIL (Global Interpreter Lock)): What is the primary effect of Python's GIL in CPython?",
+    "options": [
+      "Locks file access across processes",
+      "Prevents infinite recursion",
+      "Enforces memory bounds on lists",
+      "Prevents multiple native threads from executing Python bytecode simultaneously"
+    ],
+    "answer": "Prevents multiple native threads from executing Python bytecode simultaneously",
+    "explanation": "GIL ensures thread safety in CPython by locking bytecode execution to a single thread.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "GIL (Global Interpreter Lock)"
+  },
+  {
+    "question": "[Python - Hard] Case Study #12 (Metaclasses): What is a metaclass in Python?",
+    "options": [
+      "A class inherited by all objects",
+      "A abstract base class",
+      "A class whose instances are classes themselves",
+      "A static helper class"
+    ],
+    "answer": "A class whose instances are classes themselves",
+    "explanation": "Metaclasses define how classes are constructed (type is the default metaclass).",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Metaclasses"
+  },
+  {
+    "question": "[Python - Hard] Case Study #13 (Asyncio): Which keyword pauses asynchronous function execution until a Future resolves?",
+    "options": [
+      "yield from",
+      "await",
+      "async",
+      "wait"
+    ],
+    "answer": "await",
+    "explanation": "'await' yields control back to event loop until task completes.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Asyncio"
+  },
+  {
+    "question": "[Python - Hard] Case Study #14 (Memory Management): How does Python handle primary memory management and object deallocation?",
+    "options": [
+      "Reference counting combined with a cyclic garbage collector",
+      "Manual malloc and free",
+      "Stack allocation only",
+      "Periodic full heap compaction"
+    ],
+    "answer": "Reference counting combined with a cyclic garbage collector",
+    "explanation": "Python uses reference counts for immediate cleanup and cyclic GC for circular references.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Memory Management"
+  },
+  {
+    "question": "[Python - Hard] Case Study #15 (Descriptors): Which method is NOT part of Python's Descriptor protocol?",
+    "options": [
+      "__init__",
+      "__get__",
+      "__set__",
+      "__delete__"
+    ],
+    "answer": "__init__",
+    "explanation": "Descriptor protocol consists of __get__, __set__, and __delete__.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Descriptors"
+  },
+  {
+    "question": "[Python - Hard] Case Study #16 (Multiprocessing): Why is 'multiprocessing' preferred over 'threading' for CPU-bound tasks in Python?",
+    "options": [
+      "It avoids IPC overhead",
+      "It runs faster on single cores",
+      "It uses less memory",
+      "It bypasses the GIL by spawning separate OS processes"
+    ],
+    "answer": "It bypasses the GIL by spawning separate OS processes",
+    "explanation": "Separate processes have independent GILs, utilizing multi-core CPUs fully.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Multiprocessing"
+  },
+  {
+    "question": "[Python - Hard] Case Study #17 (Context Managers): Which dunder methods implement a Context Manager in Python?",
+    "options": [
+      "__init__ and __del__",
+      "__open__ and __close__",
+      "__start__ and __stop__",
+      "__enter__ and __exit__"
+    ],
+    "answer": "__enter__ and __exit__",
+    "explanation": "Context managers require __enter__() for setup and __exit__() for cleanup.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Context Managers"
+  },
+  {
+    "question": "[Python - Hard] Case Study #18 (Design Patterns): Which pattern does a module in Python naturally implement?",
+    "options": [
+      "Strategy Pattern",
+      "Factory Pattern",
+      "Singleton Pattern",
+      "Observer Pattern"
+    ],
+    "answer": "Singleton Pattern",
+    "explanation": "Python modules are loaded once and cached in sys.modules, acting as singletons.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Design Patterns"
+  },
+  {
+    "question": "[Python - Hard] Case Study #19 (Type Hinting): Which module provides advanced type annotations like Union and Callable in Python?",
+    "options": [
+      "types",
+      "typing",
+      "dataclasses",
+      "annotations"
+    ],
+    "answer": "typing",
+    "explanation": "The built-in 'typing' module provides generic type hinting constructs.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Type Hinting"
+  },
+  {
+    "question": "[Python - Hard] Case Study #20 (C Extensions): What header file must be included when writing C extensions for CPython?",
+    "options": [
+      "cpython.h",
+      "Python.h",
+      "pyapi.h",
+      "pyext.h"
+    ],
+    "answer": "Python.h",
+    "explanation": "Python.h includes all core CPython API headers.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "C Extensions"
+  },
+  {
+    "question": "[Python - Hard] Case Study #21 (GIL (Global Interpreter Lock)): What is the primary effect of Python's GIL in CPython?",
+    "options": [
+      "Locks file access across processes",
+      "Prevents multiple native threads from executing Python bytecode simultaneously",
+      "Prevents infinite recursion",
+      "Enforces memory bounds on lists"
+    ],
+    "answer": "Prevents multiple native threads from executing Python bytecode simultaneously",
+    "explanation": "GIL ensures thread safety in CPython by locking bytecode execution to a single thread.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "GIL (Global Interpreter Lock)"
+  },
+  {
+    "question": "[Python - Hard] Case Study #22 (Metaclasses): What is a metaclass in Python?",
+    "options": [
+      "A class whose instances are classes themselves",
+      "A abstract base class",
+      "A static helper class",
+      "A class inherited by all objects"
+    ],
+    "answer": "A class whose instances are classes themselves",
+    "explanation": "Metaclasses define how classes are constructed (type is the default metaclass).",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Metaclasses"
+  },
+  {
+    "question": "[Python - Hard] Case Study #23 (Asyncio): Which keyword pauses asynchronous function execution until a Future resolves?",
+    "options": [
+      "async",
+      "await",
+      "wait",
+      "yield from"
+    ],
+    "answer": "await",
+    "explanation": "'await' yields control back to event loop until task completes.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Asyncio"
+  },
+  {
+    "question": "[Python - Hard] Case Study #24 (Memory Management): How does Python handle primary memory management and object deallocation?",
+    "options": [
+      "Reference counting combined with a cyclic garbage collector",
+      "Periodic full heap compaction",
+      "Manual malloc and free",
+      "Stack allocation only"
+    ],
+    "answer": "Reference counting combined with a cyclic garbage collector",
+    "explanation": "Python uses reference counts for immediate cleanup and cyclic GC for circular references.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Memory Management"
+  },
+  {
+    "question": "[Python - Hard] Case Study #25 (Descriptors): Which method is NOT part of Python's Descriptor protocol?",
+    "options": [
+      "__get__",
+      "__set__",
+      "__init__",
+      "__delete__"
+    ],
+    "answer": "__init__",
+    "explanation": "Descriptor protocol consists of __get__, __set__, and __delete__.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Descriptors"
+  },
+  {
+    "question": "[Python - Hard] Case Study #26 (Multiprocessing): Why is 'multiprocessing' preferred over 'threading' for CPU-bound tasks in Python?",
+    "options": [
+      "It uses less memory",
+      "It avoids IPC overhead",
+      "It runs faster on single cores",
+      "It bypasses the GIL by spawning separate OS processes"
+    ],
+    "answer": "It bypasses the GIL by spawning separate OS processes",
+    "explanation": "Separate processes have independent GILs, utilizing multi-core CPUs fully.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Multiprocessing"
+  },
+  {
+    "question": "[Python - Hard] Case Study #27 (Context Managers): Which dunder methods implement a Context Manager in Python?",
+    "options": [
+      "__enter__ and __exit__",
+      "__init__ and __del__",
+      "__open__ and __close__",
+      "__start__ and __stop__"
+    ],
+    "answer": "__enter__ and __exit__",
+    "explanation": "Context managers require __enter__() for setup and __exit__() for cleanup.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Context Managers"
+  },
+  {
+    "question": "[Python - Hard] Case Study #28 (Design Patterns): Which pattern does a module in Python naturally implement?",
+    "options": [
+      "Factory Pattern",
+      "Singleton Pattern",
+      "Strategy Pattern",
+      "Observer Pattern"
+    ],
+    "answer": "Singleton Pattern",
+    "explanation": "Python modules are loaded once and cached in sys.modules, acting as singletons.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Design Patterns"
+  },
+  {
+    "question": "[Python - Hard] Case Study #29 (Type Hinting): Which module provides advanced type annotations like Union and Callable in Python?",
+    "options": [
+      "annotations",
+      "types",
+      "typing",
+      "dataclasses"
+    ],
+    "answer": "typing",
+    "explanation": "The built-in 'typing' module provides generic type hinting constructs.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Type Hinting"
+  },
+  {
+    "question": "[Python - Hard] Case Study #30 (C Extensions): What header file must be included when writing C extensions for CPython?",
+    "options": [
+      "cpython.h",
+      "pyext.h",
+      "Python.h",
+      "pyapi.h"
+    ],
+    "answer": "Python.h",
+    "explanation": "Python.h includes all core CPython API headers.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "C Extensions"
+  },
+  {
+    "question": "[Python - Hard] Case Study #31 (GIL (Global Interpreter Lock)): What is the primary effect of Python's GIL in CPython?",
+    "options": [
+      "Locks file access across processes",
+      "Enforces memory bounds on lists",
+      "Prevents infinite recursion",
+      "Prevents multiple native threads from executing Python bytecode simultaneously"
+    ],
+    "answer": "Prevents multiple native threads from executing Python bytecode simultaneously",
+    "explanation": "GIL ensures thread safety in CPython by locking bytecode execution to a single thread.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "GIL (Global Interpreter Lock)"
+  },
+  {
+    "question": "[Python - Hard] Case Study #32 (Metaclasses): What is a metaclass in Python?",
+    "options": [
+      "A static helper class",
+      "A class whose instances are classes themselves",
+      "A class inherited by all objects",
+      "A abstract base class"
+    ],
+    "answer": "A class whose instances are classes themselves",
+    "explanation": "Metaclasses define how classes are constructed (type is the default metaclass).",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Metaclasses"
+  },
+  {
+    "question": "[Python - Hard] Case Study #33 (Asyncio): Which keyword pauses asynchronous function execution until a Future resolves?",
+    "options": [
+      "async",
+      "await",
+      "yield from",
+      "wait"
+    ],
+    "answer": "await",
+    "explanation": "'await' yields control back to event loop until task completes.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Asyncio"
+  },
+  {
+    "question": "[Python - Hard] Case Study #34 (Memory Management): How does Python handle primary memory management and object deallocation?",
+    "options": [
+      "Reference counting combined with a cyclic garbage collector",
+      "Manual malloc and free",
+      "Periodic full heap compaction",
+      "Stack allocation only"
+    ],
+    "answer": "Reference counting combined with a cyclic garbage collector",
+    "explanation": "Python uses reference counts for immediate cleanup and cyclic GC for circular references.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Memory Management"
+  },
+  {
+    "question": "[Python - Hard] Case Study #35 (Descriptors): Which method is NOT part of Python's Descriptor protocol?",
+    "options": [
+      "__init__",
+      "__get__",
+      "__set__",
+      "__delete__"
+    ],
+    "answer": "__init__",
+    "explanation": "Descriptor protocol consists of __get__, __set__, and __delete__.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Descriptors"
+  },
+  {
+    "question": "[Python - Hard] Case Study #36 (Multiprocessing): Why is 'multiprocessing' preferred over 'threading' for CPU-bound tasks in Python?",
+    "options": [
+      "It bypasses the GIL by spawning separate OS processes",
+      "It uses less memory",
+      "It avoids IPC overhead",
+      "It runs faster on single cores"
+    ],
+    "answer": "It bypasses the GIL by spawning separate OS processes",
+    "explanation": "Separate processes have independent GILs, utilizing multi-core CPUs fully.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Multiprocessing"
+  },
+  {
+    "question": "[Python - Hard] Case Study #37 (Context Managers): Which dunder methods implement a Context Manager in Python?",
+    "options": [
+      "__start__ and __stop__",
+      "__enter__ and __exit__",
+      "__init__ and __del__",
+      "__open__ and __close__"
+    ],
+    "answer": "__enter__ and __exit__",
+    "explanation": "Context managers require __enter__() for setup and __exit__() for cleanup.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Context Managers"
+  },
+  {
+    "question": "[Python - Hard] Case Study #38 (Design Patterns): Which pattern does a module in Python naturally implement?",
+    "options": [
+      "Factory Pattern",
+      "Singleton Pattern",
+      "Strategy Pattern",
+      "Observer Pattern"
+    ],
+    "answer": "Singleton Pattern",
+    "explanation": "Python modules are loaded once and cached in sys.modules, acting as singletons.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Design Patterns"
+  },
+  {
+    "question": "[Python - Hard] Case Study #39 (Type Hinting): Which module provides advanced type annotations like Union and Callable in Python?",
+    "options": [
+      "dataclasses",
+      "annotations",
+      "typing",
+      "types"
+    ],
+    "answer": "typing",
+    "explanation": "The built-in 'typing' module provides generic type hinting constructs.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Type Hinting"
+  },
+  {
+    "question": "[Python - Hard] Case Study #40 (C Extensions): What header file must be included when writing C extensions for CPython?",
+    "options": [
+      "pyext.h",
+      "pyapi.h",
+      "Python.h",
+      "cpython.h"
+    ],
+    "answer": "Python.h",
+    "explanation": "Python.h includes all core CPython API headers.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "C Extensions"
+  },
+  {
+    "question": "[Python - Hard] Case Study #41 (GIL (Global Interpreter Lock)): What is the primary effect of Python's GIL in CPython?",
+    "options": [
+      "Prevents infinite recursion",
+      "Prevents multiple native threads from executing Python bytecode simultaneously",
+      "Enforces memory bounds on lists",
+      "Locks file access across processes"
+    ],
+    "answer": "Prevents multiple native threads from executing Python bytecode simultaneously",
+    "explanation": "GIL ensures thread safety in CPython by locking bytecode execution to a single thread.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "GIL (Global Interpreter Lock)"
+  },
+  {
+    "question": "[Python - Hard] Case Study #42 (Metaclasses): What is a metaclass in Python?",
+    "options": [
+      "A class inherited by all objects",
+      "A class whose instances are classes themselves",
+      "A abstract base class",
+      "A static helper class"
+    ],
+    "answer": "A class whose instances are classes themselves",
+    "explanation": "Metaclasses define how classes are constructed (type is the default metaclass).",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Metaclasses"
+  },
+  {
+    "question": "[Python - Hard] Case Study #43 (Asyncio): Which keyword pauses asynchronous function execution until a Future resolves?",
+    "options": [
+      "await",
+      "async",
+      "wait",
+      "yield from"
+    ],
+    "answer": "await",
+    "explanation": "'await' yields control back to event loop until task completes.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Asyncio"
+  },
+  {
+    "question": "[Python - Hard] Case Study #44 (Memory Management): How does Python handle primary memory management and object deallocation?",
+    "options": [
+      "Reference counting combined with a cyclic garbage collector",
+      "Stack allocation only",
+      "Manual malloc and free",
+      "Periodic full heap compaction"
+    ],
+    "answer": "Reference counting combined with a cyclic garbage collector",
+    "explanation": "Python uses reference counts for immediate cleanup and cyclic GC for circular references.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Memory Management"
+  },
+  {
+    "question": "[Python - Hard] Case Study #45 (Descriptors): Which method is NOT part of Python's Descriptor protocol?",
+    "options": [
+      "__set__",
+      "__delete__",
+      "__get__",
+      "__init__"
+    ],
+    "answer": "__init__",
+    "explanation": "Descriptor protocol consists of __get__, __set__, and __delete__.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Descriptors"
+  },
+  {
+    "question": "[Python - Hard] Case Study #46 (Multiprocessing): Why is 'multiprocessing' preferred over 'threading' for CPU-bound tasks in Python?",
+    "options": [
+      "It runs faster on single cores",
+      "It avoids IPC overhead",
+      "It uses less memory",
+      "It bypasses the GIL by spawning separate OS processes"
+    ],
+    "answer": "It bypasses the GIL by spawning separate OS processes",
+    "explanation": "Separate processes have independent GILs, utilizing multi-core CPUs fully.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Multiprocessing"
+  },
+  {
+    "question": "[Python - Hard] Case Study #47 (Context Managers): Which dunder methods implement a Context Manager in Python?",
+    "options": [
+      "__init__ and __del__",
+      "__start__ and __stop__",
+      "__enter__ and __exit__",
+      "__open__ and __close__"
+    ],
+    "answer": "__enter__ and __exit__",
+    "explanation": "Context managers require __enter__() for setup and __exit__() for cleanup.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Context Managers"
+  },
+  {
+    "question": "[Python - Hard] Case Study #48 (Design Patterns): Which pattern does a module in Python naturally implement?",
+    "options": [
+      "Singleton Pattern",
+      "Observer Pattern",
+      "Strategy Pattern",
+      "Factory Pattern"
+    ],
+    "answer": "Singleton Pattern",
+    "explanation": "Python modules are loaded once and cached in sys.modules, acting as singletons.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Design Patterns"
+  },
+  {
+    "question": "[Python - Hard] Case Study #49 (Type Hinting): Which module provides advanced type annotations like Union and Callable in Python?",
+    "options": [
+      "annotations",
+      "typing",
+      "dataclasses",
+      "types"
+    ],
+    "answer": "typing",
+    "explanation": "The built-in 'typing' module provides generic type hinting constructs.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Type Hinting"
+  },
+  {
+    "question": "[Python - Hard] Case Study #50 (C Extensions): What header file must be included when writing C extensions for CPython?",
+    "options": [
+      "cpython.h",
+      "pyapi.h",
+      "pyext.h",
+      "Python.h"
+    ],
+    "answer": "Python.h",
+    "explanation": "Python.h includes all core CPython API headers.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "C Extensions"
+  },
+  {
+    "question": "[Python - Hard] Case Study #51 (GIL (Global Interpreter Lock)): What is the primary effect of Python's GIL in CPython?",
+    "options": [
+      "Enforces memory bounds on lists",
+      "Prevents multiple native threads from executing Python bytecode simultaneously",
+      "Prevents infinite recursion",
+      "Locks file access across processes"
+    ],
+    "answer": "Prevents multiple native threads from executing Python bytecode simultaneously",
+    "explanation": "GIL ensures thread safety in CPython by locking bytecode execution to a single thread.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "GIL (Global Interpreter Lock)"
+  },
+  {
+    "question": "[Python - Hard] Case Study #52 (Metaclasses): What is a metaclass in Python?",
+    "options": [
+      "A class inherited by all objects",
+      "A abstract base class",
+      "A class whose instances are classes themselves",
+      "A static helper class"
+    ],
+    "answer": "A class whose instances are classes themselves",
+    "explanation": "Metaclasses define how classes are constructed (type is the default metaclass).",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Metaclasses"
+  },
+  {
+    "question": "[Python - Hard] Case Study #53 (Asyncio): Which keyword pauses asynchronous function execution until a Future resolves?",
+    "options": [
+      "await",
+      "async",
+      "wait",
+      "yield from"
+    ],
+    "answer": "await",
+    "explanation": "'await' yields control back to event loop until task completes.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Asyncio"
+  },
+  {
+    "question": "[Python - Hard] Case Study #54 (Memory Management): How does Python handle primary memory management and object deallocation?",
+    "options": [
+      "Stack allocation only",
+      "Reference counting combined with a cyclic garbage collector",
+      "Manual malloc and free",
+      "Periodic full heap compaction"
+    ],
+    "answer": "Reference counting combined with a cyclic garbage collector",
+    "explanation": "Python uses reference counts for immediate cleanup and cyclic GC for circular references.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Memory Management"
+  },
+  {
+    "question": "[Python - Hard] Case Study #55 (Descriptors): Which method is NOT part of Python's Descriptor protocol?",
+    "options": [
+      "__delete__",
+      "__init__",
+      "__get__",
+      "__set__"
+    ],
+    "answer": "__init__",
+    "explanation": "Descriptor protocol consists of __get__, __set__, and __delete__.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Descriptors"
+  },
+  {
+    "question": "[Python - Hard] Case Study #56 (Multiprocessing): Why is 'multiprocessing' preferred over 'threading' for CPU-bound tasks in Python?",
+    "options": [
+      "It bypasses the GIL by spawning separate OS processes",
+      "It runs faster on single cores",
+      "It uses less memory",
+      "It avoids IPC overhead"
+    ],
+    "answer": "It bypasses the GIL by spawning separate OS processes",
+    "explanation": "Separate processes have independent GILs, utilizing multi-core CPUs fully.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Multiprocessing"
+  },
+  {
+    "question": "[Python - Hard] Case Study #57 (Context Managers): Which dunder methods implement a Context Manager in Python?",
+    "options": [
+      "__enter__ and __exit__",
+      "__open__ and __close__",
+      "__start__ and __stop__",
+      "__init__ and __del__"
+    ],
+    "answer": "__enter__ and __exit__",
+    "explanation": "Context managers require __enter__() for setup and __exit__() for cleanup.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Context Managers"
+  },
+  {
+    "question": "[Python - Hard] Case Study #58 (Design Patterns): Which pattern does a module in Python naturally implement?",
+    "options": [
+      "Factory Pattern",
+      "Strategy Pattern",
+      "Singleton Pattern",
+      "Observer Pattern"
+    ],
+    "answer": "Singleton Pattern",
+    "explanation": "Python modules are loaded once and cached in sys.modules, acting as singletons.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Design Patterns"
+  },
+  {
+    "question": "[Python - Hard] Case Study #59 (Type Hinting): Which module provides advanced type annotations like Union and Callable in Python?",
+    "options": [
+      "typing",
+      "dataclasses",
+      "annotations",
+      "types"
+    ],
+    "answer": "typing",
+    "explanation": "The built-in 'typing' module provides generic type hinting constructs.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Type Hinting"
+  },
+  {
+    "question": "[Python - Hard] Case Study #60 (C Extensions): What header file must be included when writing C extensions for CPython?",
+    "options": [
+      "pyext.h",
+      "cpython.h",
+      "Python.h",
+      "pyapi.h"
+    ],
+    "answer": "Python.h",
+    "explanation": "Python.h includes all core CPython API headers.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "C Extensions"
+  },
+  {
+    "question": "[Python - Hard] Case Study #61 (GIL (Global Interpreter Lock)): What is the primary effect of Python's GIL in CPython?",
+    "options": [
+      "Prevents multiple native threads from executing Python bytecode simultaneously",
+      "Locks file access across processes",
+      "Prevents infinite recursion",
+      "Enforces memory bounds on lists"
+    ],
+    "answer": "Prevents multiple native threads from executing Python bytecode simultaneously",
+    "explanation": "GIL ensures thread safety in CPython by locking bytecode execution to a single thread.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "GIL (Global Interpreter Lock)"
+  },
+  {
+    "question": "[Python - Hard] Case Study #62 (Metaclasses): What is a metaclass in Python?",
+    "options": [
+      "A static helper class",
+      "A class whose instances are classes themselves",
+      "A abstract base class",
+      "A class inherited by all objects"
+    ],
+    "answer": "A class whose instances are classes themselves",
+    "explanation": "Metaclasses define how classes are constructed (type is the default metaclass).",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Metaclasses"
+  },
+  {
+    "question": "[Python - Hard] Case Study #63 (Asyncio): Which keyword pauses asynchronous function execution until a Future resolves?",
+    "options": [
+      "await",
+      "wait",
+      "yield from",
+      "async"
+    ],
+    "answer": "await",
+    "explanation": "'await' yields control back to event loop until task completes.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Asyncio"
+  },
+  {
+    "question": "[Python - Hard] Case Study #64 (Memory Management): How does Python handle primary memory management and object deallocation?",
+    "options": [
+      "Periodic full heap compaction",
+      "Reference counting combined with a cyclic garbage collector",
+      "Stack allocation only",
+      "Manual malloc and free"
+    ],
+    "answer": "Reference counting combined with a cyclic garbage collector",
+    "explanation": "Python uses reference counts for immediate cleanup and cyclic GC for circular references.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Memory Management"
+  },
+  {
+    "question": "[Python - Hard] Case Study #65 (Descriptors): Which method is NOT part of Python's Descriptor protocol?",
+    "options": [
+      "__delete__",
+      "__get__",
+      "__init__",
+      "__set__"
+    ],
+    "answer": "__init__",
+    "explanation": "Descriptor protocol consists of __get__, __set__, and __delete__.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Descriptors"
+  },
+  {
+    "question": "[Python - Hard] Case Study #66 (Multiprocessing): Why is 'multiprocessing' preferred over 'threading' for CPU-bound tasks in Python?",
+    "options": [
+      "It avoids IPC overhead",
+      "It uses less memory",
+      "It bypasses the GIL by spawning separate OS processes",
+      "It runs faster on single cores"
+    ],
+    "answer": "It bypasses the GIL by spawning separate OS processes",
+    "explanation": "Separate processes have independent GILs, utilizing multi-core CPUs fully.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Multiprocessing"
+  },
+  {
+    "question": "[Python - Hard] Case Study #67 (Context Managers): Which dunder methods implement a Context Manager in Python?",
+    "options": [
+      "__enter__ and __exit__",
+      "__open__ and __close__",
+      "__init__ and __del__",
+      "__start__ and __stop__"
+    ],
+    "answer": "__enter__ and __exit__",
+    "explanation": "Context managers require __enter__() for setup and __exit__() for cleanup.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Context Managers"
+  },
+  {
+    "question": "[Python - Hard] Case Study #68 (Design Patterns): Which pattern does a module in Python naturally implement?",
+    "options": [
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Strategy Pattern",
+      "Observer Pattern"
+    ],
+    "answer": "Singleton Pattern",
+    "explanation": "Python modules are loaded once and cached in sys.modules, acting as singletons.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Design Patterns"
+  },
+  {
+    "question": "[Python - Hard] Case Study #69 (Type Hinting): Which module provides advanced type annotations like Union and Callable in Python?",
+    "options": [
+      "types",
+      "typing",
+      "annotations",
+      "dataclasses"
+    ],
+    "answer": "typing",
+    "explanation": "The built-in 'typing' module provides generic type hinting constructs.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Type Hinting"
+  },
+  {
+    "question": "[Python - Hard] Case Study #70 (C Extensions): What header file must be included when writing C extensions for CPython?",
+    "options": [
+      "Python.h",
+      "pyext.h",
+      "cpython.h",
+      "pyapi.h"
+    ],
+    "answer": "Python.h",
+    "explanation": "Python.h includes all core CPython API headers.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "C Extensions"
+  },
+  {
+    "question": "[Python - Hard] Case Study #71 (GIL (Global Interpreter Lock)): What is the primary effect of Python's GIL in CPython?",
+    "options": [
+      "Prevents multiple native threads from executing Python bytecode simultaneously",
+      "Prevents infinite recursion",
+      "Enforces memory bounds on lists",
+      "Locks file access across processes"
+    ],
+    "answer": "Prevents multiple native threads from executing Python bytecode simultaneously",
+    "explanation": "GIL ensures thread safety in CPython by locking bytecode execution to a single thread.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "GIL (Global Interpreter Lock)"
+  },
+  {
+    "question": "[Python - Hard] Case Study #72 (Metaclasses): What is a metaclass in Python?",
+    "options": [
+      "A class inherited by all objects",
+      "A class whose instances are classes themselves",
+      "A static helper class",
+      "A abstract base class"
+    ],
+    "answer": "A class whose instances are classes themselves",
+    "explanation": "Metaclasses define how classes are constructed (type is the default metaclass).",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Metaclasses"
+  },
+  {
+    "question": "[Python - Hard] Case Study #73 (Asyncio): Which keyword pauses asynchronous function execution until a Future resolves?",
+    "options": [
+      "async",
+      "yield from",
+      "await",
+      "wait"
+    ],
+    "answer": "await",
+    "explanation": "'await' yields control back to event loop until task completes.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Asyncio"
+  },
+  {
+    "question": "[Python - Hard] Case Study #74 (Memory Management): How does Python handle primary memory management and object deallocation?",
+    "options": [
+      "Reference counting combined with a cyclic garbage collector",
+      "Periodic full heap compaction",
+      "Stack allocation only",
+      "Manual malloc and free"
+    ],
+    "answer": "Reference counting combined with a cyclic garbage collector",
+    "explanation": "Python uses reference counts for immediate cleanup and cyclic GC for circular references.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Memory Management"
+  },
+  {
+    "question": "[Python - Hard] Case Study #75 (Descriptors): Which method is NOT part of Python's Descriptor protocol?",
+    "options": [
+      "__init__",
+      "__get__",
+      "__set__",
+      "__delete__"
+    ],
+    "answer": "__init__",
+    "explanation": "Descriptor protocol consists of __get__, __set__, and __delete__.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Descriptors"
+  },
+  {
+    "question": "[Python - Hard] Case Study #76 (Multiprocessing): Why is 'multiprocessing' preferred over 'threading' for CPU-bound tasks in Python?",
+    "options": [
+      "It runs faster on single cores",
+      "It avoids IPC overhead",
+      "It uses less memory",
+      "It bypasses the GIL by spawning separate OS processes"
+    ],
+    "answer": "It bypasses the GIL by spawning separate OS processes",
+    "explanation": "Separate processes have independent GILs, utilizing multi-core CPUs fully.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Multiprocessing"
+  },
+  {
+    "question": "[Python - Hard] Case Study #77 (Context Managers): Which dunder methods implement a Context Manager in Python?",
+    "options": [
+      "__init__ and __del__",
+      "__start__ and __stop__",
+      "__open__ and __close__",
+      "__enter__ and __exit__"
+    ],
+    "answer": "__enter__ and __exit__",
+    "explanation": "Context managers require __enter__() for setup and __exit__() for cleanup.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Context Managers"
+  },
+  {
+    "question": "[Python - Hard] Case Study #78 (Design Patterns): Which pattern does a module in Python naturally implement?",
+    "options": [
+      "Factory Pattern",
+      "Singleton Pattern",
+      "Observer Pattern",
+      "Strategy Pattern"
+    ],
+    "answer": "Singleton Pattern",
+    "explanation": "Python modules are loaded once and cached in sys.modules, acting as singletons.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Design Patterns"
+  },
+  {
+    "question": "[Python - Hard] Case Study #79 (Type Hinting): Which module provides advanced type annotations like Union and Callable in Python?",
+    "options": [
+      "typing",
+      "annotations",
+      "dataclasses",
+      "types"
+    ],
+    "answer": "typing",
+    "explanation": "The built-in 'typing' module provides generic type hinting constructs.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Type Hinting"
+  },
+  {
+    "question": "[Python - Hard] Case Study #80 (C Extensions): What header file must be included when writing C extensions for CPython?",
+    "options": [
+      "cpython.h",
+      "pyext.h",
+      "Python.h",
+      "pyapi.h"
+    ],
+    "answer": "Python.h",
+    "explanation": "Python.h includes all core CPython API headers.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "C Extensions"
+  },
+  {
+    "question": "[Python - Hard] Case Study #81 (GIL (Global Interpreter Lock)): What is the primary effect of Python's GIL in CPython?",
+    "options": [
+      "Prevents multiple native threads from executing Python bytecode simultaneously",
+      "Enforces memory bounds on lists",
+      "Locks file access across processes",
+      "Prevents infinite recursion"
+    ],
+    "answer": "Prevents multiple native threads from executing Python bytecode simultaneously",
+    "explanation": "GIL ensures thread safety in CPython by locking bytecode execution to a single thread.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "GIL (Global Interpreter Lock)"
+  },
+  {
+    "question": "[Python - Hard] Case Study #82 (Metaclasses): What is a metaclass in Python?",
+    "options": [
+      "A abstract base class",
+      "A class whose instances are classes themselves",
+      "A class inherited by all objects",
+      "A static helper class"
+    ],
+    "answer": "A class whose instances are classes themselves",
+    "explanation": "Metaclasses define how classes are constructed (type is the default metaclass).",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Metaclasses"
+  },
+  {
+    "question": "[Python - Hard] Case Study #83 (Asyncio): Which keyword pauses asynchronous function execution until a Future resolves?",
+    "options": [
+      "await",
+      "yield from",
+      "wait",
+      "async"
+    ],
+    "answer": "await",
+    "explanation": "'await' yields control back to event loop until task completes.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Asyncio"
+  },
+  {
+    "question": "[Python - Hard] Case Study #84 (Memory Management): How does Python handle primary memory management and object deallocation?",
+    "options": [
+      "Stack allocation only",
+      "Periodic full heap compaction",
+      "Reference counting combined with a cyclic garbage collector",
+      "Manual malloc and free"
+    ],
+    "answer": "Reference counting combined with a cyclic garbage collector",
+    "explanation": "Python uses reference counts for immediate cleanup and cyclic GC for circular references.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Memory Management"
+  },
+  {
+    "question": "[Python - Hard] Case Study #85 (Descriptors): Which method is NOT part of Python's Descriptor protocol?",
+    "options": [
+      "__get__",
+      "__set__",
+      "__delete__",
+      "__init__"
+    ],
+    "answer": "__init__",
+    "explanation": "Descriptor protocol consists of __get__, __set__, and __delete__.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Descriptors"
+  },
+  {
+    "question": "[Python - Hard] Case Study #86 (Multiprocessing): Why is 'multiprocessing' preferred over 'threading' for CPU-bound tasks in Python?",
+    "options": [
+      "It bypasses the GIL by spawning separate OS processes",
+      "It runs faster on single cores",
+      "It uses less memory",
+      "It avoids IPC overhead"
+    ],
+    "answer": "It bypasses the GIL by spawning separate OS processes",
+    "explanation": "Separate processes have independent GILs, utilizing multi-core CPUs fully.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Multiprocessing"
+  },
+  {
+    "question": "[Python - Hard] Case Study #87 (Context Managers): Which dunder methods implement a Context Manager in Python?",
+    "options": [
+      "__open__ and __close__",
+      "__init__ and __del__",
+      "__enter__ and __exit__",
+      "__start__ and __stop__"
+    ],
+    "answer": "__enter__ and __exit__",
+    "explanation": "Context managers require __enter__() for setup and __exit__() for cleanup.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Context Managers"
+  },
+  {
+    "question": "[Python - Hard] Case Study #88 (Design Patterns): Which pattern does a module in Python naturally implement?",
+    "options": [
+      "Observer Pattern",
+      "Strategy Pattern",
+      "Singleton Pattern",
+      "Factory Pattern"
+    ],
+    "answer": "Singleton Pattern",
+    "explanation": "Python modules are loaded once and cached in sys.modules, acting as singletons.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Design Patterns"
+  },
+  {
+    "question": "[Python - Hard] Case Study #89 (Type Hinting): Which module provides advanced type annotations like Union and Callable in Python?",
+    "options": [
+      "annotations",
+      "types",
+      "typing",
+      "dataclasses"
+    ],
+    "answer": "typing",
+    "explanation": "The built-in 'typing' module provides generic type hinting constructs.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Type Hinting"
+  },
+  {
+    "question": "[Python - Hard] Case Study #90 (C Extensions): What header file must be included when writing C extensions for CPython?",
+    "options": [
+      "pyapi.h",
+      "pyext.h",
+      "Python.h",
+      "cpython.h"
+    ],
+    "answer": "Python.h",
+    "explanation": "Python.h includes all core CPython API headers.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "C Extensions"
+  },
+  {
+    "question": "[Python - Hard] Case Study #91 (GIL (Global Interpreter Lock)): What is the primary effect of Python's GIL in CPython?",
+    "options": [
+      "Locks file access across processes",
+      "Prevents infinite recursion",
+      "Prevents multiple native threads from executing Python bytecode simultaneously",
+      "Enforces memory bounds on lists"
+    ],
+    "answer": "Prevents multiple native threads from executing Python bytecode simultaneously",
+    "explanation": "GIL ensures thread safety in CPython by locking bytecode execution to a single thread.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "GIL (Global Interpreter Lock)"
+  },
+  {
+    "question": "[Python - Hard] Case Study #92 (Metaclasses): What is a metaclass in Python?",
+    "options": [
+      "A class inherited by all objects",
+      "A abstract base class",
+      "A class whose instances are classes themselves",
+      "A static helper class"
+    ],
+    "answer": "A class whose instances are classes themselves",
+    "explanation": "Metaclasses define how classes are constructed (type is the default metaclass).",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Metaclasses"
+  },
+  {
+    "question": "[Python - Hard] Case Study #93 (Asyncio): Which keyword pauses asynchronous function execution until a Future resolves?",
+    "options": [
+      "yield from",
+      "async",
+      "wait",
+      "await"
+    ],
+    "answer": "await",
+    "explanation": "'await' yields control back to event loop until task completes.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Asyncio"
+  },
+  {
+    "question": "[Python - Hard] Case Study #94 (Memory Management): How does Python handle primary memory management and object deallocation?",
+    "options": [
+      "Periodic full heap compaction",
+      "Manual malloc and free",
+      "Stack allocation only",
+      "Reference counting combined with a cyclic garbage collector"
+    ],
+    "answer": "Reference counting combined with a cyclic garbage collector",
+    "explanation": "Python uses reference counts for immediate cleanup and cyclic GC for circular references.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Memory Management"
+  },
+  {
+    "question": "[Python - Hard] Case Study #95 (Descriptors): Which method is NOT part of Python's Descriptor protocol?",
+    "options": [
+      "__init__",
+      "__get__",
+      "__set__",
+      "__delete__"
+    ],
+    "answer": "__init__",
+    "explanation": "Descriptor protocol consists of __get__, __set__, and __delete__.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Descriptors"
+  },
+  {
+    "question": "[Python - Hard] Case Study #96 (Multiprocessing): Why is 'multiprocessing' preferred over 'threading' for CPU-bound tasks in Python?",
+    "options": [
+      "It avoids IPC overhead",
+      "It uses less memory",
+      "It runs faster on single cores",
+      "It bypasses the GIL by spawning separate OS processes"
+    ],
+    "answer": "It bypasses the GIL by spawning separate OS processes",
+    "explanation": "Separate processes have independent GILs, utilizing multi-core CPUs fully.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Multiprocessing"
+  },
+  {
+    "question": "[Python - Hard] Case Study #97 (Context Managers): Which dunder methods implement a Context Manager in Python?",
+    "options": [
+      "__open__ and __close__",
+      "__enter__ and __exit__",
+      "__init__ and __del__",
+      "__start__ and __stop__"
+    ],
+    "answer": "__enter__ and __exit__",
+    "explanation": "Context managers require __enter__() for setup and __exit__() for cleanup.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Context Managers"
+  },
+  {
+    "question": "[Python - Hard] Case Study #98 (Design Patterns): Which pattern does a module in Python naturally implement?",
+    "options": [
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Observer Pattern",
+      "Strategy Pattern"
+    ],
+    "answer": "Singleton Pattern",
+    "explanation": "Python modules are loaded once and cached in sys.modules, acting as singletons.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Design Patterns"
+  },
+  {
+    "question": "[Python - Hard] Case Study #99 (Type Hinting): Which module provides advanced type annotations like Union and Callable in Python?",
+    "options": [
+      "dataclasses",
+      "types",
+      "typing",
+      "annotations"
+    ],
+    "answer": "typing",
+    "explanation": "The built-in 'typing' module provides generic type hinting constructs.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "Type Hinting"
+  },
+  {
+    "question": "[Python - Hard] Case Study #100 (C Extensions): What header file must be included when writing C extensions for CPython?",
+    "options": [
+      "Python.h",
+      "pyext.h",
+      "pyapi.h",
+      "cpython.h"
+    ],
+    "answer": "Python.h",
+    "explanation": "Python.h includes all core CPython API headers.",
+    "difficulty": "Hard",
+    "skill": "Python",
+    "topic": "C Extensions"
+  }
+]

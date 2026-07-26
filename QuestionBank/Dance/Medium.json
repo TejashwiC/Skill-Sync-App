@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Looks decorative only",
+      "Prevents muscle growth",
+      "Provides balance, stability, and control during turns and leaps",
+      "Increases body weight"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Using 8 dancers",
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Dancing for 8 minutes",
+      "Jumping 8 times"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Closing eyes during turns",
+      "Spinning without moving head",
+      "Looking at feet",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "What is 'turnout' in ballet technique?",
+    "options": [
+      "Flexing ankles up",
+      "Pointing toes straight ahead",
+      "Bending knees inward",
+      "Outward rotation of legs from hip joints"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #5 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Increases body weight",
+      "Looks decorative only",
+      "Provides balance, stability, and control during turns and leaps",
+      "Prevents muscle growth"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #6 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Dancing for 8 minutes",
+      "Jumping 8 times",
+      "Using 8 dancers",
+      "Structuring movement patterns across 8-beat musical measure blocks"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #7 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Closing eyes during turns",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Spinning without moving head",
+      "Looking at feet"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #8 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Bending knees inward",
+      "Outward rotation of legs from hip joints",
+      "Pointing toes straight ahead",
+      "Flexing ankles up"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #9 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Looks decorative only",
+      "Prevents muscle growth",
+      "Increases body weight",
+      "Provides balance, stability, and control during turns and leaps"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #10 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Using 8 dancers",
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Jumping 8 times",
+      "Dancing for 8 minutes"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #11 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Closing eyes during turns",
+      "Looking at feet",
+      "Spinning without moving head"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #12 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Flexing ankles up",
+      "Outward rotation of legs from hip joints",
+      "Pointing toes straight ahead",
+      "Bending knees inward"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #13 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Looks decorative only",
+      "Provides balance, stability, and control during turns and leaps",
+      "Prevents muscle growth",
+      "Increases body weight"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #14 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Jumping 8 times",
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Dancing for 8 minutes",
+      "Using 8 dancers"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #15 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Looking at feet",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Closing eyes during turns",
+      "Spinning without moving head"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #16 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Bending knees inward",
+      "Flexing ankles up",
+      "Outward rotation of legs from hip joints",
+      "Pointing toes straight ahead"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #17 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Looks decorative only",
+      "Increases body weight",
+      "Provides balance, stability, and control during turns and leaps",
+      "Prevents muscle growth"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #18 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Using 8 dancers",
+      "Jumping 8 times",
+      "Dancing for 8 minutes"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #19 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Closing eyes during turns",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Looking at feet",
+      "Spinning without moving head"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #20 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Flexing ankles up",
+      "Outward rotation of legs from hip joints",
+      "Bending knees inward",
+      "Pointing toes straight ahead"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #21 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Provides balance, stability, and control during turns and leaps",
+      "Looks decorative only",
+      "Prevents muscle growth",
+      "Increases body weight"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #22 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Dancing for 8 minutes",
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Jumping 8 times",
+      "Using 8 dancers"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #23 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Spinning without moving head",
+      "Closing eyes during turns",
+      "Looking at feet",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #24 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Outward rotation of legs from hip joints",
+      "Flexing ankles up",
+      "Pointing toes straight ahead",
+      "Bending knees inward"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #25 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Increases body weight",
+      "Looks decorative only",
+      "Prevents muscle growth",
+      "Provides balance, stability, and control during turns and leaps"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #26 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Using 8 dancers",
+      "Dancing for 8 minutes",
+      "Jumping 8 times"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #27 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Spinning without moving head",
+      "Closing eyes during turns",
+      "Looking at feet"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #28 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Pointing toes straight ahead",
+      "Flexing ankles up",
+      "Bending knees inward",
+      "Outward rotation of legs from hip joints"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #29 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Provides balance, stability, and control during turns and leaps",
+      "Increases body weight",
+      "Prevents muscle growth",
+      "Looks decorative only"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #30 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Using 8 dancers",
+      "Jumping 8 times",
+      "Dancing for 8 minutes",
+      "Structuring movement patterns across 8-beat musical measure blocks"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #31 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Closing eyes during turns",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Looking at feet",
+      "Spinning without moving head"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #32 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Flexing ankles up",
+      "Bending knees inward",
+      "Pointing toes straight ahead",
+      "Outward rotation of legs from hip joints"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #33 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Increases body weight",
+      "Prevents muscle growth",
+      "Looks decorative only",
+      "Provides balance, stability, and control during turns and leaps"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #34 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Using 8 dancers",
+      "Dancing for 8 minutes",
+      "Jumping 8 times",
+      "Structuring movement patterns across 8-beat musical measure blocks"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #35 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Spinning without moving head",
+      "Closing eyes during turns",
+      "Looking at feet"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #36 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Bending knees inward",
+      "Pointing toes straight ahead",
+      "Flexing ankles up",
+      "Outward rotation of legs from hip joints"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #37 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Increases body weight",
+      "Provides balance, stability, and control during turns and leaps",
+      "Prevents muscle growth",
+      "Looks decorative only"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #38 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Dancing for 8 minutes",
+      "Jumping 8 times",
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Using 8 dancers"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #39 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Closing eyes during turns",
+      "Looking at feet",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Spinning without moving head"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #40 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Pointing toes straight ahead",
+      "Bending knees inward",
+      "Flexing ankles up",
+      "Outward rotation of legs from hip joints"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #41 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Looks decorative only",
+      "Prevents muscle growth",
+      "Provides balance, stability, and control during turns and leaps",
+      "Increases body weight"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #42 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Using 8 dancers",
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Dancing for 8 minutes",
+      "Jumping 8 times"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #43 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Closing eyes during turns",
+      "Looking at feet",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Spinning without moving head"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #44 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Outward rotation of legs from hip joints",
+      "Pointing toes straight ahead",
+      "Flexing ankles up",
+      "Bending knees inward"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #45 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Prevents muscle growth",
+      "Looks decorative only",
+      "Provides balance, stability, and control during turns and leaps",
+      "Increases body weight"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #46 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Dancing for 8 minutes",
+      "Jumping 8 times",
+      "Using 8 dancers"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #47 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Looking at feet",
+      "Spinning without moving head",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Closing eyes during turns"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #48 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Flexing ankles up",
+      "Bending knees inward",
+      "Outward rotation of legs from hip joints",
+      "Pointing toes straight ahead"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #49 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Increases body weight",
+      "Looks decorative only",
+      "Prevents muscle growth",
+      "Provides balance, stability, and control during turns and leaps"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #50 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Using 8 dancers",
+      "Dancing for 8 minutes",
+      "Jumping 8 times",
+      "Structuring movement patterns across 8-beat musical measure blocks"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #51 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Looking at feet",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Closing eyes during turns",
+      "Spinning without moving head"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #52 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Bending knees inward",
+      "Flexing ankles up",
+      "Pointing toes straight ahead",
+      "Outward rotation of legs from hip joints"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #53 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Increases body weight",
+      "Provides balance, stability, and control during turns and leaps",
+      "Looks decorative only",
+      "Prevents muscle growth"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #54 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Using 8 dancers",
+      "Jumping 8 times",
+      "Dancing for 8 minutes"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #55 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Looking at feet",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Closing eyes during turns",
+      "Spinning without moving head"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #56 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Flexing ankles up",
+      "Pointing toes straight ahead",
+      "Bending knees inward",
+      "Outward rotation of legs from hip joints"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #57 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Increases body weight",
+      "Prevents muscle growth",
+      "Provides balance, stability, and control during turns and leaps",
+      "Looks decorative only"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #58 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Dancing for 8 minutes",
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Jumping 8 times",
+      "Using 8 dancers"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #59 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Looking at feet",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Closing eyes during turns",
+      "Spinning without moving head"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #60 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Bending knees inward",
+      "Pointing toes straight ahead",
+      "Flexing ankles up",
+      "Outward rotation of legs from hip joints"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #61 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Increases body weight",
+      "Prevents muscle growth",
+      "Looks decorative only",
+      "Provides balance, stability, and control during turns and leaps"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #62 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Dancing for 8 minutes",
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Using 8 dancers",
+      "Jumping 8 times"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #63 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Spinning without moving head",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Looking at feet",
+      "Closing eyes during turns"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #64 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Pointing toes straight ahead",
+      "Bending knees inward",
+      "Flexing ankles up",
+      "Outward rotation of legs from hip joints"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #65 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Provides balance, stability, and control during turns and leaps",
+      "Looks decorative only",
+      "Prevents muscle growth",
+      "Increases body weight"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #66 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Using 8 dancers",
+      "Dancing for 8 minutes",
+      "Jumping 8 times",
+      "Structuring movement patterns across 8-beat musical measure blocks"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #67 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Spinning without moving head",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Looking at feet",
+      "Closing eyes during turns"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #68 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Bending knees inward",
+      "Flexing ankles up",
+      "Outward rotation of legs from hip joints",
+      "Pointing toes straight ahead"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #69 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Looks decorative only",
+      "Provides balance, stability, and control during turns and leaps",
+      "Increases body weight",
+      "Prevents muscle growth"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #70 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Dancing for 8 minutes",
+      "Using 8 dancers",
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Jumping 8 times"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #71 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Spinning without moving head",
+      "Looking at feet",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Closing eyes during turns"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #72 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Outward rotation of legs from hip joints",
+      "Flexing ankles up",
+      "Pointing toes straight ahead",
+      "Bending knees inward"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #73 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Prevents muscle growth",
+      "Looks decorative only",
+      "Provides balance, stability, and control during turns and leaps",
+      "Increases body weight"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #74 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Jumping 8 times",
+      "Dancing for 8 minutes",
+      "Using 8 dancers",
+      "Structuring movement patterns across 8-beat musical measure blocks"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #75 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Spinning without moving head",
+      "Looking at feet",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Closing eyes during turns"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #76 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Bending knees inward",
+      "Pointing toes straight ahead",
+      "Outward rotation of legs from hip joints",
+      "Flexing ankles up"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #77 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Looks decorative only",
+      "Increases body weight",
+      "Prevents muscle growth",
+      "Provides balance, stability, and control during turns and leaps"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #78 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Dancing for 8 minutes",
+      "Using 8 dancers",
+      "Jumping 8 times"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #79 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Spinning without moving head",
+      "Looking at feet",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Closing eyes during turns"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #80 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Bending knees inward",
+      "Pointing toes straight ahead",
+      "Flexing ankles up",
+      "Outward rotation of legs from hip joints"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #81 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Provides balance, stability, and control during turns and leaps",
+      "Prevents muscle growth",
+      "Increases body weight",
+      "Looks decorative only"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #82 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Dancing for 8 minutes",
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Using 8 dancers",
+      "Jumping 8 times"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #83 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Looking at feet",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Closing eyes during turns",
+      "Spinning without moving head"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #84 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Bending knees inward",
+      "Outward rotation of legs from hip joints",
+      "Flexing ankles up",
+      "Pointing toes straight ahead"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #85 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Increases body weight",
+      "Looks decorative only",
+      "Provides balance, stability, and control during turns and leaps",
+      "Prevents muscle growth"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #86 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Dancing for 8 minutes",
+      "Using 8 dancers",
+      "Jumping 8 times"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #87 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Spinning without moving head",
+      "Closing eyes during turns",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Looking at feet"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #88 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Flexing ankles up",
+      "Outward rotation of legs from hip joints",
+      "Pointing toes straight ahead",
+      "Bending knees inward"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #89 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Looks decorative only",
+      "Provides balance, stability, and control during turns and leaps",
+      "Increases body weight",
+      "Prevents muscle growth"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #90 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Dancing for 8 minutes",
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Jumping 8 times",
+      "Using 8 dancers"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #91 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Looking at feet",
+      "Closing eyes during turns",
+      "Spinning without moving head",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #92 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Outward rotation of legs from hip joints",
+      "Pointing toes straight ahead",
+      "Flexing ankles up",
+      "Bending knees inward"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #93 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Increases body weight",
+      "Prevents muscle growth",
+      "Looks decorative only",
+      "Provides balance, stability, and control during turns and leaps"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #94 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Structuring movement patterns across 8-beat musical measure blocks",
+      "Jumping 8 times",
+      "Dancing for 8 minutes",
+      "Using 8 dancers"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #95 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Spinning without moving head",
+      "Looking at feet",
+      "Closing eyes during turns",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #96 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Flexing ankles up",
+      "Outward rotation of legs from hip joints",
+      "Pointing toes straight ahead",
+      "Bending knees inward"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #97 (Posture): Why is core alignment fundamental in dance technique?",
+    "options": [
+      "Prevents muscle growth",
+      "Looks decorative only",
+      "Increases body weight",
+      "Provides balance, stability, and control during turns and leaps"
+    ],
+    "answer": "Provides balance, stability, and control during turns and leaps",
+    "explanation": "Core engagement centers body gravity and stabilizes movements.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Posture"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #98 (Rhythm): What is 'dancing on the 8-count' in choreography?",
+    "options": [
+      "Jumping 8 times",
+      "Dancing for 8 minutes",
+      "Using 8 dancers",
+      "Structuring movement patterns across 8-beat musical measure blocks"
+    ],
+    "answer": "Structuring movement patterns across 8-beat musical measure blocks",
+    "explanation": "8-count phrasing is standard for teaching and structuring choreography.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #99 (Turns): What is 'spotting' during spins and pirouettes?",
+    "options": [
+      "Closing eyes during turns",
+      "Spinning without moving head",
+      "Fixing gaze on a specific point and snapping head around rapidly while turning",
+      "Looking at feet"
+    ],
+    "answer": "Fixing gaze on a specific point and snapping head around rapidly while turning",
+    "explanation": "Spotting prevents dizziness and maintains rotational orientation.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Turns"
+  },
+  {
+    "question": "[Dance - Medium] Case Study #100 (Footwork): What is 'turnout' in ballet technique?",
+    "options": [
+      "Bending knees inward",
+      "Pointing toes straight ahead",
+      "Outward rotation of legs from hip joints",
+      "Flexing ankles up"
+    ],
+    "answer": "Outward rotation of legs from hip joints",
+    "explanation": "Turnout originates from hip sockets, orienting feet and knees outward.",
+    "difficulty": "Medium",
+    "skill": "Dance",
+    "topic": "Footwork"
+  }
+]

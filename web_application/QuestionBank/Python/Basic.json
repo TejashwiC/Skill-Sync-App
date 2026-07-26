@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "Which keyword is used to define a function in Python?",
+    "options": [
+      "def",
+      "define",
+      "func",
+      "function"
+    ],
+    "answer": "def",
+    "explanation": "The 'def' keyword is used to define a function in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Syntax"
+  },
+  {
+    "question": "What is the correct syntax to create a variable in Python?",
+    "options": [
+      "var x = 5;",
+      "variable x := 5",
+      "int x = 5;",
+      "x = 5"
+    ],
+    "answer": "x = 5",
+    "explanation": "Python variables are created when you assign a value using '='.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Variables"
+  },
+  {
+    "question": "Which of the following is an immutable data type in Python?",
+    "options": [
+      "Dictionary",
+      "Tuple",
+      "List",
+      "Set"
+    ],
+    "answer": "Tuple",
+    "explanation": "Tuples cannot be modified after creation in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Data Types"
+  },
+  {
+    "question": "What does the '//' operator do in Python?",
+    "options": [
+      "Bitwise OR",
+      "Floor division",
+      "Modulus",
+      "Exponentiation"
+    ],
+    "answer": "Floor division",
+    "explanation": "The '//' operator divides and rounds down to the nearest integer.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Operators"
+  },
+  {
+    "question": "Which method adds an element to the end of a list?",
+    "options": [
+      "append()",
+      "insert()",
+      "push()",
+      "add()"
+    ],
+    "answer": "append()",
+    "explanation": "append() adds a single item to the end of an existing list.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Lists"
+  },
+  {
+    "question": "How do you check the length of a string in Python?",
+    "options": [
+      "length(str)",
+      "str.length()",
+      "len(str)",
+      "str.size()"
+    ],
+    "answer": "len(str)",
+    "explanation": "The built-in len() function returns string length.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Strings"
+  },
+  {
+    "question": "Which keyword represents 'else if' in Python?",
+    "options": [
+      "else if",
+      "if else",
+      "elseif",
+      "elif"
+    ],
+    "answer": "elif",
+    "explanation": "Python uses 'elif' for conditional chain evaluation.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Conditionals"
+  },
+  {
+    "question": "How do you exit a loop prematurely in Python?",
+    "options": [
+      "exit",
+      "continue",
+      "stop",
+      "break"
+    ],
+    "answer": "break",
+    "explanation": "The 'break' statement terminates the enclosing loop.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Loops"
+  },
+  {
+    "question": "How is a single-element tuple defined in Python?",
+    "options": [
+      "(5)",
+      "(5,)",
+      "[5,]",
+      "tuple(5)"
+    ],
+    "answer": "(5,)",
+    "explanation": "A trailing comma distinguishes a single-element tuple from parentheses.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Tuples"
+  },
+  {
+    "question": "What value is returned by default from a Python function without a return statement?",
+    "options": [
+      "0",
+      "None",
+      "False",
+      "Null"
+    ],
+    "answer": "None",
+    "explanation": "Python functions implicitly return None if no return statement is executed.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Functions"
+  },
+  {
+    "question": "[Python - Basic] Case Study #11 (Syntax): Which keyword is used to define a function in Python?",
+    "options": [
+      "define",
+      "function",
+      "func",
+      "def"
+    ],
+    "answer": "def",
+    "explanation": "The 'def' keyword is used to define a function in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Python - Basic] Case Study #12 (Variables): What is the correct syntax to create a variable in Python?",
+    "options": [
+      "var x = 5;",
+      "x = 5",
+      "int x = 5;",
+      "variable x := 5"
+    ],
+    "answer": "x = 5",
+    "explanation": "Python variables are created when you assign a value using '='.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Python - Basic] Case Study #13 (Data Types): Which of the following is an immutable data type in Python?",
+    "options": [
+      "List",
+      "Dictionary",
+      "Tuple",
+      "Set"
+    ],
+    "answer": "Tuple",
+    "explanation": "Tuples cannot be modified after creation in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Python - Basic] Case Study #14 (Operators): What does the '//' operator do in Python?",
+    "options": [
+      "Bitwise OR",
+      "Modulus",
+      "Exponentiation",
+      "Floor division"
+    ],
+    "answer": "Floor division",
+    "explanation": "The '//' operator divides and rounds down to the nearest integer.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Python - Basic] Case Study #15 (Lists): Which method adds an element to the end of a list?",
+    "options": [
+      "add()",
+      "push()",
+      "insert()",
+      "append()"
+    ],
+    "answer": "append()",
+    "explanation": "append() adds a single item to the end of an existing list.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Lists"
+  },
+  {
+    "question": "[Python - Basic] Case Study #16 (Strings): How do you check the length of a string in Python?",
+    "options": [
+      "len(str)",
+      "str.size()",
+      "str.length()",
+      "length(str)"
+    ],
+    "answer": "len(str)",
+    "explanation": "The built-in len() function returns string length.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Python - Basic] Case Study #17 (Conditionals): Which keyword represents 'else if' in Python?",
+    "options": [
+      "elif",
+      "else if",
+      "elseif",
+      "if else"
+    ],
+    "answer": "elif",
+    "explanation": "Python uses 'elif' for conditional chain evaluation.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Conditionals"
+  },
+  {
+    "question": "[Python - Basic] Case Study #18 (Loops): How do you exit a loop prematurely in Python?",
+    "options": [
+      "continue",
+      "stop",
+      "break",
+      "exit"
+    ],
+    "answer": "break",
+    "explanation": "The 'break' statement terminates the enclosing loop.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Loops"
+  },
+  {
+    "question": "[Python - Basic] Case Study #19 (Tuples): How is a single-element tuple defined in Python?",
+    "options": [
+      "(5,)",
+      "(5)",
+      "tuple(5)",
+      "[5,]"
+    ],
+    "answer": "(5,)",
+    "explanation": "A trailing comma distinguishes a single-element tuple from parentheses.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Tuples"
+  },
+  {
+    "question": "[Python - Basic] Case Study #20 (Functions): What value is returned by default from a Python function without a return statement?",
+    "options": [
+      "None",
+      "Null",
+      "0",
+      "False"
+    ],
+    "answer": "None",
+    "explanation": "Python functions implicitly return None if no return statement is executed.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Functions"
+  },
+  {
+    "question": "[Python - Basic] Case Study #21 (Syntax): Which keyword is used to define a function in Python?",
+    "options": [
+      "def",
+      "func",
+      "define",
+      "function"
+    ],
+    "answer": "def",
+    "explanation": "The 'def' keyword is used to define a function in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Python - Basic] Case Study #22 (Variables): What is the correct syntax to create a variable in Python?",
+    "options": [
+      "variable x := 5",
+      "x = 5",
+      "int x = 5;",
+      "var x = 5;"
+    ],
+    "answer": "x = 5",
+    "explanation": "Python variables are created when you assign a value using '='.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Python - Basic] Case Study #23 (Data Types): Which of the following is an immutable data type in Python?",
+    "options": [
+      "List",
+      "Tuple",
+      "Set",
+      "Dictionary"
+    ],
+    "answer": "Tuple",
+    "explanation": "Tuples cannot be modified after creation in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Python - Basic] Case Study #24 (Operators): What does the '//' operator do in Python?",
+    "options": [
+      "Modulus",
+      "Exponentiation",
+      "Floor division",
+      "Bitwise OR"
+    ],
+    "answer": "Floor division",
+    "explanation": "The '//' operator divides and rounds down to the nearest integer.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Python - Basic] Case Study #25 (Lists): Which method adds an element to the end of a list?",
+    "options": [
+      "add()",
+      "append()",
+      "push()",
+      "insert()"
+    ],
+    "answer": "append()",
+    "explanation": "append() adds a single item to the end of an existing list.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Lists"
+  },
+  {
+    "question": "[Python - Basic] Case Study #26 (Strings): How do you check the length of a string in Python?",
+    "options": [
+      "str.length()",
+      "length(str)",
+      "str.size()",
+      "len(str)"
+    ],
+    "answer": "len(str)",
+    "explanation": "The built-in len() function returns string length.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Python - Basic] Case Study #27 (Conditionals): Which keyword represents 'else if' in Python?",
+    "options": [
+      "elif",
+      "elseif",
+      "else if",
+      "if else"
+    ],
+    "answer": "elif",
+    "explanation": "Python uses 'elif' for conditional chain evaluation.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Conditionals"
+  },
+  {
+    "question": "[Python - Basic] Case Study #28 (Loops): How do you exit a loop prematurely in Python?",
+    "options": [
+      "exit",
+      "break",
+      "stop",
+      "continue"
+    ],
+    "answer": "break",
+    "explanation": "The 'break' statement terminates the enclosing loop.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Loops"
+  },
+  {
+    "question": "[Python - Basic] Case Study #29 (Tuples): How is a single-element tuple defined in Python?",
+    "options": [
+      "[5,]",
+      "tuple(5)",
+      "(5,)",
+      "(5)"
+    ],
+    "answer": "(5,)",
+    "explanation": "A trailing comma distinguishes a single-element tuple from parentheses.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Tuples"
+  },
+  {
+    "question": "[Python - Basic] Case Study #30 (Functions): What value is returned by default from a Python function without a return statement?",
+    "options": [
+      "None",
+      "Null",
+      "0",
+      "False"
+    ],
+    "answer": "None",
+    "explanation": "Python functions implicitly return None if no return statement is executed.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Functions"
+  },
+  {
+    "question": "[Python - Basic] Case Study #31 (Syntax): Which keyword is used to define a function in Python?",
+    "options": [
+      "func",
+      "def",
+      "define",
+      "function"
+    ],
+    "answer": "def",
+    "explanation": "The 'def' keyword is used to define a function in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Python - Basic] Case Study #32 (Variables): What is the correct syntax to create a variable in Python?",
+    "options": [
+      "variable x := 5",
+      "var x = 5;",
+      "int x = 5;",
+      "x = 5"
+    ],
+    "answer": "x = 5",
+    "explanation": "Python variables are created when you assign a value using '='.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Python - Basic] Case Study #33 (Data Types): Which of the following is an immutable data type in Python?",
+    "options": [
+      "Tuple",
+      "Dictionary",
+      "Set",
+      "List"
+    ],
+    "answer": "Tuple",
+    "explanation": "Tuples cannot be modified after creation in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Python - Basic] Case Study #34 (Operators): What does the '//' operator do in Python?",
+    "options": [
+      "Floor division",
+      "Modulus",
+      "Bitwise OR",
+      "Exponentiation"
+    ],
+    "answer": "Floor division",
+    "explanation": "The '//' operator divides and rounds down to the nearest integer.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Python - Basic] Case Study #35 (Lists): Which method adds an element to the end of a list?",
+    "options": [
+      "add()",
+      "push()",
+      "append()",
+      "insert()"
+    ],
+    "answer": "append()",
+    "explanation": "append() adds a single item to the end of an existing list.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Lists"
+  },
+  {
+    "question": "[Python - Basic] Case Study #36 (Strings): How do you check the length of a string in Python?",
+    "options": [
+      "str.size()",
+      "str.length()",
+      "len(str)",
+      "length(str)"
+    ],
+    "answer": "len(str)",
+    "explanation": "The built-in len() function returns string length.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Python - Basic] Case Study #37 (Conditionals): Which keyword represents 'else if' in Python?",
+    "options": [
+      "else if",
+      "elseif",
+      "if else",
+      "elif"
+    ],
+    "answer": "elif",
+    "explanation": "Python uses 'elif' for conditional chain evaluation.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Conditionals"
+  },
+  {
+    "question": "[Python - Basic] Case Study #38 (Loops): How do you exit a loop prematurely in Python?",
+    "options": [
+      "exit",
+      "stop",
+      "continue",
+      "break"
+    ],
+    "answer": "break",
+    "explanation": "The 'break' statement terminates the enclosing loop.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Loops"
+  },
+  {
+    "question": "[Python - Basic] Case Study #39 (Tuples): How is a single-element tuple defined in Python?",
+    "options": [
+      "(5,)",
+      "[5,]",
+      "(5)",
+      "tuple(5)"
+    ],
+    "answer": "(5,)",
+    "explanation": "A trailing comma distinguishes a single-element tuple from parentheses.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Tuples"
+  },
+  {
+    "question": "[Python - Basic] Case Study #40 (Functions): What value is returned by default from a Python function without a return statement?",
+    "options": [
+      "False",
+      "0",
+      "None",
+      "Null"
+    ],
+    "answer": "None",
+    "explanation": "Python functions implicitly return None if no return statement is executed.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Functions"
+  },
+  {
+    "question": "[Python - Basic] Case Study #41 (Syntax): Which keyword is used to define a function in Python?",
+    "options": [
+      "def",
+      "func",
+      "define",
+      "function"
+    ],
+    "answer": "def",
+    "explanation": "The 'def' keyword is used to define a function in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Python - Basic] Case Study #42 (Variables): What is the correct syntax to create a variable in Python?",
+    "options": [
+      "var x = 5;",
+      "x = 5",
+      "int x = 5;",
+      "variable x := 5"
+    ],
+    "answer": "x = 5",
+    "explanation": "Python variables are created when you assign a value using '='.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Python - Basic] Case Study #43 (Data Types): Which of the following is an immutable data type in Python?",
+    "options": [
+      "Dictionary",
+      "Set",
+      "List",
+      "Tuple"
+    ],
+    "answer": "Tuple",
+    "explanation": "Tuples cannot be modified after creation in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Python - Basic] Case Study #44 (Operators): What does the '//' operator do in Python?",
+    "options": [
+      "Bitwise OR",
+      "Exponentiation",
+      "Modulus",
+      "Floor division"
+    ],
+    "answer": "Floor division",
+    "explanation": "The '//' operator divides and rounds down to the nearest integer.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Python - Basic] Case Study #45 (Lists): Which method adds an element to the end of a list?",
+    "options": [
+      "add()",
+      "insert()",
+      "push()",
+      "append()"
+    ],
+    "answer": "append()",
+    "explanation": "append() adds a single item to the end of an existing list.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Lists"
+  },
+  {
+    "question": "[Python - Basic] Case Study #46 (Strings): How do you check the length of a string in Python?",
+    "options": [
+      "str.size()",
+      "str.length()",
+      "length(str)",
+      "len(str)"
+    ],
+    "answer": "len(str)",
+    "explanation": "The built-in len() function returns string length.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Python - Basic] Case Study #47 (Conditionals): Which keyword represents 'else if' in Python?",
+    "options": [
+      "elif",
+      "else if",
+      "if else",
+      "elseif"
+    ],
+    "answer": "elif",
+    "explanation": "Python uses 'elif' for conditional chain evaluation.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Conditionals"
+  },
+  {
+    "question": "[Python - Basic] Case Study #48 (Loops): How do you exit a loop prematurely in Python?",
+    "options": [
+      "break",
+      "exit",
+      "continue",
+      "stop"
+    ],
+    "answer": "break",
+    "explanation": "The 'break' statement terminates the enclosing loop.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Loops"
+  },
+  {
+    "question": "[Python - Basic] Case Study #49 (Tuples): How is a single-element tuple defined in Python?",
+    "options": [
+      "(5)",
+      "tuple(5)",
+      "[5,]",
+      "(5,)"
+    ],
+    "answer": "(5,)",
+    "explanation": "A trailing comma distinguishes a single-element tuple from parentheses.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Tuples"
+  },
+  {
+    "question": "[Python - Basic] Case Study #50 (Functions): What value is returned by default from a Python function without a return statement?",
+    "options": [
+      "False",
+      "Null",
+      "None",
+      "0"
+    ],
+    "answer": "None",
+    "explanation": "Python functions implicitly return None if no return statement is executed.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Functions"
+  },
+  {
+    "question": "[Python - Basic] Case Study #51 (Syntax): Which keyword is used to define a function in Python?",
+    "options": [
+      "define",
+      "def",
+      "func",
+      "function"
+    ],
+    "answer": "def",
+    "explanation": "The 'def' keyword is used to define a function in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Python - Basic] Case Study #52 (Variables): What is the correct syntax to create a variable in Python?",
+    "options": [
+      "variable x := 5",
+      "int x = 5;",
+      "x = 5",
+      "var x = 5;"
+    ],
+    "answer": "x = 5",
+    "explanation": "Python variables are created when you assign a value using '='.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Python - Basic] Case Study #53 (Data Types): Which of the following is an immutable data type in Python?",
+    "options": [
+      "Set",
+      "Tuple",
+      "Dictionary",
+      "List"
+    ],
+    "answer": "Tuple",
+    "explanation": "Tuples cannot be modified after creation in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Python - Basic] Case Study #54 (Operators): What does the '//' operator do in Python?",
+    "options": [
+      "Modulus",
+      "Floor division",
+      "Bitwise OR",
+      "Exponentiation"
+    ],
+    "answer": "Floor division",
+    "explanation": "The '//' operator divides and rounds down to the nearest integer.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Python - Basic] Case Study #55 (Lists): Which method adds an element to the end of a list?",
+    "options": [
+      "push()",
+      "add()",
+      "insert()",
+      "append()"
+    ],
+    "answer": "append()",
+    "explanation": "append() adds a single item to the end of an existing list.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Lists"
+  },
+  {
+    "question": "[Python - Basic] Case Study #56 (Strings): How do you check the length of a string in Python?",
+    "options": [
+      "len(str)",
+      "length(str)",
+      "str.length()",
+      "str.size()"
+    ],
+    "answer": "len(str)",
+    "explanation": "The built-in len() function returns string length.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Python - Basic] Case Study #57 (Conditionals): Which keyword represents 'else if' in Python?",
+    "options": [
+      "elseif",
+      "else if",
+      "elif",
+      "if else"
+    ],
+    "answer": "elif",
+    "explanation": "Python uses 'elif' for conditional chain evaluation.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Conditionals"
+  },
+  {
+    "question": "[Python - Basic] Case Study #58 (Loops): How do you exit a loop prematurely in Python?",
+    "options": [
+      "break",
+      "stop",
+      "continue",
+      "exit"
+    ],
+    "answer": "break",
+    "explanation": "The 'break' statement terminates the enclosing loop.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Loops"
+  },
+  {
+    "question": "[Python - Basic] Case Study #59 (Tuples): How is a single-element tuple defined in Python?",
+    "options": [
+      "(5,)",
+      "[5,]",
+      "tuple(5)",
+      "(5)"
+    ],
+    "answer": "(5,)",
+    "explanation": "A trailing comma distinguishes a single-element tuple from parentheses.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Tuples"
+  },
+  {
+    "question": "[Python - Basic] Case Study #60 (Functions): What value is returned by default from a Python function without a return statement?",
+    "options": [
+      "0",
+      "False",
+      "None",
+      "Null"
+    ],
+    "answer": "None",
+    "explanation": "Python functions implicitly return None if no return statement is executed.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Functions"
+  },
+  {
+    "question": "[Python - Basic] Case Study #61 (Syntax): Which keyword is used to define a function in Python?",
+    "options": [
+      "function",
+      "func",
+      "def",
+      "define"
+    ],
+    "answer": "def",
+    "explanation": "The 'def' keyword is used to define a function in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Python - Basic] Case Study #62 (Variables): What is the correct syntax to create a variable in Python?",
+    "options": [
+      "int x = 5;",
+      "variable x := 5",
+      "var x = 5;",
+      "x = 5"
+    ],
+    "answer": "x = 5",
+    "explanation": "Python variables are created when you assign a value using '='.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Python - Basic] Case Study #63 (Data Types): Which of the following is an immutable data type in Python?",
+    "options": [
+      "List",
+      "Dictionary",
+      "Tuple",
+      "Set"
+    ],
+    "answer": "Tuple",
+    "explanation": "Tuples cannot be modified after creation in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Python - Basic] Case Study #64 (Operators): What does the '//' operator do in Python?",
+    "options": [
+      "Floor division",
+      "Modulus",
+      "Bitwise OR",
+      "Exponentiation"
+    ],
+    "answer": "Floor division",
+    "explanation": "The '//' operator divides and rounds down to the nearest integer.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Python - Basic] Case Study #65 (Lists): Which method adds an element to the end of a list?",
+    "options": [
+      "push()",
+      "append()",
+      "insert()",
+      "add()"
+    ],
+    "answer": "append()",
+    "explanation": "append() adds a single item to the end of an existing list.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Lists"
+  },
+  {
+    "question": "[Python - Basic] Case Study #66 (Strings): How do you check the length of a string in Python?",
+    "options": [
+      "str.length()",
+      "len(str)",
+      "length(str)",
+      "str.size()"
+    ],
+    "answer": "len(str)",
+    "explanation": "The built-in len() function returns string length.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Python - Basic] Case Study #67 (Conditionals): Which keyword represents 'else if' in Python?",
+    "options": [
+      "elseif",
+      "elif",
+      "if else",
+      "else if"
+    ],
+    "answer": "elif",
+    "explanation": "Python uses 'elif' for conditional chain evaluation.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Conditionals"
+  },
+  {
+    "question": "[Python - Basic] Case Study #68 (Loops): How do you exit a loop prematurely in Python?",
+    "options": [
+      "exit",
+      "continue",
+      "break",
+      "stop"
+    ],
+    "answer": "break",
+    "explanation": "The 'break' statement terminates the enclosing loop.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Loops"
+  },
+  {
+    "question": "[Python - Basic] Case Study #69 (Tuples): How is a single-element tuple defined in Python?",
+    "options": [
+      "(5,)",
+      "[5,]",
+      "(5)",
+      "tuple(5)"
+    ],
+    "answer": "(5,)",
+    "explanation": "A trailing comma distinguishes a single-element tuple from parentheses.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Tuples"
+  },
+  {
+    "question": "[Python - Basic] Case Study #70 (Functions): What value is returned by default from a Python function without a return statement?",
+    "options": [
+      "Null",
+      "False",
+      "0",
+      "None"
+    ],
+    "answer": "None",
+    "explanation": "Python functions implicitly return None if no return statement is executed.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Functions"
+  },
+  {
+    "question": "[Python - Basic] Case Study #71 (Syntax): Which keyword is used to define a function in Python?",
+    "options": [
+      "define",
+      "func",
+      "function",
+      "def"
+    ],
+    "answer": "def",
+    "explanation": "The 'def' keyword is used to define a function in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Python - Basic] Case Study #72 (Variables): What is the correct syntax to create a variable in Python?",
+    "options": [
+      "var x = 5;",
+      "x = 5",
+      "variable x := 5",
+      "int x = 5;"
+    ],
+    "answer": "x = 5",
+    "explanation": "Python variables are created when you assign a value using '='.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Python - Basic] Case Study #73 (Data Types): Which of the following is an immutable data type in Python?",
+    "options": [
+      "Set",
+      "List",
+      "Dictionary",
+      "Tuple"
+    ],
+    "answer": "Tuple",
+    "explanation": "Tuples cannot be modified after creation in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Python - Basic] Case Study #74 (Operators): What does the '//' operator do in Python?",
+    "options": [
+      "Floor division",
+      "Modulus",
+      "Exponentiation",
+      "Bitwise OR"
+    ],
+    "answer": "Floor division",
+    "explanation": "The '//' operator divides and rounds down to the nearest integer.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Python - Basic] Case Study #75 (Lists): Which method adds an element to the end of a list?",
+    "options": [
+      "add()",
+      "append()",
+      "push()",
+      "insert()"
+    ],
+    "answer": "append()",
+    "explanation": "append() adds a single item to the end of an existing list.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Lists"
+  },
+  {
+    "question": "[Python - Basic] Case Study #76 (Strings): How do you check the length of a string in Python?",
+    "options": [
+      "len(str)",
+      "str.size()",
+      "length(str)",
+      "str.length()"
+    ],
+    "answer": "len(str)",
+    "explanation": "The built-in len() function returns string length.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Python - Basic] Case Study #77 (Conditionals): Which keyword represents 'else if' in Python?",
+    "options": [
+      "elif",
+      "if else",
+      "else if",
+      "elseif"
+    ],
+    "answer": "elif",
+    "explanation": "Python uses 'elif' for conditional chain evaluation.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Conditionals"
+  },
+  {
+    "question": "[Python - Basic] Case Study #78 (Loops): How do you exit a loop prematurely in Python?",
+    "options": [
+      "break",
+      "stop",
+      "continue",
+      "exit"
+    ],
+    "answer": "break",
+    "explanation": "The 'break' statement terminates the enclosing loop.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Loops"
+  },
+  {
+    "question": "[Python - Basic] Case Study #79 (Tuples): How is a single-element tuple defined in Python?",
+    "options": [
+      "(5)",
+      "(5,)",
+      "[5,]",
+      "tuple(5)"
+    ],
+    "answer": "(5,)",
+    "explanation": "A trailing comma distinguishes a single-element tuple from parentheses.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Tuples"
+  },
+  {
+    "question": "[Python - Basic] Case Study #80 (Functions): What value is returned by default from a Python function without a return statement?",
+    "options": [
+      "None",
+      "False",
+      "0",
+      "Null"
+    ],
+    "answer": "None",
+    "explanation": "Python functions implicitly return None if no return statement is executed.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Functions"
+  },
+  {
+    "question": "[Python - Basic] Case Study #81 (Syntax): Which keyword is used to define a function in Python?",
+    "options": [
+      "function",
+      "def",
+      "define",
+      "func"
+    ],
+    "answer": "def",
+    "explanation": "The 'def' keyword is used to define a function in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Python - Basic] Case Study #82 (Variables): What is the correct syntax to create a variable in Python?",
+    "options": [
+      "variable x := 5",
+      "var x = 5;",
+      "int x = 5;",
+      "x = 5"
+    ],
+    "answer": "x = 5",
+    "explanation": "Python variables are created when you assign a value using '='.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Python - Basic] Case Study #83 (Data Types): Which of the following is an immutable data type in Python?",
+    "options": [
+      "Tuple",
+      "List",
+      "Set",
+      "Dictionary"
+    ],
+    "answer": "Tuple",
+    "explanation": "Tuples cannot be modified after creation in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Python - Basic] Case Study #84 (Operators): What does the '//' operator do in Python?",
+    "options": [
+      "Bitwise OR",
+      "Exponentiation",
+      "Modulus",
+      "Floor division"
+    ],
+    "answer": "Floor division",
+    "explanation": "The '//' operator divides and rounds down to the nearest integer.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Python - Basic] Case Study #85 (Lists): Which method adds an element to the end of a list?",
+    "options": [
+      "insert()",
+      "add()",
+      "append()",
+      "push()"
+    ],
+    "answer": "append()",
+    "explanation": "append() adds a single item to the end of an existing list.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Lists"
+  },
+  {
+    "question": "[Python - Basic] Case Study #86 (Strings): How do you check the length of a string in Python?",
+    "options": [
+      "len(str)",
+      "str.length()",
+      "str.size()",
+      "length(str)"
+    ],
+    "answer": "len(str)",
+    "explanation": "The built-in len() function returns string length.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Python - Basic] Case Study #87 (Conditionals): Which keyword represents 'else if' in Python?",
+    "options": [
+      "if else",
+      "elif",
+      "else if",
+      "elseif"
+    ],
+    "answer": "elif",
+    "explanation": "Python uses 'elif' for conditional chain evaluation.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Conditionals"
+  },
+  {
+    "question": "[Python - Basic] Case Study #88 (Loops): How do you exit a loop prematurely in Python?",
+    "options": [
+      "break",
+      "stop",
+      "continue",
+      "exit"
+    ],
+    "answer": "break",
+    "explanation": "The 'break' statement terminates the enclosing loop.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Loops"
+  },
+  {
+    "question": "[Python - Basic] Case Study #89 (Tuples): How is a single-element tuple defined in Python?",
+    "options": [
+      "(5)",
+      "[5,]",
+      "tuple(5)",
+      "(5,)"
+    ],
+    "answer": "(5,)",
+    "explanation": "A trailing comma distinguishes a single-element tuple from parentheses.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Tuples"
+  },
+  {
+    "question": "[Python - Basic] Case Study #90 (Functions): What value is returned by default from a Python function without a return statement?",
+    "options": [
+      "0",
+      "None",
+      "Null",
+      "False"
+    ],
+    "answer": "None",
+    "explanation": "Python functions implicitly return None if no return statement is executed.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Functions"
+  },
+  {
+    "question": "[Python - Basic] Case Study #91 (Syntax): Which keyword is used to define a function in Python?",
+    "options": [
+      "def",
+      "define",
+      "function",
+      "func"
+    ],
+    "answer": "def",
+    "explanation": "The 'def' keyword is used to define a function in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Syntax"
+  },
+  {
+    "question": "[Python - Basic] Case Study #92 (Variables): What is the correct syntax to create a variable in Python?",
+    "options": [
+      "x = 5",
+      "int x = 5;",
+      "variable x := 5",
+      "var x = 5;"
+    ],
+    "answer": "x = 5",
+    "explanation": "Python variables are created when you assign a value using '='.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Variables"
+  },
+  {
+    "question": "[Python - Basic] Case Study #93 (Data Types): Which of the following is an immutable data type in Python?",
+    "options": [
+      "Dictionary",
+      "List",
+      "Tuple",
+      "Set"
+    ],
+    "answer": "Tuple",
+    "explanation": "Tuples cannot be modified after creation in Python.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Data Types"
+  },
+  {
+    "question": "[Python - Basic] Case Study #94 (Operators): What does the '//' operator do in Python?",
+    "options": [
+      "Modulus",
+      "Exponentiation",
+      "Bitwise OR",
+      "Floor division"
+    ],
+    "answer": "Floor division",
+    "explanation": "The '//' operator divides and rounds down to the nearest integer.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Operators"
+  },
+  {
+    "question": "[Python - Basic] Case Study #95 (Lists): Which method adds an element to the end of a list?",
+    "options": [
+      "append()",
+      "insert()",
+      "add()",
+      "push()"
+    ],
+    "answer": "append()",
+    "explanation": "append() adds a single item to the end of an existing list.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Lists"
+  },
+  {
+    "question": "[Python - Basic] Case Study #96 (Strings): How do you check the length of a string in Python?",
+    "options": [
+      "str.size()",
+      "length(str)",
+      "str.length()",
+      "len(str)"
+    ],
+    "answer": "len(str)",
+    "explanation": "The built-in len() function returns string length.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Strings"
+  },
+  {
+    "question": "[Python - Basic] Case Study #97 (Conditionals): Which keyword represents 'else if' in Python?",
+    "options": [
+      "else if",
+      "elif",
+      "if else",
+      "elseif"
+    ],
+    "answer": "elif",
+    "explanation": "Python uses 'elif' for conditional chain evaluation.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Conditionals"
+  },
+  {
+    "question": "[Python - Basic] Case Study #98 (Loops): How do you exit a loop prematurely in Python?",
+    "options": [
+      "stop",
+      "continue",
+      "exit",
+      "break"
+    ],
+    "answer": "break",
+    "explanation": "The 'break' statement terminates the enclosing loop.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Loops"
+  },
+  {
+    "question": "[Python - Basic] Case Study #99 (Tuples): How is a single-element tuple defined in Python?",
+    "options": [
+      "(5,)",
+      "tuple(5)",
+      "[5,]",
+      "(5)"
+    ],
+    "answer": "(5,)",
+    "explanation": "A trailing comma distinguishes a single-element tuple from parentheses.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Tuples"
+  },
+  {
+    "question": "[Python - Basic] Case Study #100 (Functions): What value is returned by default from a Python function without a return statement?",
+    "options": [
+      "False",
+      "Null",
+      "None",
+      "0"
+    ],
+    "answer": "None",
+    "explanation": "Python functions implicitly return None if no return statement is executed.",
+    "difficulty": "Basic",
+    "skill": "Python",
+    "topic": "Functions"
+  }
+]

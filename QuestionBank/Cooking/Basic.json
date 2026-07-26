@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "What is the primary function of a chef's knife in cooking?",
+    "options": [
+      "Multipurpose chopping, slicing, and dicing of ingredients",
+      "Peeling small fruits exclusively",
+      "Opening canned goods",
+      "Carving whole poultry"
+    ],
+    "answer": "Multipurpose chopping, slicing, and dicing of ingredients",
+    "explanation": "A chef's knife is the primary versatile tool in the kitchen.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Kitchen Tools"
+  },
+  {
+    "question": "How should dry flour be accurately measured for baking?",
+    "options": [
+      "Scoop and pack tightly into a liquid glass cup",
+      "Pour into a liquid measuring pitcher",
+      "Spoon into dry measuring cup and level with a straight edge",
+      "Estimate by hand volume"
+    ],
+    "answer": "Spoon into dry measuring cup and level with a straight edge",
+    "explanation": "Flour should be spooned and leveled to prevent over-packing.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Measuring Ingredients"
+  },
+  {
+    "question": "What water temperature range is ideal for gently poaching an egg?",
+    "options": [
+      "212°F (100°C) rapid rolling boil",
+      "160°F to 180°F (71°C to 82°C) simmering water",
+      "300°F deep frying oil",
+      "100°F room warm water"
+    ],
+    "answer": "160°F to 180°F (71°C to 82°C) simmering water",
+    "explanation": "Poaching requires simmering water so whites set gently without breaking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Egg Cooking Methods"
+  },
+  {
+    "question": "What is the claw grip method used for when cutting food?",
+    "options": [
+      "Curling fingertips inward with knuckles guiding the blade safely",
+      "Gripping food with flat open fingers",
+      "Holding ingredient with thumb extended toward blade",
+      "Holding knife with both hands"
+    ],
+    "answer": "Curling fingertips inward with knuckles guiding the blade safely",
+    "explanation": "The claw grip protects fingertips from accidental cuts.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Basic Knife Skills"
+  },
+  {
+    "question": "How does simmering differ from boiling?",
+    "options": [
+      "Boiling is slower than simmering",
+      "Simmering happens in oven while boiling is on stove",
+      "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+      "Simmering uses oil while boiling uses water"
+    ],
+    "answer": "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+    "explanation": "Simmering maintains lower heat for delicate cooking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Boiling & Simmering"
+  },
+  {
+    "question": "What is the key to successful sautéing?",
+    "options": [
+      "High heat with a small amount of fat in a wide shallow pan",
+      "Cooking food covered in an oven for hours",
+      "Low heat with food fully submerged in liquid",
+      "Using no fat or oil at all"
+    ],
+    "answer": "High heat with a small amount of fat in a wide shallow pan",
+    "explanation": "Sautéing uses high heat and small fat to cook food quickly.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Sautéing Basics"
+  },
+  {
+    "question": "What is the food safety 'Danger Zone' temperature range for bacteria growth?",
+    "options": [
+      "40°F to 140°F (4°C to 60°C)",
+      "212°F and above",
+      "0°F to 32°F (-18°C to 0°C)",
+      "140°F to 200°F (60°C to 93°C)"
+    ],
+    "answer": "40°F to 140°F (4°C to 60°C)",
+    "explanation": "Bacteria multiply rapidly between 40°F and 140°F.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Food Hygiene"
+  },
+  {
+    "question": "What does 'blanching' vegetables mean?",
+    "options": [
+      "Scalding briefly in boiling water then shocking in ice water",
+      "Deep frying until crispy",
+      "Slow roasting in oven with herbs",
+      "Dehydrating vegetables completely"
+    ],
+    "answer": "Scalding briefly in boiling water then shocking in ice water",
+    "explanation": "Blanching cooks briefly and stops cooking via ice bath to preserve color.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Vegetable Prep"
+  },
+  {
+    "question": "Which spice comes from the dried stigma of a crocus flower?",
+    "options": [
+      "Turmeric",
+      "Cumin",
+      "Paprika",
+      "Saffron"
+    ],
+    "answer": "Saffron",
+    "explanation": "Saffron is harvested manually from crocus flower stigmas.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Common Spices"
+  },
+  {
+    "question": "What is a standard basic vinaigrette ratio of oil to vinegar?",
+    "options": [
+      "1 part oil to 3 parts vinegar",
+      "5 parts oil to 1 part vinegar",
+      "3 parts oil to 1 part vinegar",
+      "equal parts oil and vinegar"
+    ],
+    "answer": "3 parts oil to 1 part vinegar",
+    "explanation": "A classic vinaigrette ratio is 3:1 oil to acid.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Salad Making"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #11 (Kitchen Tools): What is the primary function of a chef's knife in cooking?",
+    "options": [
+      "Multipurpose chopping, slicing, and dicing of ingredients",
+      "Carving whole poultry",
+      "Opening canned goods",
+      "Peeling small fruits exclusively"
+    ],
+    "answer": "Multipurpose chopping, slicing, and dicing of ingredients",
+    "explanation": "A chef's knife is the primary versatile tool in the kitchen.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Kitchen Tools"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #12 (Measuring Ingredients): How should dry flour be accurately measured for baking?",
+    "options": [
+      "Estimate by hand volume",
+      "Pour into a liquid measuring pitcher",
+      "Spoon into dry measuring cup and level with a straight edge",
+      "Scoop and pack tightly into a liquid glass cup"
+    ],
+    "answer": "Spoon into dry measuring cup and level with a straight edge",
+    "explanation": "Flour should be spooned and leveled to prevent over-packing.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Measuring Ingredients"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #13 (Egg Cooking Methods): What water temperature range is ideal for gently poaching an egg?",
+    "options": [
+      "100°F room warm water",
+      "160°F to 180°F (71°C to 82°C) simmering water",
+      "300°F deep frying oil",
+      "212°F (100°C) rapid rolling boil"
+    ],
+    "answer": "160°F to 180°F (71°C to 82°C) simmering water",
+    "explanation": "Poaching requires simmering water so whites set gently without breaking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Egg Cooking Methods"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #14 (Basic Knife Skills): What is the claw grip method used for when cutting food?",
+    "options": [
+      "Gripping food with flat open fingers",
+      "Holding ingredient with thumb extended toward blade",
+      "Holding knife with both hands",
+      "Curling fingertips inward with knuckles guiding the blade safely"
+    ],
+    "answer": "Curling fingertips inward with knuckles guiding the blade safely",
+    "explanation": "The claw grip protects fingertips from accidental cuts.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Basic Knife Skills"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #15 (Boiling & Simmering): How does simmering differ from boiling?",
+    "options": [
+      "Simmering uses oil while boiling uses water",
+      "Simmering happens in oven while boiling is on stove",
+      "Boiling is slower than simmering",
+      "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)"
+    ],
+    "answer": "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+    "explanation": "Simmering maintains lower heat for delicate cooking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Boiling & Simmering"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #16 (Sautéing Basics): What is the key to successful sautéing?",
+    "options": [
+      "Cooking food covered in an oven for hours",
+      "High heat with a small amount of fat in a wide shallow pan",
+      "Low heat with food fully submerged in liquid",
+      "Using no fat or oil at all"
+    ],
+    "answer": "High heat with a small amount of fat in a wide shallow pan",
+    "explanation": "Sautéing uses high heat and small fat to cook food quickly.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Sautéing Basics"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #17 (Food Hygiene): What is the food safety 'Danger Zone' temperature range for bacteria growth?",
+    "options": [
+      "0°F to 32°F (-18°C to 0°C)",
+      "140°F to 200°F (60°C to 93°C)",
+      "40°F to 140°F (4°C to 60°C)",
+      "212°F and above"
+    ],
+    "answer": "40°F to 140°F (4°C to 60°C)",
+    "explanation": "Bacteria multiply rapidly between 40°F and 140°F.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Food Hygiene"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #18 (Vegetable Prep): What does 'blanching' vegetables mean?",
+    "options": [
+      "Dehydrating vegetables completely",
+      "Slow roasting in oven with herbs",
+      "Deep frying until crispy",
+      "Scalding briefly in boiling water then shocking in ice water"
+    ],
+    "answer": "Scalding briefly in boiling water then shocking in ice water",
+    "explanation": "Blanching cooks briefly and stops cooking via ice bath to preserve color.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Vegetable Prep"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #19 (Common Spices): Which spice comes from the dried stigma of a crocus flower?",
+    "options": [
+      "Paprika",
+      "Cumin",
+      "Saffron",
+      "Turmeric"
+    ],
+    "answer": "Saffron",
+    "explanation": "Saffron is harvested manually from crocus flower stigmas.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Common Spices"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #20 (Salad Making): What is a standard basic vinaigrette ratio of oil to vinegar?",
+    "options": [
+      "equal parts oil and vinegar",
+      "1 part oil to 3 parts vinegar",
+      "5 parts oil to 1 part vinegar",
+      "3 parts oil to 1 part vinegar"
+    ],
+    "answer": "3 parts oil to 1 part vinegar",
+    "explanation": "A classic vinaigrette ratio is 3:1 oil to acid.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Salad Making"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #21 (Kitchen Tools): What is the primary function of a chef's knife in cooking?",
+    "options": [
+      "Peeling small fruits exclusively",
+      "Carving whole poultry",
+      "Multipurpose chopping, slicing, and dicing of ingredients",
+      "Opening canned goods"
+    ],
+    "answer": "Multipurpose chopping, slicing, and dicing of ingredients",
+    "explanation": "A chef's knife is the primary versatile tool in the kitchen.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Kitchen Tools"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #22 (Measuring Ingredients): How should dry flour be accurately measured for baking?",
+    "options": [
+      "Spoon into dry measuring cup and level with a straight edge",
+      "Scoop and pack tightly into a liquid glass cup",
+      "Pour into a liquid measuring pitcher",
+      "Estimate by hand volume"
+    ],
+    "answer": "Spoon into dry measuring cup and level with a straight edge",
+    "explanation": "Flour should be spooned and leveled to prevent over-packing.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Measuring Ingredients"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #23 (Egg Cooking Methods): What water temperature range is ideal for gently poaching an egg?",
+    "options": [
+      "212°F (100°C) rapid rolling boil",
+      "160°F to 180°F (71°C to 82°C) simmering water",
+      "100°F room warm water",
+      "300°F deep frying oil"
+    ],
+    "answer": "160°F to 180°F (71°C to 82°C) simmering water",
+    "explanation": "Poaching requires simmering water so whites set gently without breaking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Egg Cooking Methods"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #24 (Basic Knife Skills): What is the claw grip method used for when cutting food?",
+    "options": [
+      "Curling fingertips inward with knuckles guiding the blade safely",
+      "Holding ingredient with thumb extended toward blade",
+      "Holding knife with both hands",
+      "Gripping food with flat open fingers"
+    ],
+    "answer": "Curling fingertips inward with knuckles guiding the blade safely",
+    "explanation": "The claw grip protects fingertips from accidental cuts.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Basic Knife Skills"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #25 (Boiling & Simmering): How does simmering differ from boiling?",
+    "options": [
+      "Boiling is slower than simmering",
+      "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+      "Simmering happens in oven while boiling is on stove",
+      "Simmering uses oil while boiling uses water"
+    ],
+    "answer": "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+    "explanation": "Simmering maintains lower heat for delicate cooking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Boiling & Simmering"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #26 (Sautéing Basics): What is the key to successful sautéing?",
+    "options": [
+      "Low heat with food fully submerged in liquid",
+      "High heat with a small amount of fat in a wide shallow pan",
+      "Cooking food covered in an oven for hours",
+      "Using no fat or oil at all"
+    ],
+    "answer": "High heat with a small amount of fat in a wide shallow pan",
+    "explanation": "Sautéing uses high heat and small fat to cook food quickly.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Sautéing Basics"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #27 (Food Hygiene): What is the food safety 'Danger Zone' temperature range for bacteria growth?",
+    "options": [
+      "212°F and above",
+      "0°F to 32°F (-18°C to 0°C)",
+      "40°F to 140°F (4°C to 60°C)",
+      "140°F to 200°F (60°C to 93°C)"
+    ],
+    "answer": "40°F to 140°F (4°C to 60°C)",
+    "explanation": "Bacteria multiply rapidly between 40°F and 140°F.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Food Hygiene"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #28 (Vegetable Prep): What does 'blanching' vegetables mean?",
+    "options": [
+      "Deep frying until crispy",
+      "Dehydrating vegetables completely",
+      "Scalding briefly in boiling water then shocking in ice water",
+      "Slow roasting in oven with herbs"
+    ],
+    "answer": "Scalding briefly in boiling water then shocking in ice water",
+    "explanation": "Blanching cooks briefly and stops cooking via ice bath to preserve color.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Vegetable Prep"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #29 (Common Spices): Which spice comes from the dried stigma of a crocus flower?",
+    "options": [
+      "Paprika",
+      "Cumin",
+      "Saffron",
+      "Turmeric"
+    ],
+    "answer": "Saffron",
+    "explanation": "Saffron is harvested manually from crocus flower stigmas.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Common Spices"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #30 (Salad Making): What is a standard basic vinaigrette ratio of oil to vinegar?",
+    "options": [
+      "3 parts oil to 1 part vinegar",
+      "5 parts oil to 1 part vinegar",
+      "equal parts oil and vinegar",
+      "1 part oil to 3 parts vinegar"
+    ],
+    "answer": "3 parts oil to 1 part vinegar",
+    "explanation": "A classic vinaigrette ratio is 3:1 oil to acid.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Salad Making"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #31 (Kitchen Tools): What is the primary function of a chef's knife in cooking?",
+    "options": [
+      "Carving whole poultry",
+      "Peeling small fruits exclusively",
+      "Opening canned goods",
+      "Multipurpose chopping, slicing, and dicing of ingredients"
+    ],
+    "answer": "Multipurpose chopping, slicing, and dicing of ingredients",
+    "explanation": "A chef's knife is the primary versatile tool in the kitchen.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Kitchen Tools"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #32 (Measuring Ingredients): How should dry flour be accurately measured for baking?",
+    "options": [
+      "Estimate by hand volume",
+      "Scoop and pack tightly into a liquid glass cup",
+      "Pour into a liquid measuring pitcher",
+      "Spoon into dry measuring cup and level with a straight edge"
+    ],
+    "answer": "Spoon into dry measuring cup and level with a straight edge",
+    "explanation": "Flour should be spooned and leveled to prevent over-packing.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Measuring Ingredients"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #33 (Egg Cooking Methods): What water temperature range is ideal for gently poaching an egg?",
+    "options": [
+      "160°F to 180°F (71°C to 82°C) simmering water",
+      "100°F room warm water",
+      "212°F (100°C) rapid rolling boil",
+      "300°F deep frying oil"
+    ],
+    "answer": "160°F to 180°F (71°C to 82°C) simmering water",
+    "explanation": "Poaching requires simmering water so whites set gently without breaking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Egg Cooking Methods"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #34 (Basic Knife Skills): What is the claw grip method used for when cutting food?",
+    "options": [
+      "Curling fingertips inward with knuckles guiding the blade safely",
+      "Gripping food with flat open fingers",
+      "Holding ingredient with thumb extended toward blade",
+      "Holding knife with both hands"
+    ],
+    "answer": "Curling fingertips inward with knuckles guiding the blade safely",
+    "explanation": "The claw grip protects fingertips from accidental cuts.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Basic Knife Skills"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #35 (Boiling & Simmering): How does simmering differ from boiling?",
+    "options": [
+      "Simmering happens in oven while boiling is on stove",
+      "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+      "Simmering uses oil while boiling uses water",
+      "Boiling is slower than simmering"
+    ],
+    "answer": "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+    "explanation": "Simmering maintains lower heat for delicate cooking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Boiling & Simmering"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #36 (Sautéing Basics): What is the key to successful sautéing?",
+    "options": [
+      "High heat with a small amount of fat in a wide shallow pan",
+      "Low heat with food fully submerged in liquid",
+      "Cooking food covered in an oven for hours",
+      "Using no fat or oil at all"
+    ],
+    "answer": "High heat with a small amount of fat in a wide shallow pan",
+    "explanation": "Sautéing uses high heat and small fat to cook food quickly.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Sautéing Basics"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #37 (Food Hygiene): What is the food safety 'Danger Zone' temperature range for bacteria growth?",
+    "options": [
+      "0°F to 32°F (-18°C to 0°C)",
+      "40°F to 140°F (4°C to 60°C)",
+      "212°F and above",
+      "140°F to 200°F (60°C to 93°C)"
+    ],
+    "answer": "40°F to 140°F (4°C to 60°C)",
+    "explanation": "Bacteria multiply rapidly between 40°F and 140°F.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Food Hygiene"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #38 (Vegetable Prep): What does 'blanching' vegetables mean?",
+    "options": [
+      "Scalding briefly in boiling water then shocking in ice water",
+      "Slow roasting in oven with herbs",
+      "Dehydrating vegetables completely",
+      "Deep frying until crispy"
+    ],
+    "answer": "Scalding briefly in boiling water then shocking in ice water",
+    "explanation": "Blanching cooks briefly and stops cooking via ice bath to preserve color.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Vegetable Prep"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #39 (Common Spices): Which spice comes from the dried stigma of a crocus flower?",
+    "options": [
+      "Cumin",
+      "Turmeric",
+      "Saffron",
+      "Paprika"
+    ],
+    "answer": "Saffron",
+    "explanation": "Saffron is harvested manually from crocus flower stigmas.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Common Spices"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #40 (Salad Making): What is a standard basic vinaigrette ratio of oil to vinegar?",
+    "options": [
+      "3 parts oil to 1 part vinegar",
+      "equal parts oil and vinegar",
+      "1 part oil to 3 parts vinegar",
+      "5 parts oil to 1 part vinegar"
+    ],
+    "answer": "3 parts oil to 1 part vinegar",
+    "explanation": "A classic vinaigrette ratio is 3:1 oil to acid.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Salad Making"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #41 (Kitchen Tools): What is the primary function of a chef's knife in cooking?",
+    "options": [
+      "Multipurpose chopping, slicing, and dicing of ingredients",
+      "Peeling small fruits exclusively",
+      "Opening canned goods",
+      "Carving whole poultry"
+    ],
+    "answer": "Multipurpose chopping, slicing, and dicing of ingredients",
+    "explanation": "A chef's knife is the primary versatile tool in the kitchen.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Kitchen Tools"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #42 (Measuring Ingredients): How should dry flour be accurately measured for baking?",
+    "options": [
+      "Scoop and pack tightly into a liquid glass cup",
+      "Estimate by hand volume",
+      "Pour into a liquid measuring pitcher",
+      "Spoon into dry measuring cup and level with a straight edge"
+    ],
+    "answer": "Spoon into dry measuring cup and level with a straight edge",
+    "explanation": "Flour should be spooned and leveled to prevent over-packing.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Measuring Ingredients"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #43 (Egg Cooking Methods): What water temperature range is ideal for gently poaching an egg?",
+    "options": [
+      "160°F to 180°F (71°C to 82°C) simmering water",
+      "100°F room warm water",
+      "212°F (100°C) rapid rolling boil",
+      "300°F deep frying oil"
+    ],
+    "answer": "160°F to 180°F (71°C to 82°C) simmering water",
+    "explanation": "Poaching requires simmering water so whites set gently without breaking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Egg Cooking Methods"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #44 (Basic Knife Skills): What is the claw grip method used for when cutting food?",
+    "options": [
+      "Holding ingredient with thumb extended toward blade",
+      "Curling fingertips inward with knuckles guiding the blade safely",
+      "Gripping food with flat open fingers",
+      "Holding knife with both hands"
+    ],
+    "answer": "Curling fingertips inward with knuckles guiding the blade safely",
+    "explanation": "The claw grip protects fingertips from accidental cuts.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Basic Knife Skills"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #45 (Boiling & Simmering): How does simmering differ from boiling?",
+    "options": [
+      "Simmering uses oil while boiling uses water",
+      "Simmering happens in oven while boiling is on stove",
+      "Boiling is slower than simmering",
+      "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)"
+    ],
+    "answer": "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+    "explanation": "Simmering maintains lower heat for delicate cooking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Boiling & Simmering"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #46 (Sautéing Basics): What is the key to successful sautéing?",
+    "options": [
+      "Low heat with food fully submerged in liquid",
+      "High heat with a small amount of fat in a wide shallow pan",
+      "Using no fat or oil at all",
+      "Cooking food covered in an oven for hours"
+    ],
+    "answer": "High heat with a small amount of fat in a wide shallow pan",
+    "explanation": "Sautéing uses high heat and small fat to cook food quickly.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Sautéing Basics"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #47 (Food Hygiene): What is the food safety 'Danger Zone' temperature range for bacteria growth?",
+    "options": [
+      "140°F to 200°F (60°C to 93°C)",
+      "212°F and above",
+      "40°F to 140°F (4°C to 60°C)",
+      "0°F to 32°F (-18°C to 0°C)"
+    ],
+    "answer": "40°F to 140°F (4°C to 60°C)",
+    "explanation": "Bacteria multiply rapidly between 40°F and 140°F.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Food Hygiene"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #48 (Vegetable Prep): What does 'blanching' vegetables mean?",
+    "options": [
+      "Slow roasting in oven with herbs",
+      "Scalding briefly in boiling water then shocking in ice water",
+      "Deep frying until crispy",
+      "Dehydrating vegetables completely"
+    ],
+    "answer": "Scalding briefly in boiling water then shocking in ice water",
+    "explanation": "Blanching cooks briefly and stops cooking via ice bath to preserve color.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Vegetable Prep"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #49 (Common Spices): Which spice comes from the dried stigma of a crocus flower?",
+    "options": [
+      "Cumin",
+      "Saffron",
+      "Turmeric",
+      "Paprika"
+    ],
+    "answer": "Saffron",
+    "explanation": "Saffron is harvested manually from crocus flower stigmas.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Common Spices"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #50 (Salad Making): What is a standard basic vinaigrette ratio of oil to vinegar?",
+    "options": [
+      "5 parts oil to 1 part vinegar",
+      "3 parts oil to 1 part vinegar",
+      "1 part oil to 3 parts vinegar",
+      "equal parts oil and vinegar"
+    ],
+    "answer": "3 parts oil to 1 part vinegar",
+    "explanation": "A classic vinaigrette ratio is 3:1 oil to acid.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Salad Making"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #51 (Kitchen Tools): What is the primary function of a chef's knife in cooking?",
+    "options": [
+      "Peeling small fruits exclusively",
+      "Carving whole poultry",
+      "Opening canned goods",
+      "Multipurpose chopping, slicing, and dicing of ingredients"
+    ],
+    "answer": "Multipurpose chopping, slicing, and dicing of ingredients",
+    "explanation": "A chef's knife is the primary versatile tool in the kitchen.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Kitchen Tools"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #52 (Measuring Ingredients): How should dry flour be accurately measured for baking?",
+    "options": [
+      "Scoop and pack tightly into a liquid glass cup",
+      "Estimate by hand volume",
+      "Pour into a liquid measuring pitcher",
+      "Spoon into dry measuring cup and level with a straight edge"
+    ],
+    "answer": "Spoon into dry measuring cup and level with a straight edge",
+    "explanation": "Flour should be spooned and leveled to prevent over-packing.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Measuring Ingredients"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #53 (Egg Cooking Methods): What water temperature range is ideal for gently poaching an egg?",
+    "options": [
+      "300°F deep frying oil",
+      "160°F to 180°F (71°C to 82°C) simmering water",
+      "212°F (100°C) rapid rolling boil",
+      "100°F room warm water"
+    ],
+    "answer": "160°F to 180°F (71°C to 82°C) simmering water",
+    "explanation": "Poaching requires simmering water so whites set gently without breaking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Egg Cooking Methods"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #54 (Basic Knife Skills): What is the claw grip method used for when cutting food?",
+    "options": [
+      "Holding knife with both hands",
+      "Holding ingredient with thumb extended toward blade",
+      "Curling fingertips inward with knuckles guiding the blade safely",
+      "Gripping food with flat open fingers"
+    ],
+    "answer": "Curling fingertips inward with knuckles guiding the blade safely",
+    "explanation": "The claw grip protects fingertips from accidental cuts.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Basic Knife Skills"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #55 (Boiling & Simmering): How does simmering differ from boiling?",
+    "options": [
+      "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+      "Simmering uses oil while boiling uses water",
+      "Simmering happens in oven while boiling is on stove",
+      "Boiling is slower than simmering"
+    ],
+    "answer": "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+    "explanation": "Simmering maintains lower heat for delicate cooking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Boiling & Simmering"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #56 (Sautéing Basics): What is the key to successful sautéing?",
+    "options": [
+      "High heat with a small amount of fat in a wide shallow pan",
+      "Cooking food covered in an oven for hours",
+      "Low heat with food fully submerged in liquid",
+      "Using no fat or oil at all"
+    ],
+    "answer": "High heat with a small amount of fat in a wide shallow pan",
+    "explanation": "Sautéing uses high heat and small fat to cook food quickly.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Sautéing Basics"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #57 (Food Hygiene): What is the food safety 'Danger Zone' temperature range for bacteria growth?",
+    "options": [
+      "40°F to 140°F (4°C to 60°C)",
+      "0°F to 32°F (-18°C to 0°C)",
+      "212°F and above",
+      "140°F to 200°F (60°C to 93°C)"
+    ],
+    "answer": "40°F to 140°F (4°C to 60°C)",
+    "explanation": "Bacteria multiply rapidly between 40°F and 140°F.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Food Hygiene"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #58 (Vegetable Prep): What does 'blanching' vegetables mean?",
+    "options": [
+      "Scalding briefly in boiling water then shocking in ice water",
+      "Deep frying until crispy",
+      "Slow roasting in oven with herbs",
+      "Dehydrating vegetables completely"
+    ],
+    "answer": "Scalding briefly in boiling water then shocking in ice water",
+    "explanation": "Blanching cooks briefly and stops cooking via ice bath to preserve color.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Vegetable Prep"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #59 (Common Spices): Which spice comes from the dried stigma of a crocus flower?",
+    "options": [
+      "Paprika",
+      "Saffron",
+      "Turmeric",
+      "Cumin"
+    ],
+    "answer": "Saffron",
+    "explanation": "Saffron is harvested manually from crocus flower stigmas.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Common Spices"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #60 (Salad Making): What is a standard basic vinaigrette ratio of oil to vinegar?",
+    "options": [
+      "1 part oil to 3 parts vinegar",
+      "3 parts oil to 1 part vinegar",
+      "equal parts oil and vinegar",
+      "5 parts oil to 1 part vinegar"
+    ],
+    "answer": "3 parts oil to 1 part vinegar",
+    "explanation": "A classic vinaigrette ratio is 3:1 oil to acid.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Salad Making"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #61 (Kitchen Tools): What is the primary function of a chef's knife in cooking?",
+    "options": [
+      "Carving whole poultry",
+      "Opening canned goods",
+      "Multipurpose chopping, slicing, and dicing of ingredients",
+      "Peeling small fruits exclusively"
+    ],
+    "answer": "Multipurpose chopping, slicing, and dicing of ingredients",
+    "explanation": "A chef's knife is the primary versatile tool in the kitchen.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Kitchen Tools"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #62 (Measuring Ingredients): How should dry flour be accurately measured for baking?",
+    "options": [
+      "Scoop and pack tightly into a liquid glass cup",
+      "Estimate by hand volume",
+      "Spoon into dry measuring cup and level with a straight edge",
+      "Pour into a liquid measuring pitcher"
+    ],
+    "answer": "Spoon into dry measuring cup and level with a straight edge",
+    "explanation": "Flour should be spooned and leveled to prevent over-packing.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Measuring Ingredients"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #63 (Egg Cooking Methods): What water temperature range is ideal for gently poaching an egg?",
+    "options": [
+      "100°F room warm water",
+      "160°F to 180°F (71°C to 82°C) simmering water",
+      "212°F (100°C) rapid rolling boil",
+      "300°F deep frying oil"
+    ],
+    "answer": "160°F to 180°F (71°C to 82°C) simmering water",
+    "explanation": "Poaching requires simmering water so whites set gently without breaking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Egg Cooking Methods"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #64 (Basic Knife Skills): What is the claw grip method used for when cutting food?",
+    "options": [
+      "Curling fingertips inward with knuckles guiding the blade safely",
+      "Holding ingredient with thumb extended toward blade",
+      "Holding knife with both hands",
+      "Gripping food with flat open fingers"
+    ],
+    "answer": "Curling fingertips inward with knuckles guiding the blade safely",
+    "explanation": "The claw grip protects fingertips from accidental cuts.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Basic Knife Skills"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #65 (Boiling & Simmering): How does simmering differ from boiling?",
+    "options": [
+      "Boiling is slower than simmering",
+      "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+      "Simmering uses oil while boiling uses water",
+      "Simmering happens in oven while boiling is on stove"
+    ],
+    "answer": "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+    "explanation": "Simmering maintains lower heat for delicate cooking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Boiling & Simmering"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #66 (Sautéing Basics): What is the key to successful sautéing?",
+    "options": [
+      "Using no fat or oil at all",
+      "Cooking food covered in an oven for hours",
+      "High heat with a small amount of fat in a wide shallow pan",
+      "Low heat with food fully submerged in liquid"
+    ],
+    "answer": "High heat with a small amount of fat in a wide shallow pan",
+    "explanation": "Sautéing uses high heat and small fat to cook food quickly.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Sautéing Basics"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #67 (Food Hygiene): What is the food safety 'Danger Zone' temperature range for bacteria growth?",
+    "options": [
+      "0°F to 32°F (-18°C to 0°C)",
+      "40°F to 140°F (4°C to 60°C)",
+      "212°F and above",
+      "140°F to 200°F (60°C to 93°C)"
+    ],
+    "answer": "40°F to 140°F (4°C to 60°C)",
+    "explanation": "Bacteria multiply rapidly between 40°F and 140°F.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Food Hygiene"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #68 (Vegetable Prep): What does 'blanching' vegetables mean?",
+    "options": [
+      "Scalding briefly in boiling water then shocking in ice water",
+      "Dehydrating vegetables completely",
+      "Slow roasting in oven with herbs",
+      "Deep frying until crispy"
+    ],
+    "answer": "Scalding briefly in boiling water then shocking in ice water",
+    "explanation": "Blanching cooks briefly and stops cooking via ice bath to preserve color.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Vegetable Prep"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #69 (Common Spices): Which spice comes from the dried stigma of a crocus flower?",
+    "options": [
+      "Paprika",
+      "Cumin",
+      "Saffron",
+      "Turmeric"
+    ],
+    "answer": "Saffron",
+    "explanation": "Saffron is harvested manually from crocus flower stigmas.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Common Spices"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #70 (Salad Making): What is a standard basic vinaigrette ratio of oil to vinegar?",
+    "options": [
+      "3 parts oil to 1 part vinegar",
+      "1 part oil to 3 parts vinegar",
+      "equal parts oil and vinegar",
+      "5 parts oil to 1 part vinegar"
+    ],
+    "answer": "3 parts oil to 1 part vinegar",
+    "explanation": "A classic vinaigrette ratio is 3:1 oil to acid.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Salad Making"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #71 (Kitchen Tools): What is the primary function of a chef's knife in cooking?",
+    "options": [
+      "Opening canned goods",
+      "Multipurpose chopping, slicing, and dicing of ingredients",
+      "Peeling small fruits exclusively",
+      "Carving whole poultry"
+    ],
+    "answer": "Multipurpose chopping, slicing, and dicing of ingredients",
+    "explanation": "A chef's knife is the primary versatile tool in the kitchen.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Kitchen Tools"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #72 (Measuring Ingredients): How should dry flour be accurately measured for baking?",
+    "options": [
+      "Scoop and pack tightly into a liquid glass cup",
+      "Estimate by hand volume",
+      "Spoon into dry measuring cup and level with a straight edge",
+      "Pour into a liquid measuring pitcher"
+    ],
+    "answer": "Spoon into dry measuring cup and level with a straight edge",
+    "explanation": "Flour should be spooned and leveled to prevent over-packing.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Measuring Ingredients"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #73 (Egg Cooking Methods): What water temperature range is ideal for gently poaching an egg?",
+    "options": [
+      "212°F (100°C) rapid rolling boil",
+      "160°F to 180°F (71°C to 82°C) simmering water",
+      "300°F deep frying oil",
+      "100°F room warm water"
+    ],
+    "answer": "160°F to 180°F (71°C to 82°C) simmering water",
+    "explanation": "Poaching requires simmering water so whites set gently without breaking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Egg Cooking Methods"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #74 (Basic Knife Skills): What is the claw grip method used for when cutting food?",
+    "options": [
+      "Gripping food with flat open fingers",
+      "Holding knife with both hands",
+      "Holding ingredient with thumb extended toward blade",
+      "Curling fingertips inward with knuckles guiding the blade safely"
+    ],
+    "answer": "Curling fingertips inward with knuckles guiding the blade safely",
+    "explanation": "The claw grip protects fingertips from accidental cuts.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Basic Knife Skills"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #75 (Boiling & Simmering): How does simmering differ from boiling?",
+    "options": [
+      "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+      "Simmering happens in oven while boiling is on stove",
+      "Simmering uses oil while boiling uses water",
+      "Boiling is slower than simmering"
+    ],
+    "answer": "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+    "explanation": "Simmering maintains lower heat for delicate cooking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Boiling & Simmering"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #76 (Sautéing Basics): What is the key to successful sautéing?",
+    "options": [
+      "Using no fat or oil at all",
+      "High heat with a small amount of fat in a wide shallow pan",
+      "Low heat with food fully submerged in liquid",
+      "Cooking food covered in an oven for hours"
+    ],
+    "answer": "High heat with a small amount of fat in a wide shallow pan",
+    "explanation": "Sautéing uses high heat and small fat to cook food quickly.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Sautéing Basics"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #77 (Food Hygiene): What is the food safety 'Danger Zone' temperature range for bacteria growth?",
+    "options": [
+      "140°F to 200°F (60°C to 93°C)",
+      "40°F to 140°F (4°C to 60°C)",
+      "0°F to 32°F (-18°C to 0°C)",
+      "212°F and above"
+    ],
+    "answer": "40°F to 140°F (4°C to 60°C)",
+    "explanation": "Bacteria multiply rapidly between 40°F and 140°F.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Food Hygiene"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #78 (Vegetable Prep): What does 'blanching' vegetables mean?",
+    "options": [
+      "Scalding briefly in boiling water then shocking in ice water",
+      "Dehydrating vegetables completely",
+      "Deep frying until crispy",
+      "Slow roasting in oven with herbs"
+    ],
+    "answer": "Scalding briefly in boiling water then shocking in ice water",
+    "explanation": "Blanching cooks briefly and stops cooking via ice bath to preserve color.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Vegetable Prep"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #79 (Common Spices): Which spice comes from the dried stigma of a crocus flower?",
+    "options": [
+      "Saffron",
+      "Cumin",
+      "Turmeric",
+      "Paprika"
+    ],
+    "answer": "Saffron",
+    "explanation": "Saffron is harvested manually from crocus flower stigmas.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Common Spices"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #80 (Salad Making): What is a standard basic vinaigrette ratio of oil to vinegar?",
+    "options": [
+      "3 parts oil to 1 part vinegar",
+      "1 part oil to 3 parts vinegar",
+      "5 parts oil to 1 part vinegar",
+      "equal parts oil and vinegar"
+    ],
+    "answer": "3 parts oil to 1 part vinegar",
+    "explanation": "A classic vinaigrette ratio is 3:1 oil to acid.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Salad Making"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #81 (Kitchen Tools): What is the primary function of a chef's knife in cooking?",
+    "options": [
+      "Peeling small fruits exclusively",
+      "Multipurpose chopping, slicing, and dicing of ingredients",
+      "Opening canned goods",
+      "Carving whole poultry"
+    ],
+    "answer": "Multipurpose chopping, slicing, and dicing of ingredients",
+    "explanation": "A chef's knife is the primary versatile tool in the kitchen.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Kitchen Tools"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #82 (Measuring Ingredients): How should dry flour be accurately measured for baking?",
+    "options": [
+      "Scoop and pack tightly into a liquid glass cup",
+      "Estimate by hand volume",
+      "Spoon into dry measuring cup and level with a straight edge",
+      "Pour into a liquid measuring pitcher"
+    ],
+    "answer": "Spoon into dry measuring cup and level with a straight edge",
+    "explanation": "Flour should be spooned and leveled to prevent over-packing.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Measuring Ingredients"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #83 (Egg Cooking Methods): What water temperature range is ideal for gently poaching an egg?",
+    "options": [
+      "160°F to 180°F (71°C to 82°C) simmering water",
+      "212°F (100°C) rapid rolling boil",
+      "100°F room warm water",
+      "300°F deep frying oil"
+    ],
+    "answer": "160°F to 180°F (71°C to 82°C) simmering water",
+    "explanation": "Poaching requires simmering water so whites set gently without breaking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Egg Cooking Methods"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #84 (Basic Knife Skills): What is the claw grip method used for when cutting food?",
+    "options": [
+      "Holding knife with both hands",
+      "Gripping food with flat open fingers",
+      "Curling fingertips inward with knuckles guiding the blade safely",
+      "Holding ingredient with thumb extended toward blade"
+    ],
+    "answer": "Curling fingertips inward with knuckles guiding the blade safely",
+    "explanation": "The claw grip protects fingertips from accidental cuts.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Basic Knife Skills"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #85 (Boiling & Simmering): How does simmering differ from boiling?",
+    "options": [
+      "Simmering happens in oven while boiling is on stove",
+      "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+      "Simmering uses oil while boiling uses water",
+      "Boiling is slower than simmering"
+    ],
+    "answer": "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+    "explanation": "Simmering maintains lower heat for delicate cooking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Boiling & Simmering"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #86 (Sautéing Basics): What is the key to successful sautéing?",
+    "options": [
+      "Low heat with food fully submerged in liquid",
+      "Cooking food covered in an oven for hours",
+      "High heat with a small amount of fat in a wide shallow pan",
+      "Using no fat or oil at all"
+    ],
+    "answer": "High heat with a small amount of fat in a wide shallow pan",
+    "explanation": "Sautéing uses high heat and small fat to cook food quickly.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Sautéing Basics"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #87 (Food Hygiene): What is the food safety 'Danger Zone' temperature range for bacteria growth?",
+    "options": [
+      "140°F to 200°F (60°C to 93°C)",
+      "212°F and above",
+      "0°F to 32°F (-18°C to 0°C)",
+      "40°F to 140°F (4°C to 60°C)"
+    ],
+    "answer": "40°F to 140°F (4°C to 60°C)",
+    "explanation": "Bacteria multiply rapidly between 40°F and 140°F.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Food Hygiene"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #88 (Vegetable Prep): What does 'blanching' vegetables mean?",
+    "options": [
+      "Slow roasting in oven with herbs",
+      "Dehydrating vegetables completely",
+      "Scalding briefly in boiling water then shocking in ice water",
+      "Deep frying until crispy"
+    ],
+    "answer": "Scalding briefly in boiling water then shocking in ice water",
+    "explanation": "Blanching cooks briefly and stops cooking via ice bath to preserve color.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Vegetable Prep"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #89 (Common Spices): Which spice comes from the dried stigma of a crocus flower?",
+    "options": [
+      "Turmeric",
+      "Cumin",
+      "Paprika",
+      "Saffron"
+    ],
+    "answer": "Saffron",
+    "explanation": "Saffron is harvested manually from crocus flower stigmas.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Common Spices"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #90 (Salad Making): What is a standard basic vinaigrette ratio of oil to vinegar?",
+    "options": [
+      "5 parts oil to 1 part vinegar",
+      "equal parts oil and vinegar",
+      "3 parts oil to 1 part vinegar",
+      "1 part oil to 3 parts vinegar"
+    ],
+    "answer": "3 parts oil to 1 part vinegar",
+    "explanation": "A classic vinaigrette ratio is 3:1 oil to acid.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Salad Making"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #91 (Kitchen Tools): What is the primary function of a chef's knife in cooking?",
+    "options": [
+      "Peeling small fruits exclusively",
+      "Opening canned goods",
+      "Carving whole poultry",
+      "Multipurpose chopping, slicing, and dicing of ingredients"
+    ],
+    "answer": "Multipurpose chopping, slicing, and dicing of ingredients",
+    "explanation": "A chef's knife is the primary versatile tool in the kitchen.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Kitchen Tools"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #92 (Measuring Ingredients): How should dry flour be accurately measured for baking?",
+    "options": [
+      "Spoon into dry measuring cup and level with a straight edge",
+      "Estimate by hand volume",
+      "Pour into a liquid measuring pitcher",
+      "Scoop and pack tightly into a liquid glass cup"
+    ],
+    "answer": "Spoon into dry measuring cup and level with a straight edge",
+    "explanation": "Flour should be spooned and leveled to prevent over-packing.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Measuring Ingredients"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #93 (Egg Cooking Methods): What water temperature range is ideal for gently poaching an egg?",
+    "options": [
+      "300°F deep frying oil",
+      "100°F room warm water",
+      "212°F (100°C) rapid rolling boil",
+      "160°F to 180°F (71°C to 82°C) simmering water"
+    ],
+    "answer": "160°F to 180°F (71°C to 82°C) simmering water",
+    "explanation": "Poaching requires simmering water so whites set gently without breaking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Egg Cooking Methods"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #94 (Basic Knife Skills): What is the claw grip method used for when cutting food?",
+    "options": [
+      "Holding knife with both hands",
+      "Gripping food with flat open fingers",
+      "Curling fingertips inward with knuckles guiding the blade safely",
+      "Holding ingredient with thumb extended toward blade"
+    ],
+    "answer": "Curling fingertips inward with knuckles guiding the blade safely",
+    "explanation": "The claw grip protects fingertips from accidental cuts.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Basic Knife Skills"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #95 (Boiling & Simmering): How does simmering differ from boiling?",
+    "options": [
+      "Simmering uses oil while boiling uses water",
+      "Boiling is slower than simmering",
+      "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+      "Simmering happens in oven while boiling is on stove"
+    ],
+    "answer": "Simmering has gentle small bubbles (185°F-200°F) while boiling has vigorous large bubbles (212°F)",
+    "explanation": "Simmering maintains lower heat for delicate cooking.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Boiling & Simmering"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #96 (Sautéing Basics): What is the key to successful sautéing?",
+    "options": [
+      "High heat with a small amount of fat in a wide shallow pan",
+      "Using no fat or oil at all",
+      "Cooking food covered in an oven for hours",
+      "Low heat with food fully submerged in liquid"
+    ],
+    "answer": "High heat with a small amount of fat in a wide shallow pan",
+    "explanation": "Sautéing uses high heat and small fat to cook food quickly.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Sautéing Basics"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #97 (Food Hygiene): What is the food safety 'Danger Zone' temperature range for bacteria growth?",
+    "options": [
+      "212°F and above",
+      "40°F to 140°F (4°C to 60°C)",
+      "140°F to 200°F (60°C to 93°C)",
+      "0°F to 32°F (-18°C to 0°C)"
+    ],
+    "answer": "40°F to 140°F (4°C to 60°C)",
+    "explanation": "Bacteria multiply rapidly between 40°F and 140°F.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Food Hygiene"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #98 (Vegetable Prep): What does 'blanching' vegetables mean?",
+    "options": [
+      "Deep frying until crispy",
+      "Dehydrating vegetables completely",
+      "Slow roasting in oven with herbs",
+      "Scalding briefly in boiling water then shocking in ice water"
+    ],
+    "answer": "Scalding briefly in boiling water then shocking in ice water",
+    "explanation": "Blanching cooks briefly and stops cooking via ice bath to preserve color.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Vegetable Prep"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #99 (Common Spices): Which spice comes from the dried stigma of a crocus flower?",
+    "options": [
+      "Paprika",
+      "Cumin",
+      "Turmeric",
+      "Saffron"
+    ],
+    "answer": "Saffron",
+    "explanation": "Saffron is harvested manually from crocus flower stigmas.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Common Spices"
+  },
+  {
+    "question": "[Cooking - Basic] Case Study #100 (Salad Making): What is a standard basic vinaigrette ratio of oil to vinegar?",
+    "options": [
+      "3 parts oil to 1 part vinegar",
+      "equal parts oil and vinegar",
+      "1 part oil to 3 parts vinegar",
+      "5 parts oil to 1 part vinegar"
+    ],
+    "answer": "3 parts oil to 1 part vinegar",
+    "explanation": "A classic vinaigrette ratio is 3:1 oil to acid.",
+    "difficulty": "Basic",
+    "skill": "Cooking",
+    "topic": "Salad Making"
+  }
+]

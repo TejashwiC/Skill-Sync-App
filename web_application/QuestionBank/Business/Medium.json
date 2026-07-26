@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Strategy, Work, Objectives, Targets",
+      "System, Web, Output, Tracking",
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "Sales, Wealth, Operations, Taxes"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Income Statement",
+      "Cash Flow Statement",
+      "Tax Return",
+      "Balance Sheet"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Purchase, Pay, Packaging, Positioning",
+      "Product, Price, Place, Promotion",
+      "Performance, Public, Platform, Power",
+      "Profit, People, Process, Plan"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "What is a contract in business law?",
+    "options": [
+      "A tax form",
+      "A informal verbal suggestion",
+      "A company logo design",
+      "A legally binding agreement between two or more parties"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #5 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "Sales, Wealth, Operations, Taxes",
+      "Strategy, Work, Objectives, Targets",
+      "System, Web, Output, Tracking"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #6 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Balance Sheet",
+      "Tax Return",
+      "Cash Flow Statement",
+      "Income Statement"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #7 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Purchase, Pay, Packaging, Positioning",
+      "Product, Price, Place, Promotion",
+      "Performance, Public, Platform, Power",
+      "Profit, People, Process, Plan"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #8 (Business Law): What is a contract in business law?",
+    "options": [
+      "A legally binding agreement between two or more parties",
+      "A company logo design",
+      "A tax form",
+      "A informal verbal suggestion"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #9 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "Sales, Wealth, Operations, Taxes",
+      "System, Web, Output, Tracking",
+      "Strategy, Work, Objectives, Targets"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #10 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Tax Return",
+      "Cash Flow Statement",
+      "Balance Sheet",
+      "Income Statement"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #11 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Product, Price, Place, Promotion",
+      "Performance, Public, Platform, Power",
+      "Purchase, Pay, Packaging, Positioning",
+      "Profit, People, Process, Plan"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #12 (Business Law): What is a contract in business law?",
+    "options": [
+      "A legally binding agreement between two or more parties",
+      "A tax form",
+      "A company logo design",
+      "A informal verbal suggestion"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #13 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Strategy, Work, Objectives, Targets",
+      "Sales, Wealth, Operations, Taxes",
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "System, Web, Output, Tracking"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #14 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Tax Return",
+      "Income Statement",
+      "Cash Flow Statement",
+      "Balance Sheet"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #15 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Purchase, Pay, Packaging, Positioning",
+      "Product, Price, Place, Promotion",
+      "Profit, People, Process, Plan",
+      "Performance, Public, Platform, Power"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #16 (Business Law): What is a contract in business law?",
+    "options": [
+      "A legally binding agreement between two or more parties",
+      "A tax form",
+      "A company logo design",
+      "A informal verbal suggestion"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #17 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Strategy, Work, Objectives, Targets",
+      "Sales, Wealth, Operations, Taxes",
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "System, Web, Output, Tracking"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #18 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Income Statement",
+      "Balance Sheet",
+      "Tax Return",
+      "Cash Flow Statement"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #19 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Purchase, Pay, Packaging, Positioning",
+      "Performance, Public, Platform, Power",
+      "Profit, People, Process, Plan",
+      "Product, Price, Place, Promotion"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #20 (Business Law): What is a contract in business law?",
+    "options": [
+      "A tax form",
+      "A legally binding agreement between two or more parties",
+      "A informal verbal suggestion",
+      "A company logo design"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #21 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "System, Web, Output, Tracking",
+      "Sales, Wealth, Operations, Taxes",
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "Strategy, Work, Objectives, Targets"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #22 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Tax Return",
+      "Cash Flow Statement",
+      "Income Statement",
+      "Balance Sheet"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #23 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Purchase, Pay, Packaging, Positioning",
+      "Profit, People, Process, Plan",
+      "Product, Price, Place, Promotion",
+      "Performance, Public, Platform, Power"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #24 (Business Law): What is a contract in business law?",
+    "options": [
+      "A company logo design",
+      "A tax form",
+      "A legally binding agreement between two or more parties",
+      "A informal verbal suggestion"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #25 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Strategy, Work, Objectives, Targets",
+      "Sales, Wealth, Operations, Taxes",
+      "System, Web, Output, Tracking",
+      "Strengths, Weaknesses, Opportunities, Threats"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #26 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Balance Sheet",
+      "Cash Flow Statement",
+      "Income Statement",
+      "Tax Return"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #27 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Performance, Public, Platform, Power",
+      "Purchase, Pay, Packaging, Positioning",
+      "Profit, People, Process, Plan",
+      "Product, Price, Place, Promotion"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #28 (Business Law): What is a contract in business law?",
+    "options": [
+      "A informal verbal suggestion",
+      "A legally binding agreement between two or more parties",
+      "A company logo design",
+      "A tax form"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #29 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "System, Web, Output, Tracking",
+      "Strategy, Work, Objectives, Targets",
+      "Sales, Wealth, Operations, Taxes"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #30 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Balance Sheet",
+      "Tax Return",
+      "Income Statement",
+      "Cash Flow Statement"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #31 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Purchase, Pay, Packaging, Positioning",
+      "Product, Price, Place, Promotion",
+      "Profit, People, Process, Plan",
+      "Performance, Public, Platform, Power"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #32 (Business Law): What is a contract in business law?",
+    "options": [
+      "A informal verbal suggestion",
+      "A tax form",
+      "A company logo design",
+      "A legally binding agreement between two or more parties"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #33 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "System, Web, Output, Tracking",
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "Strategy, Work, Objectives, Targets",
+      "Sales, Wealth, Operations, Taxes"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #34 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Income Statement",
+      "Balance Sheet",
+      "Cash Flow Statement",
+      "Tax Return"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #35 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Performance, Public, Platform, Power",
+      "Purchase, Pay, Packaging, Positioning",
+      "Profit, People, Process, Plan",
+      "Product, Price, Place, Promotion"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #36 (Business Law): What is a contract in business law?",
+    "options": [
+      "A informal verbal suggestion",
+      "A legally binding agreement between two or more parties",
+      "A company logo design",
+      "A tax form"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #37 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Sales, Wealth, Operations, Taxes",
+      "System, Web, Output, Tracking",
+      "Strategy, Work, Objectives, Targets",
+      "Strengths, Weaknesses, Opportunities, Threats"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #38 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Cash Flow Statement",
+      "Balance Sheet",
+      "Tax Return",
+      "Income Statement"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #39 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Profit, People, Process, Plan",
+      "Product, Price, Place, Promotion",
+      "Purchase, Pay, Packaging, Positioning",
+      "Performance, Public, Platform, Power"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #40 (Business Law): What is a contract in business law?",
+    "options": [
+      "A tax form",
+      "A company logo design",
+      "A legally binding agreement between two or more parties",
+      "A informal verbal suggestion"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #41 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Sales, Wealth, Operations, Taxes",
+      "Strategy, Work, Objectives, Targets",
+      "System, Web, Output, Tracking",
+      "Strengths, Weaknesses, Opportunities, Threats"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #42 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Income Statement",
+      "Balance Sheet",
+      "Tax Return",
+      "Cash Flow Statement"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #43 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Product, Price, Place, Promotion",
+      "Purchase, Pay, Packaging, Positioning",
+      "Performance, Public, Platform, Power",
+      "Profit, People, Process, Plan"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #44 (Business Law): What is a contract in business law?",
+    "options": [
+      "A company logo design",
+      "A legally binding agreement between two or more parties",
+      "A informal verbal suggestion",
+      "A tax form"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #45 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Sales, Wealth, Operations, Taxes",
+      "System, Web, Output, Tracking",
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "Strategy, Work, Objectives, Targets"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #46 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Tax Return",
+      "Balance Sheet",
+      "Cash Flow Statement",
+      "Income Statement"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #47 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Product, Price, Place, Promotion",
+      "Profit, People, Process, Plan",
+      "Purchase, Pay, Packaging, Positioning",
+      "Performance, Public, Platform, Power"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #48 (Business Law): What is a contract in business law?",
+    "options": [
+      "A company logo design",
+      "A legally binding agreement between two or more parties",
+      "A informal verbal suggestion",
+      "A tax form"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #49 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "System, Web, Output, Tracking",
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "Sales, Wealth, Operations, Taxes",
+      "Strategy, Work, Objectives, Targets"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #50 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Cash Flow Statement",
+      "Tax Return",
+      "Income Statement",
+      "Balance Sheet"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #51 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Purchase, Pay, Packaging, Positioning",
+      "Profit, People, Process, Plan",
+      "Performance, Public, Platform, Power",
+      "Product, Price, Place, Promotion"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #52 (Business Law): What is a contract in business law?",
+    "options": [
+      "A tax form",
+      "A informal verbal suggestion",
+      "A legally binding agreement between two or more parties",
+      "A company logo design"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #53 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Sales, Wealth, Operations, Taxes",
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "System, Web, Output, Tracking",
+      "Strategy, Work, Objectives, Targets"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #54 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Tax Return",
+      "Balance Sheet",
+      "Cash Flow Statement",
+      "Income Statement"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #55 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Purchase, Pay, Packaging, Positioning",
+      "Performance, Public, Platform, Power",
+      "Product, Price, Place, Promotion",
+      "Profit, People, Process, Plan"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #56 (Business Law): What is a contract in business law?",
+    "options": [
+      "A legally binding agreement between two or more parties",
+      "A company logo design",
+      "A informal verbal suggestion",
+      "A tax form"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #57 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "System, Web, Output, Tracking",
+      "Strategy, Work, Objectives, Targets",
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "Sales, Wealth, Operations, Taxes"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #58 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Income Statement",
+      "Tax Return",
+      "Cash Flow Statement",
+      "Balance Sheet"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #59 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Performance, Public, Platform, Power",
+      "Purchase, Pay, Packaging, Positioning",
+      "Profit, People, Process, Plan",
+      "Product, Price, Place, Promotion"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #60 (Business Law): What is a contract in business law?",
+    "options": [
+      "A company logo design",
+      "A informal verbal suggestion",
+      "A tax form",
+      "A legally binding agreement between two or more parties"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #61 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Strategy, Work, Objectives, Targets",
+      "System, Web, Output, Tracking",
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "Sales, Wealth, Operations, Taxes"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #62 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Balance Sheet",
+      "Cash Flow Statement",
+      "Tax Return",
+      "Income Statement"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #63 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Purchase, Pay, Packaging, Positioning",
+      "Performance, Public, Platform, Power",
+      "Profit, People, Process, Plan",
+      "Product, Price, Place, Promotion"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #64 (Business Law): What is a contract in business law?",
+    "options": [
+      "A company logo design",
+      "A legally binding agreement between two or more parties",
+      "A tax form",
+      "A informal verbal suggestion"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #65 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Sales, Wealth, Operations, Taxes",
+      "Strategy, Work, Objectives, Targets",
+      "System, Web, Output, Tracking",
+      "Strengths, Weaknesses, Opportunities, Threats"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #66 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Balance Sheet",
+      "Income Statement",
+      "Cash Flow Statement",
+      "Tax Return"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #67 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Purchase, Pay, Packaging, Positioning",
+      "Performance, Public, Platform, Power",
+      "Product, Price, Place, Promotion",
+      "Profit, People, Process, Plan"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #68 (Business Law): What is a contract in business law?",
+    "options": [
+      "A informal verbal suggestion",
+      "A company logo design",
+      "A tax form",
+      "A legally binding agreement between two or more parties"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #69 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "System, Web, Output, Tracking",
+      "Strategy, Work, Objectives, Targets",
+      "Sales, Wealth, Operations, Taxes",
+      "Strengths, Weaknesses, Opportunities, Threats"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #70 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Tax Return",
+      "Income Statement",
+      "Balance Sheet",
+      "Cash Flow Statement"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #71 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Product, Price, Place, Promotion",
+      "Profit, People, Process, Plan",
+      "Purchase, Pay, Packaging, Positioning",
+      "Performance, Public, Platform, Power"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #72 (Business Law): What is a contract in business law?",
+    "options": [
+      "A legally binding agreement between two or more parties",
+      "A company logo design",
+      "A tax form",
+      "A informal verbal suggestion"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #73 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Sales, Wealth, Operations, Taxes",
+      "Strategy, Work, Objectives, Targets",
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "System, Web, Output, Tracking"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #74 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Tax Return",
+      "Balance Sheet",
+      "Income Statement",
+      "Cash Flow Statement"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #75 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Profit, People, Process, Plan",
+      "Product, Price, Place, Promotion",
+      "Purchase, Pay, Packaging, Positioning",
+      "Performance, Public, Platform, Power"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #76 (Business Law): What is a contract in business law?",
+    "options": [
+      "A legally binding agreement between two or more parties",
+      "A tax form",
+      "A company logo design",
+      "A informal verbal suggestion"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #77 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "Sales, Wealth, Operations, Taxes",
+      "System, Web, Output, Tracking",
+      "Strategy, Work, Objectives, Targets"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #78 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Cash Flow Statement",
+      "Balance Sheet",
+      "Tax Return",
+      "Income Statement"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #79 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Profit, People, Process, Plan",
+      "Performance, Public, Platform, Power",
+      "Product, Price, Place, Promotion",
+      "Purchase, Pay, Packaging, Positioning"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #80 (Business Law): What is a contract in business law?",
+    "options": [
+      "A informal verbal suggestion",
+      "A legally binding agreement between two or more parties",
+      "A tax form",
+      "A company logo design"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #81 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Sales, Wealth, Operations, Taxes",
+      "System, Web, Output, Tracking",
+      "Strategy, Work, Objectives, Targets",
+      "Strengths, Weaknesses, Opportunities, Threats"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #82 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Cash Flow Statement",
+      "Income Statement",
+      "Balance Sheet",
+      "Tax Return"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #83 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Product, Price, Place, Promotion",
+      "Performance, Public, Platform, Power",
+      "Purchase, Pay, Packaging, Positioning",
+      "Profit, People, Process, Plan"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #84 (Business Law): What is a contract in business law?",
+    "options": [
+      "A tax form",
+      "A company logo design",
+      "A informal verbal suggestion",
+      "A legally binding agreement between two or more parties"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #85 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "System, Web, Output, Tracking",
+      "Strategy, Work, Objectives, Targets",
+      "Sales, Wealth, Operations, Taxes",
+      "Strengths, Weaknesses, Opportunities, Threats"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #86 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Cash Flow Statement",
+      "Income Statement",
+      "Tax Return",
+      "Balance Sheet"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #87 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Profit, People, Process, Plan",
+      "Performance, Public, Platform, Power",
+      "Purchase, Pay, Packaging, Positioning",
+      "Product, Price, Place, Promotion"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #88 (Business Law): What is a contract in business law?",
+    "options": [
+      "A legally binding agreement between two or more parties",
+      "A tax form",
+      "A company logo design",
+      "A informal verbal suggestion"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #89 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Sales, Wealth, Operations, Taxes",
+      "Strategy, Work, Objectives, Targets",
+      "System, Web, Output, Tracking",
+      "Strengths, Weaknesses, Opportunities, Threats"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #90 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Cash Flow Statement",
+      "Balance Sheet",
+      "Tax Return",
+      "Income Statement"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #91 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Purchase, Pay, Packaging, Positioning",
+      "Profit, People, Process, Plan",
+      "Product, Price, Place, Promotion",
+      "Performance, Public, Platform, Power"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #92 (Business Law): What is a contract in business law?",
+    "options": [
+      "A informal verbal suggestion",
+      "A company logo design",
+      "A tax form",
+      "A legally binding agreement between two or more parties"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #93 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "System, Web, Output, Tracking",
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "Strategy, Work, Objectives, Targets",
+      "Sales, Wealth, Operations, Taxes"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #94 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Tax Return",
+      "Cash Flow Statement",
+      "Income Statement",
+      "Balance Sheet"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #95 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Purchase, Pay, Packaging, Positioning",
+      "Profit, People, Process, Plan",
+      "Product, Price, Place, Promotion",
+      "Performance, Public, Platform, Power"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #96 (Business Law): What is a contract in business law?",
+    "options": [
+      "A tax form",
+      "A informal verbal suggestion",
+      "A company logo design",
+      "A legally binding agreement between two or more parties"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  },
+  {
+    "question": "[Business - Medium] Case Study #97 (SWOT Analysis): What does SWOT stand for in strategic business analysis?",
+    "options": [
+      "Sales, Wealth, Operations, Taxes",
+      "System, Web, Output, Tracking",
+      "Strategy, Work, Objectives, Targets",
+      "Strengths, Weaknesses, Opportunities, Threats"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats",
+    "explanation": "SWOT evaluates internal S/W and external O/T factors.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "SWOT Analysis"
+  },
+  {
+    "question": "[Business - Medium] Case Study #98 (Financial Statements): Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+    "options": [
+      "Tax Return",
+      "Income Statement",
+      "Cash Flow Statement",
+      "Balance Sheet"
+    ],
+    "answer": "Balance Sheet",
+    "explanation": "Balance Sheet snapshot equation: Assets = Liabilities + Owner's Equity.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Financial Statements"
+  },
+  {
+    "question": "[Business - Medium] Case Study #99 (Marketing Basics): What are the traditional 4 Ps of Marketing?",
+    "options": [
+      "Product, Price, Place, Promotion",
+      "Purchase, Pay, Packaging, Positioning",
+      "Profit, People, Process, Plan",
+      "Performance, Public, Platform, Power"
+    ],
+    "answer": "Product, Price, Place, Promotion",
+    "explanation": "The 4 Ps form the foundational marketing mix framework.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Marketing Basics"
+  },
+  {
+    "question": "[Business - Medium] Case Study #100 (Business Law): What is a contract in business law?",
+    "options": [
+      "A company logo design",
+      "A informal verbal suggestion",
+      "A tax form",
+      "A legally binding agreement between two or more parties"
+    ],
+    "answer": "A legally binding agreement between two or more parties",
+    "explanation": "A contract requires offer, acceptance, consideration, and legal intent.",
+    "difficulty": "Medium",
+    "skill": "Business",
+    "topic": "Business Law"
+  }
+]

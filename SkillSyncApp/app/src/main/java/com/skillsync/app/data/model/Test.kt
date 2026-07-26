@@ -10,6 +10,8 @@ data class Test(
     val creatorName: String = "",
     val title: String = "",
     val skill: String = "",
+    val difficulty: String = "Basic",
+    val questionCount: Long = 5L,
     val credits: Long = 0L,
     @ServerTimestamp val createdAt: Date? = null
 )

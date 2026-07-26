@@ -144,7 +144,7 @@ window.showSection = function (id) {
   } else if (id === "session") {
     loadHostSessionPanel();
   } else if (id === "testSection") {
-    loadAvailableTests();
+    if (typeof backTestDashboard === "function") backTestDashboard();
   } else if (id === "chat") {
     loadChatUsers();
     loadChatUserList();
@@ -173,6 +173,14 @@ function listenHomeStats() {
     query(collection(db, "testAttempts"), where("userId", "==", user.uid)),
     snap => {
       if (el("homeTestsCompleted")) el("homeTestsCompleted").innerText = snap.size;
+    }
+  );
+
+  // Listen to completed sessions created by this user (real-time)
+  onSnapshot(
+    query(collection(db, "sessions"), where("hostId", "==", user.uid), where("status", "==", "ended")),
+    snap => {
+      if (el("homeSessions")) el("homeSessions").innerText = snap.size;
     }
   );
 }
@@ -1766,9 +1774,7 @@ window.loadLiveSessions = function () {
             <p style="margin:5px 0;color:#555;font-size:13px;">⏱ Running: ${formatDuration(d.startTime)}</p>
             <p style="margin:5px 0;color:#555;font-size:13px;">👥 Participants: ${d.participants?.length || 0}</p>
             <div style="margin-top:14px;background:#eaf4fb;border-radius:10px;padding:14px;text-align:center;">
-              <p style="margin:0 0 4px;font-size:12px;color:#3498db;font-weight:700;letter-spacing:1px;">SESSION 6-DIGIT PASSCODE</p>
-              <p style="margin:0;font-size:32px;font-weight:800;letter-spacing:10px;color:#2c3e50;">${d.code}</p>
-              <p style="margin:10px 0 0;font-size:12px;color:#27ae60;font-weight:700;"><i class="fas fa-arrow-up-right-from-square"></i> Click Session to Open Meeting Link</p>
+              <p style="margin:0;font-size:14px;color:#27ae60;font-weight:700;"><i class="fas fa-arrow-up-right-from-square"></i> Click Session to Open Meeting Link Directly</p>
             </div>
           </div>`;
       });
@@ -2267,8 +2273,6 @@ window.trackPDFDownload = async function (pdfId) {
 let currentTestId   = null;
 let currentTestData = null;
 let userAnswers     = {};
-let myTestsUnsubscribe = null;
-let testHistoryUnsubscribe = null;
 
 window.recordAnswer = function (input) {
   const qId = input.getAttribute("data-qid");
@@ -2288,15 +2292,23 @@ window.recordAnswer = function (input) {
 };
 
 window.openTestScreen = function (screenId) {
-  const dash = el("testDashboard");
-  if (dash) dash.style.display = "none";
+  if (el("testDashboard")) el("testDashboard").style.display = "none";
   document.querySelectorAll("#testSection .screen").forEach(s => s.style.display = "none");
   const screen = el(screenId);
   if (screen) screen.style.display = "block";
-  if (screenId === "createTestScreen") { loadMyTests(); loadTestHistory(); }
-  else if (screenId === "addQuestionScreen") loadMyTests();
-  else if (screenId === "attendTestScreen") loadAvailableTests();
-  else if (screenId === "testHistoryScreen") loadTestHistory();
+  if (screenId === "prepareTestScreen") {
+    if (typeof onQbSkillOrDiffChange === "function") onQbSkillOrDiffChange();
+  } else if (screenId === "attendTestScreen") {
+    const availablePanel = el("availableTests");
+    const questionsPanel = el("testQuestions");
+    const resultsPanel   = el("resultsContainer");
+    if (availablePanel) availablePanel.style.display = "block";
+    if (questionsPanel) questionsPanel.style.display  = "none";
+    if (resultsPanel)   resultsPanel.style.display    = "none";
+    loadAvailableTests();
+  } else if (screenId === "testHistoryScreen") {
+    loadTestHistory();
+  }
 };
 
 window.backTestDashboard = function () {
@@ -2330,34 +2342,20 @@ window.loadMyTests = function () {
   if (!user) return;
   const testList   = el("myTestsList") || el("testList");
   const testSelect = el("testSelect");
-  if (!testList && !testSelect) return;
-
-  if (myTestsUnsubscribe) {
-    myTestsUnsubscribe();
-    myTestsUnsubscribe = null;
-  }
-
-  myTestsUnsubscribe = onSnapshot(
+  onSnapshot(
     query(collection(db, "tests"), where("creatorId", "==", user.uid)),
     async snap => {
-      let listHtml = "";
-      let selectHtml = "<option value=''>-- Select Test --</option>";
-
+      if (testList)   testList.innerHTML   = "";
+      if (testSelect) testSelect.innerHTML = "<option value=''>-- Select Test --</option>";
       if (snap.empty) {
         if (testList) testList.innerHTML = `<p style="color:#888;text-align:center;padding:20px;">No tests created yet</p>`;
-        if (testSelect) testSelect.innerHTML = selectHtml;
         return;
       }
-
-      const counts = await Promise.all(snap.docs.map(async docSnap => {
-        const qSnap = await getDocs(query(collection(db, "questions"), where("testId", "==", docSnap.id)));
-        return qSnap.size;
-      }));
-
-      snap.docs.forEach((docSnap, index) => {
-        const d = docSnap.data();
+      for (const docSnap of snap.docs) {
+        const d  = docSnap.data();
         const id = docSnap.id;
-        const count = counts[index];
+        const qSnap = await getDocs(query(collection(db, "questions"), where("testId", "==", id)));
+        const count = qSnap.size;
 
         listHtml += `
           <div class="card" style="border-left:4px solid #3498db;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;padding:16px;">
@@ -2371,10 +2369,9 @@ window.loadMyTests = function () {
               🗑 Delete
             </button>
           </div>`;
-
+        
         selectHtml += `<option value="${id}">${d.title} (${count}/5 Qs)</option>`;
-      });
-
+      }
       if (testList) testList.innerHTML = listHtml;
       if (testSelect) testSelect.innerHTML = selectHtml;
     }
@@ -2520,19 +2517,16 @@ window.loadAvailableTests = async function () {
     }
 
     container.innerHTML = "";
-    if (!allTests.length) {
-      container.innerHTML = `
-        <div style="text-align:center;padding:40px 20px;color:#888;">
-          <div style="font-size:48px;margin-bottom:12px;">📝</div>
-          <p style="font-size:15px;font-weight:600;margin:0 0 6px;color:#555;">No tests available</p>
-          <p style="font-size:13px;margin:0;">You have attended all available tests or your connections haven't created any new tests.</p>
-        </div>`;
-      return;
-    }
+    let validTestsCount = 0;
 
     for (const test of allTests) {
       const qSnap = await getDocs(query(collection(db, "questions"), where("testId", "==", test.id)));
       const qCount = qSnap.size;
+      
+      // Skip tests with 0 questions
+      if (qCount === 0) continue;
+      
+      validTestsCount++;
       container.innerHTML += `
         <div class="card" style="border-left:4px solid #27ae60;margin-bottom:14px;background:#f9fbf9;border:1px solid #e2e8f0;padding:16px;border-radius:12px;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -2548,8 +2542,151 @@ window.loadAvailableTests = async function () {
           </button>
         </div>`;
     }
+
+    if (validTestsCount === 0) {
+      container.innerHTML = `
+        <div style="text-align:center;padding:40px 20px;color:#888;">
+          <div style="font-size:48px;margin-bottom:12px;">📝</div>
+          <p style="font-size:15px;font-weight:600;margin:0 0 6px;color:#555;">No tests available</p>
+          <p style="font-size:13px;margin:0;">You have attended all available tests or your connections haven't published any tests with questions yet.</p>
+        </div>`;
+    }
   } catch (err) {
     container.innerHTML = `<p style="color:#ef4444;">Error loading tests: ${err.message}</p>`;
+  }
+};
+
+/* ================================================
+   QUESTION BANK & PREPARE TEST MODULE
+   ================================================ */
+let preparedQuestionsBank = [];
+let currentTestStartTime = null;
+
+window.onQbSkillOrDiffChange = function () {
+  const preview = el("qbQuestionsPreview");
+  if (preview) preview.style.display = "none";
+  preparedQuestionsBank = [];
+};
+
+window.loadRandom5Questions = async function () {
+  const skill = el("qbSkillSelect")?.value;
+  const diffRadio = document.querySelector('input[name="qbDifficulty"]:checked');
+  const difficulty = diffRadio ? diffRadio.value : "Basic";
+
+  if (!skill) {
+    alert("Please select a skill first.");
+    return;
+  }
+
+  const listContainer = el("qbQuestionsList");
+  const previewContainer = el("qbQuestionsPreview");
+  if (!listContainer || !previewContainer) return;
+
+  listContainer.innerHTML = `<div style="text-align:center;padding:24px;color:#3b82f6;font-weight:700;"><i class="fas fa-spinner fa-spin"></i> Fetching 5 random questions from QuestionBank/${skill}/${difficulty}.json...</div>`;
+  previewContainer.style.display = "block";
+
+  try {
+    const jsonUrl = `./QuestionBank/${encodeURIComponent(skill)}/${difficulty}.json`;
+    const resp = await fetch(jsonUrl);
+    if (!resp.ok) {
+      throw new Error(`Could not load ${jsonUrl}`);
+    }
+    const allQuestions = await resp.json();
+    if (!Array.isArray(allQuestions) || allQuestions.length === 0) {
+      throw new Error("Question Bank file is empty.");
+    }
+
+    // Shuffle and select 5 distinct non-duplicate questions
+    const shuffled = [...allQuestions].sort(() => 0.5 - Math.random());
+    preparedQuestionsBank = shuffled.slice(0, 5);
+
+    listContainer.innerHTML = "";
+    preparedQuestionsBank.forEach((q, idx) => {
+      const optionsHtml = q.options.map(opt => `
+        <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:8px 12px; border-radius:6px; margin:4px 0; font-size:13px; color:#334155; ${opt === q.answer ? 'border-left:4px solid #10b981; font-weight:700; background:#f0fdf4;' : ''}">
+          ${opt} ${opt === q.answer ? '<span style="color:#10b981; float:right; font-size:11px;">✓ Correct Answer</span>' : ''}
+        </div>
+      `).join("");
+
+      listContainer.innerHTML += `
+        <div class="card" style="border-left:4px solid #3b82f6; margin-bottom:14px; background:#ffffff; padding:16px; border-radius:12px; border:1px solid #e2e8f0;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+            <span style="font-weight:700; color:#3b82f6; font-size:14px;">Question ${idx + 1} of 5</span>
+            <span style="background:#e0f2fe; color:#0369a1; padding:2px 8px; border-radius:12px; font-size:11px; font-weight:700;">Topic: ${q.topic || skill}</span>
+          </div>
+          <p style="font-weight:700; color:#1e293b; margin:0 0 10px; font-size:14px;">${q.question}</p>
+          ${optionsHtml}
+          <p style="margin:10px 0 0; font-size:12px; color:#64748b; background:#f1f5f9; padding:8px 12px; border-radius:6px; border-left:3px solid #3b82f6;">
+            💡 <b>Explanation:</b> ${q.explanation}
+          </p>
+        </div>`;
+    });
+
+  } catch (err) {
+    listContainer.innerHTML = `<p style="color:#ef4444; font-weight:700; text-align:center; padding:16px;">Error loading Question Bank: ${err.message}</p>`;
+  }
+};
+
+window.publishPreparedTest = async function () {
+  const user = auth.currentUser;
+  if (!user) return;
+  const skill = el("qbSkillSelect")?.value;
+  const diffRadio = document.querySelector('input[name="qbDifficulty"]:checked');
+  const difficulty = diffRadio ? diffRadio.value : "Basic";
+
+  if (!skill || !preparedQuestionsBank || preparedQuestionsBank.length !== 5) {
+    alert("Please fetch 5 random questions first before publishing.");
+    return;
+  }
+
+  try {
+    const userSnap = await getDoc(doc(db, "users", user.uid));
+    const creatorName = userSnap.data()?.name || user.displayName || "Creator";
+    const testTitle = `${skill} (${difficulty}) Test`;
+
+    // 1. Save Test Document to Firestore
+    const testRef = await addDoc(collection(db, "tests"), {
+      creatorId: user.uid,
+      creatorName: creatorName,
+      title: testTitle,
+      skill: skill,
+      difficulty: difficulty,
+      questionCount: 5,
+      createdAt: serverTimestamp()
+    });
+
+    // 2. Save each of the 5 questions to Firestore `questions` collection
+    for (const q of preparedQuestionsBank) {
+      await addDoc(collection(db, "questions"), {
+        testId: testRef.id,
+        creatorId: user.uid,
+        question: q.question,
+        option1: q.options[0] || "",
+        option2: q.options[1] || "",
+        option3: q.options[2] || "",
+        option4: q.options[3] || "",
+        correctAnswer: q.answer,
+        explanation: q.explanation || "",
+        difficulty: difficulty,
+        skill: skill,
+        topic: q.topic || "",
+        createdAt: serverTimestamp()
+      });
+    }
+
+    alert(`✅ Test Published Successfully!\n"${testTitle}" with 5 Question Bank questions is published and visible to your connected followers.`);
+    
+    // Reset form & state
+    preparedQuestionsBank = [];
+    if (el("qbQuestionsPreview")) el("qbQuestionsPreview").style.display = "none";
+    if (el("qbSkillSelect")) el("qbSkillSelect").value = "";
+    
+    if (typeof loadMyTests === "function") loadMyTests();
+    if (typeof loadTestHistory === "function") loadTestHistory();
+
+    openTestScreen("testHistoryScreen");
+  } catch (err) {
+    alert("Error publishing test: " + err.message);
   }
 };
 
@@ -2558,12 +2695,13 @@ window.startTest = async function (testId) {
   if (!user) return;
   currentTestId   = testId;
   userAnswers     = {};
+  currentTestStartTime = Date.now();
 
   const testSnap  = await getDoc(doc(db, "tests", testId));
   currentTestData = testSnap.data();
   const qSnap = await getDocs(query(collection(db, "questions"), where("testId", "==", testId)));
 
-  const availablePanel = el("attendTestScreen");
+  const availablePanel = el("availableTests");
   const questionsPanel = el("testQuestions");
   const resultsPanel   = el("resultsContainer");
 
@@ -2587,8 +2725,8 @@ window.startTest = async function (testId) {
 
   questionsPanel.innerHTML = `
     <div style="background:linear-gradient(135deg,#3498db,#2c3e50);color:#fff;padding:18px;border-radius:12px;margin-bottom:18px;text-align:center;">
-      <h2 style="margin:0 0 4px;">${currentTestData?.title || "Test"}</h2>
-      <p style="margin:0;opacity:0.85;font-size:13px;">${qSnap.size} question(s) (Max 5)</p>
+      <h2 style="margin:0 0 4px;">${currentTestData?.title || "Skill Test"}</h2>
+      <p style="margin:0;opacity:0.85;font-size:13px;">Skill: <b>${currentTestData?.skill || "General"}</b> | Level: <b>${currentTestData?.difficulty || "Basic"}</b> | ${qSnap.size} Question(s)</p>
     </div>`;
 
   let qIndex = 0;
@@ -2596,7 +2734,7 @@ window.startTest = async function (testId) {
     qIndex++;
     const q   = docSnap.data();
     const qId = docSnap.id;
-    const options = [q.option1, q.option2, q.option3, q.option4];
+    const options = [q.option1, q.option2, q.option3, q.option4].filter(Boolean);
 
     const optionItems = options.map(opt => {
       const safeValue = opt.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
@@ -2614,7 +2752,11 @@ window.startTest = async function (testId) {
 
     questionsPanel.innerHTML += `
       <div class="card" style="margin-bottom:16px;border-left:3px solid #3498db;" id="qcard_${qId}">
-        <h3 style="margin:0 0 14px;font-size:15px;color:#2c3e50;line-height:1.4;">${qIndex}. ${q.question}</h3>
+        <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+          <span style="font-size:12px; font-weight:700; color:#3b82f6;">Question ${qIndex}</span>
+          ${q.topic ? `<span style="font-size:11px; background:#e0f2fe; color:#0369a1; padding:2px 8px; border-radius:10px; font-weight:700;">${q.topic}</span>` : ''}
+        </div>
+        <h3 style="margin:0 0 14px;font-size:15px;color:#2c3e50;line-height:1.4;">${q.question}</h3>
         ${optionItems}
       </div>`;
   });
@@ -2627,7 +2769,7 @@ window.startTest = async function (testId) {
 };
 
 window.backToTestList = function () {
-  const availablePanel = el("attendTestScreen");
+  const availablePanel = el("availableTests");
   const questionsPanel = el("testQuestions");
   const resultsPanel   = el("resultsContainer");
   if (questionsPanel) questionsPanel.style.display = "none";
@@ -2643,6 +2785,13 @@ window.backToTestList = function () {
 window.completeTest = async function () {
   const user = auth.currentUser;
   if (!user || !currentTestId) return;
+  
+  const endTime = Date.now();
+  const timeTakenSec = Math.max(1, Math.round((endTime - (currentTestStartTime || endTime)) / 1000));
+  const mins = Math.floor(timeTakenSec / 60);
+  const secs = timeTakenSec % 60;
+  const timeTakenStr = mins > 0 ? `${mins}m ${secs}s` : `${secs}s`;
+
   const qSnap = await getDocs(query(collection(db, "questions"), where("testId", "==", currentTestId)));
   let score = 0, total = 0;
   const results = [];
@@ -2652,15 +2801,38 @@ window.completeTest = async function () {
     const selected = userAnswers[docSnap.id];
     const isCorrect = selected === q.correctAnswer;
     if (isCorrect) score++;
-    results.push({ question: q.question, selected: selected || "Not answered", correct: q.correctAnswer, isCorrect });
+    results.push({
+      question: q.question,
+      selected: selected || "Not answered",
+      correct: q.correctAnswer,
+      explanation: q.explanation || "No explanation available.",
+      isCorrect
+    });
   });
 
+  const wrongCount = total - score;
   const percentage = total > 0 ? Math.round((score / total) * 100) : 0;
   
+  let userName = user.displayName || "User";
+  try {
+    const uSnap = await getDoc(doc(db, "users", user.uid));
+    if (uSnap.exists() && uSnap.data()?.name) userName = uSnap.data().name;
+  } catch (e) {}
+
   await addDoc(collection(db, "testAttempts"), {
-    userId: user.uid, testId: currentTestId,
+    userId: user.uid,
+    userName: userName,
+    testId: currentTestId,
     testTitle: currentTestData?.title || "Skill Test",
-    score, total, percentage,
+    skill: currentTestData?.skill || "General",
+    difficulty: currentTestData?.difficulty || "Basic",
+    score,
+    total,
+    correctAnswers: score,
+    wrongAnswers: wrongCount,
+    percentage,
+    timeTakenSec,
+    timeTakenStr,
     attemptedAt: serverTimestamp()
   });
 
@@ -2671,44 +2843,57 @@ window.completeTest = async function () {
 
   if (resultsPanel) {
     const resultRows = results.map(r => `
-      <div style="padding:10px 12px;margin:6px 0;border-radius:8px;
+      <div style="padding:12px 14px;margin:8px 0;border-radius:10px;
                   background:${r.isCorrect ? '#f0fdf4' : '#fff5f5'};
-                  border-left:4px solid ${r.isCorrect ? '#27ae60' : '#e74c3c'};">
-        <p style="margin:0 0 4px;font-weight:600;font-size:13px;color:#2c3e50;">${r.question}</p>
-        <p style="margin:0;font-size:12px;color:#555;">Your answer: <b>${r.selected}</b> ${r.isCorrect ? '✅' : '❌'}</p>
-        ${!r.isCorrect ? `<p style="margin:2px 0 0;font-size:12px;color:#27ae60;">Correct: <b>${r.correct}</b></p>` : ""}
+                  border-left:4px solid ${r.isCorrect ? '#27ae60' : '#e74c3c'}; border:1px solid ${r.isCorrect ? '#bbf7d0' : '#fecaca'};">
+        <p style="margin:0 0 6px;font-weight:700;font-size:14px;color:#2c3e50;">${r.question}</p>
+        <p style="margin:0 0 4px;font-size:13px;color:#555;">Your answer: <b>${r.selected}</b> ${r.isCorrect ? '✅' : '❌'}</p>
+        ${!r.isCorrect ? `<p style="margin:2px 0 4px;font-size:13px;color:#27ae60;">Correct answer: <b>${r.correct}</b></p>` : ""}
+        <p style="margin:6px 0 0;font-size:12px;color:#64748b;background:#ffffff;padding:8px;border-radius:6px;border:1px dashed #cbd5e1;">
+          💡 <b>Explanation:</b> ${r.explanation}
+        </p>
       </div>`).join("");
 
     resultsPanel.innerHTML = `
-      <div style="background:#fff;border-radius:14px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.08);border:2px solid #27ae60;text-align:center;">
-        <div style="font-size:60px;line-height:1;margin-bottom:10px;">🎉</div>
-        <h2 style="margin:0 0 6px;color:#27ae60;font-size:24px;font-weight:800;">Congratulations!</h2>
-        <p style="margin:0 0 16px;color:#2c3e50;font-size:16px;font-weight:700;">You did a great job!</p>
+      <div style="background:#fff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.08);border:2px solid #27ae60;text-align:center;">
+        <div style="font-size:56px;line-height:1;margin-bottom:10px;">🎉</div>
+        <h2 style="margin:0 0 6px;color:#27ae60;font-size:24px;font-weight:800;">Test Completed!</h2>
         <p style="margin:0 0 16px;color:#7f8c8d;font-size:14px;">Test: <b>${currentTestData?.title || "Skill Test"}</b></p>
         
-        <div style="display:flex;justify-content:center;gap:16px;margin-bottom:22px;">
-          <div style="background:#f8f9fa;padding:14px 24px;border-radius:12px;text-align:center;border:1px solid #e9ecef;">
-            <div style="font-size:32px;font-weight:800;color:#27ae60;">${score} / ${total}</div>
-            <div style="font-size:12px;color:#888;margin-top:2px;font-weight:700;">SCORE</div>
+        <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:10px; margin-bottom:22px;">
+          <div style="background:#f8f9fa;padding:10px;border-radius:10px;border:1px solid #e9ecef;">
+            <div style="font-size:20px;font-weight:800;color:#2c3e50;">${total}</div>
+            <div style="font-size:10px;color:#888;font-weight:700;margin-top:2px;">TOTAL Qs</div>
           </div>
-          <div style="background:#f8f9fa;padding:14px 24px;border-radius:12px;text-align:center;border:1px solid #e9ecef;">
-            <div style="font-size:32px;font-weight:800;color:#3b82f6;">${percentage}%</div>
-            <div style="font-size:12px;color:#888;margin-top:2px;font-weight:700;">ACCURACY</div>
+          <div style="background:#f0fdf4;padding:10px;border-radius:10px;border:1px solid #bbf7d0;">
+            <div style="font-size:20px;font-weight:800;color:#166534;">${score}</div>
+            <div style="font-size:10px;color:#15803d;font-weight:700;margin-top:2px;">CORRECT</div>
+          </div>
+          <div style="background:#fef2f2;padding:10px;border-radius:10px;border:1px solid #fecaca;">
+            <div style="font-size:20px;font-weight:800;color:#991b1b;">${wrongCount}</div>
+            <div style="font-size:10px;color:#b91c1c;font-weight:700;margin-top:2px;">WRONG</div>
+          </div>
+          <div style="background:#eff6ff;padding:10px;border-radius:10px;border:1px solid #bfdbfe;">
+            <div style="font-size:20px;font-weight:800;color:#1e40af;">${percentage}%</div>
+            <div style="font-size:10px;color:#1d4ed8;font-weight:700;margin-top:2px;">ACCURACY</div>
           </div>
         </div>
 
+        <div style="background:#f8fafc; padding:10px; border-radius:8px; margin-bottom:18px; text-align:center; font-size:13px; font-weight:700; color:#3b82f6;">
+          ⏱️ Time Taken: ${timeTakenStr}
+        </div>
+
         <div style="text-align:left;">
-          <h4 style="margin:0 0 10px;color:#2c3e50;font-size:14px;">📋 Question Review</h4>
+          <h4 style="margin:0 0 10px;color:#2c3e50;font-size:15px;"><i class="fas fa-list-check"></i> Detailed Review & Explanations</h4>
           ${resultRows}
         </div>
 
         <button onclick="backToTestList()"
                 style="width:100%;padding:14px;background:#27ae60;color:#fff;border:none;border-radius:10px;cursor:pointer;font-size:15px;font-weight:700;margin-top:20px;">
-          ← Back to Tests
+          ← Back to Available Tests
         </button>
       </div>`;
   }
-
   currentTestId   = null;
   currentTestData = null;
   userAnswers     = {};
@@ -2738,26 +2923,79 @@ window.loadTestHistory = function () {
     if (!latestCreatedDocs.length) {
       createdHtml = `<p style="color:#888;font-size:13px;padding:10px 0;">No tests created by you yet.</p>`;
     } else {
-      const counts = await Promise.all(latestCreatedDocs.map(async docSnap => {
-        const qSnap = await getDocs(query(collection(db, "questions"), where("testId", "==", docSnap.id)));
-        return qSnap.size;
+      const createdAttemptsList = await Promise.all(latestCreatedDocs.map(async docSnap => {
+        const testId = docSnap.id;
+        const qSnap = await getDocs(query(collection(db, "questions"), where("testId", "==", testId)));
+        const qCount = qSnap.size;
+        const attemptsSnap = await getDocs(query(collection(db, "testAttempts"), where("testId", "==", testId)));
+        
+        const attendees = await Promise.all(attemptsSnap.docs.map(async aDoc => {
+          const aData = aDoc.data();
+          let name = aData.userName;
+          if (!name && aData.userId) {
+            try {
+              const uSnap = await getDoc(doc(db, "users", aData.userId));
+              name = uSnap.data()?.name || "User";
+            } catch { name = "User"; }
+          }
+          const dateStr = aData.attemptedAt?.toDate ? aData.attemptedAt.toDate().toLocaleDateString() : "Recently";
+          const timeStr = aData.timeTakenStr || (aData.timeTakenSec ? `${aData.timeTakenSec}s` : "N/A");
+          return {
+            attendeeName: name || "User",
+            score: aData.score ?? 0,
+            total: aData.total ?? 5,
+            percentage: aData.percentage ?? 0,
+            timeTaken: timeStr,
+            dateStr: dateStr
+          };
+        }));
+
+        return { qCount, attendees };
       }));
 
       latestCreatedDocs.forEach((docSnap, index) => {
         const d = docSnap.data();
         const id = docSnap.id;
-        const qCount = counts[index];
-        createdHtml += `
-          <div style="background:#f8f9fa; border-radius:10px; padding:12px 16px; border:1px solid #e9ecef; margin-bottom:10px; display:flex; justify-content:space-between; align-items:center;">
-            <div style="flex:1;">
-              <b style="font-size:15px; color:#2c3e50;">${d.title}</b>
-              <div style="font-size:12px; color:#7f8c8d; margin-top:2px;">
-                Topic: ${d.skill} | ❓ Questions: ${qCount}/5 max
+        const info = createdAttemptsList[index];
+        const dateStr = d.createdAt?.toDate ? d.createdAt.toDate().toLocaleDateString() : "Recently";
+
+        let attendeesHtml = "";
+        if (!info.attendees.length) {
+          attendeesHtml = `<p style="font-size:12px; color:#888; margin:8px 0 0;"><i class="fas fa-info-circle"></i> No users have attended this test yet.</p>`;
+        } else {
+          const attendeeRows = info.attendees.map(a => `
+            <div style="display:flex; justify-content:space-between; align-items:center; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #e2e8f0; font-size:12px; margin-top:4px;">
+              <div>
+                <b style="color:#1e293b;"><i class="fas fa-user"></i> ${a.attendeeName}</b>
+                <span style="color:#64748b; font-size:11px; margin-left:8px;">📅 ${a.dateStr}</span>
+              </div>
+              <div>
+                <span style="background:#f0fdf4; color:#166534; font-weight:700; padding:3px 8px; border-radius:10px; margin-right:6px;">Score: ${a.score}/${a.total} (${a.percentage}%)</span>
+                <span style="background:#eff6ff; color:#1d4ed8; font-weight:700; padding:3px 8px; border-radius:10px;">⏱️ ${a.timeTaken}</span>
               </div>
             </div>
-            <button onclick="deleteTest('${id}')" style="width:auto !important; max-width:120px; flex-shrink:0; margin-left:12px; background:#fee2e2; color:#ef4444; border:1px solid #fca5a5; padding:7px 14px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer;">
-              🗑 Delete
-            </button>
+          `).join("");
+
+          attendeesHtml = `
+            <div style="margin-top:10px; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:10px;">
+              <b style="font-size:12px; color:#3b82f6; display:block; margin-bottom:4px;"><i class="fas fa-users"></i> Test Attendees (${info.attendees.length}):</b>
+              ${attendeeRows}
+            </div>`;
+        }
+
+        createdHtml += `
+          <div style="background:#f8fafc; border-radius:12px; padding:14px 16px; border:1px solid #e2e8f0; margin-bottom:14px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+              <div>
+                <b style="font-size:16px; color:#1e293b;">${d.title}</b>
+                <span style="font-size:12px; color:#64748b; margin-left:10px;">Skill: <b>${d.skill || "General"}</b> (${d.difficulty || "Basic"}) | ❓ ${info.qCount} Qs</span>
+              </div>
+              <button onclick="deleteTest('${id}')" style="width:auto !important; max-width:100px; flex-shrink:0; background:#fee2e2; color:#ef4444; border:1px solid #fca5a5; padding:5px 10px; border-radius:6px; font-size:12px; font-weight:700; cursor:pointer;">
+                🗑 Delete
+              </button>
+            </div>
+            <div style="font-size:11px; color:#94a3b8;">📅 Created: ${dateStr}</div>
+            ${attendeesHtml}
           </div>`;
       });
     }
@@ -2775,14 +3013,33 @@ window.loadTestHistory = function () {
       sortedDocs.forEach(docSnap => {
         const d = docSnap.data();
         const dateStr = d.attemptedAt?.toDate ? d.attemptedAt.toDate().toLocaleDateString() : "Recently";
+        const correct = d.correctAnswers ?? d.score ?? 0;
+        const wrong = d.wrongAnswers ?? ((d.total || 5) - correct);
+        const timeTaken = d.timeTakenStr || (d.timeTakenSec ? `${d.timeTakenSec}s` : "N/A");
+
         attendedHtml += `
-          <div style="background:#f0fdf4; border-radius:10px; padding:14px; border:1px solid #bbf7d0; margin-bottom:10px;">
+          <div style="background:#f0fdf4; border-radius:12px; padding:14px; border:1px solid #bbf7d0; margin-bottom:12px;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-              <b style="font-size:14px; color:#166534;">${d.testTitle || "Skill Test"}</b>
-              <span style="background:#27ae60; color:#fff; padding:2px 8px; border-radius:12px; font-size:11px; font-weight:700;">🎉 Congratulations! Great Job!</span>
+              <b style="font-size:15px; color:#166534;">${d.testTitle || "Skill Test"}</b>
+              <span style="background:#27ae60; color:#fff; padding:2px 8px; border-radius:12px; font-size:11px; font-weight:700;">${d.percentage}% Accuracy</span>
             </div>
-            <div style="font-size:12px; color:#374151;">
-              Score: <b style="color:#15803d; font-size:14px;">${d.score} / ${d.total}</b> (${d.percentage}%) | Attended: ${dateStr}
+            <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:6px; text-align:center; font-size:12px; margin:8px 0;">
+              <div style="background:#fff; padding:6px; border-radius:6px; border:1px solid #bbf7d0;">
+                <span style="color:#64748b; font-size:10px; display:block; font-weight:700;">SCORE</span>
+                <b style="color:#15803d;">${d.score} / ${d.total || 5}</b>
+              </div>
+              <div style="background:#fff; padding:6px; border-radius:6px; border:1px solid #bbf7d0;">
+                <span style="color:#64748b; font-size:10px; display:block; font-weight:700;">CORRECT / WRONG</span>
+                <b style="color:#166534;">${correct} ✅</b> | <b style="color:#b91c1c;">${wrong} ❌</b>
+              </div>
+              <div style="background:#fff; padding:6px; border-radius:6px; border:1px solid #bbf7d0;">
+                <span style="color:#64748b; font-size:10px; display:block; font-weight:700;">TIME TAKEN</span>
+                <b style="color:#0284c7;">⏱️ ${timeTaken}</b>
+              </div>
+              <div style="background:#fff; padding:6px; border-radius:6px; border:1px solid #bbf7d0;">
+                <span style="color:#64748b; font-size:10px; display:block; font-weight:700;">DATE</span>
+                <b style="color:#475569;">📅 ${dateStr}</b>
+              </div>
             </div>
           </div>`;
       });
@@ -2790,11 +3047,11 @@ window.loadTestHistory = function () {
 
     container.innerHTML = `
       <div style="margin-bottom:24px;">
-        <h3 style="margin:0 0 12px; color:#2c3e50; font-size:16px;"><i class="fas fa-file-signature" style="color:#3b82f6;"></i> Created Tests (${latestCreatedDocs.length})</h3>
+        <h3 style="margin:0 0 12px; color:#2c3e50; font-size:16px;"><i class="fas fa-file-signature" style="color:#3b82f6;"></i> Created Test History & Attendees (${latestCreatedDocs.length})</h3>
         ${createdHtml}
       </div>
       <div>
-        <h3 style="margin:0 0 12px; color:#27ae60; font-size:16px;"><i class="fas fa-user-check" style="color:#27ae60;"></i> Attended Tests (${latestAttendedDocs.length})</h3>
+        <h3 style="margin:0 0 12px; color:#27ae60; font-size:16px;"><i class="fas fa-user-check" style="color:#27ae60;"></i> Attended Test History (${latestAttendedDocs.length})</h3>
         ${attendedHtml}
       </div>`;
   }
@@ -3018,6 +3275,131 @@ window.openSessionScreen = function (screenId) {
   if (screenId === "hostSessionScreen")     loadHostSessionPanel();
   if (screenId === "liveSessionScreen")     loadLiveSessions();
   if (screenId === "feedbackSessionScreen") { loadFeedbackSessions(); loadRatingsContainer(); }
+  if (screenId === "sessionHistoryScreen")  loadWebSessionHistory();
+};
+
+let currentWebSessionTab = "created";
+
+window.switchWebSessionTab = function (tab) {
+  currentWebSessionTab = tab;
+  const btnCreated  = el("tabCreatedSessions");
+  const btnAttended = el("tabAttendedSessions");
+
+  if (tab === "created") {
+    if (btnCreated) {
+      btnCreated.style.background = "#fff";
+      btnCreated.style.color = "#1e293b";
+      btnCreated.style.boxShadow = "0 2px 4px rgba(0,0,0,0.05)";
+    }
+    if (btnAttended) {
+      btnAttended.style.background = "transparent";
+      btnAttended.style.color = "#64748b";
+      btnAttended.style.boxShadow = "none";
+    }
+  } else {
+    if (btnAttended) {
+      btnAttended.style.background = "#fff";
+      btnAttended.style.color = "#1e293b";
+      btnAttended.style.boxShadow = "0 2px 4px rgba(0,0,0,0.05)";
+    }
+    if (btnCreated) {
+      btnCreated.style.background = "transparent";
+      btnCreated.style.color = "#64748b";
+      btnCreated.style.boxShadow = "none";
+    }
+  }
+  loadWebSessionHistory();
+};
+
+window.loadWebSessionHistory = function () {
+  const container = el("webSessionHistoryContainer");
+  if (!container) return;
+  const user = auth.currentUser;
+  if (!user) return;
+
+  container.innerHTML = `<div style="text-align:center;padding:30px;color:#888;"><i class="fas fa-spinner fa-spin fa-2x"></i><p style="margin-top:10px;font-weight:600;">Loading Session History...</p></div>`;
+
+  onSnapshot(
+    query(collection(db, "sessions"), where("status", "==", "ended")),
+    snap => {
+      container.innerHTML = "";
+      const historyList = [];
+
+      snap.forEach(docSnap => {
+        const d = docSnap.data();
+        const id = docSnap.id;
+        const isHost = d.hostId === user.uid;
+        const isParticipant = d.participants && Array.isArray(d.participants) && d.participants.includes(user.uid);
+
+        if (currentWebSessionTab === "created" && isHost) {
+          historyList.push({ id, ...d });
+        } else if (currentWebSessionTab === "attended" && isParticipant && !isHost) {
+          historyList.push({ id, ...d });
+        }
+      });
+
+      if (historyList.length === 0) {
+        container.innerHTML = `
+          <div style="text-align:center;padding:50px 20px;background:#fff;border-radius:12px;border:1px solid #e2e8f0;">
+            <div style="font-size:42px;margin-bottom:10px;color:#cbd5e1;"><i class="fas fa-history"></i></div>
+            <p style="font-size:15px;font-weight:700;color:#64748b;margin:0;">No ${currentWebSessionTab === "created" ? "created" : "attended"} sessions history found.</p>
+          </div>`;
+        return;
+      }
+
+      // Sort by end time / start time descending
+      historyList.sort((a, b) => {
+        const timeA = a.endTime || a.startTime || 0;
+        const timeB = b.endTime || b.startTime || 0;
+        return timeB - timeA;
+      });
+
+      let html = "";
+      historyList.forEach(d => {
+        const dateStr = d.startDateStr || d.endDateStr || (d.startTime ? new Date(d.startTime).toLocaleDateString() : "—");
+        const startTimeStr = d.startTimeStr || (d.startTime ? new Date(d.startTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) : "—");
+        const endTimeStr = d.endTimeStr || (d.endTime ? new Date(d.endTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) : "—");
+        const durationMins = d.durationMins || 0;
+        const attendeesCount = d.participants ? d.participants.length : 0;
+
+        if (currentWebSessionTab === "created") {
+          html += `
+            <div class="card" style="background:#fff; border-radius:12px; border:1px solid #e2e8f0; border-left:5px solid #3b82f6; padding:18px; margin-bottom:14px; box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                <h3 style="margin:0; font-size:17px; color:#1e293b; font-weight:700;">${d.name || "Untitled Session"}</h3>
+                <span style="background:#22c55e; color:#fff; padding:4px 12px; border-radius:20px; font-size:12px; font-weight:800;"><i class="fas fa-circle-check"></i> Completed</span>
+              </div>
+              <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:10px; margin-top:10px;">
+                <p style="margin:0; font-size:13px; color:#475569;"><strong>📚 Skill Name:</strong> ${d.skill || "—"}</p>
+                <p style="margin:0; font-size:13px; color:#475569;"><strong>📅 Date:</strong> ${dateStr}</p>
+                <p style="margin:0; font-size:13px; color:#475569;"><strong>⏰ Start Time:</strong> ${startTimeStr}</p>
+                <p style="margin:0; font-size:13px; color:#475569;"><strong>⏳ End Time:</strong> ${endTimeStr}</p>
+                <p style="margin:0; font-size:13px; color:#475569;"><strong>⏱ Duration:</strong> ${durationMins} Minutes</p>
+                <p style="margin:0; font-size:13px; color:#475569;"><strong>👥 Attendees:</strong> ${attendeesCount}</p>
+              </div>
+            </div>`;
+        } else {
+          html += `
+            <div class="card" style="background:#fff; border-radius:12px; border:1px solid #e2e8f0; border-left:5px solid #8b5cf6; padding:18px; margin-bottom:14px; box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                <h3 style="margin:0; font-size:17px; color:#1e293b; font-weight:700;">${d.name || "Untitled Session"}</h3>
+                <span style="background:#22c55e; color:#fff; padding:4px 12px; border-radius:20px; font-size:12px; font-weight:800;"><i class="fas fa-circle-check"></i> Completed</span>
+              </div>
+              <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:10px; margin-top:10px;">
+                <p style="margin:0; font-size:13px; color:#475569;"><strong>📚 Skill Name:</strong> ${d.skill || "—"}</p>
+                <p style="margin:0; font-size:13px; color:#475569;"><strong>🧑‍🏫 Session Creator:</strong> Hosted by: ${d.hostName || "Host"}</p>
+                <p style="margin:0; font-size:13px; color:#475569;"><strong>📅 Date:</strong> ${dateStr}</p>
+                <p style="margin:0; font-size:13px; color:#475569;"><strong>⏰ Start Time:</strong> ${startTimeStr}</p>
+                <p style="margin:0; font-size:13px; color:#475569;"><strong>⏳ End Time:</strong> ${endTimeStr}</p>
+                <p style="margin:0; font-size:13px; color:#475569;"><strong>⏱ Duration:</strong> ${durationMins} Minutes</p>
+              </div>
+            </div>`;
+        }
+      });
+
+      container.innerHTML = html;
+    }
+  );
 };
 window.backSessionDashboard = function () {
   if (el("sessionDashboard")) el("sessionDashboard").style.display = "grid";
@@ -3027,8 +3409,10 @@ window.openTestScreen = function (screenId) {
   if (el("testDashboard")) el("testDashboard").style.display = "none";
   document.querySelectorAll("#testSection .screen").forEach(s => s.style.display = "none");
   if (el(screenId)) el(screenId).style.display = "block";
+  if (screenId === "prepareTestScreen") onQbSkillOrDiffChange();
   if (screenId === "createTestScreen")  loadMyTests();
   if (screenId === "myTestsScreen")     loadMyTests();
+  if (screenId === "testHistoryScreen") loadTestHistory();
   if (screenId === "resultsScreen")     loadMyResults();     // ← My Results
   if (screenId === "attendTestScreen") {
     const availablePanel = el("availableTests");

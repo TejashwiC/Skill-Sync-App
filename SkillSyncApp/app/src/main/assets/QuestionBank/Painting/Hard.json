@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Cyan, Magenta, Yellow",
+      "Black, White, Grey",
+      "Red, Green, Blue",
+      "Red, Yellow, Blue"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Adding water to oil paint",
+      "Using thick brushes first",
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Painting dark over light"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Painting on dry paper only",
+      "Varnishing wet paper",
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Dipping brushes in oil"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "What is Impasto in painting?",
+    "options": [
+      "Tracing outlines with pencil",
+      "Diluting paint with solvent until transparent",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Sanding canvas smooth"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #5 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Black, White, Grey",
+      "Cyan, Magenta, Yellow",
+      "Red, Yellow, Blue",
+      "Red, Green, Blue"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #6 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Painting dark over light",
+      "Adding water to oil paint",
+      "Using thick brushes first",
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #7 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Dipping brushes in oil",
+      "Varnishing wet paper",
+      "Painting on dry paper only"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #8 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Diluting paint with solvent until transparent",
+      "Tracing outlines with pencil",
+      "Sanding canvas smooth",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #9 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Black, White, Grey",
+      "Red, Green, Blue",
+      "Red, Yellow, Blue",
+      "Cyan, Magenta, Yellow"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #10 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Using thick brushes first",
+      "Adding water to oil paint",
+      "Painting dark over light"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #11 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Varnishing wet paper",
+      "Painting on dry paper only",
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Dipping brushes in oil"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #12 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Diluting paint with solvent until transparent",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Sanding canvas smooth",
+      "Tracing outlines with pencil"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #13 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Red, Yellow, Blue",
+      "Red, Green, Blue",
+      "Cyan, Magenta, Yellow",
+      "Black, White, Grey"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #14 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Adding water to oil paint",
+      "Painting dark over light",
+      "Using thick brushes first"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #15 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Dipping brushes in oil",
+      "Varnishing wet paper",
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Painting on dry paper only"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #16 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Tracing outlines with pencil",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Sanding canvas smooth",
+      "Diluting paint with solvent until transparent"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #17 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Black, White, Grey",
+      "Cyan, Magenta, Yellow",
+      "Red, Yellow, Blue",
+      "Red, Green, Blue"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #18 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Painting dark over light",
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Adding water to oil paint",
+      "Using thick brushes first"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #19 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Varnishing wet paper",
+      "Dipping brushes in oil",
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Painting on dry paper only"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #20 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Tracing outlines with pencil",
+      "Sanding canvas smooth",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Diluting paint with solvent until transparent"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #21 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Black, White, Grey",
+      "Red, Yellow, Blue",
+      "Cyan, Magenta, Yellow",
+      "Red, Green, Blue"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #22 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Painting dark over light",
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Adding water to oil paint",
+      "Using thick brushes first"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #23 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Painting on dry paper only",
+      "Varnishing wet paper",
+      "Dipping brushes in oil"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #24 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Diluting paint with solvent until transparent",
+      "Tracing outlines with pencil",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Sanding canvas smooth"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #25 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Red, Yellow, Blue",
+      "Black, White, Grey",
+      "Red, Green, Blue",
+      "Cyan, Magenta, Yellow"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #26 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Adding water to oil paint",
+      "Using thick brushes first",
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Painting dark over light"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #27 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Painting on dry paper only",
+      "Varnishing wet paper",
+      "Dipping brushes in oil"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #28 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Tracing outlines with pencil",
+      "Sanding canvas smooth",
+      "Diluting paint with solvent until transparent"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #29 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Cyan, Magenta, Yellow",
+      "Red, Yellow, Blue",
+      "Red, Green, Blue",
+      "Black, White, Grey"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #30 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Painting dark over light",
+      "Adding water to oil paint",
+      "Using thick brushes first",
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #31 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Painting on dry paper only",
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Dipping brushes in oil",
+      "Varnishing wet paper"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #32 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Sanding canvas smooth",
+      "Tracing outlines with pencil",
+      "Diluting paint with solvent until transparent",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #33 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Cyan, Magenta, Yellow",
+      "Red, Green, Blue",
+      "Black, White, Grey",
+      "Red, Yellow, Blue"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #34 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Using thick brushes first",
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Painting dark over light",
+      "Adding water to oil paint"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #35 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Painting on dry paper only",
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Varnishing wet paper",
+      "Dipping brushes in oil"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #36 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Tracing outlines with pencil",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Diluting paint with solvent until transparent",
+      "Sanding canvas smooth"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #37 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Red, Green, Blue",
+      "Black, White, Grey",
+      "Red, Yellow, Blue",
+      "Cyan, Magenta, Yellow"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #38 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Painting dark over light",
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Adding water to oil paint",
+      "Using thick brushes first"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #39 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Dipping brushes in oil",
+      "Painting on dry paper only",
+      "Varnishing wet paper",
+      "Applying wet paint onto damp paper creating soft feathered edges"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #40 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Diluting paint with solvent until transparent",
+      "Tracing outlines with pencil",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Sanding canvas smooth"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #41 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Red, Yellow, Blue",
+      "Red, Green, Blue",
+      "Black, White, Grey",
+      "Cyan, Magenta, Yellow"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #42 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Painting dark over light",
+      "Adding water to oil paint",
+      "Using thick brushes first"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #43 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Painting on dry paper only",
+      "Dipping brushes in oil",
+      "Varnishing wet paper",
+      "Applying wet paint onto damp paper creating soft feathered edges"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #44 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Diluting paint with solvent until transparent",
+      "Tracing outlines with pencil",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Sanding canvas smooth"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #45 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Cyan, Magenta, Yellow",
+      "Red, Green, Blue",
+      "Red, Yellow, Blue",
+      "Black, White, Grey"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #46 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Painting dark over light",
+      "Using thick brushes first",
+      "Adding water to oil paint"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #47 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Painting on dry paper only",
+      "Varnishing wet paper",
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Dipping brushes in oil"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #48 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Diluting paint with solvent until transparent",
+      "Sanding canvas smooth",
+      "Tracing outlines with pencil",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #49 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Cyan, Magenta, Yellow",
+      "Black, White, Grey",
+      "Red, Green, Blue",
+      "Red, Yellow, Blue"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #50 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Adding water to oil paint",
+      "Using thick brushes first",
+      "Painting dark over light"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #51 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Dipping brushes in oil",
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Varnishing wet paper",
+      "Painting on dry paper only"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #52 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Diluting paint with solvent until transparent",
+      "Sanding canvas smooth",
+      "Tracing outlines with pencil",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #53 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Red, Green, Blue",
+      "Red, Yellow, Blue",
+      "Black, White, Grey",
+      "Cyan, Magenta, Yellow"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #54 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Painting dark over light",
+      "Using thick brushes first",
+      "Adding water to oil paint"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #55 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Varnishing wet paper",
+      "Dipping brushes in oil",
+      "Painting on dry paper only"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #56 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Tracing outlines with pencil",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Diluting paint with solvent until transparent",
+      "Sanding canvas smooth"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #57 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Red, Green, Blue",
+      "Red, Yellow, Blue",
+      "Black, White, Grey",
+      "Cyan, Magenta, Yellow"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #58 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Painting dark over light",
+      "Using thick brushes first",
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Adding water to oil paint"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #59 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Painting on dry paper only",
+      "Varnishing wet paper",
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Dipping brushes in oil"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #60 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Diluting paint with solvent until transparent",
+      "Sanding canvas smooth",
+      "Tracing outlines with pencil"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #61 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Red, Green, Blue",
+      "Black, White, Grey",
+      "Cyan, Magenta, Yellow",
+      "Red, Yellow, Blue"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #62 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Adding water to oil paint",
+      "Painting dark over light",
+      "Using thick brushes first"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #63 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Painting on dry paper only",
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Dipping brushes in oil",
+      "Varnishing wet paper"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #64 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Tracing outlines with pencil",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Diluting paint with solvent until transparent",
+      "Sanding canvas smooth"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #65 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Red, Yellow, Blue",
+      "Black, White, Grey",
+      "Red, Green, Blue",
+      "Cyan, Magenta, Yellow"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #66 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Adding water to oil paint",
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Painting dark over light",
+      "Using thick brushes first"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #67 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Painting on dry paper only",
+      "Dipping brushes in oil",
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Varnishing wet paper"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #68 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Sanding canvas smooth",
+      "Tracing outlines with pencil",
+      "Diluting paint with solvent until transparent",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #69 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Cyan, Magenta, Yellow",
+      "Red, Green, Blue",
+      "Black, White, Grey",
+      "Red, Yellow, Blue"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #70 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Painting dark over light",
+      "Adding water to oil paint",
+      "Using thick brushes first"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #71 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Varnishing wet paper",
+      "Dipping brushes in oil",
+      "Painting on dry paper only",
+      "Applying wet paint onto damp paper creating soft feathered edges"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #72 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Tracing outlines with pencil",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Sanding canvas smooth",
+      "Diluting paint with solvent until transparent"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #73 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Red, Yellow, Blue",
+      "Black, White, Grey",
+      "Cyan, Magenta, Yellow",
+      "Red, Green, Blue"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #74 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Painting dark over light",
+      "Adding water to oil paint",
+      "Using thick brushes first",
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #75 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Dipping brushes in oil",
+      "Varnishing wet paper",
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Painting on dry paper only"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #76 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Sanding canvas smooth",
+      "Diluting paint with solvent until transparent",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Tracing outlines with pencil"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #77 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Black, White, Grey",
+      "Red, Green, Blue",
+      "Red, Yellow, Blue",
+      "Cyan, Magenta, Yellow"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #78 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Adding water to oil paint",
+      "Painting dark over light",
+      "Using thick brushes first"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #79 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Painting on dry paper only",
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Dipping brushes in oil",
+      "Varnishing wet paper"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #80 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Tracing outlines with pencil",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Diluting paint with solvent until transparent",
+      "Sanding canvas smooth"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #81 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Cyan, Magenta, Yellow",
+      "Red, Green, Blue",
+      "Black, White, Grey",
+      "Red, Yellow, Blue"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #82 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Painting dark over light",
+      "Using thick brushes first",
+      "Adding water to oil paint"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #83 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Varnishing wet paper",
+      "Painting on dry paper only",
+      "Dipping brushes in oil",
+      "Applying wet paint onto damp paper creating soft feathered edges"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #84 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Diluting paint with solvent until transparent",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Sanding canvas smooth",
+      "Tracing outlines with pencil"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #85 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Red, Yellow, Blue",
+      "Cyan, Magenta, Yellow",
+      "Black, White, Grey",
+      "Red, Green, Blue"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #86 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Adding water to oil paint",
+      "Painting dark over light",
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Using thick brushes first"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #87 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Varnishing wet paper",
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Painting on dry paper only",
+      "Dipping brushes in oil"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #88 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Sanding canvas smooth",
+      "Diluting paint with solvent until transparent",
+      "Tracing outlines with pencil"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #89 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Red, Green, Blue",
+      "Black, White, Grey",
+      "Red, Yellow, Blue",
+      "Cyan, Magenta, Yellow"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #90 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Using thick brushes first",
+      "Painting dark over light",
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Adding water to oil paint"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #91 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Varnishing wet paper",
+      "Painting on dry paper only",
+      "Applying wet paint onto damp paper creating soft feathered edges",
+      "Dipping brushes in oil"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #92 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Tracing outlines with pencil",
+      "Sanding canvas smooth",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Diluting paint with solvent until transparent"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #93 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Black, White, Grey",
+      "Red, Green, Blue",
+      "Red, Yellow, Blue",
+      "Cyan, Magenta, Yellow"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #94 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Adding water to oil paint",
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Painting dark over light",
+      "Using thick brushes first"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #95 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Dipping brushes in oil",
+      "Varnishing wet paper",
+      "Painting on dry paper only",
+      "Applying wet paint onto damp paper creating soft feathered edges"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #96 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Tracing outlines with pencil",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas",
+      "Sanding canvas smooth",
+      "Diluting paint with solvent until transparent"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #97 (Primary Colors): Which three colors are the traditional primary colors in painting?",
+    "options": [
+      "Cyan, Magenta, Yellow",
+      "Red, Yellow, Blue",
+      "Black, White, Grey",
+      "Red, Green, Blue"
+    ],
+    "answer": "Red, Yellow, Blue",
+    "explanation": "Red, Yellow, and Blue cannot be created by mixing other paints.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Primary Colors"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #98 (Oil Painting): What is the 'Fat over Lean' rule in oil painting?",
+    "options": [
+      "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+      "Painting dark over light",
+      "Adding water to oil paint",
+      "Using thick brushes first"
+    ],
+    "answer": "Applying layers with more oil ('fat') over layers with less oil ('lean') to prevent cracking",
+    "explanation": "Fat over lean ensures upper layers dry slower and remain flexible.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Oil Painting"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #99 (Watercolor): What is the 'Wet-on-Wet' watercolor technique?",
+    "options": [
+      "Dipping brushes in oil",
+      "Painting on dry paper only",
+      "Varnishing wet paper",
+      "Applying wet paint onto damp paper creating soft feathered edges"
+    ],
+    "answer": "Applying wet paint onto damp paper creating soft feathered edges",
+    "explanation": "Wet-on-wet lets wet paint bleed naturally across moist paper.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Watercolor"
+  },
+  {
+    "question": "[Painting - Hard] Case Study #100 (Impasto Method): What is Impasto in painting?",
+    "options": [
+      "Diluting paint with solvent until transparent",
+      "Tracing outlines with pencil",
+      "Sanding canvas smooth",
+      "Applying paint thickly so brushstrokes and texture stand out on canvas"
+    ],
+    "answer": "Applying paint thickly so brushstrokes and texture stand out on canvas",
+    "explanation": "Impasto leaves visible 3D texture and stroke marks on canvas.",
+    "difficulty": "Hard",
+    "skill": "Painting",
+    "topic": "Impasto Method"
+  }
+]

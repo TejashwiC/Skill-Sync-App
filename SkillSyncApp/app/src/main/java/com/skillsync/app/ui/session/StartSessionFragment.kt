@@ -1,5 +1,7 @@
 package com.skillsync.app.ui.session
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -39,13 +41,37 @@ class StartSessionFragment : Fragment() {
 
         // Setup Platform Spinner
         val platforms = Constants.PLATFORMS.map { it.label }
-        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, platforms)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        binding.spPlatform.adapter = adapter
+        val platformAdapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, platforms)
+        platformAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        binding.spPlatform.adapter = platformAdapter
 
+        // Setup Duration Spinner
+        val durations = listOf("30 minutes", "45 minutes", "1 hour", "1.5 hours", "2 hours", "3 hours")
+        val durationMinsMap = mapOf("30 minutes" to 30L, "45 minutes" to 45L, "1 hour" to 60L, "1.5 hours" to 90L, "2 hours" to 120L, "3 hours" to 180L)
+        val durationAdapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, durations)
+        durationAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        binding.spDuration.adapter = durationAdapter
+        binding.spDuration.setSelection(2) // Default: 1 hour
+
+        // Step 1: Platform card buttons - open meeting creation page in browser
+        binding.cardZoom.setOnClickListener {
+            openUrl("https://zoom.us/start/videomeeting")
+            // Pre-select Zoom in spinner
+            val zoomIndex = Constants.PLATFORMS.indexOfFirst { it.id == "zoom" }
+            if (zoomIndex >= 0) binding.spPlatform.setSelection(zoomIndex)
+        }
+
+        binding.cardGoogleMeet.setOnClickListener {
+            openUrl("https://meet.google.com/new")
+            // Pre-select Google Meet in spinner
+            val meetIndex = Constants.PLATFORMS.indexOfFirst { it.id == "meet" }
+            if (meetIndex >= 0) binding.spPlatform.setSelection(meetIndex)
+        }
+
+        // Schedule toggle
         binding.switchSchedule.setOnCheckedChangeListener { _, isChecked ->
             binding.llScheduleContainer.visibility = if (isChecked) View.VISIBLE else View.GONE
-            binding.btnStartSubmit.text = if (isChecked) "Schedule Session" else "Launch Live Session"
+            binding.btnStartSubmit.text = if (isChecked) "▶  Schedule Session" else "▶  Start Session & Get Code"
             if (isChecked && selectedCalendar == null) {
                 selectedCalendar = Calendar.getInstance()
             }
@@ -54,6 +80,7 @@ class StartSessionFragment : Fragment() {
         binding.btnSelectDate.setOnClickListener {
             val c = selectedCalendar ?: Calendar.getInstance()
             DatePickerDialog(requireContext(), { _, year, month, day ->
+                if (selectedCalendar == null) selectedCalendar = Calendar.getInstance()
                 selectedCalendar?.set(year, month, day)
                 binding.btnSelectDate.text = "$day/${month + 1}/$year"
             }, c.get(Calendar.YEAR), c.get(Calendar.MONTH), c.get(Calendar.DAY_OF_MONTH)).show()
@@ -62,6 +89,7 @@ class StartSessionFragment : Fragment() {
         binding.btnSelectTime.setOnClickListener {
             val c = selectedCalendar ?: Calendar.getInstance()
             TimePickerDialog(requireContext(), { _, hourOfDay, minute ->
+                if (selectedCalendar == null) selectedCalendar = Calendar.getInstance()
                 selectedCalendar?.set(Calendar.HOUR_OF_DAY, hourOfDay)
                 selectedCalendar?.set(Calendar.MINUTE, minute)
                 val amPm = if (hourOfDay >= 12) "PM" else "AM"
@@ -77,11 +105,15 @@ class StartSessionFragment : Fragment() {
             val platformLabel = binding.spPlatform.selectedItem.toString()
             val meetingLink = binding.etSessionLink.text.toString().trim()
 
-            // Find platform ID
             val platformId = Constants.PLATFORMS.find { it.label == platformLabel }?.id ?: "other"
+            val durationMins = mapOf("30 minutes" to 30L, "45 minutes" to 45L, "1 hour" to 60L, "1.5 hours" to 90L, "2 hours" to 120L, "3 hours" to 180L)[binding.spDuration.selectedItem.toString()] ?: 60L
 
-            if (name.isEmpty() || meetingLink.isEmpty()) {
-                showToast("Session name and meeting link are required")
+            if (name.isEmpty()) {
+                showToast("Please enter a session name")
+                return@setOnClickListener
+            }
+            if (meetingLink.isEmpty()) {
+                showToast("Please paste your meeting link first")
                 return@setOnClickListener
             }
             if (!meetingLink.startsWith("http")) {
@@ -97,23 +129,16 @@ class StartSessionFragment : Fragment() {
                 return@setOnClickListener
             }
 
-            viewModel.startSession(name, skill, platformId, meetingLink, isScheduled, scheduledTime)
-            
-            // Note: We'll observe startResult to schedule local reminders
+            viewModel.startSession(name, skill, platformId, meetingLink, isScheduled, scheduledTime, durationMins)
         }
 
         viewModel.startResult.observe(viewLifecycleOwner) { result ->
             result?.let {
                 if (it.isSuccess) {
-                    showToast("Session Launched Successfully!")
-                    
-                    // We need the full session object to schedule. But wait, startSession doesn't return the Session object.
-                    // Let's modify startSession to return the Session or we can just fetch it.
-                    // Wait, ReminderManager needs Session object. But it only uses id, isScheduled, name, scheduledTime.
-                    // We can just construct a dummy session object for ReminderManager here.
                     val isScheduled = binding.switchSchedule.isChecked
                     val scheduledTime = if (isScheduled) selectedCalendar?.timeInMillis ?: 0L else 0L
                     if (isScheduled) {
+                        showToast("Session Scheduled Successfully!")
                         val dummySession = com.skillsync.app.data.model.Session(
                             id = it.getOrNull() ?: "",
                             name = binding.etSessionName.text.toString().trim(),
@@ -121,14 +146,23 @@ class StartSessionFragment : Fragment() {
                             scheduledTime = scheduledTime
                         )
                         com.skillsync.app.worker.ReminderManager.scheduleSessionReminders(requireContext(), dummySession)
+                    } else {
+                        showToast("Session Launched! Your link is live for followers.")
                     }
-
                     viewModel.resetStartResult()
                     findNavController().popBackStack()
                 } else {
                     showToast("Error: ${it.exceptionOrNull()?.message}")
                 }
             }
+        }
+    }
+
+    private fun openUrl(url: String) {
+        try {
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+        } catch (e: Exception) {
+            showToast("Could not open browser: ${e.message}")
         }
     }
 

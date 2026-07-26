@@ -39,7 +39,6 @@ class HomeFragment : Fragment() {
         viewModel.userProfile.observe(viewLifecycleOwner) { user ->
             user?.let {
                 binding.tvWelcome.text = "Welcome Back 👋 ${it.name}"
-                binding.tvStatCredits.text = it.credits.toString()
                 
                 // Parse teach skills count
                 val teachSkills = it.teach.split(",").map { s -> s.trim() }.filter { s -> s.isNotEmpty() }

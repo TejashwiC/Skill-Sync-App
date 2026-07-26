@@ -44,44 +44,65 @@ class SessionAdapter(
             val currentUid = FirebaseUtil.currentUid
             val isHost = session.hostId == currentUid
 
-            if (session.status == "live") {
-                binding.tvSessionStatus.show()
-                binding.tvSessionStatus.text = "LIVE"
-                binding.tvSessionStatus.setBackgroundColor(binding.root.context.getColor(android.R.color.holo_red_dark))
-                
-                binding.tvSessionTime.text = "Started: ${session.startTime.formatTime()} · Running"
-                
-                if (isHost) {
-                    binding.layoutSecretCode.show()
-                    binding.tvSecretCode.text = session.code
-                    binding.btnEndSession.show()
-                    binding.btnJoinSession.text = "Rejoin Meeting"
-                    binding.btnJoinSession.show()
-                } else {
+            when (session.status) {
+                "live" -> {
+                    binding.tvSessionStatus.show()
+                    binding.tvSessionStatus.text = "LIVE"
+                    binding.tvSessionStatus.setBackgroundColor(binding.root.context.getColor(android.R.color.holo_red_dark))
+                    
+                    binding.tvSessionTime.text = "Started: ${session.startTime.formatTime()} · Running"
+                    
+                    if (isHost) {
+                        binding.layoutSecretCode.show()
+                        binding.tvSecretCode.text = session.code
+                        binding.btnEndSession.show()
+                        binding.btnJoinSession.text = "Rejoin Meeting"
+                        binding.btnJoinSession.show()
+                    } else {
+                        binding.layoutSecretCode.hide()
+                        binding.btnEndSession.hide()
+                        binding.btnJoinSession.text = "Join Meeting"
+                        binding.btnJoinSession.show()
+                    }
+                    binding.tvSessionRating.hide()
+                }
+                "scheduled" -> {
+                    binding.tvSessionStatus.show()
+                    binding.tvSessionStatus.text = "SCHEDULED"
+                    binding.tvSessionStatus.setBackgroundColor(binding.root.context.getColor(android.R.color.holo_purple))
+                    
+                    binding.tvSessionTime.text = "Starts: ${session.scheduledTime.formatDate()} · ${session.scheduledTime.formatTime()}"
+                    
                     binding.layoutSecretCode.hide()
                     binding.btnEndSession.hide()
-                    binding.btnJoinSession.text = "Join Meeting"
-                    binding.btnJoinSession.show()
+                    if (isHost) {
+                        binding.btnJoinSession.text = "Launch Session"
+                        binding.btnJoinSession.show()
+                    } else {
+                        binding.btnJoinSession.hide()
+                    }
+                    binding.tvSessionRating.hide()
                 }
-                binding.tvSessionRating.hide()
-            } else {
-                binding.tvSessionStatus.show()
-                binding.tvSessionStatus.text = "ENDED"
-                binding.tvSessionStatus.setBackgroundColor(binding.root.context.getColor(android.R.color.darker_gray))
-                
-                binding.tvSessionTime.text = "Ended: ${session.startTime.formatDate()} · ${session.startTime.formatTime()}"
-                
-                binding.layoutSecretCode.hide()
-                binding.btnEndSession.hide()
-                binding.btnJoinSession.hide()
+                else -> { // ended
+                    binding.tvSessionStatus.show()
+                    binding.tvSessionStatus.text = "ENDED"
+                    binding.tvSessionStatus.setBackgroundColor(binding.root.context.getColor(android.R.color.darker_gray))
+                    
+                    val durationText = if (session.durationMins > 0) "${session.durationMins} min" else "—"
+                    binding.tvSessionTime.text = "Ended: ${session.startTime.formatDate()} · ${session.startTime.formatTime()}\nDuration: $durationText | Participants: ${session.participants.size}"
+                    
+                    binding.layoutSecretCode.hide()
+                    binding.btnEndSession.hide()
+                    binding.btnJoinSession.hide()
 
-                if (session.ratings.isNotEmpty()) {
-                    val avg = session.ratings.map { it.stars }.average()
-                    binding.tvSessionRating.text = String.format(Locale.getDefault(), "Rating: ⭐ %.1f/5 (%d reviews)", avg, session.ratings.size)
-                    binding.tvSessionRating.show()
-                } else {
-                    binding.tvSessionRating.text = "No ratings yet"
-                    binding.tvSessionRating.show()
+                    if (session.ratings.isNotEmpty()) {
+                        val avg = session.ratings.map { it.stars }.average()
+                        binding.tvSessionRating.text = String.format(Locale.getDefault(), "Rating: ⭐ %.1f/5 (%d reviews)", avg, session.ratings.size)
+                        binding.tvSessionRating.show()
+                    } else {
+                        binding.tvSessionRating.text = "No ratings yet"
+                        binding.tvSessionRating.show()
+                    }
                 }
             }
 

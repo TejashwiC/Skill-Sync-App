@@ -33,6 +33,54 @@ class TestRepository {
         }
     }
 
+    suspend fun publishPreparedTest(
+        skill: String,
+        difficulty: String,
+        questions: List<com.skillsync.app.util.QuestionBankItem>,
+        creatorId: String,
+        creatorName: String
+    ): Result<String> {
+        return try {
+            val testTitle = "$skill ($difficulty) Test"
+            val testMap = mapOf(
+                "title" to testTitle,
+                "skill" to skill,
+                "difficulty" to difficulty,
+                "questionCount" to 5L,
+                "credits" to 50L,
+                "creatorId" to creatorId,
+                "creatorName" to creatorName,
+                "createdAt" to FieldValue.serverTimestamp()
+            )
+            val testRef = db.collection(Constants.COLL_TESTS).add(testMap).await()
+
+            db.runBatch { batch ->
+                for (q in questions) {
+                    val qRef = db.collection(Constants.COLL_QUESTIONS).document()
+                    val qMap = mapOf(
+                        "testId" to testRef.id,
+                        "creatorId" to creatorId,
+                        "question" to q.question,
+                        "option1" to (q.options.getOrNull(0) ?: ""),
+                        "option2" to (q.options.getOrNull(1) ?: ""),
+                        "option3" to (q.options.getOrNull(2) ?: ""),
+                        "option4" to (q.options.getOrNull(3) ?: ""),
+                        "correctAnswer" to q.answer,
+                        "explanation" to q.explanation,
+                        "topic" to q.topic,
+                        "difficulty" to difficulty,
+                        "skill" to skill
+                    )
+                    batch.set(qRef, qMap)
+                }
+            }.await()
+
+            Result.success(testRef.id)
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
+    }
+
     suspend fun deleteTest(testId: String): Result<Unit> {
         return try {
             // Delete all questions belonging to this test
@@ -184,12 +232,48 @@ class TestRepository {
         awaitClose { listener.remove() }
     }
 
+    suspend fun getMyAttemptsOnce(userId: String): List<TestAttempt> {
+        return try {
+            val snapshot = db.collection(Constants.COLL_TEST_ATTEMPTS)
+                .whereEqualTo("userId", userId)
+                .get()
+                .await()
+            snapshot.documents.mapNotNull { it.toObject(TestAttempt::class.java) }
+        } catch (e: Exception) {
+            emptyList()
+        }
+    }
+
     suspend fun getAllAttempts(): List<TestAttempt> {
         return try {
             val snapshot = db.collection(Constants.COLL_TEST_ATTEMPTS).get().await()
             snapshot.documents.mapNotNull { it.toObject(TestAttempt::class.java) }
         } catch (e: Exception) {
             emptyList()
+        }
+    }
+
+    suspend fun getAttemptsForTest(testId: String): List<TestAttempt> {
+        return try {
+            val snapshot = db.collection(Constants.COLL_TEST_ATTEMPTS)
+                .whereEqualTo("testId", testId)
+                .get()
+                .await()
+            snapshot.documents.mapNotNull { it.toObject(TestAttempt::class.java) }
+        } catch (e: Exception) {
+            emptyList()
+        }
+    }
+
+    suspend fun getQuestionsCountForTest(testId: String): Int {
+        return try {
+            val snapshot = db.collection(Constants.COLL_QUESTIONS)
+                .whereEqualTo("testId", testId)
+                .get()
+                .await()
+            snapshot.size()
+        } catch (e: Exception) {
+            0
         }
     }
 }

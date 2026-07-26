@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #2 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #3 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #4 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Skipping practice",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #5 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #6 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Ignoring standards",
+      "Skipping practice",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #7 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Ignoring standards",
+      "Skipping practice",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #8 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Skipping practice",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #9 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Skipping practice",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #10 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Skipping practice",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #11 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Ignoring standards",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #12 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #13 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Ignoring standards",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #14 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Using random methods",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #15 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Ignoring standards",
+      "Using random methods",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #16 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Ignoring standards",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #17 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Skipping practice",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #18 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #19 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #20 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #21 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Ignoring standards",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #22 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Using random methods",
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #23 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice",
+      "Using random methods",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #24 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #25 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #26 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #27 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Skipping practice",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #28 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #29 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #30 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Ignoring standards",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #31 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #32 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Skipping practice",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #33 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Skipping practice",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #34 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Skipping practice",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #35 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript",
+      "Ignoring standards",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #36 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Skipping practice",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #37 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #38 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #39 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #40 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Ignoring standards",
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #41 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Skipping practice",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #42 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice",
+      "Ignoring standards",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #43 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #44 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #45 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Ignoring standards",
+      "Skipping practice",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #46 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice",
+      "Ignoring standards",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #47 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #48 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice",
+      "Ignoring standards",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #49 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Skipping practice",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #50 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #51 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Ignoring standards",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #52 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #53 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Using random methods",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #54 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #55 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #56 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Ignoring standards",
+      "Skipping practice",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #57 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Skipping practice",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #58 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #59 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Using random methods",
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #60 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Skipping practice",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #61 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #62 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #63 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Ignoring standards",
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #64 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #65 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #66 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #67 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #68 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #69 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Ignoring standards",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #70 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #71 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Ignoring standards",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #72 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Skipping practice",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #73 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice",
+      "Ignoring standards",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #74 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Ignoring standards",
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #75 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Skipping practice",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #76 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Skipping practice",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #77 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Mastering fundamentals of JavaScript",
+      "Ignoring standards",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #78 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice",
+      "Using random methods",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #79 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Skipping practice",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #80 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Mastering fundamentals of JavaScript",
+      "Ignoring standards",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #81 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Using random methods",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #82 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #83 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Skipping practice",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #84 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Using random methods",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #85 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #86 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Ignoring standards",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #87 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Ignoring standards",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #88 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Ignoring standards",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #89 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Skipping practice",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #90 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #91 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice",
+      "Ignoring standards",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #92 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Mastering fundamentals of JavaScript",
+      "Ignoring standards",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #93 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #94 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Ignoring standards",
+      "Skipping practice",
+      "Using random methods"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #95 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Ignoring standards",
+      "Skipping practice",
+      "Using random methods",
+      "Mastering fundamentals of JavaScript"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #96 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Ignoring standards",
+      "Mastering fundamentals of JavaScript",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #97 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #98 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Using random methods",
+      "Mastering fundamentals of JavaScript",
+      "Ignoring standards",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #99 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Ignoring standards",
+      "Skipping practice"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  },
+  {
+    "question": "[JavaScript - Basic] Case Study #100 (Concepts): What is a core principle in JavaScript?",
+    "options": [
+      "Skipping practice",
+      "Mastering fundamentals of JavaScript",
+      "Using random methods",
+      "Ignoring standards"
+    ],
+    "answer": "Mastering fundamentals of JavaScript",
+    "explanation": "Understanding fundamentals is essential in JavaScript.",
+    "difficulty": "Basic",
+    "skill": "JavaScript",
+    "topic": "Concepts"
+  }
+]

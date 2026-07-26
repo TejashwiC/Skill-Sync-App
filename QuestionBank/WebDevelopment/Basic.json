@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "Which HTTP status code represents '200'?",
+    "options": [
+      "Unauthorized",
+      "Not Found",
+      "OK (Success)",
+      "Server Error"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "GET",
+      "PUT / PATCH",
+      "DELETE",
+      "POST"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "What does JWT stand for in web security?",
+    "options": [
+      "Java Web Technology",
+      "Joint Web Transfer",
+      "JSON Web Token",
+      "JS Working Task"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Static file caching",
+      "CSS animation",
+      "Database encryption",
+      "Full-duplex real-time bi-directional communication"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #5 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Not Found",
+      "Server Error",
+      "Unauthorized",
+      "OK (Success)"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #6 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "POST",
+      "GET",
+      "DELETE",
+      "PUT / PATCH"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #7 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "JSON Web Token",
+      "Joint Web Transfer",
+      "JS Working Task",
+      "Java Web Technology"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #8 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Full-duplex real-time bi-directional communication",
+      "Database encryption",
+      "Static file caching",
+      "CSS animation"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #9 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Server Error",
+      "OK (Success)",
+      "Not Found",
+      "Unauthorized"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #10 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "GET",
+      "POST",
+      "DELETE",
+      "PUT / PATCH"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #11 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "JS Working Task",
+      "Java Web Technology",
+      "JSON Web Token",
+      "Joint Web Transfer"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #12 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Static file caching",
+      "CSS animation",
+      "Full-duplex real-time bi-directional communication",
+      "Database encryption"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #13 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Not Found",
+      "Server Error",
+      "OK (Success)",
+      "Unauthorized"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #14 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "POST",
+      "PUT / PATCH",
+      "GET",
+      "DELETE"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #15 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "Java Web Technology",
+      "Joint Web Transfer",
+      "JSON Web Token",
+      "JS Working Task"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #16 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Database encryption",
+      "CSS animation",
+      "Full-duplex real-time bi-directional communication",
+      "Static file caching"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #17 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Not Found",
+      "Server Error",
+      "Unauthorized",
+      "OK (Success)"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #18 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "POST",
+      "DELETE",
+      "GET",
+      "PUT / PATCH"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #19 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "Joint Web Transfer",
+      "JSON Web Token",
+      "JS Working Task",
+      "Java Web Technology"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #20 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Static file caching",
+      "Full-duplex real-time bi-directional communication",
+      "Database encryption",
+      "CSS animation"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #21 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Not Found",
+      "Server Error",
+      "OK (Success)",
+      "Unauthorized"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #22 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "GET",
+      "PUT / PATCH",
+      "DELETE",
+      "POST"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #23 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "Java Web Technology",
+      "JSON Web Token",
+      "Joint Web Transfer",
+      "JS Working Task"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #24 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Full-duplex real-time bi-directional communication",
+      "Static file caching",
+      "CSS animation",
+      "Database encryption"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #25 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Not Found",
+      "OK (Success)",
+      "Unauthorized",
+      "Server Error"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #26 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "DELETE",
+      "PUT / PATCH",
+      "GET",
+      "POST"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #27 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "JS Working Task",
+      "JSON Web Token",
+      "Java Web Technology",
+      "Joint Web Transfer"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #28 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Database encryption",
+      "CSS animation",
+      "Static file caching",
+      "Full-duplex real-time bi-directional communication"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #29 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Server Error",
+      "Not Found",
+      "OK (Success)",
+      "Unauthorized"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #30 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "DELETE",
+      "GET",
+      "PUT / PATCH",
+      "POST"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #31 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "Joint Web Transfer",
+      "JS Working Task",
+      "Java Web Technology",
+      "JSON Web Token"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #32 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "CSS animation",
+      "Database encryption",
+      "Full-duplex real-time bi-directional communication",
+      "Static file caching"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #33 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "OK (Success)",
+      "Unauthorized",
+      "Not Found",
+      "Server Error"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #34 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "GET",
+      "POST",
+      "DELETE",
+      "PUT / PATCH"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #35 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "Joint Web Transfer",
+      "JS Working Task",
+      "JSON Web Token",
+      "Java Web Technology"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #36 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Full-duplex real-time bi-directional communication",
+      "CSS animation",
+      "Static file caching",
+      "Database encryption"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #37 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "OK (Success)",
+      "Not Found",
+      "Server Error",
+      "Unauthorized"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #38 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "DELETE",
+      "GET",
+      "PUT / PATCH",
+      "POST"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #39 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "JSON Web Token",
+      "Joint Web Transfer",
+      "Java Web Technology",
+      "JS Working Task"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #40 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Static file caching",
+      "Database encryption",
+      "Full-duplex real-time bi-directional communication",
+      "CSS animation"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #41 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "OK (Success)",
+      "Unauthorized",
+      "Not Found",
+      "Server Error"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #42 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "GET",
+      "POST",
+      "DELETE",
+      "PUT / PATCH"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #43 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "Java Web Technology",
+      "Joint Web Transfer",
+      "JSON Web Token",
+      "JS Working Task"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #44 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "CSS animation",
+      "Full-duplex real-time bi-directional communication",
+      "Static file caching",
+      "Database encryption"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #45 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Not Found",
+      "Server Error",
+      "OK (Success)",
+      "Unauthorized"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #46 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "GET",
+      "POST",
+      "DELETE",
+      "PUT / PATCH"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #47 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "Java Web Technology",
+      "JSON Web Token",
+      "Joint Web Transfer",
+      "JS Working Task"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #48 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Static file caching",
+      "Full-duplex real-time bi-directional communication",
+      "CSS animation",
+      "Database encryption"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #49 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Server Error",
+      "Not Found",
+      "OK (Success)",
+      "Unauthorized"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #50 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "PUT / PATCH",
+      "POST",
+      "GET",
+      "DELETE"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #51 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "JSON Web Token",
+      "Joint Web Transfer",
+      "JS Working Task",
+      "Java Web Technology"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #52 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Database encryption",
+      "Full-duplex real-time bi-directional communication",
+      "CSS animation",
+      "Static file caching"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #53 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Not Found",
+      "Server Error",
+      "OK (Success)",
+      "Unauthorized"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #54 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "POST",
+      "PUT / PATCH",
+      "DELETE",
+      "GET"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #55 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "JSON Web Token",
+      "Java Web Technology",
+      "Joint Web Transfer",
+      "JS Working Task"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #56 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Database encryption",
+      "Static file caching",
+      "CSS animation",
+      "Full-duplex real-time bi-directional communication"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #57 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Server Error",
+      "Not Found",
+      "OK (Success)",
+      "Unauthorized"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #58 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "GET",
+      "POST",
+      "DELETE",
+      "PUT / PATCH"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #59 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "Joint Web Transfer",
+      "JSON Web Token",
+      "Java Web Technology",
+      "JS Working Task"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #60 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Database encryption",
+      "CSS animation",
+      "Full-duplex real-time bi-directional communication",
+      "Static file caching"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #61 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Not Found",
+      "Server Error",
+      "OK (Success)",
+      "Unauthorized"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #62 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "DELETE",
+      "POST",
+      "GET",
+      "PUT / PATCH"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #63 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "JSON Web Token",
+      "JS Working Task",
+      "Java Web Technology",
+      "Joint Web Transfer"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #64 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "CSS animation",
+      "Full-duplex real-time bi-directional communication",
+      "Static file caching",
+      "Database encryption"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #65 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Not Found",
+      "Unauthorized",
+      "OK (Success)",
+      "Server Error"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #66 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "DELETE",
+      "GET",
+      "PUT / PATCH",
+      "POST"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #67 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "JSON Web Token",
+      "JS Working Task",
+      "Joint Web Transfer",
+      "Java Web Technology"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #68 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Database encryption",
+      "CSS animation",
+      "Full-duplex real-time bi-directional communication",
+      "Static file caching"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #69 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Server Error",
+      "Not Found",
+      "Unauthorized",
+      "OK (Success)"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #70 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "DELETE",
+      "GET",
+      "PUT / PATCH",
+      "POST"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #71 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "JS Working Task",
+      "Java Web Technology",
+      "Joint Web Transfer",
+      "JSON Web Token"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #72 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Full-duplex real-time bi-directional communication",
+      "CSS animation",
+      "Database encryption",
+      "Static file caching"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #73 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Not Found",
+      "Unauthorized",
+      "Server Error",
+      "OK (Success)"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #74 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "DELETE",
+      "GET",
+      "POST",
+      "PUT / PATCH"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #75 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "JS Working Task",
+      "Joint Web Transfer",
+      "Java Web Technology",
+      "JSON Web Token"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #76 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Database encryption",
+      "CSS animation",
+      "Full-duplex real-time bi-directional communication",
+      "Static file caching"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #77 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "OK (Success)",
+      "Server Error",
+      "Not Found",
+      "Unauthorized"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #78 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "POST",
+      "DELETE",
+      "PUT / PATCH",
+      "GET"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #79 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "JSON Web Token",
+      "Joint Web Transfer",
+      "JS Working Task",
+      "Java Web Technology"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #80 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "CSS animation",
+      "Static file caching",
+      "Full-duplex real-time bi-directional communication",
+      "Database encryption"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #81 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Server Error",
+      "Not Found",
+      "Unauthorized",
+      "OK (Success)"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #82 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "DELETE",
+      "POST",
+      "GET",
+      "PUT / PATCH"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #83 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "Java Web Technology",
+      "Joint Web Transfer",
+      "JS Working Task",
+      "JSON Web Token"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #84 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Database encryption",
+      "Full-duplex real-time bi-directional communication",
+      "Static file caching",
+      "CSS animation"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #85 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Unauthorized",
+      "Not Found",
+      "Server Error",
+      "OK (Success)"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #86 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "GET",
+      "POST",
+      "DELETE",
+      "PUT / PATCH"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #87 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "Joint Web Transfer",
+      "Java Web Technology",
+      "JS Working Task",
+      "JSON Web Token"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #88 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Full-duplex real-time bi-directional communication",
+      "Database encryption",
+      "Static file caching",
+      "CSS animation"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #89 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Server Error",
+      "OK (Success)",
+      "Not Found",
+      "Unauthorized"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #90 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "DELETE",
+      "POST",
+      "PUT / PATCH",
+      "GET"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #91 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "Java Web Technology",
+      "JS Working Task",
+      "JSON Web Token",
+      "Joint Web Transfer"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #92 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "CSS animation",
+      "Database encryption",
+      "Static file caching",
+      "Full-duplex real-time bi-directional communication"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #93 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Unauthorized",
+      "OK (Success)",
+      "Server Error",
+      "Not Found"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #94 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "POST",
+      "DELETE",
+      "PUT / PATCH",
+      "GET"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #95 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "JSON Web Token",
+      "Joint Web Transfer",
+      "JS Working Task",
+      "Java Web Technology"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #96 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "CSS animation",
+      "Static file caching",
+      "Full-duplex real-time bi-directional communication",
+      "Database encryption"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #97 (HTTP/HTTPS Basics): Which HTTP status code represents '200'?",
+    "options": [
+      "Server Error",
+      "OK (Success)",
+      "Unauthorized",
+      "Not Found"
+    ],
+    "answer": "OK (Success)",
+    "explanation": "200 OK indicates HTTP request succeeded.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "HTTP/HTTPS Basics"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #98 (REST API): Which HTTP method is used to update an existing resource in REST?",
+    "options": [
+      "DELETE",
+      "POST",
+      "PUT / PATCH",
+      "GET"
+    ],
+    "answer": "PUT / PATCH",
+    "explanation": "PUT/PATCH methods modify existing server resources.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "REST API"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #99 (Authentication): What does JWT stand for in web security?",
+    "options": [
+      "Joint Web Transfer",
+      "Java Web Technology",
+      "JS Working Task",
+      "JSON Web Token"
+    ],
+    "answer": "JSON Web Token",
+    "explanation": "JWT is an open standard for securely transmitting JSON claims.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "Authentication"
+  },
+  {
+    "question": "[WebDevelopment - Basic] Case Study #100 (WebSockets): What key feature do WebSockets provide over standard HTTP?",
+    "options": [
+      "Full-duplex real-time bi-directional communication",
+      "Database encryption",
+      "CSS animation",
+      "Static file caching"
+    ],
+    "answer": "Full-duplex real-time bi-directional communication",
+    "explanation": "WebSockets maintain a persistent low-latency bi-directional socket.",
+    "difficulty": "Basic",
+    "skill": "WebDevelopment",
+    "topic": "WebSockets"
+  }
+]

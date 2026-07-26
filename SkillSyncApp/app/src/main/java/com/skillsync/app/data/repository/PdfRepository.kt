@@ -28,30 +28,31 @@ class PdfRepository {
         awaitClose { listener.remove() }
     }
 
-    suspend fun uploadPdf(fileName: String, fileUri: Uri, uploadedBy: String, onProgress: (Double) -> Unit = {}): Result<Unit> {
+    suspend fun uploadPdf(fileName: String, fileBytes: ByteArray, uploadedBy: String, uploadedByEmail: String, uploaderId: String): Result<Unit> {
         return try {
-            val fileRef = storage.reference.child("pdfs/${System.currentTimeMillis()}_$fileName")
-            val uploadTask = fileRef.putFile(fileUri)
-            
-            // Listen for progress changes
-            uploadTask.addOnProgressListener { snapshot ->
-                val progress = (100.0 * snapshot.bytesTransferred) / snapshot.totalByteCount
-                onProgress(progress)
-            }
-            
-            // Wait for upload completion
-            uploadTask.await()
-            
-            // Get download URL
-            val downloadUrl = fileRef.downloadUrl.await().toString()
-            
-            // Save metadata to Firestore
+            // Encode the file bytes to a base64 string matching the web client
+            val base64String = android.util.Base64.encodeToString(fileBytes, android.util.Base64.NO_WRAP)
+            val dataURL = "data:application/pdf;base64,$base64String"
+
+            // Save metadata and inline data directly to Firestore
             val pdfNote = mapOf(
                 "fileName" to fileName,
-                "fileURL" to downloadUrl,
-                "uploadedBy" to uploadedBy
+                "fileURL" to dataURL,
+                "uploadedBy" to uploadedBy,
+                "uploadedByEmail" to uploadedByEmail,
+                "uploaderId" to uploaderId,
+                "uploadedAt" to com.google.firebase.firestore.FieldValue.serverTimestamp()
             )
             db.collection(Constants.COLL_PDFS).add(pdfNote).await()
+            Result.success(Unit)
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
+    }
+
+    suspend fun deletePdf(pdfId: String): Result<Unit> {
+        return try {
+            db.collection(Constants.COLL_PDFS).document(pdfId).delete().await()
             Result.success(Unit)
         } catch (e: Exception) {
             Result.failure(e)

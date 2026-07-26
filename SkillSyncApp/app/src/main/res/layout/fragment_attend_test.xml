@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background"
+    android:background="#F5F7FA"
     android:padding="16dp">
 
     <!-- Screen Header -->
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Attend Skill Test"
-        android:textColor="@color/text_primary"
+        android:textColor="#1A1A2E"
         android:textSize="22sp"
         android:textStyle="bold"
         android:layout_marginBottom="16dp"/>
@@ -28,8 +28,8 @@
             android:id="@+id/tvEmptyAvailable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No tests available. Follow peers to unlock their tests!"
-            android:textColor="@color/text_secondary"
+            android:text="No tests available from your connections."
+            android:textColor="#888888"
             android:textSize="14sp"
             android:layout_gravity="center"
             android:textStyle="italic"/>
@@ -41,23 +41,25 @@
     </FrameLayout>
 
     <!-- 2. Active MCQ Exam Mode Layout (hidden by default) -->
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/layoutActiveExam"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone">
+        android:visibility="gone"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Active Test Card -->
+            <!-- Active Test Header Card -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                app:cardCornerRadius="16dp">
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -68,22 +70,23 @@
                         android:id="@+id/tvActiveTestTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Kotlin Basics"
-                        android:textColor="@color/text_primary"
-                        android:textSize="20sp"
+                        android:text="Skill Test"
+                        android:textColor="#1E293B"
+                        android:textSize="18sp"
                         android:textStyle="bold"
                         android:layout_marginBottom="4dp"/>
                     <TextView
                         android:id="@+id/tvActiveTestReward"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Reward: 100 Credits"
-                        android:textColor="#2E7D32"
+                        android:text="5 Questions | Select 1 option for each"
+                        android:textColor="#2563EB"
+                        android:textSize="12sp"
                         android:textStyle="bold"/>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Programmatic LinearLayout container for adding question cards -->
+            <!-- Container for 5 question cards -->
             <LinearLayout
                 android:id="@+id/llActiveQuestions"
                 android:layout_width="match_parent"
@@ -96,12 +99,209 @@
                 android:id="@+id/btnSubmitExam"
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
-                android:text="Submit Answers"
+                android:text="✅ Submit Test"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                app:backgroundTint="#2E7D32"
                 android:layout_marginBottom="40dp" />
 
         </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- 3. Test Results Mode Layout (hidden by default) -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layoutExamResults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Result Summary Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="3dp"
+                app:strokeColor="#2E7D32"
+                app:strokeWidth="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🎉"
+                        android:textSize="44sp"
+                        android:layout_marginBottom="6dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Test Completed!"
+                        android:textColor="#2E7D32"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"/>
+
+                    <!-- Grid Stats -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        android:layout_marginBottom="12dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="#F8FAFC"
+                            android:padding="8dp">
+                            <TextView
+                                android:id="@+id/tvResTotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5"
+                                android:textColor="#1E293B"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TOTAL Qs"
+                                android:textColor="#64748B"
+                                android:textSize="9sp"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="#F0FDF4"
+                            android:padding="8dp">
+                            <TextView
+                                android:id="@+id/tvResCorrect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4"
+                                android:textColor="#166534"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CORRECT"
+                                android:textColor="#15803D"
+                                android:textSize="9sp"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="#FEF2F2"
+                            android:padding="8dp">
+                            <TextView
+                                android:id="@+id/tvResWrong"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:textColor="#991B1B"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="WRONG"
+                                android:textColor="#B91C1C"
+                                android:textSize="9sp"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="#EFF6FF"
+                            android:padding="8dp">
+                            <TextView
+                                android:id="@+id/tvResPct"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="80%"
+                                android:textColor="#1E40AF"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ACCURACY"
+                                android:textColor="#1D4ED8"
+                                android:textSize="9sp"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvResTimeTaken"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⏱️ Time Taken: 45s"
+                        android:textColor="#2563EB"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Detailed Explanation Review List -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📋 Detailed Review &amp; Explanations"
+                android:textColor="#1E293B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/llReviewQuestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBackToAvailableTests"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="← Back to Available Tests"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="#1565C0"
+                android:layout_marginBottom="32dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>

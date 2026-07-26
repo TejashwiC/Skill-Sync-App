@@ -62,6 +62,52 @@
         android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/chatHeader" />
 
+    <!-- Selection Action Bar (shown when a message is long-pressed) -->
+    <LinearLayout
+        android:id="@+id/layoutSelectionBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#E53935"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/etChatSearch">
+
+        <ImageView
+            android:id="@+id/btnCancelSelection"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="6dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <TextView
+            android:id="@+id/tvSelectionLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1 selected"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
+
+        <ImageView
+            android:id="@+id/btnDeleteSelected"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="6dp"
+            android:src="@android:drawable/ic_menu_delete"
+            app:tint="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+    </LinearLayout>
+
     <!-- Message list -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMessages"
@@ -69,7 +115,7 @@
         android:layout_height="0dp"
         android:padding="8dp"
         app:layout_constraintBottom_toTopOf="@id/layoutInput"
-        app:layout_constraintTop_toBottomOf="@id/etChatSearch" />
+        app:layout_constraintTop_toBottomOf="@id/layoutSelectionBar" />
 
     <!-- Message Input Dock -->
     <LinearLayout

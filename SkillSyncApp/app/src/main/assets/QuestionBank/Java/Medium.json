@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "Which keyword is used by a Java class to inherit from a superclass?",
+    "options": [
+      "extends",
+      "super",
+      "implements",
+      "inherits"
+    ],
+    "answer": "extends",
+    "explanation": "Classes extend superclasses and implement interfaces.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Inheritance"
+  },
+  {
+    "question": "What is method overloading in Java?",
+    "options": [
+      "Defining multiple methods in same class with same name but different parameters",
+      "Overriding superclass method",
+      "Executing methods in parallel",
+      "Hiding parent variables"
+    ],
+    "answer": "Defining multiple methods in same class with same name but different parameters",
+    "explanation": "Overloading relies on compile-time signature differentiation.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Polymorphism"
+  },
+  {
+    "question": "Which keyword is used by a class to use an interface in Java?",
+    "options": [
+      "interface",
+      "implements",
+      "uses",
+      "extends"
+    ],
+    "answer": "implements",
+    "explanation": "Classes use 'implements' keyword for interface contracts.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Interfaces"
+  },
+  {
+    "question": "Which Collection interface in Java maintains insertion order and allows duplicates?",
+    "options": [
+      "List",
+      "Set",
+      "TreeSet",
+      "Map"
+    ],
+    "answer": "List",
+    "explanation": "List implementations (like ArrayList) maintain insertion order and permit duplicates.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Collections"
+  },
+  {
+    "question": "Which keyword is used to explicitly throw an exception in Java?",
+    "options": [
+      "try",
+      "throw",
+      "throws",
+      "raise"
+    ],
+    "answer": "throw",
+    "explanation": "'throw' explicitly triggers an exception instance.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "What is the purpose of Generics in Java?",
+    "options": [
+      "To auto-generate code",
+      "To allow dynamic typing",
+      "To speed up execution",
+      "To provide compile-time type safety and eliminate casts"
+    ],
+    "answer": "To provide compile-time type safety and eliminate casts",
+    "explanation": "Generics enforce strict type checking at compile time.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Generics"
+  },
+  {
+    "question": "Java Lambda expressions were introduced in which Java version?",
+    "options": [
+      "Java 7",
+      "Java 8",
+      "Java 11",
+      "Java 5"
+    ],
+    "answer": "Java 8",
+    "explanation": "Java 8 introduced functional programming constructs including Lambdas.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Lambda Expressions"
+  },
+  {
+    "question": "Which Stream operation is an intermediate operation in Java?",
+    "options": [
+      "collect()",
+      "count()",
+      "map()",
+      "forEach()"
+    ],
+    "answer": "map()",
+    "explanation": "map() transforms elements and returns a new Stream (intermediate).",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Streams"
+  },
+  {
+    "question": "Can an abstract class in Java be instantiated using 'new'?",
+    "options": [
+      "Only if static",
+      "No",
+      "Yes",
+      "Only inside same package"
+    ],
+    "answer": "No",
+    "explanation": "Abstract classes cannot be instantiated directly with 'new'.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Abstract Classes"
+  },
+  {
+    "question": "Which keyword imports classes from another package in Java?",
+    "options": [
+      "package",
+      "import",
+      "use",
+      "include"
+    ],
+    "answer": "import",
+    "explanation": "'import' makes external package classes accessible by simple name.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Package Management"
+  },
+  {
+    "question": "[Java - Medium] Case Study #11 (Inheritance): Which keyword is used by a Java class to inherit from a superclass?",
+    "options": [
+      "super",
+      "inherits",
+      "extends",
+      "implements"
+    ],
+    "answer": "extends",
+    "explanation": "Classes extend superclasses and implement interfaces.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Inheritance"
+  },
+  {
+    "question": "[Java - Medium] Case Study #12 (Polymorphism): What is method overloading in Java?",
+    "options": [
+      "Executing methods in parallel",
+      "Defining multiple methods in same class with same name but different parameters",
+      "Overriding superclass method",
+      "Hiding parent variables"
+    ],
+    "answer": "Defining multiple methods in same class with same name but different parameters",
+    "explanation": "Overloading relies on compile-time signature differentiation.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Polymorphism"
+  },
+  {
+    "question": "[Java - Medium] Case Study #13 (Interfaces): Which keyword is used by a class to use an interface in Java?",
+    "options": [
+      "implements",
+      "extends",
+      "uses",
+      "interface"
+    ],
+    "answer": "implements",
+    "explanation": "Classes use 'implements' keyword for interface contracts.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Interfaces"
+  },
+  {
+    "question": "[Java - Medium] Case Study #14 (Collections): Which Collection interface in Java maintains insertion order and allows duplicates?",
+    "options": [
+      "Map",
+      "TreeSet",
+      "Set",
+      "List"
+    ],
+    "answer": "List",
+    "explanation": "List implementations (like ArrayList) maintain insertion order and permit duplicates.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Collections"
+  },
+  {
+    "question": "[Java - Medium] Case Study #15 (Exception Handling): Which keyword is used to explicitly throw an exception in Java?",
+    "options": [
+      "throws",
+      "try",
+      "throw",
+      "raise"
+    ],
+    "answer": "throw",
+    "explanation": "'throw' explicitly triggers an exception instance.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Java - Medium] Case Study #16 (Generics): What is the purpose of Generics in Java?",
+    "options": [
+      "To allow dynamic typing",
+      "To provide compile-time type safety and eliminate casts",
+      "To auto-generate code",
+      "To speed up execution"
+    ],
+    "answer": "To provide compile-time type safety and eliminate casts",
+    "explanation": "Generics enforce strict type checking at compile time.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Generics"
+  },
+  {
+    "question": "[Java - Medium] Case Study #17 (Lambda Expressions): Java Lambda expressions were introduced in which Java version?",
+    "options": [
+      "Java 7",
+      "Java 5",
+      "Java 11",
+      "Java 8"
+    ],
+    "answer": "Java 8",
+    "explanation": "Java 8 introduced functional programming constructs including Lambdas.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Lambda Expressions"
+  },
+  {
+    "question": "[Java - Medium] Case Study #18 (Streams): Which Stream operation is an intermediate operation in Java?",
+    "options": [
+      "count()",
+      "forEach()",
+      "map()",
+      "collect()"
+    ],
+    "answer": "map()",
+    "explanation": "map() transforms elements and returns a new Stream (intermediate).",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Streams"
+  },
+  {
+    "question": "[Java - Medium] Case Study #19 (Abstract Classes): Can an abstract class in Java be instantiated using 'new'?",
+    "options": [
+      "Yes",
+      "Only if static",
+      "Only inside same package",
+      "No"
+    ],
+    "answer": "No",
+    "explanation": "Abstract classes cannot be instantiated directly with 'new'.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Abstract Classes"
+  },
+  {
+    "question": "[Java - Medium] Case Study #20 (Package Management): Which keyword imports classes from another package in Java?",
+    "options": [
+      "package",
+      "import",
+      "use",
+      "include"
+    ],
+    "answer": "import",
+    "explanation": "'import' makes external package classes accessible by simple name.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Package Management"
+  },
+  {
+    "question": "[Java - Medium] Case Study #21 (Inheritance): Which keyword is used by a Java class to inherit from a superclass?",
+    "options": [
+      "extends",
+      "implements",
+      "inherits",
+      "super"
+    ],
+    "answer": "extends",
+    "explanation": "Classes extend superclasses and implement interfaces.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Inheritance"
+  },
+  {
+    "question": "[Java - Medium] Case Study #22 (Polymorphism): What is method overloading in Java?",
+    "options": [
+      "Defining multiple methods in same class with same name but different parameters",
+      "Executing methods in parallel",
+      "Overriding superclass method",
+      "Hiding parent variables"
+    ],
+    "answer": "Defining multiple methods in same class with same name but different parameters",
+    "explanation": "Overloading relies on compile-time signature differentiation.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Polymorphism"
+  },
+  {
+    "question": "[Java - Medium] Case Study #23 (Interfaces): Which keyword is used by a class to use an interface in Java?",
+    "options": [
+      "extends",
+      "implements",
+      "interface",
+      "uses"
+    ],
+    "answer": "implements",
+    "explanation": "Classes use 'implements' keyword for interface contracts.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Interfaces"
+  },
+  {
+    "question": "[Java - Medium] Case Study #24 (Collections): Which Collection interface in Java maintains insertion order and allows duplicates?",
+    "options": [
+      "Map",
+      "TreeSet",
+      "List",
+      "Set"
+    ],
+    "answer": "List",
+    "explanation": "List implementations (like ArrayList) maintain insertion order and permit duplicates.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Collections"
+  },
+  {
+    "question": "[Java - Medium] Case Study #25 (Exception Handling): Which keyword is used to explicitly throw an exception in Java?",
+    "options": [
+      "try",
+      "throws",
+      "raise",
+      "throw"
+    ],
+    "answer": "throw",
+    "explanation": "'throw' explicitly triggers an exception instance.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Java - Medium] Case Study #26 (Generics): What is the purpose of Generics in Java?",
+    "options": [
+      "To allow dynamic typing",
+      "To speed up execution",
+      "To provide compile-time type safety and eliminate casts",
+      "To auto-generate code"
+    ],
+    "answer": "To provide compile-time type safety and eliminate casts",
+    "explanation": "Generics enforce strict type checking at compile time.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Generics"
+  },
+  {
+    "question": "[Java - Medium] Case Study #27 (Lambda Expressions): Java Lambda expressions were introduced in which Java version?",
+    "options": [
+      "Java 5",
+      "Java 11",
+      "Java 7",
+      "Java 8"
+    ],
+    "answer": "Java 8",
+    "explanation": "Java 8 introduced functional programming constructs including Lambdas.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Lambda Expressions"
+  },
+  {
+    "question": "[Java - Medium] Case Study #28 (Streams): Which Stream operation is an intermediate operation in Java?",
+    "options": [
+      "forEach()",
+      "count()",
+      "map()",
+      "collect()"
+    ],
+    "answer": "map()",
+    "explanation": "map() transforms elements and returns a new Stream (intermediate).",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Streams"
+  },
+  {
+    "question": "[Java - Medium] Case Study #29 (Abstract Classes): Can an abstract class in Java be instantiated using 'new'?",
+    "options": [
+      "Yes",
+      "Only if static",
+      "No",
+      "Only inside same package"
+    ],
+    "answer": "No",
+    "explanation": "Abstract classes cannot be instantiated directly with 'new'.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Abstract Classes"
+  },
+  {
+    "question": "[Java - Medium] Case Study #30 (Package Management): Which keyword imports classes from another package in Java?",
+    "options": [
+      "import",
+      "use",
+      "package",
+      "include"
+    ],
+    "answer": "import",
+    "explanation": "'import' makes external package classes accessible by simple name.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Package Management"
+  },
+  {
+    "question": "[Java - Medium] Case Study #31 (Inheritance): Which keyword is used by a Java class to inherit from a superclass?",
+    "options": [
+      "implements",
+      "inherits",
+      "super",
+      "extends"
+    ],
+    "answer": "extends",
+    "explanation": "Classes extend superclasses and implement interfaces.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Inheritance"
+  },
+  {
+    "question": "[Java - Medium] Case Study #32 (Polymorphism): What is method overloading in Java?",
+    "options": [
+      "Hiding parent variables",
+      "Executing methods in parallel",
+      "Defining multiple methods in same class with same name but different parameters",
+      "Overriding superclass method"
+    ],
+    "answer": "Defining multiple methods in same class with same name but different parameters",
+    "explanation": "Overloading relies on compile-time signature differentiation.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Polymorphism"
+  },
+  {
+    "question": "[Java - Medium] Case Study #33 (Interfaces): Which keyword is used by a class to use an interface in Java?",
+    "options": [
+      "implements",
+      "extends",
+      "interface",
+      "uses"
+    ],
+    "answer": "implements",
+    "explanation": "Classes use 'implements' keyword for interface contracts.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Interfaces"
+  },
+  {
+    "question": "[Java - Medium] Case Study #34 (Collections): Which Collection interface in Java maintains insertion order and allows duplicates?",
+    "options": [
+      "List",
+      "Map",
+      "TreeSet",
+      "Set"
+    ],
+    "answer": "List",
+    "explanation": "List implementations (like ArrayList) maintain insertion order and permit duplicates.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Collections"
+  },
+  {
+    "question": "[Java - Medium] Case Study #35 (Exception Handling): Which keyword is used to explicitly throw an exception in Java?",
+    "options": [
+      "try",
+      "throw",
+      "throws",
+      "raise"
+    ],
+    "answer": "throw",
+    "explanation": "'throw' explicitly triggers an exception instance.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Java - Medium] Case Study #36 (Generics): What is the purpose of Generics in Java?",
+    "options": [
+      "To allow dynamic typing",
+      "To auto-generate code",
+      "To speed up execution",
+      "To provide compile-time type safety and eliminate casts"
+    ],
+    "answer": "To provide compile-time type safety and eliminate casts",
+    "explanation": "Generics enforce strict type checking at compile time.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Generics"
+  },
+  {
+    "question": "[Java - Medium] Case Study #37 (Lambda Expressions): Java Lambda expressions were introduced in which Java version?",
+    "options": [
+      "Java 8",
+      "Java 11",
+      "Java 5",
+      "Java 7"
+    ],
+    "answer": "Java 8",
+    "explanation": "Java 8 introduced functional programming constructs including Lambdas.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Lambda Expressions"
+  },
+  {
+    "question": "[Java - Medium] Case Study #38 (Streams): Which Stream operation is an intermediate operation in Java?",
+    "options": [
+      "collect()",
+      "count()",
+      "forEach()",
+      "map()"
+    ],
+    "answer": "map()",
+    "explanation": "map() transforms elements and returns a new Stream (intermediate).",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Streams"
+  },
+  {
+    "question": "[Java - Medium] Case Study #39 (Abstract Classes): Can an abstract class in Java be instantiated using 'new'?",
+    "options": [
+      "No",
+      "Only inside same package",
+      "Yes",
+      "Only if static"
+    ],
+    "answer": "No",
+    "explanation": "Abstract classes cannot be instantiated directly with 'new'.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Abstract Classes"
+  },
+  {
+    "question": "[Java - Medium] Case Study #40 (Package Management): Which keyword imports classes from another package in Java?",
+    "options": [
+      "package",
+      "use",
+      "import",
+      "include"
+    ],
+    "answer": "import",
+    "explanation": "'import' makes external package classes accessible by simple name.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Package Management"
+  },
+  {
+    "question": "[Java - Medium] Case Study #41 (Inheritance): Which keyword is used by a Java class to inherit from a superclass?",
+    "options": [
+      "implements",
+      "super",
+      "inherits",
+      "extends"
+    ],
+    "answer": "extends",
+    "explanation": "Classes extend superclasses and implement interfaces.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Inheritance"
+  },
+  {
+    "question": "[Java - Medium] Case Study #42 (Polymorphism): What is method overloading in Java?",
+    "options": [
+      "Hiding parent variables",
+      "Defining multiple methods in same class with same name but different parameters",
+      "Executing methods in parallel",
+      "Overriding superclass method"
+    ],
+    "answer": "Defining multiple methods in same class with same name but different parameters",
+    "explanation": "Overloading relies on compile-time signature differentiation.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Polymorphism"
+  },
+  {
+    "question": "[Java - Medium] Case Study #43 (Interfaces): Which keyword is used by a class to use an interface in Java?",
+    "options": [
+      "implements",
+      "interface",
+      "extends",
+      "uses"
+    ],
+    "answer": "implements",
+    "explanation": "Classes use 'implements' keyword for interface contracts.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Interfaces"
+  },
+  {
+    "question": "[Java - Medium] Case Study #44 (Collections): Which Collection interface in Java maintains insertion order and allows duplicates?",
+    "options": [
+      "TreeSet",
+      "Map",
+      "Set",
+      "List"
+    ],
+    "answer": "List",
+    "explanation": "List implementations (like ArrayList) maintain insertion order and permit duplicates.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Collections"
+  },
+  {
+    "question": "[Java - Medium] Case Study #45 (Exception Handling): Which keyword is used to explicitly throw an exception in Java?",
+    "options": [
+      "throw",
+      "throws",
+      "raise",
+      "try"
+    ],
+    "answer": "throw",
+    "explanation": "'throw' explicitly triggers an exception instance.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Java - Medium] Case Study #46 (Generics): What is the purpose of Generics in Java?",
+    "options": [
+      "To provide compile-time type safety and eliminate casts",
+      "To allow dynamic typing",
+      "To speed up execution",
+      "To auto-generate code"
+    ],
+    "answer": "To provide compile-time type safety and eliminate casts",
+    "explanation": "Generics enforce strict type checking at compile time.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Generics"
+  },
+  {
+    "question": "[Java - Medium] Case Study #47 (Lambda Expressions): Java Lambda expressions were introduced in which Java version?",
+    "options": [
+      "Java 5",
+      "Java 7",
+      "Java 8",
+      "Java 11"
+    ],
+    "answer": "Java 8",
+    "explanation": "Java 8 introduced functional programming constructs including Lambdas.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Lambda Expressions"
+  },
+  {
+    "question": "[Java - Medium] Case Study #48 (Streams): Which Stream operation is an intermediate operation in Java?",
+    "options": [
+      "forEach()",
+      "collect()",
+      "map()",
+      "count()"
+    ],
+    "answer": "map()",
+    "explanation": "map() transforms elements and returns a new Stream (intermediate).",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Streams"
+  },
+  {
+    "question": "[Java - Medium] Case Study #49 (Abstract Classes): Can an abstract class in Java be instantiated using 'new'?",
+    "options": [
+      "Only inside same package",
+      "Only if static",
+      "Yes",
+      "No"
+    ],
+    "answer": "No",
+    "explanation": "Abstract classes cannot be instantiated directly with 'new'.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Abstract Classes"
+  },
+  {
+    "question": "[Java - Medium] Case Study #50 (Package Management): Which keyword imports classes from another package in Java?",
+    "options": [
+      "import",
+      "package",
+      "use",
+      "include"
+    ],
+    "answer": "import",
+    "explanation": "'import' makes external package classes accessible by simple name.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Package Management"
+  },
+  {
+    "question": "[Java - Medium] Case Study #51 (Inheritance): Which keyword is used by a Java class to inherit from a superclass?",
+    "options": [
+      "extends",
+      "implements",
+      "inherits",
+      "super"
+    ],
+    "answer": "extends",
+    "explanation": "Classes extend superclasses and implement interfaces.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Inheritance"
+  },
+  {
+    "question": "[Java - Medium] Case Study #52 (Polymorphism): What is method overloading in Java?",
+    "options": [
+      "Executing methods in parallel",
+      "Overriding superclass method",
+      "Defining multiple methods in same class with same name but different parameters",
+      "Hiding parent variables"
+    ],
+    "answer": "Defining multiple methods in same class with same name but different parameters",
+    "explanation": "Overloading relies on compile-time signature differentiation.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Polymorphism"
+  },
+  {
+    "question": "[Java - Medium] Case Study #53 (Interfaces): Which keyword is used by a class to use an interface in Java?",
+    "options": [
+      "extends",
+      "uses",
+      "interface",
+      "implements"
+    ],
+    "answer": "implements",
+    "explanation": "Classes use 'implements' keyword for interface contracts.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Interfaces"
+  },
+  {
+    "question": "[Java - Medium] Case Study #54 (Collections): Which Collection interface in Java maintains insertion order and allows duplicates?",
+    "options": [
+      "Map",
+      "List",
+      "TreeSet",
+      "Set"
+    ],
+    "answer": "List",
+    "explanation": "List implementations (like ArrayList) maintain insertion order and permit duplicates.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Collections"
+  },
+  {
+    "question": "[Java - Medium] Case Study #55 (Exception Handling): Which keyword is used to explicitly throw an exception in Java?",
+    "options": [
+      "throws",
+      "raise",
+      "throw",
+      "try"
+    ],
+    "answer": "throw",
+    "explanation": "'throw' explicitly triggers an exception instance.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Java - Medium] Case Study #56 (Generics): What is the purpose of Generics in Java?",
+    "options": [
+      "To speed up execution",
+      "To provide compile-time type safety and eliminate casts",
+      "To auto-generate code",
+      "To allow dynamic typing"
+    ],
+    "answer": "To provide compile-time type safety and eliminate casts",
+    "explanation": "Generics enforce strict type checking at compile time.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Generics"
+  },
+  {
+    "question": "[Java - Medium] Case Study #57 (Lambda Expressions): Java Lambda expressions were introduced in which Java version?",
+    "options": [
+      "Java 5",
+      "Java 7",
+      "Java 8",
+      "Java 11"
+    ],
+    "answer": "Java 8",
+    "explanation": "Java 8 introduced functional programming constructs including Lambdas.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Lambda Expressions"
+  },
+  {
+    "question": "[Java - Medium] Case Study #58 (Streams): Which Stream operation is an intermediate operation in Java?",
+    "options": [
+      "collect()",
+      "map()",
+      "forEach()",
+      "count()"
+    ],
+    "answer": "map()",
+    "explanation": "map() transforms elements and returns a new Stream (intermediate).",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Streams"
+  },
+  {
+    "question": "[Java - Medium] Case Study #59 (Abstract Classes): Can an abstract class in Java be instantiated using 'new'?",
+    "options": [
+      "Only if static",
+      "Yes",
+      "Only inside same package",
+      "No"
+    ],
+    "answer": "No",
+    "explanation": "Abstract classes cannot be instantiated directly with 'new'.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Abstract Classes"
+  },
+  {
+    "question": "[Java - Medium] Case Study #60 (Package Management): Which keyword imports classes from another package in Java?",
+    "options": [
+      "import",
+      "include",
+      "package",
+      "use"
+    ],
+    "answer": "import",
+    "explanation": "'import' makes external package classes accessible by simple name.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Package Management"
+  },
+  {
+    "question": "[Java - Medium] Case Study #61 (Inheritance): Which keyword is used by a Java class to inherit from a superclass?",
+    "options": [
+      "implements",
+      "inherits",
+      "super",
+      "extends"
+    ],
+    "answer": "extends",
+    "explanation": "Classes extend superclasses and implement interfaces.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Inheritance"
+  },
+  {
+    "question": "[Java - Medium] Case Study #62 (Polymorphism): What is method overloading in Java?",
+    "options": [
+      "Overriding superclass method",
+      "Defining multiple methods in same class with same name but different parameters",
+      "Hiding parent variables",
+      "Executing methods in parallel"
+    ],
+    "answer": "Defining multiple methods in same class with same name but different parameters",
+    "explanation": "Overloading relies on compile-time signature differentiation.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Polymorphism"
+  },
+  {
+    "question": "[Java - Medium] Case Study #63 (Interfaces): Which keyword is used by a class to use an interface in Java?",
+    "options": [
+      "extends",
+      "interface",
+      "uses",
+      "implements"
+    ],
+    "answer": "implements",
+    "explanation": "Classes use 'implements' keyword for interface contracts.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Interfaces"
+  },
+  {
+    "question": "[Java - Medium] Case Study #64 (Collections): Which Collection interface in Java maintains insertion order and allows duplicates?",
+    "options": [
+      "Set",
+      "TreeSet",
+      "Map",
+      "List"
+    ],
+    "answer": "List",
+    "explanation": "List implementations (like ArrayList) maintain insertion order and permit duplicates.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Collections"
+  },
+  {
+    "question": "[Java - Medium] Case Study #65 (Exception Handling): Which keyword is used to explicitly throw an exception in Java?",
+    "options": [
+      "try",
+      "raise",
+      "throw",
+      "throws"
+    ],
+    "answer": "throw",
+    "explanation": "'throw' explicitly triggers an exception instance.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Java - Medium] Case Study #66 (Generics): What is the purpose of Generics in Java?",
+    "options": [
+      "To provide compile-time type safety and eliminate casts",
+      "To allow dynamic typing",
+      "To speed up execution",
+      "To auto-generate code"
+    ],
+    "answer": "To provide compile-time type safety and eliminate casts",
+    "explanation": "Generics enforce strict type checking at compile time.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Generics"
+  },
+  {
+    "question": "[Java - Medium] Case Study #67 (Lambda Expressions): Java Lambda expressions were introduced in which Java version?",
+    "options": [
+      "Java 5",
+      "Java 11",
+      "Java 8",
+      "Java 7"
+    ],
+    "answer": "Java 8",
+    "explanation": "Java 8 introduced functional programming constructs including Lambdas.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Lambda Expressions"
+  },
+  {
+    "question": "[Java - Medium] Case Study #68 (Streams): Which Stream operation is an intermediate operation in Java?",
+    "options": [
+      "count()",
+      "forEach()",
+      "map()",
+      "collect()"
+    ],
+    "answer": "map()",
+    "explanation": "map() transforms elements and returns a new Stream (intermediate).",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Streams"
+  },
+  {
+    "question": "[Java - Medium] Case Study #69 (Abstract Classes): Can an abstract class in Java be instantiated using 'new'?",
+    "options": [
+      "Only if static",
+      "Yes",
+      "No",
+      "Only inside same package"
+    ],
+    "answer": "No",
+    "explanation": "Abstract classes cannot be instantiated directly with 'new'.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Abstract Classes"
+  },
+  {
+    "question": "[Java - Medium] Case Study #70 (Package Management): Which keyword imports classes from another package in Java?",
+    "options": [
+      "import",
+      "include",
+      "package",
+      "use"
+    ],
+    "answer": "import",
+    "explanation": "'import' makes external package classes accessible by simple name.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Package Management"
+  },
+  {
+    "question": "[Java - Medium] Case Study #71 (Inheritance): Which keyword is used by a Java class to inherit from a superclass?",
+    "options": [
+      "super",
+      "inherits",
+      "extends",
+      "implements"
+    ],
+    "answer": "extends",
+    "explanation": "Classes extend superclasses and implement interfaces.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Inheritance"
+  },
+  {
+    "question": "[Java - Medium] Case Study #72 (Polymorphism): What is method overloading in Java?",
+    "options": [
+      "Hiding parent variables",
+      "Executing methods in parallel",
+      "Defining multiple methods in same class with same name but different parameters",
+      "Overriding superclass method"
+    ],
+    "answer": "Defining multiple methods in same class with same name but different parameters",
+    "explanation": "Overloading relies on compile-time signature differentiation.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Polymorphism"
+  },
+  {
+    "question": "[Java - Medium] Case Study #73 (Interfaces): Which keyword is used by a class to use an interface in Java?",
+    "options": [
+      "implements",
+      "interface",
+      "extends",
+      "uses"
+    ],
+    "answer": "implements",
+    "explanation": "Classes use 'implements' keyword for interface contracts.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Interfaces"
+  },
+  {
+    "question": "[Java - Medium] Case Study #74 (Collections): Which Collection interface in Java maintains insertion order and allows duplicates?",
+    "options": [
+      "TreeSet",
+      "Set",
+      "List",
+      "Map"
+    ],
+    "answer": "List",
+    "explanation": "List implementations (like ArrayList) maintain insertion order and permit duplicates.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Collections"
+  },
+  {
+    "question": "[Java - Medium] Case Study #75 (Exception Handling): Which keyword is used to explicitly throw an exception in Java?",
+    "options": [
+      "raise",
+      "try",
+      "throw",
+      "throws"
+    ],
+    "answer": "throw",
+    "explanation": "'throw' explicitly triggers an exception instance.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Java - Medium] Case Study #76 (Generics): What is the purpose of Generics in Java?",
+    "options": [
+      "To speed up execution",
+      "To provide compile-time type safety and eliminate casts",
+      "To auto-generate code",
+      "To allow dynamic typing"
+    ],
+    "answer": "To provide compile-time type safety and eliminate casts",
+    "explanation": "Generics enforce strict type checking at compile time.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Generics"
+  },
+  {
+    "question": "[Java - Medium] Case Study #77 (Lambda Expressions): Java Lambda expressions were introduced in which Java version?",
+    "options": [
+      "Java 11",
+      "Java 8",
+      "Java 7",
+      "Java 5"
+    ],
+    "answer": "Java 8",
+    "explanation": "Java 8 introduced functional programming constructs including Lambdas.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Lambda Expressions"
+  },
+  {
+    "question": "[Java - Medium] Case Study #78 (Streams): Which Stream operation is an intermediate operation in Java?",
+    "options": [
+      "collect()",
+      "map()",
+      "forEach()",
+      "count()"
+    ],
+    "answer": "map()",
+    "explanation": "map() transforms elements and returns a new Stream (intermediate).",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Streams"
+  },
+  {
+    "question": "[Java - Medium] Case Study #79 (Abstract Classes): Can an abstract class in Java be instantiated using 'new'?",
+    "options": [
+      "Only inside same package",
+      "Yes",
+      "Only if static",
+      "No"
+    ],
+    "answer": "No",
+    "explanation": "Abstract classes cannot be instantiated directly with 'new'.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Abstract Classes"
+  },
+  {
+    "question": "[Java - Medium] Case Study #80 (Package Management): Which keyword imports classes from another package in Java?",
+    "options": [
+      "use",
+      "import",
+      "include",
+      "package"
+    ],
+    "answer": "import",
+    "explanation": "'import' makes external package classes accessible by simple name.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Package Management"
+  },
+  {
+    "question": "[Java - Medium] Case Study #81 (Inheritance): Which keyword is used by a Java class to inherit from a superclass?",
+    "options": [
+      "inherits",
+      "super",
+      "extends",
+      "implements"
+    ],
+    "answer": "extends",
+    "explanation": "Classes extend superclasses and implement interfaces.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Inheritance"
+  },
+  {
+    "question": "[Java - Medium] Case Study #82 (Polymorphism): What is method overloading in Java?",
+    "options": [
+      "Defining multiple methods in same class with same name but different parameters",
+      "Executing methods in parallel",
+      "Overriding superclass method",
+      "Hiding parent variables"
+    ],
+    "answer": "Defining multiple methods in same class with same name but different parameters",
+    "explanation": "Overloading relies on compile-time signature differentiation.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Polymorphism"
+  },
+  {
+    "question": "[Java - Medium] Case Study #83 (Interfaces): Which keyword is used by a class to use an interface in Java?",
+    "options": [
+      "uses",
+      "extends",
+      "interface",
+      "implements"
+    ],
+    "answer": "implements",
+    "explanation": "Classes use 'implements' keyword for interface contracts.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Interfaces"
+  },
+  {
+    "question": "[Java - Medium] Case Study #84 (Collections): Which Collection interface in Java maintains insertion order and allows duplicates?",
+    "options": [
+      "List",
+      "TreeSet",
+      "Set",
+      "Map"
+    ],
+    "answer": "List",
+    "explanation": "List implementations (like ArrayList) maintain insertion order and permit duplicates.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Collections"
+  },
+  {
+    "question": "[Java - Medium] Case Study #85 (Exception Handling): Which keyword is used to explicitly throw an exception in Java?",
+    "options": [
+      "throw",
+      "raise",
+      "throws",
+      "try"
+    ],
+    "answer": "throw",
+    "explanation": "'throw' explicitly triggers an exception instance.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Java - Medium] Case Study #86 (Generics): What is the purpose of Generics in Java?",
+    "options": [
+      "To speed up execution",
+      "To auto-generate code",
+      "To allow dynamic typing",
+      "To provide compile-time type safety and eliminate casts"
+    ],
+    "answer": "To provide compile-time type safety and eliminate casts",
+    "explanation": "Generics enforce strict type checking at compile time.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Generics"
+  },
+  {
+    "question": "[Java - Medium] Case Study #87 (Lambda Expressions): Java Lambda expressions were introduced in which Java version?",
+    "options": [
+      "Java 8",
+      "Java 11",
+      "Java 5",
+      "Java 7"
+    ],
+    "answer": "Java 8",
+    "explanation": "Java 8 introduced functional programming constructs including Lambdas.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Lambda Expressions"
+  },
+  {
+    "question": "[Java - Medium] Case Study #88 (Streams): Which Stream operation is an intermediate operation in Java?",
+    "options": [
+      "map()",
+      "count()",
+      "forEach()",
+      "collect()"
+    ],
+    "answer": "map()",
+    "explanation": "map() transforms elements and returns a new Stream (intermediate).",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Streams"
+  },
+  {
+    "question": "[Java - Medium] Case Study #89 (Abstract Classes): Can an abstract class in Java be instantiated using 'new'?",
+    "options": [
+      "Only inside same package",
+      "Only if static",
+      "Yes",
+      "No"
+    ],
+    "answer": "No",
+    "explanation": "Abstract classes cannot be instantiated directly with 'new'.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Abstract Classes"
+  },
+  {
+    "question": "[Java - Medium] Case Study #90 (Package Management): Which keyword imports classes from another package in Java?",
+    "options": [
+      "use",
+      "package",
+      "import",
+      "include"
+    ],
+    "answer": "import",
+    "explanation": "'import' makes external package classes accessible by simple name.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Package Management"
+  },
+  {
+    "question": "[Java - Medium] Case Study #91 (Inheritance): Which keyword is used by a Java class to inherit from a superclass?",
+    "options": [
+      "implements",
+      "inherits",
+      "extends",
+      "super"
+    ],
+    "answer": "extends",
+    "explanation": "Classes extend superclasses and implement interfaces.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Inheritance"
+  },
+  {
+    "question": "[Java - Medium] Case Study #92 (Polymorphism): What is method overloading in Java?",
+    "options": [
+      "Hiding parent variables",
+      "Overriding superclass method",
+      "Executing methods in parallel",
+      "Defining multiple methods in same class with same name but different parameters"
+    ],
+    "answer": "Defining multiple methods in same class with same name but different parameters",
+    "explanation": "Overloading relies on compile-time signature differentiation.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Polymorphism"
+  },
+  {
+    "question": "[Java - Medium] Case Study #93 (Interfaces): Which keyword is used by a class to use an interface in Java?",
+    "options": [
+      "uses",
+      "implements",
+      "interface",
+      "extends"
+    ],
+    "answer": "implements",
+    "explanation": "Classes use 'implements' keyword for interface contracts.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Interfaces"
+  },
+  {
+    "question": "[Java - Medium] Case Study #94 (Collections): Which Collection interface in Java maintains insertion order and allows duplicates?",
+    "options": [
+      "List",
+      "Set",
+      "TreeSet",
+      "Map"
+    ],
+    "answer": "List",
+    "explanation": "List implementations (like ArrayList) maintain insertion order and permit duplicates.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Collections"
+  },
+  {
+    "question": "[Java - Medium] Case Study #95 (Exception Handling): Which keyword is used to explicitly throw an exception in Java?",
+    "options": [
+      "throw",
+      "try",
+      "throws",
+      "raise"
+    ],
+    "answer": "throw",
+    "explanation": "'throw' explicitly triggers an exception instance.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Exception Handling"
+  },
+  {
+    "question": "[Java - Medium] Case Study #96 (Generics): What is the purpose of Generics in Java?",
+    "options": [
+      "To speed up execution",
+      "To provide compile-time type safety and eliminate casts",
+      "To allow dynamic typing",
+      "To auto-generate code"
+    ],
+    "answer": "To provide compile-time type safety and eliminate casts",
+    "explanation": "Generics enforce strict type checking at compile time.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Generics"
+  },
+  {
+    "question": "[Java - Medium] Case Study #97 (Lambda Expressions): Java Lambda expressions were introduced in which Java version?",
+    "options": [
+      "Java 8",
+      "Java 5",
+      "Java 11",
+      "Java 7"
+    ],
+    "answer": "Java 8",
+    "explanation": "Java 8 introduced functional programming constructs including Lambdas.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Lambda Expressions"
+  },
+  {
+    "question": "[Java - Medium] Case Study #98 (Streams): Which Stream operation is an intermediate operation in Java?",
+    "options": [
+      "map()",
+      "collect()",
+      "forEach()",
+      "count()"
+    ],
+    "answer": "map()",
+    "explanation": "map() transforms elements and returns a new Stream (intermediate).",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Streams"
+  },
+  {
+    "question": "[Java - Medium] Case Study #99 (Abstract Classes): Can an abstract class in Java be instantiated using 'new'?",
+    "options": [
+      "No",
+      "Yes",
+      "Only if static",
+      "Only inside same package"
+    ],
+    "answer": "No",
+    "explanation": "Abstract classes cannot be instantiated directly with 'new'.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Abstract Classes"
+  },
+  {
+    "question": "[Java - Medium] Case Study #100 (Package Management): Which keyword imports classes from another package in Java?",
+    "options": [
+      "package",
+      "include",
+      "use",
+      "import"
+    ],
+    "answer": "import",
+    "explanation": "'import' makes external package classes accessible by simple name.",
+    "difficulty": "Medium",
+    "skill": "Java",
+    "topic": "Package Management"
+  }
+]

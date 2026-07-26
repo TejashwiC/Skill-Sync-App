@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "6 beats per measure",
+      "4 beats per measure, quarter note gets 1 beat",
+      "3 beats per measure",
+      "Fast tempo only"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "How many notes make up a standard major scale octave?",
+    "options": [
+      "7 distinct notes (8th is octave repeat)",
+      "6 notes",
+      "5 notes",
+      "12 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "What three notes form a C Major triad chord?",
+    "options": [
+      "C - Eb - G",
+      "C - E - G",
+      "C - F - G",
+      "C - D - E"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Slow tempo",
+      "Loud",
+      "Gradually speeding up",
+      "Soft"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #5 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "6 beats per measure",
+      "4 beats per measure, quarter note gets 1 beat",
+      "3 beats per measure",
+      "Fast tempo only"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #6 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "12 notes",
+      "7 distinct notes (8th is octave repeat)",
+      "6 notes",
+      "5 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #7 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - F - G",
+      "C - Eb - G",
+      "C - E - G",
+      "C - D - E"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #8 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Loud",
+      "Gradually speeding up",
+      "Slow tempo",
+      "Soft"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #9 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "Fast tempo only",
+      "4 beats per measure, quarter note gets 1 beat",
+      "3 beats per measure",
+      "6 beats per measure"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #10 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "6 notes",
+      "5 notes",
+      "12 notes",
+      "7 distinct notes (8th is octave repeat)"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #11 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - F - G",
+      "C - E - G",
+      "C - Eb - G",
+      "C - D - E"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #12 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Gradually speeding up",
+      "Slow tempo",
+      "Loud",
+      "Soft"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #13 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "4 beats per measure, quarter note gets 1 beat",
+      "6 beats per measure",
+      "3 beats per measure",
+      "Fast tempo only"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #14 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "5 notes",
+      "12 notes",
+      "7 distinct notes (8th is octave repeat)",
+      "6 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #15 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - D - E",
+      "C - F - G",
+      "C - Eb - G",
+      "C - E - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #16 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Gradually speeding up",
+      "Loud",
+      "Slow tempo",
+      "Soft"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #17 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "Fast tempo only",
+      "4 beats per measure, quarter note gets 1 beat",
+      "6 beats per measure",
+      "3 beats per measure"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #18 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "6 notes",
+      "5 notes",
+      "12 notes",
+      "7 distinct notes (8th is octave repeat)"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #19 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - E - G",
+      "C - F - G",
+      "C - Eb - G",
+      "C - D - E"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #20 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Soft",
+      "Slow tempo",
+      "Loud",
+      "Gradually speeding up"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #21 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "3 beats per measure",
+      "6 beats per measure",
+      "Fast tempo only",
+      "4 beats per measure, quarter note gets 1 beat"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #22 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "7 distinct notes (8th is octave repeat)",
+      "5 notes",
+      "12 notes",
+      "6 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #23 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - F - G",
+      "C - Eb - G",
+      "C - D - E",
+      "C - E - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #24 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Soft",
+      "Slow tempo",
+      "Gradually speeding up",
+      "Loud"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #25 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "6 beats per measure",
+      "Fast tempo only",
+      "4 beats per measure, quarter note gets 1 beat",
+      "3 beats per measure"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #26 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "5 notes",
+      "6 notes",
+      "7 distinct notes (8th is octave repeat)",
+      "12 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #27 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - Eb - G",
+      "C - F - G",
+      "C - E - G",
+      "C - D - E"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #28 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Loud",
+      "Slow tempo",
+      "Gradually speeding up",
+      "Soft"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #29 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "6 beats per measure",
+      "Fast tempo only",
+      "3 beats per measure",
+      "4 beats per measure, quarter note gets 1 beat"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #30 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "12 notes",
+      "6 notes",
+      "7 distinct notes (8th is octave repeat)",
+      "5 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #31 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - Eb - G",
+      "C - F - G",
+      "C - D - E",
+      "C - E - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #32 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Soft",
+      "Gradually speeding up",
+      "Slow tempo",
+      "Loud"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #33 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "Fast tempo only",
+      "3 beats per measure",
+      "6 beats per measure",
+      "4 beats per measure, quarter note gets 1 beat"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #34 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "12 notes",
+      "6 notes",
+      "5 notes",
+      "7 distinct notes (8th is octave repeat)"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #35 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - D - E",
+      "C - F - G",
+      "C - Eb - G",
+      "C - E - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #36 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Gradually speeding up",
+      "Loud",
+      "Slow tempo",
+      "Soft"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #37 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "Fast tempo only",
+      "4 beats per measure, quarter note gets 1 beat",
+      "6 beats per measure",
+      "3 beats per measure"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #38 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "12 notes",
+      "5 notes",
+      "7 distinct notes (8th is octave repeat)",
+      "6 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #39 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - D - E",
+      "C - F - G",
+      "C - Eb - G",
+      "C - E - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #40 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Soft",
+      "Slow tempo",
+      "Loud",
+      "Gradually speeding up"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #41 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "4 beats per measure, quarter note gets 1 beat",
+      "Fast tempo only",
+      "6 beats per measure",
+      "3 beats per measure"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #42 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "12 notes",
+      "7 distinct notes (8th is octave repeat)",
+      "6 notes",
+      "5 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #43 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - E - G",
+      "C - Eb - G",
+      "C - F - G",
+      "C - D - E"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #44 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Gradually speeding up",
+      "Soft",
+      "Loud",
+      "Slow tempo"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #45 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "Fast tempo only",
+      "3 beats per measure",
+      "4 beats per measure, quarter note gets 1 beat",
+      "6 beats per measure"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #46 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "5 notes",
+      "7 distinct notes (8th is octave repeat)",
+      "6 notes",
+      "12 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #47 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - F - G",
+      "C - D - E",
+      "C - Eb - G",
+      "C - E - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #48 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Slow tempo",
+      "Loud",
+      "Gradually speeding up",
+      "Soft"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #49 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "4 beats per measure, quarter note gets 1 beat",
+      "3 beats per measure",
+      "6 beats per measure",
+      "Fast tempo only"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #50 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "7 distinct notes (8th is octave repeat)",
+      "12 notes",
+      "5 notes",
+      "6 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #51 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - Eb - G",
+      "C - D - E",
+      "C - F - G",
+      "C - E - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #52 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Slow tempo",
+      "Gradually speeding up",
+      "Loud",
+      "Soft"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #53 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "Fast tempo only",
+      "3 beats per measure",
+      "6 beats per measure",
+      "4 beats per measure, quarter note gets 1 beat"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #54 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "6 notes",
+      "5 notes",
+      "7 distinct notes (8th is octave repeat)",
+      "12 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #55 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - Eb - G",
+      "C - D - E",
+      "C - F - G",
+      "C - E - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #56 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Loud",
+      "Soft",
+      "Slow tempo",
+      "Gradually speeding up"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #57 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "3 beats per measure",
+      "Fast tempo only",
+      "6 beats per measure",
+      "4 beats per measure, quarter note gets 1 beat"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #58 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "12 notes",
+      "7 distinct notes (8th is octave repeat)",
+      "6 notes",
+      "5 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #59 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - Eb - G",
+      "C - E - G",
+      "C - D - E",
+      "C - F - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #60 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Soft",
+      "Loud",
+      "Slow tempo",
+      "Gradually speeding up"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #61 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "Fast tempo only",
+      "6 beats per measure",
+      "3 beats per measure",
+      "4 beats per measure, quarter note gets 1 beat"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #62 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "12 notes",
+      "6 notes",
+      "7 distinct notes (8th is octave repeat)",
+      "5 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #63 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - D - E",
+      "C - E - G",
+      "C - F - G",
+      "C - Eb - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #64 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Slow tempo",
+      "Soft",
+      "Gradually speeding up",
+      "Loud"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #65 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "Fast tempo only",
+      "6 beats per measure",
+      "3 beats per measure",
+      "4 beats per measure, quarter note gets 1 beat"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #66 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "12 notes",
+      "5 notes",
+      "6 notes",
+      "7 distinct notes (8th is octave repeat)"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #67 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - F - G",
+      "C - D - E",
+      "C - Eb - G",
+      "C - E - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #68 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Gradually speeding up",
+      "Soft",
+      "Slow tempo",
+      "Loud"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #69 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "3 beats per measure",
+      "Fast tempo only",
+      "6 beats per measure",
+      "4 beats per measure, quarter note gets 1 beat"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #70 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "6 notes",
+      "7 distinct notes (8th is octave repeat)",
+      "5 notes",
+      "12 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #71 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - F - G",
+      "C - D - E",
+      "C - Eb - G",
+      "C - E - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #72 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Slow tempo",
+      "Loud",
+      "Gradually speeding up",
+      "Soft"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #73 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "4 beats per measure, quarter note gets 1 beat",
+      "3 beats per measure",
+      "Fast tempo only",
+      "6 beats per measure"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #74 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "7 distinct notes (8th is octave repeat)",
+      "5 notes",
+      "6 notes",
+      "12 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #75 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - D - E",
+      "C - F - G",
+      "C - E - G",
+      "C - Eb - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #76 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Slow tempo",
+      "Soft",
+      "Gradually speeding up",
+      "Loud"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #77 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "3 beats per measure",
+      "4 beats per measure, quarter note gets 1 beat",
+      "Fast tempo only",
+      "6 beats per measure"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #78 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "5 notes",
+      "12 notes",
+      "6 notes",
+      "7 distinct notes (8th is octave repeat)"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #79 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - D - E",
+      "C - E - G",
+      "C - Eb - G",
+      "C - F - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #80 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Soft",
+      "Slow tempo",
+      "Gradually speeding up",
+      "Loud"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #81 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "Fast tempo only",
+      "3 beats per measure",
+      "4 beats per measure, quarter note gets 1 beat",
+      "6 beats per measure"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #82 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "6 notes",
+      "5 notes",
+      "7 distinct notes (8th is octave repeat)",
+      "12 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #83 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - D - E",
+      "C - F - G",
+      "C - E - G",
+      "C - Eb - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #84 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Gradually speeding up",
+      "Loud",
+      "Slow tempo",
+      "Soft"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #85 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "3 beats per measure",
+      "Fast tempo only",
+      "4 beats per measure, quarter note gets 1 beat",
+      "6 beats per measure"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #86 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "5 notes",
+      "7 distinct notes (8th is octave repeat)",
+      "6 notes",
+      "12 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #87 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - Eb - G",
+      "C - F - G",
+      "C - E - G",
+      "C - D - E"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #88 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Gradually speeding up",
+      "Soft",
+      "Slow tempo",
+      "Loud"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #89 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "4 beats per measure, quarter note gets 1 beat",
+      "6 beats per measure",
+      "Fast tempo only",
+      "3 beats per measure"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #90 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "12 notes",
+      "5 notes",
+      "7 distinct notes (8th is octave repeat)",
+      "6 notes"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #91 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - Eb - G",
+      "C - F - G",
+      "C - E - G",
+      "C - D - E"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #92 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Gradually speeding up",
+      "Soft",
+      "Slow tempo",
+      "Loud"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #93 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "6 beats per measure",
+      "Fast tempo only",
+      "4 beats per measure, quarter note gets 1 beat",
+      "3 beats per measure"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #94 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "12 notes",
+      "6 notes",
+      "5 notes",
+      "7 distinct notes (8th is octave repeat)"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #95 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - D - E",
+      "C - E - G",
+      "C - F - G",
+      "C - Eb - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #96 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Slow tempo",
+      "Loud",
+      "Soft",
+      "Gradually speeding up"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  },
+  {
+    "question": "[Music - Medium] Case Study #97 (Rhythm): What does a 4/4 time signature indicate in music notation?",
+    "options": [
+      "Fast tempo only",
+      "6 beats per measure",
+      "4 beats per measure, quarter note gets 1 beat",
+      "3 beats per measure"
+    ],
+    "answer": "4 beats per measure, quarter note gets 1 beat",
+    "explanation": "Top number = 4 beats; bottom number = quarter note duration.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Rhythm"
+  },
+  {
+    "question": "[Music - Medium] Case Study #98 (Scales): How many notes make up a standard major scale octave?",
+    "options": [
+      "6 notes",
+      "12 notes",
+      "5 notes",
+      "7 distinct notes (8th is octave repeat)"
+    ],
+    "answer": "7 distinct notes (8th is octave repeat)",
+    "explanation": "Major scale consists of 7 pitch classes (Do Re Mi Fa Sol La Ti).",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Scales"
+  },
+  {
+    "question": "[Music - Medium] Case Study #99 (Chords): What three notes form a C Major triad chord?",
+    "options": [
+      "C - F - G",
+      "C - D - E",
+      "C - E - G",
+      "C - Eb - G"
+    ],
+    "answer": "C - E - G",
+    "explanation": "C Major triad consists of root C, major 3rd E, and perfect 5th G.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Chords"
+  },
+  {
+    "question": "[Music - Medium] Case Study #100 (Dynamics): What does the musical dynamic marking 'forte' (f) mean?",
+    "options": [
+      "Gradually speeding up",
+      "Loud",
+      "Slow tempo",
+      "Soft"
+    ],
+    "answer": "Loud",
+    "explanation": "'forte' is the musical Italian direction for playing loudly.",
+    "difficulty": "Medium",
+    "skill": "Music",
+    "topic": "Dynamics"
+  }
+]

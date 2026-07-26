@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "Which keyword defines a class in C++?",
+    "options": [
+      "type",
+      "struct",
+      "object",
+      "class"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "What is a constructor in C++?",
+    "options": [
+      "A static function",
+      "A special member function called when an object is created",
+      "A method to delete objects",
+      "A template loader"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "Which header must be included to use std::vector in C++?",
+    "options": [
+      "<algorithm>",
+      "<vector>",
+      "<array>",
+      "<list>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::auto_ptr",
+      "std::weak_ptr",
+      "std::unique_ptr",
+      "std::shared_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #5 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "class",
+      "type",
+      "struct",
+      "object"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #6 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A static function",
+      "A method to delete objects",
+      "A special member function called when an object is created",
+      "A template loader"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #7 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<array>",
+      "<algorithm>",
+      "<list>",
+      "<vector>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #8 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::weak_ptr",
+      "std::auto_ptr",
+      "std::unique_ptr",
+      "std::shared_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #9 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "class",
+      "struct",
+      "object",
+      "type"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #10 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A special member function called when an object is created",
+      "A method to delete objects",
+      "A template loader",
+      "A static function"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #11 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<vector>",
+      "<algorithm>",
+      "<array>",
+      "<list>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #12 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::unique_ptr",
+      "std::auto_ptr",
+      "std::shared_ptr",
+      "std::weak_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #13 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "struct",
+      "type",
+      "class",
+      "object"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #14 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A template loader",
+      "A method to delete objects",
+      "A static function",
+      "A special member function called when an object is created"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #15 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<algorithm>",
+      "<list>",
+      "<vector>",
+      "<array>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #16 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::auto_ptr",
+      "std::shared_ptr",
+      "std::unique_ptr",
+      "std::weak_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #17 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "struct",
+      "type",
+      "object",
+      "class"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #18 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A static function",
+      "A method to delete objects",
+      "A special member function called when an object is created",
+      "A template loader"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #19 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<vector>",
+      "<array>",
+      "<list>",
+      "<algorithm>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #20 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::unique_ptr",
+      "std::weak_ptr",
+      "std::auto_ptr",
+      "std::shared_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #21 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "type",
+      "object",
+      "class",
+      "struct"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #22 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A template loader",
+      "A static function",
+      "A method to delete objects",
+      "A special member function called when an object is created"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #23 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<vector>",
+      "<array>",
+      "<list>",
+      "<algorithm>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #24 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::weak_ptr",
+      "std::auto_ptr",
+      "std::unique_ptr",
+      "std::shared_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #25 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "object",
+      "struct",
+      "class",
+      "type"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #26 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A template loader",
+      "A special member function called when an object is created",
+      "A method to delete objects",
+      "A static function"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #27 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<list>",
+      "<array>",
+      "<vector>",
+      "<algorithm>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #28 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::weak_ptr",
+      "std::shared_ptr",
+      "std::auto_ptr",
+      "std::unique_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #29 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "struct",
+      "type",
+      "class",
+      "object"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #30 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A special member function called when an object is created",
+      "A static function",
+      "A template loader",
+      "A method to delete objects"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #31 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<list>",
+      "<array>",
+      "<vector>",
+      "<algorithm>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #32 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::weak_ptr",
+      "std::shared_ptr",
+      "std::unique_ptr",
+      "std::auto_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #33 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "type",
+      "struct",
+      "class",
+      "object"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #34 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A method to delete objects",
+      "A special member function called when an object is created",
+      "A static function",
+      "A template loader"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #35 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<algorithm>",
+      "<array>",
+      "<vector>",
+      "<list>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #36 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::weak_ptr",
+      "std::unique_ptr",
+      "std::shared_ptr",
+      "std::auto_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #37 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "class",
+      "object",
+      "type",
+      "struct"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #38 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A method to delete objects",
+      "A static function",
+      "A special member function called when an object is created",
+      "A template loader"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #39 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<vector>",
+      "<algorithm>",
+      "<array>",
+      "<list>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #40 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::shared_ptr",
+      "std::auto_ptr",
+      "std::unique_ptr",
+      "std::weak_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #41 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "class",
+      "object",
+      "type",
+      "struct"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #42 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A static function",
+      "A special member function called when an object is created",
+      "A method to delete objects",
+      "A template loader"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #43 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<array>",
+      "<algorithm>",
+      "<vector>",
+      "<list>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #44 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::shared_ptr",
+      "std::unique_ptr",
+      "std::auto_ptr",
+      "std::weak_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #45 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "struct",
+      "type",
+      "object",
+      "class"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #46 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A special member function called when an object is created",
+      "A static function",
+      "A method to delete objects",
+      "A template loader"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #47 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<algorithm>",
+      "<list>",
+      "<array>",
+      "<vector>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #48 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::unique_ptr",
+      "std::auto_ptr",
+      "std::shared_ptr",
+      "std::weak_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #49 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "class",
+      "object",
+      "type",
+      "struct"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #50 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A method to delete objects",
+      "A static function",
+      "A special member function called when an object is created",
+      "A template loader"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #51 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<array>",
+      "<algorithm>",
+      "<vector>",
+      "<list>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #52 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::shared_ptr",
+      "std::auto_ptr",
+      "std::unique_ptr",
+      "std::weak_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #53 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "object",
+      "struct",
+      "class",
+      "type"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #54 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A method to delete objects",
+      "A static function",
+      "A template loader",
+      "A special member function called when an object is created"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #55 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<array>",
+      "<vector>",
+      "<list>",
+      "<algorithm>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #56 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::auto_ptr",
+      "std::shared_ptr",
+      "std::unique_ptr",
+      "std::weak_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #57 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "object",
+      "struct",
+      "type",
+      "class"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #58 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A static function",
+      "A special member function called when an object is created",
+      "A template loader",
+      "A method to delete objects"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #59 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<vector>",
+      "<list>",
+      "<algorithm>",
+      "<array>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #60 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::unique_ptr",
+      "std::shared_ptr",
+      "std::auto_ptr",
+      "std::weak_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #61 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "struct",
+      "class",
+      "object",
+      "type"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #62 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A special member function called when an object is created",
+      "A static function",
+      "A template loader",
+      "A method to delete objects"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #63 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<array>",
+      "<list>",
+      "<algorithm>",
+      "<vector>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #64 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::auto_ptr",
+      "std::shared_ptr",
+      "std::weak_ptr",
+      "std::unique_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #65 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "type",
+      "object",
+      "class",
+      "struct"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #66 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A method to delete objects",
+      "A special member function called when an object is created",
+      "A template loader",
+      "A static function"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #67 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<vector>",
+      "<list>",
+      "<algorithm>",
+      "<array>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #68 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::weak_ptr",
+      "std::auto_ptr",
+      "std::shared_ptr",
+      "std::unique_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #69 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "struct",
+      "class",
+      "type",
+      "object"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #70 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A special member function called when an object is created",
+      "A static function",
+      "A template loader",
+      "A method to delete objects"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #71 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<vector>",
+      "<list>",
+      "<algorithm>",
+      "<array>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #72 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::weak_ptr",
+      "std::unique_ptr",
+      "std::shared_ptr",
+      "std::auto_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #73 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "object",
+      "class",
+      "struct",
+      "type"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #74 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A method to delete objects",
+      "A template loader",
+      "A static function",
+      "A special member function called when an object is created"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #75 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<algorithm>",
+      "<array>",
+      "<vector>",
+      "<list>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #76 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::unique_ptr",
+      "std::shared_ptr",
+      "std::weak_ptr",
+      "std::auto_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #77 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "class",
+      "struct",
+      "object",
+      "type"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #78 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A method to delete objects",
+      "A special member function called when an object is created",
+      "A static function",
+      "A template loader"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #79 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<algorithm>",
+      "<list>",
+      "<array>",
+      "<vector>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #80 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::auto_ptr",
+      "std::shared_ptr",
+      "std::weak_ptr",
+      "std::unique_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #81 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "type",
+      "struct",
+      "object",
+      "class"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #82 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A template loader",
+      "A static function",
+      "A method to delete objects",
+      "A special member function called when an object is created"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #83 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<vector>",
+      "<array>",
+      "<list>",
+      "<algorithm>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #84 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::weak_ptr",
+      "std::auto_ptr",
+      "std::shared_ptr",
+      "std::unique_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #85 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "type",
+      "object",
+      "struct",
+      "class"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #86 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A template loader",
+      "A static function",
+      "A method to delete objects",
+      "A special member function called when an object is created"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #87 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<array>",
+      "<vector>",
+      "<list>",
+      "<algorithm>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #88 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::shared_ptr",
+      "std::auto_ptr",
+      "std::weak_ptr",
+      "std::unique_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #89 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "class",
+      "struct",
+      "object",
+      "type"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #90 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A method to delete objects",
+      "A template loader",
+      "A static function",
+      "A special member function called when an object is created"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #91 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<array>",
+      "<vector>",
+      "<algorithm>",
+      "<list>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #92 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::auto_ptr",
+      "std::weak_ptr",
+      "std::unique_ptr",
+      "std::shared_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #93 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "class",
+      "object",
+      "type",
+      "struct"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #94 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A special member function called when an object is created",
+      "A method to delete objects",
+      "A static function",
+      "A template loader"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #95 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<array>",
+      "<vector>",
+      "<algorithm>",
+      "<list>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #96 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::weak_ptr",
+      "std::auto_ptr",
+      "std::unique_ptr",
+      "std::shared_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #97 (Classes & Objects): Which keyword defines a class in C++?",
+    "options": [
+      "class",
+      "struct",
+      "type",
+      "object"
+    ],
+    "answer": "class",
+    "explanation": "'class' defines a user type with default private members.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Classes & Objects"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #98 (Constructors): What is a constructor in C++?",
+    "options": [
+      "A template loader",
+      "A static function",
+      "A method to delete objects",
+      "A special member function called when an object is created"
+    ],
+    "answer": "A special member function called when an object is created",
+    "explanation": "Constructors initialize objects upon instantiation.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Constructors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #99 (STL Vectors): Which header must be included to use std::vector in C++?",
+    "options": [
+      "<algorithm>",
+      "<array>",
+      "<vector>",
+      "<list>"
+    ],
+    "answer": "<vector>",
+    "explanation": "<vector> defines dynamic array container.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "STL Vectors"
+  },
+  {
+    "question": "[C++ - Hard] Case Study #100 (Smart Pointers): Which C++11 smart pointer represents exclusive ownership?",
+    "options": [
+      "std::auto_ptr",
+      "std::shared_ptr",
+      "std::unique_ptr",
+      "std::weak_ptr"
+    ],
+    "answer": "std::unique_ptr",
+    "explanation": "unique_ptr owns and manages another object exclusively.",
+    "difficulty": "Hard",
+    "skill": "C++",
+    "topic": "Smart Pointers"
+  }
+]

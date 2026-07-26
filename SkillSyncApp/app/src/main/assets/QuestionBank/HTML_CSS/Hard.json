@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "In BEM naming convention (Block Element Modifier), what does double underscore represent?",
+    "options": [
+      "Sub-block",
+      "Block",
+      "Modifier",
+      "Element (e.g. card__title)"
+    ],
+    "answer": "Element (e.g. card__title)",
+    "explanation": "BEM uses double underscore '__' for elements inside block.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS BEM Methodology"
+  },
+  {
+    "question": "Which API allows creating custom HTML tags with encapsulated logic?",
+    "options": [
+      "Shadow DOM API",
+      "Custom Elements API",
+      "DOM Parser API",
+      "HTML Templates API"
+    ],
+    "answer": "Custom Elements API",
+    "explanation": "Custom Elements API enables defining custom HTML tags.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Custom Web Components"
+  },
+  {
+    "question": "What is the primary benefit of Shadow DOM in Web Components?",
+    "options": [
+      "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+      "Faster JavaScript execution",
+      "Automatic database synchronization",
+      "Server-side rendering"
+    ],
+    "answer": "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+    "explanation": "Shadow DOM isolates component markup and CSS styles from global document scope.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Shadow DOM"
+  },
+  {
+    "question": "What is a main structural difference between SVG and HTML5 Canvas?",
+    "options": [
+      "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+      "SVG cannot be styled with CSS",
+      "Canvas is vector based",
+      "SVG is 3D only"
+    ],
+    "answer": "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+    "explanation": "SVG maintains DOM nodes per element; Canvas draws pixels directly.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Canvas & SVG Animations"
+  },
+  {
+    "question": "Which CSS properties trigger compositor-only pipeline rendering for 60fps animations?",
+    "options": [
+      "transform and opacity",
+      "width and height",
+      "margin and padding",
+      "top and left"
+    ],
+    "answer": "transform and opacity",
+    "explanation": "transform and opacity bypass layout and paint passes, running on GPU.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Performance"
+  },
+  {
+    "question": "How do CSS Container Queries differ from traditional Media Queries?",
+    "options": [
+      "Works only on mobile devices",
+      "Queries element container size rather than global viewport size",
+      "Requires JavaScript",
+      "Applies only to flex containers"
+    ],
+    "answer": "Queries element container size rather than global viewport size",
+    "explanation": "Container queries allow styling based on parent container dimensions.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Container Queries"
+  },
+  {
+    "question": "What is CSS Houdini API?",
+    "options": [
+      "A font generator",
+      "A mobile layout framework",
+      "Set of APIs allowing developers to hook directly into CSS rendering engine",
+      "A CSS preprocessor"
+    ],
+    "answer": "Set of APIs allowing developers to hook directly into CSS rendering engine",
+    "explanation": "Houdini exposes browser layout, paint, and parser engines.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Houdini"
+  },
+  {
+    "question": "What does ARIA stand for in web accessibility standards?",
+    "options": [
+      "Accessible Rendering Interface Application",
+      "Advanced Responsive Internet Access",
+      "Accessible Rich Internet Applications",
+      "Automated Reading Interface Architecture"
+    ],
+    "answer": "Accessible Rich Internet Applications",
+    "explanation": "ARIA defines attributes to make web content accessible to screen readers.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Accessibility (a11y)"
+  },
+  {
+    "question": "Order of browser rendering pipeline stages for CSS changes:",
+    "options": [
+      "JavaScript -> Style -> Layout -> Paint -> Composite",
+      "Paint -> Composite -> Layout -> Style",
+      "Style -> Paint -> Layout -> Composite",
+      "Layout -> Style -> Paint"
+    ],
+    "answer": "JavaScript -> Style -> Layout -> Paint -> Composite",
+    "explanation": "Standard render pipeline follows Style calculation, Layout, Paint, then Compositing.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Render Pipeline"
+  },
+  {
+    "question": "What does Autoprefixer plugin do in modern CSS build tools?",
+    "options": [
+      "Converts SASS to LESS",
+      "Minifies HTML",
+      "Adds vendor prefixes to CSS rules based on target browser compatibility",
+      "Compresses images"
+    ],
+    "answer": "Adds vendor prefixes to CSS rules based on target browser compatibility",
+    "explanation": "Autoprefixer parses CSS and adds vendor prefixes using Can I Use data.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "PostCSS & Preprocessors"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #11 (CSS BEM Methodology): In BEM naming convention (Block Element Modifier), what does double underscore represent?",
+    "options": [
+      "Modifier",
+      "Element (e.g. card__title)",
+      "Block",
+      "Sub-block"
+    ],
+    "answer": "Element (e.g. card__title)",
+    "explanation": "BEM uses double underscore '__' for elements inside block.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS BEM Methodology"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #12 (Custom Web Components): Which API allows creating custom HTML tags with encapsulated logic?",
+    "options": [
+      "DOM Parser API",
+      "Shadow DOM API",
+      "Custom Elements API",
+      "HTML Templates API"
+    ],
+    "answer": "Custom Elements API",
+    "explanation": "Custom Elements API enables defining custom HTML tags.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Custom Web Components"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #13 (Shadow DOM): What is the primary benefit of Shadow DOM in Web Components?",
+    "options": [
+      "Server-side rendering",
+      "Automatic database synchronization",
+      "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+      "Faster JavaScript execution"
+    ],
+    "answer": "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+    "explanation": "Shadow DOM isolates component markup and CSS styles from global document scope.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Shadow DOM"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #14 (Canvas & SVG Animations): What is a main structural difference between SVG and HTML5 Canvas?",
+    "options": [
+      "SVG cannot be styled with CSS",
+      "SVG is 3D only",
+      "Canvas is vector based",
+      "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid"
+    ],
+    "answer": "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+    "explanation": "SVG maintains DOM nodes per element; Canvas draws pixels directly.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Canvas & SVG Animations"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #15 (CSS Performance): Which CSS properties trigger compositor-only pipeline rendering for 60fps animations?",
+    "options": [
+      "margin and padding",
+      "width and height",
+      "top and left",
+      "transform and opacity"
+    ],
+    "answer": "transform and opacity",
+    "explanation": "transform and opacity bypass layout and paint passes, running on GPU.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Performance"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #16 (Container Queries): How do CSS Container Queries differ from traditional Media Queries?",
+    "options": [
+      "Queries element container size rather than global viewport size",
+      "Requires JavaScript",
+      "Works only on mobile devices",
+      "Applies only to flex containers"
+    ],
+    "answer": "Queries element container size rather than global viewport size",
+    "explanation": "Container queries allow styling based on parent container dimensions.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Container Queries"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #17 (CSS Houdini): What is CSS Houdini API?",
+    "options": [
+      "A mobile layout framework",
+      "A font generator",
+      "A CSS preprocessor",
+      "Set of APIs allowing developers to hook directly into CSS rendering engine"
+    ],
+    "answer": "Set of APIs allowing developers to hook directly into CSS rendering engine",
+    "explanation": "Houdini exposes browser layout, paint, and parser engines.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Houdini"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #18 (Accessibility (a11y)): What does ARIA stand for in web accessibility standards?",
+    "options": [
+      "Accessible Rendering Interface Application",
+      "Accessible Rich Internet Applications",
+      "Advanced Responsive Internet Access",
+      "Automated Reading Interface Architecture"
+    ],
+    "answer": "Accessible Rich Internet Applications",
+    "explanation": "ARIA defines attributes to make web content accessible to screen readers.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Accessibility (a11y)"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #19 (Render Pipeline): Order of browser rendering pipeline stages for CSS changes:",
+    "options": [
+      "Style -> Paint -> Layout -> Composite",
+      "JavaScript -> Style -> Layout -> Paint -> Composite",
+      "Layout -> Style -> Paint",
+      "Paint -> Composite -> Layout -> Style"
+    ],
+    "answer": "JavaScript -> Style -> Layout -> Paint -> Composite",
+    "explanation": "Standard render pipeline follows Style calculation, Layout, Paint, then Compositing.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Render Pipeline"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #20 (PostCSS & Preprocessors): What does Autoprefixer plugin do in modern CSS build tools?",
+    "options": [
+      "Compresses images",
+      "Minifies HTML",
+      "Converts SASS to LESS",
+      "Adds vendor prefixes to CSS rules based on target browser compatibility"
+    ],
+    "answer": "Adds vendor prefixes to CSS rules based on target browser compatibility",
+    "explanation": "Autoprefixer parses CSS and adds vendor prefixes using Can I Use data.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "PostCSS & Preprocessors"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #21 (CSS BEM Methodology): In BEM naming convention (Block Element Modifier), what does double underscore represent?",
+    "options": [
+      "Block",
+      "Element (e.g. card__title)",
+      "Modifier",
+      "Sub-block"
+    ],
+    "answer": "Element (e.g. card__title)",
+    "explanation": "BEM uses double underscore '__' for elements inside block.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS BEM Methodology"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #22 (Custom Web Components): Which API allows creating custom HTML tags with encapsulated logic?",
+    "options": [
+      "DOM Parser API",
+      "HTML Templates API",
+      "Custom Elements API",
+      "Shadow DOM API"
+    ],
+    "answer": "Custom Elements API",
+    "explanation": "Custom Elements API enables defining custom HTML tags.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Custom Web Components"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #23 (Shadow DOM): What is the primary benefit of Shadow DOM in Web Components?",
+    "options": [
+      "Faster JavaScript execution",
+      "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+      "Server-side rendering",
+      "Automatic database synchronization"
+    ],
+    "answer": "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+    "explanation": "Shadow DOM isolates component markup and CSS styles from global document scope.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Shadow DOM"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #24 (Canvas & SVG Animations): What is a main structural difference between SVG and HTML5 Canvas?",
+    "options": [
+      "Canvas is vector based",
+      "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+      "SVG is 3D only",
+      "SVG cannot be styled with CSS"
+    ],
+    "answer": "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+    "explanation": "SVG maintains DOM nodes per element; Canvas draws pixels directly.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Canvas & SVG Animations"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #25 (CSS Performance): Which CSS properties trigger compositor-only pipeline rendering for 60fps animations?",
+    "options": [
+      "width and height",
+      "top and left",
+      "transform and opacity",
+      "margin and padding"
+    ],
+    "answer": "transform and opacity",
+    "explanation": "transform and opacity bypass layout and paint passes, running on GPU.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Performance"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #26 (Container Queries): How do CSS Container Queries differ from traditional Media Queries?",
+    "options": [
+      "Works only on mobile devices",
+      "Applies only to flex containers",
+      "Queries element container size rather than global viewport size",
+      "Requires JavaScript"
+    ],
+    "answer": "Queries element container size rather than global viewport size",
+    "explanation": "Container queries allow styling based on parent container dimensions.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Container Queries"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #27 (CSS Houdini): What is CSS Houdini API?",
+    "options": [
+      "A font generator",
+      "A CSS preprocessor",
+      "A mobile layout framework",
+      "Set of APIs allowing developers to hook directly into CSS rendering engine"
+    ],
+    "answer": "Set of APIs allowing developers to hook directly into CSS rendering engine",
+    "explanation": "Houdini exposes browser layout, paint, and parser engines.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Houdini"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #28 (Accessibility (a11y)): What does ARIA stand for in web accessibility standards?",
+    "options": [
+      "Accessible Rendering Interface Application",
+      "Accessible Rich Internet Applications",
+      "Advanced Responsive Internet Access",
+      "Automated Reading Interface Architecture"
+    ],
+    "answer": "Accessible Rich Internet Applications",
+    "explanation": "ARIA defines attributes to make web content accessible to screen readers.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Accessibility (a11y)"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #29 (Render Pipeline): Order of browser rendering pipeline stages for CSS changes:",
+    "options": [
+      "JavaScript -> Style -> Layout -> Paint -> Composite",
+      "Style -> Paint -> Layout -> Composite",
+      "Paint -> Composite -> Layout -> Style",
+      "Layout -> Style -> Paint"
+    ],
+    "answer": "JavaScript -> Style -> Layout -> Paint -> Composite",
+    "explanation": "Standard render pipeline follows Style calculation, Layout, Paint, then Compositing.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Render Pipeline"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #30 (PostCSS & Preprocessors): What does Autoprefixer plugin do in modern CSS build tools?",
+    "options": [
+      "Minifies HTML",
+      "Adds vendor prefixes to CSS rules based on target browser compatibility",
+      "Converts SASS to LESS",
+      "Compresses images"
+    ],
+    "answer": "Adds vendor prefixes to CSS rules based on target browser compatibility",
+    "explanation": "Autoprefixer parses CSS and adds vendor prefixes using Can I Use data.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "PostCSS & Preprocessors"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #31 (CSS BEM Methodology): In BEM naming convention (Block Element Modifier), what does double underscore represent?",
+    "options": [
+      "Block",
+      "Element (e.g. card__title)",
+      "Sub-block",
+      "Modifier"
+    ],
+    "answer": "Element (e.g. card__title)",
+    "explanation": "BEM uses double underscore '__' for elements inside block.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS BEM Methodology"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #32 (Custom Web Components): Which API allows creating custom HTML tags with encapsulated logic?",
+    "options": [
+      "Custom Elements API",
+      "DOM Parser API",
+      "HTML Templates API",
+      "Shadow DOM API"
+    ],
+    "answer": "Custom Elements API",
+    "explanation": "Custom Elements API enables defining custom HTML tags.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Custom Web Components"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #33 (Shadow DOM): What is the primary benefit of Shadow DOM in Web Components?",
+    "options": [
+      "Server-side rendering",
+      "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+      "Automatic database synchronization",
+      "Faster JavaScript execution"
+    ],
+    "answer": "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+    "explanation": "Shadow DOM isolates component markup and CSS styles from global document scope.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Shadow DOM"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #34 (Canvas & SVG Animations): What is a main structural difference between SVG and HTML5 Canvas?",
+    "options": [
+      "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+      "Canvas is vector based",
+      "SVG is 3D only",
+      "SVG cannot be styled with CSS"
+    ],
+    "answer": "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+    "explanation": "SVG maintains DOM nodes per element; Canvas draws pixels directly.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Canvas & SVG Animations"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #35 (CSS Performance): Which CSS properties trigger compositor-only pipeline rendering for 60fps animations?",
+    "options": [
+      "margin and padding",
+      "transform and opacity",
+      "width and height",
+      "top and left"
+    ],
+    "answer": "transform and opacity",
+    "explanation": "transform and opacity bypass layout and paint passes, running on GPU.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Performance"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #36 (Container Queries): How do CSS Container Queries differ from traditional Media Queries?",
+    "options": [
+      "Queries element container size rather than global viewport size",
+      "Applies only to flex containers",
+      "Works only on mobile devices",
+      "Requires JavaScript"
+    ],
+    "answer": "Queries element container size rather than global viewport size",
+    "explanation": "Container queries allow styling based on parent container dimensions.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Container Queries"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #37 (CSS Houdini): What is CSS Houdini API?",
+    "options": [
+      "A mobile layout framework",
+      "A CSS preprocessor",
+      "A font generator",
+      "Set of APIs allowing developers to hook directly into CSS rendering engine"
+    ],
+    "answer": "Set of APIs allowing developers to hook directly into CSS rendering engine",
+    "explanation": "Houdini exposes browser layout, paint, and parser engines.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Houdini"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #38 (Accessibility (a11y)): What does ARIA stand for in web accessibility standards?",
+    "options": [
+      "Accessible Rendering Interface Application",
+      "Advanced Responsive Internet Access",
+      "Accessible Rich Internet Applications",
+      "Automated Reading Interface Architecture"
+    ],
+    "answer": "Accessible Rich Internet Applications",
+    "explanation": "ARIA defines attributes to make web content accessible to screen readers.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Accessibility (a11y)"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #39 (Render Pipeline): Order of browser rendering pipeline stages for CSS changes:",
+    "options": [
+      "JavaScript -> Style -> Layout -> Paint -> Composite",
+      "Style -> Paint -> Layout -> Composite",
+      "Paint -> Composite -> Layout -> Style",
+      "Layout -> Style -> Paint"
+    ],
+    "answer": "JavaScript -> Style -> Layout -> Paint -> Composite",
+    "explanation": "Standard render pipeline follows Style calculation, Layout, Paint, then Compositing.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Render Pipeline"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #40 (PostCSS & Preprocessors): What does Autoprefixer plugin do in modern CSS build tools?",
+    "options": [
+      "Compresses images",
+      "Converts SASS to LESS",
+      "Adds vendor prefixes to CSS rules based on target browser compatibility",
+      "Minifies HTML"
+    ],
+    "answer": "Adds vendor prefixes to CSS rules based on target browser compatibility",
+    "explanation": "Autoprefixer parses CSS and adds vendor prefixes using Can I Use data.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "PostCSS & Preprocessors"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #41 (CSS BEM Methodology): In BEM naming convention (Block Element Modifier), what does double underscore represent?",
+    "options": [
+      "Block",
+      "Sub-block",
+      "Modifier",
+      "Element (e.g. card__title)"
+    ],
+    "answer": "Element (e.g. card__title)",
+    "explanation": "BEM uses double underscore '__' for elements inside block.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS BEM Methodology"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #42 (Custom Web Components): Which API allows creating custom HTML tags with encapsulated logic?",
+    "options": [
+      "HTML Templates API",
+      "Shadow DOM API",
+      "Custom Elements API",
+      "DOM Parser API"
+    ],
+    "answer": "Custom Elements API",
+    "explanation": "Custom Elements API enables defining custom HTML tags.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Custom Web Components"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #43 (Shadow DOM): What is the primary benefit of Shadow DOM in Web Components?",
+    "options": [
+      "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+      "Faster JavaScript execution",
+      "Automatic database synchronization",
+      "Server-side rendering"
+    ],
+    "answer": "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+    "explanation": "Shadow DOM isolates component markup and CSS styles from global document scope.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Shadow DOM"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #44 (Canvas & SVG Animations): What is a main structural difference between SVG and HTML5 Canvas?",
+    "options": [
+      "SVG is 3D only",
+      "SVG cannot be styled with CSS",
+      "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+      "Canvas is vector based"
+    ],
+    "answer": "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+    "explanation": "SVG maintains DOM nodes per element; Canvas draws pixels directly.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Canvas & SVG Animations"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #45 (CSS Performance): Which CSS properties trigger compositor-only pipeline rendering for 60fps animations?",
+    "options": [
+      "transform and opacity",
+      "margin and padding",
+      "width and height",
+      "top and left"
+    ],
+    "answer": "transform and opacity",
+    "explanation": "transform and opacity bypass layout and paint passes, running on GPU.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Performance"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #46 (Container Queries): How do CSS Container Queries differ from traditional Media Queries?",
+    "options": [
+      "Queries element container size rather than global viewport size",
+      "Works only on mobile devices",
+      "Applies only to flex containers",
+      "Requires JavaScript"
+    ],
+    "answer": "Queries element container size rather than global viewport size",
+    "explanation": "Container queries allow styling based on parent container dimensions.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Container Queries"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #47 (CSS Houdini): What is CSS Houdini API?",
+    "options": [
+      "A CSS preprocessor",
+      "Set of APIs allowing developers to hook directly into CSS rendering engine",
+      "A mobile layout framework",
+      "A font generator"
+    ],
+    "answer": "Set of APIs allowing developers to hook directly into CSS rendering engine",
+    "explanation": "Houdini exposes browser layout, paint, and parser engines.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Houdini"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #48 (Accessibility (a11y)): What does ARIA stand for in web accessibility standards?",
+    "options": [
+      "Accessible Rendering Interface Application",
+      "Automated Reading Interface Architecture",
+      "Advanced Responsive Internet Access",
+      "Accessible Rich Internet Applications"
+    ],
+    "answer": "Accessible Rich Internet Applications",
+    "explanation": "ARIA defines attributes to make web content accessible to screen readers.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Accessibility (a11y)"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #49 (Render Pipeline): Order of browser rendering pipeline stages for CSS changes:",
+    "options": [
+      "Style -> Paint -> Layout -> Composite",
+      "Paint -> Composite -> Layout -> Style",
+      "Layout -> Style -> Paint",
+      "JavaScript -> Style -> Layout -> Paint -> Composite"
+    ],
+    "answer": "JavaScript -> Style -> Layout -> Paint -> Composite",
+    "explanation": "Standard render pipeline follows Style calculation, Layout, Paint, then Compositing.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Render Pipeline"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #50 (PostCSS & Preprocessors): What does Autoprefixer plugin do in modern CSS build tools?",
+    "options": [
+      "Converts SASS to LESS",
+      "Adds vendor prefixes to CSS rules based on target browser compatibility",
+      "Compresses images",
+      "Minifies HTML"
+    ],
+    "answer": "Adds vendor prefixes to CSS rules based on target browser compatibility",
+    "explanation": "Autoprefixer parses CSS and adds vendor prefixes using Can I Use data.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "PostCSS & Preprocessors"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #51 (CSS BEM Methodology): In BEM naming convention (Block Element Modifier), what does double underscore represent?",
+    "options": [
+      "Sub-block",
+      "Modifier",
+      "Element (e.g. card__title)",
+      "Block"
+    ],
+    "answer": "Element (e.g. card__title)",
+    "explanation": "BEM uses double underscore '__' for elements inside block.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS BEM Methodology"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #52 (Custom Web Components): Which API allows creating custom HTML tags with encapsulated logic?",
+    "options": [
+      "DOM Parser API",
+      "Shadow DOM API",
+      "Custom Elements API",
+      "HTML Templates API"
+    ],
+    "answer": "Custom Elements API",
+    "explanation": "Custom Elements API enables defining custom HTML tags.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Custom Web Components"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #53 (Shadow DOM): What is the primary benefit of Shadow DOM in Web Components?",
+    "options": [
+      "Server-side rendering",
+      "Faster JavaScript execution",
+      "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+      "Automatic database synchronization"
+    ],
+    "answer": "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+    "explanation": "Shadow DOM isolates component markup and CSS styles from global document scope.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Shadow DOM"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #54 (Canvas & SVG Animations): What is a main structural difference between SVG and HTML5 Canvas?",
+    "options": [
+      "Canvas is vector based",
+      "SVG is 3D only",
+      "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+      "SVG cannot be styled with CSS"
+    ],
+    "answer": "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+    "explanation": "SVG maintains DOM nodes per element; Canvas draws pixels directly.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Canvas & SVG Animations"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #55 (CSS Performance): Which CSS properties trigger compositor-only pipeline rendering for 60fps animations?",
+    "options": [
+      "margin and padding",
+      "transform and opacity",
+      "width and height",
+      "top and left"
+    ],
+    "answer": "transform and opacity",
+    "explanation": "transform and opacity bypass layout and paint passes, running on GPU.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Performance"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #56 (Container Queries): How do CSS Container Queries differ from traditional Media Queries?",
+    "options": [
+      "Requires JavaScript",
+      "Applies only to flex containers",
+      "Queries element container size rather than global viewport size",
+      "Works only on mobile devices"
+    ],
+    "answer": "Queries element container size rather than global viewport size",
+    "explanation": "Container queries allow styling based on parent container dimensions.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Container Queries"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #57 (CSS Houdini): What is CSS Houdini API?",
+    "options": [
+      "A CSS preprocessor",
+      "Set of APIs allowing developers to hook directly into CSS rendering engine",
+      "A mobile layout framework",
+      "A font generator"
+    ],
+    "answer": "Set of APIs allowing developers to hook directly into CSS rendering engine",
+    "explanation": "Houdini exposes browser layout, paint, and parser engines.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Houdini"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #58 (Accessibility (a11y)): What does ARIA stand for in web accessibility standards?",
+    "options": [
+      "Accessible Rendering Interface Application",
+      "Automated Reading Interface Architecture",
+      "Advanced Responsive Internet Access",
+      "Accessible Rich Internet Applications"
+    ],
+    "answer": "Accessible Rich Internet Applications",
+    "explanation": "ARIA defines attributes to make web content accessible to screen readers.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Accessibility (a11y)"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #59 (Render Pipeline): Order of browser rendering pipeline stages for CSS changes:",
+    "options": [
+      "Style -> Paint -> Layout -> Composite",
+      "Layout -> Style -> Paint",
+      "JavaScript -> Style -> Layout -> Paint -> Composite",
+      "Paint -> Composite -> Layout -> Style"
+    ],
+    "answer": "JavaScript -> Style -> Layout -> Paint -> Composite",
+    "explanation": "Standard render pipeline follows Style calculation, Layout, Paint, then Compositing.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Render Pipeline"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #60 (PostCSS & Preprocessors): What does Autoprefixer plugin do in modern CSS build tools?",
+    "options": [
+      "Adds vendor prefixes to CSS rules based on target browser compatibility",
+      "Compresses images",
+      "Converts SASS to LESS",
+      "Minifies HTML"
+    ],
+    "answer": "Adds vendor prefixes to CSS rules based on target browser compatibility",
+    "explanation": "Autoprefixer parses CSS and adds vendor prefixes using Can I Use data.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "PostCSS & Preprocessors"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #61 (CSS BEM Methodology): In BEM naming convention (Block Element Modifier), what does double underscore represent?",
+    "options": [
+      "Sub-block",
+      "Element (e.g. card__title)",
+      "Block",
+      "Modifier"
+    ],
+    "answer": "Element (e.g. card__title)",
+    "explanation": "BEM uses double underscore '__' for elements inside block.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS BEM Methodology"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #62 (Custom Web Components): Which API allows creating custom HTML tags with encapsulated logic?",
+    "options": [
+      "HTML Templates API",
+      "Shadow DOM API",
+      "DOM Parser API",
+      "Custom Elements API"
+    ],
+    "answer": "Custom Elements API",
+    "explanation": "Custom Elements API enables defining custom HTML tags.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Custom Web Components"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #63 (Shadow DOM): What is the primary benefit of Shadow DOM in Web Components?",
+    "options": [
+      "Server-side rendering",
+      "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+      "Faster JavaScript execution",
+      "Automatic database synchronization"
+    ],
+    "answer": "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+    "explanation": "Shadow DOM isolates component markup and CSS styles from global document scope.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Shadow DOM"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #64 (Canvas & SVG Animations): What is a main structural difference between SVG and HTML5 Canvas?",
+    "options": [
+      "SVG cannot be styled with CSS",
+      "Canvas is vector based",
+      "SVG is 3D only",
+      "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid"
+    ],
+    "answer": "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+    "explanation": "SVG maintains DOM nodes per element; Canvas draws pixels directly.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Canvas & SVG Animations"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #65 (CSS Performance): Which CSS properties trigger compositor-only pipeline rendering for 60fps animations?",
+    "options": [
+      "top and left",
+      "width and height",
+      "transform and opacity",
+      "margin and padding"
+    ],
+    "answer": "transform and opacity",
+    "explanation": "transform and opacity bypass layout and paint passes, running on GPU.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Performance"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #66 (Container Queries): How do CSS Container Queries differ from traditional Media Queries?",
+    "options": [
+      "Queries element container size rather than global viewport size",
+      "Works only on mobile devices",
+      "Requires JavaScript",
+      "Applies only to flex containers"
+    ],
+    "answer": "Queries element container size rather than global viewport size",
+    "explanation": "Container queries allow styling based on parent container dimensions.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Container Queries"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #67 (CSS Houdini): What is CSS Houdini API?",
+    "options": [
+      "A font generator",
+      "A CSS preprocessor",
+      "A mobile layout framework",
+      "Set of APIs allowing developers to hook directly into CSS rendering engine"
+    ],
+    "answer": "Set of APIs allowing developers to hook directly into CSS rendering engine",
+    "explanation": "Houdini exposes browser layout, paint, and parser engines.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Houdini"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #68 (Accessibility (a11y)): What does ARIA stand for in web accessibility standards?",
+    "options": [
+      "Automated Reading Interface Architecture",
+      "Accessible Rich Internet Applications",
+      "Accessible Rendering Interface Application",
+      "Advanced Responsive Internet Access"
+    ],
+    "answer": "Accessible Rich Internet Applications",
+    "explanation": "ARIA defines attributes to make web content accessible to screen readers.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Accessibility (a11y)"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #69 (Render Pipeline): Order of browser rendering pipeline stages for CSS changes:",
+    "options": [
+      "JavaScript -> Style -> Layout -> Paint -> Composite",
+      "Paint -> Composite -> Layout -> Style",
+      "Style -> Paint -> Layout -> Composite",
+      "Layout -> Style -> Paint"
+    ],
+    "answer": "JavaScript -> Style -> Layout -> Paint -> Composite",
+    "explanation": "Standard render pipeline follows Style calculation, Layout, Paint, then Compositing.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Render Pipeline"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #70 (PostCSS & Preprocessors): What does Autoprefixer plugin do in modern CSS build tools?",
+    "options": [
+      "Converts SASS to LESS",
+      "Adds vendor prefixes to CSS rules based on target browser compatibility",
+      "Compresses images",
+      "Minifies HTML"
+    ],
+    "answer": "Adds vendor prefixes to CSS rules based on target browser compatibility",
+    "explanation": "Autoprefixer parses CSS and adds vendor prefixes using Can I Use data.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "PostCSS & Preprocessors"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #71 (CSS BEM Methodology): In BEM naming convention (Block Element Modifier), what does double underscore represent?",
+    "options": [
+      "Block",
+      "Modifier",
+      "Element (e.g. card__title)",
+      "Sub-block"
+    ],
+    "answer": "Element (e.g. card__title)",
+    "explanation": "BEM uses double underscore '__' for elements inside block.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS BEM Methodology"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #72 (Custom Web Components): Which API allows creating custom HTML tags with encapsulated logic?",
+    "options": [
+      "DOM Parser API",
+      "HTML Templates API",
+      "Custom Elements API",
+      "Shadow DOM API"
+    ],
+    "answer": "Custom Elements API",
+    "explanation": "Custom Elements API enables defining custom HTML tags.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Custom Web Components"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #73 (Shadow DOM): What is the primary benefit of Shadow DOM in Web Components?",
+    "options": [
+      "Server-side rendering",
+      "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+      "Automatic database synchronization",
+      "Faster JavaScript execution"
+    ],
+    "answer": "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+    "explanation": "Shadow DOM isolates component markup and CSS styles from global document scope.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Shadow DOM"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #74 (Canvas & SVG Animations): What is a main structural difference between SVG and HTML5 Canvas?",
+    "options": [
+      "SVG is 3D only",
+      "SVG cannot be styled with CSS",
+      "Canvas is vector based",
+      "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid"
+    ],
+    "answer": "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+    "explanation": "SVG maintains DOM nodes per element; Canvas draws pixels directly.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Canvas & SVG Animations"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #75 (CSS Performance): Which CSS properties trigger compositor-only pipeline rendering for 60fps animations?",
+    "options": [
+      "transform and opacity",
+      "width and height",
+      "margin and padding",
+      "top and left"
+    ],
+    "answer": "transform and opacity",
+    "explanation": "transform and opacity bypass layout and paint passes, running on GPU.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Performance"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #76 (Container Queries): How do CSS Container Queries differ from traditional Media Queries?",
+    "options": [
+      "Works only on mobile devices",
+      "Applies only to flex containers",
+      "Requires JavaScript",
+      "Queries element container size rather than global viewport size"
+    ],
+    "answer": "Queries element container size rather than global viewport size",
+    "explanation": "Container queries allow styling based on parent container dimensions.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Container Queries"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #77 (CSS Houdini): What is CSS Houdini API?",
+    "options": [
+      "Set of APIs allowing developers to hook directly into CSS rendering engine",
+      "A font generator",
+      "A mobile layout framework",
+      "A CSS preprocessor"
+    ],
+    "answer": "Set of APIs allowing developers to hook directly into CSS rendering engine",
+    "explanation": "Houdini exposes browser layout, paint, and parser engines.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Houdini"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #78 (Accessibility (a11y)): What does ARIA stand for in web accessibility standards?",
+    "options": [
+      "Automated Reading Interface Architecture",
+      "Advanced Responsive Internet Access",
+      "Accessible Rendering Interface Application",
+      "Accessible Rich Internet Applications"
+    ],
+    "answer": "Accessible Rich Internet Applications",
+    "explanation": "ARIA defines attributes to make web content accessible to screen readers.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Accessibility (a11y)"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #79 (Render Pipeline): Order of browser rendering pipeline stages for CSS changes:",
+    "options": [
+      "Style -> Paint -> Layout -> Composite",
+      "JavaScript -> Style -> Layout -> Paint -> Composite",
+      "Paint -> Composite -> Layout -> Style",
+      "Layout -> Style -> Paint"
+    ],
+    "answer": "JavaScript -> Style -> Layout -> Paint -> Composite",
+    "explanation": "Standard render pipeline follows Style calculation, Layout, Paint, then Compositing.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Render Pipeline"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #80 (PostCSS & Preprocessors): What does Autoprefixer plugin do in modern CSS build tools?",
+    "options": [
+      "Minifies HTML",
+      "Adds vendor prefixes to CSS rules based on target browser compatibility",
+      "Compresses images",
+      "Converts SASS to LESS"
+    ],
+    "answer": "Adds vendor prefixes to CSS rules based on target browser compatibility",
+    "explanation": "Autoprefixer parses CSS and adds vendor prefixes using Can I Use data.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "PostCSS & Preprocessors"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #81 (CSS BEM Methodology): In BEM naming convention (Block Element Modifier), what does double underscore represent?",
+    "options": [
+      "Modifier",
+      "Sub-block",
+      "Element (e.g. card__title)",
+      "Block"
+    ],
+    "answer": "Element (e.g. card__title)",
+    "explanation": "BEM uses double underscore '__' for elements inside block.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS BEM Methodology"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #82 (Custom Web Components): Which API allows creating custom HTML tags with encapsulated logic?",
+    "options": [
+      "DOM Parser API",
+      "Custom Elements API",
+      "Shadow DOM API",
+      "HTML Templates API"
+    ],
+    "answer": "Custom Elements API",
+    "explanation": "Custom Elements API enables defining custom HTML tags.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Custom Web Components"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #83 (Shadow DOM): What is the primary benefit of Shadow DOM in Web Components?",
+    "options": [
+      "Server-side rendering",
+      "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+      "Faster JavaScript execution",
+      "Automatic database synchronization"
+    ],
+    "answer": "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+    "explanation": "Shadow DOM isolates component markup and CSS styles from global document scope.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Shadow DOM"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #84 (Canvas & SVG Animations): What is a main structural difference between SVG and HTML5 Canvas?",
+    "options": [
+      "SVG is 3D only",
+      "SVG cannot be styled with CSS",
+      "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+      "Canvas is vector based"
+    ],
+    "answer": "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+    "explanation": "SVG maintains DOM nodes per element; Canvas draws pixels directly.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Canvas & SVG Animations"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #85 (CSS Performance): Which CSS properties trigger compositor-only pipeline rendering for 60fps animations?",
+    "options": [
+      "width and height",
+      "margin and padding",
+      "transform and opacity",
+      "top and left"
+    ],
+    "answer": "transform and opacity",
+    "explanation": "transform and opacity bypass layout and paint passes, running on GPU.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Performance"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #86 (Container Queries): How do CSS Container Queries differ from traditional Media Queries?",
+    "options": [
+      "Queries element container size rather than global viewport size",
+      "Works only on mobile devices",
+      "Requires JavaScript",
+      "Applies only to flex containers"
+    ],
+    "answer": "Queries element container size rather than global viewport size",
+    "explanation": "Container queries allow styling based on parent container dimensions.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Container Queries"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #87 (CSS Houdini): What is CSS Houdini API?",
+    "options": [
+      "A mobile layout framework",
+      "A CSS preprocessor",
+      "A font generator",
+      "Set of APIs allowing developers to hook directly into CSS rendering engine"
+    ],
+    "answer": "Set of APIs allowing developers to hook directly into CSS rendering engine",
+    "explanation": "Houdini exposes browser layout, paint, and parser engines.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Houdini"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #88 (Accessibility (a11y)): What does ARIA stand for in web accessibility standards?",
+    "options": [
+      "Accessible Rendering Interface Application",
+      "Accessible Rich Internet Applications",
+      "Advanced Responsive Internet Access",
+      "Automated Reading Interface Architecture"
+    ],
+    "answer": "Accessible Rich Internet Applications",
+    "explanation": "ARIA defines attributes to make web content accessible to screen readers.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Accessibility (a11y)"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #89 (Render Pipeline): Order of browser rendering pipeline stages for CSS changes:",
+    "options": [
+      "Layout -> Style -> Paint",
+      "Style -> Paint -> Layout -> Composite",
+      "JavaScript -> Style -> Layout -> Paint -> Composite",
+      "Paint -> Composite -> Layout -> Style"
+    ],
+    "answer": "JavaScript -> Style -> Layout -> Paint -> Composite",
+    "explanation": "Standard render pipeline follows Style calculation, Layout, Paint, then Compositing.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Render Pipeline"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #90 (PostCSS & Preprocessors): What does Autoprefixer plugin do in modern CSS build tools?",
+    "options": [
+      "Minifies HTML",
+      "Compresses images",
+      "Adds vendor prefixes to CSS rules based on target browser compatibility",
+      "Converts SASS to LESS"
+    ],
+    "answer": "Adds vendor prefixes to CSS rules based on target browser compatibility",
+    "explanation": "Autoprefixer parses CSS and adds vendor prefixes using Can I Use data.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "PostCSS & Preprocessors"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #91 (CSS BEM Methodology): In BEM naming convention (Block Element Modifier), what does double underscore represent?",
+    "options": [
+      "Block",
+      "Modifier",
+      "Element (e.g. card__title)",
+      "Sub-block"
+    ],
+    "answer": "Element (e.g. card__title)",
+    "explanation": "BEM uses double underscore '__' for elements inside block.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS BEM Methodology"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #92 (Custom Web Components): Which API allows creating custom HTML tags with encapsulated logic?",
+    "options": [
+      "Custom Elements API",
+      "HTML Templates API",
+      "DOM Parser API",
+      "Shadow DOM API"
+    ],
+    "answer": "Custom Elements API",
+    "explanation": "Custom Elements API enables defining custom HTML tags.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Custom Web Components"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #93 (Shadow DOM): What is the primary benefit of Shadow DOM in Web Components?",
+    "options": [
+      "Faster JavaScript execution",
+      "Automatic database synchronization",
+      "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+      "Server-side rendering"
+    ],
+    "answer": "Encapsulated DOM and isolated CSS styling unaffected by global styles",
+    "explanation": "Shadow DOM isolates component markup and CSS styles from global document scope.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Shadow DOM"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #94 (Canvas & SVG Animations): What is a main structural difference between SVG and HTML5 Canvas?",
+    "options": [
+      "SVG is 3D only",
+      "Canvas is vector based",
+      "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+      "SVG cannot be styled with CSS"
+    ],
+    "answer": "SVG is vector-based DOM-accessible XML; Canvas is raster bitmap pixel grid",
+    "explanation": "SVG maintains DOM nodes per element; Canvas draws pixels directly.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Canvas & SVG Animations"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #95 (CSS Performance): Which CSS properties trigger compositor-only pipeline rendering for 60fps animations?",
+    "options": [
+      "top and left",
+      "margin and padding",
+      "width and height",
+      "transform and opacity"
+    ],
+    "answer": "transform and opacity",
+    "explanation": "transform and opacity bypass layout and paint passes, running on GPU.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Performance"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #96 (Container Queries): How do CSS Container Queries differ from traditional Media Queries?",
+    "options": [
+      "Requires JavaScript",
+      "Applies only to flex containers",
+      "Queries element container size rather than global viewport size",
+      "Works only on mobile devices"
+    ],
+    "answer": "Queries element container size rather than global viewport size",
+    "explanation": "Container queries allow styling based on parent container dimensions.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Container Queries"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #97 (CSS Houdini): What is CSS Houdini API?",
+    "options": [
+      "Set of APIs allowing developers to hook directly into CSS rendering engine",
+      "A mobile layout framework",
+      "A CSS preprocessor",
+      "A font generator"
+    ],
+    "answer": "Set of APIs allowing developers to hook directly into CSS rendering engine",
+    "explanation": "Houdini exposes browser layout, paint, and parser engines.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "CSS Houdini"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #98 (Accessibility (a11y)): What does ARIA stand for in web accessibility standards?",
+    "options": [
+      "Accessible Rendering Interface Application",
+      "Automated Reading Interface Architecture",
+      "Advanced Responsive Internet Access",
+      "Accessible Rich Internet Applications"
+    ],
+    "answer": "Accessible Rich Internet Applications",
+    "explanation": "ARIA defines attributes to make web content accessible to screen readers.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Accessibility (a11y)"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #99 (Render Pipeline): Order of browser rendering pipeline stages for CSS changes:",
+    "options": [
+      "Layout -> Style -> Paint",
+      "Paint -> Composite -> Layout -> Style",
+      "Style -> Paint -> Layout -> Composite",
+      "JavaScript -> Style -> Layout -> Paint -> Composite"
+    ],
+    "answer": "JavaScript -> Style -> Layout -> Paint -> Composite",
+    "explanation": "Standard render pipeline follows Style calculation, Layout, Paint, then Compositing.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "Render Pipeline"
+  },
+  {
+    "question": "[HTML_CSS - Hard] Case Study #100 (PostCSS & Preprocessors): What does Autoprefixer plugin do in modern CSS build tools?",
+    "options": [
+      "Minifies HTML",
+      "Compresses images",
+      "Converts SASS to LESS",
+      "Adds vendor prefixes to CSS rules based on target browser compatibility"
+    ],
+    "answer": "Adds vendor prefixes to CSS rules based on target browser compatibility",
+    "explanation": "Autoprefixer parses CSS and adds vendor prefixes using Can I Use data.",
+    "difficulty": "Hard",
+    "skill": "HTML_CSS",
+    "topic": "PostCSS & Preprocessors"
+  }
+]

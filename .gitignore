@@ -1,10 +1,18 @@
 .env
 firebase-debug.log
 node_modules/
+.kotlin/
+__pycache__/
+*.log
+push_log.txt
+push_output.txt
+SkillSyncApp/build/
+SkillSyncApp/.kotlin/
+SkillSyncApp/app/build/
 
 # Ignore Excel and HTML reports outside android_app/reports/
 **/reports/*.xlsx
 **/reports/*.html
 !android_app/reports/E2E_SkillSync_Appium_Test_Cases.xlsx
 !android_app/reports/appium-report.html
-!android_app/reports/appium-report.xlsx
+!android_app/reports/download-report.html

@@ -1,0 +1,1402 @@
+[
+  {
+    "question": "Which HTML element is used to define the main heading of a page?",
+    "options": [
+      "<heading>",
+      "<h1>",
+      "<head>",
+      "<header>"
+    ],
+    "answer": "<h1>",
+    "explanation": "<h1> represents the top-level heading on a web page.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Tags"
+  },
+  {
+    "question": "Which attribute specifies the image URL in an <img> tag?",
+    "options": [
+      "src",
+      "link",
+      "url",
+      "href"
+    ],
+    "answer": "src",
+    "explanation": "The 'src' attribute defines the path to the image file.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Attributes"
+  },
+  {
+    "question": "Which CSS selector targets elements with id 'header'?",
+    "options": [
+      ".header",
+      "#header",
+      "*header",
+      "header"
+    ],
+    "answer": "#header",
+    "explanation": "Hash symbol '#' selects elements by unique ID.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Selectors"
+  },
+  {
+    "question": "Which CSS property changes the background color of an element?",
+    "options": [
+      "background-color",
+      "bgcolor",
+      "color",
+      "background-style"
+    ],
+    "answer": "background-color",
+    "explanation": "background-color sets the background color.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Colors & Backgrounds"
+  },
+  {
+    "question": "Which CSS property specifies the font family of text?",
+    "options": [
+      "font-type",
+      "font-name",
+      "text-style",
+      "font-family"
+    ],
+    "answer": "font-family",
+    "explanation": "font-family defines the typeface list for rendering text.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Typography"
+  },
+  {
+    "question": "What elements make up the CSS Box Model from inside out?",
+    "options": [
+      "Border, Padding, Content, Margin",
+      "Content, Margin, Border, Padding",
+      "Content, Padding, Border, Margin",
+      "Padding, Content, Margin, Border"
+    ],
+    "answer": "Content, Padding, Border, Margin",
+    "explanation": "Box model consists of Content, surrounded by Padding, Border, and Margin.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Box Model"
+  },
+  {
+    "question": "Which HTML tag creates a hyperlink?",
+    "options": [
+      "<url>",
+      "<href>",
+      "<link>",
+      "<a>"
+    ],
+    "answer": "<a>",
+    "explanation": "The <a> (anchor) tag creates hyperlinks.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Links & Images"
+  },
+  {
+    "question": "Which tag creates an ordered (numbered) list in HTML?",
+    "options": [
+      "<ol>",
+      "<dl>",
+      "<ul>",
+      "<li>"
+    ],
+    "answer": "<ol>",
+    "explanation": "<ol> creates numbered ordered lists.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Lists"
+  },
+  {
+    "question": "Which HTML element defines a table row?",
+    "options": [
+      "<th>",
+      "<td>",
+      "<table>",
+      "<tr>"
+    ],
+    "answer": "<tr>",
+    "explanation": "<tr> specifies a row of cells in a table.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Tables"
+  },
+  {
+    "question": "Which HTML attribute specifies where form data is sent upon submission?",
+    "options": [
+      "method",
+      "target",
+      "action",
+      "src"
+    ],
+    "answer": "action",
+    "explanation": "'action' specifies the handler URL for form submission.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Form Basics"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #11 (HTML Tags): Which HTML element is used to define the main heading of a page?",
+    "options": [
+      "<h1>",
+      "<head>",
+      "<heading>",
+      "<header>"
+    ],
+    "answer": "<h1>",
+    "explanation": "<h1> represents the top-level heading on a web page.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Tags"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #12 (HTML Attributes): Which attribute specifies the image URL in an <img> tag?",
+    "options": [
+      "url",
+      "href",
+      "link",
+      "src"
+    ],
+    "answer": "src",
+    "explanation": "The 'src' attribute defines the path to the image file.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Attributes"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #13 (CSS Selectors): Which CSS selector targets elements with id 'header'?",
+    "options": [
+      "*header",
+      "#header",
+      "header",
+      ".header"
+    ],
+    "answer": "#header",
+    "explanation": "Hash symbol '#' selects elements by unique ID.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Selectors"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #14 (Colors & Backgrounds): Which CSS property changes the background color of an element?",
+    "options": [
+      "color",
+      "background-style",
+      "bgcolor",
+      "background-color"
+    ],
+    "answer": "background-color",
+    "explanation": "background-color sets the background color.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Colors & Backgrounds"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #15 (Typography): Which CSS property specifies the font family of text?",
+    "options": [
+      "text-style",
+      "font-family",
+      "font-type",
+      "font-name"
+    ],
+    "answer": "font-family",
+    "explanation": "font-family defines the typeface list for rendering text.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Typography"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #16 (CSS Box Model): What elements make up the CSS Box Model from inside out?",
+    "options": [
+      "Padding, Content, Margin, Border",
+      "Content, Padding, Border, Margin",
+      "Content, Margin, Border, Padding",
+      "Border, Padding, Content, Margin"
+    ],
+    "answer": "Content, Padding, Border, Margin",
+    "explanation": "Box model consists of Content, surrounded by Padding, Border, and Margin.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Box Model"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #17 (Links & Images): Which HTML tag creates a hyperlink?",
+    "options": [
+      "<href>",
+      "<link>",
+      "<a>",
+      "<url>"
+    ],
+    "answer": "<a>",
+    "explanation": "The <a> (anchor) tag creates hyperlinks.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Links & Images"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #18 (Lists): Which tag creates an ordered (numbered) list in HTML?",
+    "options": [
+      "<dl>",
+      "<li>",
+      "<ul>",
+      "<ol>"
+    ],
+    "answer": "<ol>",
+    "explanation": "<ol> creates numbered ordered lists.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Lists"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #19 (Tables): Which HTML element defines a table row?",
+    "options": [
+      "<tr>",
+      "<th>",
+      "<table>",
+      "<td>"
+    ],
+    "answer": "<tr>",
+    "explanation": "<tr> specifies a row of cells in a table.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Tables"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #20 (Form Basics): Which HTML attribute specifies where form data is sent upon submission?",
+    "options": [
+      "action",
+      "target",
+      "method",
+      "src"
+    ],
+    "answer": "action",
+    "explanation": "'action' specifies the handler URL for form submission.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Form Basics"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #21 (HTML Tags): Which HTML element is used to define the main heading of a page?",
+    "options": [
+      "<header>",
+      "<heading>",
+      "<head>",
+      "<h1>"
+    ],
+    "answer": "<h1>",
+    "explanation": "<h1> represents the top-level heading on a web page.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Tags"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #22 (HTML Attributes): Which attribute specifies the image URL in an <img> tag?",
+    "options": [
+      "link",
+      "src",
+      "href",
+      "url"
+    ],
+    "answer": "src",
+    "explanation": "The 'src' attribute defines the path to the image file.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Attributes"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #23 (CSS Selectors): Which CSS selector targets elements with id 'header'?",
+    "options": [
+      "#header",
+      "header",
+      "*header",
+      ".header"
+    ],
+    "answer": "#header",
+    "explanation": "Hash symbol '#' selects elements by unique ID.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Selectors"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #24 (Colors & Backgrounds): Which CSS property changes the background color of an element?",
+    "options": [
+      "background-style",
+      "bgcolor",
+      "background-color",
+      "color"
+    ],
+    "answer": "background-color",
+    "explanation": "background-color sets the background color.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Colors & Backgrounds"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #25 (Typography): Which CSS property specifies the font family of text?",
+    "options": [
+      "font-name",
+      "text-style",
+      "font-family",
+      "font-type"
+    ],
+    "answer": "font-family",
+    "explanation": "font-family defines the typeface list for rendering text.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Typography"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #26 (CSS Box Model): What elements make up the CSS Box Model from inside out?",
+    "options": [
+      "Border, Padding, Content, Margin",
+      "Padding, Content, Margin, Border",
+      "Content, Margin, Border, Padding",
+      "Content, Padding, Border, Margin"
+    ],
+    "answer": "Content, Padding, Border, Margin",
+    "explanation": "Box model consists of Content, surrounded by Padding, Border, and Margin.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Box Model"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #27 (Links & Images): Which HTML tag creates a hyperlink?",
+    "options": [
+      "<url>",
+      "<href>",
+      "<a>",
+      "<link>"
+    ],
+    "answer": "<a>",
+    "explanation": "The <a> (anchor) tag creates hyperlinks.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Links & Images"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #28 (Lists): Which tag creates an ordered (numbered) list in HTML?",
+    "options": [
+      "<ul>",
+      "<ol>",
+      "<dl>",
+      "<li>"
+    ],
+    "answer": "<ol>",
+    "explanation": "<ol> creates numbered ordered lists.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Lists"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #29 (Tables): Which HTML element defines a table row?",
+    "options": [
+      "<td>",
+      "<table>",
+      "<tr>",
+      "<th>"
+    ],
+    "answer": "<tr>",
+    "explanation": "<tr> specifies a row of cells in a table.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Tables"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #30 (Form Basics): Which HTML attribute specifies where form data is sent upon submission?",
+    "options": [
+      "method",
+      "target",
+      "src",
+      "action"
+    ],
+    "answer": "action",
+    "explanation": "'action' specifies the handler URL for form submission.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Form Basics"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #31 (HTML Tags): Which HTML element is used to define the main heading of a page?",
+    "options": [
+      "<head>",
+      "<heading>",
+      "<header>",
+      "<h1>"
+    ],
+    "answer": "<h1>",
+    "explanation": "<h1> represents the top-level heading on a web page.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Tags"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #32 (HTML Attributes): Which attribute specifies the image URL in an <img> tag?",
+    "options": [
+      "url",
+      "src",
+      "link",
+      "href"
+    ],
+    "answer": "src",
+    "explanation": "The 'src' attribute defines the path to the image file.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Attributes"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #33 (CSS Selectors): Which CSS selector targets elements with id 'header'?",
+    "options": [
+      ".header",
+      "*header",
+      "#header",
+      "header"
+    ],
+    "answer": "#header",
+    "explanation": "Hash symbol '#' selects elements by unique ID.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Selectors"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #34 (Colors & Backgrounds): Which CSS property changes the background color of an element?",
+    "options": [
+      "color",
+      "background-style",
+      "bgcolor",
+      "background-color"
+    ],
+    "answer": "background-color",
+    "explanation": "background-color sets the background color.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Colors & Backgrounds"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #35 (Typography): Which CSS property specifies the font family of text?",
+    "options": [
+      "font-family",
+      "font-type",
+      "text-style",
+      "font-name"
+    ],
+    "answer": "font-family",
+    "explanation": "font-family defines the typeface list for rendering text.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Typography"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #36 (CSS Box Model): What elements make up the CSS Box Model from inside out?",
+    "options": [
+      "Content, Padding, Border, Margin",
+      "Padding, Content, Margin, Border",
+      "Content, Margin, Border, Padding",
+      "Border, Padding, Content, Margin"
+    ],
+    "answer": "Content, Padding, Border, Margin",
+    "explanation": "Box model consists of Content, surrounded by Padding, Border, and Margin.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Box Model"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #37 (Links & Images): Which HTML tag creates a hyperlink?",
+    "options": [
+      "<href>",
+      "<a>",
+      "<link>",
+      "<url>"
+    ],
+    "answer": "<a>",
+    "explanation": "The <a> (anchor) tag creates hyperlinks.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Links & Images"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #38 (Lists): Which tag creates an ordered (numbered) list in HTML?",
+    "options": [
+      "<dl>",
+      "<ul>",
+      "<ol>",
+      "<li>"
+    ],
+    "answer": "<ol>",
+    "explanation": "<ol> creates numbered ordered lists.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Lists"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #39 (Tables): Which HTML element defines a table row?",
+    "options": [
+      "<th>",
+      "<tr>",
+      "<table>",
+      "<td>"
+    ],
+    "answer": "<tr>",
+    "explanation": "<tr> specifies a row of cells in a table.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Tables"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #40 (Form Basics): Which HTML attribute specifies where form data is sent upon submission?",
+    "options": [
+      "target",
+      "action",
+      "src",
+      "method"
+    ],
+    "answer": "action",
+    "explanation": "'action' specifies the handler URL for form submission.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Form Basics"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #41 (HTML Tags): Which HTML element is used to define the main heading of a page?",
+    "options": [
+      "<heading>",
+      "<header>",
+      "<h1>",
+      "<head>"
+    ],
+    "answer": "<h1>",
+    "explanation": "<h1> represents the top-level heading on a web page.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Tags"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #42 (HTML Attributes): Which attribute specifies the image URL in an <img> tag?",
+    "options": [
+      "src",
+      "href",
+      "url",
+      "link"
+    ],
+    "answer": "src",
+    "explanation": "The 'src' attribute defines the path to the image file.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Attributes"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #43 (CSS Selectors): Which CSS selector targets elements with id 'header'?",
+    "options": [
+      "*header",
+      ".header",
+      "#header",
+      "header"
+    ],
+    "answer": "#header",
+    "explanation": "Hash symbol '#' selects elements by unique ID.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Selectors"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #44 (Colors & Backgrounds): Which CSS property changes the background color of an element?",
+    "options": [
+      "background-color",
+      "color",
+      "bgcolor",
+      "background-style"
+    ],
+    "answer": "background-color",
+    "explanation": "background-color sets the background color.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Colors & Backgrounds"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #45 (Typography): Which CSS property specifies the font family of text?",
+    "options": [
+      "font-type",
+      "font-family",
+      "text-style",
+      "font-name"
+    ],
+    "answer": "font-family",
+    "explanation": "font-family defines the typeface list for rendering text.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Typography"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #46 (CSS Box Model): What elements make up the CSS Box Model from inside out?",
+    "options": [
+      "Content, Padding, Border, Margin",
+      "Content, Margin, Border, Padding",
+      "Border, Padding, Content, Margin",
+      "Padding, Content, Margin, Border"
+    ],
+    "answer": "Content, Padding, Border, Margin",
+    "explanation": "Box model consists of Content, surrounded by Padding, Border, and Margin.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Box Model"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #47 (Links & Images): Which HTML tag creates a hyperlink?",
+    "options": [
+      "<href>",
+      "<url>",
+      "<link>",
+      "<a>"
+    ],
+    "answer": "<a>",
+    "explanation": "The <a> (anchor) tag creates hyperlinks.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Links & Images"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #48 (Lists): Which tag creates an ordered (numbered) list in HTML?",
+    "options": [
+      "<ul>",
+      "<dl>",
+      "<li>",
+      "<ol>"
+    ],
+    "answer": "<ol>",
+    "explanation": "<ol> creates numbered ordered lists.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Lists"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #49 (Tables): Which HTML element defines a table row?",
+    "options": [
+      "<td>",
+      "<table>",
+      "<th>",
+      "<tr>"
+    ],
+    "answer": "<tr>",
+    "explanation": "<tr> specifies a row of cells in a table.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Tables"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #50 (Form Basics): Which HTML attribute specifies where form data is sent upon submission?",
+    "options": [
+      "method",
+      "target",
+      "action",
+      "src"
+    ],
+    "answer": "action",
+    "explanation": "'action' specifies the handler URL for form submission.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Form Basics"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #51 (HTML Tags): Which HTML element is used to define the main heading of a page?",
+    "options": [
+      "<head>",
+      "<h1>",
+      "<heading>",
+      "<header>"
+    ],
+    "answer": "<h1>",
+    "explanation": "<h1> represents the top-level heading on a web page.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Tags"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #52 (HTML Attributes): Which attribute specifies the image URL in an <img> tag?",
+    "options": [
+      "src",
+      "href",
+      "link",
+      "url"
+    ],
+    "answer": "src",
+    "explanation": "The 'src' attribute defines the path to the image file.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Attributes"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #53 (CSS Selectors): Which CSS selector targets elements with id 'header'?",
+    "options": [
+      "*header",
+      "header",
+      "#header",
+      ".header"
+    ],
+    "answer": "#header",
+    "explanation": "Hash symbol '#' selects elements by unique ID.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Selectors"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #54 (Colors & Backgrounds): Which CSS property changes the background color of an element?",
+    "options": [
+      "bgcolor",
+      "background-color",
+      "color",
+      "background-style"
+    ],
+    "answer": "background-color",
+    "explanation": "background-color sets the background color.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Colors & Backgrounds"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #55 (Typography): Which CSS property specifies the font family of text?",
+    "options": [
+      "font-type",
+      "font-family",
+      "text-style",
+      "font-name"
+    ],
+    "answer": "font-family",
+    "explanation": "font-family defines the typeface list for rendering text.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Typography"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #56 (CSS Box Model): What elements make up the CSS Box Model from inside out?",
+    "options": [
+      "Content, Margin, Border, Padding",
+      "Content, Padding, Border, Margin",
+      "Border, Padding, Content, Margin",
+      "Padding, Content, Margin, Border"
+    ],
+    "answer": "Content, Padding, Border, Margin",
+    "explanation": "Box model consists of Content, surrounded by Padding, Border, and Margin.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Box Model"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #57 (Links & Images): Which HTML tag creates a hyperlink?",
+    "options": [
+      "<a>",
+      "<url>",
+      "<link>",
+      "<href>"
+    ],
+    "answer": "<a>",
+    "explanation": "The <a> (anchor) tag creates hyperlinks.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Links & Images"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #58 (Lists): Which tag creates an ordered (numbered) list in HTML?",
+    "options": [
+      "<li>",
+      "<dl>",
+      "<ul>",
+      "<ol>"
+    ],
+    "answer": "<ol>",
+    "explanation": "<ol> creates numbered ordered lists.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Lists"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #59 (Tables): Which HTML element defines a table row?",
+    "options": [
+      "<td>",
+      "<th>",
+      "<table>",
+      "<tr>"
+    ],
+    "answer": "<tr>",
+    "explanation": "<tr> specifies a row of cells in a table.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Tables"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #60 (Form Basics): Which HTML attribute specifies where form data is sent upon submission?",
+    "options": [
+      "target",
+      "method",
+      "src",
+      "action"
+    ],
+    "answer": "action",
+    "explanation": "'action' specifies the handler URL for form submission.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Form Basics"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #61 (HTML Tags): Which HTML element is used to define the main heading of a page?",
+    "options": [
+      "<head>",
+      "<h1>",
+      "<header>",
+      "<heading>"
+    ],
+    "answer": "<h1>",
+    "explanation": "<h1> represents the top-level heading on a web page.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Tags"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #62 (HTML Attributes): Which attribute specifies the image URL in an <img> tag?",
+    "options": [
+      "url",
+      "href",
+      "link",
+      "src"
+    ],
+    "answer": "src",
+    "explanation": "The 'src' attribute defines the path to the image file.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Attributes"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #63 (CSS Selectors): Which CSS selector targets elements with id 'header'?",
+    "options": [
+      "#header",
+      "*header",
+      ".header",
+      "header"
+    ],
+    "answer": "#header",
+    "explanation": "Hash symbol '#' selects elements by unique ID.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Selectors"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #64 (Colors & Backgrounds): Which CSS property changes the background color of an element?",
+    "options": [
+      "bgcolor",
+      "color",
+      "background-color",
+      "background-style"
+    ],
+    "answer": "background-color",
+    "explanation": "background-color sets the background color.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Colors & Backgrounds"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #65 (Typography): Which CSS property specifies the font family of text?",
+    "options": [
+      "font-type",
+      "font-name",
+      "text-style",
+      "font-family"
+    ],
+    "answer": "font-family",
+    "explanation": "font-family defines the typeface list for rendering text.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Typography"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #66 (CSS Box Model): What elements make up the CSS Box Model from inside out?",
+    "options": [
+      "Border, Padding, Content, Margin",
+      "Padding, Content, Margin, Border",
+      "Content, Padding, Border, Margin",
+      "Content, Margin, Border, Padding"
+    ],
+    "answer": "Content, Padding, Border, Margin",
+    "explanation": "Box model consists of Content, surrounded by Padding, Border, and Margin.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Box Model"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #67 (Links & Images): Which HTML tag creates a hyperlink?",
+    "options": [
+      "<url>",
+      "<href>",
+      "<a>",
+      "<link>"
+    ],
+    "answer": "<a>",
+    "explanation": "The <a> (anchor) tag creates hyperlinks.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Links & Images"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #68 (Lists): Which tag creates an ordered (numbered) list in HTML?",
+    "options": [
+      "<li>",
+      "<ul>",
+      "<ol>",
+      "<dl>"
+    ],
+    "answer": "<ol>",
+    "explanation": "<ol> creates numbered ordered lists.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Lists"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #69 (Tables): Which HTML element defines a table row?",
+    "options": [
+      "<tr>",
+      "<td>",
+      "<th>",
+      "<table>"
+    ],
+    "answer": "<tr>",
+    "explanation": "<tr> specifies a row of cells in a table.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Tables"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #70 (Form Basics): Which HTML attribute specifies where form data is sent upon submission?",
+    "options": [
+      "method",
+      "src",
+      "target",
+      "action"
+    ],
+    "answer": "action",
+    "explanation": "'action' specifies the handler URL for form submission.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Form Basics"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #71 (HTML Tags): Which HTML element is used to define the main heading of a page?",
+    "options": [
+      "<head>",
+      "<header>",
+      "<heading>",
+      "<h1>"
+    ],
+    "answer": "<h1>",
+    "explanation": "<h1> represents the top-level heading on a web page.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Tags"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #72 (HTML Attributes): Which attribute specifies the image URL in an <img> tag?",
+    "options": [
+      "src",
+      "href",
+      "url",
+      "link"
+    ],
+    "answer": "src",
+    "explanation": "The 'src' attribute defines the path to the image file.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Attributes"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #73 (CSS Selectors): Which CSS selector targets elements with id 'header'?",
+    "options": [
+      "#header",
+      ".header",
+      "header",
+      "*header"
+    ],
+    "answer": "#header",
+    "explanation": "Hash symbol '#' selects elements by unique ID.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Selectors"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #74 (Colors & Backgrounds): Which CSS property changes the background color of an element?",
+    "options": [
+      "background-color",
+      "background-style",
+      "bgcolor",
+      "color"
+    ],
+    "answer": "background-color",
+    "explanation": "background-color sets the background color.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Colors & Backgrounds"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #75 (Typography): Which CSS property specifies the font family of text?",
+    "options": [
+      "text-style",
+      "font-type",
+      "font-name",
+      "font-family"
+    ],
+    "answer": "font-family",
+    "explanation": "font-family defines the typeface list for rendering text.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Typography"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #76 (CSS Box Model): What elements make up the CSS Box Model from inside out?",
+    "options": [
+      "Padding, Content, Margin, Border",
+      "Content, Margin, Border, Padding",
+      "Border, Padding, Content, Margin",
+      "Content, Padding, Border, Margin"
+    ],
+    "answer": "Content, Padding, Border, Margin",
+    "explanation": "Box model consists of Content, surrounded by Padding, Border, and Margin.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Box Model"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #77 (Links & Images): Which HTML tag creates a hyperlink?",
+    "options": [
+      "<a>",
+      "<url>",
+      "<link>",
+      "<href>"
+    ],
+    "answer": "<a>",
+    "explanation": "The <a> (anchor) tag creates hyperlinks.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Links & Images"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #78 (Lists): Which tag creates an ordered (numbered) list in HTML?",
+    "options": [
+      "<ol>",
+      "<li>",
+      "<ul>",
+      "<dl>"
+    ],
+    "answer": "<ol>",
+    "explanation": "<ol> creates numbered ordered lists.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Lists"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #79 (Tables): Which HTML element defines a table row?",
+    "options": [
+      "<table>",
+      "<tr>",
+      "<td>",
+      "<th>"
+    ],
+    "answer": "<tr>",
+    "explanation": "<tr> specifies a row of cells in a table.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Tables"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #80 (Form Basics): Which HTML attribute specifies where form data is sent upon submission?",
+    "options": [
+      "target",
+      "action",
+      "src",
+      "method"
+    ],
+    "answer": "action",
+    "explanation": "'action' specifies the handler URL for form submission.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Form Basics"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #81 (HTML Tags): Which HTML element is used to define the main heading of a page?",
+    "options": [
+      "<head>",
+      "<header>",
+      "<h1>",
+      "<heading>"
+    ],
+    "answer": "<h1>",
+    "explanation": "<h1> represents the top-level heading on a web page.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Tags"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #82 (HTML Attributes): Which attribute specifies the image URL in an <img> tag?",
+    "options": [
+      "url",
+      "link",
+      "href",
+      "src"
+    ],
+    "answer": "src",
+    "explanation": "The 'src' attribute defines the path to the image file.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Attributes"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #83 (CSS Selectors): Which CSS selector targets elements with id 'header'?",
+    "options": [
+      "#header",
+      "header",
+      "*header",
+      ".header"
+    ],
+    "answer": "#header",
+    "explanation": "Hash symbol '#' selects elements by unique ID.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Selectors"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #84 (Colors & Backgrounds): Which CSS property changes the background color of an element?",
+    "options": [
+      "color",
+      "bgcolor",
+      "background-style",
+      "background-color"
+    ],
+    "answer": "background-color",
+    "explanation": "background-color sets the background color.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Colors & Backgrounds"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #85 (Typography): Which CSS property specifies the font family of text?",
+    "options": [
+      "font-family",
+      "font-name",
+      "text-style",
+      "font-type"
+    ],
+    "answer": "font-family",
+    "explanation": "font-family defines the typeface list for rendering text.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Typography"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #86 (CSS Box Model): What elements make up the CSS Box Model from inside out?",
+    "options": [
+      "Border, Padding, Content, Margin",
+      "Content, Padding, Border, Margin",
+      "Content, Margin, Border, Padding",
+      "Padding, Content, Margin, Border"
+    ],
+    "answer": "Content, Padding, Border, Margin",
+    "explanation": "Box model consists of Content, surrounded by Padding, Border, and Margin.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Box Model"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #87 (Links & Images): Which HTML tag creates a hyperlink?",
+    "options": [
+      "<href>",
+      "<a>",
+      "<url>",
+      "<link>"
+    ],
+    "answer": "<a>",
+    "explanation": "The <a> (anchor) tag creates hyperlinks.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Links & Images"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #88 (Lists): Which tag creates an ordered (numbered) list in HTML?",
+    "options": [
+      "<dl>",
+      "<li>",
+      "<ol>",
+      "<ul>"
+    ],
+    "answer": "<ol>",
+    "explanation": "<ol> creates numbered ordered lists.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Lists"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #89 (Tables): Which HTML element defines a table row?",
+    "options": [
+      "<td>",
+      "<table>",
+      "<th>",
+      "<tr>"
+    ],
+    "answer": "<tr>",
+    "explanation": "<tr> specifies a row of cells in a table.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Tables"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #90 (Form Basics): Which HTML attribute specifies where form data is sent upon submission?",
+    "options": [
+      "src",
+      "action",
+      "method",
+      "target"
+    ],
+    "answer": "action",
+    "explanation": "'action' specifies the handler URL for form submission.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Form Basics"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #91 (HTML Tags): Which HTML element is used to define the main heading of a page?",
+    "options": [
+      "<h1>",
+      "<heading>",
+      "<header>",
+      "<head>"
+    ],
+    "answer": "<h1>",
+    "explanation": "<h1> represents the top-level heading on a web page.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Tags"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #92 (HTML Attributes): Which attribute specifies the image URL in an <img> tag?",
+    "options": [
+      "src",
+      "link",
+      "url",
+      "href"
+    ],
+    "answer": "src",
+    "explanation": "The 'src' attribute defines the path to the image file.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "HTML Attributes"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #93 (CSS Selectors): Which CSS selector targets elements with id 'header'?",
+    "options": [
+      "header",
+      "*header",
+      "#header",
+      ".header"
+    ],
+    "answer": "#header",
+    "explanation": "Hash symbol '#' selects elements by unique ID.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Selectors"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #94 (Colors & Backgrounds): Which CSS property changes the background color of an element?",
+    "options": [
+      "color",
+      "background-style",
+      "background-color",
+      "bgcolor"
+    ],
+    "answer": "background-color",
+    "explanation": "background-color sets the background color.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Colors & Backgrounds"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #95 (Typography): Which CSS property specifies the font family of text?",
+    "options": [
+      "font-type",
+      "font-family",
+      "font-name",
+      "text-style"
+    ],
+    "answer": "font-family",
+    "explanation": "font-family defines the typeface list for rendering text.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Typography"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #96 (CSS Box Model): What elements make up the CSS Box Model from inside out?",
+    "options": [
+      "Content, Margin, Border, Padding",
+      "Content, Padding, Border, Margin",
+      "Border, Padding, Content, Margin",
+      "Padding, Content, Margin, Border"
+    ],
+    "answer": "Content, Padding, Border, Margin",
+    "explanation": "Box model consists of Content, surrounded by Padding, Border, and Margin.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "CSS Box Model"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #97 (Links & Images): Which HTML tag creates a hyperlink?",
+    "options": [
+      "<link>",
+      "<href>",
+      "<url>",
+      "<a>"
+    ],
+    "answer": "<a>",
+    "explanation": "The <a> (anchor) tag creates hyperlinks.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Links & Images"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #98 (Lists): Which tag creates an ordered (numbered) list in HTML?",
+    "options": [
+      "<dl>",
+      "<li>",
+      "<ul>",
+      "<ol>"
+    ],
+    "answer": "<ol>",
+    "explanation": "<ol> creates numbered ordered lists.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Lists"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #99 (Tables): Which HTML element defines a table row?",
+    "options": [
+      "<td>",
+      "<tr>",
+      "<table>",
+      "<th>"
+    ],
+    "answer": "<tr>",
+    "explanation": "<tr> specifies a row of cells in a table.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Tables"
+  },
+  {
+    "question": "[HTML_CSS - Basic] Case Study #100 (Form Basics): Which HTML attribute specifies where form data is sent upon submission?",
+    "options": [
+      "target",
+      "src",
+      "method",
+      "action"
+    ],
+    "answer": "action",
+    "explanation": "'action' specifies the handler URL for form submission.",
+    "difficulty": "Basic",
+    "skill": "HTML_CSS",
+    "topic": "Form Basics"
+  }
+]

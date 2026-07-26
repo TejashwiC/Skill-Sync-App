@@ -42,14 +42,19 @@ class ChatViewModel : ViewModel() {
         if (myUid.isEmpty()) return
 
         viewModelScope.launch {
-            userRepository.observeAllUsers().collectLatest { list ->
-                val filtered = list.filter { it.uid != myUid }
-                _chatUsers.postValue(filtered)
-            }
-        }
-        viewModelScope.launch {
-            userRepository.observeUserProfile(myUid).collectLatest { user ->
-                _currentUser.postValue(user)
+            userRepository.observeUserProfile(myUid).collectLatest { myProfile ->
+                _currentUser.postValue(myProfile)
+                val following = myProfile?.following ?: emptyList()
+                val followers = myProfile?.followers ?: emptyList()
+                val blocked = myProfile?.blocked ?: emptyList()
+                
+                // Strict Mutual Connections: follow you, follow back, and NOT blocked
+                val mutualUids = following.filter { followers.contains(it) && !blocked.contains(it) }
+
+                userRepository.observeAllUsers().collectLatest { list ->
+                    val filtered = list.filter { it.uid != myUid && mutualUids.contains(it.uid) }
+                    _chatUsers.postValue(filtered)
+                }
             }
         }
     }
@@ -60,9 +65,12 @@ class ChatViewModel : ViewModel() {
 
         viewModelScope.launch {
             userRepository.observeAllUsers().collectLatest { users ->
+                val myProfile = userRepository.getUserProfile(myUid).getOrNull()
+                val blocked = myProfile?.blocked ?: emptyList()
+
                 val items = mutableListOf<InboxItem>()
                 for (otherUser in users) {
-                    if (otherUser.uid == myUid) continue
+                    if (otherUser.uid == myUid || blocked.contains(otherUser.uid)) continue
                     val chatId = chatRepository.getChatId(myUid, otherUser.uid)
                     val lastMsg = chatRepository.getLatestMessage(chatId)
                     if (lastMsg != null) {
@@ -168,7 +176,20 @@ class ChatViewModel : ViewModel() {
         val myProfile = userRepository.getUserProfile(myUid).getOrNull() ?: return false
         val following = myProfile.following ?: emptyList()
         val followers = myProfile.followers ?: emptyList()
-        return following.contains(otherUid) || followers.contains(otherUid)
+        // Must be mutual connection
+        return following.contains(otherUid) && followers.contains(otherUid)
+    }
+
+    fun pinMessage(chatId: String, messageId: String, pinned: Boolean) {
+        viewModelScope.launch {
+            chatRepository.pinMessage(chatId, messageId, pinned)
+        }
+    }
+
+    fun deleteMessage(chatId: String, messageId: String) {
+        viewModelScope.launch {
+            chatRepository.deleteMessage(chatId, messageId)
+        }
     }
 
     data class InboxItem(
@@ -206,12 +227,6 @@ class ChatViewModel : ViewModel() {
         if (myUid.isEmpty()) return
         viewModelScope.launch {
             userRepository.unfollowUser(myUid, targetUid)
-        }
-    }
-
-    fun pinMessage(chatId: String, messageId: String, pinned: Boolean) {
-        viewModelScope.launch {
-            chatRepository.pinMessage(chatId, messageId, pinned)
         }
     }
 
